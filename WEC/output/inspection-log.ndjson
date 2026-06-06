@@ -1,0 +1,95 @@
+{"level":"info","message":"No proxy configuration found.","timestamp":"2026-03-08T23:08:41.444Z"}
+{"level":"info","message":"Chromium called  with following options: ","timestamp":"2026-03-08T23:08:41.448Z"}
+{"level":"info","message":"Done: Creating puppeteer chrome session","timestamp":"2026-03-08T23:08:42.387Z"}
+{"level":"info","message":"Run testHttps","timestamp":"2026-03-08T23:08:42.388Z"}
+{"level":"info","message":"Done: Testing connection using testHttps and testSSL","timestamp":"2026-03-08T23:08:42.951Z"}
+{"level":"info","message":"browsing now to https://elpais.com","timestamp":"2026-03-08T23:08:42.953Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) ArcId.test for origin https://elpais.com.","timestamp":"2026-03-08T23:08:43.859Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ArcId.test for origin https://elpais.com.","timestamp":"2026-03-08T23:08:43.861Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ArcId.test for origin https://elpais.com.","timestamp":"2026-03-08T23:08:43.897Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key com.adobe.alloy.getTld.","timestamp":"2026-03-08T23:08:44.254Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key com.adobe.alloy.getTld.","timestamp":"2026-03-08T23:08:44.256Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key kndctr_2387401053DB208C0A490D4C_AdobeOrg_consent.","timestamp":"2026-03-08T23:08:44.265Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.277Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.279Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.281Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.282Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.284Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-03-08T23:08:44.285Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.287Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.308Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key at_check.","timestamp":"2026-03-08T23:08:44.310Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key at_check.","timestamp":"2026-03-08T23:08:44.311Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.315Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key _gd1773011324349.","timestamp":"2026-03-08T23:08:44.367Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key _gd1773011324349.","timestamp":"2026-03-08T23:08:44.368Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key FCCDCF.","timestamp":"2026-03-08T23:08:44.436Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key FCCDCF.","timestamp":"2026-03-08T23:08:44.438Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key FCCDCF.","timestamp":"2026-03-08T23:08:44.439Z"}
+{"level":"info","message":"LocalStorage filled with key(s) PbsfloorPrice for origin https://elpais.com.","timestamp":"2026-03-08T23:08:44.473Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key dd_testcookie.","timestamp":"2026-03-08T23:08:44.520Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key dd_testcookie.","timestamp":"2026-03-08T23:08:44.521Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key FCNEC.","timestamp":"2026-03-08T23:08:44.567Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key FCNEC.","timestamp":"2026-03-08T23:08:44.568Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key pmuser.","timestamp":"2026-03-08T23:08:44.574Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.607Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.609Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.610Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.611Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key AMCVS_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.617Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.618Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.625Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.633Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key euconsent-v2.","timestamp":"2026-03-08T23:08:44.862Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key didomi_token.","timestamp":"2026-03-08T23:08:44.864Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://elpais.com.","timestamp":"2026-03-08T23:08:44.865Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key _dp.","timestamp":"2026-03-08T23:08:44.872Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.934Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:44.937Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:44.947Z"}
+{"level":"info","message":"LocalStorage filled with key(s) tgt:tlm:upper for origin https://elpais.com.","timestamp":"2026-03-08T23:08:44.948Z"}
+{"level":"info","message":"LocalStorage filled with key(s) tgt:tlm:0 for origin https://elpais.com.","timestamp":"2026-03-08T23:08:44.950Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.951Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.952Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:44.957Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key cmpyoutubeConsent.","timestamp":"2026-03-08T23:08:45.012Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key cmp573Consent.","timestamp":"2026-03-08T23:08:45.014Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:45.024Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:45.026Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:45.027Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key AMCV_2387401053DB208C0A490D4C%40AdobeOrg.","timestamp":"2026-03-08T23:08:45.028Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:45.049Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:45.151Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key datadome.","timestamp":"2026-03-08T23:08:45.192Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:45.255Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://elpais.com.","timestamp":"2026-03-08T23:08:45.282Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key kndctr_2387401053DB208C0A490D4C_AdobeOrg_identity.","timestamp":"2026-03-08T23:08:45.319Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key kndctr_2387401053DB208C0A490D4C_AdobeOrg_cluster.","timestamp":"2026-03-08T23:08:45.320Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:45.353Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-03-08T23:08:45.455Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key kndctr_2387401053DB208C0A490D4C_AdobeOrg_cluster.","timestamp":"2026-03-08T23:08:45.517Z"}
+{"level":"info","message":"LocalStorage filled with key(s) pmsegments for origin https://elpais.com.","timestamp":"2026-03-08T23:08:45.519Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key pmsegments.","timestamp":"2026-03-08T23:08:45.520Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host prisa.arcpublishing.com with key pmsegments.","timestamp":"2026-03-08T23:08:45.521Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key s_nr30.","timestamp":"2026-03-08T23:08:45.616Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key s_vncd.","timestamp":"2026-03-08T23:08:45.617Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key s_ivc.","timestamp":"2026-03-08T23:08:45.618Z"}
+{"level":"info","message":"LocalStorage filled with key(s) No_Consent for origin https://elpais.com.","timestamp":"2026-03-08T23:08:45.627Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key at_check.","timestamp":"2026-03-08T23:08:45.633Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key at_check.","timestamp":"2026-03-08T23:08:45.634Z"}
+{"level":"info","message":"LocalStorage filled with key(s) tgt:tlm:lower for origin https://elpais.com.","timestamp":"2026-03-08T23:08:45.637Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mbox.","timestamp":"2026-03-08T23:08:45.638Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key s_cc.","timestamp":"2026-03-08T23:08:45.731Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elpais.com with key mrf_cookie.","timestamp":"2026-03-08T23:08:46.300Z"}
+{"level":"info","message":"Persistant Cookie (JS) set for host elpais.com with key mrf_cookie.","timestamp":"2026-03-08T23:08:46.302Z"}
+{"level":"info","message":"Done: Loading page","timestamp":"2026-03-08T23:08:49.566Z"}
+{"level":"info","message":"Done: Collecting screenshots","timestamp":"2026-03-08T23:08:52.190Z"}
+{"level":"info","message":"Done: Collecting links","timestamp":"2026-03-08T23:08:52.226Z"}
+{"level":"info","message":"Done: Collecting forms","timestamp":"2026-03-08T23:08:52.228Z"}
+{"level":"info","message":"Done: Collecting cookies","timestamp":"2026-03-08T23:08:52.230Z"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-03-08T23:08:52.233Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-03-08T23:08:52.234Z","type":"Browser"}
+{"level":"info","message":"Done: Collecting local storage","timestamp":"2026-03-08T23:08:52.234Z"}
+{"level":"info","message":"Done: Collecting websocket log","timestamp":"2026-03-08T23:08:52.235Z"}
+{"level":"info","message":"Done: Browsing samples","timestamp":"2026-03-08T23:08:52.235Z"}
+{"level":"info","message":"Done: Ending session","timestamp":"2026-03-08T23:08:52.432Z"}

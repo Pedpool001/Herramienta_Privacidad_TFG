@@ -1,0 +1,20 @@
+{
+  "sitio": "www.decathlon.es",
+  "url": "https://www.decathlon.es",
+  "veredicto": "PASSED",
+  "evaluacion": {
+    "estado": "PASSED",
+    "detalle": "Panel de configuración localizado (\"Configurar cookies\"). Se detectaron 6 opciones granulares independientes. El usuario puede elegir por finalidad. Cumple RGPD Art. 7."
+  },
+  "hallazgos": {
+    "panel_localizado": true,
+    "boton_config_texto": "Configurar cookies",
+    "indicador_toggles": 6,
+    "indicador_botones": 3,
+    "total_opciones": 6,
+    "categorias_detectadas": [
+      "Rechazar Aceptar"
+    ],
+    "screenshot": "/home/pedro/Escritorio/UNI/CUARTO/tfg/analysis_data/r4_panel_www_decathlon_es.png"
+  }
+}

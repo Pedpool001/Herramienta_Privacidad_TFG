@@ -1,0 +1,584 @@
+- url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWl4OHVOhONFmrW5xi_scJ2jYwch61PP591wCtLQJVTlKBzlHvrAnxtgHVpItmxcNRmUnc2DlVHjXZ1d7PY
+  query: null
+  filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:43 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  occurrances: 1
+- url: >-
+    https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=2387401053DB208C0A490D4C%40AdobeOrg&d_nsid=0&ts=1773011324288
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: MC
+    d_rtbd: json
+    d_ver: 2
+    d_verify: 1
+    d_orgid: 2387401053DB208C0A490D4C@AdobeOrg
+    d_nsid: 0
+    ts: 1773011324288
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  occurrances: 2
+- url: >-
+    https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js
+  query: null
+  filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  occurrances: 1
+- url: >-
+    https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js
+  query: null
+  filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  occurrances: 1
+- url: https://js.datadome.co/tags.js
+  query: null
+  filter: '||datadome.co^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||datadome.co^$third-party
+  occurrances: 1
+- url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxVCkhLrk2-QeawuoY5xSl1__a3Q2NO03ixBsxPAn4VynfnCeYjhBXfctjcJRkHnnL6Mwszg-_Y7ZJSeD3739SThsSUnQ3W2iJ8ezvgevITFtqTVE0md8tNsrU4bfzPlgPtpPzA=
+  query: null
+  filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  occurrances: 6
+- url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxX4gin-lN8f4OmGyxjajj-1ADOVoxJfKt36IJ7JvnN5dgPFGxcemN19KdDcoYpE4cBPcbRs-Jmf7ZMy-fjslRRJrmtKnUyyZc02yyv7zjb4UvES4sC9MzdBgMfrzOeDmCdv4ec=?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzczMDExMzI0LDQ1NzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9lbHBhaXMuY29tLyIsbnVsbCxbWzgsImJqcEJZYzhkbFhRIl0sWzksImVzIl0sWzE2LCJbMCwwLDBdIl0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzczMDExMzI0LDQ1NzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9lbHBhaXMuY29tLyIsbnVsbCxbWzgsImJqcEJZYzhkbFhRIl0sWzksImVzIl0sWzE2LCJbMCwwLDBdIl0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  occurrances: 1
+- url: >-
+    https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=2387401053DB208C0A490D4C%40AdobeOrg&d_nsid=0&ts=1773011324288
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: MC
+    d_rtbd: json
+    d_ver: 2
+    d_verify: 1
+    d_orgid: 2387401053DB208C0A490D4C@AdobeOrg
+    d_nsid: 0
+    ts: 1773011324288
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  occurrances: 1
+- url: >-
+    https://sdk.privacy-center.org/8ba38674-edba-484d-8053-435051d79f72/loader.js?target=elpais.com
+  query:
+    target: elpais.com
+  filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||privacy-center.org^$third-party
+  occurrances: 1
+- url: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+  query:
+    d_nsid: 0
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||demdex.net^
+  occurrances: 1
+- url: >-
+    https://smetrics.elpais.com/id?d_visid_ver=5.5.0&d_fieldgroup=A&mcorgid=2387401053DB208C0A490D4C%40AdobeOrg&mid=18158554975217966863388328504148828715&ts=1773011324616
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: A
+    mcorgid: 2387401053DB208C0A490D4C@AdobeOrg
+    mid: 1.8158554975217968e+37
+    ts: 1773011324616
+  filter: '||smetrics.elpais.com^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||smetrics.elpais.com^
+  occurrances: 1
+- url: >-
+    https://sdk.privacy-center.org/sdk/1213e0e2a369d77a625b41bc5e943e96be5e6fab/modern/sdk.1213e0e2a369d77a625b41bc5e943e96be5e6fab.js
+  query: null
+  filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||privacy-center.org^$third-party
+  occurrances: 1
+- url: >-
+    https://sdk.privacy-center.org/sdk/1213e0e2a369d77a625b41bc5e943e96be5e6fab/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_google_google_js.1213e0e2a369d77a625b41bc5e943e96be5e6fab.js
+  query: null
+  filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||privacy-center.org^$third-party
+  occurrances: 1
+- url: >-
+    https://sdk.privacy-center.org/sdk/1213e0e2a369d77a625b41bc5e943e96be5e6fab/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_salesforce-dmp_salesforce-dmp_js.1213e0e2a369d77a625b41bc5e943e96be5e6fab.js
+  query: null
+  filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||privacy-center.org^$third-party
+  occurrances: 1
+- url: >-
+    https://sdk.privacy-center.org/sdk/1213e0e2a369d77a625b41bc5e943e96be5e6fab/modern/ui-web-es-web.1213e0e2a369d77a625b41bc5e943e96be5e6fab.js
+  query: null
+  filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with fanboy-annoyance.txt
+        filter ||privacy-center.org^$third-party
+  occurrances: 1
+- url: https://api.privacy-center.org/v1/events
+  query: null
+  filter: '||privacy-center.org^*/events'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||privacy-center.org^*/events
+  occurrances: 3
+- url: >-
+    https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/8f1723178b7c/RCa15e55308ffe483ca53815b30bb47c70-source.min.js
+  query: null
+  filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:44 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  occurrances: 1
+- url: >-
+    https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MTgxNzUzMTkxMDk0Mzc1MjgyMDMzOTExNzQ3OTU1MjYxNzQyMjU=
+  query:
+    google_nid: adobe_dmp
+    google_cm: null
+    gdpr: 0
+    gdpr_consent: ''
+    google_hm: MTgxNzUzMTkxMDk0Mzc1MjgyMDMzOTExNzQ3OTU1MjYxNzQyMjU=
+  filter: .doubleclick.net/$image
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+      source: >-
+        requested from
+        https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+        and matched with easyprivacy.txt filter .doubleclick.net/$image
+  occurrances: 2
+- url: https://api-js.datadome.co/js/
+  query: null
+  filter: '||datadome.co^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||datadome.co^$third-party
+  occurrances: 1
+- url: >-
+    https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/8f1723178b7c/RC6d06c68917d84e94b03fdb45321f2626-source.min.js
+  query: null
+  filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  occurrances: 1
+- url: https://es-config.sensic.net/s2s-web.js
+  query: null
+  filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  occurrances: 1
+- url: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2223
+  query:
+    id: 2223
+  filter: '||mrf.io/statics/marfeel-sdk.js'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||mrf.io/statics/marfeel-sdk.js
+  occurrances: 1
+- url: >-
+    https://adobedc.demdex.net/ee/v1/identity/acquire?configId=9ad480a3-985a-4cc5-9907-d80eae43012e&requestId=2cbb5059-02bf-4e53-9db4-38b626c0b53e
+  query:
+    configId: 9ad480a3-985a-4cc5-9907-d80eae43012e
+    requestId: 2cbb5059-02bf-4e53-9db4-38b626c0b53e
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  occurrances: 1
+- url: >-
+    https://match.adsrvr.org/track/cmf/generic?ttd_pid=aam&gdpr=0&gdpr_consent=&domain=elpais.com&ttd_tpi=1
+  query:
+    ttd_pid: aam
+    gdpr: 0
+    gdpr_consent: ''
+    domain: elpais.com
+    ttd_tpi: 1
+  filter: '||adsrvr.org^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+      source: >-
+        requested from
+        https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+        and matched with easyprivacy.txt filter ||adsrvr.org^$third-party
+  occurrances: 1
+- url: >-
+    https://177301132521079433059ddc42d376b0a6829d1cfb217aaab1354a85.trk.sensic.net/tp.gif?m=ElpaisWeb&r=elpais.com&p=es1&instanceid=177301132521079433059DDC42D376B0A6829D1CFB217AAAB1354A85&ipad=false&redirect=manual
+  query:
+    m: ElpaisWeb
+    r: elpais.com
+    p: es1
+    instanceid: 177301132521079433059DDC42D376B0A6829D1CFB217AAAB1354A85
+    ipad: false
+    redirect: manual
+  filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  occurrances: 1
+- url: https://es-config.sensic.net/3pc.html
+  query: null
+  filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||sensic.net^$third-party
+  occurrances: 1
+- url: https://es1-s2s.sensic.net/
+  query: null
+  filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  occurrances: 1
+- url: >-
+    https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEHMibjYaabWuEIgnvQO9uuQ&google_cver=1?gdpr=0&gdpr_consent=
+  query:
+    gdpr: 0
+    gdpr_consent: ''
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+      source: >-
+        requested from
+        https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+        and matched with easyprivacy.txt filter ||demdex.net^
+  occurrances: 1
+- url: >-
+    https://edge.adobedc.net/ee/irl1/v1/interact?configId=9ad480a3-985a-4cc5-9907-d80eae43012e&requestId=fdf3a0fd-98be-4631-a81f-2d946834b991
+  query:
+    configId: 9ad480a3-985a-4cc5-9907-d80eae43012e
+    requestId: fdf3a0fd-98be-4631-a81f-2d946834b991
+  filter: '||edge.adobedc.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||edge.adobedc.net^
+  occurrances: 1
+- url: >-
+    https://localhost.sensic.net:54325/?&m=ElpaisWeb&r=elpais.com&p=es1&instanceid=177301132521079433059DDC42D376B0A6829D1CFB217AAAB1354A85&ipad=false&redirect=manual
+  query:
+    '': null
+    m: ElpaisWeb
+    r: elpais.com
+    p: es1
+    instanceid: 177301132521079433059DDC42D376B0A6829D1CFB217AAAB1354A85
+    ipad: false
+    redirect: manual
+  filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  occurrances: 1
+- url: >-
+    https://dpm.demdex.net/ibs:dpid=175765&dpuuid=096be4ff0a5b2b0c89575be954a44fa9
+  query: null
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+      source: >-
+        requested from
+        https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+        and matched with easyprivacy.txt filter ||demdex.net^
+  occurrances: 1
+- url: >-
+    https://prisacom.tt.omtrdc.net/rest/v1/delivery?client=prisacom&sessionId=f4fc5aa2a94449da976a49c36cb3dcd9&version=2.11.4
+  query:
+    client: prisacom
+    sessionId: f4fc5aa2a94449da976a49c36cb3dcd9
+    version: 2.11.4
+  filter: $ping,third-party
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  occurrances: 1
+- url: >-
+    https://smetrics.elpais.com/b/ss/prisacomglobal/1/JS-2.23.0-LGPQ/s75076294532614?AQB=1&ndh=1&pf=1&t=9%2F2%2F2026%200%3A8%3A45%201%20-60&cid.&user_id.&id=not-set&as=1&.user_id&AdobeCampaignID.&id=not-set&as=1&.AdobeCampaignID&.cid&sdid=31347A0F99EEE2B9-266CB626B72E48DE&mid=18158554975217966863388328504148828715&aamlh=6&ce=UTF-8&ns=prisacom&cdp=2&pageName=elpaiscom%2F&g=https%3A%2F%2Felpais.com%2F&c.&getTimeParting=6.3&getNewRepeat=3.0&getVisitNum=4.2&.c&cc=EUR&ch=home&server=elpais.com&events=event2%2Cevent91&aamb=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&c1=home&v1=D%3Dg&h1=D%3Dc18%2B%22%3E%22%2Bc19%2B%22%3E%22%2Bc20%2B%22%3E%22%2Bc1%2B%22%3E%22pageName&c3=portada&v3=D%3DpageName&v4=D%3Dch&c5=D%3Dg&v5=D%3Dc1&c6=D%3Dr&v7=D%3Dc3&c17=web&v17=D%3Dc17&c19=el%20pais&v19=D%3Dc19&c20=elpais.com&v20=D%3Dc20&c21=New&v21=D%3Dc21&v27=https%3A%2F%2Felpais.com%2F&c28=1&v28=D%3Dc28&c31=informacion&v31=1773011237295_51126642&c34=18158554975217966863388328504148828715&v41=ElpaisWeb&c42=anonimo&v43=D%3Dc34&c45=EL%20PA%C3%8DS%3A%20el%20peri%C3%B3dico%20global&v45=EL%20PA%C3%8DS%3A%20el%20peri%C3%B3dico%20global&c47=espa%C3%B1a&v47=D%3Dc47&c49=0&v49=D%3Dc49&c50=arc&v50=D%3Dc50&c53=https%3A%2F%2Felpais.com%2F&v53=D%3Dc53&v55=not-set&c61=espa%C3%B1a&v61=D%3Dc61&v62=D%3Dc31&v63=D%3Dr&c66=secuencial&v66=D%3Dc66&c67=NA&v81=D%3Dmid&v92=anonimo&v93=not-set&v96=22135&v101=launch-ep-8.46&v102=2.23.0&v103=Visitor%205.5.0&v104=smetrics.elpais.com&v105=no-needed&v107=elpais_web%2Fportada&v109=not-set&v112=not-set&v151=free&v153=abierto&v154=not-set&v155=none&v156=no-suscriptor&v157=inactivo&v159=not-set&v160=not-set&v161=not-set&v166=elpaiscom%2F&v170=EL%20PA%C3%8DS%3A%20el%20peri%C3%B3dico%20global&v191=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2Clike%20Gecko%29%20Chrome%2F126.0.6478.126%20Safari%2F537.36&v193=none&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=2387401053DB208C0A490D4C%40AdobeOrg&AQE=1
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 9/2/2026 0:8:45 1 -60
+    cid.: null
+    user_id.: null
+    id: not-set
+    as: 1
+    .user_id: null
+    AdobeCampaignID.: null
+    .AdobeCampaignID: null
+    .cid: null
+    sdid: 31347A0F99EEE2B9-266CB626B72E48DE
+    mid: 1.8158554975217968e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: prisacom
+    cdp: 2
+    pageName: elpaiscom/
+    g: https://elpais.com/
+    c.: null
+    getTimeParting: 6.3
+    getNewRepeat: 3
+    getVisitNum: 4.2
+    .c: null
+    cc: EUR
+    ch: home
+    server: elpais.com
+    events: event2,event91
+    aamb: RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y
+    c1: home
+    v1: D=g
+    h1: D=c18+">"+c19+">"+c20+">"+c1+">"pageName
+    c3: portada
+    v3: D=pageName
+    v4: D=ch
+    c5: D=g
+    v5: D=c1
+    c6: D=r
+    v7: D=c3
+    c17: web
+    v17: D=c17
+    c19: el pais
+    v19: D=c19
+    c20: elpais.com
+    v20: D=c20
+    c21: New
+    v21: D=c21
+    v27: https://elpais.com/
+    c28: 1
+    v28: D=c28
+    c31: informacion
+    v31: '1773011237295_51126642'
+    c34: 1.8158554975217968e+37
+    v41: ElpaisWeb
+    c42: anonimo
+    v43: D=c34
+    c45: 'EL PAÍS: el periódico global'
+    v45: 'EL PAÍS: el periódico global'
+    c47: españa
+    v47: D=c47
+    c49: 0
+    v49: D=c49
+    c50: arc
+    v50: D=c50
+    c53: https://elpais.com/
+    v53: D=c53
+    v55: not-set
+    c61: españa
+    v61: D=c61
+    v62: D=c31
+    v63: D=r
+    c66: secuencial
+    v66: D=c66
+    c67: NA
+    v81: D=mid
+    v92: anonimo
+    v93: not-set
+    v96: 22135
+    v101: launch-ep-8.46
+    v102: 2.23.0
+    v103: Visitor 5.5.0
+    v104: smetrics.elpais.com
+    v105: no-needed
+    v107: elpais_web/portada
+    v109: not-set
+    v112: not-set
+    v151: free
+    v153: abierto
+    v154: not-set
+    v155: none
+    v156: no-suscriptor
+    v157: inactivo
+    v159: not-set
+    v160: not-set
+    v161: not-set
+    v166: elpaiscom/
+    v170: 'EL PAÍS: el periódico global'
+    v191: >-
+      Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML,like Gecko)
+      Chrome/126.0.6478.126 Safari/537.36
+    v193: none
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 2387401053DB208C0A490D4C@AdobeOrg
+    AQE: 1
+  filter: '||smetrics.elpais.com^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||smetrics.elpais.com^
+  occurrances: 1
+- url: >-
+    https://dpm.demdex.net/ibs:dpid=963840&dpuuid=098c60a2-60b2-4bed-9c49-1fa846f82969
+  query: null
+  filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:45 GMT
+  stack:
+    - fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+      source: >-
+        requested from
+        https://prisacom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Felpais.com
+        and matched with easyprivacy.txt filter ||demdex.net^
+  occurrances: 1
+- url: https://events.newsroom.bi/ingest.php
+  query: null
+  filter: '||events.newsroom.bi^'
+  listName: easyprivacy.txt
+  timestamp: Sun, 08 Mar 2026 23:08:52 GMT
+  stack:
+    - fileName: https://elpais.com/
+      source: >-
+        requested from https://elpais.com/ and matched with easyprivacy.txt
+        filter ||events.newsroom.bi^
+  occurrances: 1
