@@ -1,0 +1,152 @@
+2026-06-09 03:25:54,367 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 515086810: Launching browser...
+2026-06-09 03:25:54,369 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Spawn attempt 0 
+2026-06-09 03:25:54,374 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for TaskManager
+2026-06-09 03:25:54,390 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 515086810: Saved extension config file to: /tmp/firefox_profile_ve9zdke0/browser_params.json
+2026-06-09 03:25:54,406 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968354406	geckodriver	INFO	Listening on 127.0.0.1:32031
+2026-06-09 03:25:54,443 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968354443	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/home/pedro/Escritorio ...  "--headless" "--width=1366" "--height=768" "--remote-debugging-port" "51647" "--remote-allow-hosts" "localhost" "-no-remote"
+2026-06-09 03:25:54,507 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: *** You are running in headless mode.
+2026-06-09 03:25:54,638 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.warn: services.settings: Ignoring preference override of remote settings server
+2026-06-09 03:25:54,639 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2026-06-09 03:25:55,397 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968355396	Marionette	INFO	Marionette enabled
+2026-06-09 03:25:55,671 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.error: "Warning: unrecognized command line flag" "-width"
+2026-06-09 03:25:55,672 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.error: "Warning: unrecognized command line flag" "-height"
+2026-06-09 03:25:55,722 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968355721	Marionette	INFO	Listening on port 32803
+2026-06-09 03:25:55,756 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: Read port: 32803
+2026-06-09 03:25:55,769 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: WebDriver BiDi listening on ws://127.0.0.1:51647
+2026-06-09 03:25:55,881 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968355881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2026-06-09 03:25:59,374 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-06-09 03:26:00,766 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 515086810: OpenWPM Firefox extension loaded
+2026-06-09 03:26:00,783 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for Browser-515086810
+2026-06-09 03:26:00,784 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Looking for extension port information in /tmp/firefox_profile_ve9zdke0
+2026-06-09 03:26:00,788 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Connecting to extension on port 31221
+2026-06-09 03:26:00,789 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2026-06-09 03:26:00,792 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_ve9zdke0/extension_port.txt
+2026-06-09 03:26:00,794 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2026-06-09 03:26:00,798 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2026-06-09 03:26:00,849 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2026-06-09 03:26:00,894 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2026-06-09 03:26:00,908 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_ve9zdke0/OPENWPM_STARTUP_SUCCESS.txt
+2026-06-09 03:26:00,993 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: BrowserManager ready.
+2026-06-09 03:26:00,993 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Browser spawn successful!
+2026-06-09 03:26:01,047 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for StorageControllerHandle
+2026-06-09 03:26:01,050 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id -1
+2026-06-09 03:26:01,051 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id -1 while finalizing
+2026-06-09 03:26:01,055 - MainProcess[MainThread]- task_manager         - INFO    : 
+
+OpenWPM Version: b'v0.32.0'
+Firefox Version: b'148.0'
+
+========== Manager Configuration ==========
+{
+  "_failure_limit": null,
+  "data_directory": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/abc.es_20260609_032549/openwpm",
+  "log_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/abc.es_20260609_032549/openwpm/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    10455
+  ],
+  "memory_watchdog": false,
+  "num_browsers": 1,
+  "process_watchdog": false,
+  "screenshot_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/abc.es_20260609_032549/openwpm/screenshots",
+  "source_dump_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/abc.es_20260609_032549/openwpm/sources",
+  "storage_controller_address": [
+    "127.0.0.1",
+    35727
+  ],
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "browser_id": 0,
+  "bot_mitigation": 1,
+  "browser": 2,
+  "callstack_instrument": 3,
+  "cookie_instrument": 4,
+  "custom_params": 5,
+  "display_mode": 6,
+  "dns_instrument": 7,
+  "donottrack": 8,
+  "http_instrument": 9,
+  "js_instrument": 10,
+  "js_instrument_settings": 11,
+  "maximum_profile_size": 12,
+  "navigation_instrument": 13,
+  "prefs": 14,
+  "profile_path": 15,
+  "recovery_tar": 16,
+  "save_content": 17,
+  "tmp_profile_dir": 18,
+  "tp_cookies": 19,
+  "tracking_protection": 20
+}
+
+        0  1      2        3      4     5    6         7     8      9     10    11                             12    13    14    15    16    17     18    19      20
+---------  -----  -------  -----  ----  ---  --------  ----  -----  ----  ----  -----------------------------  ----  ----  ----  ----  ----  -----  ----  ------  -----
+515086810  False  firefox  False  True  {}   headless  True  False  True  True  ['collection_fingerprinting']        True  {}                False  /tmp  always  False
+
+========== JS Instrument Settings ==========
+{"515086810":[{"object":"window['ScriptProcessorNode'].prototype","instrumentedName":"ScriptProcessorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['GainNode'].prototype","instrumentedName":"GainNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AnalyserNode'].prototype","instrumentedName":"AnalyserNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OscillatorNode'].prototype","instrumentedName":"OscillatorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OfflineAudioContext'].prototype","instrumentedName":"OfflineAudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AudioContext'].prototype","instrumentedName":"AudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['RTCPeerConnection'].prototype","instrumentedName":"RTCPeerConnection","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['HTMLCanvasElement'].prototype","instrumentedName":"HTMLCanvasElement","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['Storage'].prototype","instrumentedName":"Storage","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.navigator","instrumentedName":"window.navigator","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['CanvasRenderingContext2D'].prototype","instrumentedName":"CanvasRenderingContext2D","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":["canvas","moveTo","lineTo","transform","clearRect","beginPath","closePath","translate","drawImage","globalAlpha","quadraticCurveTo","setTransform"],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window","instrumentedName":"window","logSettings":{"propertiesToInstrument":["name","localStorage","sessionStorage"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.document","instrumentedName":"window.document","logSettings":{"propertiesToInstrument":["cookie","referrer"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":true,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.screen","instrumentedName":"window.screen","logSettings":{"propertiesToInstrument":["pixelDepth","colorDepth"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}}]}
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2026-06-09 03:26:01,057 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2026-06-09 03:26:01,058 - MainProcess[BrowserManagerHandle-515086810]- browser_manager      - INFO    : Starting to work on CommandSequence with visit_id 1156131029424457 on browser with id 515086810
+2026-06-09 03:26:01,060 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for StorageControllerHandle, because the underlying socket closed
+2026-06-09 03:26:01,060 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 515086810: EXECUTING COMMAND: InitializeCommand()
+2026-06-09 03:26:01,062 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 515086810: EXECUTING COMMAND: GetCommand(https://www.abc.es,15)
+2026-06-09 03:26:01,093 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2026-06-09 03:26:04,376 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:09,377 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:14,378 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:19,382 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:24,264 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 515086810: EXECUTING COMMAND: FinalizeCommand(5)
+2026-06-09 03:26:24,384 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:24,390 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript warning: https://www.abc.es/, line 6: Script terminated by timeout at:
+2026-06-09 03:26:24,391 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: nrWrapper@https://www.abc.es/:6:8739
+2026-06-09 03:26:24,392 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 
+2026-06-09 03:26:24,440 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-09 03:26:24,441 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-09 03:26:24,442 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-09 03:26:24,442 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-09 03:26:24,604 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-09 03:26:29,390 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-09 03:26:29,436 - MainProcess[BrowserManagerHandle-515086810]- browser_manager      - INFO    : Finished working on CommandSequence with visit_id 1156131029424457 on browser with id 515086810
+2026-06-09 03:26:29,438 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id 1156131029424457
+2026-06-09 03:26:29,440 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id 1156131029424457 while finalizing
+2026-06-09 03:26:30,508 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: JavaScript error: moz-src:///browser/components/search/SearchOneOffs.sys.mjs, line 392: TypeError: aEngine.getIconURL is not a function
+2026-06-09 03:26:31,437 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Closing browser manager...
+2026-06-09 03:26:31,439 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Closing browser...
+2026-06-09 03:26:31,439 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Joining command thread
+2026-06-09 03:26:31,440 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: 0.000080 seconds to join command thread
+2026-06-09 03:26:31,448 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 1780968391448	Marionette	INFO	Stopped listening on port 32803
+2026-06-09 03:26:32,140 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+2026-06-09 03:26:32,176 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: console.error: WebExtensions:
+2026-06-09 03:26:32,176 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for Browser-515086810, because the underlying socket closed
+2026-06-09 03:26:32,176 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///tmp/addon-6ae7b883-22fa-439e-9f16-f6c1b2579b68.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 49"  data: no]
+2026-06-09 03:26:32,176 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: Stack:
+2026-06-09 03:26:32,177 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: onInputStreamReady@jar:file:///tmp/addon-6ae7b883-22fa-439e-9f16-f6c1b2579b68.xpi!/privileged/sockets/api.js:49:33
+2026-06-09 03:26:32,177 - MainProcess[log-interceptor-515086810]- selenium_firefox     - DEBUG   : BROWSER 515086810: driver: 
+2026-06-09 03:26:32,367 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: Browser manager closed successfully.
+2026-06-09 03:26:32,368 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 515086810: during_init=False | profile_archive_dir=None
+2026-06-09 03:26:32,416 - MainProcess[MainThread]- storage_controller   - DEBUG   : Sending the shutdown signal to the Storage Controller...
+2026-06-09 03:26:32,416 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for TaskManager, because the underlying socket closed
+2026-06-09 03:26:34,392 - MainProcess[MainThread]- storage_controller   - INFO    : Received shutdown signal!
+2026-06-09 03:26:34,393 - MainProcess[MainThread]- storage_controller   - INFO    : Closing Server
+2026-06-09 03:26:34,393 - MainProcess[MainThread]- storage_controller   - INFO    : Closed Server
+2026-06-09 03:26:34,394 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling status_queue_update
+2026-06-09 03:26:34,394 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled status_queue_update
+2026-06-09 03:26:34,394 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling timeout_check
+2026-06-09 03:26:34,395 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled timeout_check
+2026-06-09 03:26:34,395 - MainProcess[MainThread]- storage_controller   - INFO    : Starting wait_closed
+2026-06-09 03:26:34,395 - MainProcess[MainThread]- storage_controller   - INFO    : Completed wait_closed
+2026-06-09 03:26:34,395 - MainProcess[MainThread]- storage_controller   - INFO    : Entering self.shutdown
+2026-06-09 03:26:39,403 - MainProcess[MainThread]- storage_controller   - INFO    : structured_storage is shut down
+2026-06-09 03:26:39,416 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageControllerHandle took 6.9991254806518555 seconds to close.

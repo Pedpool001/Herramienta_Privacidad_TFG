@@ -1,0 +1,1458 @@
+{
+  "abc_es": {
+    "PRE": [
+      {
+        "name": "geo",
+        "value": "{\"c\": \"ES\",\"r\": \"MU\",\"o\": \"EU\"}",
+        "path": "/",
+        "domain": "www.abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781051218,
+        "sameSite": "None"
+      },
+      {
+        "name": "ev_sid",
+        "value": "6a275dd36a809528ea558475",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812068819,
+        "sameSite": "None"
+      },
+      {
+        "name": "ev_did",
+        "value": "6a275dd36a809528ea558474",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812068819,
+        "sameSite": "None"
+      },
+      {
+        "name": "didomi_token",
+        "value": "eyJ1c2VyX2lkIjoiMTllYTljNjgtMzg0Ny02MGZiLTgzZDMtNTFmN2NjMTQwOTZlIiwiY3JlYXRlZCI6IjIwMjYtMDYtMDlUMDA6MjY6NTkuODQ0WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTA5VDAwOjI2OjU5Ljg0NFoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812587219,
+        "sameSite": "None"
+      },
+      {
+        "name": "vtm_op",
+        "value": "true",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "1",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "s_ecid",
+        "value": "MCMID%7C78981221209708940893199409158945831032",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1844036820,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_information",
+        "value": "{}",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500820,
+        "sameSite": "None"
+      },
+      {
+        "name": "voc_edtn",
+        "value": "nacional",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500820,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_uuid",
+        "value": "0780e8a1-f4ca-45eb-b450-fd6824bcce62",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500820,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_nfryl_volver_al_origen",
+        "value": "https%3A%2F%2Fwww.abc.es%2F",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1781051220,
+        "sameSite": "None"
+      },
+      {
+        "name": "voc_paywall",
+        "value": "https://www.abc.es|anonimo",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500820,
+        "sameSite": "None"
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22fe85d612-6e8e-41c5-94ea-500001f5b187%5C%22%2C%5B1780964820%2C662000000%5D%5D%22%5D%5D%5D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1814660820,
+        "sameSite": "None"
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+        "value": "CiY3ODk4MTIyMTIwOTcwODk0MDg5MzE5OTQwOTE1ODk0NTgzMTAzMlIRCJuQms7qMxgBKgRJUkwxMAPwAZuQms7qMw%3D%3D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1815092820,
+        "sameSite": "None"
+      },
+      {
+        "name": "voc-rtim",
+        "value": "{ \"geo-europe\" : false}",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1783556820,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "179643557%7CMCIDTS%7C20614%7CMCMID%7C78981221209708940893199409158945831032%7CMCAAMLH-1781569620%7C6%7CMCAAMB-1781569620%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1780972020s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20621%7CvVersion%7C5.5.0",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1844123221,
+        "sameSite": "None"
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+        "value": "irl1",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1780966621,
+        "sameSite": "None"
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol8eG8y47mTVVa7FwpPDV3e_Z4jr17BknasdJI-rrk2GukeHtoXdy0izhiMQYyxEC5n5WcT5BX09sVOA_8r8YcOyGE2Vt1UgH8m-1Shn8q-DXDM0UbYg7Y4OM0HpEMVSyxoi5R6MfB4uxJrffohGyYVRhGBfbA%3D%3D%22%5D%5D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1812500822,
+        "sameSite": "None"
+      }
+    ],
+    "POST": [
+      {
+        "name": "geo",
+        "value": "{\"c\": \"ES\",\"r\": \"MU\",\"o\": \"EU\"}",
+        "path": "/",
+        "domain": "www.abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781051218,
+        "sameSite": "None"
+      },
+      {
+        "name": "ev_sid",
+        "value": "6a275dd36a809528ea558475",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812068819,
+        "sameSite": "None"
+      },
+      {
+        "name": "ev_did",
+        "value": "6a275dd36a809528ea558474",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812068819,
+        "sameSite": "None"
+      },
+      {
+        "name": "vtm_op",
+        "value": "true",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "1",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "s_ecid",
+        "value": "MCMID%7C78981221209708940893199409158945831032",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1844036820,
+        "sameSite": "None"
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22fe85d612-6e8e-41c5-94ea-500001f5b187%5C%22%2C%5B1780964820%2C662000000%5D%5D%22%5D%5D%5D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1814660820,
+        "sameSite": "None"
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+        "value": "CiY3ODk4MTIyMTIwOTcwODk0MDg5MzE5OTQwOTE1ODk0NTgzMTAzMlIRCJuQms7qMxgBKgRJUkwxMAPwAZuQms7qMw%3D%3D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1815092820,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "179643557%7CMCIDTS%7C20614%7CMCMID%7C78981221209708940893199409158945831032%7CMCAAMLH-1781569620%7C6%7CMCAAMB-1781569620%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1780972020s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20621%7CvVersion%7C5.5.0",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1844123221,
+        "sameSite": "None"
+      },
+      {
+        "name": "didomi_token",
+        "value": "eyJ1c2VyX2lkIjoiMTllYTljNjgtMzg0Ny02MGZiLTgzZDMtNTFmN2NjMTQwOTZlIiwiY3JlYXRlZCI6IjIwMjYtMDYtMDlUMDA6MjY6NTkuODQ0WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTA5VDAwOjI3OjE4LjU0OVoiLCJ2ZW5kb3JzIjp7ImVuYWJsZWQiOlsiZ29vZ2xlIiwidHdpdHRlciIsImFtYXpvbiIsImM6cHVscG9hbmUteDREbUdValYiLCJjOmdvb2dsZWFuYS00VFhuSmlnUiIsImM6cGVuZHVsYXItTWZna0JkQWUiLCJjOmluZGlnaXRhbGwtUDNGNGlmVzQiLCJjOnZpZGVvbG9neSJdfSwicHVycG9zZXMiOnsiZW5hYmxlZCI6WyJnZW9sb2NhdGlvbl9kYXRhIiwiZGV2aWNlX2NoYXJhY3RlcmlzdGljcyJdfSwidmVuZG9yc19saSI6eyJlbmFibGVkIjpbImdvb2dsZSJdfSwidmVyc2lvbiI6MiwiYWMiOiJET3VBLUFFWUFMSUFiQUJpQUhtQWVxQkVRQ0pJRVV3SlJBVE9BdEFCaFlER0FHZFFPSkFjb0JBd0NRd0U1d0t6d1dqQXRKQmM2QzZvR0hFTVRneFBCamNESEVHYmdNNncuRE91QS1BRVlBTElBYkFCaUFIbUFlcUJFUUNKSUVVd0pSQVRPQXRBQmhZREdBR2RRT0pBY29CQXdDUXdFNXdLendXakF0SkJjNkM2b0dIRU1UZ3hQQmpjREhFR2JnTTZ3In0=",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812587238,
+        "sameSite": "None"
+      },
+      {
+        "name": "euconsent-v2",
+        "value": "CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf9_hr7sQxBgbIkm4FzLvW7JwG32EbNAzatiYKmRIAu3TBIQNlHJDURUCgKIgVrzDMaE2UoTNKJ6BkiFMZY2NQCFhum4tjeQCY4ur_9kdwmR-t7dr-2dzy26hnv3a9fuS1UJCdIYetDev-ZBOS-9IE9-x8v4v4_MbpEm8eS1n_tGtp4jc6Yvv6dBgAAAAAAAAEEwwAQCQgIIACIEAgEACAAAAgCwgAIEAQAAIAEAEAAAgAIgQAACAAAAAAAAMEAAAAQAAAgAAEAAAAACAAgAAAAAAAAAYAEAAEABAwABgAgBAAAAAEQMAQAAAAEAACICAgQAQAAAgAZCABKAgAAggABCAAAAQIBAAACAABAACAQBAIASgFIgEAAEAQAAAAAAEAAJACgLAAQFAACEAUpABgACDJASADAAEGSC0AGAAIMkDoAMAAQZIIQAYAAgyQ.IKANR_G__bXlv-bb36btkeYxf9_hr7sQxBgbIsm4FzLvW7JwG32EbNEzatiYKmRIAu3TBIQNtHJjURUChKIgVrzDMaE2UoTNKJ-BkiHMZY2NQCFhum4tjeQCZ4ur_9kdwmR-t7dr-2dzy27hnv3a9fuS1UJidKYetHev-ZBOS-_IU9_x-_4v4_MbpEm8eS1v_tWtt43c64vv6dJgAAAAAAAAEAAA.f_wAABAAAAAA",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812587238,
+        "sameSite": "None"
+      },
+      {
+        "name": "kangaroo",
+        "value": "c81461bf-ad66-4a9a-a203-72eee3d8fdb3",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1807230440,
+        "sameSite": "None"
+      },
+      {
+        "name": "Y3djb25zZW50",
+        "value": "1",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500841,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "permutive-id",
+        "value": "2b51df23-b6f8-4f2c-a9fd-c5274970d10f",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796779642,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_information",
+        "value": "{}",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500842,
+        "sameSite": "None"
+      },
+      {
+        "name": "voc_edtn",
+        "value": "nacional",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500842,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_uuid",
+        "value": "0780e8a1-f4ca-45eb-b450-fd6824bcce62",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500842,
+        "sameSite": "None"
+      },
+      {
+        "name": "vocuser_nfryl_volver_al_origen",
+        "value": "https%3A%2F%2Fwww.abc.es%2F",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1781051242,
+        "sameSite": "None"
+      },
+      {
+        "name": "voc_paywall",
+        "value": "https://www.abc.es|anonimo",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500842,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gads",
+        "value": "ID=4aefd360218326cc:T=1780964843:RT=1780964843:S=ALNI_MZxQ6AFCdiaqb7siD5rNNZmhgFAkA",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1814660843,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gpi",
+        "value": "UID=0000142759f9e8a1:T=1780964843:RT=1780964843:S=ALNI_Ma583I9bDGBDH2xg3cYH5SDXg21VQ",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1814660843,
+        "sameSite": "None"
+      },
+      {
+        "name": "__eoi",
+        "value": "ID=1b9889046a01e2fe:T=1780964843:RT=1780964843:S=AA-AfjbFWDOogn6LA_qtOMQ4fvLo",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796516843,
+        "sameSite": "None"
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+        "value": "irl1",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1780966643,
+        "sameSite": "None"
+      },
+      {
+        "name": "sui_1pc",
+        "value": "17809648437265B25F3105F4A2237DEEE2959051FB451B4A330E18B5",
+        "path": "/",
+        "domain": "www.abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1844036843,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "voc-rtim",
+        "value": "{ \"geo-europe\" : false}",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1783556843,
+        "sameSite": "None"
+      },
+      {
+        "name": "___nrbic",
+        "value": "2|tgc99m|tgc99m|tgc99m|dd41df16-9798-4392-9096-5178055769f8|%5B%5D|true|1|https%3A%2F%2Fwww.abc.es%2F|https%3A%2F%2Fwww.abc.es%2F||true||",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796520443,
+        "sameSite": "None"
+      },
+      {
+        "name": "compass_uid",
+        "value": "8134fa45-2fbd-4c70-bf6b-09dfd5825cfc",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796520443,
+        "sameSite": "None"
+      },
+      {
+        "name": "___nrbi",
+        "value": "2|tgc99m|8134fa45-2fbd-4c70-bf6b-09dfd5825cfc|%5B%5B%22mrfExperiment_RecommenderABtest%22%2C%221%22%5D%5D|tgc99m|1||0||",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796520443,
+        "sameSite": "None"
+      },
+      {
+        "name": "__rtbh.uid",
+        "value": "%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22c81461bf-ad66-4a9a-a203-72eee3d8fdb3%22%2C%22expiryDate%22%3A%222027-06-09T00%3A27%3A25.171Z%22%7D",
+        "path": "/",
+        "domain": "www.abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500845,
+        "sameSite": "None"
+      },
+      {
+        "name": "__rtbh.lid",
+        "value": "%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22z3UdcgY8Eqs5972qRKcM%22%2C%22expiryDate%22%3A%222027-06-09T00%3A27%3A25.171Z%22%7D",
+        "path": "/",
+        "domain": "www.abc.es",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1812500845,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.1171365777.1780964845",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1788740845,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga_SJ3E3BDGTQ",
+        "value": "GS2.1.s1780964845$o1$g0$t1780964845$j60$l0$h1680992320",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1844036845,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.2037901098.1780964846",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1844036845,
+        "sameSite": "None"
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol_1QVXCDk-1BdAka35tooOGMOI8AyzwAxfaxjDMYhGOhTS3UlLH3w_x7enlCTGnH2RbrlcONhgEG8PEG1LAj8dCqtdoc1wa8JPRjaOxJHCoWmhvv8-IWaeBuT4e46xJWHq86_9an8Us0EZbJLBLx77BdGEGxA%3D%3D%22%5D%5D",
+        "path": "/",
+        "domain": ".abc.es",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1812500846,
+        "sameSite": "None"
+      }
+    ]
+  },
+  "marca_com": {
+    "PRE": [
+      {
+        "name": "apw_cache",
+        "value": "c91c2b6b-043c-4736-8b3d-499d19beb6e4.1780433386.4AxfLg.ES.0...0.0..0.MFXKv5ohBM0G8HM0gbtzr0ErxZEH4EGp6aq7xwfJMek",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": true,
+        "expiry": 1811969386,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_idusr",
+        "value": "ah9B638AAQEAACtWYs0-2469fd8d0b96d3daee050a59f129be19",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875124187,
+        "sameSite": "None"
+      },
+      {
+        "name": "UE_pref",
+        "value": "%7B%22v%22%3A%22n%22%2C%22d%22%3A%22e%22%2C%22u%22%3A0%2C%22c%22%3A%224%22%7D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875041387,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_edition",
+        "value": "%7B%22e%22%3A%22n%22%2C%22v%22%3A3%7D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875041387,
+        "sameSite": "None"
+      },
+      {
+        "name": "ue_privacyPolicy",
+        "value": "22",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1845233387,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%2205c8a401-586f-4305-a397-5a866f6d4682%5C%22%2C%5B1780433389%2C821000000%5D%5D%22%5D%5D%5D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1814129389,
+        "sameSite": "None"
+      },
+      {
+        "name": "ue_consentState",
+        "value": "%7B%22step%22%3A1%7D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780436990,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "didomi_token",
+        "value": "eyJ1c2VyX2lkIjoiMTllOGExOTgtOWY5Zi02ODQ0LWIyMGMtY2E3NTczMjdiYzVmIiwiY3JlYXRlZCI6IjIwMjYtMDYtMDJUMjA6NDk6NTAuMDczWiIsInVwZGF0ZWQiOiIyMDI2LTA2LTAyVDIwOjQ5OjUwLjA3NFoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1812055790,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gat_gtag_UA_181957286_2",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780433450,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_section",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_article_title",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_newsID",
+        "value": "8c257d307923b2499acef663",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_entry_referrer",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "counter_page_view",
+        "value": "1>cont_expires=Tue, 02 Jun 2026 21:19:50 GMT>entryref=directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780435190,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_kw_landing_page",
+        "value": "",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_url_qs_landing_page",
+        "value": "https://www.marca.com/",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "channeloriginator",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969390,
+        "sameSite": "None"
+      },
+      {
+        "name": "channelcloser",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969390,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_subsection",
+        "value": "no aplica",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_text_journalist",
+        "value": "no aplica",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "be_logreg_title_conversionâ",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "utag_clean_done",
+        "value": "1",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781038190,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_suscrp",
+        "value": "suscrip_yes",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519791,
+        "sameSite": "None"
+      },
+      {
+        "name": "_hjSessionUser_413277",
+        "value": "eyJpZCI6IjM2OTE4MTA0LTE0NGEtNWU5Yy04MDA2LTdlNDIxZDIwMjEyNSIsImNyZWF0ZWQiOjE3ODA0MzMzOTE2NzIsImV4aXN0aW5nIjpmYWxzZX0=",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1811969391,
+        "sameSite": "None"
+      },
+      {
+        "name": "_hjSession_413277",
+        "value": "eyJpZCI6IjdmMDY3MTEyLWVmNTEtNGIzMC1iM2E3LWM3NzJkMjY3ZjE5NCIsImMiOjE3ODA0MzMzOTE2NzIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1780435191,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMP_TOKEN",
+        "value": "%24NOT_FOUND",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780436991,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.2.881428017.1780433390",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1843505391,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.745234777.1780433390",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519791,
+        "sameSite": "None"
+      },
+      {
+        "name": "cebs",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol_Q8Rm2YZyXjdBeQcapjNhWcImJi4IKPkTzgWHf4uWgV944Y-5Eu22g6PmUeE3YxufWeNq1MnP8n1l9BR5GIvr2g6DlBy2kfmGigwoXRBXwMFnhXXxvW6SC65DNEbbdUlch-dJ5OJt3EIqSDvbcnmZLU1pWGw%3D%3D%22%5D%5D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969391,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ce.clock_data",
+        "value": "-6%2C88.20.229.139%2C1%2C74b1fb8d60361b46c02a85d5bb3623f3%2CFirefox%2CES",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519792,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "cebsp_",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "utag_main",
+        "value": "v_id:019e8a198bca000c1f5a0c1995720504600160090086e$_sn:1$_se:4$_ss:0$_st:1780435192547$ses_id:1780433390539%3Bexp-session$_pn:1%3Bexp-session",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969392,
+        "sameSite": "None"
+      },
+      {
+        "name": "channelflow",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780433452,
+        "sameSite": "None"
+      },
+      {
+        "name": "user_consent_policy",
+        "value": "no choice",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969392,
+        "sameSite": "None"
+      },
+      {
+        "name": "user_consent_gam",
+        "value": "no choice",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969392,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga_V1WMLM3DL4",
+        "value": "GS2.1.s1780433389$o1$g1$t1780433392$j57$l0$h0",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1843505392,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ce.s",
+        "value": "v~9d9c72c32798523e599d85c019274863e0dfe812~vir~new~lva~1780433391841~vpv~0~v11.cs~159390~v11.s~9a5bbb60-5ec4-11f1-a1e0-67def5ef2670~v11.vs~9d9c72c32798523e599d85c019274863e0dfe812~v11.sla~1780433392152~v11.wss~1780433392153~v11.ss~1780433392154~v11ls~9a5bbb60-5ec4-11f1-a1e0-67def5ef2670~gtrk.la~mpx42t0q~lcw~1780433401707",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969401,
+        "sameSite": "Strict"
+      }
+    ],
+    "POST": [
+      {
+        "name": "apw_cache",
+        "value": "c91c2b6b-043c-4736-8b3d-499d19beb6e4.1780433386.4AxfLg.ES.0...0.0..0.MFXKv5ohBM0G8HM0gbtzr0ErxZEH4EGp6aq7xwfJMek",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": true,
+        "expiry": 1811969386,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_idusr",
+        "value": "ah9B638AAQEAACtWYs0-2469fd8d0b96d3daee050a59f129be19",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875124187,
+        "sameSite": "None"
+      },
+      {
+        "name": "UE_pref",
+        "value": "%7B%22v%22%3A%22n%22%2C%22d%22%3A%22e%22%2C%22u%22%3A0%2C%22c%22%3A%224%22%7D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875041387,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_edition",
+        "value": "%7B%22e%22%3A%22n%22%2C%22v%22%3A3%7D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1875041387,
+        "sameSite": "None"
+      },
+      {
+        "name": "ue_privacyPolicy",
+        "value": "22",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1845233387,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%2205c8a401-586f-4305-a397-5a866f6d4682%5C%22%2C%5B1780433389%2C821000000%5D%5D%22%5D%5D%5D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1814129389,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gat_gtag_UA_181957286_2",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780433450,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_section",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_article_title",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_newsID",
+        "value": "8c257d307923b2499acef663",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_entry_referrer",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "counter_page_view",
+        "value": "1>cont_expires=Tue, 02 Jun 2026 21:19:50 GMT>entryref=directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780435190,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_kw_landing_page",
+        "value": "",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_url_qs_landing_page",
+        "value": "https://www.marca.com/",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "channeloriginator",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969390,
+        "sameSite": "None"
+      },
+      {
+        "name": "channelcloser",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969390,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_page_subsection",
+        "value": "no aplica",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ga4_ses_text_journalist",
+        "value": "no aplica",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "be_logreg_title_conversionâ",
+        "value": "portada",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "utag_clean_done",
+        "value": "1",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781038190,
+        "sameSite": "None"
+      },
+      {
+        "name": "MARCA_suscrp",
+        "value": "suscrip_yes",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519791,
+        "sameSite": "None"
+      },
+      {
+        "name": "_hjSessionUser_413277",
+        "value": "eyJpZCI6IjM2OTE4MTA0LTE0NGEtNWU5Yy04MDA2LTdlNDIxZDIwMjEyNSIsImNyZWF0ZWQiOjE3ODA0MzMzOTE2NzIsImV4aXN0aW5nIjpmYWxzZX0=",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1811969391,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMP_TOKEN",
+        "value": "%24NOT_FOUND",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780436991,
+        "sameSite": "None"
+      },
+      {
+        "name": "cebs",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol_Q8Rm2YZyXjdBeQcapjNhWcImJi4IKPkTzgWHf4uWgV944Y-5Eu22g6PmUeE3YxufWeNq1MnP8n1l9BR5GIvr2g6DlBy2kfmGigwoXRBXwMFnhXXxvW6SC65DNEbbdUlch-dJ5OJt3EIqSDvbcnmZLU1pWGw%3D%3D%22%5D%5D",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969391,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ce.clock_data",
+        "value": "-6%2C88.20.229.139%2C1%2C74b1fb8d60361b46c02a85d5bb3623f3%2CFirefox%2CES",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519792,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "cebsp_",
+        "value": "1",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "utag_main",
+        "value": "v_id:019e8a198bca000c1f5a0c1995720504600160090086e$_sn:1$_se:5$_ss:0$_st:1780435208831$ses_id:1780433390539%3Bexp-session$_pn:1%3Bexp-session",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969408,
+        "sameSite": "None"
+      },
+      {
+        "name": "channelflow",
+        "value": "directo",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780433468,
+        "sameSite": "None"
+      },
+      {
+        "name": "user_consent_policy",
+        "value": "no choice",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969408,
+        "sameSite": "None"
+      },
+      {
+        "name": "user_consent_gam",
+        "value": "no choice",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969408,
+        "sameSite": "None"
+      },
+      {
+        "name": "ueUserInformationChecks",
+        "value": "4",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780437008,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "didomi_token",
+        "value": "eyJ1c2VyX2lkIjoiMTllOGExOTgtOWY5Zi02ODQ0LWIyMGMtY2E3NTczMjdiYzVmIiwiY3JlYXRlZCI6IjIwMjYtMDYtMDJUMjA6NDk6NTAuMDczWiIsInVwZGF0ZWQiOiIyMDI2LTA2LTAyVDIwOjUwOjA5LjAxMloiLCJ2ZW5kb3JzIjp7ImVuYWJsZWQiOlsiZ29vZ2xlIiwidHdpdHRlciIsImM6aG90amFyIiwiYzpwdWxwb2FuZS14NERtR1VqViIsImM6eW91dHViZSIsImM6YWRzdGVycmEtTGNuZVJFY2kiLCJjOmNyYXp5LWVnZyIsImM6aGF2YXNtZWRpLUJBRzdwSkRlIiwiYzpnb29nbGVhbmEtNFRYbkppZ1IiLCJjOnRpbnlwYXNzIiwiYzp2d28iLCJjOnVzZXJab29tIiwiYzp0ZWFsaXVtLWp0bnFwWG1mIiwiYzp2aWRlb2xvZ3kiLCJjOnBpYW5vLWFnTE53Q0NXIiwiYzp1bmlkYWRlZGktNDNOSlJqbVEiLCJjOmFpclNoaXAiLCJjOmxhbGlnYS1oZU1nbmRaSCIsImM6cXVhbGlmaW8tckF5OWl3S1giLCJjOnRoZW1vbmV0aS03M1lQa1JXeSIsImM6bWljcm9zb2Z0IiwiYzptZXRhLTM3ZWpOYTc5IiwiYzpzcGFydG9vLUdOeXpaWFA0IiwiYzpiYW5uZXJzbmFjayJdfSwicHVycG9zZXMiOnsiZW5hYmxlZCI6WyJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIiwiZ2VvbG9jYXRpb25fZGF0YSIsImdlb19tYXJrZXRpbmdfc3R1ZGllcyIsInNoYXJlX3doaXRoX290aGVycyIsImVucmljaF90aGlyZCIsImdlb19hZHMiXX0sInZlcnNpb24iOjIsImFjIjoiREhxQ09BQ3NBRzRBUmdBMkFDUEFFcUFNUUFhWUJDZ0NoQUdCQVBNQWV1QTl3RDNnSW1BZXFCQWNDRG9FUkFJa2dSVEFqdUJLSUNXb0ZGUUxYZ1lXQXhXQm1ZRFNRR3NBTjlBY1NBNVFCME1FQWdJRkFRTUFpbEJGY0NMRUVoZ0p6Z1RxZ25uQlBjQ2d3RkNJS0xRVXBBcGhCVHJDczhLMElXQ2hZTUN4ZUZvd1dqZ3RKQmFXQzFJRnRZTGJ3WENndVVCYzZDNm1GNUFYa2d3NEJpY0RHNEdPd01lZy5BQUFBIn0=",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1812055809,
+        "sameSite": "None"
+      },
+      {
+        "name": "euconsent-v2",
+        "value": "CQlLSIAQlLSIAAHABBENChFsAP_gAAAAAAAAMitR_G__bXlr-bb36btkeYxf9_hr7sQxBgbIkm4FzLvW7JwG32EbNAzatiYKmRIAu3TBIQNlHJDURUCgKIgVrzDMaE2U4TtKJ6BkiFMZY2tQCFhum4tjeQCY4ur_9kd0mR-t7dr82dzy26hnv3a9fuS1UJCdIYetDfv-ZBOS-9IE9-x8v4v4_MbpEm8eS1n_tGtp4jc6Yvv6dBmxt-Tyff7Pn_f7lfe7X__e_n3zv8oX37r7____f_-7___2b_-___7___7Z__u__-DGkCkAHAAzQDPgHSASqAyEBowDjwHPgO2AfaA_YCAwEEQIKARpAj0BIgCSQElAJRgTDAn8BQUCjgFHwKpgVgArIBW0CwgFqwLeAXAAuuBdoC7wF7AMQAYwAxoAMSgAwABBkUpABgACDIo6ADAAEGRSEAGAAIMihIAMAAQZFLQAYAAgyKAA.IMitR_G__bXlv-bb36btkeYxf9_hr7sQxBgbIsm4FzLvW7JwG32EbNEzatiYKmRIAu3TBIQNtHJjURUChKIgVrzDMaE2U4TtKJ-BkiHMZY2tQCFhum4tjeQCZ4ur_9kd0mR-t7dr-2dzy27hnv3a9fuS1UJidKYetHfv-ZBOS-_IU9_x-_4v4_MbpEm8eS1v_tWtt43c64vv6dJuxt-Tyff7fv_f73fe7X__e__33_-qX3_r7____________f_________7d_____-A.f_wAAAAAAAAA",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1812055809,
+        "sameSite": "None"
+      },
+      {
+        "name": "___nrbic",
+        "value": "2|tg0v72|tg0v72|tg0v72|3561d26c-b720-4b01-90ed-9e878643f6cd|%5B%5D|true|1|https%3A%2F%2Fwww.marca.com%2F|||true||",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1795989009,
+        "sameSite": "None"
+      },
+      {
+        "name": "___nrbi",
+        "value": "2|tg0v72|2e3ec245-94ba-40de-8426-7adcc6784ec5|%5B%5D|tg0v72|1||||",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1795989009,
+        "sameSite": "None"
+      },
+      {
+        "name": "compass_uid",
+        "value": "2e3ec245-94ba-40de-8426-7adcc6784ec5",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1795989009,
+        "sameSite": "None"
+      },
+      {
+        "name": "_scor_uid",
+        "value": "7086090ce5da426d86ba77e853344324",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1814129409,
+        "sameSite": "None"
+      },
+      {
+        "name": "permutive-id",
+        "value": "0ee21416-1035-4942-9eab-93a3e589d28e",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1796248190,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.2.881428017.1780433390",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1843505409,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.745234777.1780433390",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780519809,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ga_V1WMLM3DL4",
+        "value": "GS2.1.s1780433389$o1$g1$t1780433409$j60$l0$h0",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1843505409,
+        "sameSite": "None"
+      },
+      {
+        "name": "nvq_hid",
+        "value": "186415b0-e769-422a-b3c5-5c1a8aba6700",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1780433469,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "_pubcid",
+        "value": "dd375f3d-e6a4-4810-8231-f5dfdbb2ffbc",
+        "path": "/",
+        "domain": "www.marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811537409,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gads",
+        "value": "ID=656336fb1fbf3661:T=1780433409:RT=1780433409:S=ALNI_MbH5znnefYEq4aV0pZ8V5JilnYrrQ",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1814129409,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gpi",
+        "value": "UID=000013af815741c3:T=1780433409:RT=1780433409:S=ALNI_MYbj_RlyTQKxnyAxJ57OaoTE1XloA",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1814129409,
+        "sameSite": "None"
+      },
+      {
+        "name": "__eoi",
+        "value": "ID=32b6e269510bf1ae:T=1780433409:RT=1780433409:S=AA-AfjYE35Mow1BrBdg8vxcxRTPs",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1795985409,
+        "sameSite": "None"
+      },
+      {
+        "name": "connectId",
+        "value": "{\"ttl\":86400000,\"lastUsed\":1780433411003,\"lastSynced\":1780433411003}",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1811969411,
+        "sameSite": "None"
+      },
+      {
+        "name": "lotame_domain_check",
+        "value": "marca.com",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1780433421,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "_cc_id",
+        "value": "761ace59261458ba00820b982368da0b",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1803761411,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "panoramaId_expiry",
+        "value": "1781038210330",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781038211,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "panoramaId",
+        "value": "2f34603ce12990d4d539c30ad677185ca02c461bf6537c58f042288090edcd32",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781038211,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "panoramaIdType",
+        "value": "panoDevice",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1781038211,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "cto_bundle",
+        "value": "Ri_7tl90akRTS2RIMTBxdmk0UHRPN1JzcTRqQVBDaXJMY29vZ0RTeVBVd09EYXlTUlhzZHclMkI3emJKdktTSzVwNDhYZngyOVVUSHhVSGc5NnM4dXN2U0NUeTVGNVclMkJzU3J4YSUyQnBzUjc4V29mRFMwYkRwSTZSNmNQYnFaVFlYdWhUdlFMcDBSWTZjaXFIczk1RHpoSHBTZlZVUUoxTHIydiUyRjFQV1JBOTM2bEJYUGVUMCUzRA",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1814129411,
+        "sameSite": "None"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1780433411375.980194783992801164",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1788209414,
+        "sameSite": "None"
+      },
+      {
+        "name": "_hjSession_413277",
+        "value": "eyJpZCI6IjdmMDY3MTEyLWVmNTEtNGIzMC1iM2E3LWM3NzJkMjY3ZjE5NCIsImMiOjE3ODA0MzMzOTE2NzIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": true,
+        "httpOnly": false,
+        "expiry": 1780435238,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ce.s",
+        "value": "v~9d9c72c32798523e599d85c019274863e0dfe812~vir~new~lva~1780433391841~vpv~0~v11.cs~159390~v11.s~9a5bbb60-5ec4-11f1-a1e0-67def5ef2670~v11.vs~9d9c72c32798523e599d85c019274863e0dfe812~v11.sla~1780433392152~v11.wss~1780433392153~v11.ss~1780433392154~v11ls~9a5bbb60-5ec4-11f1-a1e0-67def5ef2670~gtrk.la~mpx43vvu~lcw~1780433452074",
+        "path": "/",
+        "domain": ".marca.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1811969452,
+        "sameSite": "Strict"
+      }
+    ]
+  }
+}

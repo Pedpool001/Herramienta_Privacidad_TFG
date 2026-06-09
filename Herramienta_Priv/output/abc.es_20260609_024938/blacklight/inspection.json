@@ -1,0 +1,4181 @@
+{
+  "title": "Blacklight Inspection",
+  "page_title": "ABC - Últimas noticias de España y el mundo hoy",
+  "uri_ins": "https://www.abc.es",
+  "uri_dest": "https://www.abc.es/",
+  "uri_redirects": [],
+  "secure_connection": {},
+  "host": "www.abc.es",
+  "config": {
+    "emulateDevice": {
+      "name": "iPhone 13 Mini",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "isLandscape": false
+      }
+    },
+    "cleareCache": true,
+    "captureHar": true,
+    "captureLinks": false,
+    "enableAdBlock": false,
+    "saveBrowserProfile": false,
+    "numPages": 1,
+    "defaultTimeout": 35000,
+    "defaultWaitUntil": "networkidle2",
+    "headless": true,
+    "headers": {},
+    "extraChromiumArgs": [
+      "--disable-features=TrackingProtection3pcd"
+    ],
+    "extraPuppeteerOptions": {}
+  },
+  "browser": {
+    "name": "Chromium",
+    "version": "Chrome/127.0.6533.88",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "6.8.0-124-generic"
+    }
+  },
+  "script": {
+    "host": "pedro-SATELLITE-L50-A-1DL",
+    "version": {
+      "npm": "3.10.0",
+      "commit": "dev"
+    },
+    "node_version": "v20.20.0"
+  },
+  "start_time": "2026-06-09T00:49:41.283Z",
+  "end_time": "2026-06-09T00:50:02.289Z",
+  "browsing_history": [
+    "https://www.abc.es/",
+    "https://www.abc.es/loteria-de-navidad/"
+  ],
+  "hosts": {
+    "requests": {
+      "first_party": [
+        "www.abc.es",
+        "sadbmetrics.abc.es",
+        "data.abc.es"
+      ],
+      "third_party": [
+        "static.vocstatic.com",
+        "static1.vocstatic.com",
+        "s1.abcstatics.com",
+        "vocx.evolok.net",
+        "sdk.privacy-center.org",
+        "c.amazon-adsystem.com",
+        "securepubads.g.doubleclick.net",
+        "assets.adobedtm.com",
+        "service.wemass.com",
+        "fundingchoicesmessages.google.com",
+        "dpm.demdex.net",
+        "connect.facebook.net",
+        "vocento.demdex.net",
+        "cm.everesttech.net",
+        "cm.g.doubleclick.net",
+        "static.adsafeprotected.com",
+        "vocento.idalgo-hosting.com",
+        "es-config.sensic.net",
+        "sdk.mrf.io",
+        "pagead2.googlesyndication.com",
+        "17809661896225f53a6c94fa5f63c402e98a2a5048c160ee360cc23d.trk.sensic.net",
+        "es1-s2s.sensic.net",
+        "localhost.sensic.net",
+        "js-agent.newrelic.com",
+        "marfeelexperimentsexperienceengine.mrf.io",
+        "bam.nr-data.net",
+        "events.newsroom.bi",
+        "17809661981268d775348aa9bf97e853b98001a6cacb85bec1e60744.trk.sensic.net"
+      ]
+    }
+  },
+  "reports": {
+    "behaviour_event_listeners": {
+      "MOUSE": {
+        "https://www.abc.es/loteria-de-navidad/": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ],
+        "https://www.abc.es/": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ]
+      },
+      "KEYBOARD": {
+        "https://www.abc.es/loteria-de-navidad/": [
+          "keydown",
+          "keyup"
+        ],
+        "https://www.abc.es/": [
+          "keydown",
+          "keyup"
+        ]
+      },
+      "TOUCH": {
+        "https://www.abc.es/loteria-de-navidad/": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ],
+        "https://www.abc.es/": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ]
+      }
+    },
+    "canvas_fingerprinters": {
+      "data_url": {},
+      "fingerprinters": [],
+      "styles": {},
+      "texts": {}
+    },
+    "canvas_font_fingerprinters": {
+      "canvas_font": {},
+      "text_measure": {}
+    },
+    "cookies": [
+      {
+        "name": "cookietest",
+        "value": "1",
+        "domain": "www.abc.es",
+        "path": "/loteria-de-navidad",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "geo",
+        "value": "{\"c\": \"ES\",\"r\": \"MU\",\"o\": \"EU\"}",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2026-06-10T00:49:54.332Z",
+        "size": 34,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "ev_sid",
+        "value": "6a276332c3061a2b0e821cd2",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-04T00:49:55.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ev_did",
+        "value": "6a276332c3061a2b0e821cd1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-04T00:49:55.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "demdex",
+        "value": "78291577152744490803802299148047716394",
+        "domain": "demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T00:49:56.404Z",
+        "size": 44,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 42,
+        "httpOnly": false,
+        "secure": true,
+        "session": true,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "s_ecid",
+        "value": "MCMID%7C78134224683480480623750480128923542060",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-14T00:49:55.651Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "dpm",
+        "value": "78291577152744490803802299148047716394",
+        "domain": "dpm.demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T00:49:56.404Z",
+        "size": 41,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "dextp",
+        "value": "771-1-1780966196259",
+        "domain": "demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T00:49:56.000Z",
+        "size": 24,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "179643557%7CMCIDTS%7C20614%7CMCMID%7C78134224683480480623750480128923542060%7CMCAAMLH-1781570995%7C6%7CMCAAMB-1781570995%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1780973395s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20621%7CvVersion%7C5.5.0",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-14T00:49:56.270Z",
+        "size": 303,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "test_cookie",
+        "value": "CheckForPermission",
+        "domain": "doubleclick.net",
+        "path": "/",
+        "expires": "2026-06-09T01:04:56.303Z",
+        "size": 29,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "vtm_op",
+        "value": "false",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%227716a132-beb9-49e5-9808-d55501c71b9c%5C%22%2C%5B1780966196%2C986000000%5D%5D%22%5D%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-04T00:49:56.000Z",
+        "size": 162,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_information",
+        "value": "%7B%7D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T00:49:57.000Z",
+        "size": 25,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc_edtn",
+        "value": "nacional",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T00:49:57.000Z",
+        "size": 16,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_uuid",
+        "value": "2eb523fc-92bc-44ff-b46c-72b985a6b49d",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T00:49:57.000Z",
+        "size": 48,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_nfryl_volver_al_origen",
+        "value": "https%3A%2F%2Fwww.abc.es%2Floteria-de-navidad%2F",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-06-10T00:49:57.000Z",
+        "size": 78,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc_paywall",
+        "value": "https://www.abc.es|anonimo",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T00:49:57.000Z",
+        "size": 37,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc-rtim",
+        "value": "{ \"geo-europe\" : false}",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-07-09T00:49:57.000Z",
+        "size": 31,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+        "value": "CiY3ODEzNDIyNDY4MzQ4MDQ4MDYyMzc1MDQ4MDEyODkyMzU0MjA2MFIRCLCV7s7qMxgCKgRJUkwxMAPwAbCV7s7qMw%3D%3D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-09T00:49:58.016Z",
+        "size": 145,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+        "value": "irl1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-06-09T01:19:58.547Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol9ZPXL_nwWLEW8pW2TkMZuFOg7kSKY5wEIX7N7yfjYYIao7OgrBJ22BeJBblC2TnrD_zYLoL1fQlWkTlAalOoif6bP-nrNzaf-zV1ORISm0Bzcxrp_dTfn4UagIK6mamp7OsTNf-KofT5d8Nx_hXWpnTQsN1w%3D%3D%22%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T00:49:58.000Z",
+        "size": 191,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      }
+    ],
+    "fb_pixel_events": [],
+    "tiktok_pixel_events": [],
+    "twitter_pixel_events": [],
+    "google_analytics_events": [],
+    "key_logging": {},
+    "session_recorders": {},
+    "third_party_trackers": [
+      {
+        "data": {
+          "body": {
+            "ins": [
+              {
+                "action": "blur",
+                "actionCount": 1,
+                "actionDuration": 0,
+                "actionMs": "[0]",
+                "cmploaded": 2129.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/loteria-de-navidad/",
+                "eventType": "UserAction",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "251",
+                "evolokTimeout": "249",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/loteria-de-navidad/",
+                "paywall": "frontend",
+                "target": "window",
+                "timestamp": 1780966199336,
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "action": "focus",
+                "actionCount": 1,
+                "actionDuration": 0,
+                "actionMs": "[0]",
+                "cmploaded": 2129.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/loteria-de-navidad/",
+                "eventType": "UserAction",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "251",
+                "evolokTimeout": "249",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/loteria-de-navidad/",
+                "paywall": "frontend",
+                "target": "window",
+                "timestamp": 1780966199923,
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 7979,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=7979&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8&at=GBsWFQ9DHxQaWREPGR5E"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 152
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 5085
+                  },
+                  "txSize": {
+                    "t": 847
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/events/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 1
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 153
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 5087
+                  },
+                  "txSize": {
+                    "t": 3879
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/jserrors/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 7978,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=7978&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8"
+      },
+      {
+        "data": {
+          "body": {
+            "sm": [
+              {
+                "params": {
+                  "name": "Generic/LoaderType/pro/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/DistMethod/CDN/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/Runtime/Browser/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/React/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/Jquery/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/IFrame/Added"
+                },
+                "stats": {
+                  "t": 7
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/WebDriver/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/info/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setCustomAttribute/called"
+                },
+                "stats": {
+                  "c": 12
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setErrorHandler/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/debug/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/warn/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/App"
+                },
+                "stats": {
+                  "c": 17
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/Agent"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasReplay/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasTrace/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 7977,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=7977&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'unload,63u,i;5,'pageUrl,'https://www.abc.es/loteria-de-navidad/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.033930694751146594;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'251;5,'evolokTimeout,'249;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2129.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,7,x,m;5,'metricId,'v4-1780966199011-9891532560299;5,'largestShiftTarget,'html>body.didomi-popup-open.is-not-login>div.v-tck.v-c.v-tck--t2.v-tck--t2.v-tck--v2;6,'largestShiftTime,7431.89999999851;6,'largestShiftValue,0.033930694751146594;5,'loadState,'complete;5,1,2;5,3,4;6,5,50.;6,6,10.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2129.699951171875;5,s,t;7,u;e,'pageHide,659,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.033930694751146594;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2129.699951171875;5,s,t;7,u;e,'lcp,j3,s;6,'timeToFirstByte,270.3999999985099;6,'resourceLoadDelay,87.19999999925494;6,'resourceLoadDuration,88.90000000223517;6,'resourceLoadTime,88.90000000223517;6,'elementRenderDelay,241.;6,'size,79125.;5,'eid;5,'elTag,'IMG;5,'element,'div.v-a-img-c.v-a-img-c--fw-xs>figure.v-a-fig>a.v-a-lnk>picture>img.v-a-img;5,'elUrl,'https://s1.abcstatics.com/abc/www/multimedia/loteria-de-navidad/2026/01/05/loteria-nino-directo-v1-1200x840-kH9G--562x315@diario_abc.jpg;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.033930694751146594;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2129.699951171875;5,s,t;7,u",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 7976,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=7976&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 249
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 633
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "vocx.evolok.net:443",
+                  "hostname": "vocx.evolok.net",
+                  "method": "GET",
+                  "pathname": "/acd/api/3.0/authorize/json",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 102
+                  },
+                  "time": {
+                    "t": 850
+                  }
+                },
+                "params": {
+                  "host": "www.abc.es:443",
+                  "hostname": "www.abc.es",
+                  "method": "GET",
+                  "pathname": "/kangaroo.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 3
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 82
+                  },
+                  "rxSize": {
+                    "t": 6482
+                  },
+                  "time": {
+                    "t": 1135
+                  }
+                },
+                "params": {
+                  "host": "c.amazon-adsystem.com:443",
+                  "hostname": "c.amazon-adsystem.com",
+                  "method": "GET",
+                  "pathname": "/bao-csm/aps-comm/aps_csm.js",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 277
+                  },
+                  "rxSize": {
+                    "t": 594
+                  },
+                  "time": {
+                    "t": 1319
+                  }
+                },
+                "params": {
+                  "host": "dpm.demdex.net:443",
+                  "hostname": "dpm.demdex.net",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 124
+                  },
+                  "rxSize": {
+                    "t": 48
+                  },
+                  "time": {
+                    "t": 1554
+                  }
+                },
+                "params": {
+                  "host": "sadbmetrics.abc.es:443",
+                  "hostname": "sadbmetrics.abc.es",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "c": 6,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  },
+                  "count": 6,
+                  "duration": {
+                    "c": 6,
+                    "max": 303,
+                    "min": 49,
+                    "sos": 123944,
+                    "t": 688
+                  },
+                  "time": {
+                    "c": 6,
+                    "max": 4557,
+                    "min": 2920,
+                    "sos": 95731814,
+                    "t": 23574
+                  },
+                  "txSize": {
+                    "c": 6,
+                    "max": 183,
+                    "min": 144,
+                    "sos": 151264,
+                    "t": 950
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxW3wdp6j1lg5YHjT3rC-lqBw5V238ax96O3SQOU-s0-klljcTsH0bgIu-xB9arLrL93lKdBdqe2G6p-Yv8DwqZau1XIz8UUzPrfMgdxii-znhDWOdgbL-AeN-Kofek0pM0FDTab",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 89
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 3869
+                  },
+                  "txSize": {
+                    "t": 5224
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 71
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4086
+                  },
+                  "txSize": {
+                    "t": 387
+                  }
+                },
+                "params": {
+                  "host": "es1-s2s.sensic.net:443",
+                  "hostname": "es1-s2s.sensic.net",
+                  "method": "POST",
+                  "pathname": "/",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 360
+                  },
+                  "time": {
+                    "t": 4070
+                  }
+                },
+                "params": {
+                  "host": "17809661981268d775348aa9bf97e853b98001a6cacb85bec1e60744.trk.sensic.net:443",
+                  "hostname": "17809661981268d775348aa9bf97e853b98001a6cacb85bec1e60744.trk.sensic.net",
+                  "method": "GET",
+                  "pathname": "/tp.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 53
+                  },
+                  "time": {
+                    "t": 4432
+                  }
+                },
+                "params": {
+                  "host": "localhost.sensic.net:54325",
+                  "hostname": "localhost.sensic.net",
+                  "method": "GET",
+                  "pathname": "/",
+                  "port": "54325",
+                  "protocol": "https",
+                  "status": 0
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 159
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4413
+                  },
+                  "txSize": {
+                    "t": 5755
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/irl1/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 112
+                  },
+                  "time": {
+                    "t": 4649
+                  },
+                  "txSize": {
+                    "t": 144
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxWxsXdDZqSEwcim2gzJtN4behguzkspT0r9cx6iqBfI_XyCJS2lTUcS5Mo872FqIUN7c7N8IklNjmqfIwY_Cu2DO70zM9wKwkMrZ1bpdYdfp1liV4HwjD4591ThMYubVm1YPS9C",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 121
+                  },
+                  "rxSize": {
+                    "t": 198
+                  },
+                  "time": {
+                    "t": 4956
+                  },
+                  "txSize": {
+                    "t": 296
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 5087,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=5087&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'fp,k7,i;5,'pageUrl,'https://www.abc.es/loteria-de-navidad/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.003375209298939552;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'251;5,'evolokTimeout,'249;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2129.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,'fcp,k7,l;6,'timeToFirstByte,270.3999999985099;6,'firstByteToFCP,457.30000000074506;5,'loadState,'loading;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.003375209298939552;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2129.699951171875;5,s,t;7,u;e,'load,3sf,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.003375209298939552;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2129.699951171875;5,s,t;7,u",
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 5085,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=5085&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8"
+      },
+      {
+        "data": {
+          "body": {
+            "ja": {
+              "cmploaded": 2129.699951171875,
+              "consent": "unknown",
+              "cookieSize": 35,
+              "cookiewall": "evolok",
+              "evolokError": "ok",
+              "evolokFetchTimeStamp": "251",
+              "evolokTimeout": "249",
+              "isExtra": "Yes",
+              "paywall": "frontend",
+              "userType": "anonimo",
+              "voontoVersion": "2.26.0",
+              "vtmVersion": "3.15.1",
+              "webdriverDetected": true
+            }
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "af": "err,xhr,stn,ins",
+            "ap": 174,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "be": 270,
+            "ck": 0,
+            "dc": 795,
+            "fcp": 727,
+            "fe": 4642,
+            "fp": 727,
+            "fsh": 0,
+            "perf": {
+              "navigation": {},
+              "timing": {
+                "c": 19,
+                "ce": 19,
+                "dc": 4901,
+                "de": 1065,
+                "di": 1062,
+                "dn": 19,
+                "dne": 19,
+                "ds": 1062,
+                "f": 19,
+                "l": 4901,
+                "le": 4912,
+                "n": 0,
+                "of": 1780966194061,
+                "rp": 270,
+                "rpe": 285,
+                "rq": 26,
+                "s": 19,
+                "u": 326,
+                "ue": 326
+              }
+            },
+            "ptid": "7e3be8fba83e18e8",
+            "ref": "https://www.abc.es/loteria-de-navidad/",
+            "rst": 4955,
+            "s": "40c1ae0430dbb2d5",
+            "timestamp": 1780966199015,
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg==",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsGFElORFBbFlFXVg%3D%3D&rst=4955&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/loteria-de-navidad/&ptid=7e3be8fba83e18e8&af=err,xhr,stn,ins&ap=174&be=270&fe=4642&dc=795&at=GBsWFQ9DHxQaWREPGR5E&fsh=0&perf=%7B%22timing%22:%7B%22of%22:1780966194061,%22n%22:0,%22u%22:326,%22ue%22:326,%22f%22:19,%22dn%22:19,%22dne%22:19,%22c%22:19,%22s%22:19,%22ce%22:19,%22rq%22:26,%22rp%22:270,%22rpe%22:285,%22di%22:1062,%22ds%22:1062,%22de%22:1065,%22dc%22:4901,%22l%22:4901,%22le%22:4912%7D,%22navigation%22:%7B%7D%7D&fp=727&fcp=727&timestamp=1780966199015"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||newrelic.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb0e9747aa53644daa8f0e56999f86eb2-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7384fdcfd6d74bfe95bfc35867ebaa71-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb08cdd1098204277870b3999b07ac07b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC407298c5d763426da8881a8214c4c86a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC77b28969ef864c80bd66b197af2a33d9-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7536b7ffb5be48ec83063c0582004acd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7c12e02fa3964b86954b8737f88c5114-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||connect.facebook.net/signals/$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "domain": "www.abc.es",
+            "ex_m": "105,208,156,22,73,74,147,69,68,11,165,91,16,139,128,39,76,79,135,161,167,8,4,5,7,6,3,92,102,168,173,222,30,75,234,233,232,23,33,55,104,61,10,64,98,99,100,106,131,31,29,133,134,130,129,157,77,160,158,159,50,60,124,15,164,45,267,268,266,26,27,28,48,148,78,113,18,20,44,40,42,41,84,93,97,111,146,149,46,112,24,21,120,70,36,151,150,152,143,141,25,35,59,110,163,71,17,154,115,82,67,19,86,87,117,85,137,136,140,162,34,282,298,215,204,62,205,203,301,292,52,216,108,132,81,122,54,47,49,114,121,127,126,58,65,63,153,116,37,32,53,56,101,166,1,125,14,123,12,2,57,94,66,119,90,89,169,170,95,96,9,103,51,144,88,80,72,118,107,43,145,0,83,138,142,155,38,109,13,171",
+            "hme": "d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e",
+            "r": "stable",
+            "v": "2.9.334"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbe6651486dfa492b81dcea9d79510236-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809661981268D775348AA9BF97E853B98001A6CACB85BEC1E60744",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809661981268D775348AA9BF97E853B98001A6CACB85BEC1E60744&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7bcde429e23b427fa8129272350135f7-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/adcash-",
+          "listName": "easylist.txt",
+          "query": {
+            "/adifyad.": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXhe8JphGRNBPJOyH2Zud9Q_sxIK1h1NrQjptYXCI_muvCzdwCZM1EmPc9jTUA3-bo5Ldy-k9wqAYPjOgClEy-XJ0G7xVDFndXvsRhWY5MnDecUftAMpSJDYAGziKJVhbEilHWRQYi8aZUpQf31jwOGajfqJ1_jUin8P2C9-vvO3oVc44Iyv5Twpbg=/_/adcash-_advertise180..ad1.nspace728x90.php?/adifyad."
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC2047614837fa45378c9db6bb5227386c-source.min.js"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=AbcWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=17809661981268D775348AA9BF97E853B98001A6CACB85BEC1E60744&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.abc.es&cp_c1=abc.es&cp_c2=loteria-de-navidad",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809661981268D775348AA9BF97E853B98001A6CACB85BEC1E60744",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://17809661981268d775348aa9bf97e853b98001a6cacb85bec1e60744.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809661981268D775348AA9BF97E853B98001A6CACB85BEC1E60744&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC8d9d2f2f026a45348c2951d94df59ee8-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC89b5d5066ab9468886b04b529715766b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbf15496093304f41b4bea4b4b48dc857-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC9b7840a883da425181cd876b7777ad6c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=&google_error=3?gdpr=0&gdpr_consent="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "NzgyOTE1NzcxNTI3NDQ0OTA4MDM4MDIyOTkxNDgwNDc3MTYzOTQ=",
+            "google_nid": "adobe_dmp",
+            "google_tc": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=NzgyOTE1NzcxNTI3NDQ0OTA4MDM4MDIyOTkxNDgwNDc3MTYzOTQ=&google_tc="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "NzgyOTE1NzcxNTI3NDQ0OTA4MDM4MDIyOTkxNDgwNDc3MTYzOTQ=",
+            "google_nid": "adobe_dmp"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=NzgyOTE1NzcxNTI3NDQ0OTA4MDM4MDIyOTkxNDgwNDc3MTYzOTQ="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aidjMwAAAH3ATwNe"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||everesttech.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_uuid": 7.829157715274449e+37
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.everesttech.net/cm/dd?d_uuid=78291577152744490803802299148047716394"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_nsid": 0
+          }
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://vocento.demdex.net/dest5.html?d_nsid=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780966195380
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780966195380"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC378446669114446f96301f4764a2162e-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780966195380
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780966195380"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31098995
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606050101/pubads_impl.js?cb=31098995"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/loteria-de-navidad/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.26.1/prebid.js"
+      },
+      {
+        "data": {
+          "body": {
+            "ins": [
+              {
+                "action": "focus",
+                "actionCount": 1,
+                "actionDuration": 0,
+                "actionMs": "[0]",
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "eventType": "UserAction",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "target": "window",
+                "timestamp": 1780966192124,
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "action": "scrollend",
+                "actionCount": 1,
+                "actionDuration": 0,
+                "actionMs": "[0]",
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "eventType": "UserAction",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "target": "document",
+                "timestamp": 1780966194235,
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 11134,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=11134&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81&at=GBsWFQ9DHxQaWREPGR5E"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 135
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 8147
+                  },
+                  "txSize": {
+                    "t": 761
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/events/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 177
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 8152
+                  },
+                  "txSize": {
+                    "t": 3886
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/jserrors/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 197
+                  },
+                  "time": {
+                    "t": 8156
+                  },
+                  "txSize": {
+                    "t": 6386
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/ins/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 11131,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=11131&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81"
+      },
+      {
+        "data": {
+          "body": {
+            "sm": [
+              {
+                "params": {
+                  "name": "Generic/LoaderType/pro/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/DistMethod/CDN/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/Runtime/Browser/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/React/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/Jquery/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/IFrame/Added"
+                },
+                "stats": {
+                  "t": 7
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/WebDriver/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/info/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setCustomAttribute/called"
+                },
+                "stats": {
+                  "c": 12
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setErrorHandler/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/recordCustomEvent/called"
+                },
+                "stats": {
+                  "c": 7
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/debug/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/warn/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/App"
+                },
+                "stats": {
+                  "c": 17
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/Agent"
+                },
+                "stats": {
+                  "c": 4
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasReplay/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasTrace/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 11130,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=11130&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'unload,8kg,i;5,'pageUrl,'https://www.abc.es/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'435;5,'evolokTimeout,'428;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2469.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,7,,m;5,'metricId,'v4-1780966191139-7726659556397;9,'largestShiftTarget;9,'largestShiftTime;9,'largestShiftValue;9,'loadState;5,1,2;5,3,4;6,5,50.;6,6,10.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2469.699951171875;5,s,t;7,u;e,'pageHide,8ku,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2469.699951171875;5,s,t;7,u;e,'lcp,oo,r;6,'timeToFirstByte,97.30000000074506;6,'resourceLoadDelay,0.;6,'resourceLoadDuration,0.;6,'resourceLoadTime,0.;6,'elementRenderDelay,790.8999999985099;6,'size,50768.;5,'eid;5,'elTag,'H2;5,'element,'div.v-r-s__c.v-r-s__c--1>article.v-a.v-a--a.v-a--a-a.v-a--a-a1.v-a--v-l>div.v-a-inf-c>h2.v-a-t;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2469.699951171875;5,s,t;7,u",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 11128,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=11128&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {
+            "ins": [
+              {
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780966184766,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "vamLoad": true,
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "beforeGPT": true,
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780966184766,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "beforeCookies": true,
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780966184766,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "browser": "Mobile 15",
+                "browserCookiesEnabled": true,
+                "browserLocalStorageEnabled": true,
+                "browserNavigator": "{\"vendor\":\"Google Inc.\",\"cookieEnabled\":true,\"appCodeName\":\"Mozilla\",\"appName\":\"Netscape\",\"appVersion\":\"5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1\",\"platform\":\"Linux x86_64\",\"product\":\"Gecko\",\"userAgent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1\",\"language\":\"es-ES\",\"doNotTrack\":null}",
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieEvolok": null,
+                "cookieEvolokGscEvk": "",
+                "cookieNfrylVolverAlOrigen": "https://www.abc.es/",
+                "cookieSize": 35,
+                "cookieVocUserUUID": "21352b83-88b0-48a3-ae51-d9c81fc05092",
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventName": "saludSesion",
+                "eventNameFired": "accountsOnDataNoReady",
+                "eventType": "UserEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokSID": "6a2763276a809528ea5651d9",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "identityEvolok": true,
+                "isExtra": "No",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "paywallAccess": "ALLOW_ACCESS",
+                "paywallConcurrentSessionLimit": "",
+                "ruleVersion": "2026-05-28 14:58",
+                "rulesProperties": "\"RULE_VERSION\",\"CHANGE\"",
+                "segments": "Logged-Out,visitFrequency-month-LESS30,UserType-Anonimo-Or-Registrado-Or-No-suscriptorV2,Not-SectionCustom-probrand,No-Phone-provided,WebType-Home,section-NOT-ABC-deportes-tenis,Role-NONE,UserType-No-suscriptorV2,UserType-NuncaSuscriptor,site-ABC,Category-ABC-not-archivo,Geo-ES,consent-no,Category-ABC-not-cultura,Geo-NotUndefined,WebType-not-colectivoqr,UserType-AnonimoV2,Device-Mobile,Device-Mobile-OR-Tablet,Category-ABC-not-favorito,canallDirecto,Suscription-Status-Undefined,ABC-category-not-cultural-pasion-gurme-palmera-nervion-archivo-favorito",
+                "sessionHealthVersion": "pack5",
+                "ssoGroup": "abc",
+                "testABGroupName": "Test_AB_ABC_DP6",
+                "testABGroupNumber": 2,
+                "timestamp": 1780966186996,
+                "url": "https://www.abc.es/",
+                "urlReferer": "",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userDataPaywallUserId": "",
+                "userIsInAppWebviewFlow": false,
+                "userIsInFlow": false,
+                "userType": "anonimo",
+                "vocUserJsVersion": "1.78.0",
+                "vocentoSiteEnv": "pro",
+                "vocentoSiteGroup": "abc",
+                "voontoUserType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "UUID": "6bd4b2b3-689b-40de-b7a0-140f306fc04a",
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "duration": 4479.699951171875,
+                "env": "production",
+                "eventType": "VtmTrackEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780966188008,
+                "type": "init",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "adbdResult": "initializer:adbd:disabled",
+                "adbdTiming": 1313.699951171875,
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deployResult": "initializer:deploy:append",
+                "deployTiming": 2046.699951171875,
+                "deviceType": "Mobile",
+                "dogtrackResult": "initializer:dogtrack:disabled",
+                "dogtrackTiming": 1313.699951171875,
+                "env": "production",
+                "eventType": "VtmInitializersEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "kangarooResult": "initializer:kangaroo:resolved",
+                "kangarooTiming": 4480.699951171875,
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "paywallResult": "initializer:paywall:frontend",
+                "paywallTiming": 1314.699951171875,
+                "timestamp": 1780966188011,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "utiqResult": "initializer:utiq:ids-unavailable",
+                "utiqTiming": 1313.699951171875,
+                "vendorsResult": "initializer:vendors",
+                "vendorsTiming": 1451.699951171875,
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1",
+                "wemassResult": "initializer:wemass:sync-enabled",
+                "wemassTiming": 1313.699951171875
+              },
+              {
+                "UUID": "6bd4b2b3-689b-40de-b7a0-140f306fc04a",
+                "cmploaded": 2469.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "duration": 4590.89999999851,
+                "env": "production",
+                "eventType": "VtmTrackEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "435",
+                "evolokTimeout": "428",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780966188015,
+                "type": "track",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 8155,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8155&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81&at=GBsWFQ9DHxQaWREPGR5E"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 431
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 529
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "vocx.evolok.net:443",
+                  "hostname": "vocx.evolok.net",
+                  "method": "GET",
+                  "pathname": "/acd/api/3.0/authorize/json",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 158
+                  },
+                  "time": {
+                    "t": 1050
+                  }
+                },
+                "params": {
+                  "host": "www.abc.es:443",
+                  "hostname": "www.abc.es",
+                  "method": "GET",
+                  "pathname": "/kangaroo.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 4
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 147
+                  },
+                  "rxSize": {
+                    "t": 6482
+                  },
+                  "time": {
+                    "t": 1672
+                  }
+                },
+                "params": {
+                  "host": "c.amazon-adsystem.com:443",
+                  "hostname": "c.amazon-adsystem.com",
+                  "method": "GET",
+                  "pathname": "/bao-csm/aps-comm/aps_csm.js",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 788
+                  },
+                  "rxSize": {
+                    "t": 594
+                  },
+                  "time": {
+                    "t": 2008
+                  }
+                },
+                "params": {
+                  "host": "dpm.demdex.net:443",
+                  "hostname": "dpm.demdex.net",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 306
+                  },
+                  "rxSize": {
+                    "t": 48
+                  },
+                  "time": {
+                    "t": 2779
+                  }
+                },
+                "params": {
+                  "host": "sadbmetrics.abc.es:443",
+                  "hostname": "sadbmetrics.abc.es",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "c": 6,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  },
+                  "count": 6,
+                  "duration": {
+                    "c": 6,
+                    "max": 996,
+                    "min": 54,
+                    "sos": 1967421,
+                    "t": 2297
+                  },
+                  "time": {
+                    "c": 6,
+                    "max": 6667,
+                    "min": 3753,
+                    "sos": 200266680,
+                    "t": 33748
+                  },
+                  "txSize": {
+                    "c": 6,
+                    "max": 183,
+                    "min": 144,
+                    "sos": 151264,
+                    "t": 950
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxUEpT7Z7b2PPkZ_CduVCUbEOzQ1JA0ez_Rw7-vXYY8_F9_TLRbUPmx-19h6NHA27HPun7PKP53vnWj4UfBTVQVMn-8YS8nvFyZ3muQe0rDAOFo_CRJ-tNtQ-i-qkTbL0-gYyKr0",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 215
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 5702
+                  },
+                  "txSize": {
+                    "t": 5159
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 119
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 6307
+                  },
+                  "txSize": {
+                    "t": 5641
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/irl1/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 261
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 6416
+                  },
+                  "txSize": {
+                    "t": 373
+                  }
+                },
+                "params": {
+                  "host": "es1-s2s.sensic.net:443",
+                  "hostname": "es1-s2s.sensic.net",
+                  "method": "POST",
+                  "pathname": "/",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 294
+                  },
+                  "time": {
+                    "t": 6391
+                  }
+                },
+                "params": {
+                  "host": "17809661896225f53a6c94fa5f63c402e98a2a5048c160ee360cc23d.trk.sensic.net:443",
+                  "hostname": "17809661896225f53a6c94fa5f63c402e98a2a5048c160ee360cc23d.trk.sensic.net",
+                  "method": "GET",
+                  "pathname": "/tp.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 29
+                  },
+                  "time": {
+                    "t": 6686
+                  }
+                },
+                "params": {
+                  "host": "localhost.sensic.net:54325",
+                  "hostname": "localhost.sensic.net",
+                  "method": "GET",
+                  "pathname": "/",
+                  "port": "54325",
+                  "protocol": "https",
+                  "status": 0
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 442
+                  },
+                  "time": {
+                    "t": 6796
+                  },
+                  "txSize": {
+                    "t": 144
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxUsBoNn2b-M_yEYX0sP4w3veHO-bbnLs2s-KOFUxL4SloWDZTveb0yI_gshNTvFLS2TzCndJD2OW_L5C6k7Rli4fv9jdS2dVYma7jweMyT-ARnOHgClkWOm9oqEYcu34V6OxLS1",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 205
+                  },
+                  "rxSize": {
+                    "t": 198
+                  },
+                  "time": {
+                    "t": 7902
+                  },
+                  "txSize": {
+                    "t": 296
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 8151,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8151&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'fp,k8,i;5,'pageUrl,'https://www.abc.es/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'435;5,'evolokTimeout,'428;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2469.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,'fcp,k8,l;6,'timeToFirstByte,97.30000000074506;6,'firstByteToFCP,631.5;5,'loadState,'loading;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2469.699951171875;5,s,t;7,u;e,'load,5q0,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2469.699951171875;5,s,t;7,u",
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 8147,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8147&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81"
+      },
+      {
+        "data": {
+          "body": {
+            "ja": {
+              "cmploaded": 2469.699951171875,
+              "consent": "unknown",
+              "cookieSize": 35,
+              "cookiewall": "evolok",
+              "evolokError": "ok",
+              "evolokFetchTimeStamp": "435",
+              "evolokTimeout": "428",
+              "isExtra": "Yes",
+              "paywall": "frontend",
+              "userType": "anonimo",
+              "voontoVersion": "2.26.0",
+              "vtmVersion": "3.15.1",
+              "webdriverDetected": true
+            }
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "af": "err,xhr,stn,ins",
+            "ap": 280,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "be": 98,
+            "ck": 0,
+            "dc": 1311,
+            "fcp": 728,
+            "fe": 7319,
+            "fp": 728,
+            "fsh": 1,
+            "perf": {
+              "navigation": {},
+              "timing": {
+                "c": 44,
+                "ce": 78,
+                "dc": 7389,
+                "de": 1408,
+                "di": 1405,
+                "dn": 44,
+                "dne": 44,
+                "ds": 1405,
+                "f": 21,
+                "l": 7389,
+                "le": 7416,
+                "n": 0,
+                "of": 1780966183250,
+                "rp": 97,
+                "rpe": 119,
+                "rq": 79,
+                "s": 58
+              }
+            },
+            "ptid": "18142197bf4e3d81",
+            "ref": "https://www.abc.es/",
+            "rst": 7901,
+            "s": "40c1ae0430dbb2d5",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=7901&ck=0&s=40c1ae0430dbb2d5&ref=https://www.abc.es/&ptid=18142197bf4e3d81&af=err,xhr,stn,ins&ap=280&be=98&fe=7319&dc=1311&at=GBsWFQ9DHxQaWREPGR5E&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1780966183250,%22n%22:0,%22f%22:21,%22dn%22:44,%22dne%22:44,%22c%22:44,%22s%22:58,%22ce%22:78,%22rq%22:79,%22rp%22:97,%22rpe%22:119,%22di%22:1405,%22ds%22:1405,%22de%22:1408,%22dc%22:7389,%22l%22:7389,%22le%22:7416%7D,%22navigation%22:%7B%7D%7D&fp=728&fcp=728"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||newrelic.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb0e9747aa53644daa8f0e56999f86eb2-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7384fdcfd6d74bfe95bfc35867ebaa71-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb08cdd1098204277870b3999b07ac07b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC407298c5d763426da8881a8214c4c86a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC77b28969ef864c80bd66b197af2a33d9-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7536b7ffb5be48ec83063c0582004acd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7c12e02fa3964b86954b8737f88c5114-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||connect.facebook.net/signals/$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "domain": "www.abc.es",
+            "ex_m": "105,208,156,22,73,74,147,69,68,11,165,91,16,139,128,39,76,79,135,161,167,8,4,5,7,6,3,92,102,168,173,222,30,75,234,233,232,23,33,55,104,61,10,64,98,99,100,106,131,31,29,133,134,130,129,157,77,160,158,159,50,60,124,15,164,45,267,268,266,26,27,28,48,148,78,113,18,20,44,40,42,41,84,93,97,111,146,149,46,112,24,21,120,70,36,151,150,152,143,141,25,35,59,110,163,71,17,154,115,82,67,19,86,87,117,85,137,136,140,162,34,282,298,215,204,62,205,203,301,292,52,216,108,132,81,122,54,47,49,114,121,127,126,58,65,63,153,116,37,32,53,56,101,166,1,125,14,123,12,2,57,94,66,119,90,89,169,170,95,96,9,103,51,144,88,80,72,118,107,43,145,0,83,138,142,155,38,109,13,171",
+            "hme": "d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e",
+            "r": "stable",
+            "v": "2.9.334"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809661896225F53A6C94FA5F63C402E98A2A5048C160EE360CC23D",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809661896225F53A6C94FA5F63C402E98A2A5048C160EE360CC23D&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbe6651486dfa492b81dcea9d79510236-source.min.js"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=AbcWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=17809661896225F53A6C94FA5F63C402E98A2A5048C160EE360CC23D&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.abc.es&cp_c1=abc.es&cp_c2=home",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809661896225F53A6C94FA5F63C402E98A2A5048C160EE360CC23D",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://17809661896225f53a6c94fa5f63c402e98a2a5048c160ee360cc23d.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809661896225F53A6C94FA5F63C402E98A2A5048C160EE360CC23D&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/home/sponsor_",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXEqq65mQxPgTi_KNlzjEzkiuqnGtoygqTGDVR67m3Ah38kbvQ4A3g-z7TMinNzK2VCemG_fAwW60E4-1sc2OSIGujx0DQk5cA1sjdBgy0iUP9XA0V-6l3lQ415RTUs7tyiv1ehN7ITUgLIlDaR8HTT-b5Q-w2s51blF_XR0iBGd3JcHPwIEwWUV6Y=/_/popads./adcomp./home/sponsor_/ads/popup_/adframe."
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7bcde429e23b427fa8129272350135f7-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC2047614837fa45378c9db6bb5227386c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC8d9d2f2f026a45348c2951d94df59ee8-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC89b5d5066ab9468886b04b529715766b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbf15496093304f41b4bea4b4b48dc857-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC9b7840a883da425181cd876b7777ad6c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=&google_error=3?gdpr=0&gdpr_consent="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "NjIxOTExMjQ2NTg1NDA1NTI4NjMxMzM3NzM5NDM5Mzg0NjU3NzM=",
+            "google_nid": "adobe_dmp",
+            "google_tc": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=NjIxOTExMjQ2NTg1NDA1NTI4NjMxMzM3NzM5NDM5Mzg0NjU3NzM=&google_tc="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "NjIxOTExMjQ2NTg1NDA1NTI4NjMxMzM3NzM5NDM5Mzg0NjU3NzM=",
+            "google_nid": "adobe_dmp"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=NjIxOTExMjQ2NTg1NDA1NTI4NjMxMzM3NzM5NDM5Mzg0NjU3NzM="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aidjKgAAAIYnwQNn"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||everesttech.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_uuid": 6.219112465854056e+37
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.everesttech.net/cm/dd?d_uuid=62191124658540552863133773943938465773"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_nsid": 0
+          }
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://vocento.demdex.net/dest5.html?d_nsid=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780966185259
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780966185259"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC378446669114446f96301f4764a2162e-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780966185259
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780966185259"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31098955
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606030101/pubads_impl.js?cb=31098955"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.26.1/prebid.js"
+      }
+    ]
+  }
+}

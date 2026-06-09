@@ -28,6 +28,346 @@ Los requisitos están definidos y descritos en detalle en:
 
 ---
 
+## Herramienta_Priv — Aplicación unificada (en desarrollo)
+
+Carpeta: `Herramienta_Priv/`
+
+### Ficheros creados
+
+#### `Herramienta_Priv/main.py`
+
+Orquestador principal de la auditoría. Punto de entrada de la herramienta.
+
+**Uso:**
+```bash
+python3 main.py https://www.marca.com
+python3 main.py https://www.marca.com --salida informe.html
+```
+
+**Flujo de ejecución:**
+1. Crea directorio de trabajo `output/{dominio}_{timestamp}/`.
+2. Lanza **8 hilos en paralelo** (uno por herramienta + hilo de combinados):
+   - `PrivacyPioneer` → R2, R3, R9 → señala `ev_pp`
+   - `WEC`           → R10, R17, R18 → señala `ev_wec`
+   - `Blacklight`    → R6 → señala `ev_blacklight`
+   - `OpenWPM`       → R7, R8, R11 → señala `ev_openwpm`
+   - `webXray`       → (solo crawl) → señala `ev_webxray`
+   - `PoliGraph`     → busca URL de política primero (`buscador_politica.py`), luego R1, R14, R19 → señala `ev_poligraph`
+   - `Playwright`    → R4, R13 → señala `ev_playwright`
+   - `Combinados`    → espera dependencias con `threading.Event.wait()`:
+     - R5  espera `ev_poligraph`
+     - R16 espera `ev_poligraph` + `ev_webxray`
+     - R12 espera `ev_pp` + `ev_webxray`
+     - R15 espera `ev_pp` + `ev_poligraph`
+3. Cuando todos los hilos terminan, llama a `salida.generar_informe_unico()`.
+
+**Comportamiento ante fallos:**
+- Si una herramienta falla: sus requisitos se marcan `ERROR` con el mensaje, el resto continúa.
+- Si no se encuentra URL de política: requisitos de PoliGraph (R1, R5, R14, R15, R16, R19) → `NO_EVALUABLE`.
+
+**Retorno de `auditar()`:** dict con todos los resultados `{R1: {veredicto, detalle}, ...}`.
+
+**Estructura de módulos requerida:**
+```
+modulos_herramientas/
+  privacy_pioneer.py  → ejecutar()          — R2, R3, R9
+  wec.py              → ejecutar()          — R10, R17, R18
+  blacklight.py       → ejecutar()          — R6
+  openwpm.py          → ejecutar()          — R7, R8, R11
+  webxray.py          → recopilar()         — (solo crawl, sin requisitos propios)
+  poligraph.py        → ejecutar()          — R1, R5, R14, R19
+  playwright_mod.py   → ejecutar()          — R4, R13
+  combinados.py       → ejecutar()          — R12, R15, R16
+```
+
+**Decisión de diseño — por qué webXray tiene módulo propio aunque no produce requisitos:**
+webXray no evalúa ningún requisito por sí solo; su output (`3p_domains.csv`) solo lo
+consumen R12 y R16 en el módulo `combinados.py`. Se barajó eliminar el módulo y mover
+el crawl dentro de `combinados`, pero se descartó por rendimiento: si el crawl vive en
+`combinados`, no puede empezar hasta que `ev_poligraph` se active (porque `combinados`
+espera ese evento antes de hacer nada). Con módulo propio, webXray corre en paralelo
+con PoliGraph, PP y el resto desde t=0, solapando su tiempo de crawl con el de las
+demás herramientas. El módulo se llama `recopilar()` en lugar de `ejecutar()` para
+dejar claro que su rol es recopilación de datos, no análisis directo.
+
+**Decisión de diseño — módulo `combinados.py` para requisitos multi-herramienta:**
+Los requisitos R12, R15 y R16 necesitan la salida de más de una herramienta. Meter su
+lógica en uno de los módulos de herramienta sería arbitrario (¿en cuál?). Un módulo
+separado `combinados.py` centraliza toda la lógica cross-tool y deja claro que esos
+requisitos son de naturaleza diferente. R5 se incluyó en `poligraph.py` (no en
+`combinados`) porque solo necesita la salida de PoliGraph: no cruza herramientas.
+
+---
+
+### Módulos implementados en `modulos_herramientas/`
+
+Cada módulo sigue el mismo patrón: lanza la herramienta externa (subprocess), luego
+ejecuta los scripts de análisis (`analysis_scripts/`) como subprocesos con
+`sys.executable`, lee el JSON de resultado de `analysis_data/` y almacena el
+veredicto en el dict compartido `resultados`.
+
+**Módulo auxiliar compartido: `_loader.py`**
+
+Todos los módulos importan `ejecutar_analisis()` desde `modulos_herramientas/_loader.py`.
+Este helper centraliza:
+- La ejecución de scripts de análisis como subprocesos.
+- El mapeo correcto entre nombre de script y nombre del fichero de resultado.
+
+**Por qué es necesario el mapeo:** los scripts de análisis guardan su resultado con
+el número de requisito, no con su nombre completo. Por ejemplo, `r7_fingerprinting.py`
+guarda en `r7_resultado.json`, no en `r7_fingerprinting_resultado.json`. Sin el mapeo,
+la búsqueda del fichero fallaría para todos los scripts con nombre descriptivo.
+
+```python
+_RESULTADO_FILES = {
+    "r2_r3_cookies_beacons": "r2_resultado.json",
+    "r7_fingerprinting":     "r7_resultado.json",
+    "r17_r18_seguridad":     "r17_r18_resultado.json",
+    # ... (un entry por script de análisis)
+}
+```
+
+#### `privacy_pioneer.py` — R2, R3, R9
+
+**Flujo:**
+1. Borra las entradas MySQL del sitio (`DELETE FROM entries WHERE rootUrl LIKE '%dominio%'`).
+2. Escribe un CSV temporal en `selenium-crawler/prueba-tfg.csv` (respaldando el original).
+3. Lanza la REST API (`node rest-api/index.js`) — espera 3s a que arranque.
+4. Lanza el crawler (`node local-crawler.js`) con un timeout de 360s.
+5. Mata la REST API y restaura el CSV original.
+6. Copia `analysis_data/reporte_auditoria.json` al `output_dir` (lo usa R15 en combinados).
+7. Ejecuta `r2_r3_cookies_beacons.py {dominio}` → extrae veredicto de R2 y R3 del JSON.
+8. Ejecuta `r9_minimizacion.py {dominio}` → extrae veredicto de R9.
+
+**Resultado JSON del script r2_r3:** `{requisito: "R2", sitios: {dominio: {veredicto, evaluacion, violaciones}}}`.
+R2 y R3 reciben el mismo veredicto ya que `trackingPixel` en PRE cubre R3.
+
+#### `wec.py` — R10, R17, R18
+
+**Flujo:**
+1. Lanza WEC: `node build/bin/website-evidence-collector.js collect {url} --output {output_dir}`.
+   Genera `requests.har`, `cookies.yml`, `local-storage.yml` en `output_dir`.
+2. Ejecuta `r17_r18_seguridad.py {output_dir}` → JSON con claves `"r17"` y `"r18"`.
+3. Ejecuta `r10_persistencia.py {output_dir}` → JSON con `"veredicto"`.
+
+**Requisito de assets:** WEC necesita que los assets estáticos (`filterlists/`, `keywords.yml`,
+`social-media-platforms.yml`, plantillas pug, imágenes) estén copiados de `src/assets/` a
+`build/src/assets/`. El `npm run build` los copia via `npm run copy-assets`, pero si el build
+fue parcial, solo quedan los ficheros `.js` compilados y los estáticos faltan.
+Fix: `cp -r src/assets/. build/src/assets/` desde el directorio de WEC.
+
+#### `blacklight.py` — R6
+
+**Flujo:**
+1. Lanza `node blacklight_runner.js {url} {output_dir}` desde `BL/blacklight-collector/`.
+   Genera `inspection.json` en `output_dir`.
+2. Ejecuta `r6_keylogging.py {output_dir/inspection.json}` → JSON con `"veredicto"`.
+
+**`BL/blacklight-collector/blacklight_runner.js` (nuevo):** Blacklight está diseñado
+para usarse como librería Node.js, no como CLI. Su código exporta una función `collect()`,
+pero el ejemplo que viene con él (`example.ts`) acepta la URL como argumento pero deja el
+directorio de salida hardcodeado en `demo-dir/`. Para la herramienta unificada eso no sirve:
+cada sitio auditado necesita su propio `output_dir`.
+
+`blacklight_runner.js` es un adaptador de 30 líneas que convierte la librería en un
+comando de terminal con firma `(url, outDir)`:
+
+```
+node blacklight_runner.js https://www.marca.com /ruta/output_dir
+```
+
+Internamente:
+1. `require('./build')` — importa `collect()` del código compilado CommonJS en `build/index.js`.
+   **Nota importante:** el build de Blacklight vive en `build/` (no en `build/src/`).
+   El error `Cannot find module './build/src'` se producía porque el runner original apuntaba
+   a `./build/src`, que no existe. La ruta correcta es `./build`.
+2. `process.argv[2]` y `process.argv[3]` — lee URL y directorio desde la línea de comandos.
+3. `collect(url, {numPages:1, headless:true, outDir})` — llama a Blacklight y genera `inspection.json` en `outDir`.
+4. `.then()/.catch()` — sale con código 0 (éxito) o 1 (error) para que `blacklight.py` pueda detectarlo.
+
+Sin este fichero, `blacklight.py` no podría pasar el directorio de salida a Blacklight
+y todos los scans sobreescribirían el mismo `demo-dir/inspection.json`.
+
+#### `openwpm.py` — R7, R8, R11
+
+**Flujo:**
+1. Escribe un script Python temporal (basado en `auditoria_elpais.py`) con la URL y el
+   output_dir parametrizados, en modo `headless`.
+2. Lanza el crawl: `conda run -n openwpm python {temp_script}`. Genera `crawl-data.sqlite`.
+3. Borra el script temporal.
+4. Ejecuta `r7_fingerprinting.py {db_path}` → R7.
+5. Ejecuta `r8_storage_terceros.py {db_path}` → R8.
+6. Ejecuta `r11_desvinculacion.py {db_path}` → R11.
+
+#### `webxray.py` — solo recopilar()
+
+**Flujo:**
+1. Escribe la URL en un fichero de página lista temporal en `webXray/page_lists/`.
+2. Ejecuta colecta: `venv_tfg/bin/python webxray_headless.py {db_name} {page_file}`.
+3. Ejecuta análisis: `webxray_headless.py --analyze {db_name}` → genera `reports/{db_name}/3p_domains.csv`.
+4. Copia `3p_domains.csv` al `output_dir`.
+
+**Por qué `webxray_headless.py` y no `run_webxray.py`:**
+El `run_webxray.py` original tiene `config['client_headless'] = False` — el usuario lo añadió
+para depuración visual. Para la herramienta automatizada, el navegador debe correr headless.
+En lugar de modificar el script del usuario, se creó `webXray/webxray_headless.py` que replica
+la misma lógica de inicio (`SQLiteDriver`, `Utilities`, `get_default_config('haystack')`) pero
+fuerza `client_headless = True`. Acepta exactamente dos modos:
+- `python webxray_headless.py {db_name} {pages_file}` → scan
+- `python webxray_headless.py --analyze {db_name}` → análisis
+
+#### `poligraph.py` — R1, R5, R14, R19
+
+**Flujo:**
+1. Pipeline de 4 pasos con `conda run -n poligraph python -m poligrapher.scripts.X`:
+   - `html_crawler {url_politica} {output_dir}`
+   - `init_document {output_dir}` (aplica traducción automática si no es inglés)
+   - `run_annotators {output_dir}`
+   - `build_graph {output_dir}`
+2. Ejecuta `r1_capas.py {output_dir}` → R1.
+3. Ejecuta `r5_revocabilidad.py {output_dir}` → R5.
+4. Ejecuta `r14_lenguaje.py {output_dir}` → R14.
+5. Ejecuta `r19_dpo.py {output_dir}` → R19.
+
+**Nota:** Si cualquier paso del pipeline falla, los 4 requisitos se marcan `ERROR`.
+
+**Requisito de instalación:** el entorno conda `poligraph` debe tener instalado
+el paquete `poligrapher` con `conda run -n poligraph pip install -e /path/to/PoliGraph/`.
+Sin esto, `python -m poligrapher.scripts.html_crawler` falla con `ModuleNotFoundError`.
+El entorno se crea a partir de `environment.yml` (nombre `nlp20230531`) pero `pip install -e .`
+es un paso separado que se puede omitir por descuido.
+
+#### `playwright_mod.py` — R4, R13
+
+**Flujo:**
+1. Ejecuta `r13_dark_patterns.py {url}` (Python + Playwright async) → R13.
+2. Ejecuta `node r4_granularidad.js {url} --no-detalle` → lee `analysis_data/r4_resultado.json` → R4.
+
+#### `combinados.py` — R12, R15, R16
+
+**Flujo con eventos de sincronización:**
+1. `ev_poligraph.wait()` + `ev_webxray.wait()` → ejecuta `r16_correspondencia.py {graph_yml} [{3p_csv}]`.
+2. `ev_pp.wait()` (webXray ya listo) → ejecuta `r12_software_terceros.py [{3p_csv}]`.
+3. (pp + poligraph ya listos) → ejecuta `r15_responsables.py [{graph_yml}]`.
+
+**Rutas de entrada:** `output_dir/poligraph/graph-original.full.yml` y `output_dir/webxray/3p_domains.csv`.
+Si algún fichero no existe (herramienta falló), se llama al script sin ese argumento;
+el script usará su ruta por defecto o fallará con `ERROR`.
+
+---
+
+#### `Herramienta_Priv/salida.py`
+
+Genera el informe HTML de auditoría a partir del dict de resultados devuelto por `auditar()`.
+
+**Función pública:**
+```python
+generar_informe_unico(url_sitio, resultados, ruta_salida)
+```
+
+**Estructura del informe:**
+- **Cabecera** — URL del sitio auditado y timestamp de generación.
+- **Tarjetas de resumen** — conteo de requisitos por veredicto: Total / ✅ Cumple / ⚠️ Aviso / ❌ Falla / — Sin dato.
+- **Tabla R1-R19** — una fila por requisito con: identificador, nombre y normativa aplicable, badge de veredicto con color, y sección colapsable con el JSON de detalle.
+
+**Colores por veredicto:**
+| Veredicto | Color texto | Color fondo |
+|---|---|---|
+| PASSED | verde #1a7f37 | #dafbe1 |
+| WARNING | ámbar #9a6700 | #fff8c5 |
+| FAILED | rojo #cf222e | #ffebe9 |
+| ERROR / NO_EVALUABLE | gris #57606a | #f6f8fa |
+
+El HTML es autónomo (sin dependencias externas, CSS y JS inline) y se puede abrir directamente en cualquier navegador.
+
+---
+
+#### `Herramienta_Priv/buscador_politica.py`
+
+Localiza la URL de la política de privacidad de un sitio web dado de forma **completamente
+automática**, sin intervención del usuario. Es prerequisito del hilo de PoliGraph, que
+necesita la URL de la política como entrada. Prefiere la versión en inglés cuando está
+disponible, ya que el modelo NLP de PoliGraph fue entrenado sobre corpus en inglés.
+
+**Dependencias:** `playwright`, `playwright-stealth`, `ddgs`
+
+**Flujo de ejecución:**
+
+**Fase 1 — Rastreo DOM con Playwright + stealth**
+Abre el sitio con Chromium headless aplicando `playwright-stealth` (parchea
+`navigator.webdriver`, `window.chrome`, `navigator.plugins`, etc.) y headers reales
+(`sec-ch-ua`, `Accept-Language`, viewport, locale, timezone). Hace scroll al fondo para
+activar lazy loading del footer. Extrae todos los `<a href>` del DOM y los filtra por
+palabras clave (`privacy`, `privacidad`, `legal`, `cookies`, `aviso`…). Los candidatos
+válidos se puntúan y se busca también `<link hreflang="en">` en el `<head>`.
+
+**Sistema de puntuación de candidatos DOM:**
+- +3 si href o texto contiene "privacidad", "privacy" o "datenschutz"
+- +1 si path longitud > 5 (no es la raíz del sitio)
+- +2 si el segmento final del path contiene "privacidad" o "privacy"
+- +2 si el texto del enlace es exactamente "política de privacidad" / "privacy policy"
+- −5 si el dominio es externo al sitio (penaliza Cloudflare, Google, CDNs…)
+- Candidato solo válido si score ≥ 0
+
+**Fase 2 — Selección por prioridad de idioma**
+Con los candidatos válidos ordenados por score, elige en este orden:
+1. `hreflang="en"` apuntando a política → más fiable
+2. Candidato cuya URL contiene `/en/`, `lang=en`, `/privacy-policy`, `/privacy-notice`…
+3. Candidato cuyo texto de enlace está en inglés ("Privacy Policy", "Privacy Notice")
+4. Mejor candidato por score (sin importar idioma)
+
+El resultado se limpia de fragmentos de tracking (`#vca=link-footer&...`).
+
+**Fase 3 — Fallback DDG (si el DOM devuelve 0 candidatos válidos)**
+Activada por sitios con Cloudflare managed challenge (ej: decathlon.es) o DataDome
+(ej: elpais.com) que no renderizan su footer ni ante Playwright + stealth.
+Lanza hasta 3 queries en DuckDuckGo usando la librería `ddgs`:
+1. `site:{dominio} "privacy policy"` → busca versión inglesa
+2. `site:{dominio} "política de privacidad"` → busca versión española
+3. `site:{dominio} privacidad` → fallback genérico
+
+Scoring de resultados DDG (requiere al menos una señal de privacidad):
+- "privac"/"privacy" en el path → +3 (obligatorio; sin señal → descartado)
+- Término de privacidad en el título del resultado DDG → +2
+- Dominio exacto (`www.decathlon.es`) → +2 | Subdominio relacionado → +1 | Externo → descartado
+- URLs con patrón de noticia (`/2024/01/05/`, `/noticias/`) → descartadas
+
+**Fase 4 — Fallback sondeo de rutas (último recurso)**
+Si DDG también falla, Playwright prueba directamente 13 rutas comunes:
+`/en/privacy-policy`, `/privacy-policy`, `/politica-privacidad`, `/legal`, `/aviso-legal`…
+Verifica que la página responda HTTP 200 y que su texto mencione palabras de privacidad.
+
+**Resultado si todas las fases fallan:** `{"url": None}` → el orquestador marca los
+requisitos de PoliGraph (R1, R5, R14, R15, R16, R19) como `NO_EVALUABLE`.
+
+**Resultados verificados en pruebas:**
+| Sitio | URL encontrada | Estrategia |
+|---|---|---|
+| abc.es | `vocento.com/politica-privacidad` | DOM score 3 |
+| marca.com | `marca.com/corporativo/politica-privacidad.html` | DOM score 8 |
+| elconfidencial.com | `.../politicas-de-privacidad/privacidad/` | DOM score 6 |
+| decathlon.es (Cloudflare) | `saladeprensa.decathlon.es/politica-de-privacidad/` | DDG score 6 |
+| elpais.com (DataDome) | `english.elpais.com/info/privacy-policy/` | DDG score 7 (inglés) |
+
+**Uso:**
+```bash
+python3 buscador_politica.py                        # abc.es por defecto
+python3 buscador_politica.py https://www.marca.com  # sitio explícito
+```
+
+**API (para importar desde main.py):**
+```python
+from buscador_politica import buscar_url_politica
+resultado = buscar_url_politica("https://www.marca.com")
+# resultado["url"]       → URL limpia (sin fragmentos de tracking), o None
+# resultado["es_ingles"] → True si se detectó versión en inglés
+# resultado["fuente"]    → "hreflang" | "url_en" | "texto_en" | "mejor_candidato"
+#                          | "ddg" | "sondeo_rutas"
+# resultado["candidatos"]→ lista completa de candidatos con score (para depuración)
+```
+
+---
+
 ## Objetivo final (visión a largo plazo)
 
 Una vez implementados y verificados individualmente todos los requisitos, se quiere
@@ -1126,3 +1466,82 @@ python3 r2_r3_cookies_beacons.py              # todos los sitios en la BD
 python3 r2_r3_cookies_beacons.py abc.es       # filtrar por sitio (substring)
 python3 r2_r3_cookies_beacons.py --no-detalle # solo resumen
 ```
+
+---
+
+## Bugs corregidos durante las pruebas de integración
+
+Esta sección documenta los bugs que aparecieron en las primeras pruebas end-to-end
+de la herramienta unificada y cómo se resolvieron.
+
+### Bug 1 — Nombre de fichero de resultado incorrecto (todos los módulos)
+
+**Síntoma:** `FileNotFoundError: r7_fingerprinting_resultado.json` (y similares para todos los scripts con nombre descriptivo).
+**Causa:** Los scripts de análisis guardan su resultado con el número de requisito (`r7_resultado.json`), no con el nombre completo del script.
+**Fix:** Se creó `modulos_herramientas/_loader.py` con el dict `_RESULTADO_FILES` que mapea nombre de script → nombre de fichero real. Todos los módulos importan `ejecutar_analisis()` desde ahí.
+
+### Bug 2 — Blacklight `Cannot find module './build/src'`
+
+**Síntoma:** `MODULE_NOT_FOUND` al lanzar `blacklight_runner.js`.
+**Causa:** `require('./build/src')` apuntaba a un subdirectorio que no existe; el build compilado está en `build/index.js` directamente.
+**Fix:** Cambiado a `require('./build')` en `BL/blacklight-collector/blacklight_runner.js`.
+
+### Bug 3 — WEC `ENOENT filterlists/easyprivacy.txt`
+
+**Síntoma:** WEC falla con error de fichero no encontrado al intentar cargar sus listas de filtros.
+**Causa:** El build TypeScript de WEC compila los `.js` pero no ejecuta `npm run copy-assets`, por lo que los ficheros estáticos no están en `build/src/assets/`.
+**Fix:** `cp -r src/assets/. build/src/assets/` desde el directorio de WEC.
+
+### Bug 4 — PoliGraph `No module named 'poligrapher'`
+
+**Síntoma:** `ModuleNotFoundError` al ejecutar `python -m poligrapher.scripts.html_crawler`.
+**Causa:** El entorno conda `poligraph` fue creado desde `environment.yml` pero el `pip install -e .` de PoliGraph es un paso separado que puede omitirse.
+**Fix:** `conda run -n poligraph pip install -e /home/pedro/Escritorio/UNI/CUARTO/tfg/PoliGraph/`
+
+### Bug 5 — PoliGraph `Executable doesn't exist at .../firefox-1522/firefox/firefox`
+
+**Síntoma:** PoliGraph `html_crawler` falla buscando Firefox que no está instalado.
+**Causa:** El entorno `poligraph` necesita Firefox para Playwright; `playwright install chromium` no basta.
+**Fix:** `conda run -n poligraph playwright install firefox`
+
+### Bug 6 — webXray `lxml undefined symbol: _PyGen_Send`
+
+**Síntoma:** `ImportError` al importar lxml dentro del entorno virtual de webXray.
+**Causa:** lxml 4.6.2 compilado para una versión de Python 3.10 diferente (ABI mismatch).
+**Fix:** `webXray/venv_tfg/bin/python3 -m pip install --upgrade lxml`
+
+### Bug 7 — webXray `File "page_lists/X" does not exist`
+
+**Síntoma:** Collector de webXray no encuentra el fichero de páginas aunque existe.
+**Causa:** `Collector.build_scan_task_queue` internamente concatena `page_lists/` al nombre del fichero; pasar la ruta completa produce una doble ruta.
+**Fix:** En `webXray/webxray_headless.py`, se pasa `os.path.basename(pages_file)` al Collector, no la ruta completa.
+
+### Bug 8 — R9 `AttributeError: 'list' object has no attribute 'get'`
+
+**Síntoma:** R9 marcado como ERROR con este mensaje.
+**Causa:** `r9_minimizacion.py` devuelve una **lista** de dicts `[{sitio, estado, ...}]`, no un dict con clave `"sitios"`. El código de `privacy_pioneer.py` aplicaba `data.get("sitios", {})` a todos los scripts incluyendo r9.
+**Fix:** Bifurcación por nombre de script en `privacy_pioneer.py`; r9 usa un `_ESTADO_MAP` para traducir `{FALLO→FAILED, ADVERTENCIA→WARNING, OK→PASSED, SIN_DATOS→NO_EVALUABLE}`.
+
+### Bug 9 — R15 `FileNotFoundError: .../privacy-pioneer-web-crawler/analysis_data/reporte_auditoria.json`
+
+**Síntoma:** R15 ERROR con `FileNotFoundError`.
+**Causa:** Ruta hardcodeada en `r15_responsables.py` le faltaba `tfg/` en el segmento de path.
+**Fix:** Corregida la constante `REPORTE_PATH` para incluir `tfg/`.
+
+### Bug 10 — R12 `FileNotFoundError: .../webXray/reports/...`
+
+**Síntoma:** R12 ERROR cuando no se pasa CSV de webXray y se usa el default.
+**Causa:** Igual que Bug 9 — constante `RUTA_WX_DEFAULT` en `r12_software_terceros.py` sin `tfg/`.
+**Fix:** Corregida la constante.
+
+### Bug 11 — R13 veredicto `UNKNOWN` no reconocido en el informe HTML
+
+**Síntoma:** R13 aparece en gris de ERROR aunque el script se ejecutó correctamente.
+**Causa:** `r13_dark_patterns.py` devuelve `"UNKNOWN"` cuando no detecta banner (sitio sin CMP). Este valor no está en el dict `COLORES` de `salida.py`.
+**Fix:** En `playwright_mod.py`, `"UNKNOWN"` se mapea a `"NO_EVALUABLE"` antes de guardar el veredicto.
+
+### Bug 12 — R12 veredicto siempre `ERROR` en `combinados.py`
+
+**Síntoma:** R12 reportado como ERROR aunque r12_software_terceros.py se ejecutaba bien.
+**Causa:** `combinados.py` intentaba `data.get("sitios", {})` pero el JSON de r12 tiene los sitios directamente como claves raíz (sin wrapper `"sitios"`).
+**Fix:** Corregido el parsing en `combinados.py` para iterar `data.values()` directamente.

@@ -1,143 +1,163 @@
-import re
-import sqlite3
+"""
+Módulo Privacy Pioneer — R2, R3, R9.
 
-def extraer_nombre_cookie(snippet):
-    """
-    Extrae el nombre de la cookie a partir del texto crudo guardado en la BBDD.
-    Ejemplo: '_ga=GA1.2.1234; Path=/' -> Devuelve '_ga'
-    """
-    if not snippet:
-        return None
-        
-    # Busca todo el texto desde el principio hasta el primer signo '='
-    match = re.match(r"^([^=]+)=", snippet)
-    if match:
-        return match.group(1).strip()
-    return None
+Lanza el crawl de Privacy Pioneer (Selenium + extensión Firefox) y ejecuta
+los scripts de análisis correspondientes.
+
+Flujo:
+  1. Limpia las entradas MySQL del sitio para evitar contaminación.
+  2. Escribe un CSV temporal con la URL a auditar.
+  3. Inicia la REST API (rest-api/index.js) que recibe eventos de la extensión.
+  4. Lanza el crawler (selenium-crawler/local-crawler.js).
+  5. Al finalizar, mata la REST API y ejecuta los scripts de análisis.
+"""
+
+import logging
+import subprocess
+import tempfile
+import threading
+import time
+from pathlib import Path
+from urllib.parse import urlparse
+
+from ._loader import ejecutar_analisis, TFG_DIR, ANALYSIS_DATA
+
+log = logging.getLogger(__name__)
+
+# ── Rutas ─────────────────────────────────────────────────────────────────────
+PP_DIR         = TFG_DIR / "privacy-pioneer-web-crawler"
+CRAWLER_DIR    = PP_DIR / "selenium-crawler"
+REST_API_DIR   = PP_DIR / "rest-api"
+
+# Timeout del crawler en segundos (por defecto ~5 min por sitio)
+CRAWLER_TIMEOUT = 360
 
 
-def evaluar_bloque_pioneer(ruta_bbdd):
-    """
-    Evalúa todos los requisitos que dependen de la recolección de Privacy-Pioneer.
-    Abre la BBDD una sola vez por eficiencia y devuelve los resultados agrupados.
-    """
-    print("[*] Procesando bloque de datos: Privacy-Pioneer...")
-    resultados = {}
-    
+def _dominio(url: str) -> str:
+    return urlparse(url).netloc.lstrip("www.")
+
+
+def _limpiar_mysql(dominio: str) -> None:
+    """Borra las entradas de este sitio en MySQL para que el análisis sea limpio."""
     try:
-        # --- 1. CARGA DE LA "VERDAD ABSOLUTA" (Open Cookie Database) ---
-        df_ocd = pd.read_csv(ruta_csv_ocd)  #TODO: Colocar ruta real
-        cookies_ilegales = df_ocd[df_ocd['Category'].isin(['Marketing', 'Analytics'])]
-        nombres_prohibidos = set(cookies_ilegales['Cookie / Data Key name'].str.lower())
-
-        # --- 2. EXTRACCIÓN DE LA "REALIDAD TÉCNICA" (Privacy-Pioneer) ---
-        conn = sqlite3.connect(ruta_bbdd)
-        cursor = conn.cursor()
-        
-        # ATENCIÓN AQUÍ: Pedimos TODO lo que sea sospechoso en la carga inicial
-        cursor.execute("""
-            SELECT requestUrl, typ, parentCompany 
-            FROM entries 
-            WHERE consent_phase = 'PRE' 
-            AND typ IN ('cookie', 'trackingPixel', 'fingerprinting', 'advertising', 'analytics')
-        """)
-        capturas_pre = cursor.fetchall()
+        import mysql.connector
+        conn = mysql.connector.connect(
+            host="localhost", user="pioneer", password="abc", database="analysis"
+        )
+        cur = conn.cursor()
+        cur.execute("DELETE FROM entries WHERE rootUrl LIKE %s", (f"%{dominio}%",))
+        conn.commit()
         conn.close()
-
-        # --- 3. MOTOR DE CLASIFICACIÓN Y REPARTO ---
-        infracciones_r2 = []       # Para guardar cookies comerciales
-        cookies_perdonadas = 0     # Cookies técnicas (exentas)
-        infracciones_r3 = []       # Para guardar peticiones de rastreo/beacons
-
-        for url, tipo, empresa in capturas_pre:
-            # Formateamos el nombre de la empresa para que el reporte quede limpio
-            empresa_texto = empresa if empresa != "Unknown" else url[:30]+"..."
-            
-            if tipo == 'cookie':
-                # [LÓGICA DEL R2] -> Interrogamos a la Open Cookie Database
-                nombre_cookie = extraer_nombre_cookie(url)
-                if nombre_cookie and nombre_cookie.lower() in nombres_prohibidos:
-                    infracciones_r2.append(f"{nombre_cookie} ({empresa_texto})")
-                else:
-                    cookies_perdonadas += 1
-            else:
-                # [LÓGICA DEL R3] -> Si es tracking, advertising o fingerprinting en PRE, 
-                # es un Web Beacon / Script espía ilegal por definición.
-                infracciones_r3.append(f"[{tipo.upper()}] enviado a: {empresa_texto}")
-
-        # --- 4. GENERACIÓN DE VEREDICTOS ---
-        
-        # Veredicto R2 (Cookies)
-        if len(infracciones_r2) == 0:
-            resultados["R2"] = {
-                "cumple": True, "estado": "CUMPLE",
-                "detalle": f"0 cookies comerciales en carga inicial. (Se ignoraron {cookies_perdonadas} cookies técnicas/exentas)."
-            }
-        else:
-            resultados["R2"] = {
-                "cumple": False, "estado": "NO CUMPLE",
-                "detalle": f"Se instalaron {len(infracciones_r2)} cookies NO exentas antes del banner (Ej: {infracciones_r2[0]})."
-            }
-
-        # Veredicto R3 (Web Beacons y Tracking)
-        if len(infracciones_r3) == 0:
-            resultados["R3"] = {
-                "cumple": True, "estado": "CUMPLE",
-                "detalle": "No se detectaron Web Beacons, advertising ni fingerprinting en la carga inicial."
-            }
-        else:
-            resultados["R3"] = {
-                "cumple": False, "estado": "NO CUMPLE",
-                "detalle": f"Web Beacons detectados: {len(infracciones_r3)} peticiones de rastreo directo en fase PRE (Ej: {infracciones_r3[0]})."
-            }
-
-        # ---------------------------------------------------------
-        # EVALUACIÓN R9 (Minimización de datos)
-        # ---------------------------------------------------------
-        # Extraemos fragmentos de datos recolectados para aplicar un filtro
-        cursor.execute("""
-            SELECT requestUrl, snippet 
-            FROM entries 
-            WHERE snippet IS NOT NULL AND snippet != '' 
-            LIMIT 5
-        """)
-        datos_extraidos = cursor.fetchall()
-        
-        # Nota: Aquí más adelante insertaremos las RegEx de minimización que mencionas en tu croquis
-        if datos_extraidos:
-            resultados["R9"] = {
-                "cumple": False, # Pendiente de ajustar la lógica RegEx final
-                "estado": "AVISO",
-                "detalle": f"Se han capturado {len(datos_extraidos)} snippets de datos. Requiere análisis de minimización."
-            }
-        else:
-            resultados["R9"] = {"cumple": True, "estado": "CUMPLE", "detalle": "No se ha detectado exfiltración de snippets de texto."}
-
-        # ---------------------------------------------------------
-        # EVALUACIÓN R15 (Identificación de Responsables Técnicos)
-        # ---------------------------------------------------------
-        cursor.execute("""
-            SELECT DISTINCT parentCompany 
-            FROM entries 
-            WHERE parentCompany IS NOT NULL AND parentCompany != 'Unknown'
-        """)
-        responsables = [fila[0] for fila in cursor.fetchall()]
-        
-        resultados["R15"] = {
-            "cumple": len(responsables) > 0,
-            "estado": "CUMPLE" if len(responsables) > 0 else "NO CUMPLE",
-            "detalle": f"Identificadas {len(responsables)} empresas técnicas (Ej: {', '.join(responsables[:2])}...)" if responsables else "Todos los rastreadores figuran como 'Unknown'."
-        }
-
-        # Cerramos la conexión
-        conn.close()
-        
+        log.info("MySQL limpiado para %s (%d filas)", dominio, cur.rowcount)
     except Exception as e:
-        print(f"[-] Error al leer la base de datos de Privacy-Pioneer: {e}")
-        # Si falla la BBDD, marcamos los requisitos como error
-        for req in ["R2", "R3", "R9", "R15"]:
-            resultados[req] = {"cumple": False, "estado": "ERROR", "detalle": "Fallo al acceder a SQLite."}
-
-    return resultados
+        log.warning("No se pudo limpiar MySQL: %s", e)
 
 
+def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock) -> None:
+    """
+    Lanza Privacy Pioneer para el sitio dado, luego evalúa R2, R3 y R9.
+
+    Args:
+        url:        URL del sitio a auditar.
+        output_dir: Directorio donde guardar la salida de la herramienta.
+        resultados: Dict compartido entre hilos.
+        lock:       Lock para escribir en resultados.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    dominio = _dominio(url)
+
+    # 1. Limpiar MySQL
+    _limpiar_mysql(dominio)
+
+    # 2. Escribir CSV temporal con la URL
+    csv_sitio = CRAWLER_DIR / "prueba-tfg.csv"
+    csv_bak   = CRAWLER_DIR / "prueba-tfg.csv.bak"
+    try:
+        if csv_sitio.exists():
+            csv_sitio.rename(csv_bak)
+        csv_sitio.write_text(f"url\n{url}\n", encoding="utf-8")
+    except Exception as e:
+        log.error("No se pudo escribir CSV del crawler: %s", e)
+        with lock:
+            for r in ["R2", "R3", "R9"]:
+                resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}
+        return
+
+    # 3. Iniciar REST API
+    log.info("Iniciando REST API de Privacy Pioneer…")
+    api_proc = subprocess.Popen(
+        ["node", "index.js"],
+        cwd=str(REST_API_DIR),
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    time.sleep(3)  # dar tiempo a que arranque
+
+    try:
+        # 4. Lanzar crawler
+        log.info("Lanzando crawler de Privacy Pioneer para %s…", url)
+        crawler = subprocess.run(
+            ["node", "local-crawler.js"],
+            cwd=str(CRAWLER_DIR),
+            capture_output=True,
+            text=True,
+            timeout=CRAWLER_TIMEOUT,
+        )
+        if crawler.returncode != 0:
+            log.warning("Crawler terminó con código %d", crawler.returncode)
+    except subprocess.TimeoutExpired:
+        log.warning("Crawler superó timeout (%ds)", CRAWLER_TIMEOUT)
+    finally:
+        # 5. Matar REST API y restaurar CSV
+        api_proc.terminate()
+        try:
+            api_proc.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            api_proc.kill()
+
+        csv_sitio.unlink(missing_ok=True)
+        if csv_bak.exists():
+            csv_bak.rename(csv_sitio)
+
+    # 6. Copiar reporte de cookies al output_dir
+    reporte_src = ANALYSIS_DATA / "reporte_auditoria.json"
+    if reporte_src.exists():
+        import shutil
+        shutil.copy2(reporte_src, output_dir / "reporte_auditoria.json")
+
+    # 7. Ejecutar análisis
+    for req, script, args in [
+        (["R2", "R3"], "r2_r3_cookies_beacons", [dominio]),
+        (["R9"],       "r9_minimizacion",        [dominio]),
+    ]:
+        try:
+            data = ejecutar_analisis(script, *args)
+
+            with lock:
+                if script == "r2_r3_cookies_beacons":
+                    # r2/r3: dict con clave "sitios" → {dominio: {veredicto, ...}}
+                    sitios  = data.get("sitios", {})
+                    entrada = next(
+                        (v for k, v in sitios.items() if dominio in k or k in dominio),
+                        next(iter(sitios.values()), None)
+                    )
+                    veredicto = entrada.get("veredicto", "ERROR") if entrada else "ERROR"
+                    resultados["R2"] = {"veredicto": veredicto, "detalle": entrada or {}}
+                    resultados["R3"] = {"veredicto": veredicto, "detalle": entrada or {}}
+                else:
+                    # r9: lista de dicts con {sitio, estado, ...}
+                    _ESTADO_MAP = {"FALLO": "FAILED", "ADVERTENCIA": "WARNING",
+                                   "OK": "PASSED", "SIN_DATOS": "NO_EVALUABLE"}
+                    lista = data if isinstance(data, list) else []
+                    item  = next((d for d in lista if dominio in d.get("sitio", "")), None)
+                    if item is None and lista:
+                        item = lista[0]
+                    estado    = item.get("estado", "ERROR") if item else "ERROR"
+                    veredicto = _ESTADO_MAP.get(estado, estado)
+                    resultados["R9"] = {"veredicto": veredicto, "detalle": data}
+
+        except Exception as e:
+            log.error("%s falló: %s", script, e)
+            with lock:
+                for r in req:
+                    resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}

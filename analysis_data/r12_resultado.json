@@ -1,0 +1,205 @@
+{
+  "https://www.marca.com/": {
+    "estado": "FALLO",
+    "total_unicas": 7,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 6,
+    "violaciones": [
+      {
+        "dominio": "c.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": true,
+        "owner_wx": "GfK",
+        "pais_wx": "DE",
+        "lineage_wx": "GfK",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=279395918757488&status=true&cookie=true"
+      },
+      {
+        "dominio": "config.aps.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://config.aps.amazon-adsystem.com/configs/3537"
+      },
+      {
+        "dominio": "static.hotjar.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Hotjar",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.hotjar.com/c/hotjar-413277.js?sv=6"
+      },
+      {
+        "dominio": "script.crazyegg.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Crazy Egg",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
+      },
+      {
+        "dominio": "oa.openxcdn.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://oa.openxcdn.net/esp.js"
+      }
+    ]
+  },
+  "https://www.abc.es/": {
+    "estado": "FALLO",
+    "total_unicas": 10,
+    "confirmadas_ambas_herramientas": 2,
+    "solo_privacy_pioneer": 8,
+    "violaciones": [
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": true,
+        "owner_wx": "Adobe Audience Manager",
+        "pais_wx": "US",
+        "lineage_wx": "Adobe Audience Manager > Adobe Experience Cloud > Adobe Systems",
+        "request_url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEKgMNOjSBEBA-U5GhUOQlns&google_cver=1?gdpr=0&gdpr_consent="
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": true,
+        "owner_wx": "Adobe Audience Manager",
+        "pais_wx": "US",
+        "lineage_wx": "Adobe Audience Manager > Adobe Experience Cloud > Adobe Systems",
+        "request_url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A"
+      },
+      {
+        "dominio": "28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app/28986622-e6be-473d-9a8f-e603a25f3c66-web.js"
+      },
+      {
+        "dominio": "dmp.im-apps.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "IntimateMerger",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dmp.im-apps.net/secure-signal/provider.js"
+      },
+      {
+        "dominio": "ads.pubmatic.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "PubMatic",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ads.pubmatic.com/AdServer/js/google-esp.js"
+      },
+      {
+        "dominio": "tags.crwdcntrl.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Lotame",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://tags.crwdcntrl.net/lt/c/16589/sync.min.js"
+      },
+      {
+        "dominio": "cdn.id5-sync.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ID5",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.id5-sync.com/api/1.0/esp.js"
+      },
+      {
+        "dominio": "oa.openxcdn.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://oa.openxcdn.net/esp.js"
+      },
+      {
+        "dominio": "static.criteo.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Criteo",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.criteo.net/js/ld/publishertag.ids.js"
+      },
+      {
+        "dominio": "connectid.analytics.yahoo.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "VerizonMedia",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connectid.analytics.yahoo.com/connectId-gpt.js"
+      }
+    ]
+  }
+}
