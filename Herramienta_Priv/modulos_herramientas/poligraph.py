@@ -121,15 +121,25 @@ def ejecutar(url_politica: str, output_dir: Path,
     log.info("Pipeline PoliGraph completado en %s", output_dir)
 
     # ── Análisis de requisitos ────────────────────────────────────────────────
-    # R1: árbol de accesibilidad (accessibility_tree.json)
+    # R1 y R5 necesitan el árbol de accesibilidad del SITIO PRINCIPAL, donde el
+    # banner de cookies es visible. playwright_mod.py lo guarda en
+    # output_dir.parent/playwright/accessibility_tree.json. Si existe, se usa ese;
+    # si no (playwright no terminó aún o falló), se usa el árbol de la política.
+    playwright_tree = output_dir.parent / "playwright" / "accessibility_tree.json"
+
     for req, script in [
         ("R1",  "r1_capas"),
         ("R5",  "r5_revocabilidad"),
         ("R14", "r14_lenguaje"),
         ("R19", "r19_dpo"),
     ]:
+        # R1 y R5 prefieren el árbol del sitio principal (con el banner de cookies)
+        if script in ("r1_capas", "r5_revocabilidad") and playwright_tree.exists():
+            script_input = str(playwright_tree)
+        else:
+            script_input = str(output_dir)
         try:
-            data = ejecutar_analisis(script, str(output_dir))
+            data = ejecutar_analisis(script, script_input)
             with lock:
                 resultados[req] = {
                     "veredicto": data.get("veredicto", "ERROR"),

@@ -43,6 +43,43 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock)
         with lock:
             resultados["R13"] = {"veredicto": "ERROR", "detalle": str(e)}
 
+    # ── Árbol de accesibilidad del sitio principal (para R1 y R5) ────────────
+    # r1_capas y r5_revocabilidad necesitan ver el banner de cookies del sitio
+    # real. Se captura aquí con stealth para que el CMP renderice el banner
+    # (sin stealth los sitios detectan el headless y no muestran el banner).
+    try:
+        from playwright.sync_api import sync_playwright
+        from playwright_stealth import Stealth
+        import json as _json
+        from ._ax_tree import cdp_to_snapshot as _cdp_to_snapshot
+
+        with sync_playwright() as _pw:
+            _browser = _pw.chromium.launch()
+            _ctx = _browser.new_context(
+                viewport={"width": 1280, "height": 800},
+                locale="es-ES",
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/124.0.0.0 Safari/537.36"
+                ),
+            )
+            Stealth().apply_stealth_sync(_ctx)
+            _page = _ctx.new_page()
+            _page.goto(url, wait_until="networkidle", timeout=30000)
+            _page.wait_for_timeout(3000)  # esperar que el CMP renderice
+            _cdp = _ctx.new_cdp_session(_page)
+            _ax = _cdp.send("Accessibility.getFullAXTree")
+            _cdp.detach()
+            _browser.close()
+
+        _snapshot = _cdp_to_snapshot(_ax.get("nodes", []))
+        _tree_path = output_dir / "accessibility_tree.json"
+        _tree_path.write_text(_json.dumps(_snapshot, ensure_ascii=False), encoding="utf-8")
+        log.info("Árbol de accesibilidad del sitio principal guardado en %s", _tree_path)
+    except Exception as _e:
+        log.warning("No se pudo capturar el árbol de accesibilidad del sitio principal: %s", _e)
+
     # ── R4: Granularidad (Node.js) ────────────────────────────────────────────
     r4_script = ANALYSIS_SCRIPTS / "r4_granularidad.js"
     r4_result  = ANALYSIS_DATA / "r4_resultado.json"

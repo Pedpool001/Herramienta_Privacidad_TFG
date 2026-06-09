@@ -1,0 +1,285 @@
+https://www.abc.es:
+  msftWemass:
+    value: ',,wmsk=true'
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 24745
+          lineNumber: 2
+          fileName: https://static.vocstatic.com/tag-manager/latest/vtm.js
+          source: '    at https://static.vocstatic.com/tag-manager/latest/vtm.js:2:24745'
+      type: Storage.LocalStorage
+  rtim:gis-control:
+    value:
+      pageViewCount: 2
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 17963
+          lineNumber: 3
+          fileName: https://static.vocstatic.com/widgets/4.38.0/loader.js
+          functionName: Object.set
+          source: '    at Object.set (https://static.vocstatic.com/widgets/4.38.0/loader.js:3:17963)'
+        - columnNumber: 18043
+          lineNumber: 3
+          fileName: https://static.vocstatic.com/widgets/4.38.0/loader.js
+          functionName: Object.create
+          source: '    at Object.create (https://static.vocstatic.com/widgets/4.38.0/loader.js:3:18043)'
+      type: Storage.LocalStorage
+  NRBA_SESSION::b699b1ff:
+    value:
+      value: 63b5412a6c0b3917
+      inactiveAt: 1780972713581
+      expiresAt: 1780985303022
+      updatedAt: 1780970913581
+      sessionReplayMode: 0
+      sessionReplaySentFirstChunk: false
+      sessionTraceMode: 0
+      traceHarvestStarted: false
+      loggingMode: 0
+      logApiMode: 0
+      serverTimeDiff: 2
+      custom: {}
+      numOfResets: 0
+      consent: false
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 78476
+          lineNumber: 2
+          fileName: https://js-agent.newrelic.com/nr-full-1.316.0.min.js
+          functionName: w.set
+          source: '    at w.set (https://js-agent.newrelic.com/nr-full-1.316.0.min.js:2:78476)'
+        - columnNumber: 77019
+          lineNumber: 2
+          fileName: https://js-agent.newrelic.com/nr-full-1.316.0.min.js
+          functionName: R.write
+          source: '    at R.write (https://js-agent.newrelic.com/nr-full-1.316.0.min.js:2:77019)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: segmentosCDP':
+    value: no_definido
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: navegacionSinCookies':
+    value: si
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  lastExternalReferrerTime:
+    value: 1780970909313
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 242
+          lineNumber: 57
+          fileName: >-
+            https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171
+          functionName: i
+          source: '    at i (https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171:57:242)'
+        - columnNumber: 1226
+          lineNumber: 122
+          fileName: >-
+            https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171
+          functionName: e.plugin
+          source: '    at e.plugin (https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171:122:1226)'
+      type: Storage.LocalStorage
+  didomi_token:
+    value: >-
+      eyJ1c2VyX2lkIjoiMTllYWEyMzQtNzk2ZC02NmMxLTg4NWUtN2RiZWE0OGM1ZGRjIiwiY3JlYXRlZCI6IjIwMjYtMDYtMDlUMDI6MDg6MTkuMzUwWiIsInVwZGF0ZWQiOiIyMDI2LTA2LTA5VDAyOjA4OjE5LjM1MloiLCJ2ZXJzaW9uIjpudWxsfQ==
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 72470
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/94fc7b02d13f5156224b447ebc78b95891430a88/modern/sdk.94fc7b02d13f5156224b447ebc78b95891430a88.js
+          functionName: s
+          source: '    at s (https://sdk.privacy-center.org/sdk/94fc7b02d13f5156224b447ebc78b95891430a88/modern/sdk.94fc7b02d13f5156224b447ebc78b95891430a88.js:2:72470)'
+        - columnNumber: 140832
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/94fc7b02d13f5156224b447ebc78b95891430a88/modern/sdk.94fc7b02d13f5156224b447ebc78b95891430a88.js
+          functionName: h
+          source: '    at h (https://sdk.privacy-center.org/sdk/94fc7b02d13f5156224b447ebc78b95891430a88/modern/sdk.94fc7b02d13f5156224b447ebc78b95891430a88.js:2:140832)'
+      type: Storage.LocalStorage
+  com.adobe.reactor.dataElements.visitorID:
+    value: '05982499729491203252987527710841986901'
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: segmentsEvolok':
+    value: >-
+      Logged-Out,visitFrequency-month-LESS30,UserType-Anonimo-Or-Registrado-Or-No-suscriptorV2,Not-SectionCustom-probrand,No-Phone-provided,WebType-Home,section-NOT-ABC-deportes-tenis,Role-NONE,UserType-No-suscriptorV2,UserType-NuncaSuscriptor,site-ABC,Category-ABC-not-archivo,Geo-ES,consent-no,Category-ABC-not-cultura,Geo-NotUndefined,Device-Desktop,WebType-not-colectivoqr,UserType-AnonimoV2,Category-ABC-not-favorito,canallDirecto,Device-Desktop-OR-Tablet,Suscription-Status-Undefined,ABC-category-not-cultural-pasion-gurme-palmera-nervion-archivo-favorito
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: IDEvolok':
+    value: ''
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: ppid':
+    value: ''
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: vocCookie':
+    value: ''
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage
+  lastExternalReferrer:
+    value: empty
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 242
+          lineNumber: 57
+          fileName: >-
+            https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171
+          functionName: i
+          source: '    at i (https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171:57:242)'
+        - columnNumber: 1105
+          lineNumber: 122
+          fileName: >-
+            https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171
+          functionName: e.plugin
+          source: '    at e.plugin (https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171:122:1105)'
+      type: Storage.LocalStorage
+  wemass:
+    value:
+      wmsk:
+        - 'true'
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 24829
+          lineNumber: 2
+          fileName: https://static.vocstatic.com/tag-manager/latest/vtm.js
+          source: '    at https://static.vocstatic.com/tag-manager/latest/vtm.js:2:24829'
+      type: Storage.LocalStorage
+  'com.adobe.reactor.dataElements.AEP: visitorID':
+    value: '05982499729491203252987527710841986901'
+    firstPartyStorage: true
+    log:
+      location: https://www.abc.es/
+      stack:
+        - columnNumber: 4038
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4038)'
+        - columnNumber: 4557
+          lineNumber: 17
+          fileName: >-
+            https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+          functionName: Object.setValue
+          source: '    at Object.setValue (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:17:4557)'
+      type: Storage.LocalStorage

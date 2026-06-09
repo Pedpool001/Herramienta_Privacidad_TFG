@@ -2,18 +2,18 @@
   "https://www.marca.com/": {
     "estado": "FALLO",
     "total_unicas": 7,
-    "confirmadas_ambas_herramientas": 1,
-    "solo_privacy_pioneer": 6,
+    "confirmadas_ambas_herramientas": 4,
+    "solo_privacy_pioneer": 3,
     "violaciones": [
       {
         "dominio": "c.amazon-adsystem.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Amazon",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
+        "en_webxray": true,
+        "owner_wx": "Amazon Marketing Services",
+        "pais_wx": "US",
+        "lineage_wx": "Amazon Marketing Services > Amazon",
         "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
       },
       {
@@ -32,10 +32,10 @@
         "tipo_pp": "social",
         "descripcion": "Redes sociales",
         "empresa_pp": "Facebook",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
+        "en_webxray": true,
+        "owner_wx": "Facebook",
+        "pais_wx": "US",
+        "lineage_wx": "Facebook",
         "request_url": "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=279395918757488&status=true&cookie=true"
       },
       {
@@ -43,10 +43,10 @@
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Amazon",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
+        "en_webxray": true,
+        "owner_wx": "Amazon Marketing Services",
+        "pais_wx": "US",
+        "lineage_wx": "Amazon Marketing Services > Amazon",
         "request_url": "https://config.aps.amazon-adsystem.com/configs/3537"
       },
       {
@@ -86,9 +86,9 @@
   },
   "https://www.abc.es/": {
     "estado": "FALLO",
-    "total_unicas": 10,
-    "confirmadas_ambas_herramientas": 2,
-    "solo_privacy_pioneer": 8,
+    "total_unicas": 31,
+    "confirmadas_ambas_herramientas": 7,
+    "solo_privacy_pioneer": 24,
     "violaciones": [
       {
         "dominio": "dpm.demdex.net",
@@ -99,7 +99,29 @@
         "owner_wx": "Adobe Audience Manager",
         "pais_wx": "US",
         "lineage_wx": "Adobe Audience Manager > Adobe Experience Cloud > Adobe Systems",
-        "request_url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEKgMNOjSBEBA-U5GhUOQlns&google_cver=1?gdpr=0&gdpr_consent="
+        "request_url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEBMVPCZOyKdcMknpZv1K7j0&google_cver=1?gdpr=0&gdpr_consent="
+      },
+      {
+        "dominio": "ib.adnxs.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ib.adnxs.com/setuid?entity=315&code=sywJM_TAq5Et3Ypfkf20Gxw-v8Au0mGdiK-3FgfjsrU&consent=1"
+      },
+      {
+        "dominio": "static.adsafeprotected.com",
+        "tipo_pp": "fingerprinting",
+        "descripcion": "Fingerprinting de dispositivo",
+        "empresa_pp": "Integral Ad Science",
+        "en_webxray": true,
+        "owner_wx": "Integral Ad Science",
+        "pais_wx": "US",
+        "lineage_wx": "Integral Ad Science",
+        "request_url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
       },
       {
         "dominio": "dpm.demdex.net",
@@ -113,6 +135,28 @@
         "request_url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A"
       },
       {
+        "dominio": "static.adsafeprotected.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Integral Ad Science",
+        "en_webxray": true,
+        "owner_wx": "Integral Ad Science",
+        "pais_wx": "US",
+        "lineage_wx": "Integral Ad Science",
+        "request_url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "dominio": "web-banner.ads.aps.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": true,
+        "owner_wx": "Amazon Marketing Services",
+        "pais_wx": "US",
+        "lineage_wx": "Amazon Marketing Services > Amazon",
+        "request_url": "https://web-banner.ads.aps.amazon-adsystem.com/e/dtb/bid"
+      },
+      {
         "dominio": "28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
@@ -122,28 +166,6 @@
         "pais_wx": "",
         "lineage_wx": "",
         "request_url": "https://28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app/28986622-e6be-473d-9a8f-e603a25f3c66-web.js"
-      },
-      {
-        "dominio": "dmp.im-apps.net",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "IntimateMerger",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://dmp.im-apps.net/secure-signal/provider.js"
-      },
-      {
-        "dominio": "ads.pubmatic.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "PubMatic",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://ads.pubmatic.com/AdServer/js/google-esp.js"
       },
       {
         "dominio": "tags.crwdcntrl.net",
@@ -157,15 +179,15 @@
         "request_url": "https://tags.crwdcntrl.net/lt/c/16589/sync.min.js"
       },
       {
-        "dominio": "cdn.id5-sync.com",
+        "dominio": "dmp.im-apps.net",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
-        "empresa_pp": "ID5",
+        "empresa_pp": "IntimateMerger",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://cdn.id5-sync.com/api/1.0/esp.js"
+        "request_url": "https://dmp.im-apps.net/secure-signal/provider.js"
       },
       {
         "dominio": "oa.openxcdn.net",
@@ -188,6 +210,215 @@
         "pais_wx": "",
         "lineage_wx": "",
         "request_url": "https://static.criteo.net/js/ld/publishertag.ids.js"
+      },
+      {
+        "dominio": "cdn.id5-sync.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ID5",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.id5-sync.com/api/1.0/esp.js"
+      },
+      {
+        "dominio": "invstatic101.creativecdn.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "RTBHouse",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"
+      },
+      {
+        "dominio": "api.permutive.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Permutive",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://api.permutive.com/v2.0/watson?k=390f11db-6eea-42eb-9ef9-4d27b1bb2bab"
+      },
+      {
+        "dominio": "28986622-e6be-473d-9a8f-e603a25f3c66.prmutv.co",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://28986622-e6be-473d-9a8f-e603a25f3c66.prmutv.co/v2.0/pxid?k=390f11db-6eea-42eb-9ef9-4d27b1bb2bab"
+      },
+      {
+        "dominio": "ib.adnxs.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ib.adnxs.com/getuidj?gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf9_hr7sQxBgb"
+      },
+      {
+        "dominio": "s.seedtag.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.seedtag.com/cs/cookiesync/amazon?redirect=https%3A%2F%2Faax-eu.amazon-adsystem.com%2Fs%2Fecm3%3Fex%3Dseedtag.c"
+      },
+      {
+        "dominio": "ms-cookie-sync.presage.io",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ms-cookie-sync.presage.io/user-sync.html?source=tam&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXl"
+      },
+      {
+        "dominio": "ssum-sec.casalemedia.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Casale Media",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ssum-sec.casalemedia.com/usermatch?cb=https%3A%2F%2Faax-eu.amazon-adsystem.com%2Fs%2Fecm3%3Fgdpr%3D1%26gdpr_cons"
+      },
+      {
+        "dominio": "ap.lijit.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Federated Media",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ap.lijit.com/pixel?gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf9_hr7sQxBgbIk"
+      },
+      {
+        "dominio": "c1.adform.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adform",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://c1.adform.net/cookie?redirect_url=https%3A%2F%2Fs.seedtag.com%2Fcs%2Fcookiesync%2Fadform%3Fchanneluid%3D%24UID"
+      },
+      {
+        "dominio": "ums.acuityplatform.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Acuity",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ums.acuityplatform.com/tum?umid=8&us_privacy=&gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bX"
+      },
+      {
+        "dominio": "sync.richaudience.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "RichAudience",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync.richaudience.com/f7872c90c5d3791e2b51f7edce1a0a5d/?p=MMuGgvZcVd&r=https%3A%2F%2Faax-eu.amazon-adsystem.com%"
+      },
+      {
+        "dominio": "onetag-sys.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://onetag-sys.com/usync/?pubId=7a4244b2979db22&gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr"
+      },
+      {
+        "dominio": "user-sync.fwmrm.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "FreeWheel",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://user-sync.fwmrm.net/ad/u?mode=echo&cr=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D3%26gdpr%3D1%26gdpr_con"
+      },
+      {
+        "dominio": "rtb.mfadsrvr.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "BidSwitch",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://rtb.mfadsrvr.com/ul_cb/sync?ssp=onetag&ssp_user_id=MbrBH1tUl7hU1ltWLzxBbpKDzwviNQ38MFLp19eaZBc&gdpr=1&gdpr_conse"
+      },
+      {
+        "dominio": "d.adroll.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AdRoll",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://d.adroll.com/cm/b/tp_out?advertisable=3GMDZMBFQREVBC75SYYKWH&ssp=onetag&bsw_param=da20e73b-6bec-4c25-af99-6a34e8"
+      },
+      {
+        "dominio": "match.prod.bidr.io",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Bidr",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://match.prod.bidr.io/cookie-sync/rp?bee_sync_partners=rp&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__"
+      },
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": true,
+        "owner_wx": "GfK",
+        "pais_wx": "DE",
+        "lineage_wx": "GfK",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "dominio": "js-agent.newrelic.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "New Relic",
+        "en_webxray": true,
+        "owner_wx": "New Relic",
+        "pais_wx": "US",
+        "lineage_wx": "New Relic",
+        "request_url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
       },
       {
         "dominio": "connectid.analytics.yahoo.com",

@@ -113,6 +113,21 @@ Este helper centraliza:
 - La ejecución de scripts de análisis como subprocesos.
 - El mapeo correcto entre nombre de script y nombre del fichero de resultado.
 
+**Módulo auxiliar compartido: `_ax_tree.py`**
+
+Fichero nuevo: `Herramienta_Priv/modulos_herramientas/_ax_tree.py`.
+Contiene `cdp_to_snapshot(nodes)` y el dict `_CDP_ROLE_MAP`. Sin imports de terceros.
+Convierte la lista plana de CDP `Accessibility.getFullAXTree` al árbol anidado
+`{role, name, children}` que usan los scripts de análisis (r1_capas, r5_revocabilidad, r14_lenguaje).
+
+Importado por:
+- `playwright_mod.py` (relativo: `from ._ax_tree import cdp_to_snapshot`)
+- `PoliGraph/poligrapher/scripts/html_crawler.py` (absoluto vía `sys.path.insert`)
+
+El módulo existe porque `html_crawler.py` importa `requests_cache`, `bs4`, etc. al nivel de
+módulo; si `playwright_mod.py` importara directamente desde `html_crawler.py`, fallaría
+por dependencias no disponibles fuera del entorno conda de PoliGraph.
+
 **Por qué es necesario el mapeo:** los scripts de análisis guardan su resultado con
 el número de requisito, no con su nombre completo. Por ejemplo, `r7_fingerprinting.py`
 guarda en `r7_resultado.json`, no en `r7_fingerprinting_resultado.json`. Sin el mapeo,
@@ -1545,3 +1560,105 @@ de la herramienta unificada y cómo se resolvieron.
 **Síntoma:** R12 reportado como ERROR aunque r12_software_terceros.py se ejecutaba bien.
 **Causa:** `combinados.py` intentaba `data.get("sitios", {})` pero el JSON de r12 tiene los sitios directamente como claves raíz (sin wrapper `"sitios"`).
 **Fix:** Corregido el parsing en `combinados.py` para iterar `data.values()` directamente.
+
+### Bug 13 — PoliGraph `AttributeError: 'Page' object has no attribute 'accessibility'`
+
+**Síntoma:** R1, R5, R14, R19 marcados como ERROR con este mensaje tras instalar Firefox.
+**Causa:** `page.accessibility` fue eliminado en Playwright 1.47+. PoliGraph usaba `page.accessibility.snapshot(interesting_only=False)` para obtener el árbol de accesibilidad. La versión instalada es Playwright 1.60.0.
+**Fix en `PoliGraph/poligrapher/scripts/html_crawler.py`:**
+1. Cambio de navegador: Firefox → Chromium (CDP solo funciona con Chromium).
+2. Sustitución de `page.accessibility.snapshot()` por CDP `Accessibility.getFullAXTree`:
+   ```python
+   cdp = page.context.new_cdp_session(page)
+   ax_raw = cdp.send("Accessibility.getFullAXTree")
+   cdp.detach()
+   snapshot = _cdp_to_snapshot(ax_raw.get("nodes", []))
+   ```
+3. Nueva función `_cdp_to_snapshot()` que convierte la lista plana de CDP al árbol
+   anidado `{role, name, children}` que esperan los scripts de análisis de PoliGraph.
+   Incluye un dict `_CDP_ROLE_MAP` que mapea los roles CamelCase de Chromium/CDP
+   a los nombres en minúsculas usados por el formato Firefox:
+   - `RootWebArea` → `document`
+   - `StaticText` → `statictext`
+   - `InlineTextBox` → `text leaf`
+   - `generic` / `none` → `group` / `whitespace`
+   - `LineBreak` → `whitespace`
+   - `strong` → `text leaf`
+   - `ListMarker` → `list item marker`
+   - `image` / `Video` → `img`
+   - etc.
+   También extrae la propiedad `level` para nodos `heading`.
+**Chromium verificado disponible:** `conda run -n poligraph playwright install chromium` (ya instalado por defecto).
+
+### Bug 14 — `AttributeError: 'Analyzer' object has no attribute 'run'`
+
+**Síntoma:** webXray marcado como ERROR durante la fase de análisis; `3p_domains.csv` no generado → R12 y R16 sin datos de terceros.
+**Causa:** `webXray/webxray_headless.py` llamaba a `Analyzer().run()`, método que no existe en la versión instalada de webXray. El API correcto es `Reporter.generate_3p_domain_report()`.
+**Fix en `webXray/webxray_headless.py`:**
+```python
+def analyze(db_name: str) -> None:
+    from webxray.Reporter import Reporter
+    reporter = Reporter(db_name, db_engine, num_tlds=0, num_results=None, flush_domain_owners=True)
+    reporter.generate_3p_domain_report()
+```
+
+### Bug 15 — `_cdp_to_snapshot` importada desde `html_crawler.py` falla por dependencias pesadas
+
+**Síntoma:** `ModuleNotFoundError: No module named 'requests_cache'` al intentar importar `_cdp_to_snapshot` desde `html_crawler.py` en el contexto del sistema Python (fuera del entorno conda de PoliGraph).
+**Causa:** `html_crawler.py` importa `requests_cache`, `bs4`, `langdetect`, etc. al nivel de módulo. Cuando `playwright_mod.py` intentaba importar la función de allí, tiraba de todas esas dependencias pesadas.
+**Fix:** Extraer `cdp_to_snapshot()` y `_CDP_ROLE_MAP` a un módulo propio sin dependencias externas:
+- **Nuevo fichero: `Herramienta_Priv/modulos_herramientas/_ax_tree.py`** — contiene solo la función de conversión CDP→árbol anidado. Sin imports de terceros.
+- `html_crawler.py` importa desde `_ax_tree`:
+  ```python
+  import sys as _sys
+  _sys.path.insert(0, str(Path(__file__).parents[3] / "Herramienta_Priv/modulos_herramientas"))
+  from _ax_tree import cdp_to_snapshot as _cdp_to_snapshot
+  ```
+- `playwright_mod.py` también importa desde `._ax_tree` (importación relativa del paquete).
+
+### Bug 16 — R1/R5 FAILED: árbol capturado DESPUÉS de que readability.js elimina el banner
+
+**Síntoma:** R1 y R5 devuelven FAILED incluso cuando el sitio tiene CMP con banner visible. PoliGraph capturaba el árbol de accesibilidad de la política de privacidad, no del sitio principal; además, readability.js reemplaza `document.body.innerHTML`, eliminando el banner del DOM antes de la captura.
+**Causa (doble):**
+1. PoliGraph visita la URL de la política de privacidad, que no tiene banner de cookies.
+2. Aunque se capturara el árbol del sitio principal, la captura ocurría después de `page.evaluate(readability_js)`, que reemplaza el body y borra el banner.
+
+**Fix — captura antes de readability.js en `html_crawler.py`:**
+```python
+# Antes de page.evaluate(readability_js):
+page.wait_for_timeout(2000)
+cdp_pre = page.context.new_cdp_session(page)
+ax_raw_pre = cdp_pre.send("Accessibility.getFullAXTree")
+cdp_pre.detach()
+snapshot_pre = _cdp_to_snapshot(ax_raw_pre.get("nodes", []))
+# ... readability.js se ejecuta aquí ...
+snapshot = snapshot_pre   # usar el árbol pre-readability
+```
+
+**Fix — captura del sitio principal con stealth en `playwright_mod.py`:**
+Se añadió un bloque tras R13 que abre el sitio con Chromium + `playwright-stealth` y guarda el árbol en `output_dir/playwright/accessibility_tree.json`. Luego `poligraph.py` prefiere ese árbol para R1 y R5:
+```python
+playwright_tree = output_dir.parent / "playwright" / "accessibility_tree.json"
+if script in ("r1_capas", "r5_revocabilidad") and playwright_tree.exists():
+    script_input = str(playwright_tree)
+```
+
+### Bug 17 — CMP no renderiza el banner: detección anti-bot sin stealth
+
+**Síntoma:** El árbol del sitio principal no contiene el banner de cookies aunque existe en el navegador real.
+**Causa:** Los CMP (Didomi, OneTrust, etc.) detectan Chromium headless como bot y no renderizan el banner cuando `navigator.webdriver=true` u otras señales de automatización son visibles.
+**Fix:** Aplicar `playwright-stealth` v2 al contexto antes de navegar:
+```python
+from playwright_stealth import Stealth
+Stealth().apply_stealth_sync(ctx)
+```
+Esto parchea `navigator.webdriver`, `window.chrome`, `navigator.plugins`, `sec-ch-ua`, etc.
+
+### Bug 18 — abc.es CMP usa `role=group`: banner no detectado por r1_capas / r5_revocabilidad
+
+**Síntoma:** R1 y R5 devuelven FAILED en abc.es incluso con stealth y árbol correcto.
+**Causa:** El CMP de abc.es (IAB TCF) usa `role=group` para el contenedor del banner de cookies, no los roles ARIA semánticos esperados (`dialog`, `alertdialog`, `region`, `banner`).
+**Fix:** Añadir `group` a `ROLES_FALLBACK` en ambos scripts:
+- `analysis_scripts/r1_capas.py`: `ROLES_FALLBACK = {"region", "complementary", "banner", "group"}`
+- `analysis_scripts/r5_revocabilidad.py`: misma adición en `buscar_banner_fallback()`
+El contenido de texto del nodo (`recopilar_texto()`) sigue siendo la señal que confirma que el `group` es el banner de cookies (y no cualquier otro `role=group` del DOM), evitando falsos positivos.

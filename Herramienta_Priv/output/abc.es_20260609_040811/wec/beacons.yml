@@ -1,0 +1,937 @@
+- filter: '||evolok.net^$third-party'
+  listName: fanboy-annoyance.txt
+  query:
+    articleId: 689707aa-05a1-11f1-a906-8085cac53649
+    title: ABC - Últimas noticias de España y el mundo hoy
+    site: abc
+    webtype: portada
+    type: page
+    Meter: 'No'
+    Extra: 'No'
+    category: actualidad
+    categoria_principal: ''
+    tags: ''
+    authors: ''
+    section: actualidad
+    Origen: Methode
+    url: https://www.abc.es/
+    vhost: www.abc.es
+    service: web
+    channel: WEB
+    brand: abc
+    user-agent: >-
+      Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/140.0.0.0 Safari/537.36
+    ev_sid: ''
+    ev_did: ''
+    ev_ss: ''
+    consent: 0
+    userUUID: ''
+    kangaroo: ''
+    article_url: https%3A%2F%2Fwww.abc.es%2F
+    referer: ''
+    voc_edtn: ''
+    rfv: ''
+    usuarioMultiSite: ''
+    rtimConfigExist: true
+    geo: ES
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||evolok.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:17 GMT
+  url: >-
+    https://vocx.evolok.net/acd/api/3.0/authorize/json?articleId=689707aa-05a1-11f1-a906-8085cac53649&title=ABC%20-%20%C3%9Altimas%20noticias%20de%20Espa%C3%B1a%20y%20el%20mundo%20hoy&site=abc&webtype=portada&type=page&Meter=No&Extra=No&category=actualidad&categoria_principal=&tags=&authors=&section=actualidad&Origen=Methode&url=https%3A%2F%2Fwww.abc.es%2F&vhost=www.abc.es&service=web&channel=WEB&brand=abc&user-agent=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F140.0.0.0%20Safari%2F537.36&ev_sid=&ev_did=&ev_ss=&consent=0&userUUID=&kangaroo=&article_url=https%253A%252F%252Fwww.abc.es%252F&referer=&voc_edtn=&rfv=&usuarioMultiSite=&rtimConfigExist=true&geo=ES
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    ers: 1
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:18 GMT
+  url: https://fundingchoicesmessages.google.com/i/pub-0842936145805457?ers=1
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: MC
+    d_rtbd: json
+    d_ver: 2
+    d_verify: 1
+    d_orgid: 9854C13E58403FEB0A495D53@AdobeOrg
+    d_nsid: 0
+    ts: 1780970899007
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780970899007
+  occurrances: 1
+- filter: /fbevents.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter /fbevents.js
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: https://connect.facebook.net/en_US/fbevents.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC378446669114446f96301f4764a2162e-source.min.js
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: MC
+    d_rtbd: json
+    d_ver: 2
+    d_verify: 1
+    d_orgid: 9854C13E58403FEB0A495D53@AdobeOrg
+    d_nsid: 0
+    ts: 1780970899007
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780970899007
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxX22UKqI3oLS2sy5JBHQ080EaTfZWHMHylR568PzldkROJrYjL5KKB7tCCotQHERXLtPYTRPYlSYfiEe8MFyj_vAcN4tyMOvHJY4tAab7rN350z-4XDHlk24eOaQVDTsvL5eOIy
+  occurrances: 12
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    d_nsid: 0
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es
+  occurrances: 1
+- filter: '||sadbmetrics.abc.es^'
+  listName: easyprivacy.txt
+  query:
+    d_visid_ver: 5.5.0
+    d_fieldgroup: A
+    mcorgid: 9854C13E58403FEB0A495D53@AdobeOrg
+    mid: '05982499729491203252987527710841986901'
+    ts: 1780970899510
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.abc.es^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://sadbmetrics.abc.es/id?d_visid_ver=5.5.0&d_fieldgroup=A&mcorgid=9854C13E58403FEB0A495D53%40AdobeOrg&mid=05982499729491203252987527710841986901&ts=1780970899510
+  occurrances: 1
+- filter: '||everesttech.net^'
+  listName: easyprivacy.txt
+  query:
+    d_uuid: '06140223293324839073007788548450348371'
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||everesttech.net^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://cm.everesttech.net/cm/dd?d_uuid=06140223293324839073007788548450348371
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC9b7840a883da425181cd876b7777ad6c-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc75907c1a8254b57a54ef6b50421b591-source.min.js
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:19 GMT
+  url: https://dpm.demdex.net/ibs:dpid=411&dpuuid=aid1kwAAABzLqRbM
+  occurrances: 1
+- filter: .doubleclick.net/$image
+  listName: easyprivacy.txt
+  query:
+    google_nid: adobe_dmp
+    google_cm: null
+    gdpr: 0
+    gdpr_consent: ''
+    google_hm: MDYxNDAyMjMyOTMzMjQ4MzkwNzMwMDc3ODg1NDg0NTAzNDgzNzE=
+  stack:
+    - fileName: https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es
+      source: >-
+        requested from
+        https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es
+        and matched with easyprivacy.txt filter .doubleclick.net/$image
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MDYxNDAyMjMyOTMzMjQ4MzkwNzMwMDc3ODg1NDg0NTAzNDgzNzE=
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgwOTcwOTAwLDg3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5hYmMuZXMvIixudWxsLFtbOCwieVNKRGtFZGdJOFEiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODA5NzA4OTkiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxVX8c28z7at68Wb42uXSi1J9wYF_oT_u2otZqum-b7fqKly1FgkpWepUNDFmhlZDwFFlblABjkdzTCzYaFjyJ4Ce5a52QQA7pczCPGCwZCS9oUjN_E-njmc09XobZE2HwCDg3s2?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgwOTcwOTAwLDg3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5hYmMuZXMvIixudWxsLFtbOCwieVNKRGtFZGdJOFEiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODA5NzA4OTkiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  occurrances: 1
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    gdpr: 0
+    gdpr_consent: ''
+  stack:
+    - fileName: https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es
+      source: >-
+        requested from
+        https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es
+        and matched with easyprivacy.txt filter ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEC3nLIjF0sKOFATsVz-FKfg&google_cver=1?gdpr=0&gdpr_consent=
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbdd29dadae934c8a982f33809dba6c78-source.min.js
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    configId: 9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07
+    requestId: e67ed899-4fb7-468a-bba2-ac364e2f2eb9
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://adobedc.demdex.net/ee/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=e67ed899-4fb7-468a-bba2-ac364e2f2eb9
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:20 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbf15496093304f41b4bea4b4b48dc857-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC89b5d5066ab9468886b04b529715766b-source.min.js
+  occurrances: 2
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: https://es-config.sensic.net/s2s-web.js
+  occurrances: 2
+- filter: '||sdk.mrf.io/statics/marfeel-sdk.js'
+  listName: easyprivacy.txt
+  query:
+    id: 2058
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sdk.mrf.io/statics/marfeel-sdk.js
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC8d9d2f2f026a45348c2951d94df59ee8-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC2047614837fa45378c9db6bb5227386c-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7bcde429e23b427fa8129272350135f7-source.min.js
+  occurrances: 2
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    m: AbcWeb
+    r: www.abc.es
+    p: es1
+    instanceid: 178097090144219508C8D6D40463DB6A60A8C75ABEF4BB3D39093DCE
+    ipad: false
+    redirect: manual
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://178097090144219508c8d6d40463db6a60a8c75abef4bb3d39093dce.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=178097090144219508C8D6D40463DB6A60A8C75ABEF4BB3D39093DCE&ipad=false&redirect=manual
+  occurrances: 1
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: https://es-config.sensic.net/3pc.html
+  occurrances: 2
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: https://es1-s2s.sensic.net/
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    /spc_fi.php/ads_event./popup2.js: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWBfw6bGG9boz6ySKTObTKryHzXwRv1eNTdsQPpDq4bt3I9KKgoMwc1gWI2MwCl1xM87wA2J5pDJBGovzUvnIyZsBs69EJ9qS7_0OQ_usXv1vPKLlUtNA6jvY66zPPjsve08ltrNrEU-XinsVuFtXOkXj5xVXtFq4lMYcKnmOphHCcVoHNhdkHkdlw=/_/img/ad./landingads?/spc_fi.php/ads_event./popup2.js
+  occurrances: 1
+- filter: '||data.abc.es^'
+  listName: easyprivacy.txt
+  query:
+    configId: 9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07
+    requestId: c9d3c765-2c93-463a-8029-4a72cafac25c
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||data.abc.es^
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://data.abc.es/ee/irl1/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=c9d3c765-2c93-463a-8029-4a72cafac25c
+  occurrances: 3
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js
+  occurrances: 2
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    '': null
+    m: AbcWeb
+    r: www.abc.es
+    p: es1
+    instanceid: 178097090144219508C8D6D40463DB6A60A8C75ABEF4BB3D39093DCE
+    ipad: false
+    redirect: manual
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=178097090144219508C8D6D40463DB6A60A8C75ABEF4BB3D39093DCE&ipad=false&redirect=manual
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgwOTcwOTAxLDk3MzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmFiYy5lcy8iLG51bGwsW1s4LCJ5U0pEa0VkZ0k4USJdLFs5LCJlcyJdLFsxNiwiWzEsMSwxXSJdLFszNSwiMTc4MDk3MDg5OSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:21 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWE0NfF7HIPX7JBbhPlEV5PrFfej9_dtcRIXrXOiA6P-j3ctUNI48-RrzWgNEc9weAPrFF9zNPZArrokAXzxLYd39MYnci7ETxlZwfV78p2t9TF9Q2595fmLZUQj8TC5ygFZX3K?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgwOTcwOTAxLDk3MzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmFiYy5lcy8iLG51bGwsW1s4LCJ5U0pEa0VkZ0k4USJdLFs5LCJlcyJdLFsxNiwiWzEsMSwxXSJdLFszNSwiMTc4MDk3MDg5OSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbe6651486dfa492b81dcea9d79510236-source.min.js
+  occurrances: 2
+- filter: '||connect.facebook.net/signals/$third-party'
+  listName: easyprivacy.txt
+  query:
+    v: 2.9.334
+    r: stable
+    domain: www.abc.es
+    hme: d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e
+    ex_m: >-
+      105,208,156,22,73,74,147,69,68,11,165,91,16,139,128,39,76,79,135,161,167,8,4,5,7,6,3,92,102,168,173,222,30,75,234,233,232,23,33,55,104,61,10,64,98,99,100,106,131,31,29,133,134,130,129,157,77,160,158,159,50,60,124,15,164,45,267,268,266,26,27,28,48,148,78,113,18,20,44,40,42,41,84,93,97,111,146,149,46,112,24,21,120,70,36,151,150,152,143,141,25,35,59,110,163,71,17,154,115,82,67,19,86,87,117,85,137,136,140,162,34,282,298,215,204,62,205,203,301,292,52,216,108,132,81,122,54,47,49,114,121,127,126,58,65,63,153,116,37,32,53,56,101,166,1,125,14,123,12,2,57,94,66,119,90,89,169,170,95,96,9,103,51,144,88,80,72,118,107,43,145,0,83,138,142,155,38,109,13,171
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||connect.facebook.net/signals/$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7c12e02fa3964b86954b8737f88c5114-source.min.js
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxXiFjlxaJr4Ms30yMNqwL0rXffVeAkde9gm4Wlifsms9n9Vcm-U0VH9TR2grx0R8X8I88-pbB56097E3-i-cXYDrdExR4CKMGfFBrWZVz25TqC322UWGtZMryIh3H3C0TSt68NN
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7536b7ffb5be48ec83063c0582004acd-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC77b28969ef864c80bd66b197af2a33d9-source.min.js
+  occurrances: 1
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC407298c5d763426da8881a8214c4c86a-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb08cdd1098204277870b3999b07ac07b-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7384fdcfd6d74bfe95bfc35867ebaa71-source.min.js
+  occurrances: 2
+- filter: '||adobedtm.com^$third-party,domain=~adobe.com|~costco.com'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: >-
+    https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb0e9747aa53644daa8f0e56999f86eb2-source.min.js
+  occurrances: 2
+- filter: '||newrelic.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||newrelic.com^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:22 GMT
+  url: https://js-agent.newrelic.com/nr-full-1.316.0.min.js
+  occurrances: 2
+- filter: '||nr-data.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    a: 306085224
+    v: 1.316.0
+    to: NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG
+    rst: 5765
+    ck: 0
+    s: 63b5412a6c0b3917
+    ref: https://www.abc.es/
+    ptid: e60b08f357d29f05
+    af: err,xhr,stn,ins
+    ap: 239
+    be: 63
+    fe: 5515
+    dc: 978
+    at: GBsWFQ9DHxQaWREPGR5E
+    fsh: 1
+    perf:
+      timing:
+        of: 1780970897294
+        'n': 0
+        f: 2
+        dn: 5
+        dne: 13
+        c: 13
+        s: 25
+        ce: 45
+        rq: 45
+        rp: 63
+        rpe: 91
+        di: 1035
+        ds: 1036
+        de: 1041
+        dc: 5565
+        l: 5565
+        le: 5578
+      navigation: {}
+    fp: 476
+    fcp: 476
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||nr-data.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:23 GMT
+  url: >-
+    https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=5765&ck=0&s=63b5412a6c0b3917&ref=https://www.abc.es/&ptid=e60b08f357d29f05&af=err,xhr,stn,ins&ap=239&be=63&fe=5515&dc=978&at=GBsWFQ9DHxQaWREPGR5E&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1780970897294,%22n%22:0,%22f%22:2,%22dn%22:5,%22dne%22:13,%22c%22:13,%22s%22:25,%22ce%22:45,%22rq%22:45,%22rp%22:63,%22rpe%22:91,%22di%22:1035,%22ds%22:1036,%22de%22:1041,%22dc%22:5565,%22l%22:5565,%22le%22:5578%7D,%22navigation%22:%7B%7D%7D&fp=476&fcp=476
+  occurrances: 2
+- filter: '||nr-data.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    a: 306085224
+    v: 1.316.0
+    to: NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG
+    rst: 6040
+    ck: 0
+    s: 63b5412a6c0b3917
+    ref: https://www.abc.es/
+    ptid: e60b08f357d29f05
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||nr-data.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:23 GMT
+  url: >-
+    https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6040&ck=0&s=63b5412a6c0b3917&ref=https://www.abc.es/&ptid=e60b08f357d29f05
+  occurrances: 3
+- filter: '||nr-data.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    a: 306085224
+    v: 1.316.0
+    to: NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG
+    rst: 6044
+    ck: 0
+    s: 63b5412a6c0b3917
+    ref: https://www.abc.es/
+    ptid: e60b08f357d29f05
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||nr-data.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:23 GMT
+  url: >-
+    https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6044&ck=0&s=63b5412a6c0b3917&ref=https://www.abc.es/&ptid=e60b08f357d29f05
+  occurrances: 4
+- filter: '||nr-data.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    a: 306085224
+    v: 1.316.0
+    to: NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG
+    rst: 6049
+    ck: 0
+    s: 63b5412a6c0b3917
+    ref: https://www.abc.es/
+    ptid: e60b08f357d29f05
+    at: GBsWFQ9DHxQaWREPGR5E
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||nr-data.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:23 GMT
+  url: >-
+    https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6049&ck=0&s=63b5412a6c0b3917&ref=https://www.abc.es/&ptid=e60b08f357d29f05&at=GBsWFQ9DHxQaWREPGR5E
+  occurrances: 1
+- filter: $ping,third-party
+  listName: easyprivacy.txt
+  query:
+    v: 2
+    s: pagead
+    action: csi_pagead
+    dmc: 8
+    top: 1
+    puid: 1~mq603av7
+    ctx: 0
+    met.9: 1.112~2.1qy
+    met.3: 112.3li_6
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  timestamp: Tue, 09 Jun 2026 02:08:23 GMT
+  url: >-
+    https://csi.gstatic.com/csi?v=2&s=pagead&action=csi_pagead&dmc=8&top=1&puid=1~mq603av7&ctx=0&met.9=1.112~2.1qy&met.3=112.3li_6
+  occurrances: 4
+- filter: '||events.newsroom.bi^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||events.newsroom.bi^
+  timestamp: Tue, 09 Jun 2026 02:08:27 GMT
+  url: https://events.newsroom.bi/ingest.php
+  occurrances: 5
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:29 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxVB6d_DzAx8YMwR81qWPqjpi8sn6zTmLm1yIxl108GtOaxgDhZJvWN7H6gVIY_N1V8X7BTgYNFExcBt2wibhca36HOABZquHg_qECLYdLZgM4ElINBq7mH_niW81cHNJ_QU9Uuj
+  occurrances: 11
+- filter: '||sensic.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    m: AbcWeb
+    r: www.abc.es
+    p: es1
+    instanceid: 178097090954619ED809BE83445DB15D0EE850B00C26BFDA26782824
+    ipad: false
+    redirect: manual
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||sensic.net^$third-party
+  timestamp: Tue, 09 Jun 2026 02:08:29 GMT
+  url: >-
+    https://178097090954619ed809be83445db15d0ee850b00c26bfda26782824.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=178097090954619ED809BE83445DB15D0EE850B00C26BFDA26782824&ipad=false&redirect=manual
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W1siQUtzUm9sOFRSMm5RaHJCeXNndXUtbzZoT1g4X3NYZEwtM1NoN19HNVI4RXhLbHRYdDhPWGRrZDhwY2l2dTBBUVMweWpqa3VaMlZQWmhCSTR1YlJST0JTa0pkSHJaOTBxaXh2UkRIWV93WEVzT0V2NU9FZGF5WXV1YVF1eTJKc2cwdGNOam1UZ0JGekstOW90VU1hTEs3VnZWQ21pcjdqNXlRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODA5NzA5MDksNzU0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5hYmMuZXMvIixudWxsLFtbOCwieVNKRGtFZGdJOFEiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODA5NzA4OTkiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:29 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxUIlq44W0_boNPDcUWINudZDzCKiFQiTTfYshGz2hdcmvH8p9Br_MRuyo2mOQ-U48ti93eLOroRWLasdfqpXMRzzo19ERQBLHSkFyJnNBzEQ9934O-AowUvCJqqZ06sNzgmlYTc?fccs=W1siQUtzUm9sOFRSMm5RaHJCeXNndXUtbzZoT1g4X3NYZEwtM1NoN19HNVI4RXhLbHRYdDhPWGRrZDhwY2l2dTBBUVMweWpqa3VaMlZQWmhCSTR1YlJST0JTa0pkSHJaOTBxaXh2UkRIWV93WEVzT0V2NU9FZGF5WXV1YVF1eTJKc2cwdGNOam1UZ0JGekstOW90VU1hTEs3VnZWQ21pcjdqNXlRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODA5NzA5MDksNzU0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5hYmMuZXMvIixudWxsLFtbOCwieVNKRGtFZGdJOFEiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODA5NzA4OTkiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:30 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxXY95C9D6DSmoiKBETKZ4vH7eAr9DTAZtU3Ac8nHTrN6gQxK0EGt88u9dLbRiKmEMjAWOzILf4AMQWJak_xe9CTatpWUO7Hx8GBI5Y3LVjIqA9C9niq3BnbYATTKcjmpDGU3QjSetgXfCJxlN94u90fTzoKeEH0_LER01ftEaq2QTevchAFIBnTJbE=/_/120_600./lib/ad.js/vifGoogleAd./adServerDfp./adplugin_
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W1siQUtzUm9sOFRSMm5RaHJCeXNndXUtbzZoT1g4X3NYZEwtM1NoN19HNVI4RXhLbHRYdDhPWGRrZDhwY2l2dTBBUVMweWpqa3VaMlZQWmhCSTR1YlJST0JTa0pkSHJaOTBxaXh2UkRIWV93WEVzT0V2NU9FZGF5WXV1YVF1eTJKc2cwdGNOam1UZ0JGekstOW90VU1hTEs3VnZWQ21pcjdqNXlRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODA5NzA5MTAsNDcxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuYWJjLmVzLyIsbnVsbCxbWzgsInlTSkRrRWRnSThRIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgwOTcwODk5Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:30 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxVUSpgDDXuNm960Ri7fJQDbalCUHowZKCMXmw1fIY5DwnUHi0zoXETpv2QQTdJRtpmYZnIph_x6mpmMQbbF86kh1Oh4A67Ls_OTHmqgdL5sezmnVHF993r-NYubZH_-eqSZhxFh?fccs=W1siQUtzUm9sOFRSMm5RaHJCeXNndXUtbzZoT1g4X3NYZEwtM1NoN19HNVI4RXhLbHRYdDhPWGRrZDhwY2l2dTBBUVMweWpqa3VaMlZQWmhCSTR1YlJST0JTa0pkSHJaOTBxaXh2UkRIWV93WEVzT0V2NU9FZGF5WXV1YVF1eTJKc2cwdGNOam1UZ0JGekstOW90VU1hTEs3VnZWQ21pcjdqNXlRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODA5NzA5MTAsNDcxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cuYWJjLmVzLyIsbnVsbCxbWzgsInlTSkRrRWRnSThRIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgwOTcwODk5Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with fanboy-annoyance.txt
+        filter ||fundingchoicesmessages.google.com^
+  timestamp: Tue, 09 Jun 2026 02:08:30 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxX1nca9qEPEhO6k4P_zXhpEKvDPLTKDB3j2UtWWmZUF2_P6VxqShstLWFsdrsNGQb_XAxme7kAZ-z1_HlF_lHJvLt9oG2RervsY8-lMAz79U-hi0mZUiH6hQB3qtPS__uTvgwa9
+  occurrances: 1
+- filter: '||metrics.brightcove.com^'
+  listName: easyprivacy.txt
+  query:
+    domain: videocloud
+    platform: video-js
+    session: b9aec71960cdff954c9e4b3a
+    player_mode: media
+    account: 55814260001
+    destination: https://www.abc.es/
+    platform_version: 7.42.4
+    player: players.brightcove.com/55814260001/8WkPPcv56h_default
+    player_name: Player abc REELS (NO AD)
+    source: ''
+    event: player_init
+    time: 1780970913367
+    autoplay: false
+    seq: 0
+  stack:
+    - fileName: https://www.abc.es/
+      source: >-
+        requested from https://www.abc.es/ and matched with easyprivacy.txt
+        filter ||metrics.brightcove.com^
+  timestamp: Tue, 09 Jun 2026 02:08:34 GMT
+  url: >-
+    https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=b9aec71960cdff954c9e4b3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1780970913367&autoplay=false&seq=0
+  occurrances: 20

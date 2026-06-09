@@ -1,0 +1,4109 @@
+{
+  "title": "Blacklight Inspection",
+  "page_title": "ABC - Últimas noticias de España y el mundo hoy",
+  "uri_ins": "https://www.abc.es",
+  "uri_dest": "https://www.abc.es/",
+  "uri_redirects": [],
+  "secure_connection": {},
+  "host": "www.abc.es",
+  "config": {
+    "emulateDevice": {
+      "name": "iPhone 13 Mini",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "isLandscape": false
+      }
+    },
+    "cleareCache": true,
+    "captureHar": true,
+    "captureLinks": false,
+    "enableAdBlock": false,
+    "saveBrowserProfile": false,
+    "numPages": 1,
+    "defaultTimeout": 35000,
+    "defaultWaitUntil": "networkidle2",
+    "headless": true,
+    "headers": {},
+    "extraChromiumArgs": [
+      "--disable-features=TrackingProtection3pcd"
+    ],
+    "extraPuppeteerOptions": {}
+  },
+  "browser": {
+    "name": "Chromium",
+    "version": "Chrome/127.0.6533.88",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "6.8.0-124-generic"
+    }
+  },
+  "script": {
+    "host": "pedro-SATELLITE-L50-A-1DL",
+    "version": {
+      "npm": "3.10.0",
+      "commit": "dev"
+    },
+    "node_version": "v20.20.0"
+  },
+  "start_time": "2026-06-09T01:44:36.089Z",
+  "end_time": "2026-06-09T01:44:55.840Z",
+  "browsing_history": [
+    "https://www.abc.es/",
+    "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html"
+  ],
+  "hosts": {
+    "requests": {
+      "first_party": [
+        "www.abc.es",
+        "sadbmetrics.abc.es",
+        "data.abc.es",
+        "metrics.abc.es"
+      ],
+      "third_party": [
+        "s1.abcstatics.com",
+        "static.vocstatic.com",
+        "static1.vocstatic.com",
+        "vocx.evolok.net",
+        "sdk.privacy-center.org",
+        "c.amazon-adsystem.com",
+        "securepubads.g.doubleclick.net",
+        "assets.adobedtm.com",
+        "service.wemass.com",
+        "fundingchoicesmessages.google.com",
+        "dpm.demdex.net",
+        "connect.facebook.net",
+        "vocento.demdex.net",
+        "cm.everesttech.net",
+        "cm.g.doubleclick.net",
+        "static.adsafeprotected.com",
+        "vocento.idalgo-hosting.com",
+        "es-config.sensic.net",
+        "sdk.mrf.io",
+        "pagead2.googlesyndication.com",
+        "17809694815372971b91274718b13c2c24afd537aeae7722a4352af6.trk.sensic.net",
+        "es1-s2s.sensic.net",
+        "localhost.sensic.net",
+        "js-agent.newrelic.com",
+        "bam.nr-data.net",
+        "marfeelexperimentsexperienceengine.mrf.io",
+        "events.newsroom.bi",
+        "static.vocento.com",
+        "widgets.outbrain.com",
+        "comments.vocento.com",
+        "widget-pixels.outbrainimg.com",
+        "widgets.teads-xo.com",
+        "amplify.outbrain.com",
+        "mv.outbrainimg.com",
+        "1780969490940fefc87a05e7fcc0fdd2c7e6e16500fc6377590865df.trk.sensic.net",
+        "widgets.outbrainimg.com",
+        "mcdp-nldc1.outbrainimg.com",
+        "tcheck.outbrainimg.com",
+        "images.outbrainimg.com",
+        "eventlog.outbrainimg.com"
+      ]
+    }
+  },
+  "reports": {
+    "behaviour_event_listeners": {
+      "MOUSE": {
+        "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ],
+        "https://www.abc.es/": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ]
+      },
+      "KEYBOARD": {
+        "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html": [
+          "keydown",
+          "keyup"
+        ],
+        "https://www.abc.es/": [
+          "keydown",
+          "keyup"
+        ]
+      },
+      "TOUCH": {
+        "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ],
+        "https://www.abc.es/": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ]
+      }
+    },
+    "canvas_fingerprinters": {
+      "data_url": {},
+      "fingerprinters": [],
+      "styles": {},
+      "texts": {}
+    },
+    "canvas_font_fingerprinters": {
+      "canvas_font": {},
+      "text_measure": {}
+    },
+    "cookies": [
+      {
+        "name": "cookietest",
+        "value": "1",
+        "domain": "www.abc.es",
+        "path": "/opinion",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "geo",
+        "value": "{\"c\": \"ES\",\"r\": \"MU\",\"o\": \"EU\"}",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2026-06-10T01:44:45.715Z",
+        "size": 34,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "ev_sid",
+        "value": "6a27700ec3061a2b0e83eafd",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-04T01:44:46.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ev_did",
+        "value": "6a27700ec3061a2b0e83eafc",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-04T01:44:46.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "demdex",
+        "value": "83754582870013561903573245002394722688",
+        "domain": "demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T01:44:47.756Z",
+        "size": 44,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 42,
+        "httpOnly": false,
+        "secure": true,
+        "session": true,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "s_ecid",
+        "value": "MCMID%7C84272220568740796403557470171170657158",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-14T01:44:47.476Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "dextp",
+        "value": "771-1-1780969487606",
+        "domain": "demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T01:44:47.000Z",
+        "size": 24,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "dpm",
+        "value": "83754582870013561903573245002394722688",
+        "domain": "dpm.demdex.net",
+        "path": "/",
+        "expires": "2026-12-06T01:44:47.756Z",
+        "size": 41,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "test_cookie",
+        "value": "CheckForPermission",
+        "domain": "doubleclick.net",
+        "path": "/",
+        "expires": "2026-06-09T01:59:47.653Z",
+        "size": 29,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "179643557%7CMCIDTS%7C20614%7CMCMID%7C84272220568740796403557470171170657158%7CMCAAMLH-1781574287%7C6%7CMCAAMB-1781574287%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1780976687s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20621%7CvVersion%7C5.5.0",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-14T01:44:48.157Z",
+        "size": 303,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22d9ddb988-4805-4339-9421-66f4efbbfc10%5C%22%2C%5B1780969488%2C209000000%5D%5D%22%5D%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-04T01:44:48.000Z",
+        "size": 162,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vtm_op",
+        "value": "false",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_information",
+        "value": "%7B%7D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T01:44:49.000Z",
+        "size": 25,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc_edtn",
+        "value": "nacional",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T01:44:49.000Z",
+        "size": 16,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_uuid",
+        "value": "f05a6366-9d47-4d89-a074-02f2a4d3c4cd",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T01:44:49.000Z",
+        "size": 48,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_nfryl_volver_al_origen",
+        "value": "https%3A%2F%2Fwww.abc.es%2Fopinion%2Fpedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-06-10T01:44:49.000Z",
+        "size": 123,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc_paywall",
+        "value": "https://www.abc.es|anonimo",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T01:44:49.000Z",
+        "size": 37,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc-rtim",
+        "value": "{ \"geo-europe\" : false}",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-07-09T01:44:50.000Z",
+        "size": 31,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+        "value": "CiY4NDI3MjIyMDU2ODc0MDc5NjQwMzU1NzQ3MDE3MTE3MDY1NzE1OFIRCMKRt9DqMxgCKgRJUkwxMAPwAcKRt9DqMw%3D%3D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-09T01:44:50.698Z",
+        "size": 145,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+        "value": "irl1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-06-09T02:14:51.284Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol-wDUFBKVAvZ8twiI6TbVXKvYIoHdnJKcyY8LxbfuS6O517zKutN4M9DnJEgJjZXQiXSsIo8nTm1E_0rKG9TqwxtRq1ATb4VkwXOu8VjgxQHfcmSIRkUg4TEJPJPWF4fuJrmSXeTEM1yvuhp2AxNln4RLb-LA%3D%3D%22%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-06-09T01:44:51.000Z",
+        "size": 191,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      }
+    ],
+    "fb_pixel_events": [],
+    "tiktok_pixel_events": [],
+    "twitter_pixel_events": [],
+    "google_analytics_events": [],
+    "key_logging": {},
+    "session_recorders": {},
+    "third_party_trackers": [
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 428
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 368
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "vocx.evolok.net:443",
+                  "hostname": "vocx.evolok.net",
+                  "method": "GET",
+                  "pathname": "/acd/api/3.0/authorize/json",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 142
+                  },
+                  "time": {
+                    "t": 686
+                  }
+                },
+                "params": {
+                  "host": "www.abc.es:443",
+                  "hostname": "www.abc.es",
+                  "method": "GET",
+                  "pathname": "/kangaroo.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 3
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 111
+                  },
+                  "rxSize": {
+                    "t": 6482
+                  },
+                  "time": {
+                    "t": 1124
+                  }
+                },
+                "params": {
+                  "host": "c.amazon-adsystem.com:443",
+                  "hostname": "c.amazon-adsystem.com",
+                  "method": "GET",
+                  "pathname": "/bao-csm/aps-comm/aps_csm.js",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 367
+                  },
+                  "rxSize": {
+                    "t": 594
+                  },
+                  "time": {
+                    "t": 1404
+                  }
+                },
+                "params": {
+                  "host": "dpm.demdex.net:443",
+                  "hostname": "dpm.demdex.net",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 141
+                  },
+                  "rxSize": {
+                    "t": 48
+                  },
+                  "time": {
+                    "t": 1756
+                  }
+                },
+                "params": {
+                  "host": "sadbmetrics.abc.es:443",
+                  "hostname": "sadbmetrics.abc.es",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "c": 6,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  },
+                  "count": 6,
+                  "duration": {
+                    "c": 6,
+                    "max": 742,
+                    "min": 53,
+                    "sos": 844438,
+                    "t": 1782
+                  },
+                  "time": {
+                    "c": 6,
+                    "max": 5643,
+                    "min": 2519,
+                    "sos": 139136656,
+                    "t": 27558
+                  },
+                  "txSize": {
+                    "c": 6,
+                    "max": 182,
+                    "min": 144,
+                    "sos": 150899,
+                    "t": 949
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxWsD3R6jQzfWPv1O0IxHp1DxXXM6nvfvfwN1pVO6yKGdpUoqK7TzX6zxZVV4JULDLAFXarkvocOTzSBOovxR-2iy4Kd5LevMO91PPvkN9Qb5hEkchmTueyBNhfImGPhgt1m-7Ub",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 412
+                  },
+                  "rxSize": {
+                    "t": 14
+                  },
+                  "time": {
+                    "t": 4331
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "metrics.abc.es:443",
+                  "hostname": "metrics.abc.es",
+                  "method": "GET",
+                  "pathname": "/stats/v2/visit",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 2,
+                  "duration": {
+                    "c": 2,
+                    "max": 291,
+                    "min": 290,
+                    "sos": 168781,
+                    "t": 581
+                  },
+                  "rxSize": {
+                    "c": 2,
+                    "max": 280,
+                    "min": 280,
+                    "sos": 156800,
+                    "t": 560
+                  },
+                  "time": {
+                    "c": 2,
+                    "max": 4466,
+                    "min": 4464,
+                    "sos": 39872452,
+                    "t": 8930
+                  },
+                  "txSize": {
+                    "c": 2,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "comments.vocento.com:443",
+                  "hostname": "comments.vocento.com",
+                  "method": "GET",
+                  "pathname": "/api/comment/stream-info",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 96
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4941
+                  },
+                  "txSize": {
+                    "t": 5560
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 49
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 5289
+                  },
+                  "txSize": {
+                    "t": 376
+                  }
+                },
+                "params": {
+                  "host": "es1-s2s.sensic.net:443",
+                  "hostname": "es1-s2s.sensic.net",
+                  "method": "POST",
+                  "pathname": "/",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 283
+                  },
+                  "time": {
+                    "t": 5269
+                  }
+                },
+                "params": {
+                  "host": "1780969490940fefc87a05e7fcc0fdd2c7e6e16500fc6377590865df.trk.sensic.net:443",
+                  "hostname": "1780969490940fefc87a05e7fcc0fdd2c7e6e16500fc6377590865df.trk.sensic.net",
+                  "method": "GET",
+                  "pathname": "/tp.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 45
+                  },
+                  "time": {
+                    "t": 5553
+                  }
+                },
+                "params": {
+                  "host": "localhost.sensic.net:54325",
+                  "hostname": "localhost.sensic.net",
+                  "method": "GET",
+                  "pathname": "/",
+                  "port": "54325",
+                  "protocol": "https",
+                  "status": 0
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 78
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 5530
+                  },
+                  "txSize": {
+                    "t": 6744
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/irl1/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 271
+                  },
+                  "rxSize": {
+                    "t": 15
+                  },
+                  "time": {
+                    "t": 5716
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "tcheck.outbrainimg.com:443",
+                  "hostname": "tcheck.outbrainimg.com",
+                  "method": "GET",
+                  "pathname": "/tcheck/check/d3d3LmFiYy5lcw==",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 6,
+                  "duration": {
+                    "c": 6,
+                    "max": 325,
+                    "min": 209,
+                    "sos": 412672,
+                    "t": 1554
+                  },
+                  "rxSize": {
+                    "c": 6,
+                    "max": 6,
+                    "min": 6,
+                    "sos": 216,
+                    "t": 36
+                  },
+                  "time": {
+                    "c": 6,
+                    "max": 5844,
+                    "min": 5711,
+                    "sos": 201340710,
+                    "t": 34756
+                  },
+                  "txSize": {
+                    "c": 6,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "mcdp-nldc1.outbrainimg.com:443",
+                  "hostname": "mcdp-nldc1.outbrainimg.com",
+                  "method": "GET",
+                  "pathname": "/l",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 129
+                  },
+                  "time": {
+                    "t": 6144
+                  },
+                  "txSize": {
+                    "t": 144
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxXG8wE5ixgRdbmqpj2NpziqMx4i4EzPc0Mw5sRh32_jrvCSKby1-MBx0qW6OUO-6WXsidMHJa0sp6r5Unpg_Vql6l4dpTxgySAn4GA6BNt6Ohcc92XTXWbRc1sKI7yJWBMu6kXj",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 117
+                  },
+                  "rxSize": {
+                    "t": 198
+                  },
+                  "time": {
+                    "t": 6567
+                  },
+                  "txSize": {
+                    "t": 295
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "81aafda374350901",
+            "ref": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "rst": 6693,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q&rst=6693&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html&ptid=81aafda374350901"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'fp,ca,h;5,'pageUrl,'https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html;5,'net-etype,'4g;6,'net-dlink,10.;6,'cls,9.58528476789051e-7;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'430;5,'evolokTimeout,'428;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,1695.89990234375;5,'consent,'unknown;7,'webdriverDetected;e,'fcp,ca,k;6,'timeToFirstByte,38.5;6,'firstByteToFCP,403.80000000074506;5,'loadState,'loading;5,1,2;5,3,4;6,5,10.;6,6,9.58528476789051e-7;5,7,8;6,9,35.;5,a,b;5,c,d;5,e,f;5,g,h;5,i,j;5,k,l;5,m,n;5,o,p;6,q,1695.89990234375;5,r,s;7,t;e,'load,515,h;5,1,2;5,3,4;6,5,10.;6,6,9.58528476789051e-7;5,7,8;6,9,35.;5,a,b;5,c,d;5,e,f;5,g,h;5,i,j;5,k,l;5,m,n;5,o,p;6,q,1695.89990234375;5,r,s;7,t",
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "81aafda374350901",
+            "ref": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "rst": 6691,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q&rst=6691&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html&ptid=81aafda374350901"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC4f85e2b04f2d42f982118bfe83e924c2-source.min.js"
+      },
+      {
+        "data": {
+          "body": {
+            "ja": {
+              "cmploaded": 1695.89990234375,
+              "consent": "unknown",
+              "cookieSize": 35,
+              "cookiewall": "evolok",
+              "evolokError": "ok",
+              "evolokFetchTimeStamp": "430",
+              "evolokTimeout": "428",
+              "isExtra": "Yes",
+              "paywall": "frontend",
+              "userType": "anonimo",
+              "voontoVersion": "2.26.0",
+              "vtmVersion": "3.15.1",
+              "webdriverDetected": true
+            }
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "af": "err,xhr,stn,ins",
+            "ap": 104,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "be": 38,
+            "ck": 0,
+            "dc": 1001,
+            "fcp": 442,
+            "fe": 6483,
+            "fp": 442,
+            "fsh": 0,
+            "perf": {
+              "navigation": {},
+              "timing": {
+                "c": 1,
+                "ce": 1,
+                "dc": 6514,
+                "de": 1039,
+                "di": 1032,
+                "dn": 1,
+                "dne": 1,
+                "ds": 1033,
+                "f": 1,
+                "l": 6515,
+                "le": 6521,
+                "n": 0,
+                "of": 1780969485677,
+                "rp": 39,
+                "rpe": 76,
+                "rq": 3,
+                "s": 1,
+                "u": 91,
+                "ue": 91
+              }
+            },
+            "ptid": "81aafda374350901",
+            "ref": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "rst": 6566,
+            "s": "0ecbf5c1839f6386",
+            "timestamp": 1780969492045,
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsMBk4Q&rst=6566&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html&ptid=81aafda374350901&af=err,xhr,stn,ins&ap=104&be=38&fe=6483&dc=1001&at=GBsWFQ9DHxQaWREPGR5E&fsh=0&perf=%7B%22timing%22:%7B%22of%22:1780969485677,%22n%22:0,%22u%22:91,%22ue%22:91,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:3,%22rp%22:39,%22rpe%22:76,%22di%22:1032,%22ds%22:1033,%22de%22:1039,%22dc%22:6514,%22l%22:6515,%22le%22:6521%7D,%22navigation%22:%7B%7D%7D&fp=442&fcp=442&timestamp=1780969492045"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC1469afc34ec6443fa53074f2f297eb47-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC0a869a79767b4cffa7fd63d798d18a21-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||newrelic.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb0e9747aa53644daa8f0e56999f86eb2-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7384fdcfd6d74bfe95bfc35867ebaa71-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC15acbbfad6204e46a15ed7bafdfd9606-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb08cdd1098204277870b3999b07ac07b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC407298c5d763426da8881a8214c4c86a-source.min.js"
+      },
+      {
+        "data": {
+          "body": "------WebKitFormBoundary0g7l4SNf0vr4EMAk\r\nContent-Disposition: form-data; name=\"sessionId\"\r\n\r\nb47064cbfefc93deab1b49710fed3e731780969491872\r\n------WebKitFormBoundary0g7l4SNf0vr4EMAk\r\nContent-Disposition: form-data; name=\"eventGroup\"\r\n\r\ngnr_interstitial\r\n------WebKitFormBoundary0g7l4SNf0vr4EMAk\r\nContent-Disposition: form-data; name=\"eventTypeId\"\r\n\r\n66005\r\n------WebKitFormBoundary0g7l4SNf0vr4EMAk\r\nContent-Disposition: form-data; name=\"requestId\"\r\n\r\nb47064cbfefc93deab1b49710fed3e73\r\n------WebKitFormBoundary0g7l4SNf0vr4EMAk\r\nContent-Disposition: form-data; name=\"attributes\"\r\n\r\n{\"action\":\"script_load\",\"reason\":\"setting_on\",\"ajaxMethod\":\"beacon\",\"clientTimestamp\":1780969491874,\"timestamp\":\"\",\"publisherId\":2571,\"pvId\":\"03dc67b8ff4ac68a3780e1ac95208f00\",\"sectionId\":8465921,\"widgetJsId\":\"CRMB_40\",\"widgetId\":421,\"subWidgetJsId\":\"CRMB_40\",\"subWidgetId\":421,\"cardIdx\":\"\",\"docId\":6235288508,\"platform\":\"mobile\",\"deviceOs\":\"\",\"deviceOrientation\":\"portrait\",\"layeredTest\":\"9820-89554-,13580-99423-,13180-95728-\",\"abrex\":\"1550:5795\"}\r\n------WebKitFormBoundary0g7l4SNf0vr4EMAk--\r\n",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://eventlog.outbrainimg.com/logger/v1/widget/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC77b28969ef864c80bd66b197af2a33d9-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tcheck.outbrainimg.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tcheck.outbrainimg.com/tcheck/check/d3d3LmFiYy5lcw=="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7536b7ffb5be48ec83063c0582004acd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7c12e02fa3964b86954b8737f88c5114-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||connect.facebook.net/signals/$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "domain": "www.abc.es",
+            "ex_m": "105,208,156,22,73,74,147,69,68,11,165,91,16,139,128,39,76,79,135,161,167,8,4,5,7,6,3,92,102,168,173,222,30,75,234,233,232,23,33,55,104,61,10,64,98,99,100,106,131,31,29,133,134,130,129,157,77,160,158,159,50,60,124,15,164,45,267,268,266,26,27,28,48,148,78,113,18,20,44,40,42,41,84,93,97,111,146,149,46,112,24,21,120,70,36,151,150,152,143,141,25,35,59,110,163,71,17,154,115,82,67,19,86,87,117,85,137,136,140,162,34,282,298,215,204,62,205,203,301,292,52,216,108,132,81,122,54,47,49,114,121,127,126,58,65,63,153,116,37,32,53,56,101,166,1,125,14,123,12,2,57,94,66,119,90,89,169,170,95,96,9,103,51,144,88,80,72,118,107,43,145,0,83,138,142,155,38,109,13,171",
+            "hme": "d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e",
+            "r": "stable",
+            "v": "2.9.334"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbe6651486dfa492b81dcea9d79510236-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/adman-$domain=~adman-industries.com",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUKaBlapWRBPnG4qLRXmpvJGKLAOXpnkQGEm8H1bMgzmtXdIEEeYLIjMrjKpDeQCK1gXvMNN0hngIyl_cyMpuRJ9UwDNpF6M5OCsIMI10pLeRV0D-Ybd3TItVCjz1yZN5GHERyWGl8x3R_cOj7l9hXd5Ba-iLl4CwJzpIwXfB9dZeyYj58T_Iuc1ms=/_/singleadextension./advertisement1./adman-_468x060_/3_ads."
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "1780969490940FEFC87A05E7FCC0FDD2C7E6E16500FC6377590865DF",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=1780969490940FEFC87A05E7FCC0FDD2C7E6E16500FC6377590865DF&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7bcde429e23b427fa8129272350135f7-source.min.js"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=AbcWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=1780969490940FEFC87A05E7FCC0FDD2C7E6E16500FC6377590865DF&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.abc.es&cp_c1=abc.es&cp_c2=opinion",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "1780969490940FEFC87A05E7FCC0FDD2C7E6E16500FC6377590865DF",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://1780969490940fefc87a05e7fcc0fdd2c7e6e16500fc6377590865df.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=1780969490940FEFC87A05E7FCC0FDD2C7E6E16500FC6377590865DF&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC2047614837fa45378c9db6bb5227386c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC8d9d2f2f026a45348c2951d94df59ee8-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC89b5d5066ab9468886b04b529715766b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbf15496093304f41b4bea4b4b48dc857-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amplify.outbrain.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://amplify.outbrain.com/cp/obtp.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/px.gif?",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "ch": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://widget-pixels.outbrainimg.com/widget/detect/px.gif?ch=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC9b7840a883da425181cd876b7777ad6c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=&google_error=3?gdpr=0&gdpr_consent="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "ODM3NTQ1ODI4NzAwMTM1NjE5MDM1NzMyNDUwMDIzOTQ3MjI2ODg=",
+            "google_nid": "adobe_dmp",
+            "google_tc": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=ODM3NTQ1ODI4NzAwMTM1NjE5MDM1NzMyNDUwMDIzOTQ3MjI2ODg=&google_tc="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "ODM3NTQ1ODI4NzAwMTM1NjE5MDM1NzMyNDUwMDIzOTQ3MjI2ODg=",
+            "google_nid": "adobe_dmp"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=ODM3NTQ1ODI4NzAwMTM1NjE5MDM1NzMyNDUwMDIzOTQ3MjI2ODg="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aidwDwAAABhvXhbM"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||everesttech.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_uuid": 8.375458287001357e+37
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.everesttech.net/cm/dd?d_uuid=83754582870013561903573245002394722688"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_nsid": 0
+          }
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://vocento.demdex.net/dest5.html?d_nsid=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780969487080
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780969487080"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC378446669114446f96301f4764a2162e-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780969487080
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780969487080"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31098995
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606050101/pubads_impl.js?cb=31098995"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/opinion/pedro-garcia-cuartango-ocho-papas-20260608185313-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.26.1/prebid.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {
+            "ins": [
+              {
+                "action": "focus",
+                "actionCount": 1,
+                "actionDuration": 0,
+                "actionMs": "[0]",
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "eventType": "UserAction",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "target": "window",
+                "timestamp": 1780969484391,
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 8940,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8940&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b&at=GBsWFQ9DHxQaWREPGR5E"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 240
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 6898
+                  },
+                  "txSize": {
+                    "t": 761
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/events/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 238
+                  },
+                  "rxSize": {
+                    "t": 24
+                  },
+                  "time": {
+                    "t": 6907
+                  },
+                  "txSize": {
+                    "t": 3882
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/jserrors/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 231
+                  },
+                  "time": {
+                    "t": 6918
+                  },
+                  "txSize": {
+                    "t": 6388
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/ins/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 8938,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8938&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b"
+      },
+      {
+        "data": {
+          "body": {
+            "sm": [
+              {
+                "params": {
+                  "name": "Generic/LoaderType/pro/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/DistMethod/CDN/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/Runtime/Browser/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/React/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Framework/Jquery/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/IFrame/Added"
+                },
+                "stats": {
+                  "t": 7
+                }
+              },
+              {
+                "params": {
+                  "name": "Generic/WebDriver/Detected"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/info/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setCustomAttribute/called"
+                },
+                "stats": {
+                  "c": 12
+                }
+              },
+              {
+                "params": {
+                  "name": "API/setErrorHandler/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "API/recordCustomEvent/called"
+                },
+                "stats": {
+                  "c": 7
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/debug/called"
+                },
+                "stats": {
+                  "c": 3
+                }
+              },
+              {
+                "params": {
+                  "name": "API/logging/warn/called"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/App"
+                },
+                "stats": {
+                  "c": 17
+                }
+              },
+              {
+                "params": {
+                  "name": "Ajax/Events/Excluded/Agent"
+                },
+                "stats": {
+                  "c": 4
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasReplay/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              },
+              {
+                "params": {
+                  "name": "audit/page_view/hasTrace/true/negative"
+                },
+                "stats": {
+                  "c": 1
+                }
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 8936,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8936&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'unload,6vi,i;5,'pageUrl,'https://www.abc.es/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'301;5,'evolokTimeout,'300;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2194.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,7,,m;5,'metricId,'v4-1780969482855-2344484834550;9,'largestShiftTarget;9,'largestShiftTime;9,'largestShiftValue;9,'loadState;5,1,2;5,3,4;6,5,50.;6,6,10.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2194.699951171875;5,s,t;7,u;e,'pageHide,6vy,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2194.699951171875;5,s,t;7,u;e,'lcp,f2,s;6,'timeToFirstByte,80.89999999850988;6,'resourceLoadDelay,51.80000000074506;6,'resourceLoadDuration,311.5;6,'resourceLoadTime,311.5;6,'elementRenderDelay,98.;6,'size,62980.;5,'eid;5,'elTag,'IMG;5,'element,'div.v-a-img-c>figure.v-a-fig>a.v-a-lnk>picture>img.v-a-img;5,'elUrl,'https://s1.abcstatics.com/abc/www/multimedia/espana/2026/06/08/sanchez-U20659008022slB-U03871503007rIl-562x315@diario_abc.jpg;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2194.699951171875;5,s,t;7,u",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 8935,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=8935&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": {
+            "ins": [
+              {
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780969477908,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "vamLoad": true,
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "beforeGPT": true,
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780969477966,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "beforeCookies": true,
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventType": "VamLoadEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageType": "portada",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780969477967,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "UUID": "934857f0-fb1a-48c0-b447-536866049758",
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "duration": 3076.699951171875,
+                "env": "production",
+                "eventType": "VtmTrackEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780969479744,
+                "type": "init",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "adbdResult": "initializer:adbd:disabled",
+                "adbdTiming": 1111.699951171875,
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deployResult": "initializer:deploy:append",
+                "deployTiming": 1874.699951171875,
+                "deviceType": "Mobile",
+                "dogtrackResult": "initializer:dogtrack:disabled",
+                "dogtrackTiming": 1111.699951171875,
+                "env": "production",
+                "eventType": "VtmInitializersEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "kangarooResult": "initializer:kangaroo:resolved",
+                "kangarooTiming": 3076.699951171875,
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "paywallResult": "initializer:paywall:frontend",
+                "paywallTiming": 1112.699951171875,
+                "timestamp": 1780969479747,
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "utiqResult": "initializer:utiq:ids-unavailable",
+                "utiqTiming": 1112.699951171875,
+                "vendorsResult": "initializer:vendors",
+                "vendorsTiming": 1516.699951171875,
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1",
+                "wemassResult": "initializer:wemass:sync-enabled",
+                "wemassTiming": 1112.699951171875
+              },
+              {
+                "UUID": "934857f0-fb1a-48c0-b447-536866049758",
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieSize": 35,
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "duration": 3104.2999999970198,
+                "env": "production",
+                "eventType": "VtmTrackEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "isExtra": "Yes",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "timestamp": 1780969479750,
+                "type": "track",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              },
+              {
+                "browser": "Mobile 15",
+                "browserCookiesEnabled": true,
+                "browserLocalStorageEnabled": true,
+                "browserNavigator": "{\"vendor\":\"Google Inc.\",\"cookieEnabled\":true,\"appCodeName\":\"Mozilla\",\"appName\":\"Netscape\",\"appVersion\":\"5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1\",\"platform\":\"Linux x86_64\",\"product\":\"Gecko\",\"userAgent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1\",\"language\":\"es-ES\",\"doNotTrack\":null}",
+                "cmploaded": 2194.699951171875,
+                "consent": "unknown",
+                "cookieEvolok": null,
+                "cookieEvolokGscEvk": "",
+                "cookieNfrylVolverAlOrigen": "https://www.abc.es/",
+                "cookieSize": 35,
+                "cookieVocUserUUID": "9fc7e2f9-1bc8-4763-84ae-53c8ee4ba13d",
+                "cookiewall": "evolok",
+                "countryCode": "ES",
+                "currentUrl": "https://www.abc.es/",
+                "deviceType": "Mobile",
+                "env": "production",
+                "eventName": "saludSesion",
+                "eventNameFired": "accountsOnDataNoReady",
+                "eventType": "UserEvent",
+                "evolokError": "ok",
+                "evolokFetchTimeStamp": "301",
+                "evolokSID": "6a2770056a809528ea581f74",
+                "evolokTimeout": "300",
+                "host": "www.abc.es",
+                "identityEvolok": true,
+                "isExtra": "No",
+                "pageUrl": "https://www.abc.es/",
+                "paywall": "frontend",
+                "paywallAccess": "ALLOW_ACCESS",
+                "paywallConcurrentSessionLimit": "",
+                "ruleVersion": "2026-05-28 14:58",
+                "rulesProperties": "\"RULE_VERSION\",\"CHANGE\"",
+                "segments": "Logged-Out,visitFrequency-month-LESS30,UserType-Anonimo-Or-Registrado-Or-No-suscriptorV2,Not-SectionCustom-probrand,No-Phone-provided,WebType-Home,section-NOT-ABC-deportes-tenis,Role-NONE,UserType-No-suscriptorV2,UserType-NuncaSuscriptor,site-ABC,Category-ABC-not-archivo,Geo-ES,consent-no,Category-ABC-not-cultura,Geo-NotUndefined,WebType-not-colectivoqr,UserType-AnonimoV2,Device-Mobile,Device-Mobile-OR-Tablet,Category-ABC-not-favorito,canallDirecto,Suscription-Status-Undefined,ABC-category-not-cultural-pasion-gurme-palmera-nervion-archivo-favorito",
+                "sessionHealthVersion": "pack5",
+                "ssoGroup": "abc",
+                "testABGroupName": "Test_AB_ABC_DP6",
+                "testABGroupNumber": 1,
+                "timestamp": 1780969480349,
+                "url": "https://www.abc.es/",
+                "urlReferer": "",
+                "userAgentName": "Safari",
+                "userAgentOS": "iOS",
+                "userDataPaywallUserId": "",
+                "userIsInAppWebviewFlow": false,
+                "userIsInFlow": false,
+                "userType": "anonimo",
+                "vocUserJsVersion": "1.78.0",
+                "vocentoSiteEnv": "pro",
+                "vocentoSiteGroup": "abc",
+                "voontoUserType": "anonimo",
+                "voontoVersion": "2.26.0",
+                "vtmVersion": "3.15.1"
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 6915,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/ins/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6915&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b&at=GBsWFQ9DHxQaWREPGR5E"
+      },
+      {
+        "data": {
+          "body": {
+            "xhr": [
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 300
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 380
+                  },
+                  "txSize": {
+                    "t": 0
+                  }
+                },
+                "params": {
+                  "host": "vocx.evolok.net:443",
+                  "hostname": "vocx.evolok.net",
+                  "method": "GET",
+                  "pathname": "/acd/api/3.0/authorize/json",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 1
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 161
+                  },
+                  "time": {
+                    "t": 791
+                  }
+                },
+                "params": {
+                  "host": "www.abc.es:443",
+                  "hostname": "www.abc.es",
+                  "method": "GET",
+                  "pathname": "/kangaroo.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 3
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 149
+                  },
+                  "rxSize": {
+                    "t": 6482
+                  },
+                  "time": {
+                    "t": 1499
+                  }
+                },
+                "params": {
+                  "host": "c.amazon-adsystem.com:443",
+                  "hostname": "c.amazon-adsystem.com",
+                  "method": "GET",
+                  "pathname": "/bao-csm/aps-comm/aps_csm.js",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 683
+                  },
+                  "rxSize": {
+                    "t": 594
+                  },
+                  "time": {
+                    "t": 1841
+                  }
+                },
+                "params": {
+                  "host": "dpm.demdex.net:443",
+                  "hostname": "dpm.demdex.net",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 258
+                  },
+                  "rxSize": {
+                    "t": 48
+                  },
+                  "time": {
+                    "t": 2510
+                  }
+                },
+                "params": {
+                  "host": "sadbmetrics.abc.es:443",
+                  "hostname": "sadbmetrics.abc.es",
+                  "method": "get",
+                  "pathname": "/id",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "c": 6,
+                    "max": 0,
+                    "min": 0,
+                    "sos": 0,
+                    "t": 0
+                  },
+                  "count": 6,
+                  "duration": {
+                    "c": 6,
+                    "max": 236,
+                    "min": 59,
+                    "sos": 176507,
+                    "t": 971
+                  },
+                  "time": {
+                    "c": 6,
+                    "max": 4803,
+                    "min": 2919,
+                    "sos": 101914983,
+                    "t": 24251
+                  },
+                  "txSize": {
+                    "c": 6,
+                    "max": 183,
+                    "min": 144,
+                    "sos": 151264,
+                    "t": 950
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxWHkmMYJRBS37eOBRR07cDE2WGrJzxKhVlNMkka75hHBX9l7F25Et1V9SStcILxE0ssrPOIQuvM_uOGUfC30Y5tLhP5eJ1B9EsULUnRJGtV-zIUGGcqTfAUmeseUmUe1kYJfYRd",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 173
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4225
+                  },
+                  "txSize": {
+                    "t": 5158
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 187
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4635
+                  },
+                  "txSize": {
+                    "t": 5641
+                  }
+                },
+                "params": {
+                  "host": "data.abc.es:443",
+                  "hostname": "data.abc.es",
+                  "method": "POST",
+                  "pathname": "/ee/irl1/v1/interact",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              },
+              {
+                "metrics": {
+                  "count": 1,
+                  "duration": {
+                    "t": 182
+                  },
+                  "rxSize": {
+                    "c": 1
+                  },
+                  "time": {
+                    "t": 4764
+                  },
+                  "txSize": {
+                    "t": 373
+                  }
+                },
+                "params": {
+                  "host": "es1-s2s.sensic.net:443",
+                  "hostname": "es1-s2s.sensic.net",
+                  "method": "POST",
+                  "pathname": "/",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 234
+                  },
+                  "time": {
+                    "t": 4738
+                  }
+                },
+                "params": {
+                  "host": "17809694815372971b91274718b13c2c24afd537aeae7722a4352af6.trk.sensic.net:443",
+                  "hostname": "17809694815372971b91274718b13c2c24afd537aeae7722a4352af6.trk.sensic.net",
+                  "method": "GET",
+                  "pathname": "/tp.gif",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 73
+                  },
+                  "time": {
+                    "t": 4976
+                  }
+                },
+                "params": {
+                  "host": "localhost.sensic.net:54325",
+                  "hostname": "localhost.sensic.net",
+                  "method": "GET",
+                  "pathname": "/",
+                  "port": "54325",
+                  "protocol": "https",
+                  "status": 0
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 76
+                  },
+                  "time": {
+                    "t": 5002
+                  },
+                  "txSize": {
+                    "t": 144
+                  }
+                },
+                "params": {
+                  "host": "fundingchoicesmessages.google.com:443",
+                  "hostname": "fundingchoicesmessages.google.com",
+                  "method": "POST",
+                  "pathname": "/el/AGSKWxU8Ktp0RIqbzUxuf2FWgFajZPIF8gqvuSzFbuQRWSi2ffDHjcsyubXBWEXzV9G_tcfO2wSbyUp9m2wrw8Z0wUBWrVrqTPkMLcqhg9LcRDMwLgqO_lPVeObwvtBxPVGSLQgWxoeH",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 204
+                }
+              },
+              {
+                "metrics": {
+                  "cbTime": {
+                    "t": 0
+                  },
+                  "count": 1,
+                  "duration": {
+                    "t": 633
+                  },
+                  "rxSize": {
+                    "t": 198
+                  },
+                  "time": {
+                    "t": 6090
+                  },
+                  "txSize": {
+                    "t": 296
+                  }
+                },
+                "params": {
+                  "host": "bam.nr-data.net:443",
+                  "hostname": "bam.nr-data.net",
+                  "method": "POST",
+                  "pathname": "/1/c72ce647f9",
+                  "port": "443",
+                  "protocol": "https",
+                  "status": 200
+                }
+              }
+            ]
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 6907,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/jserrors/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6907&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b"
+      },
+      {
+        "data": {
+          "body": "bel.6;e,'fp,g1,i;5,'pageUrl,'https://www.abc.es/;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;5,'cookiewall,'evolok;6,'cookieSize,35.;5,'voontoVersion,'2.26.0;5,'evolokFetchTimeStamp,'301;5,'evolokTimeout,'300;5,'evolokError,'ok;5,'isExtra,'Yes;5,'paywall,'frontend;5,'userType,'anonimo;5,'vtmVersion,'3.15.1;6,'cmploaded,2194.699951171875;5,'consent,'unknown;7,'webdriverDetected;e,'fcp,g1,l;6,'timeToFirstByte,80.89999999850988;6,'firstByteToFCP,496.5;5,'loadState,'loading;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2194.699951171875;5,s,t;7,u;e,'load,4fi,i;5,1,2;5,3,4;6,5,50.;6,6,10.;6,7,0.;5,8,9;6,a,35.;5,b,c;5,d,e;5,f,g;5,h,i;5,j,k;5,l,m;5,n,o;5,p,q;6,r,2194.699951171875;5,s,t;7,u",
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "ck": 0,
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 6898,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/events/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6898&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b"
+      },
+      {
+        "data": {
+          "body": {
+            "ja": {
+              "cmploaded": 2194.699951171875,
+              "consent": "unknown",
+              "cookieSize": 35,
+              "cookiewall": "evolok",
+              "evolokError": "ok",
+              "evolokFetchTimeStamp": "301",
+              "evolokTimeout": "300",
+              "isExtra": "Yes",
+              "paywall": "frontend",
+              "userType": "anonimo",
+              "voontoVersion": "2.26.0",
+              "vtmVersion": "3.15.1",
+              "webdriverDetected": true
+            }
+          },
+          "filter": "||nr-data.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "a": 306085224,
+            "af": "err,xhr,stn,ins",
+            "ap": 271,
+            "at": "GBsWFQ9DHxQaWREPGR5E",
+            "be": 81,
+            "ck": 0,
+            "dc": 1128,
+            "fcp": 577,
+            "fe": 5661,
+            "fp": 577,
+            "fsh": 1,
+            "perf": {
+              "navigation": {},
+              "timing": {
+                "c": 23,
+                "ce": 58,
+                "dc": 5723,
+                "de": 1209,
+                "di": 1206,
+                "dn": 23,
+                "dne": 23,
+                "ds": 1206,
+                "f": 6,
+                "l": 5728,
+                "le": 5742,
+                "n": 0,
+                "of": 1780969476816,
+                "rp": 81,
+                "rpe": 108,
+                "rq": 58,
+                "s": 36
+              }
+            },
+            "ptid": "43a6f495575b803b",
+            "ref": "https://www.abc.es/",
+            "rst": 6078,
+            "s": "0ecbf5c1839f6386",
+            "to": "NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG",
+            "v": "1.316.0"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&rst=6078&ck=0&s=0ecbf5c1839f6386&ref=https://www.abc.es/&ptid=43a6f495575b803b&af=err,xhr,stn,ins&ap=271&be=81&fe=5661&dc=1128&at=GBsWFQ9DHxQaWREPGR5E&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1780969476816,%22n%22:0,%22f%22:6,%22dn%22:23,%22dne%22:23,%22c%22:23,%22s%22:36,%22ce%22:58,%22rq%22:58,%22rp%22:81,%22rpe%22:108,%22di%22:1206,%22ds%22:1206,%22de%22:1209,%22dc%22:5723,%22l%22:5728,%22le%22:5742%7D,%22navigation%22:%7B%7D%7D&fp=577&fcp=577"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||newrelic.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb0e9747aa53644daa8f0e56999f86eb2-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7384fdcfd6d74bfe95bfc35867ebaa71-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCb08cdd1098204277870b3999b07ac07b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC407298c5d763426da8881a8214c4c86a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC77b28969ef864c80bd66b197af2a33d9-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7536b7ffb5be48ec83063c0582004acd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809694815372971B91274718B13C2C24AFD537AEAE7722A4352AF6",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809694815372971B91274718B13C2C24AFD537AEAE7722A4352AF6&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7c12e02fa3964b86954b8737f88c5114-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||connect.facebook.net/signals/$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "domain": "www.abc.es",
+            "ex_m": "105,208,156,22,73,74,147,69,68,11,165,91,16,139,128,39,76,79,135,161,167,8,4,5,7,6,3,92,102,168,173,222,30,75,234,233,232,23,33,55,104,61,10,64,98,99,100,106,131,31,29,133,134,130,129,157,77,160,158,159,50,60,124,15,164,45,267,268,266,26,27,28,48,148,78,113,18,20,44,40,42,41,84,93,97,111,146,149,46,112,24,21,120,70,36,151,150,152,143,141,25,35,59,110,163,71,17,154,115,82,67,19,86,87,117,85,137,136,140,162,34,282,298,215,204,62,205,203,301,292,52,216,108,132,81,122,54,47,49,114,121,127,126,58,65,63,153,116,37,32,53,56,101,166,1,125,14,123,12,2,57,94,66,119,90,89,169,170,95,96,9,103,51,144,88,80,72,118,107,43,145,0,83,138,142,155,38,109,13,171",
+            "hme": "d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e",
+            "r": "stable",
+            "v": "2.9.334"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/signals/config/1246353057568670?v=2.9.334&r=stable&domain=www.abc.es&hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C62%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbe6651486dfa492b81dcea9d79510236-source.min.js"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=AbcWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=17809694815372971B91274718B13C2C24AFD537AEAE7722A4352AF6&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.abc.es&cp_c1=abc.es&cp_c2=home",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17809694815372971B91274718B13C2C24AFD537AEAE7722A4352AF6",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://17809694815372971b91274718b13c2c24afd537aeae7722a4352af6.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=17809694815372971B91274718B13C2C24AFD537AEAE7722A4352AF6&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7bcde429e23b427fa8129272350135f7-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC2047614837fa45378c9db6bb5227386c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/localads.$domain=~localads.cab",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXXdq1xo3qemVKPUvPg7Vv4J5nsJskJKc7UHyRRXljuJd6xlPDRfvrQ-zT3PmCoBIkPRmopOBz-ZggNzPDGvS04Os7iBq_tx5WsUacbDk5gIlh9ZlKs_cevse1H7odCYn3qK4n5MapkpMvMuLP8f0I2ZLex6jJcHAa0RLDpGdfL5vZHfniS1FP5NnM=/_/localads./column-ad-/adverth./globalbannerad./adnexus-"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC8d9d2f2f026a45348c2951d94df59ee8-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC89b5d5066ab9468886b04b529715766b-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbf15496093304f41b4bea4b4b48dc857-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=&google_error=3?gdpr=0&gdpr_consent="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "MDg3NjQ2NzMyMjEzNjgzODYxMjE1NjQ5ODUzMTA0MDEyMzQ4NjI=",
+            "google_nid": "adobe_dmp",
+            "google_tc": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=MDg3NjQ2NzMyMjEzNjgzODYxMjE1NjQ5ODUzMTA0MDEyMzQ4NjI=&google_tc="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": ".doubleclick.net/$image",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "gdpr": 0,
+            "gdpr_consent": "",
+            "google_cm": "",
+            "google_hm": "MDg3NjQ2NzMyMjEzNjgzODYxMjE1NjQ5ODUzMTA0MDEyMzQ4NjI=",
+            "google_nid": "adobe_dmp"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://vocento.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.abc.es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MDg3NjQ2NzMyMjEzNjgzODYxMjE1NjQ5ODUzMTA0MDEyMzQ4NjI="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aidwBwAAAEZ2MAN-"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC9b7840a883da425181cd876b7777ad6c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||everesttech.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_uuid": "08764673221368386121564985310401234862"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.everesttech.net/cm/dd?d_uuid=08764673221368386121564985310401234862"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_nsid": 0
+          }
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://vocento.demdex.net/dest5.html?d_nsid=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780969478657
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780969478657"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/3c605edc7bbc/RC378446669114446f96301f4764a2162e-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1780969478657
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1780969478657"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31099015
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606080101/pubads_impl.js?cb=31099015"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.26.1/prebid.js"
+      }
+    ]
+  }
+}

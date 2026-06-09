@@ -13,7 +13,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781054810
+          "expiry": 1781057350
         },
         {
           "nombre": "ev_sid",
@@ -22,7 +22,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812072411
+          "expiry": 1812074951
         },
         {
           "nombre": "ev_did",
@@ -31,7 +31,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812072411
+          "expiry": 1812074951
         },
         {
           "nombre": "didomi_token",
@@ -40,16 +40,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1812590811
-        },
-        {
-          "nombre": "vtm_op",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": null
+          "expiry": 1812593351
         },
         {
           "nombre": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
@@ -61,13 +52,13 @@
           "expiry": null
         },
         {
-          "nombre": "FCCDCF",
+          "nombre": "vtm_op",
           "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1814664412
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": null
         },
         {
           "nombre": "s_ecid",
@@ -76,7 +67,7 @@
           "plataforma": "Adobe Analytics",
           "categoria": "Marketing",
           "fuente": "Open Cookie Database",
-          "expiry": 1844040412
+          "expiry": 1844042952
         },
         {
           "nombre": "vocuser_information",
@@ -85,7 +76,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504412
+          "expiry": 1812506953
         },
         {
           "nombre": "voc_edtn",
@@ -94,7 +85,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504412
+          "expiry": 1812506953
         },
         {
           "nombre": "vocuser_uuid",
@@ -103,7 +94,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504412
+          "expiry": 1812506953
         },
         {
           "nombre": "vocuser_nfryl_volver_al_origen",
@@ -112,7 +103,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781054812
+          "expiry": 1781057353
         },
         {
           "nombre": "voc_paywall",
@@ -121,7 +112,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504412
+          "expiry": 1812506953
         },
         {
           "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
@@ -130,7 +121,16 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1815096413
+          "expiry": 1815098953
+        },
+        {
+          "nombre": "FCCDCF",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814666953
         },
         {
           "nombre": "voc-rtim",
@@ -139,7 +139,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1783560413
+          "expiry": 1783562954
         },
         {
           "nombre": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
@@ -148,7 +148,7 @@
           "plataforma": "Adobe Audience Manager",
           "categoria": "Marketing",
           "fuente": "Open Cookie Database",
-          "expiry": 1844126813
+          "expiry": 1844129354
         },
         {
           "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
@@ -157,7 +157,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1780970214
+          "expiry": 1780972754
         },
         {
           "nombre": "FCNEC",
@@ -166,14 +166,14 @@
           "plataforma": "Google",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1812504414
+          "expiry": 1812506956
         }
       ]
     },
     "POST": {
       "estado": "PASS",
-      "total": 34,
-      "identificadas": 34,
+      "total": 33,
+      "identificadas": 33,
       "no_identificadas": 0,
       "cookies": [
         {
@@ -183,7 +183,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781054810
+          "expiry": 1781057350
         },
         {
           "nombre": "ev_sid",
@@ -192,7 +192,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812072411
+          "expiry": 1812074951
         },
         {
           "nombre": "ev_did",
@@ -201,16 +201,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812072411
-        },
-        {
-          "nombre": "vtm_op",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": null
+          "expiry": 1812074951
         },
         {
           "nombre": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
@@ -222,13 +213,13 @@
           "expiry": null
         },
         {
-          "nombre": "FCCDCF",
+          "nombre": "vtm_op",
           "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1814664412
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": null
         },
         {
           "nombre": "s_ecid",
@@ -237,7 +228,7 @@
           "plataforma": "Adobe Analytics",
           "categoria": "Marketing",
           "fuente": "Open Cookie Database",
-          "expiry": 1844040412
+          "expiry": 1844042952
         },
         {
           "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
@@ -246,7 +237,16 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1815096413
+          "expiry": 1815098953
+        },
+        {
+          "nombre": "FCCDCF",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814666953
         },
         {
           "nombre": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
@@ -255,7 +255,7 @@
           "plataforma": "Adobe Audience Manager",
           "categoria": "Marketing",
           "fuente": "Open Cookie Database",
-          "expiry": 1844126813
+          "expiry": 1844129354
         },
         {
           "nombre": "didomi_token",
@@ -264,7 +264,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1812590832
+          "expiry": 1812593371
         },
         {
           "nombre": "euconsent-v2",
@@ -273,16 +273,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1812590832
-        },
-        {
-          "nombre": "kangaroo",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1807234034
+          "expiry": 1812593371
         },
         {
           "nombre": "Y3djb25zZW50",
@@ -291,7 +282,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504435
+          "expiry": 1812506973
         },
         {
           "nombre": "permutive-id",
@@ -300,7 +291,7 @@
           "plataforma": "Permutive",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1796783235
+          "expiry": 1796785773
         },
         {
           "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
@@ -309,34 +300,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1780970236
-        },
-        {
-          "nombre": "___nrbic",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1796524036
-        },
-        {
-          "nombre": "___nrbi",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1796524036
-        },
-        {
-          "nombre": "compass_uid",
-          "dominio": ".abc.es",
-          "propietario": "Marfeel",
-          "plataforma": "Marfeel",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1796524036
+          "expiry": 1780972773
         },
         {
           "nombre": "vocuser_information",
@@ -345,7 +309,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504436
+          "expiry": 1812506973
         },
         {
           "nombre": "voc_edtn",
@@ -354,7 +318,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504436
+          "expiry": 1812506973
         },
         {
           "nombre": "vocuser_uuid",
@@ -363,7 +327,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504436
+          "expiry": 1812506973
         },
         {
           "nombre": "vocuser_nfryl_volver_al_origen",
@@ -372,7 +336,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781054836
+          "expiry": 1781057373
         },
         {
           "nombre": "voc_paywall",
@@ -381,97 +345,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812504436
-        },
-        {
-          "nombre": "__gads",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "DoubleClick/Google Marketing",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1814664436
-        },
-        {
-          "nombre": "__gpi",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google AdSense",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1814664436
-        },
-        {
-          "nombre": "__eoi",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google AdSense",
-          "categoria": "Functional",
-          "fuente": "Open Cookie Database",
-          "expiry": 1796520436
-        },
-        {
-          "nombre": "voc-rtim",
-          "dominio": ".abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1783560437
-        },
-        {
-          "nombre": "FCNEC",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1812504439
-        },
-        {
-          "nombre": "__rtbh.uid",
-          "dominio": "www.abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1812504439
-        },
-        {
-          "nombre": "__rtbh.lid",
-          "dominio": "www.abc.es",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1812504439
-        },
-        {
-          "nombre": "_gcl_au",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1788744437
-        },
-        {
-          "nombre": "_ga_SJ3E3BDGTQ",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1844040439
-        },
-        {
-          "nombre": "_ga",
-          "dominio": ".abc.es",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1844040439
+          "expiry": 1812506973
         },
         {
           "nombre": "sui_1pc",
@@ -480,9 +354,131 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1844040442
+          "expiry": 1844042974
+        },
+        {
+          "nombre": "__gads",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "DoubleClick/Google Marketing",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814666973
+        },
+        {
+          "nombre": "__gpi",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google AdSense",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814666973
+        },
+        {
+          "nombre": "__eoi",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google AdSense",
+          "categoria": "Functional",
+          "fuente": "Open Cookie Database",
+          "expiry": 1796522973
+        },
+        {
+          "nombre": "___nrbic",
+          "dominio": ".abc.es",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1796526574
+        },
+        {
+          "nombre": "___nrbi",
+          "dominio": ".abc.es",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1796526574
+        },
+        {
+          "nombre": "compass_uid",
+          "dominio": ".abc.es",
+          "propietario": "Marfeel",
+          "plataforma": "Marfeel",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1796526574
+        },
+        {
+          "nombre": "_gcl_au",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1788746975
+        },
+        {
+          "nombre": "voc-rtim",
+          "dominio": ".abc.es",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1783562975
+        },
+        {
+          "nombre": "__rtbh.uid",
+          "dominio": "www.abc.es",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1812506975
+        },
+        {
+          "nombre": "__rtbh.lid",
+          "dominio": "www.abc.es",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1812506975
+        },
+        {
+          "nombre": "_ga_SJ3E3BDGTQ",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1844042975
+        },
+        {
+          "nombre": "_ga",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1844042975
+        },
+        {
+          "nombre": "FCNEC",
+          "dominio": ".abc.es",
+          "propietario": "Google",
+          "plataforma": "Google",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1812506975
         }
       ]
+    },
+    "responsable_en_politica": {
+      "estado": "FAIL",
+      "motivo": "La política no identifica ningún responsable del tratamiento.",
+      "entidades": []
     }
   },
   "marca_com": {
@@ -1356,6 +1352,11 @@
           "expiry": 1811969452
         }
       ]
+    },
+    "responsable_en_politica": {
+      "estado": "FAIL",
+      "motivo": "La política no identifica ningún responsable del tratamiento.",
+      "entidades": []
     }
   }
 }
