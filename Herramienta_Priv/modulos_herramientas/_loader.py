@@ -5,7 +5,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-TFG_DIR          = Path("/home/pedro/Escritorio/UNI/CUARTO/tfg")
+# Derivado relativamente: _loader.py → modulos_herramientas/ → Herramienta_Priv/ → TFG_DIR
+TFG_DIR          = Path(__file__).resolve().parents[2]
 ANALYSIS_SCRIPTS = TFG_DIR / "privacy-pioneer-web-crawler/analysis_scripts"
 ANALYSIS_DATA    = TFG_DIR / "privacy-pioneer-web-crawler/analysis_data"
 

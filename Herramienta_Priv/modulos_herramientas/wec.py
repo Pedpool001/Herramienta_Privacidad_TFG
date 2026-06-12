@@ -22,11 +22,13 @@ WEC_BIN  = WEC_DIR / "build/bin/website-evidence-collector.js"
 WEC_TIMEOUT = 120  # segundos
 
 
-def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock) -> None:
+def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
+             requisitos: set | None = None) -> None:
     """
     Ejecuta WEC para el sitio dado y evalúa R10, R17 y R18.
     """
     output_dir.mkdir(parents=True, exist_ok=True)
+    sel = set(requisitos) if requisitos else {"R10", "R17", "R18"}
 
     # 1. Lanzar WEC
     log.info("Lanzando WEC para %s → %s", url, output_dir)
@@ -58,39 +60,42 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock)
         return
 
     # 2. Analizar R17 y R18 (a partir del HAR)
-    try:
-        data_17_18 = ejecutar_analisis("r17_r18_seguridad", str(output_dir))
-        with lock:
-            resultados["R17"] = {
-                "veredicto": data_17_18.get("r17", {}).get("veredicto", "ERROR"),
-                "detalle":   data_17_18.get("r17", {}),
-            }
-            resultados["R18"] = {
-                "veredicto": data_17_18.get("r18", {}).get("veredicto", "ERROR"),
-                "detalle":   data_17_18.get("r18", {}),
-            }
-    except Exception as e:
-        log.error("r17_r18_seguridad falló: %s", e)
-        with lock:
-            for r in ["R17", "R18"]:
-                resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}
+    if {"R17", "R18"} & sel:
+        try:
+            data_17_18 = ejecutar_analisis("r17_r18_seguridad", str(output_dir))
+            with lock:
+                if "R17" in sel:
+                    resultados["R17"] = {
+                        "veredicto": data_17_18.get("r17", {}).get("veredicto", "ERROR"),
+                        "detalle":   data_17_18.get("r17", {}),
+                    }
+                if "R18" in sel:
+                    resultados["R18"] = {
+                        "veredicto": data_17_18.get("r18", {}).get("veredicto", "ERROR"),
+                        "detalle":   data_17_18.get("r18", {}),
+                    }
+        except Exception as e:
+            log.error("r17_r18_seguridad falló: %s", e)
+            with lock:
+                for r in ({"R17", "R18"} & sel):
+                    resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}
 
     # 3. Analizar R10 (cookies.yml del output de WEC)
-    cookies_yml = output_dir / "cookies.yml"
-    if not cookies_yml.exists():
-        log.warning("WEC no generó cookies.yml — R10 no evaluable")
-        with lock:
-            resultados["R10"] = {"veredicto": "NO_EVALUABLE", "detalle": "cookies.yml no encontrado"}
-        return
-
-    try:
-        data_10 = ejecutar_analisis("r10_persistencia", str(output_dir))
-        with lock:
-            resultados["R10"] = {
-                "veredicto": data_10.get("veredicto", "ERROR"),
-                "detalle":   data_10,
-            }
-    except Exception as e:
-        log.error("r10_persistencia falló: %s", e)
-        with lock:
-            resultados["R10"] = {"veredicto": "ERROR", "detalle": str(e)}
+    if "R10" in sel:
+        cookies_yml = output_dir / "cookies.yml"
+        if not cookies_yml.exists():
+            log.warning("WEC no generó cookies.yml — R10 no evaluable")
+            with lock:
+                resultados["R10"] = {"veredicto": "NO_EVALUABLE", "detalle": "cookies.yml no encontrado"}
+            return
+        try:
+            data_10 = ejecutar_analisis("r10_persistencia", str(output_dir))
+            with lock:
+                resultados["R10"] = {
+                    "veredicto": data_10.get("veredicto", "ERROR"),
+                    "detalle":   data_10,
+                }
+        except Exception as e:
+            log.error("r10_persistencia falló: %s", e)
+            with lock:
+                resultados["R10"] = {"veredicto": "ERROR", "detalle": str(e)}

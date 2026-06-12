@@ -1,0 +1,55 @@
+services:
+
+  # ── Base de datos MySQL (Privacy Pioneer) ────────────────────────────────────
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE:      analysis
+      MYSQL_USER:          pioneer
+      MYSQL_PASSWORD:      abc
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost",
+             "-u", "pioneer", "-pabc"]
+      interval: 10s
+      timeout:  5s
+      retries:  10
+      start_period: 30s
+
+  # ── Aplicación principal ──────────────────────────────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      # MySQL — apunta al servicio del compose
+      MYSQL_HOST:     mysql
+      MYSQL_USER:     pioneer
+      MYSQL_PASSWORD: abc
+      MYSQL_DATABASE: analysis
+      # Privacy Pioneer REST API usa estas variables de entorno
+      DB_HOST:        mysql
+      DB_USERNAME:    pioneer
+      DB_PASSWORD:    abc
+      DB_DATABASE:    analysis
+      # tracker-radar (opcional): montar el directorio del host aquí
+      TRACKER_RADAR_DIR: /tracker-radar
+    volumes:
+      # Directorio de salida — persiste entre reinicios
+      - output_data:/app/Herramienta_Priv/output
+      # tracker-radar (13 GB): soporte completo para R16 (correspondencia aviso-ejecución)
+      - /home/pedro/Escritorio/UNI/CUARTO/tracker-radar:/tracker-radar:ro
+
+volumes:
+  mysql_data:
+  output_data:

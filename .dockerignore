@@ -1,0 +1,35 @@
+# ── Salidas y datos temporales ────────────────────────────────────────────────
+Herramienta_Priv/output/
+analysis_data/
+**/demo-dir/
+**/*.sqlite
+**/*.har
+
+# ── Dependencias (se instalan en el build) ────────────────────────────────────
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+webXray/venv_tfg/
+webXray/wdbs/
+webXray/reports/
+
+# ── Navegadores descargados por Puppeteer/Playwright ─────────────────────────
+**/.cache/puppeteer/
+**/.local-browsers/
+
+# ── Caché de conda/pip ────────────────────────────────────────────────────────
+**/.conda/
+**/.pip/
+
+# ── Ficheros del sistema y del IDE ────────────────────────────────────────────
+.git/
+.gitmodules
+**/.DS_Store
+**/*.log
+**/.env
+
+# ── tracker-radar (13 GB — se monta como volumen si se necesita) ──────────────
+# No está dentro del directorio tfg, así que no afecta al contexto.
+# Si por algún motivo se copiara aquí, excluirlo:
+tracker-radar/

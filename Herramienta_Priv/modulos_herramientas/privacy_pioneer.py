@@ -13,6 +13,7 @@ Flujo:
 """
 
 import logging
+import os
 import subprocess
 import tempfile
 import threading
@@ -42,7 +43,10 @@ def _limpiar_mysql(dominio: str) -> None:
     try:
         import mysql.connector
         conn = mysql.connector.connect(
-            host="localhost", user="pioneer", password="abc", database="analysis"
+            host=os.getenv("MYSQL_HOST", "localhost"),
+            user=os.getenv("MYSQL_USER", "pioneer"),
+            password=os.getenv("MYSQL_PASSWORD", "abc"),
+            database=os.getenv("MYSQL_DATABASE", "analysis"),
         )
         cur = conn.cursor()
         cur.execute("DELETE FROM entries WHERE rootUrl LIKE %s", (f"%{dominio}%",))
@@ -53,17 +57,24 @@ def _limpiar_mysql(dominio: str) -> None:
         log.warning("No se pudo limpiar MySQL: %s", e)
 
 
-def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock) -> None:
+def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
+             requisitos: set | None = None) -> None:
     """
     Lanza Privacy Pioneer para el sitio dado, luego evalúa R2, R3 y R9.
+
+    El crawl siempre se ejecuta (sus datos los consume también combinados para
+    R12 y R15). Solo se ejecutan los scripts de análisis cuyos requisitos
+    estén en `requisitos`.
 
     Args:
         url:        URL del sitio a auditar.
         output_dir: Directorio donde guardar la salida de la herramienta.
         resultados: Dict compartido entre hilos.
         lock:       Lock para escribir en resultados.
+        requisitos: Conjunto de requisitos seleccionados. None = todos.
     """
     output_dir.mkdir(parents=True, exist_ok=True)
+    sel = set(requisitos) if requisitos else {"R2", "R3", "R9"}
     dominio = _dominio(url)
 
     # 1. Limpiar MySQL
@@ -125,11 +136,13 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock)
         import shutil
         shutil.copy2(reporte_src, output_dir / "reporte_auditoria.json")
 
-    # 7. Ejecutar análisis
+    # 7. Ejecutar análisis (solo para requisitos seleccionados)
     for req, script, args in [
         (["R2", "R3"], "r2_r3_cookies_beacons", [dominio]),
         (["R9"],       "r9_minimizacion",        [dominio]),
     ]:
+        if not any(r in sel for r in req):
+            continue
         try:
             data = ejecutar_analisis(script, *args)
 
@@ -142,8 +155,10 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock)
                         next(iter(sitios.values()), None)
                     )
                     veredicto = entrada.get("veredicto", "ERROR") if entrada else "ERROR"
-                    resultados["R2"] = {"veredicto": veredicto, "detalle": entrada or {}}
-                    resultados["R3"] = {"veredicto": veredicto, "detalle": entrada or {}}
+                    if "R2" in sel:
+                        resultados["R2"] = {"veredicto": veredicto, "detalle": entrada or {}}
+                    if "R3" in sel:
+                        resultados["R3"] = {"veredicto": veredicto, "detalle": entrada or {}}
                 else:
                     # r9: lista de dicts con {sitio, estado, ...}
                     _ESTADO_MAP = {"FALLO": "FAILED", "ADVERTENCIA": "WARNING",

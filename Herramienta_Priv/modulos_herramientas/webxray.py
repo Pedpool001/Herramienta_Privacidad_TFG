@@ -20,7 +20,8 @@ from urllib.parse import urlparse
 
 log = logging.getLogger(__name__)
 
-TFG_DIR      = Path("/home/pedro/Escritorio/UNI/CUARTO/tfg")
+# Derivado relativamente: webxray.py → modulos_herramientas/ → Herramienta_Priv/ → TFG_DIR
+TFG_DIR      = Path(__file__).resolve().parents[2]
 WEBXRAY_DIR  = TFG_DIR / "webXray"
 WEBXRAY_PY   = WEBXRAY_DIR / "venv_tfg/bin/python"
 RUN_SCRIPT   = WEBXRAY_DIR / "webxray_headless.py"  # runner headless propio

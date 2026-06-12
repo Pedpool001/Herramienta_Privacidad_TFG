@@ -30,99 +30,96 @@ def ejecutar(
     ev_pp: threading.Event,
     ev_webxray: threading.Event,
     ev_poligraph: threading.Event,
+    requisitos: set | None = None,
 ) -> None:
     """
     Evalúa R12, R15 y R16 esperando a las herramientas de las que dependen.
 
     Args:
-        output_dir:   Directorio raíz del site audit (contiene subdirectorios
-                      'poligraph' y 'webxray' con los outputs de cada tool).
+        output_dir:   Directorio raíz del site audit.
         resultados:   Dict compartido entre hilos.
         lock:         Lock para escribir en resultados.
         ev_pp:        Evento que se activa cuando termina Privacy Pioneer.
         ev_webxray:   Evento que se activa cuando termina webXray.
         ev_poligraph: Evento que se activa cuando termina PoliGraph.
+        requisitos:   Conjunto de requisitos seleccionados. None = todos.
     """
+    sel     = set(requisitos) if requisitos else {"R12", "R15", "R16"}
     pg_dir  = output_dir / "poligraph"
     wx_dir  = output_dir / "webxray"
 
-    # ── R16: PoliGraph + webXray ──────────────────────────────────────────────
-    log.info("Combinados: esperando PoliGraph y webXray para R16…")
+    # Siempre esperamos los eventos para no bloquear indefinidamente el orden
+    # de ejecución (los eventos se activan inmediatamente si la tool no corre).
+    log.info("Combinados: esperando PoliGraph y webXray…")
     ev_poligraph.wait()
     ev_webxray.wait()
 
-    try:
-        graph_yml = pg_dir / "graph-original.full.yml"
-        csv_3p    = wx_dir / "3p_domains.csv"
+    graph_yml = pg_dir / "graph-original.full.yml"
+    csv_3p    = wx_dir / "3p_domains.csv"
 
-        if not graph_yml.exists():
-            raise FileNotFoundError(f"graph-original.full.yml no encontrado en {pg_dir}")
-
-        args_r16 = [str(graph_yml)]
-        if csv_3p.exists():
-            args_r16.append(str(csv_3p))
-
-        data = ejecutar_analisis("r16_correspondencia", *args_r16)
-        with lock:
-            resultados["R16"] = {
-                "veredicto": data.get("veredicto", "ERROR"),
-                "detalle":   data,
-            }
-    except Exception as e:
-        log.error("r16_correspondencia falló: %s", e)
-        with lock:
-            resultados["R16"] = {"veredicto": "ERROR", "detalle": str(e)}
+    # ── R16: PoliGraph + webXray ──────────────────────────────────────────────
+    if "R16" in sel:
+        try:
+            if not graph_yml.exists():
+                log.warning("graph-original.full.yml no disponible — R16 NO_EVALUABLE")
+                with lock:
+                    resultados["R16"] = {
+                        "veredicto": "NO_EVALUABLE",
+                        "detalle": "Grafo PoliGraph no disponible (html_crawler falló o fue bloqueado)",
+                    }
+            else:
+                args_r16 = [str(graph_yml)]
+                if csv_3p.exists():
+                    args_r16.append(str(csv_3p))
+                data = ejecutar_analisis("r16_correspondencia", *args_r16)
+                with lock:
+                    resultados["R16"] = {
+                        "veredicto": data.get("veredicto", "ERROR"),
+                        "detalle":   data,
+                    }
+        except Exception as e:
+            log.error("r16_correspondencia falló: %s", e)
+            with lock:
+                resultados["R16"] = {"veredicto": "ERROR", "detalle": str(e)}
 
     # ── R12: Privacy Pioneer + webXray ────────────────────────────────────────
-    log.info("Combinados: esperando Privacy Pioneer para R12…")
+    log.info("Combinados: esperando Privacy Pioneer…")
     ev_pp.wait()
 
-    try:
-        args_r12 = []
-        if csv_3p.exists():
-            args_r12 = [str(csv_3p)]
-
-        data = ejecutar_analisis("r12_software_terceros", *args_r12)
-
-        # data es {url_sitio: {estado: "FALLO"|"PASS", ...}} — sin wrapper "sitios"
-        veredicto = "PASSED"
-        for sitio_data in (data.values() if isinstance(data, dict) else []):
-            if isinstance(sitio_data, dict):
-                if sitio_data.get("estado") == "FALLO":
+    if "R12" in sel:
+        try:
+            args_r12 = [str(csv_3p)] if csv_3p.exists() else []
+            data = ejecutar_analisis("r12_software_terceros", *args_r12)
+            veredicto = "PASSED"
+            for sitio_data in (data.values() if isinstance(data, dict) else []):
+                if isinstance(sitio_data, dict) and sitio_data.get("estado") == "FALLO":
                     veredicto = "FAILED"
                     break
-
-        with lock:
-            resultados["R12"] = {"veredicto": veredicto, "detalle": data}
-    except Exception as e:
-        log.error("r12_software_terceros falló: %s", e)
-        with lock:
-            resultados["R12"] = {"veredicto": "ERROR", "detalle": str(e)}
+            with lock:
+                resultados["R12"] = {"veredicto": veredicto, "detalle": data}
+        except Exception as e:
+            log.error("r12_software_terceros falló: %s", e)
+            with lock:
+                resultados["R12"] = {"veredicto": "ERROR", "detalle": str(e)}
 
     # ── R15: Privacy Pioneer + PoliGraph ─────────────────────────────────────
-    # Ambos eventos ya activados; ejecutar directamente.
-    try:
-        graph_yml = pg_dir / "graph-original.full.yml"
-        args_r15  = [str(graph_yml)] if graph_yml.exists() else []
-
-        data = ejecutar_analisis("r15_responsables", *args_r15)
-
-        # Resultado: dict anidado por sitio/fase
-        # El veredicto global es el peor entre todas las fases de todos los sitios
-        veredicto_global = "PASSED"
-        for sitio_data in data.values() if isinstance(data, dict) else []:
-            if isinstance(sitio_data, dict):
-                for clave, val in sitio_data.items():
-                    if isinstance(val, dict):
-                        est = val.get("estado", "")
-                        if est == "FAIL":
-                            veredicto_global = "FAILED"
-                        elif est in ("ADVERTENCIA", "WARNING") and veredicto_global == "PASSED":
-                            veredicto_global = "WARNING"
-
-        with lock:
-            resultados["R15"] = {"veredicto": veredicto_global, "detalle": data}
-    except Exception as e:
-        log.error("r15_responsables falló: %s", e)
-        with lock:
-            resultados["R15"] = {"veredicto": "ERROR", "detalle": str(e)}
+    if "R15" in sel:
+        try:
+            args_r15 = [str(graph_yml)] if graph_yml.exists() else []
+            data = ejecutar_analisis("r15_responsables", *args_r15)
+            veredicto_global = "PASSED"
+            for sitio_data in data.values() if isinstance(data, dict) else []:
+                if isinstance(sitio_data, dict):
+                    for val in sitio_data.values():
+                        if isinstance(val, dict):
+                            est = val.get("estado", "")
+                            if est == "FAIL":
+                                veredicto_global = "FAILED"
+                            elif est in ("ADVERTENCIA", "WARNING") and veredicto_global == "PASSED":
+                                veredicto_global = "WARNING"
+            with lock:
+                resultados["R15"] = {"veredicto": veredicto_global, "detalle": data}
+        except Exception as e:
+            log.error("r15_responsables falló: %s", e)
+            with lock:
+                resultados["R15"] = {"veredicto": "ERROR", "detalle": str(e)}

@@ -1,64 +1,266 @@
 {
-  "https://www.marca.com/": {
+  "https://www.marvel.com/": {
     "estado": "FALLO",
-    "total_unicas": 7,
-    "confirmadas_ambas_herramientas": 4,
+    "total_unicas": 6,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 6,
+    "violaciones": [
+      {
+        "dominio": "datadoghq-browser-agent.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js"
+      },
+      {
+        "dominio": "js-agent.newrelic.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "New Relic",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://js-agent.newrelic.com/nr-spa-1.316.0.min.js"
+      },
+      {
+        "dominio": "bam.nr-data.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "New Relic",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://bam.nr-data.net/1/8d01ff17d1?a=1536058748,1536059054&v=1.316.0&to=NVNRYRdWV0tQWxcIXQwZcEAWQ1ZVHlwRFEIDWg%3D%3D&r"
+      },
+      {
+        "dominio": "browser-intake-datadoghq.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&dd-api-key=pubd83c3b581e016b93e0fe432a8bdf3a38&dd-evp-o"
+      },
+      {
+        "dominio": "disney.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://disney.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=D83AE33C56937B7B7F"
+      },
+      {
+        "dominio": "googletagservices.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.googletagservices.com/tag/js/gpt.js"
+      }
+    ]
+  },
+  "https://es.pinterest.com/": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 0,
     "solo_privacy_pioneer": 3,
     "violaciones": [
       {
-        "dominio": "c.amazon-adsystem.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Amazon",
-        "en_webxray": true,
-        "owner_wx": "Amazon Marketing Services",
-        "pais_wx": "US",
-        "lineage_wx": "Amazon Marketing Services > Amazon",
-        "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
-      },
-      {
-        "dominio": "es-config.sensic.net",
-        "tipo_pp": "analytics",
-        "descripcion": "Analítica de comportamiento",
-        "empresa_pp": "nurago",
-        "en_webxray": true,
-        "owner_wx": "GfK",
-        "pais_wx": "DE",
-        "lineage_wx": "GfK",
-        "request_url": "https://es-config.sensic.net/s2s-web.js"
+        "dominio": "ct.pinterest.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Pinterest",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ct.pinterest.com/ct.html"
       },
       {
         "dominio": "connect.facebook.net",
         "tipo_pp": "social",
         "descripcion": "Redes sociales",
         "empresa_pp": "Facebook",
-        "en_webxray": true,
-        "owner_wx": "Facebook",
-        "pais_wx": "US",
-        "lineage_wx": "Facebook",
-        "request_url": "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=279395918757488&status=true&cookie=true"
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/en_US/sdk.js"
+      },
+      {
+        "dominio": "facebook.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.facebook.com/x/oauth/status?client_id=274266067164&input_token&origin=1&redirect_uri=https%3A%2F%2Fes.pinter"
+      }
+    ]
+  },
+  "https://www.reddit.com/?solution=14d4a49a212165a414d4a49a212165a4&js_challenge=1&token=7afd7253fec22262ff1c52b1703fe9ece9e55a92cba85e12c3229f5bce0944b3&jsc_orig_r=": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "reddit.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "reddit",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.reddit.com/svc/events/preload-head?renderId=efd26748-ec90-44a6-8d96-59b4adbe7f97&pageType=popular"
+      }
+    ]
+  },
+  "https://www.snapchat.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "static.snapchat.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.snapchat.com/snapchat-dot-com/_next/static/chunks/webpack-00b5fbcf8f2f5230.js"
+      }
+    ]
+  },
+  "https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "amazon.es",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.amazon.es/ax/signin/crossDomainAuthContext"
+      }
+    ]
+  },
+  "https://www.hbomax.com/es/es": {
+    "estado": "FALLO",
+    "total_unicas": 2,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "s.go-mpulse.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Akamai",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.go-mpulse.net/boomerang/8EHLS-PEQ2F-ADSL7-8FUYN-MFK49"
+      },
+      {
+        "dominio": "684dd32d.akstat.io",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://684dd32d.akstat.io/"
+      }
+    ]
+  },
+  "https://www.marca.com/": {
+    "estado": "FALLO",
+    "total_unicas": 8,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 8,
+    "violaciones": [
+      {
+        "dominio": "securepubads.g.doubleclick.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
       },
       {
         "dominio": "config.aps.amazon-adsystem.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Amazon",
-        "en_webxray": true,
-        "owner_wx": "Amazon Marketing Services",
-        "pais_wx": "US",
-        "lineage_wx": "Amazon Marketing Services > Amazon",
-        "request_url": "https://config.aps.amazon-adsystem.com/configs/3537"
-      },
-      {
-        "dominio": "static.hotjar.com",
-        "tipo_pp": "analytics",
-        "descripcion": "Analítica de comportamiento",
-        "empresa_pp": "Hotjar",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://static.hotjar.com/c/hotjar-413277.js?sv=6"
+        "request_url": "https://config.aps.amazon-adsystem.com/configs/3537"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true"
+      },
+      {
+        "dominio": "10453011-272d-49cd-9043-1964fdb36fd8.prmutv.co",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://10453011-272d-49cd-9043-1964fdb36fd8.prmutv.co/v2.0/pxid?k=184e2a21-c646-4fd9-a6ad-7281617e89a7"
+      },
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
       },
       {
         "dominio": "script.crazyegg.com",
@@ -72,89 +274,67 @@
         "request_url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
       },
       {
-        "dominio": "oa.openxcdn.net",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Desconocida",
+        "dominio": "static.hotjar.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Hotjar",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://oa.openxcdn.net/esp.js"
+        "request_url": "https://static.hotjar.com/c/hotjar-413277.js?sv=6"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=279395918757488&status=true&cookie=true"
       }
     ]
   },
   "https://www.abc.es/": {
     "estado": "FALLO",
-    "total_unicas": 31,
-    "confirmadas_ambas_herramientas": 7,
-    "solo_privacy_pioneer": 24,
+    "total_unicas": 32,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 32,
     "violaciones": [
       {
         "dominio": "dpm.demdex.net",
         "tipo_pp": "trackingPixel",
         "descripcion": "Píxel de seguimiento",
         "empresa_pp": "Adobe",
-        "en_webxray": true,
-        "owner_wx": "Adobe Audience Manager",
-        "pais_wx": "US",
-        "lineage_wx": "Adobe Audience Manager > Adobe Experience Cloud > Adobe Systems",
-        "request_url": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEBMVPCZOyKdcMknpZv1K7j0&google_cver=1?gdpr=0&gdpr_consent="
-      },
-      {
-        "dominio": "ib.adnxs.com",
-        "tipo_pp": "trackingPixel",
-        "descripcion": "Píxel de seguimiento",
-        "empresa_pp": "AT&T",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://ib.adnxs.com/setuid?entity=315&code=sywJM_TAq5Et3Ypfkf20Gxw-v8Au0mGdiK-3FgfjsrU&consent=1"
-      },
-      {
-        "dominio": "static.adsafeprotected.com",
-        "tipo_pp": "fingerprinting",
-        "descripcion": "Fingerprinting de dispositivo",
-        "empresa_pp": "Integral Ad Science",
-        "en_webxray": true,
-        "owner_wx": "Integral Ad Science",
-        "pais_wx": "US",
-        "lineage_wx": "Integral Ad Science",
-        "request_url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+        "request_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aisHfAAAADe8JgO5"
       },
       {
         "dominio": "dpm.demdex.net",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Adobe",
-        "en_webxray": true,
-        "owner_wx": "Adobe Audience Manager",
-        "pais_wx": "US",
-        "lineage_wx": "Adobe Audience Manager > Adobe Experience Cloud > Adobe Systems",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
         "request_url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A"
       },
       {
-        "dominio": "static.adsafeprotected.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Integral Ad Science",
-        "en_webxray": true,
-        "owner_wx": "Integral Ad Science",
-        "pais_wx": "US",
-        "lineage_wx": "Integral Ad Science",
-        "request_url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
-      },
-      {
-        "dominio": "web-banner.ads.aps.amazon-adsystem.com",
+        "dominio": "c.amazon-adsystem.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Amazon",
-        "en_webxray": true,
-        "owner_wx": "Amazon Marketing Services",
-        "pais_wx": "US",
-        "lineage_wx": "Amazon Marketing Services > Amazon",
-        "request_url": "https://web-banner.ads.aps.amazon-adsystem.com/e/dtb/bid"
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
       },
       {
         "dominio": "28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app",
@@ -201,28 +381,6 @@
         "request_url": "https://oa.openxcdn.net/esp.js"
       },
       {
-        "dominio": "static.criteo.net",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Criteo",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://static.criteo.net/js/ld/publishertag.ids.js"
-      },
-      {
-        "dominio": "cdn.id5-sync.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "ID5",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://cdn.id5-sync.com/api/1.0/esp.js"
-      },
-      {
         "dominio": "invstatic101.creativecdn.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
@@ -234,15 +392,15 @@
         "request_url": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"
       },
       {
-        "dominio": "api.permutive.com",
+        "dominio": "static.criteo.net",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Permutive",
+        "empresa_pp": "Criteo",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://api.permutive.com/v2.0/watson?k=390f11db-6eea-42eb-9ef9-4d27b1bb2bab"
+        "request_url": "https://static.criteo.net/js/ld/publishertag.ids.js"
       },
       {
         "dominio": "28986622-e6be-473d-9a8f-e603a25f3c66.prmutv.co",
@@ -254,17 +412,6 @@
         "pais_wx": "",
         "lineage_wx": "",
         "request_url": "https://28986622-e6be-473d-9a8f-e603a25f3c66.prmutv.co/v2.0/pxid?k=390f11db-6eea-42eb-9ef9-4d27b1bb2bab"
-      },
-      {
-        "dominio": "ib.adnxs.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "AT&T",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://ib.adnxs.com/getuidj?gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf9_hr7sQxBgb"
       },
       {
         "dominio": "s.seedtag.com",
@@ -286,65 +433,21 @@
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://ms-cookie-sync.presage.io/user-sync.html?source=tam&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXl"
+        "request_url": "https://ms-cookie-sync.presage.io/user-sync.html?source=tam&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__bXl"
       },
       {
-        "dominio": "ssum-sec.casalemedia.com",
+        "dominio": "match.deepintent.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Casale Media",
+        "empresa_pp": "Deep Intent",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://ssum-sec.casalemedia.com/usermatch?cb=https%3A%2F%2Faax-eu.amazon-adsystem.com%2Fs%2Fecm3%3Fgdpr%3D1%26gdpr_cons"
+        "request_url": "https://match.deepintent.com/usersync/154"
       },
       {
-        "dominio": "ap.lijit.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Federated Media",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://ap.lijit.com/pixel?gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf9_hr7sQxBgbIk"
-      },
-      {
-        "dominio": "c1.adform.net",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Adform",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://c1.adform.net/cookie?redirect_url=https%3A%2F%2Fs.seedtag.com%2Fcs%2Fcookiesync%2Fadform%3Fchanneluid%3D%24UID"
-      },
-      {
-        "dominio": "ums.acuityplatform.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "Acuity",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://ums.acuityplatform.com/tum?umid=8&us_privacy=&gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bX"
-      },
-      {
-        "dominio": "sync.richaudience.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "RichAudience",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://sync.richaudience.com/f7872c90c5d3791e2b51f7edce1a0a5d/?p=MMuGgvZcVd&r=https%3A%2F%2Faax-eu.amazon-adsystem.com%"
-      },
-      {
-        "dominio": "onetag-sys.com",
+        "dominio": "tr.blismedia.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
         "empresa_pp": "Desconocida",
@@ -352,7 +455,62 @@
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://onetag-sys.com/usync/?pubId=7a4244b2979db22&gdpr=1&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr"
+        "request_url": "https://tr.blismedia.com/v1/api/sync/indexexchange?gdpr=1&userId=aisHnVVbL0gAEHvjAm-xuAAA%26701&gpp=&gpp_sid=&us_privacy"
+      },
+      {
+        "dominio": "pbs-cs.yellowblue.io",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pbs-cs.yellowblue.io/pbs-iframe?gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYxf"
+      },
+      {
+        "dominio": "s.ad.smaato.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.ad.smaato.net/c/?adExInit=rise&gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36btkeYx"
+      },
+      {
+        "dominio": "um.simpli.fi",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Simpli",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://um.simpli.fi/pubmatic?https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9ODA2JnRsPTUxOD"
+      },
+      {
+        "dominio": "ipac.ctnsnet.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ipac.ctnsnet.com/int/cm?exc=14&redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MTE"
+      },
+      {
+        "dominio": "cms.quantserve.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Quantcast",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cms.quantserve.com/pixel/p-5aWVS_roA1dVM.gif?idmatch=0&gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQK"
       },
       {
         "dominio": "user-sync.fwmrm.net",
@@ -366,26 +524,15 @@
         "request_url": "https://user-sync.fwmrm.net/ad/u?mode=echo&cr=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D3%26gdpr%3D1%26gdpr_con"
       },
       {
-        "dominio": "rtb.mfadsrvr.com",
+        "dominio": "dsp-ap.eskimi.com",
         "tipo_pp": "advertising",
         "descripcion": "Publicidad comportamental",
-        "empresa_pp": "BidSwitch",
+        "empresa_pp": "Eskimi",
         "en_webxray": false,
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://rtb.mfadsrvr.com/ul_cb/sync?ssp=onetag&ssp_user_id=MbrBH1tUl7hU1ltWLzxBbpKDzwviNQ38MFLp19eaZBc&gdpr=1&gdpr_conse"
-      },
-      {
-        "dominio": "d.adroll.com",
-        "tipo_pp": "advertising",
-        "descripcion": "Publicidad comportamental",
-        "empresa_pp": "AdRoll",
-        "en_webxray": false,
-        "owner_wx": "",
-        "pais_wx": "",
-        "lineage_wx": "",
-        "request_url": "https://d.adroll.com/cm/b/tp_out?advertisable=3GMDZMBFQREVBC75SYYKWH&ssp=onetag&bsw_param=da20e73b-6bec-4c25-af99-6a34e8"
+        "request_url": "https://dsp-ap.eskimi.com/pixelGet?ex=50&gdpr=gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__bXlr-bb36b"
       },
       {
         "dominio": "match.prod.bidr.io",
@@ -396,29 +543,84 @@
         "owner_wx": "",
         "pais_wx": "",
         "lineage_wx": "",
-        "request_url": "https://match.prod.bidr.io/cookie-sync/rp?bee_sync_partners=rp&gdpr_consent=CQliWsAQliWsAAHABBENCiFsAP_gAACAAAiQKANR_G__"
+        "request_url": "https://match.prod.bidr.io/cookie-sync/rp?bee_sync_partners=rp&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__"
+      },
+      {
+        "dominio": "match.sharethrough.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Sharethrough",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://match.sharethrough.com/sync/v1?source_id=UiRtTsXAfjmfSDAKnR1FjWsu&source_user_id=MQ9VENJO-4-8QPZ&gdpr=1&gdpr_con"
+      },
+      {
+        "dominio": "d5p.de17a.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Delta Projects",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://d5p.de17a.com/getuid/pubmatic?https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI3NDUmdGw9MTI"
+      },
+      {
+        "dominio": "mwzeom.zeotap.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://mwzeom.zeotap.com/mw?zpartnerid=1384&env=mWeb&gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G__bX"
+      },
+      {
+        "dominio": "cm.adgrx.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AdGear",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cm.adgrx.com/bridge?AG_PID=pubmatic&AG_SETCOOKIE&gdpr=1&gdpr_consent=CQlo8kAQlo8kAAHABBENCiFsAP_gAACAAAiQKANR_G_"
+      },
+      {
+        "dominio": "dsp.adkernel.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AdKernel",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dsp.adkernel.com/sync?exchange=4&r=https%3A%2F%2Fimage2.pubmatic.com%2FAdServer%2FPug%3Fvcode%3Dbz0yJnR5cGU9MSZj"
       },
       {
         "dominio": "es-config.sensic.net",
         "tipo_pp": "analytics",
         "descripcion": "Analítica de comportamiento",
         "empresa_pp": "nurago",
-        "en_webxray": true,
-        "owner_wx": "GfK",
-        "pais_wx": "DE",
-        "lineage_wx": "GfK",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
         "request_url": "https://es-config.sensic.net/s2s-web.js"
       },
       {
-        "dominio": "js-agent.newrelic.com",
+        "dominio": "bam.nr-data.net",
         "tipo_pp": "analytics",
         "descripcion": "Analítica de comportamiento",
         "empresa_pp": "New Relic",
-        "en_webxray": true,
-        "owner_wx": "New Relic",
-        "pais_wx": "US",
-        "lineage_wx": "New Relic",
-        "request_url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://bam.nr-data.net/1/c72ce647f9?a=306085224&v=1.316.0&to=NFwBY0dZDEtZW0dcDQ0WIlRBUQ1WF15BWgwXWA8ZYwpMUExVXxsKDFQG&r"
       },
       {
         "dominio": "connectid.analytics.yahoo.com",
@@ -430,6 +632,2008 @@
         "pais_wx": "",
         "lineage_wx": "",
         "request_url": "https://connectid.analytics.yahoo.com/connectId-gpt.js"
+      },
+      {
+        "dominio": "js-agent.newrelic.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "New Relic",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://js-agent.newrelic.com/nr-full-1.316.0.min.js"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/en_US/fbevents.js"
+      }
+    ]
+  },
+  "https://www.elconfidencial.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      }
+    ]
+  },
+  "https://www.20minutos.es/": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 3,
+    "violaciones": [
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "dominio": "securepubads.g.doubleclick.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "dominio": "c.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      }
+    ]
+  },
+  "https://www.lavanguardia.com/": {
+    "estado": "FALLO",
+    "total_unicas": 5,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 4,
+    "violaciones": [
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "dominio": "sb.scorecardresearch.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "comScore",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sb.scorecardresearch.com/beacon.js"
+      },
+      {
+        "dominio": "google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "dominio": "invstatic101.creativecdn.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "RTBHouse",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"
+      },
+      {
+        "dominio": "tags.crwdcntrl.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Lotame",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://tags.crwdcntrl.net/lt/c/16589/sync.min.js"
+      }
+    ]
+  },
+  "https://okdiario.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      }
+    ]
+  },
+  "https://www.mundodeportivo.com/": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "es-config.sensic.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "nurago",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "dominio": "google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "dominio": "sb.scorecardresearch.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "comScore",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sb.scorecardresearch.com/beacon.js"
+      }
+    ]
+  },
+  "https://www.rtve.es/": {
+    "estado": "FALLO",
+    "total_unicas": 5,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 5,
+    "violaciones": [
+      {
+        "dominio": "static.chartbeat.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Chartbeat",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.chartbeat.com/js/chartbeat_mab.js"
+      },
+      {
+        "dominio": "dev.visualwebsiteoptimizer.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Wingify",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dev.visualwebsiteoptimizer.com/j.php?a=864486&u=https%3A%2F%2Fwww.rtve.es%2F&vn=2.1&x=true"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/id?d_visid_ver=5.2.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=0D3C2C1653DB264C0A490D4B%40Adobe"
+      },
+      {
+        "dominio": "cdns.gigya.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Gigya",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdns.gigya.com/sdk.config.get?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&httpStat"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aisNVwAAAN1R4QOJ"
+      }
+    ]
+  },
+  "https://www.telecinco.es/": {
+    "estado": "FALLO",
+    "total_unicas": 4,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 4,
+    "violaciones": [
+      {
+        "dominio": "static.chartbeat.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Chartbeat",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.chartbeat.com/js/chartbeat_mab.js"
+      },
+      {
+        "dominio": "cdns.gigya.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Gigya",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdns.gigya.com/sdk.config.get?apiKey=3_6c6E7C197LeUAlcFUSZhaJE_C6LsOgYWL1unkRWIHhn_kh3-QfaAlnywfAWF4Bv_&httpStat"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/es_ES/sdk.js"
+      },
+      {
+        "dominio": "facebook.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.facebook.com/x/oauth/status?client_id=440267492831149&input_token&origin=1&redirect_uri=https%3A%2F%2Fwww.te"
+      }
+    ]
+  },
+  "https://www.lasexta.com/": {
+    "estado": "FALLO",
+    "total_unicas": 5,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 5,
+    "violaciones": [
+      {
+        "dominio": "sync.search.spotxchange.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "SpotXchange",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync.search.spotxchange.com/audience_sync/13?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D178522%26dpuuid%3"
+      },
+      {
+        "dominio": "dmp.v.fwmrm.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "FreeWheel",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dmp.v.fwmrm.net/ad/u?mode=echo&cr=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D796%26dpuuid%3D%23%7Buser.id%7D%26"
+      },
+      {
+        "dominio": "ups.analytics.yahoo.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "VerizonMedia",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ups.analytics.yahoo.com/ups/58782/cms?partner_id=ADOBE&_hosted_id=30631867879666029833757722653727805523&gdpr=0&"
+      },
+      {
+        "dominio": "sync.search.spotxchange.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "SpotXchange",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync.search.spotxchange.com/audience_sync/13?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D178522%26dpuuid%3"
+      },
+      {
+        "dominio": "dmp.v.fwmrm.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "FreeWheel",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dmp.v.fwmrm.net/ad/u?mode=echo&cr=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D796%26dpuuid%3D%23%7Buser.id%7D%26"
+      }
+    ]
+  },
+  "https://www.cuatro.com/": {
+    "estado": "FALLO",
+    "total_unicas": 4,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 4,
+    "violaciones": [
+      {
+        "dominio": "static.chartbeat.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Chartbeat",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.chartbeat.com/js/chartbeat_video.js"
+      },
+      {
+        "dominio": "cdns.gigya.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Gigya",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdns.gigya.com/sdk.config.get?apiKey=3_UQwPo9xHnH1y5koUiVOzwedRiWvaNYWKPs2sOYUMY1v3KCMW51FMIQFsPNTI5Ljp&httpStat"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/es_ES/sdk.js"
+      },
+      {
+        "dominio": "facebook.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.facebook.com/x/oauth/status?client_id=513462305445670&input_token&origin=1&redirect_uri=https%3A%2F%2Fwww.cu"
+      }
+    ]
+  },
+  "https://www.cope.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 0,
+    "violaciones": [
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-RJ3730LGYJ&gtm=45je66a0v9187230370z89181733390za20gzb9181733390"
+      }
+    ]
+  },
+  "https://www.amazon.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "amazon.es",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.amazon.es/favicon.ico"
+      }
+    ]
+  },
+  "https://www.elcorteingles.es/": {
+    "estado": "FALLO",
+    "total_unicas": 5,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 5,
+    "violaciones": [
+      {
+        "dominio": "s.go-mpulse.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Akamai",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.go-mpulse.net/boomerang/5K56F-D6M3Q-VGKL5-D3MYD-7G2GW"
+      },
+      {
+        "dominio": "bat.bing.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Microsoft",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://bat.bing.com/bat.js"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=14&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.elcorteingles.es%2"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=771&dpuuid=CAESEJw-Y7jFQMdZndkNbABK-20&google_cver=1"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=771&dpuuid=CAESEJw-Y7jFQMdZndkNbABK-20&google_cver=1"
+      }
+    ]
+  },
+  "https://www.zara.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=8&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.zara.com%2F&scrsrc="
+      }
+    ]
+  },
+  "https://www.pccomponentes.com/": {
+    "estado": "FALLO",
+    "total_unicas": 8,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 8,
+    "violaciones": [
+      {
+        "dominio": "static.cloudflareinsights.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      },
+      {
+        "dominio": "clarity.ms",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Microsoft",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.clarity.ms/tag/gum5xd7mwy"
+      },
+      {
+        "dominio": "acdn.adnxs.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://acdn.adnxs.com/dmp/up/pixie.js"
+      },
+      {
+        "dominio": "pccomponentes.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pccomponentes.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.pccomponentes.com"
+      },
+      {
+        "dominio": "pccomponenteses.112.2o7.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pccomponenteses.112.2o7.net/b/ss/pccomponenteses/1/JS-2.22.0-LGU4/s63406805640409?AQB=1&ndh=1&pf=1&t=11%2F5%2F20"
+      },
+      {
+        "dominio": "s2.adform.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adform",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s2.adform.net/banners/scripts/st/trackpoint-async.js"
+      },
+      {
+        "dominio": "ib.adnxs.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ib.adnxs.com/pixie?e=LandingPage&pi=f288984b-269d-45b6-9e2f-b283262625b9&it=1781208186277&v=0.0.45&u=https%3A%2F"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aisUfgAAAJjT6wN-"
+      }
+    ]
+  },
+  "https://www.carrefour.es/": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "static.cloudflareinsights.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-KPXW54NX57&gtm=45je66a0v874079840z8846630928za20gzb846630928zd8"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=13&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.carrefour.es%2F&sc"
+      }
+    ]
+  },
+  "https://www.massimodutti.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "cdn.branch.io",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Branch",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.branch.io/branch-latest.min.js"
+      }
+    ]
+  },
+  "https://www.fotocasa.es/es/": {
+    "estado": "FALLO",
+    "total_unicas": 5,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 5,
+    "violaciones": [
+      {
+        "dominio": "securepubads.g.doubleclick.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "dominio": "c.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "dominio": "cdn.id5-sync.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ID5",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.id5-sync.com/api/1.0/id5-api.js"
+      },
+      {
+        "dominio": "cdn.btloader.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.btloader.com/cchecker.html?upapi=true"
+      },
+      {
+        "dominio": "ad-delivery.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ad-delivery.net/px.gif?ch=1&e=0.7599937687347619"
+      }
+    ]
+  },
+  "https://es.wallapop.com/": {
+    "estado": "FALLO",
+    "total_unicas": 2,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "flag.lab.amplitude.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Amplitude",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://flag.lab.amplitude.com/sdk/v2/flags"
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-1QLHFVW5P3&gtm=45g92e66a0h1v9100004390za204zd9100004390&_p=1781"
+      }
+    ]
+  },
+  "https://www.milanuncios.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "widget.trustpilot.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      }
+    ]
+  },
+  "https://www.pisos.com/": {
+    "estado": "FALLO",
+    "total_unicas": 4,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 4,
+    "violaciones": [
+      {
+        "dominio": "static.hotjar.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Hotjar",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.hotjar.com/c/hotjar-247378.js?sv=5"
+      },
+      {
+        "dominio": "bat.bing.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Microsoft",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://bat.bing.com/bat.js"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.pisos.com%2F&scrsrc"
+      },
+      {
+        "dominio": "googletagservices.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.googletagservices.com/tag/js/gpt.js"
+      }
+    ]
+  },
+  "https://www.habitaclia.com/": {
+    "estado": "FALLO",
+    "total_unicas": 27,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 27,
+    "violaciones": [
+      {
+        "dominio": "googleadservices.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.googleadservices.com/pagead/conversion.js"
+      },
+      {
+        "dominio": "static.criteo.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Criteo",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.criteo.net/js/ld/ld.js"
+      },
+      {
+        "dominio": "securepubads.g.doubleclick.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "dominio": "gum.criteo.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Criteo",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://gum.criteo.com/syncframe?topUrl=www.habitaclia.com&origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22or"
+      },
+      {
+        "dominio": "cdn.btloader.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.btloader.com/cchecker.html?upapi=true"
+      },
+      {
+        "dominio": "ad-delivery.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ad-delivery.net/px.gif?ch=1&e=0.45137288660116626"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/bg/ak3yblLd0OYemhWQMJ5KL3RLUDZRs_384VHJ6Cc_Auw.js"
+      },
+      {
+        "dominio": "r.casalemedia.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Casale Media",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://r.casalemedia.com/rum?cm_dsp_id=20&external_user_id=k-UVFybhFchap9jClbxL_e1qnJr_9yeoiV_oM1KA&C=1"
+      },
+      {
+        "dominio": "id5-sync.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ID5",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://id5-sync.com/s/966/9.gif?puid=k-isTDuxFchap9jClbxL_e1qnJr_8s5FC5MXP3Zg"
+      },
+      {
+        "dominio": "sync-t1.taboola.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Taboola",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync-t1.taboola.com/sg/criteortb-network/1/rtb-h/?taboola_hm=k-5CN0LxFchap9jClbxL_e1qnJr_9WG2t2M3-byQ"
+      },
+      {
+        "dominio": "x.bidswitch.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "BidSwitch",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://x.bidswitch.net/sync?dsp_id=46&user_id=k-NpagtRFchap9jClbxL_e1qnJr__dv6tnEkGOdQ&expires=30"
+      },
+      {
+        "dominio": "simage4.pubmatic.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "PubMatic",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://simage4.pubmatic.com/AdServer/SPug?partnerID=167352&partnerUID=uid:k-I1s13xFchap9jClbxL_e1qnJr_8p2ALRrL5U1w"
+      },
+      {
+        "dominio": "cs.media.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "media",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cs.media.net/cksync.php?cs=3&type=crt&ovsid=k-UrF5ZxFchap9jClbxL_e1qnJr_-4sPesVun1-w"
+      },
+      {
+        "dominio": "criteo-sync.teads.tv",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Teads",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://criteo-sync.teads.tv/um?eid=80&uid=k-k3SDwBFchap9jClbxL_e1qnJr_8qNSVQ9aaOug"
+      },
+      {
+        "dominio": "ad.yieldlab.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Yieldlab",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ad.yieldlab.net/m?dt_id=8664&ext_id=k-BV514hFchap9jClbxL_e1qnJr_9OpNrLYmICJg"
+      },
+      {
+        "dominio": "rtb-csync.smartadserver.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ConversantMedia",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://rtb-csync.smartadserver.com/redir/?partnerid=79&partneruserid=k-VCHuWBFchap9jClbxL_e1qnJr_9LP_a_VPEIgg"
+      },
+      {
+        "dominio": "ad.360yield.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Improve Digital",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ad.360yield.com/match?publisher_dsp_id=38&external_user_id=k-fosg3BFchap9jClbxL_e1qnJr_8CbLEUf02UVw"
+      },
+      {
+        "dominio": "eb2.3lift.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "TripleLift",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://eb2.3lift.com/xuid?mid=2711&xuid=k-LXiRyRFchap9jClbxL_e1qnJr_8MvtEdasnf-Q&dongle=013b"
+      },
+      {
+        "dominio": "sync.outbrain.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Outbrain",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync.outbrain.com/cookie-sync?p=criteo&uid=k-IKvioxFchap9jClbxL_e1qnJr_9JmJ9DiU-IeQ&initiator=partner"
+      },
+      {
+        "dominio": "criteo-partners.tremorhub.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Tremor Video",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://criteo-partners.tremorhub.com/sync?UICR=k-c3-lsBFchap9jClbxL_e1qnJr__OODLSGDf_TQ"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=28645&dpuuid=mu444V9MTWUySGtPdmVlc0RPZVJmJTJGUmlHUnYxVDJTMGxaVjJad"
+      },
+      {
+        "dominio": "jadserve.postrelease.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Nativo",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://jadserve.postrelease.com/suid/1017?vk=k-zZvEeRFchap9jClbxL_e1qnJr__XXS7X04biCw"
+      },
+      {
+        "dominio": "sync.targeting.unrulymedia.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Unruly",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sync.targeting.unrulymedia.com/csync/RX-f7a10f54-c76a-42a5-9d61-b437b9a675ee-003"
+      },
+      {
+        "dominio": "aa.agkn.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AK",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://aa.agkn.com/adscores/g.pixel?sid=9212273938&ct=PUyvAV9MTWUySGtPdmVlc0RPZVJmJTJGUmlHUnYxVDJTMGxaVjJadFVLMiUyRlVac"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/es_ES/sdk.js"
+      },
+      {
+        "dominio": "facebook.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.facebook.com/x/oauth/status?client_id=367507690061194&input_token&origin=1&redirect_uri=https%3A%2F%2Fwww.ha"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=28645&dpuuid=mu444V9MTWUySGtPdmVlc0RPZVJmJTJGUmlHUnYxVDJTMGxaVjJad"
+      }
+    ]
+  },
+  "https://www.bbva.es/personas.html": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=D906879D557EE0547F000101%40Adobe"
+      }
+    ]
+  },
+  "https://www.santander.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 0,
+    "violaciones": [
+      {
+        "dominio": "google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://www.google-analytics.com/analytics.js"
+      }
+    ]
+  },
+  "https://www.caixabank.es/particular/home/particulares_es.html": {
+    "estado": "FALLO",
+    "total_unicas": 2,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&en=page_view&dr=www.caixabank.es&dl=https%3A%2F%2Fwww.cai"
+      },
+      {
+        "dominio": "caixabank.es",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.caixabank.es/util/pixel.png?extlotsrc=https://www.googletagmanager.com/gtag/js?id=DC-16397806&cx=c&gtm=4e66a"
+      }
+    ]
+  },
+  "https://www.ing.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "s.go-mpulse.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Akamai",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.go-mpulse.net/boomerang/KB5P4-M2MVX-QZXVG-5JHW5-X9APT"
+      }
+    ]
+  },
+  "https://www.cetelem.es/": {
+    "estado": "FALLO",
+    "total_unicas": 8,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 8,
+    "violaciones": [
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=28E6731D5B2002970A495E2E%40Adobe"
+      },
+      {
+        "dominio": "ib.adnxs.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ib.adnxs.com/getuid?https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D358%26dpuuid%3D%24UID"
+      },
+      {
+        "dominio": "spl.zeotap.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://spl.zeotap.com/?env=mWeb&zdid=314"
+      },
+      {
+        "dominio": "cms.quantserve.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Quantcast",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cms.quantserve.com/pixel/p-vj4AYjBqd6VJ2.gif?idmatch=0&gdpr=0&gdpr_consent=&__qcmcs=1"
+      },
+      {
+        "dominio": "s.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.amazon-adsystem.com/ecm3?ex=adobe.com&id=88869591718751306360207954795952365104"
+      },
+      {
+        "dominio": "ups.analytics.yahoo.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "VerizonMedia",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ups.analytics.yahoo.com/ups/58782/cms?partner_id=ADOBE&_hosted_id=88869591718751306360207954795952365104&gdpr=0&"
+      },
+      {
+        "dominio": "dpm.demdex.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=aishjwAAANjOVwOV"
+      },
+      {
+        "dominio": "ib.adnxs.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "AT&T",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ib.adnxs.com/getuid?https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D358%26dpuuid%3D%24UID"
+      }
+    ]
+  },
+  "https://www.rastreator.com/": {
+    "estado": "FALLO",
+    "total_unicas": 4,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 3,
+    "violaciones": [
+      {
+        "dominio": "dev.visualwebsiteoptimizer.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Wingify",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://dev.visualwebsiteoptimizer.com/j.php?a=1066293&u=https%3A%2F%2Fwww.rastreator.com%2F&vn=2.1&x=true"
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-0ZKFEHG33V&gtm=45je66a0v9210165624z8811758321za20gzb811758321zd"
+      },
+      {
+        "dominio": "static.hj.contentsquare.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.hj.contentsquare.net/c/hotjar-6686173.js"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.rastreator.com%2F&"
+      }
+    ]
+  },
+  "https://www.booking.com/?chal_t=1781211784408&force_referer=": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/tag/js/gpt.js"
+      }
+    ]
+  },
+  "https://www.iberia.com/": {
+    "estado": "FALLO",
+    "total_unicas": 6,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 6,
+    "violaciones": [
+      {
+        "dominio": "s.go-mpulse.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Akamai",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.go-mpulse.net/boomerang/VJ24M-53UXC-L3EJP-M8F56-JP45Z"
+      },
+      {
+        "dominio": "af.monetate.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Monetate",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://af.monetate.net/trk/4/s/a-5c6d3edb/p/iberia.com/653079708-0?mr=t1699271913&mi=%272.1578484182.1781212284344%27&c"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=14&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.iberia.com%2F&scrs"
+      },
+      {
+        "dominio": "adservice.google.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://adservice.google.com/ddm/fls/z/src=9508895;type=conve0;cat=cheq_0;rcb=1;ord=6736260305382;npa=1;auiddc=*;pscdl=n"
+      },
+      {
+        "dominio": "adservice.google.com",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://adservice.google.com/ddm/fls/z/src=9508895;type=conve0;cat=cheq_0;rcb=1;ord=6736260305382;npa=1;auiddc=*;pscdl=n"
+      },
+      {
+        "dominio": "af.monetate.net",
+        "tipo_pp": "trackingPixel",
+        "descripcion": "Píxel de seguimiento",
+        "empresa_pp": "Monetate",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://af.monetate.net/trk/4/i/a-5c6d3edb/p/iberia.com/653079708-3?mr=t1699271913&mi=%272.1578484182.1781212284344%27&u"
+      }
+    ]
+  },
+  "https://www.vueling.com/es": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "se.monetate.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Monetate",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://se.monetate.net/js/2/a-02a953bb/p/vueling.com/custom.js"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=5&frm=0&en=page_view&dl=https%3A%2F%2Fwww.vueling.com%2Fes&scrsrc="
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/measurement/conversion?random=1781212428213&cv=11&tid=G-Y2R5C29F9Q&fst=178121242821"
+      }
+    ]
+  },
+  "https://www.ryanair.com/es/es": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "facebook.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.facebook.com/tr?id=776134079199579&ev=PageView&cd[market]=es-es"
+      }
+    ]
+  },
+  "https://www.kayak.es/": {
+    "estado": "FALLO",
+    "total_unicas": 2,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=1&frm=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.kayak.es%2F&scrsrc="
+      },
+      {
+        "dominio": "googletagservices.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://www.googletagservices.com/tag/js/gpt.js"
+      }
+    ]
+  },
+  "https://www.infojobs.net/": {
+    "estado": "FALLO",
+    "total_unicas": 7,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 7,
+    "violaciones": [
+      {
+        "dominio": "cdn.segment.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.segment.com/analytics.js/v1/I1QsIrOJ5GuAZZFGRCfN8USp89gdFD2u/analytics.min.js"
+      },
+      {
+        "dominio": "securepubads.g.doubleclick.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "dominio": "config.aps.amazon-adsystem.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Amazon",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://config.aps.amazon-adsystem.com/configs/8b48e249-e9e6-4a52-8b48-396ea93403e8"
+      },
+      {
+        "dominio": "cdn.id5-sync.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "ID5",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.id5-sync.com/api/1.0/id5-api.js"
+      },
+      {
+        "dominio": "cdn.btloader.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://cdn.btloader.com/cchecker.html?upapi=true"
+      },
+      {
+        "dominio": "ad-delivery.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://ad-delivery.net/px.gif?ch=2&e=0.01488683252954659"
+      },
+      {
+        "dominio": "static.hotjar.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Hotjar",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.hotjar.com/c/hotjar-223746.js?sv=5"
+      }
+    ]
+  },
+  "https://www.glassdoor.es/index.htm": {
+    "estado": "FALLO",
+    "total_unicas": 2,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "static.cloudflareinsights.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      },
+      {
+        "dominio": "sb.scorecardresearch.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "comScore",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://sb.scorecardresearch.com/beacon.js"
+      }
+    ]
+  },
+  "https://www.canva.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "static.cloudflareinsights.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      }
+    ]
+  },
+  "https://www.dropbox.com/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "static.ads-twitter.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "X",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.ads-twitter.com/uwt.js"
+      }
+    ]
+  },
+  "https://sede.agenciatributaria.gob.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 0,
+    "violaciones": [
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-5EYDK7FNXT&gtm=45je66a1h1v899437819z89178968999za20gzb917896899"
+      }
+    ]
+  },
+  "https://www.correos.es/es/es/particulares": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "correos.tt.omtrdc.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://correos.tt.omtrdc.net/rest/v1/delivery?client=correos&sessionId=5faa7ba3e6ce48c9a7bdcda19c8b9d46&version=2.10.2"
+      }
+    ]
+  },
+  "https://www.seg-social.es/wps/portal/wss/internet/Inicio": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "s.go-mpulse.net",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Akamai",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.go-mpulse.net/boomerang/F7DFG-EGEHD-DSPWP-HHUW6-WXF3W"
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-W2TF9Y6P0R&gtm=45je66a1v871587888z8831184317za20gzb831184317zd8"
+      },
+      {
+        "dominio": "02179912.akstat.io",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://02179912.akstat.io/"
+      }
+    ]
+  },
+  "https://www.mapfre.es/particulares/": {
+    "estado": "FALLO",
+    "total_unicas": 3,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 2,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=0&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Fwww.mapfre.es%2Fparticu"
+      },
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-0G82YYLGK5&gtm=45je66a1v9180152315z8848842112za20gzb848842112zd"
+      },
+      {
+        "dominio": "connect.facebook.net",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "Facebook",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://connect.facebook.net/signals/config/584019769525714?v=2.9.338&r=stable&domain=www.mapfre.es&hme=ed80628758142208"
+      }
+    ]
+  },
+  "https://www.mutua.es/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "mutua.tt.omtrdc.net",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Adobe",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://mutua.tt.omtrdc.net/rest/v1/delivery?client=mutua&sessionId=b142f8e9a53446268fbe9f4d482fba8a&version=2.11.8"
+      }
+    ]
+  },
+  "https://www.udemy.com/": {
+    "estado": "FALLO",
+    "total_unicas": 6,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 6,
+    "violaciones": [
+      {
+        "dominio": "bat.bing.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Microsoft",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://bat.bing.com/bat.js"
+      },
+      {
+        "dominio": "static.ads-twitter.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "X",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://static.ads-twitter.com/uwt.js"
+      },
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=10&frm=0&en=page_view&dl=https%3A%2F%2Fwww.udemy.com%2F&scrsrc=www"
+      },
+      {
+        "dominio": "t.co",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Desconocida",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://t.co/i/adsct?bci=3&dv=Europe%2FMadrid%26es-ES%2Ces%2Cen%26na%26Linux%20x86_64%26255%261366%26768%268%2624%261366"
+      },
+      {
+        "dominio": "s.yimg.jp",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "VerizonMedia",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://s.yimg.jp/images/listing/tool/cv/ytag.js"
+      },
+      {
+        "dominio": "analytics.twitter.com",
+        "tipo_pp": "social",
+        "descripcion": "Redes sociales",
+        "empresa_pp": "X",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FMadrid%26es-ES%2Ces%2Cen%26na%26Linux%20x86_64%26255%261366%2676"
+      }
+    ]
+  },
+  "https://www.coursera.org/": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 0,
+    "solo_privacy_pioneer": 1,
+    "violaciones": [
+      {
+        "dominio": "pagead2.googlesyndication.com",
+        "tipo_pp": "advertising",
+        "descripcion": "Publicidad comportamental",
+        "empresa_pp": "Google",
+        "en_webxray": false,
+        "owner_wx": "",
+        "pais_wx": "",
+        "lineage_wx": "",
+        "request_url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=13&frm=0&en=page_view&dl=https%3A%2F%2Fwww.coursera.org%2F&scrsrc="
+      }
+    ]
+  },
+  "https://glovoapp.com/en": {
+    "estado": "FALLO",
+    "total_unicas": 1,
+    "confirmadas_ambas_herramientas": 1,
+    "solo_privacy_pioneer": 0,
+    "violaciones": [
+      {
+        "dominio": "region1.google-analytics.com",
+        "tipo_pp": "analytics",
+        "descripcion": "Analítica de comportamiento",
+        "empresa_pp": "Google",
+        "en_webxray": true,
+        "owner_wx": "Google Analytics",
+        "pais_wx": "US",
+        "lineage_wx": "Google Analytics > Google > Alphabet",
+        "request_url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-JQ8WY8QVVL&gtm=45g92e66a1v9132892407z89116741588za20kzb91167415"
       }
     ]
   }

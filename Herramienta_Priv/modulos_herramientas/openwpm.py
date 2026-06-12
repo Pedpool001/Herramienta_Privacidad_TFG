@@ -63,11 +63,13 @@ def _dominio(url: str) -> str:
     return urlparse(url).netloc.lstrip("www.")
 
 
-def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock) -> None:
+def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
+             requisitos: set | None = None) -> None:
     """
     Lanza un crawl de OpenWPM y evalúa R7, R8 y R11.
     """
     output_dir.mkdir(parents=True, exist_ok=True)
+    sel = set(requisitos) if requisitos else {"R7", "R8", "R11"}
     db_path = output_dir / "crawl-data.sqlite"
 
     # 1. Escribir script de crawl temporal
@@ -115,6 +117,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock)
         ("R8",  "r8_storage_terceros"),
         ("R11", "r11_desvinculacion"),
     ]:
+        if req not in sel:
+            continue
         try:
             data = ejecutar_analisis(script, str(db_path))
             with lock:

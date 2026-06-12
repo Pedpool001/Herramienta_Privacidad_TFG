@@ -1,0 +1,142 @@
+# Top 100 sitios web más visitados en España
+# Fuente: estimación basada en SimilarWeb / Statista (junio 2026)
+# Uso: python3 main.py --batch sitios_top100_espana.txt
+#
+# NOTA: algunos sitios usan anti-bot (Cloudflare, DataDome) que pueden
+# bloquear parcialmente algunas herramientas. Ver sección de limitaciones del TFG.
+# Tiempo estimado de auditoría completa: 10-20 horas (secuencial).
+
+# ── Buscadores y servicios globales ──────────────────────────────────────────
+https://www.google.es
+https://www.bing.com
+https://duckduckgo.com
+https://www.yahoo.com
+
+# ── Redes sociales ────────────────────────────────────────────────────────────
+https://www.facebook.com
+https://www.instagram.com
+https://twitter.com
+https://www.tiktok.com
+https://www.linkedin.com
+https://www.pinterest.es
+https://www.reddit.com
+https://www.twitch.tv
+https://www.snapchat.com
+https://discord.com
+
+# ── Vídeo y entretenimiento ──────────────────────────────────────────────────
+https://www.youtube.com
+https://www.netflix.com
+https://www.primevideo.com
+https://www.disneyplus.com
+https://www.max.com
+https://www.spotify.com
+https://www.vimeo.com
+
+# ── Noticias y medios españoles ──────────────────────────────────────────────
+https://www.marca.com
+https://www.elmundo.es
+https://elpais.com
+https://www.abc.es
+https://www.elconfidencial.com
+https://www.20minutos.es
+https://www.lavanguardia.com
+https://www.elperiodico.com
+https://www.okdiario.com
+https://www.elespanol.com
+https://www.as.com
+https://www.sport.es
+https://www.mundodeportivo.com
+https://www.rtve.es
+https://www.antena3.com
+https://www.telecinco.es
+https://www.lasexta.com
+https://www.cuatro.com
+https://www.cope.es
+https://www.cadenaser.com
+https://www.ondacero.es
+
+# ── E-commerce ────────────────────────────────────────────────────────────────
+https://www.amazon.es
+https://www.elcorteingles.es
+https://www.decathlon.es
+https://www.zara.com
+https://www.mediamarkt.es
+https://www.pccomponentes.com
+https://www.fnac.es
+https://www.carrefour.es
+https://www.lidl.es
+https://www.mercadona.es
+https://www.leroymerlin.es
+https://www.ikea.com
+https://www.aliexpress.com
+https://www.shein.com
+https://www.mango.com
+https://www.pull-and-bear.com
+https://www.bershka.com
+https://www.massimodutti.com
+
+# ── Inmobiliario y anuncios ──────────────────────────────────────────────────
+https://www.idealista.com
+https://www.fotocasa.es
+https://www.wallapop.com
+https://www.milanuncios.com
+https://www.pisos.com
+https://www.habitaclia.com
+
+# ── Finanzas y banca ─────────────────────────────────────────────────────────
+https://www.bbva.es
+https://www.santander.es
+https://www.caixabank.es
+https://www.ing.es
+https://www.bankinter.com
+https://www.openbank.es
+https://www.paypal.com
+https://www.cetelem.es
+https://rastreator.com
+
+# ── Viajes y turismo ─────────────────────────────────────────────────────────
+https://www.booking.com
+https://www.airbnb.es
+https://www.tripadvisor.es
+https://www.renfe.com
+https://www.iberia.com
+https://www.vueling.com
+https://www.ryanair.com
+https://www.edreams.es
+https://www.skyscanner.es
+https://www.kayak.es
+
+# ── Empleo ────────────────────────────────────────────────────────────────────
+https://www.infojobs.net
+https://www.indeed.es
+https://www.glassdoor.es
+
+# ── Tecnología ───────────────────────────────────────────────────────────────
+https://www.apple.com
+https://www.microsoft.com
+https://www.github.com
+https://stackoverflow.com
+https://www.canva.com
+https://www.dropbox.com
+
+# ── Administración pública española ─────────────────────────────────────────
+https://www.agenciatributaria.gob.es
+https://www.correos.es
+https://www.boe.es
+https://sede.sepe.gob.es
+https://www.seg-social.es
+
+# ── Seguros ──────────────────────────────────────────────────────────────────
+https://www.mapfre.es
+https://www.axa.es
+https://www.mutua.es
+
+# ── Referencia y conocimiento ─────────────────────────────────────────────────
+https://es.wikipedia.org
+https://www.udemy.com
+https://www.coursera.org
+
+# ── Comida a domicilio ────────────────────────────────────────────────────────
+https://www.just-eat.es
+https://glovoapp.com

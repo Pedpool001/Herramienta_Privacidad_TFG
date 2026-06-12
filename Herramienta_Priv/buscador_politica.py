@@ -14,6 +14,7 @@ Estrategias de detección (en orden de prioridad):
 
 import re
 import logging
+import requests as _requests
 from urllib.parse import urljoin, urlparse
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from playwright_stealth import Stealth
@@ -79,6 +80,34 @@ _RELEVANCIA_ALTA = re.compile(r"privacidad|privacy|datenschutz", re.IGNORECASE)
 _RELEVANCIA_MEDIA = re.compile(r"cookies|legal|aviso|notice", re.IGNORECASE)
 
 
+_CONTENT_TYPES_HTML = ("text/html", "text/plain", "application/xhtml")
+_CONTENT_TYPES_DESCARGA = (
+    "application/pdf", "application/msword", "application/vnd",
+    "application/octet-stream", "application/zip",
+)
+
+
+def _es_url_html(url: str, timeout: int = 8) -> bool:
+    """
+    Comprueba que la URL sirve HTML (no PDF ni Word) haciendo una petición HEAD.
+    Devuelve True si el Content-Type indica HTML o si no se puede determinar
+    (asumir HTML para no bloquear URLs válidas).
+    """
+    try:
+        r = _requests.head(url, timeout=timeout, allow_redirects=True,
+                           headers={"User-Agent": _UA})
+        ct = r.headers.get("Content-Type", "").lower()
+        if any(t in ct for t in _CONTENT_TYPES_HTML):
+            return True
+        if any(t in ct for t in _CONTENT_TYPES_DESCARGA):
+            logger.warning("URL devuelve Content-Type de descarga (%s): %s", ct, url)
+            return False
+        # Content-Type desconocido o vacío → asumir HTML
+        return True
+    except Exception:
+        return True  # si no se puede verificar, dejar que lo intente PoliGraph
+
+
 def _es_candidato(href: str, texto: str) -> bool:
     """Devuelve True si el enlace parece apuntar a una página legal/privacidad."""
     href_l = href.lower()
@@ -94,13 +123,35 @@ _TEXTO_PRIVACIDAD = re.compile(
 )
 
 
+_SOLO_COOKIES = re.compile(r"cooki", re.IGNORECASE)
+_AVISO_LEGAL  = re.compile(r"aviso.legal|condiciones|terminos|terms", re.IGNORECASE)
+
+
 def _puntuacion(href: str, texto: str, dominio_sitio: str = "") -> int:
     """Puntuación de relevancia de un candidato (mayor = más relevante)."""
     score = 0
-    if _RELEVANCIA_ALTA.search(href) or _RELEVANCIA_ALTA.search(texto):
+    href_l = href.lower()
+    texto_l = texto.lower()
+
+    # Fuerte penalización por patrones de artículo/noticia — una URL con fecha en
+    # la ruta o con /noticias/ no es una política de privacidad aunque su texto
+    # de enlace contenga "legal" o "privacidad".
+    if _RE_NOTICIA.search(href_l):
+        score -= 10
+
+    if _RELEVANCIA_ALTA.search(href_l) or _RELEVANCIA_ALTA.search(texto_l):
         score += 3
-    elif _RELEVANCIA_MEDIA.search(href) or _RELEVANCIA_MEDIA.search(texto):
+    elif _RELEVANCIA_MEDIA.search(href_l) or _RELEVANCIA_MEDIA.search(texto_l):
         score += 1
+
+    # Penalizar páginas de política de cookies sin mención de privacidad:
+    # queremos la política de privacidad, no la de cookies.
+    if _SOLO_COOKIES.search(href_l) and not _RELEVANCIA_ALTA.search(href_l):
+        score -= 4
+    # Penalizar avisos legales y condiciones de uso (no son política de privacidad)
+    if _AVISO_LEGAL.search(href_l) and not _RELEVANCIA_ALTA.search(href_l):
+        score -= 3
+
     # Preferir URLs que no sean la raíz del sitio
     if len(urlparse(href).path) > 5:
         score += 1
@@ -149,7 +200,17 @@ _RUTAS_COMUNES = [
 
 
 _RE_NOTICIA = re.compile(
-    r"/\d{4}/\d{2}/\d{2}/|/\d{4}-\d{2}-\d{2}/|/noticias/|/news/|/opinion/|/articulo/",
+    # Fechas en la ruta: /2026/06/10/, /2026-06-10/, o compactas /20260610/
+    r"/\d{4}/\d{2}/\d{2}/"
+    r"|/\d{4}-\d{2}-\d{2}/"
+    r"|/\d{8}/"
+    # Sufijo de ID de artículo con fecha compacta: _18_20260610abc
+    r"|_\d{1,4}_\d{6,8}[0-9a-f]"
+    # Secciones de noticias/entretenimiento habituales en medios españoles
+    r"|/noticias/|/news/|/opinion/|/articulo/"
+    r"|/famosos?/|/gente/|/celebrid|/entretenimiento/"
+    r"|/actualidad/|/sociedad/|/cultura/|/deportes?/"
+    r"|/television/|/cine/|/musica/|/motor/",
     re.IGNORECASE,
 )
 
@@ -280,6 +341,62 @@ def _sondear_rutas(base_url: str, timeout_ms: int = 12_000) -> dict | None:
                         return {"url": page.url, "es_ingles": es_en}
             except Exception:
                 continue
+
+        browser.close()
+    return None
+
+
+# Prefijos de subdominio donde algunos sitios alojan su política de privacidad
+# en lugar de en el dominio principal (ej: saladeprensa.decathlon.es)
+_SUBDOMINIOS_SONDEO = ["saladeprensa", "legal", "press", "info", "media", "ayuda"]
+_RUTAS_SUBDOMINIO = [
+    "/politica-de-privacidad/",
+    "/politica-de-privacidad",
+    "/politica-privacidad",
+    "/privacy-policy",
+    "/privacy",
+    "/privacidad",
+]
+
+
+def _sondear_subdominios(base_url: str, timeout_ms: int = 8_000) -> dict | None:
+    """
+    Prueba rutas comunes en subdominios típicos donde algunos sitios alojan
+    su política (ej: saladeprensa.decathlon.es/politica-de-privacidad/).
+    Se llama como último recurso si el sondeo de rutas en el dominio principal falla.
+    """
+    parsed = urlparse(base_url)
+    # Extraer el dominio registrable (sin www.)
+    netloc = parsed.netloc.lstrip("www.")
+    scheme = parsed.scheme
+
+    _KEYWORDS_POLITICA = re.compile(
+        r"privacidad|privacy|datenschutz|politique de confidentialité",
+        re.IGNORECASE,
+    )
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = _nuevo_contexto(browser)
+        page = context.new_page()
+
+        for subdominio in _SUBDOMINIOS_SONDEO:
+            host = f"{scheme}://{subdominio}.{netloc}"
+            for ruta in _RUTAS_SUBDOMINIO:
+                url = host + ruta
+                try:
+                    resp = page.goto(url, wait_until="domcontentloaded",
+                                     timeout=timeout_ms)
+                    if resp and resp.status == 200:
+                        title = page.title()
+                        body_preview = page.inner_text("body")[:500]
+                        if _KEYWORDS_POLITICA.search(title + body_preview):
+                            es_en = "/privacy" in ruta and "politica" not in ruta
+                            logger.info(f"Sondeo subdominio encontró: {url}")
+                            browser.close()
+                            return {"url": page.url, "es_ingles": es_en}
+                except Exception:
+                    continue
 
         browser.close()
     return None
@@ -416,18 +533,68 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
                 resultado["es_ingles"] = ddg["es_ingles"]
                 resultado["fuente"] = "ddg"
             else:
-                # 6. Último recurso: sondear rutas comunes con Playwright
+                # 6. Sondear rutas comunes en el dominio principal
                 logger.info("DDG sin resultado. Sondeando rutas comunes...")
                 sondeo = _sondear_rutas(url_sitio)
                 if sondeo:
                     resultado["url"] = sondeo["url"]
                     resultado["es_ingles"] = sondeo["es_ingles"]
                     resultado["fuente"] = "sondeo_rutas"
+                else:
+                    # 7. Sondear subdominios comunes (ej: saladeprensa.decathlon.es)
+                    logger.info("Sondeo principal sin resultado. Probando subdominios...")
+                    sondeo_sub = _sondear_subdominios(url_sitio)
+                    if sondeo_sub:
+                        resultado["url"] = sondeo_sub["url"]
+                        resultado["es_ingles"] = sondeo_sub["es_ingles"]
+                        resultado["fuente"] = "sondeo_subdominios"
 
     # Limpiar fragmentos de tracking del resultado final (#utm_source=..., #vca=...)
     if resultado["url"]:
         p = urlparse(resultado["url"])
         resultado["url"] = p._replace(fragment="").geturl()
+
+    # Validar que la URL seleccionada sirve HTML y no un fichero descargable
+    if resultado["url"] and not _es_url_html(resultado["url"]):
+        logger.warning(
+            "URL '%s' sirve un fichero descargable — buscando alternativa HTML...",
+            resultado["url"],
+        )
+        url_descartada = resultado["url"]
+        resultado["url"] = None
+
+        # Intentar candidatos alternativos del DOM (siguiente por score, mismo umbral)
+        candidatos_alternativos = [
+            c for c in resultado["candidatos"]
+            if c["url"] != url_descartada and c["score"] >= 0
+        ]
+        for c in candidatos_alternativos:
+            if _es_url_html(c["url"]):
+                resultado["url"] = c["url"]
+                resultado["es_ingles"] = c.get("en_url", False)
+                resultado["fuente"] = "mejor_candidato_alt"
+                logger.info("Alternativa HTML encontrada: %s", resultado["url"])
+                break
+
+        # Si ningún candidato DOM sirve HTML, intentar DDG
+        if not resultado["url"] and _DDGS_DISPONIBLE:
+            dominio = urlparse(url_sitio).netloc
+            logger.info("Buscando alternativa en DDG para %s...", dominio)
+            ddg = _buscar_en_ddg(dominio)
+            if ddg and ddg.get("url") != url_descartada and _es_url_html(ddg["url"]):
+                resultado["url"] = ddg["url"]
+                resultado["es_ingles"] = ddg["es_ingles"]
+                resultado["fuente"] = "ddg"
+
+        # Sin alternativa HTML: devolver la URL de descarga para que el caller
+        # intente extracción de texto (PDF). Si no es posible, quedará NO_EVALUABLE.
+        if not resultado["url"]:
+            logger.info(
+                "Sin alternativa HTML. Se devolverá URL de descarga para extracción de PDF: %s",
+                url_descartada,
+            )
+            resultado["url"] = url_descartada
+            resultado["es_descarga"] = True
 
     return resultado
 
