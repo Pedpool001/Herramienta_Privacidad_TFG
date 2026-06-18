@@ -5,8 +5,8 @@ to de 19 requisitos de privacidad (R1–R19) derivados del RGPD, la LSSI y las d
 
 ## Introducción
 
-La herramienta integra seis analizadores de privacidad independientes —Privacy Pioneer, Website Evidence Collector (WEC), Blacklight,
- OpenWPM, webXray y PoliGraph— bajo un único orquestador que los lanza en paralelo, recoge sus resultados y genera un informe de audi
+La herramienta integra seis analizadores de privacidad independientes -Privacy Pioneer, Website Evidence Collector (WEC), Blacklight,
+ OpenWPM, webXray y PoliGraph- bajo un único orquestador que los lanza en paralelo, recoge sus resultados y genera un informe de audi
 toría en HTML.
 
 ### Requisitos que evalúa
@@ -36,8 +36,7 @@ toría en HTML.
 ### Cómo funciona
 
 Al auditar un sitio, el orquestador (`Herramienta_Priv/main.py`) crea un directorio de trabajo en `output/` y lanza las herramientas
-en hilos paralelos. Cada herramienta genera su salida raw, un script de análisis la procesa y produce un JSON con el veredicto (`PASS
-ED`, `WARNING`, `FAILED`, `ERROR` o `NO_EVALUABLE`). Al finalizar todos los hilos se genera un informe HTML autocontenido.
+en hilos paralelos. Cada herramienta genera su salida raw, un script de análisis la procesa y produce un JSON con el veredicto (`PASSED`, `WARNING`, `FAILED`, `ERROR` o `NO_EVALUABLE`). Al finalizar todos los hilos se genera un informe HTML autocontenido.
 
 Los requisitos que dependen de más de una herramienta (R12, R15, R16) esperan a que las herramientas implicadas terminen antes de eje
 cutar su análisis.
@@ -90,8 +89,7 @@ cd tfg
 
 ### 2. Privacy Pioneer
 
-Privacy Pioneer es un crawler basado en Selenium + Firefox que detecta rastreadores antes y después del consentimiento. Consulta su [
-README](privacy-pioneer-web-crawler/README.md) para instrucciones detalladas.
+Privacy Pioneer es un crawler basado en Selenium + Firefox que detecta rastreadores antes y después del consentimiento. Consulta su [README](privacy-pioneer-web-crawler/README.md) para instrucciones detalladas.
 
 **Pasos principales:**
 
@@ -144,8 +142,7 @@ npm run build
 
 ### 5. OpenWPM
 
-OpenWPM es un framework de medición web que instrumenta Firefox para capturar peticiones HTTP, cookies y operaciones JavaScript. Cons
-ulta su [README](openWPM/OpenWPM/README.md).
+OpenWPM es un framework de medición web que instrumenta Firefox para capturar peticiones HTTP, cookies y operaciones JavaScript. Consulta su [README](openWPM/OpenWPM/README.md).
 
 ```bash
 cd openWPM/OpenWPM
