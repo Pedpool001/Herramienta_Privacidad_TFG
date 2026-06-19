@@ -1,0 +1,24 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'ddfebdad-b48d-4f9b-a18e-c15fbded35a2',
+  'a98fe07c-79f4-4dab-b70a-af6aaf283bd9'
+]
+PP window: a98fe07c-79f4-4dab-b70a-af6aaf283bd9
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://elpais.com/
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 4 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: elpais_com_
+🔍 Buscando banner de cookies...
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 4 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: elpais_com_
+time spent:  65.047 total elapsed:  117.685

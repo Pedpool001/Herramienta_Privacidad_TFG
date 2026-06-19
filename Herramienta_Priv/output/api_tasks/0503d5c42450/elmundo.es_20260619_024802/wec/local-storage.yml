@@ -1,0 +1,838 @@
+https://www.elmundo.es:
+  psp_hist_d:
+    value:
+      version: '0.1'
+      current_daily: 2026-5-19
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 33
+      empty_count: 33
+      requestsCount: 24
+      visitDuration_count: 10
+      visitDuration_total: 207125
+      visitDuration_avg: 20712.5
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 20
+          lineNumber: 14330
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: LocalStorage.save
+          source: '    at LocalStorage.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14330:20)'
+        - columnNumber: 53
+          lineNumber: 14434
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: HistoryService.save
+          source: '    at HistoryService.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14434:53)'
+      type: Storage.LocalStorage
+  _GESPSK-crwdcntrl.net:
+    value:
+      - crwdcntrl.net
+      - null
+      - 1781830101418
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  _GESPSK-pubcid.org:
+    value:
+      - pubcid.org
+      - null
+      - 1781830101419
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  telP:
+    value: 44.44608790053783
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 22
+          lineNumber: 34056
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: WindowArray.setTargetings
+          source: '    at WindowArray.setTargetings (https://adtcdn.unidadeditorial.es/mun/migrate.js:34056:22)'
+        - columnNumber: 22
+          lineNumber: 33595
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mun/migrate.js:33595:22'
+      type: Storage.LocalStorage
+  _cX_lastP1Time:
+    value: 1781830112592
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 3001
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          functionName: set
+          source: '    at set (https://cdn.cxense.com/cx.js:6:3001)'
+        - columnNumber: 50789
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          functionName: Object.set
+          source: '    at Object.set (https://cdn.cxense.com/cx.js:6:50789)'
+      type: Storage.LocalStorage
+  permutive-consent:
+    value:
+      opt_in: false
+      token: ''
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 102948
+          lineNumber: 1
+          fileName: >-
+            https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+          functionName: c.put
+          source: '    at c.put (https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js:1:102948)'
+        - columnNumber: 254689
+          lineNumber: 1
+          fileName: >-
+            https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+          source: '    at https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js:1:254689'
+      type: Storage.LocalStorage
+  _ls_ttl:
+    value:
+      _cX_lastP1Time: mqu7q4pd
+      __tp-gaAccount: mqln3374
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 2205
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          functionName: r
+          source: '    at r (https://cdn.cxense.com/cx.js:6:2205)'
+        - columnNumber: 2954
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          source: '    at https://cdn.cxense.com/cx.js:6:2954'
+      type: Storage.LocalStorage
+  _GESPSK-esp.criteo.com:
+    value:
+      - esp.criteo.com
+      - null
+      - 1781830101425
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  psp_hist_m:
+    value:
+      version: '0.1'
+      current_monthly: 2026-5
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 33
+      empty_count: 33
+      requestsCount: 24
+      visitDuration_count: 10
+      visitDuration_total: 207125
+      visitDuration_avg: 20712.5
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 20
+          lineNumber: 14330
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: LocalStorage.save
+          source: '    at LocalStorage.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14330:20)'
+        - columnNumber: 53
+          lineNumber: 14434
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: HistoryService.save
+          source: '    at HistoryService.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14434:53)'
+      type: Storage.LocalStorage
+  psp_hist_h:
+    value:
+      version: '0.1'
+      firstSeen: 1781830094000
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 33
+      empty_count: 33
+      requestsCount: 24
+      visitDuration_count: 10
+      visitDuration_total: 207125
+      visitDuration_avg: 20712.5
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 20
+          lineNumber: 14330
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: LocalStorage.save
+          source: '    at LocalStorage.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14330:20)'
+        - columnNumber: 53
+          lineNumber: 14434
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: HistoryService.save
+          source: '    at HistoryService.save (https://adtcdn.unidadeditorial.es/mun/migrate.js:14434:53)'
+      type: Storage.LocalStorage
+  _GESPSK-novatiq.com:
+    value:
+      - novatiq.com
+      - null
+      - 1781830101416
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  _gcl_ls:
+    value:
+      schema: gcl
+      version: 1
+      gsid_dc:
+        value:
+          joinId: hNbmnkswmMdXYNaj-diu8ozQ2mLtL92xYw
+          lastJoinedTimeMs: 1781830105996
+        expires: 1781830405996
+      gcl_ctr:
+        value:
+          value: 5
+          timeouts: 0
+          errors: 0
+          eopCount: 0
+          creationTimeMs: 1781830133443
+        expires: 1789606133443
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 174
+          lineNumber: 420
+          fileName: >-
+            https://www.googletagmanager.com/gtag/js?id=AW-10944322645&cx=c&gtm=4e66h0
+          functionName: Lr
+          source: '    at Lr (https://www.googletagmanager.com/gtag/js?id=AW-10944322645&cx=c&gtm=4e66h0:420:174)'
+        - columnNumber: 1614
+          lineNumber: 414
+          fileName: >-
+            https://www.googletagmanager.com/gtag/js?id=AW-10944322645&cx=c&gtm=4e66h0
+          functionName: Jr
+          source: '    at Jr (https://www.googletagmanager.com/gtag/js?id=AW-10944322645&cx=c&gtm=4e66h0:414:1614)'
+      type: Storage.LocalStorage
+  telPId:
+    value: null
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 22
+          lineNumber: 34057
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: WindowArray.setTargetings
+          source: '    at WindowArray.setTargetings (https://adtcdn.unidadeditorial.es/mun/migrate.js:34057:22)'
+        - columnNumber: 22
+          lineNumber: 33595
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mun/migrate.js:33595:22'
+      type: Storage.LocalStorage
+  taboolaEvent:
+    value: 0
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 109
+          lineNumber: 432
+          fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+          functionName: utag.handler.extend
+          source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:432:109)'
+        - columnNumber: 24
+          lineNumber: 97
+          fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+          functionName: Object.RE
+          source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+      type: Storage.LocalStorage
+  ueUserContentComscore:
+    value: -1
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 20709
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:20709'
+        - columnNumber: 20303
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          functionName: H.pe
+          source: '    at H.pe (https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:20303)'
+      type: Storage.LocalStorage
+  _GESPSK-intimatemerger.com:
+    value:
+      - intimatemerger.com
+      - null
+      - 1781830101424
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  Service_Device:
+    value:
+      name: Chrome
+      version: '140.0'
+      osName: Linux
+      osVersion: ''
+      osMajorVersion: ''
+      device: desktop
+      batteryLevel: null
+      batteryCharging: null
+      screenWidth: 800
+      screenHeight: 600
+      processorSpeed: 3.400000000372529
+      netInfoDownlink: 1.35
+      netInfoEffType: 3g
+      netInfoRtt: 350
+      platform: Linux x86_64
+      simpleType: desktop
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 15
+          lineNumber: 8088
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: DLCache.store
+          source: '    at DLCache.store (https://adtcdn.unidadeditorial.es/mun/migrate.js:8088:15)'
+        - columnNumber: 13
+          lineNumber: 8068
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mun/migrate.js:8068:13'
+      type: Storage.LocalStorage
+  lastVisit30:
+    value: 4
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 26
+          lineNumber: 2145
+          fileName: https://www.elmundo.es/
+          functionName: recurrentUser
+          source: '    at recurrentUser (https://www.elmundo.es/:2145:26)'
+        - columnNumber: 46
+          lineNumber: 2218
+          fileName: https://www.elmundo.es/
+          source: '    at https://www.elmundo.es/:2218:46'
+      type: Storage.LocalStorage
+  _GESPSK-yahoo.com:
+    value:
+      - yahoo.com
+      - null
+      - 1781830103243
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 111
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  be_adblocking:
+    value: sin datos
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 620
+          lineNumber: 2935
+          fileName: https://www.elmundo.es/
+          functionName: AD_BLOCK_DATA_READY
+          source: '    at AD_BLOCK_DATA_READY (https://www.elmundo.es/:2935:620)'
+        - columnNumber: 94
+          lineNumber: 328
+          fileName: >-
+            /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable
+          functionName: Io.push
+          source: '    at Io.push (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable:328:94)'
+      type: Storage.LocalStorage
+  _GESPSK-mygaruID:
+    value:
+      - mygaruID
+      - null
+      - 1781830101426
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 100
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  ueConsentData:
+    value: >-
+      CQmDUEAQmDUEAAHABBENCjFgAAAAAELAAAAAAAAY0gXgA4AGaAZ8A6QCVQF-gMEAaMA48Bz4DtgHcgPPAfaA_YCAwEEQIKARpAj0BIiCSQJKASjAmGBOuCfoJ_AUFAo-BTUCqYFWQKwAVkAraBXcCvoFhALVgW8AuABdcC7QF3gL2AYgAxgBjQAYlABgACDJpSADAAEGTR0AGAAIMmkIAMAAQZNCQAYAAgyaWgAwABBk0AAA.IMmtX_H__bX9v-f736ft0eY1f9_j77uQxBhfJs-4FzLvW_JwX32E7NF36tqYKmRIEu3bBIQNtHJnUTVihaogVrzHMak2c4TtKJ-BkiHMZe29YCF5vm4tj-QKZ5_r_9nd92T_9_dv-3dzy3_1nv3f9_-f1eLyde5-tH_v_bxOb-_If9_7-_4v8_t_rk2_eT1v_9evv7__-_____f__9_f_____v_____-____f______6_________________f_________7d_______gAAA
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 18907
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          functionName: H.ue
+          source: '    at H.ue (https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:18907)'
+        - columnNumber: 13601
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:13601'
+      type: Storage.LocalStorage
+  rtbhouse-esp:
+    value: d1413574-5f97-4b98-b690-e3c420aedf8f
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 1582
+          lineNumber: 6
+          fileName: >-
+            https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js
+          functionName: e
+          source: '    at e (https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js:6:1582)'
+        - columnNumber: 376759
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: JE.j
+          source: '    at JE.j (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:376759)'
+      type: Storage.LocalStorage
+  ueUserContentGoogle:
+    value: -1
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 20709
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:20709'
+        - columnNumber: 20303
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+          functionName: H.pe
+          source: '    at H.pe (https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:20303)'
+      type: Storage.LocalStorage
+  _GESPSK-esp.pubmatic.com:
+    value:
+      - esp.pubmatic.com
+      - ''
+      - 1781830105317
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  __utp_bu:
+    value: 0
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 113584
+          lineNumber: 1
+          fileName: https://cdn.tinypass.com/api/tinypass.min.js
+          source: '    at https://cdn.tinypass.com/api/tinypass.min.js:1:113584'
+      type: Storage.LocalStorage
+  lastVisitMonth1:
+    value: 5
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 26
+          lineNumber: 2145
+          fileName: https://www.elmundo.es/
+          functionName: recurrentUser
+          source: '    at recurrentUser (https://www.elmundo.es/:2145:26)'
+        - columnNumber: 48
+          lineNumber: 2217
+          fileName: https://www.elmundo.es/
+          source: '    at https://www.elmundo.es/:2217:48'
+      type: Storage.LocalStorage
+  _GESPSK-id5-sync.com:
+    value:
+      - id5-sync.com
+      - null
+      - 1781830104510
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 106
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  geocached:
+    value:
+      country_code: ES
+      iso: ES
+      city: el palmar
+      lat: '37.940'
+      long: '-1.160'
+      region: MU
+      postal_code: '30120'
+      gpt_ad_id: '99071977'
+      client_ip: 88.20.235.130
+      timestamp: 1781830102607
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 22
+          lineNumber: 34733
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mun/migrate.js:34733:22'
+      type: Storage.LocalStorage
+  didomi_token:
+    value: >-
+      eyJ1c2VyX2lkIjoiMTllZGQ1OWEtNzI2NS02MTU4LThmODMtN2RkNTU5MWMzOTdjIiwiY3JlYXRlZCI6IjIwMjYtMDYtMTlUMDA6NDg6MjAuNzc0WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTE5VDAwOjQ4OjIwLjc3OFoiLCJ2ZXJzaW9uIjpudWxsfQ==
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 72470
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+          functionName: s
+          source: '    at s (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:72470)'
+        - columnNumber: 140832
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+          functionName: h
+          source: '    at h (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:140832)'
+      type: Storage.LocalStorage
+  _opc:
+    value:
+      utm_ht: NjY4PXN0Ms8p9zQ2rSUxNDY4MjE0NsH0
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 9029
+          lineNumber: 1
+          fileName: >-
+            https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0Ms8p9zQ2rSUxNDY4MjE0NsH0
+          functionName: o
+          source: '    at o (https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0Ms8p9zQ2rSUxNDY4MjE0NsH0:1:9029)'
+        - columnNumber: 9114
+          lineNumber: 1
+          fileName: >-
+            https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0Ms8p9zQ2rSUxNDY4MjE0NsH0
+          functionName: Object.setItem
+          source: '    at Object.setItem (https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0Ms8p9zQ2rSUxNDY4MjE0NsH0:1:9114)'
+      type: Storage.LocalStorage
+  _GESPSK-openx:
+    value:
+      - openx
+      - null
+      - 1781830103276
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - - 111
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  random2:
+    value: 9
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 658200
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js
+          functionName: new GAMExp
+          source: '    at new GAMExp (https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js:1:658200)'
+        - columnNumber: 16
+          lineNumber: 3
+          fileName: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js
+          source: '    at https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js:3:16'
+      type: Storage.LocalStorage
+  lucidsdkver:
+    value: pz.2026.12.9-82baaafd
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 31443
+          lineNumber: 1
+          fileName: >-
+            https://api-esp.piano.io/public/sdk/vx/sdk.js?v=xxx&i=585F081C-0BFC-4EE1-9709-1F9360EADF68
+          source: '    at https://api-esp.piano.io/public/sdk/vx/sdk.js?v=xxx&i=585F081C-0BFC-4EE1-9709-1F9360EADF68:1:31443'
+      type: Storage.LocalStorage
+  _GESPSK-rtbhouse:
+    value:
+      - rtbhouse
+      - >-
+        fHu8Gefrn75vQX4QmJ4bWr48nWB4nMLXE+W4qayRZ0d9vwv7SLc1SbdzWTp/eChNOBW8NSvxIbUt2/sQmHUnVQmfJTuyhvO4uqwPttkTdKMGWjVzYEJAr48IS3HrC+1YCFHLWml241Hsmu6aiVLwQEqeKwmKg0+eu0m6JN2IljspWspRQFPFEELvR3SF6Iz8
+      - 1781830108259
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 48520
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: Bj
+          source: '    at Bj (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:48520)'
+        - columnNumber: 371337
+          lineNumber: 19
+          fileName: >-
+            https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254
+          functionName: XX.set
+          source: '    at XX.set (https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606170101/pubads_impl.js?cb=31099254:19:371337)'
+      type: Storage.LocalStorage
+  Service_Geo:
+    value:
+      country_code: ES
+      city: el palmar
+      lat: '37.940'
+      long: '-1.160'
+      region: MU
+      postal_code: '30120'
+      gpt_ad_id: '99071977'
+      client_ip: 88.20.235.130
+      main_zone: SPAIN
+      iso: ES
+      timestamp: 1781830102607
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 15
+          lineNumber: 8088
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          functionName: DLCache.store
+          source: '    at DLCache.store (https://adtcdn.unidadeditorial.es/mun/migrate.js:8088:15)'
+        - columnNumber: 13
+          lineNumber: 8068
+          fileName: https://adtcdn.unidadeditorial.es/mun/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mun/migrate.js:8068:13'
+      type: Storage.LocalStorage
+  __tp-gaAccount:
+    value: disabled
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 38735
+          lineNumber: 1
+          fileName: https://cdn.tinypass.com/api/tinypass.min.js
+          functionName: set
+          source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:38735)'
+        - columnNumber: 77032
+          lineNumber: 1
+          fileName: https://cdn.tinypass.com/api/tinypass.min.js
+          functionName: Object.set
+          source: '    at Object.set (https://cdn.tinypass.com/api/tinypass.min.js:1:77032)'
+      type: Storage.LocalStorage
+  _cX_atfr:
+    value: >-
+      &altm=1781830135821&arnd=mqk7nnhhcgcubcog&aatm=8&axtl=&awsz=1680x927&amvw=1680x8426&ascp=100x8426&aclk=0&ause=80&altc=599&aaid=9cfae19a97853fa9d04476bc16c9e5f0e38474c8,ff4b50d25e6824b0bdfb37edb9aba663fbd67be1&aavp=10,&aavt=4x0,&aasz=1680x342,&aaps=0x7191,
+    firstPartyStorage: true
+    log:
+      location: https://www.elmundo.es/
+      stack:
+        - columnNumber: 3001
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          functionName: set
+          source: '    at set (https://cdn.cxense.com/cx.js:6:3001)'
+        - columnNumber: 50789
+          lineNumber: 6
+          fileName: https://cdn.cxense.com/cx.js
+          functionName: Object.set
+          source: '    at Object.set (https://cdn.cxense.com/cx.js:6:50789)'
+      type: Storage.LocalStorage

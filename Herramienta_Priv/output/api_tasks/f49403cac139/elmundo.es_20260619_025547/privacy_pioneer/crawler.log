@@ -1,0 +1,38 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'f1079a80-3bec-41c4-ab6a-770dae6cb3e8',
+  'c1f042fd-3b85-48d4-b55d-e148066a1456'
+]
+PP window: c1f042fd-3b85-48d4-b55d-e148066a1456
+switch to PP window
+Error in setup: NoSuchAlertError
+Error occurred during setup. Restarting driver...
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'd8832515-6a84-4792-a9b4-494b96ad61a4',
+  '8757bdb8-59a5-4b4e-85fc-2401eb0c5983'
+]
+PP window: 8757bdb8-59a5-4b4e-85fc-2401eb0c5983
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.elmundo.es/
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 42 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: elmundo_es_
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Accept and continue"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 62 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: elmundo_es_
+time spent:  72.21 total elapsed:  165.61

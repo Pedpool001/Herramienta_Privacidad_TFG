@@ -1,0 +1,823 @@
+{"level":"info","message":"No proxy configuration found.","timestamp":"2026-06-18T22:57:16.055Z"}
+{"level":"info","message":"Chromium called  with following options: ","timestamp":"2026-06-18T22:57:16.060Z"}
+{"level":"info","message":"Done: Creating puppeteer chrome session","timestamp":"2026-06-18T22:57:17.753Z"}
+{"level":"info","message":"Run testHttps","timestamp":"2026-06-18T22:57:17.754Z"}
+{"level":"info","message":"Done: Testing connection using testHttps and testSSL","timestamp":"2026-06-18T22:57:19.375Z"}
+{"level":"info","message":"browsing now to https://www.elmundo.es/","timestamp":"2026-06-18T22:57:19.377Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.833Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.837Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.863Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.864Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.879Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.897Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.903Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.907Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.914Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.919Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.921Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.923Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.925Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.930Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.933Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.934Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.935Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.936Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.945Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.964Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.973Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:24.990Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:25.001Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:25.006Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:25.012Z"}
+{"level":"info","message":"LocalStorage filled with key(s) random2 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:25.111Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:25.968Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:25.970Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:25.972Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:25.974Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_check for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:25.976Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.036Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.038Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.042Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.046Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.047Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.048Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.050Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.055Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.059Z"}
+{"level":"info","message":"LocalStorage filled with key(s) geocached for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.060Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key euconsent-v2.","timestamp":"2026-06-18T22:57:26.783Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key didomi_token.","timestamp":"2026-06-18T22:57:26.796Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:26.803Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.478Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.484Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.490Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.496Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.498Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.500Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.511Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.550Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.551Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.563Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.570Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.575Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.576Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.580Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.587Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.596Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.601Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.602Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.603Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.613Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.615Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.620Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.621Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.622Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.631Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.632Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.634Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.639Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.644Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.646Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.647Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.672Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.674Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.681Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.682Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.691Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.692Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.693Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.698Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.737Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.741Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.744Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.746Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.750Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:27.751Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.673Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.682Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.683Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.683Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.696Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.698Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.709Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.710Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.720Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.845Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.849Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.856Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.860Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.863Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.866Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.870Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.873Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:29.878Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.121Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.124Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.135Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.137Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.140Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.145Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.147Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.161Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.178Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.384Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.385Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.386Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.388Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.388Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.389Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.390Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.392Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.393Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.482Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.486Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.489Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.700Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.707Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.708Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.709Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.711Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.712Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.713Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.714Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.717Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.719Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.721Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.723Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.732Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.733Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.733Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.735Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.736Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.740Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.813Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.814Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.816Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.818Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.819Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.820Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.821Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.822Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:30.823Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastVisitMonth1 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:31.156Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastVisit30 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:31.159Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key ue_consentState.","timestamp":"2026-06-18T22:57:31.510Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key euconsent-v2.","timestamp":"2026-06-18T22:57:31.607Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key euconsent-v2.","timestamp":"2026-06-18T22:57:31.619Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key didomi_token.","timestamp":"2026-06-18T22:57:31.624Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:31.625Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key ue_privacyPolicy.","timestamp":"2026-06-18T22:57:31.629Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentGoogle for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:31.636Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentComscore for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:31.638Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCCDCF.","timestamp":"2026-06-18T22:57:32.045Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCCDCF.","timestamp":"2026-06-18T22:57:32.051Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key FCCDCF.","timestamp":"2026-06-18T22:57:32.059Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key FCCDCF.","timestamp":"2026-06-18T22:57:32.065Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.304Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key mrf_cookie.","timestamp":"2026-06-18T22:57:32.320Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key mrf_cookie.","timestamp":"2026-06-18T22:57:32.323Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbic.","timestamp":"2026-06-18T22:57:32.328Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbic.","timestamp":"2026-06-18T22:57:32.333Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbi.","timestamp":"2026-06-18T22:57:32.337Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbi.","timestamp":"2026-06-18T22:57:32.341Z"}
+{"level":"info","message":"LocalStorage filled with key(s) telP for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.578Z"}
+{"level":"info","message":"LocalStorage filled with key(s) telPId for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.583Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-openx for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.618Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-novatiq.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.623Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-esp.pubmatic.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.640Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-yahoo.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.641Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-crwdcntrl.net for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.642Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-pubcid.org for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.655Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-rtbhouse for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.656Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-id5-sync.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.665Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-intimatemerger.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.673Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-esp.criteo.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.678Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-mygaruID for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:32.679Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:33.528Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:33.537Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __t__ for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:33.565Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_section_conversion.","timestamp":"2026-06-18T22:57:33.615Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_subsection_conversion.","timestamp":"2026-06-18T22:57:33.625Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_title_conversion.","timestamp":"2026-06-18T22:57:33.629Z"}
+{"level":"info","message":"LocalStorage filled with key(s) taboolaEvent for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:33.648Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_journalist_conversion.","timestamp":"2026-06-18T22:57:33.651Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_premium_detail_conversion.","timestamp":"2026-06-18T22:57:33.665Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_type_conversion.","timestamp":"2026-06-18T22:57:33.667Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key counter_page_view.","timestamp":"2026-06-18T22:57:33.680Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-18T22:57:33.701Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_gam.","timestamp":"2026-06-18T22:57:33.711Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:57:34.019Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:57:34.025Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:57:34.030Z"}
+{"level":"info","message":"LocalStorage filled with key(s) be_adblocking for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.047Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __storage_test__ for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.242Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key nvq_hid.","timestamp":"2026-06-18T22:57:34.269Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pubcid.","timestamp":"2026-06-18T22:57:34.273Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-openx for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.326Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-yahoo.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.385Z"}
+{"level":"info","message":"LocalStorage filled with key(s) rtbhouse-esp for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.410Z"}
+{"level":"info","message":"LocalStorage filled with key(s) geocached for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:34.445Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _rdc1781823454931.","timestamp":"2026-06-18T22:57:34.941Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _rdc1781823454931.","timestamp":"2026-06-18T22:57:34.968Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:57:36.426Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gid.","timestamp":"2026-06-18T22:57:36.431Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gat_gtag_UA_181957286_1.","timestamp":"2026-06-18T22:57:36.451Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:36.517Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:36.520Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:36.526Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:36.642Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:36.647Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:57:36.659Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-id5-sync.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:36.788Z"}
+{"level":"info","message":"LocalStorage filled with key(s) permutive-consent for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:37.473Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-id.","timestamp":"2026-06-18T22:57:37.512Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-session.","timestamp":"2026-06-18T22:57:37.518Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _permutive_ls_test for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:37.525Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:37.981Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key client_suscription_packagage_trigger.","timestamp":"2026-06-18T22:57:37.984Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_section_conversion.","timestamp":"2026-06-18T22:57:37.995Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_subsection_conversion.","timestamp":"2026-06-18T22:57:38.019Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_title_conversion.","timestamp":"2026-06-18T22:57:38.024Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_premium_detail_conversion.","timestamp":"2026-06-18T22:57:38.028Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_type_conversion.","timestamp":"2026-06-18T22:57:38.046Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-18T22:57:38.064Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_gam.","timestamp":"2026-06-18T22:57:38.066Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key AMP_TOKEN.","timestamp":"2026-06-18T22:57:38.126Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-esp.pubmatic.com for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.320Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbm_279395918757488.","timestamp":"2026-06-18T22:57:38.383Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbm_279395918757488.","timestamp":"2026-06-18T22:57:38.385Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbm_279395918757488.","timestamp":"2026-06-18T22:57:38.388Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test__1781823458381 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.390Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.609Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:57:38.614Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.619Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.685Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:38.741Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.877Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.881Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.888Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.898Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.923Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.938Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.941Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.947Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.966Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.968Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.971Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:38.976Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pctx.","timestamp":"2026-06-18T22:57:39.147Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pctx.","timestamp":"2026-06-18T22:57:39.153Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:39.157Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:39.161Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:39.169Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:39.172Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pcid.","timestamp":"2026-06-18T22:57:39.225Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:57:39.797Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:40.057Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:40.058Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _GESPSK-rtbhouse for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:40.092Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbsr_279395918757488.","timestamp":"2026-06-18T22:57:40.138Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbsr_279395918757488.","timestamp":"2026-06-18T22:57:40.140Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbsr_279395918757488.","timestamp":"2026-06-18T22:57:40.141Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:40.481Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:40.490Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:40.500Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.079Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.090Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.101Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.107Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:57:41.595Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __tbc.","timestamp":"2026-06-18T22:57:41.938Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.944Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.952Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.957Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:41.969Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __pat.","timestamp":"2026-06-18T22:57:41.970Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __pvi.","timestamp":"2026-06-18T22:57:41.974Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key xbc.","timestamp":"2026-06-18T22:57:42.007Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pcus.","timestamp":"2026-06-18T22:57:42.042Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key _pc_LTS.","timestamp":"2026-06-18T22:57:42.050Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_ltrvalue.","timestamp":"2026-06-18T22:57:42.091Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_cintillo.","timestamp":"2026-06-18T22:57:42.124Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_bloque.","timestamp":"2026-06-18T22:57:42.366Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_footer.","timestamp":"2026-06-18T22:57:42.410Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:42.411Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key client_suscription_packagage_trigger.","timestamp":"2026-06-18T22:57:42.417Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_section_conversion.","timestamp":"2026-06-18T22:57:42.419Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_subsection_conversion.","timestamp":"2026-06-18T22:57:42.425Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_title_conversion.","timestamp":"2026-06-18T22:57:42.435Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_premium_detail_conversion.","timestamp":"2026-06-18T22:57:42.445Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_type_conversion.","timestamp":"2026-06-18T22:57:42.455Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-18T22:57:42.463Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_gam.","timestamp":"2026-06-18T22:57:42.469Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:42.510Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:57:42.537Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:42.571Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_landing.","timestamp":"2026-06-18T22:57:42.620Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_botonportada.","timestamp":"2026-06-18T22:57:42.626Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.793Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.805Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.807Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.811Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.848Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.858Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.862Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:42.868Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_check for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:42.869Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key AMP_TOKEN.","timestamp":"2026-06-18T22:57:43.219Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:57:43.229Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gid.","timestamp":"2026-06-18T22:57:43.231Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.318Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.320Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.333Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.338Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.344Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.359Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.363Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _ls_ttl for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:43.370Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_lastP1Time for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:43.372Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.379Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.382Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.384Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.388Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.390Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.391Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.392Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.394Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.395Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.397Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.407Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.409Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.411Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.412Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.423Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.425Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.427Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.434Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.436Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:43.437Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:57:43.438Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:43.670Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:43.675Z"}
+{"level":"info","message":"LocalStorage filled with key(s) pnespsdk_1781823464019.5934529146 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:44.030Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lucidsdkver for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:44.031Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key pnespsdk_ssn.","timestamp":"2026-06-18T22:57:44.039Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key pnespsdk_visitor.","timestamp":"2026-06-18T22:57:44.055Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_G.","timestamp":"2026-06-18T22:57:44.312Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_G.","timestamp":"2026-06-18T22:57:44.313Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:44.325Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:44.332Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:44.336Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:44.341Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_G.","timestamp":"2026-06-18T22:57:44.343Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:44.453Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:45.076Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:45.112Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:45.116Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:46.141Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:47.046Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _ls_ttl for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:47.066Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __tp-gaAccount for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:47.070Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:47.797Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:48.761Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:49.515Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:49.919Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:49.922Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:49.933Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:49.983Z"}
+{"level":"info","message":"LocalStorage filled with key(s) tblPushTestStorage for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:50.324Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key tblPushTestCookie.","timestamp":"2026-06-18T22:57:50.326Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key tblPushTestCookie.","timestamp":"2026-06-18T22:57:50.329Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:50.598Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:51.098Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _lspf for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:51.325Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _lspf for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:51.327Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _opc for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:51.340Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:51.597Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:52.142Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:52.641Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:53.147Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:53.645Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:54.143Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:54.642Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:54.820Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:54.822Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:54.823Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:55.142Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:55.640Z"}
+{"level":"info","message":"reloading to https://www.elmundo.es/","timestamp":"2026-06-18T22:57:56.057Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.066Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.066Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.067Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __utp_bu for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.074Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.141Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:56.353Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key previous_page_time.","timestamp":"2026-06-18T22:57:56.367Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key previous_page_time.","timestamp":"2026-06-18T22:57:56.369Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key previous_page_time.","timestamp":"2026-06-18T22:57:56.370Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.636Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.637Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.639Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.641Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.642Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.647Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.648Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.649Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.655Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.657Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.665Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.668Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.672Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.673Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.674Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.676Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.677Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.678Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.678Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:57.783Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:57:57.788Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:57.789Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:57:57.790Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_check for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:57.793Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.713Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.716Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.724Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.725Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.726Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.727Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.729Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.733Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.735Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.736Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.738Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.739Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.740Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.741Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.742Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.744Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.745Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.746Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.747Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.748Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.751Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.752Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.753Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.755Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.776Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.781Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.782Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.792Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.793Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.795Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.941Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.942Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.943Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.945Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.946Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.947Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.955Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.956Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:58.957Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.094Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.095Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.096Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.097Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.097Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.098Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.222Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.223Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.223Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.224Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.224Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.225Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.226Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.227Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.227Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.256Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.257Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.257Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.258Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.259Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.259Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.260Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.260Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.261Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.411Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.412Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.413Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.413Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.414Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.414Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.415Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.415Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.416Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.482Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.484Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.485Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.485Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.487Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.487Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.489Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.489Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.490Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.628Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.629Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.630Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.631Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.632Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.633Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.634Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.634Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.635Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.642Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.643Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.644Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.645Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.646Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.647Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.648Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.650Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.651Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.696Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.697Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.698Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.699Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.701Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.701Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.702Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.703Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.704Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:57:59.913Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gid.","timestamp":"2026-06-18T22:57:59.915Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:57:59.962Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key mrf_cookie.","timestamp":"2026-06-18T22:57:59.967Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key mrf_cookie.","timestamp":"2026-06-18T22:57:59.968Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:59.998Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:57:59.999Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __t__ for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.007Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key client_suscription_packagage_trigger.","timestamp":"2026-06-18T22:58:00.011Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_section_conversion.","timestamp":"2026-06-18T22:58:00.012Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_subsection_conversion.","timestamp":"2026-06-18T22:58:00.013Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_title_conversion.","timestamp":"2026-06-18T22:58:00.014Z"}
+{"level":"info","message":"LocalStorage filled with key(s) taboolaEvent for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.016Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_premium_detail_conversion.","timestamp":"2026-06-18T22:58:00.018Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_type_conversion.","timestamp":"2026-06-18T22:58:00.018Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key counter_page_view.","timestamp":"2026-06-18T22:58:00.025Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-18T22:58:00.029Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_gam.","timestamp":"2026-06-18T22:58:00.030Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentGoogle for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.059Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentComscore for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.060Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueConsentData for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.061Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbic.","timestamp":"2026-06-18T22:58:00.140Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbic.","timestamp":"2026-06-18T22:58:00.141Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbi.","timestamp":"2026-06-18T22:58:00.141Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key ___nrbi.","timestamp":"2026-06-18T22:58:00.142Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _rdc1781823480179.","timestamp":"2026-06-18T22:58:00.182Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _rdc1781823480179.","timestamp":"2026-06-18T22:58:00.188Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:58:00.646Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.710Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key utag_main.","timestamp":"2026-06-18T22:58:00.824Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key client_suscription_packagage_trigger.","timestamp":"2026-06-18T22:58:00.828Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_section_conversion.","timestamp":"2026-06-18T22:58:00.829Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_subsection_conversion.","timestamp":"2026-06-18T22:58:00.830Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_title_conversion.","timestamp":"2026-06-18T22:58:00.833Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_premium_detail_conversion.","timestamp":"2026-06-18T22:58:00.842Z"}
+{"level":"info","message":"Session Cookie (JS) set for host elmundo.es with key be_product_content_type_conversion.","timestamp":"2026-06-18T22:58:00.844Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-18T22:58:00.845Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_gam.","timestamp":"2026-06-18T22:58:00.846Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:58:00.851Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gid.","timestamp":"2026-06-18T22:58:00.855Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:00.888Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:58:01.501Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:58:01.955Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:58:01.970Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga.","timestamp":"2026-06-18T22:58:01.977Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:58:02.089Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:58:02.091Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key FCNEC.","timestamp":"2026-06-18T22:58:02.092Z"}
+{"level":"info","message":"LocalStorage filled with key(s) be_adblocking for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.099Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _gcl_au.","timestamp":"2026-06-18T22:58:02.675Z"}
+{"level":"info","message":"LocalStorage filled with key(s) permutive-consent for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.792Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-id.","timestamp":"2026-06-18T22:58:02.799Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-session.","timestamp":"2026-06-18T22:58:02.804Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _permutive_ls_test for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.820Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbm_279395918757488.","timestamp":"2026-06-18T22:58:02.821Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbm_279395918757488.","timestamp":"2026-06-18T22:58:02.841Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbm_279395918757488.","timestamp":"2026-06-18T22:58:02.847Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbsr_279395918757488.","timestamp":"2026-06-18T22:58:02.859Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key fbsr_279395918757488.","timestamp":"2026-06-18T22:58:02.860Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbsr_279395918757488.","timestamp":"2026-06-18T22:58:02.864Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.947Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.953Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:02.961Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.015Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.017Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.018Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.035Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.043Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.044Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.052Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.058Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.062Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.071Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.076Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.080Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pcid.","timestamp":"2026-06-18T22:58:03.094Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pctx.","timestamp":"2026-06-18T22:58:03.097Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pcus.","timestamp":"2026-06-18T22:58:03.108Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.112Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.115Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.116Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.119Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __pvi.","timestamp":"2026-06-18T22:58:03.128Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.347Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.349Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.350Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.358Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.363Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.370Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.371Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.376Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_check for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:03.380Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.457Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.458Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.459Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.461Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key __tbc.","timestamp":"2026-06-18T22:58:03.913Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key __tbc.","timestamp":"2026-06-18T22:58:03.931Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __tbc.","timestamp":"2026-06-18T22:58:03.938Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __tbc.","timestamp":"2026-06-18T22:58:03.941Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.945Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.948Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.952Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:03.955Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key __pat.","timestamp":"2026-06-18T22:58:03.957Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key xbc.","timestamp":"2026-06-18T22:58:03.958Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key xbc.","timestamp":"2026-06-18T22:58:03.960Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _pcus.","timestamp":"2026-06-18T22:58:03.962Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_ltsvalue.","timestamp":"2026-06-18T22:58:03.965Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key _pc_LTS.","timestamp":"2026-06-18T22:58:03.967Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_ltrvalue.","timestamp":"2026-06-18T22:58:03.968Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_cintillo.","timestamp":"2026-06-18T22:58:03.971Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_bloque.","timestamp":"2026-06-18T22:58:03.998Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_landing.","timestamp":"2026-06-18T22:58:04.001Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key _pc_botonportada.","timestamp":"2026-06-18T22:58:04.002Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:04.225Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:04.229Z"}
+{"level":"info","message":"LocalStorage filled with key(s) pnespsdk_1781823484386.9846871790 for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:04.402Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lucidsdkver for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:04.408Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key pnespsdk_ssn.","timestamp":"2026-06-18T22:58:04.439Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key pnespsdk_visitor.","timestamp":"2026-06-18T22:58:04.441Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.457Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.459Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.466Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.467Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.473Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.476Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.481Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.643Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.644Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.648Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.651Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.656Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.664Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.667Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.676Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.679Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.686Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.693Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.698Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.699Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.702Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.723Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.727Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.729Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.733Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.734Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _cookie_test.","timestamp":"2026-06-18T22:58:04.737Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key cX_P.","timestamp":"2026-06-18T22:58:04.742Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:04.750Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:58:04.856Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key _ga_96F1LB48N7.","timestamp":"2026-06-18T22:58:04.859Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:05.560Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:06.518Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.011Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.557Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.670Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.675Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.677Z"}
+{"level":"info","message":"LocalStorage filled with key(s) tblPushTestStorage for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.733Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key tblPushTestCookie.","timestamp":"2026-06-18T22:58:07.739Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.elmundo.es with key tblPushTestCookie.","timestamp":"2026-06-18T22:58:07.741Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _lspf for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.815Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _lspf for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.825Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _opc for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:07.832Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:08.183Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:08.646Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:09.142Z"}
+{"level":"info","message":"Done: Loading page","timestamp":"2026-06-18T22:58:09.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:09.788Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:10.234Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:10.643Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:10.644Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.180Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.182Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.184Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.185Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.189Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.191Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.193Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.194Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.195Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.196Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.197Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.199Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.199Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.200Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.201Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.202Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.202Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.203Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.204Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:11.935Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.432Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.658Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.660Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.670Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.671Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.675Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.683Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.687Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.688Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.692Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.700Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.701Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.702Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.703Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.706Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.707Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.709Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.710Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.711Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.712Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.714Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.715Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.718Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.719Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.720Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.722Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.723Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.724Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.741Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.743Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.748Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.749Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.749Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.751Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.753Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.754Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.755Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.757Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.758Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.760Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.761Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.762Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.763Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.839Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.840Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:12.857Z"}
+{"level":"info","message":"LocalStorage filled with key(s) permutive-consent for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:13.043Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-id.","timestamp":"2026-06-18T22:58:13.046Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key permutive-session.","timestamp":"2026-06-18T22:58:13.051Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _permutive_ls_test for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:13.053Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:13.236Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.205Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.211Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.212Z"}
+{"level":"info","message":"Done: Collecting screenshots","timestamp":"2026-06-18T22:58:15.227Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.233Z"}
+{"level":"info","message":"Done: Collecting links","timestamp":"2026-06-18T22:58:15.283Z"}
+{"level":"info","message":"Done: Collecting forms","timestamp":"2026-06-18T22:58:15.286Z"}
+{"level":"info","message":"Done: Collecting cookies","timestamp":"2026-06-18T22:58:15.289Z"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.317Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.321Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.325Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.333Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.341Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.343Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-18T22:58:15.351Z","type":"Browser"}
+{"level":"info","message":"Done: Collecting local storage","timestamp":"2026-06-18T22:58:15.352Z"}
+{"level":"info","message":"Done: Collecting websocket log","timestamp":"2026-06-18T22:58:15.356Z"}
+{"level":"info","message":"Done: Browsing samples","timestamp":"2026-06-18T22:58:15.397Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _cX_atfr for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.660Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.663Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.666Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.668Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.669Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.671Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.672Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _gcl_ls for origin https://www.elmundo.es.","timestamp":"2026-06-18T22:58:15.685Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key previous_page_time.","timestamp":"2026-06-18T22:58:15.692Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.elmundo.es with key previous_page_time.","timestamp":"2026-06-18T22:58:15.694Z"}
+{"level":"info","message":"Done: Ending session","timestamp":"2026-06-18T22:58:16.605Z"}

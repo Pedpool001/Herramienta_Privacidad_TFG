@@ -1,0 +1,24 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '8aa178f2-fe02-4d52-88df-e1de729cfaac',
+  'd4eb95e4-0bd8-4ade-ac85-3853eb53ef14'
+]
+PP window: d4eb95e4-0bd8-4ade-ac85-3853eb53ef14
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.rtve.es
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 18 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: rtve_es
+🔍 Buscando banner de cookies...
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 18 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: rtve_es
+time spent:  72.808 total elapsed:  128.083

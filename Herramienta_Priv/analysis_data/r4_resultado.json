@@ -1,0 +1,18 @@
+{
+  "sitio": "www.rtve.es",
+  "url": "https://www.rtve.es",
+  "veredicto": "FAILED",
+  "evaluacion": {
+    "estado": "FAILED",
+    "detalle": "No se localizó ningún botón de configuración de cookies en el banner. El sitio puede no mostrar el banner en esta visita (cookies previas, geobloqueo) o usar un acceso de configuración con texto no reconocido."
+  },
+  "hallazgos": {
+    "panel_localizado": false,
+    "boton_config_texto": null,
+    "indicador_toggles": 0,
+    "indicador_botones": 0,
+    "total_opciones": 0,
+    "categorias_detectadas": [],
+    "screenshot": null
+  }
+}

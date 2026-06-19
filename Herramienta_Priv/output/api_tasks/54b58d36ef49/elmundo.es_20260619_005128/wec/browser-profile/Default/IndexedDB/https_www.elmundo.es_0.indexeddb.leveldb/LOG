@@ -1,0 +1,4 @@
+2026/06/19-00:52:17.212 8b79 Reusing MANIFEST /home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/54b58d36ef49/elmundo.es_20260619_005128/wec/browser-profile/Default/IndexedDB/https_www.elmundo.es_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/19-00:52:17.212 8b79 Recovering log #3
+2026/06/19-00:52:17.218 8b79 Reusing old log /home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/54b58d36ef49/elmundo.es_20260619_005128/wec/browser-profile/Default/IndexedDB/https_www.elmundo.es_0.indexeddb.leveldb/000003.log 
+2026/06/19-00:52:33.085 8b79 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

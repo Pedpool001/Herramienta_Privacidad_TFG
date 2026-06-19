@@ -1,0 +1,4 @@
+{"level":"info","message":"No proxy configuration found.","timestamp":"2026-06-18T23:37:39.268Z"}
+{"level":"info","message":"Chromium called  with following options: ","timestamp":"2026-06-18T23:37:39.274Z"}
+{"level":"info","message":"Done: Creating puppeteer chrome session","timestamp":"2026-06-18T23:37:41.511Z"}
+{"level":"info","message":"Run testHttps","timestamp":"2026-06-18T23:37:41.512Z"}

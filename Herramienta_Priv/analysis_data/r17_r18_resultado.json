@@ -1,0 +1,28 @@
+{
+  "sitio": "rtve.es",
+  "r17": {
+    "veredicto": "WARNING",
+    "redirect_http": {
+      "estado": "PASSED",
+      "status_code": 301,
+      "location": "https://www.rtve.es/",
+      "motivo": "Redirección 301 permanente a HTTPS"
+    },
+    "hsts": {
+      "presente": false,
+      "max_age": null,
+      "include_subdomains": false,
+      "preload": false,
+      "estado": "WARNING",
+      "motivo": "Cabecera HSTS ausente — primera visita vulnerable a MITM"
+    }
+  },
+  "r18": {
+    "veredicto": "FAILED",
+    "modo": null,
+    "valor": null,
+    "directivas_problematicas": [],
+    "directivas_faltantes": [],
+    "motivo": "Cabecera Content-Security-Policy ausente"
+  }
+}

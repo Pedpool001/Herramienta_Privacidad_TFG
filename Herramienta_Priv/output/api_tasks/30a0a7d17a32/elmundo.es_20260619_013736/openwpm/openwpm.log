@@ -1,0 +1,16 @@
+2026-06-19 01:37:40,197 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2671963081: Launching browser...
+2026-06-19 01:37:40,200 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2671963081: Spawn attempt 0 
+2026-06-19 01:37:40,203 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for TaskManager
+2026-06-19 01:37:40,215 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 2671963081: Saved extension config file to: /tmp/firefox_profile_61xojit5/browser_params.json
+2026-06-19 01:37:40,230 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: 1781825860229	geckodriver	INFO	Listening on 127.0.0.1:16555
+2026-06-19 01:37:40,262 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: 1781825860262	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/home/pedro/Escritorio ...  "--headless" "--width=1366" "--height=768" "--remote-debugging-port" "13773" "--remote-allow-hosts" "localhost" "-no-remote"
+2026-06-19 01:37:40,313 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: *** You are running in headless mode.
+2026-06-19 01:37:40,474 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: console.warn: services.settings: Ignoring preference override of remote settings server
+2026-06-19 01:37:40,474 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2026-06-19 01:37:41,220 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: 1781825861220	Marionette	INFO	Marionette enabled
+2026-06-19 01:37:41,595 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: console.error: "Warning: unrecognized command line flag" "-width"
+2026-06-19 01:37:41,596 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: console.error: "Warning: unrecognized command line flag" "-height"
+2026-06-19 01:37:41,647 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: 1781825861646	Marionette	INFO	Listening on port 26629
+2026-06-19 01:37:41,672 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: Read port: 26629
+2026-06-19 01:37:41,676 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: WebDriver BiDi listening on ws://127.0.0.1:13773
+2026-06-19 01:37:41,758 - MainProcess[log-interceptor-2671963081]- selenium_firefox     - DEBUG   : BROWSER 2671963081: driver: 1781825861758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session

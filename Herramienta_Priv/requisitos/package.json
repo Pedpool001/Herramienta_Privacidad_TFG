@@ -1,0 +1,9 @@
+{
+  "name": "tfg-requisitos",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

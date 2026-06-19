@@ -1,0 +1,654 @@
+https://www.rtve.es:
+  md_pxl_n:
+    value: p2_6a352556c20da3.77483950
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 3472
+          lineNumber: 1
+          fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+          functionName: Pixel.token.setCookie
+          source: '    at Pixel.token.setCookie (https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:3472)'
+        - columnNumber: 13360
+          lineNumber: 1
+          fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+          source: '    at https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:13360'
+      type: Storage.LocalStorage
+  _cb:
+    value: CW0uEVSCACsCPLbTP
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 86
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:86)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage
+  Conviva.sdkConfig:
+    value:
+      clId: 363617807.762702519.643741982.492055960
+      iid: 1275110553
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 119530
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: I
+          source: '    at I (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:119530)'
+        - columnNumber: 137572
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          source: '    at https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:137572'
+      type: Storage.LocalStorage
+  ConvivaVisualLabellingConfig:
+    value: >-
+      eyJzZW5zb3JWZXJzaW9uIjoianMtMS40LjMiLCJjayI6ImZkYTQ0N2U5ZWJjMmU0MmVlNDU2YTEwZjhhYmE0ZjgxYjZmZjE0ZTUifQ==
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 129933
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          source: '    at https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:129933'
+        - columnNumber: 146740
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: Hn
+          source: '    at Hn (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:146740)'
+      type: Storage.LocalStorage
+  ConvivaRemoteConfig:
+    value:
+      cacheRefreshInterval: 60
+      base64: false
+      lifecycleAutotracking: true
+      exceptionAutotracking: true
+      enablePeriodicHeartbeat: true
+      periodicHeartbeatInterval: 40
+      enc: gzip
+      customEventTrackingConfiguration:
+        blocklist:
+          - Conviva.RemoteConfigApplied
+          - Conviva.TrackerCreated
+          - c3.sdk.custom_event
+          - c3.sdk.init
+          - c3.video.bitrate_switch
+          - c3.video.buffering
+          - c3.video.set_content_info
+        enabled: true
+      networkRequestTrackingConfiguration:
+        blocklist:
+          - time.akamai.com
+          - https://icu.newsroom.bi/ingest.php
+          - geoblock
+          - https://socialize.us1.gigya.com/socialize.getSDKConfig
+          - visualwebsiteoptimizer
+          - setHistoric
+          - dpm.demdex.net
+          - stats.g.doubleclick
+          - img2.rtve.es
+          - >-
+            https://app-analytics-services.com/config/app/1:85731224272:ios:6e79459d0ade5bb0?platform=ios&runtime_version=0&gmp_version=102500
+          - idm2.data.rtve.es
+          - https://creatives.sascdn.com/shim.gif
+          - omtrdc
+          - events.newsroom.bi
+          - https://rtve-spain.2cnt.net
+          - modulos/catalogo
+          - h-cdn.com
+          - region1.analytics.google.com
+          - id5-sync.com
+          - /swf/data/whitelist.xml
+          - dev.visualwebsiteoptimizer.com
+          - http://dpm.demdex.net/id
+          - https://license.theoplayer.com/
+          - tvee.spxl.socy.es
+          - googlesyndication.com
+          - google-analytics.com
+          - api/schedule
+          - doubleclick.net
+          - remote_config.json
+          - https://privacyportal-eu.onetrust.com/request/v1/consentreceipts
+          - api/programas
+          - fullstory
+          - .m3u8
+          - cookielaw.org
+          - .png
+          - pagesense-collect.zoho.eu
+          - .jpeg
+          - chartbeat.com
+          - modulos/capitulos
+          - img.rtve.es
+          - adobedtm
+          - mobileconfig.sascdn.com
+          - modulos/collection
+          - clarity.ms
+          - .jpg
+          - socialize
+          - ultima-noticia.inc
+          - marker.data.rtve.es
+          - getHistoric?
+          - https://secure2.rtve.es/usuarios/setProgress.shtml
+          - compassingest
+          - territorial.inc
+          - https://region1.app-analytics-services.com/a
+          - https://appgw.conviva.com
+          - cws.conviva.com
+          - rcg.conviva.com
+          - /wsg
+          - /ctp
+          - remote_config
+          - pings.conviva.com
+          - .m3u8
+          - .mpd
+          - .ism
+          - .m4
+          - .mp4
+          - .ts
+          - .png
+          - .jpg
+          - .jpeg
+          - .bmp
+          - google-analytics.com
+          - googlesyndication.com
+          - googleapis
+          - stats.g.doubleclick
+          - chartbeat.com
+          - omtrdc.net
+          - app-measurement.com
+          - firebase
+          - nr-data.net
+          - newrelic
+          - bitmovin.com/impression
+          - bitmovin.com/analytics
+          - api.segment.io
+          - youbora
+          - hotjar
+          - mixpanel.com
+          - clevertap
+          - auryc
+          - .aac
+          - .vtt
+          - .googlevideo
+          - webp
+          - appsflyer
+          - facebook
+          - dynatrace
+          - mparticle
+          - npaw
+          - .pdf
+          - bookkeeper
+          - kochava
+          - mp3
+          - marketingcloudapis
+          - demdex
+          - scorecardresearch
+          - lura.live
+          - perimeterx.net
+          - permutive.app
+          - segment.com
+          - vaicore.site
+          - boomtrain
+          - ketchcdn
+          - qualtrics
+          - .svg
+          - amplitude
+          - datadoghq
+          - branch.io
+          - hotjar
+          - splunkcloud
+        collect:
+          - opt:
+              cond:
+                - key: dur
+                  op: '>'
+                  val: 500
+                - key: rsc
+                  op: '!='
+                  val: 200
+              type: or
+            req:
+              cond:
+                - key: path
+                  op: ew
+                  val:
+                    - .m3u8
+                    - .mpd
+              type: or
+          - opt:
+              cond:
+                - key: dur
+                  op: '>'
+                  val: 1000
+                - key: rsc
+                  op: '!='
+                  val: 200
+              type: or
+            req:
+              cond:
+                - key: path
+                  op: ew
+                  val:
+                    - .m4s
+                    - .ts
+                    - .mp3
+                    - .mp4
+              type: or
+        collectattr:
+          - conditions:
+              - targetUrl:
+                  - addFavorites
+            rqb:
+              - notification
+              - program
+          - conditions:
+              - targetUrl:
+                  - rtvedrmstaging
+                  - ztnr.rtve.es
+                  - rtvelivestream
+                  - rtvehlsvod
+                  - rtvelivesrc2
+            rqh:
+              - Cache-Control
+              - User-Agent
+              - Pragma
+              - Origin
+              - Referer
+            rsh:
+              - Age
+              - Cache-Control
+              - Content-Length
+              - Content-Type
+              - Via
+              - X-Backend
+              - X-Cache
+              - X-Cache-Hits
+              - X-Country
+              - X-Served-By
+              - X-Amz-Meta-Mtime
+              - X-Amz-Replication-Status
+              - X-Backend
+              - X-Obj-Status
+              - Location
+              - Last-Modified
+              - Server
+              - X-Origin
+              - X-Server-Id
+          - conditions:
+              - targetUrl:
+                  - accounts.login
+            rsb:
+              - statusCode
+              - errorCode
+              - errorMessage
+              - statusReason
+              - errorDetails
+          - conditions:
+              - targetUrl:
+                  - accounts.isAvailableLoginID
+            rsb:
+              - isAvailable
+          - conditions:
+              - targetUrl:
+                  - createNotification
+                  - expireNotification
+            rqb:
+              - contentId
+              - programId
+              - 0.programId
+              - 0.contentId
+          - conditions:
+              - targetUrl:
+                  - accounts.register
+            rsb:
+              - errorDetails
+              - errorMessage
+          - conditions:
+              - targetUrl:
+                  - voting
+            rqb:
+              - artistId
+              - userId
+              - voteTimestamp
+              - zipCode
+            rqh:
+              - User-Agent
+              - Host
+        enabled: true
+      traceparentconfig:
+        enabled: false
+        pref: 2
+        targetUrl: []
+      metaTagsTrackingConfiguration:
+        enabled: true
+        tags:
+          - condition:
+              - RTVE.url
+            key: property
+            value: content
+          - condition:
+              - RTVE.url
+            key: name
+            value: content
+          - condition:
+              - DC.identifier
+              - RTVE.tipology
+            key: name
+            value: content
+      performanceContextConfig: 2
+      mend: true
+      configurationVersion: 18119
+      catRcLastUpdatedTs: 1781867862478
+      endpoint: https://appgw.conviva.com
+      emitterConfiguration:
+        batching:
+          enabled: true
+          byteLimitPostInKB: 250
+          batchingIntervalInSec: 5
+          urgentEvents:
+            - abg
+            - ae
+      applicationContext: true
+      di:
+        en: false
+        lim: 30
+      clickcc:
+        en: true
+        cssSelectorList: |2
+
+            [role="button"],
+            [data-role="button"],
+            li,
+            [class^="btn"],
+            [class*="click"],
+            [data-click],
+            [data-action],
+            [tabindex]:not([tabindex="-1"]),
+            [onclick],
+            [role="datepicker"],
+            [class*="datepicker"],
+            [class*="date-picker"],
+            [class*="mat-datepicker"],
+            [class*="ant-picker"],
+            [class*="v-date-picker"],
+            [class*="react-datepicker"],
+            [class*="ngx-datepicker"],
+            [data-ng-click],
+            [ng-click],
+            [v-on\:click],
+            [\@click],
+            [data-test-id*="click"],
+            [data-testid*="button"],
+            [class*="-btn"],
+            [class*="-button"],
+            [class*="mat-button"],
+            [class*="v-btn"],
+            [class*="v-icon-button"],
+            [data-listener-count-click],
+            [class*="Button"]
+        uiMode: closest
+      collectionRateLimit:
+        exceptionAutotracking:
+          maxEvents: 20
+          timeWindow: 1000
+          disconnectDuration: 2000
+      pageUrlTrackingConfig: null
+      sessionReplayConfiguration:
+        enabled: false
+        sampling:
+          pct: 100
+        webRecorderConfiguration:
+          maskInputOptions:
+            email: true
+            password: true
+            tel: true
+            text: true
+            textarea: true
+      evtStreamTrackingConfiguration:
+        enabled: false
+        collect: []
+        block: []
+        conditionalCollectAttr: []
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 377949
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: Id
+          source: '    at Id (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:377949)'
+        - columnNumber: 370946
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: window.XMLHttpRequest.onreadystatechange
+          source: '    at window.XMLHttpRequest.onreadystatechange (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:370946)'
+      type: Storage.LocalStorage
+  _chartbeat2:
+    value: .1781867862585.1781867873812.1.CiZxMzCu-QbdBFoANuCYolnQ2g-xx.1
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 86
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:86)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage
+  _vwo_nls_q_864486:
+    value: []
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 224623
+          lineNumber: 2
+          functionName: Object._setItem
+          source: '    at Object._setItem (<anonymous>:2:224623)'
+        - columnNumber: 93834
+          lineNumber: 2
+          functionName: Object.set
+          source: '    at Object.set (<anonymous>:2:93834)'
+      type: Storage.LocalStorage
+  _cb_expires:
+    value: 1815995873817
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 101
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:101)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage
+  _vwo_864486_config:
+    value: {}
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 364126
+          lineNumber: 2
+          functionName: dh
+          source: '    at dh (<anonymous>:2:364126)'
+        - columnNumber: 374665
+          lineNumber: 2
+          source: '    at <anonymous>:2:374665'
+      type: Storage.LocalStorage
+  md_pxl_n_expires:
+    value: expires=Thu, 25 Jun 2026 15:17:43 GMT
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 3512
+          lineNumber: 1
+          fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+          functionName: Pixel.token.setCookie
+          source: '    at Pixel.token.setCookie (https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:3512)'
+        - columnNumber: 13360
+          lineNumber: 1
+          fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+          source: '    at https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:13360'
+      type: Storage.LocalStorage
+  convivaOutQueue_CAT_post2:
+    value: []
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 84618
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: 'on'
+          source: '    at on (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:84618)'
+        - columnNumber: 113183
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: Object.enqueueRequest
+          source: '    at Object.enqueueRequest (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:113183)'
+      type: Storage.LocalStorage
+  _cb_svref:
+    value: external
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 86
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:86)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage
+  _chartbeat2_expires:
+    value: 1815995873818
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 101
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:101)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage
+  3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm_gig:
+    value: {}
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 139729
+          lineNumber: 60
+          fileName: >-
+            https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm
+          functionName: t.setItem
+          source: '    at t.setItem (https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm:60:139729)'
+        - columnNumber: 139091
+          lineNumber: 60
+          fileName: >-
+            https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm
+          functionName: e.setObject
+          source: '    at e.setObject (https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm:60:139091)'
+      type: Storage.LocalStorage
+  vwoSn:
+    value:
+      cu: https%3A%2F%2Fwww.rtve.es%2F
+      r: ''
+      lt: '1781867876'
+      v: 0.1.0
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 224623
+          lineNumber: 2
+          functionName: Object._setItem
+          source: '    at Object._setItem (<anonymous>:2:224623)'
+        - columnNumber: 93834
+          lineNumber: 2
+          functionName: Object.set
+          source: '    at Object.set (<anonymous>:2:93834)'
+      type: Storage.LocalStorage
+  jStorage:
+    value: {}
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 1627
+          lineNumber: 52
+          fileName: https://www.rtve.es/pages/pf-portada/2.22.1/js/vendor/jstorage.js
+          functionName: u
+          source: '    at u (https://www.rtve.es/pages/pf-portada/2.22.1/js/vendor/jstorage.js:52:1627)'
+        - columnNumber: 7868
+          lineNumber: 52
+          fileName: https://www.rtve.es/pages/pf-portada/2.22.1/js/vendor/jstorage.js
+          source: '    at https://www.rtve.es/pages/pf-portada/2.22.1/js/vendor/jstorage.js:52:7868'
+      type: Storage.LocalStorage
+  convivaOutQueue_CAT_post2.expires:
+    value: 1844939880989
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 84570
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: 'on'
+          source: '    at on (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:84570)'
+        - columnNumber: 113183
+          lineNumber: 7
+          fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+          functionName: Object.enqueueRequest
+          source: '    at Object.enqueueRequest (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:113183)'
+      type: Storage.LocalStorage
+  _cb_svref_expires:
+    value: 1781869673838
+    firstPartyStorage: true
+    log:
+      location: https://www.rtve.es/
+      stack:
+        - columnNumber: 101
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: M.create
+          source: '    at M.create (https://static.chartbeat.com/js/chartbeat.js:35:101)'
+        - columnNumber: 505
+          lineNumber: 35
+          fileName: https://static.chartbeat.com/js/chartbeat.js
+          functionName: n.create
+          source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:505)'
+      type: Storage.LocalStorage

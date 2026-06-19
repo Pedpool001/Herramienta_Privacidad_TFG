@@ -48,7 +48,8 @@ services:
       # Directorio de salida — persiste entre reinicios
       - output_data:/app/Herramienta_Priv/output
       # tracker-radar (13 GB): soporte completo para R16 (correspondencia aviso-ejecución)
-      - /home/pedro/Escritorio/UNI/CUARTO/tracker-radar:/tracker-radar:ro
+      # Ruta relativa al directorio del proyecto; tracker-radar debe estar al mismo nivel que tfg/
+      - ../tracker-radar:/tracker-radar:ro
 
 volumes:
   mysql_data:

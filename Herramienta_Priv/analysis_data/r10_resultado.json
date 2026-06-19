@@ -1,0 +1,483 @@
+{
+  "sitio": "rtve.es",
+  "veredicto": "FAILED",
+  "resumen_cookies": {
+    "PASSED": 21,
+    "WARNING": 1,
+    "FAILED": 13
+  },
+  "total_ls_terceros": 9,
+  "cookies": [
+    {
+      "nombre": "s_ecid",
+      "dominio": "rtve.es",
+      "dias": 400,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Advertiser's website",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (400)"
+    },
+    {
+      "nombre": "_cnv_id.b549",
+      "dominio": "www.rtve.es",
+      "dias": 400,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "WARNING",
+      "motivo": "1ª parte excede 13 meses (400 días > 395)"
+    },
+    {
+      "nombre": "AMCV_0D3C2C1653DB264C0A490D4B%40AdobeOrg",
+      "dominio": "rtve.es",
+      "dias": 400,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (400)"
+    },
+    {
+      "nombre": "_cb",
+      "dominio": "rtve.es",
+      "dias": 395,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "FAILED",
+      "motivo": "3ª parte (categoría: desconocida) excede 365 días (395)"
+    },
+    {
+      "nombre": "_chartbeat2",
+      "dominio": "rtve.es",
+      "dias": 395,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Chartbeat",
+      "estado": "FAILED",
+      "motivo": "3ª parte analítica excede 365 días (395)"
+    },
+    {
+      "nombre": "_vwo_uuid_v2",
+      "dominio": "rtve.es",
+      "dias": 366,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "FAILED",
+      "motivo": "3ª parte (categoría: functional) excede 365 días (366)"
+    },
+    {
+      "nombre": "_vwo_uuid",
+      "dominio": "rtve.es",
+      "dias": 365.24,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "FAILED",
+      "motivo": "3ª parte (categoría: functional) excede 365 días (365)"
+    },
+    {
+      "nombre": "r_did",
+      "dominio": "rtve.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "__bs_id",
+      "dominio": "www.rtve.es",
+      "dias": 365,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "ucid",
+      "dominio": "users.rtve.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "SAP",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (365)"
+    },
+    {
+      "nombre": "gmid",
+      "dominio": "users.rtve.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "SAP",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (365)"
+    },
+    {
+      "nombre": "gig_bootstrap_3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm",
+      "dominio": "rtve.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "SAP",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (365)"
+    },
+    {
+      "nombre": "kng_aflow",
+      "dominio": "rtve.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "hasGmid",
+      "dominio": "users.rtve.es",
+      "dias": 183,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "SAP",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (183)"
+    },
+    {
+      "nombre": "OptanonConsent",
+      "dominio": "rtve.es",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "OneTrust",
+      "estado": "PASSED",
+      "motivo": "Cookie CMP dentro de 13 meses (180 días)"
+    },
+    {
+      "nombre": "dpm",
+      "dominio": "dpm.demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "demdex",
+      "dominio": "demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "_vis_opt_s",
+      "dominio": "rtve.es",
+      "dias": 100,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (100 días)"
+    },
+    {
+      "nombre": "_vwo_ds",
+      "dominio": "rtve.es",
+      "dias": 90,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (90 días)"
+    },
+    {
+      "nombre": "s_nr",
+      "dominio": "rtve.es",
+      "dias": 30,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (30 días)"
+    },
+    {
+      "nombre": "_vwo_sn",
+      "dominio": "rtve.es",
+      "dias": 0.02,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "_cnv_ses.b549",
+      "dominio": "www.rtve.es",
+      "dias": 0.02,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "_cb_svref",
+      "dominio": "rtve.es",
+      "dias": 0.02,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "gig_canary",
+      "dominio": "cdns.eu1.gigya.com",
+      "dias": 0.01,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "SAP",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "gig_canary",
+      "dominio": "cdns.gigya.com",
+      "dias": 0.01,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "SAP",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "AMCVS_0D3C2C1653DB264C0A490D4B%40AdobeOrg",
+      "dominio": "rtve.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_vis_opt_test_cookie",
+      "dominio": "rtve.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Visual Website Optimizer",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "s_cc",
+      "dominio": "rtve.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "test",
+      "dominio": "rtve.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Parse.ly",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "gig3pctest",
+      "dominio": "gigya.com",
+      "dias": 0,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "SAP",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "_cbt",
+      "dominio": "rtve.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "everest_g_v2",
+      "dominio": "everesttech.net",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (365)"
+    },
+    {
+      "nombre": "everest_session_v2",
+      "dominio": "everesttech.net",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_dp",
+      "dominio": "demdex.net",
+      "dias": -0.69,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie ya expirada al momento del análisis"
+    },
+    {
+      "nombre": "_chartbeat4",
+      "dominio": "rtve.es",
+      "dias": 0,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Chartbeat",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    }
+  ],
+  "local_storage": [
+    {
+      "nombre": "md_pxl_n",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "_cb",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": {
+        "estado_cookie": "FAILED",
+        "dias_cookie": 395,
+        "motivo_cookie": "3ª parte (categoría: desconocida) excede 365 días (395)"
+      }
+    },
+    {
+      "nombre": "_chartbeat2",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": {
+        "estado_cookie": "FAILED",
+        "dias_cookie": 395,
+        "motivo_cookie": "3ª parte analítica excede 365 días (395)"
+      }
+    },
+    {
+      "nombre": "_cb_expires",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "md_pxl_n_expires",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "_cb_svref",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": {
+        "estado_cookie": "PASSED",
+        "dias_cookie": 0.02,
+        "motivo_cookie": "3ª parte dentro del umbral (0 días)"
+      }
+    },
+    {
+      "nombre": "_chartbeat2_expires",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm_gig",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "_cb_svref_expires",
+      "sitio": "https://www.rtve.es",
+      "script_tercero": "https://static.chartbeat.com/js/chartbeat.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    }
+  ]
+}

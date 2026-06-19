@@ -1,0 +1,140 @@
+https://elpais.com:
+  tgt:tlm:lower:
+    value: -1
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 17985
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: 'n'
+          source: '    at n (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:17985)'
+        - columnNumber: 18263
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: o
+          source: '    at o (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:18263)'
+      type: Storage.LocalStorage
+  prisa_noticias_contrast:
+    value: false
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 882322
+          lineNumber: 1
+          fileName: >-
+            https://static.elpais.com/dist/resources/js/1f670d0ccfe566263a2f550a226cb168/ENP-section-front.js
+          functionName: Ee
+          source: '    at Ee (https://static.elpais.com/dist/resources/js/1f670d0ccfe566263a2f550a226cb168/ENP-section-front.js:1:882322)'
+        - columnNumber: 884267
+          lineNumber: 1
+          fileName: >-
+            https://static.elpais.com/dist/resources/js/1f670d0ccfe566263a2f550a226cb168/ENP-section-front.js
+          functionName: new t
+          source: '    at new t (https://static.elpais.com/dist/resources/js/1f670d0ccfe566263a2f550a226cb168/ENP-section-front.js:1:884267)'
+      type: Storage.LocalStorage
+  didomi_token:
+    value: >-
+      eyJ1c2VyX2lkIjoiMTllZGY4ODQtZjM4Ny02YzlkLWJjYzYtMThmMDRjMWEzYjY0IiwiY3JlYXRlZCI6IjIwMjYtMDYtMTlUMTA6NTg6MzIuODg4WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTE5VDEwOjU4OjMyLjkwN1oiLCJ2ZXJzaW9uIjpudWxsfQ==
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 72470
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+          functionName: s
+          source: '    at s (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:72470)'
+        - columnNumber: 140832
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+          functionName: h
+          source: '    at h (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:140832)'
+      type: Storage.LocalStorage
+  pmsegments:
+    value:
+      '35778804711994244103134851995162846706': {}
+      lastUpdated: 1781866714134
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 1938
+          lineNumber: 2
+          source: '    at <anonymous>:2:1938'
+      type: Storage.LocalStorage
+  No_Consent:
+    value: null
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 3907
+          lineNumber: 5
+          functionName: Object.trackPV
+          source: '    at Object.trackPV (<anonymous>:5:3907)'
+        - columnNumber: 1856
+          lineNumber: 7
+          functionName: Object.trackPV
+          source: '    at Object.trackPV (<anonymous>:7:1856)'
+      type: Storage.LocalStorage
+  tgt:tlm:upper:
+    value: 0
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 17985
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: 'n'
+          source: '    at n (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:17985)'
+        - columnNumber: 18032
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: s
+          source: '    at s (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:18032)'
+      type: Storage.LocalStorage
+  tgt:tlm:0:
+    value:
+      execution: 444.4
+      parsing: 0
+      request:
+        dns: 12.5
+        tls: 140.9
+        timeToFirstByte: 100.4
+        download: 4.4
+        responseSize: 409
+      telemetryServerToken: aEFugE8s4VJvo2lfXA4B7werZgIOFjn1VSS2IFh6ygs=
+      mode: edge
+      features:
+        executePageLoad: true
+        prefetchViewCount: 1
+        decisioningMethod: server-side
+      requestId: 3119702c392a41a98dd1b715ca30390e
+      timestamp: 1781866712046
+    firstPartyStorage: true
+    log:
+      location: https://elpais.com/
+      stack:
+        - columnNumber: 17774
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: Yl
+          source: '    at Yl (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:17774)'
+        - columnNumber: 18058
+          lineNumber: 7
+          fileName: >-
+            https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+          functionName: r
+          source: '    at r (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:7:18058)'
+      type: Storage.LocalStorage

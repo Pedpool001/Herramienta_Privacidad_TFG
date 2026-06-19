@@ -1,0 +1,143 @@
+{
+  "sitio": "webxray",
+  "veredicto": "FAILED",
+  "evaluacion": {
+    "estado": "FAILED",
+    "detalle": "De 17 dominios de terceros, 14 tienen propietario identificado que NO está declarado en la política de privacidad: Google APIs, Google, Adobe Audience Manager, Chartbeat (+7 más). RGPD Art. 13/14 exige informar de todos los destinatarios."
+  },
+  "hallazgos": {
+    "actores_declarados": [],
+    "dominios_analizados": 17,
+    "declarados": [],
+    "no_declarados_identificados": [
+      {
+        "dominio": "chartbeat.com",
+        "nombres_entidad": [
+          "Chartbeat"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "chartbeat.net",
+        "nombres_entidad": [
+          "Chartbeat"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "cloudflare.com",
+        "nombres_entidad": [
+          "Cloudflare"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "conviva.com",
+        "nombres_entidad": [
+          "Conviva"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "cookielaw.org",
+        "nombres_entidad": [
+          "OneTrust LLC",
+          "OneTrust"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "demdex.net",
+        "nombres_entidad": [
+          "Adobe Audience Manager",
+          "Adobe Experience Cloud",
+          "Adobe Systems"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "everesttech.net",
+        "nombres_entidad": [
+          "Adobe Experience Cloud",
+          "Adobe Systems"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "gigya.com",
+        "nombres_entidad": [
+          "Gigya",
+          "SAP"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "google.com",
+        "nombres_entidad": [
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "googleapis.com",
+        "nombres_entidad": [
+          "Google APIs",
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "googletagmanager.com",
+        "nombres_entidad": [
+          "Google Tag Manager",
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "gstatic.com",
+        "nombres_entidad": [
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "onetrust.com",
+        "nombres_entidad": [
+          "OneTrust LLC",
+          "OneTrust"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "visualwebsiteoptimizer.com",
+        "nombres_entidad": [
+          "Visual Website Optimizer",
+          "Wingify"
+        ],
+        "fuente_owner": "webxray"
+      }
+    ],
+    "no_declarados_sin_owner": [
+      {
+        "dominio": "cinfo.es",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "socy.cloud",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "socy.es",
+        "fuente": "ninguna",
+        "nombres": []
+      }
+    ]
+  }
+}

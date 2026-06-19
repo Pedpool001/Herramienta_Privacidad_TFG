@@ -1,0 +1,1275 @@
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:10 GMT
+  url: https://cdn.cxense.com/ari-ci.js
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    ers: 1
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Fri, 19 Jun 2026 00:48:10 GMT
+  url: https://fundingchoicesmessages.google.com/i/pub-2081531155174950?ers=1
+  occurrances: 2
+- filter: '||taboola.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||taboola.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:10 GMT
+  url: https://cdn.taboola.com/webpush/publishers/2025287/taboola-push-sdk.js
+  occurrances: 2
+- filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  query:
+    target_type: notice
+    target: bH6MpnRd
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||privacy-center.org^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:13 GMT
+  url: >-
+    https://sdk.privacy-center.org/178119d0-5586-4a4c-953e-04aaf9ac0994/loader.js?target_type=notice&target=bH6MpnRd
+  occurrances: 4
+- filter: '||uecdn.es/js/pbmu.js'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||uecdn.es/js/pbmu.js
+  timestamp: Fri, 19 Jun 2026 00:48:13 GMT
+  url: https://e00-elmundo.uecdn.es/js/pbmu.js
+  occurrances: 3
+- filter: >-
+    /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
+  listName: easyprivacy.txt
+  query:
+    r: https://www.elmundo.es/
+    amp;s: portada
+    amp;: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter
+        /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
+  timestamp: Fri, 19 Jun 2026 00:48:14 GMT
+  url: >-
+    https://pixelcounter.elmundo.es/pixelcontabilizacion/pixelcontabilizacion.gifctl?r=https%3A%2F%2Fwww%2Eelmundo%2Ees%2F&amp;s=portada&amp;
+  occurrances: 2
+- filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||privacy-center.org^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:15 GMT
+  url: >-
+    https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+  occurrances: 2
+- filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||privacy-center.org^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:16 GMT
+  url: >-
+    https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_google_google_js.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+  occurrances: 2
+- filter: '||privacy-center.org^$third-party'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||privacy-center.org^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:16 GMT
+  url: >-
+    https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/ui-web-es-web.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+  occurrances: 2
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: UA-181957286-1
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Fri, 19 Jun 2026 00:48:20 GMT
+  url: https://www.googletagmanager.com/gtag/js?id=UA-181957286-1
+  occurrances: 10
+- filter: '||sdk.mrf.io/statics/marfeel-sdk.js'
+  listName: easyprivacy.txt
+  query:
+    id: 2298
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||sdk.mrf.io/statics/marfeel-sdk.js
+  timestamp: Fri, 19 Jun 2026 00:48:20 GMT
+  url: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Fri, 19 Jun 2026 00:48:20 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxXaW9bB-qTz92vrSUrsJ0DwiFDAKeFxk0DLJ97oNZa5TsM7lbvs9IkY5odnr7bP9waT_fzy3kWBeF2FpbVtk1-0Rk0uJ5ptoAv17WwdCZUcl5KXYO-vX9FCaWP0etlVsq7jxga5pw==
+  occurrances: 8
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxODMwMTAxLDIwODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxtdW5kby5lcy8iLG51bGwsW1s4LCJrRzVjUThKSEU2TSJdLFs5LCJlcyJdLFsxNiwiWzAsMCwwXSJdLFszNSwiMTc4MTgzMDEwMSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxVnsKci27RncKvgK_k_rdMVIQLKH_O41jFqdo04z6eo3eK3qA4Z6xyko8djkm7GQTvuksHMsP8lmy1QoQk4AZBnq2BW4lKynO_yjWoVevzX6zmFX4CWHMNlzoBiSVvIJGyc9tF6qg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxODMwMTAxLDIwODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxtdW5kby5lcy8iLG51bGwsW1s4LCJrRzVjUThKSEU2TSJdLFs5LCJlcyJdLFsxNiwiWzAsMCwwXSJdLFszNSwiMTc4MTgzMDEwMSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  occurrances: 1
+- filter: /utag.sync.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter /utag.sync.js
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.sync.js
+  occurrances: 2
+- filter: '||permutive.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||permutive.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+  occurrances: 2
+- filter: '||zeotap.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||zeotap.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://content.zeotap.com/sdk/idp.min.js
+  occurrances: 3
+- filter: '||openxcdn.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||openxcdn.net^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://oa.openxcdn.net/esp.js
+  occurrances: 1
+- filter: '||analytics.yahoo.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||analytics.yahoo.com^
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://connectid.analytics.yahoo.com/connectId-gpt.js
+  occurrances: 1
+- filter: '||crwdcntrl.net^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||crwdcntrl.net^
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://tags.crwdcntrl.net/lt/c/16589/sync.min.js
+  occurrances: 1
+- filter: /pubcid.min.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter /pubcid.min.js
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js
+  occurrances: 1
+- filter: '||im-apps.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||im-apps.net^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://dmp.im-apps.net/secure-signal/provider.js
+  occurrances: 1
+- filter: '||criteo.net^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||criteo.net^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://static.criteo.net/js/ld/publishertag.ids.js
+  occurrances: 1
+- filter: '||mgaru.dev^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||mgaru.dev^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:21 GMT
+  url: https://cdn.mgaru.dev/static/myGaruStandalone.js
+  occurrances: 1
+- filter: '||applets.ebxcdn.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||applets.ebxcdn.com^
+  timestamp: Fri, 19 Jun 2026 00:48:22 GMT
+  url: https://applets.ebxcdn.com/ebx.js
+  occurrances: 2
+- filter: '||im-apps.net^$third-party'
+  listName: easyprivacy.txt
+  query:
+    ref: null
+    page: https://www.elmundo.es/
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||im-apps.net^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:23 GMT
+  url: https://sync6.im-apps.net/9001/pid?ref=null&page=https://www.elmundo.es/
+  occurrances: 1
+- filter: '||google-analytics.com^$script,third-party,xmlhttprequest'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google-analytics.com^$script,third-party,xmlhttprequest
+  timestamp: Fri, 19 Jun 2026 00:48:24 GMT
+  url: https://www.google-analytics.com/analytics.js
+  occurrances: 2
+- filter: '||scorecardresearch.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||scorecardresearch.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:24 GMT
+  url: https://sb.scorecardresearch.com/cs/7184769/beacon.js
+  occurrances: 3
+- filter: '||applets.ebxcdn.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||applets.ebxcdn.com^
+  timestamp: Fri, 19 Jun 2026 00:48:25 GMT
+  url: https://applets.ebxcdn.com/applets/www.elmundo.es/scripts.js
+  occurrances: 2
+- filter: '||scorecardresearch.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||scorecardresearch.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:25 GMT
+  url: https://sb.scorecardresearch.com/internal-cs/default/beacon.js
+  occurrances: 3
+- filter: /publisher:getClientId?key=
+  listName: easyprivacy.txt
+  query:
+    key: AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter /publisher:getClientId?key=
+  timestamp: Fri, 19 Jun 2026 00:48:25 GMT
+  url: >-
+    https://ampcid.google.com/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  occurrances: 1
+- filter: '||googleadservices.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    random: 1781830106365
+    cv: 11
+    fst: 1781830106365
+    fmt: 7
+    bg: ffffff
+    guid: 'ON'
+    async: 1
+    en: conversion
+    gtm: 45be66h0v895299419za200xec
+    gcd: 13l3l3l2l1l1
+    dma_cps: a
+    dma: 1
+    tcfd: 10001
+    tag_exp: >-
+      115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247
+    u_w: 800
+    u_h: 600
+    url: https://www.elmundo.es/
+    rcb: 13
+    label: YIiCCMLfrs8DENW41OIo
+    capi: 1
+    gtm_ee: 1
+    frm: 0
+    tiba: EL MUNDO - Diario online líder de información en español
+    did: dYmQxMT
+    gdid: dYmQxMT
+    hn: www.googleadservices.com
+    npa: 1
+    pscdl: noapi
+    auid: 1727220317.178183
+    uaa: ''
+    uab: ''
+    uafvl: ''
+    uamb: 0
+    uam: ''
+    uap: Linux
+    uapv: ''
+    uaw: 0
+    ec_mode: c
+    gcl_ctr: 1~0~0~0
+    data: event=conversion
+    category: acrcp_v1_512
+    em: tv.1
+    emd: tvd.1
+    ept: 5
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||googleadservices.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:26 GMT
+  url: >-
+    https://www.googleadservices.com/pagead/conversion/10944322645/?random=1781830106365&cv=11&fst=1781830106365&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be66h0v895299419za200xec&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tcfd=10001&tag_exp=115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247&u_w=800&u_h=600&url=https%3A%2F%2Fwww.elmundo.es%2F&rcb=13&label=YIiCCMLfrs8DENW41OIo&capi=1&gtm_ee=1&frm=0&tiba=EL%20MUNDO%20-%20Diario%20online%20l%C3%ADder%20de%20informaci%C3%B3n%20en%20espa%C3%B1ol&did=dYmQxMT&gdid=dYmQxMT&hn=www.googleadservices.com&npa=1&pscdl=noapi&auid=1727220317.1781830106&uaa=&uab=&uafvl=&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=c&gcl_ctr=1~0~0~0&data=event%3Dconversion&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5
+  occurrances: 5
+- filter: '||google.com/ccm/'
+  listName: easyprivacy.txt
+  query:
+    rcb: 13
+    frm: 0
+    auid: 1727220317.178183
+    dt: EL MUNDO - Diario online líder de información en español
+    en: page_view
+    dl: https://www.elmundo.es/
+    scrsrc: www.googletagmanager.com
+    rnd: 1601484512.178183
+    navt: 'n'
+    npa: 1
+    did: dYmQxMT
+    gdid: dYmQxMT
+    gtm: 45be66h0v895299419za200xec
+    gcd: 13l3l3l2l1l1
+    dma_cps: a
+    dma: 1
+    tcfd: 10001
+    tag_exp: >-
+      115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247
+    apve: 1
+    apvf: f
+    apvc: 1
+    tids: AW-10944322645
+    tid: AW-10944322645
+    tft: 1781830106495
+    tfd: 16737
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/ccm/
+  timestamp: Fri, 19 Jun 2026 00:48:26 GMT
+  url: >-
+    https://www.google.com/ccm/collect?rcb=13&frm=0&auid=1727220317.1781830106&dt=EL%20MUNDO%20-%20Diario%20online%20l%C3%ADder%20de%20informaci%C3%B3n%20en%20espa%C3%B1ol&en=page_view&dl=https%3A%2F%2Fwww.elmundo.es%2F&scrsrc=www.googletagmanager.com&rnd=1601484512.1781830106&navt=n&npa=1&did=dYmQxMT&gdid=dYmQxMT&gtm=45be66h0v895299419za200xec&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tcfd=10001&tag_exp=115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247&apve=1&apvf=f&apvc=1&tids=AW-10944322645&tid=AW-10944322645&tft=1781830106495&tfd=16737
+  occurrances: 11
+- filter: '||google-analytics.com^$script,third-party,xmlhttprequest'
+  listName: easyprivacy.txt
+  query:
+    v: 2
+    tid: G-96F1LB48N7
+    gtm: 45je66h0v887095520za200
+    _p: 1781830100536
+    gcd: 13l3lPl2l1l1
+    npa: 1
+    dma_cps: a
+    dma: 1
+    tcfd: 10001
+    are: 1
+    cid: 41919067.17818301
+    frm: 0
+    pscdl: noapi
+    rcb: 19
+    sr: 800x600
+    uaa: ''
+    uab: ''
+    uafvl: ''
+    uam: ''
+    uamb: 0
+    uap: Linux
+    uapv: ''
+    uaw: 0
+    ul: es-es
+    _s: 1
+    tag_exp: 115938466~115938468~119027224~119392696~119392704~119456239~119456247
+    sid: 1781830106
+    sct: 1
+    seg: 0
+    dl: https://www.elmundo.es/
+    dt: EL MUNDO - Diario online líder de información en español
+    tfd: 16990
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google-analytics.com^$script,third-party,xmlhttprequest
+  timestamp: Fri, 19 Jun 2026 00:48:26 GMT
+  url: >-
+    https://region1.google-analytics.com/g/collect?v=2&tid=G-96F1LB48N7&gtm=45je66h0v887095520za200&_p=1781830100536&gcd=13l3lPl2l1l1&npa=1&dma_cps=a&dma=1&tcfd=10001&are=1&cid=41919067.1781830106&frm=0&pscdl=noapi&rcb=19&sr=800x600&uaa=&uab=&uafvl=&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=es-es&_s=1&tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247&sid=1781830106&sct=1&seg=0&dl=https%3A%2F%2Fwww.elmundo.es%2F&dt=EL%20MUNDO%20-%20Diario%20online%20l%C3%ADder%20de%20informaci%C3%B3n%20en%20espa%C3%B1ol&tfd=16990
+  occurrances: 3
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:28 GMT
+  url: https://cdn.cxense.com/cx.cce.js
+  occurrances: 2
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: DC-12125487
+    cx: c
+    gtm: 4e66h0
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Fri, 19 Jun 2026 00:48:29 GMT
+  url: >-
+    https://www.googletagmanager.com/gtag/destination?id=DC-12125487&cx=c&gtm=4e66h0
+  occurrances: 3
+- filter: '||events.newsroom.bi^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||events.newsroom.bi^
+  timestamp: Fri, 19 Jun 2026 00:48:29 GMT
+  url: https://events.newsroom.bi/ingest.php
+  occurrances: 9
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CKPD47WKkpUDFVRBpAQd31Mrsg;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=8734208014628;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_P_41ze-rInguX8mZxgH24L6otub94ySwag;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CKPD47WKkpUDFVRBpAQd31Mrsg;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=8734208014628;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_P_41ze-rInguX8mZxgH24L6otub94ySwag;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:29 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CKPD47WKkpUDFVRBpAQd31Mrsg;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=8734208014628;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_P_41ze-rInguX8mZxgH24L6otub94ySwag;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CLGs47WKkpUDFXa7JwIdfA4KEA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=3759573287622;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_pI79W8pswKozk9_-neMteHnNd_bHLHnsIA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CLGs47WKkpUDFXa7JwIdfA4KEA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=3759573287622;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_pI79W8pswKozk9_-neMteHnNd_bHLHnsIA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:29 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CLGs47WKkpUDFXa7JwIdfA4KEA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=3759573287622;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_pI79W8pswKozk9_-neMteHnNd_bHLHnsIA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: /publisher:getClientId?key=
+  listName: easyprivacy.txt
+  query:
+    key: AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter /publisher:getClientId?key=
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: >-
+    https://ampcid.google.es/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  occurrances: 1
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=6079840158084527853;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-KHPans30neAHFQxgyAv3dxrHmsvRjQ4yY_cQ;_dc_time=1781830109;dc_pre=CJzg2rWKkpUDFWUfBgAdZkQeng;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=3759573287622;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_pI79W8pswKozk9_-neMteHnNd_bHLHnsIA;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=12150028560337435654;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-J3g8AOU0-uRf4H9PMwcCNb9cSUIKjnJBFxPw;_dc_time=1781830109;dc_pre=CPb53rWKkpUDFa6dfAYdHS45Ww;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=8734208014628;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830109_P_41ze-rInguX8mZxgH24L6otub94ySwag;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||google.com/pagead/1p-conversion/'
+  listName: easyprivacy.txt
+  query:
+    random: 2766113406
+    cv: 11
+    fst: 1781830106365
+    fmt: 8
+    bg: ffffff
+    guid: 'ON'
+    async: 1
+    en: conversion
+    gtm: 45be66h0v895299419za200xec
+    gcd: 13l3l3l2l1l1
+    dma_cps: a
+    dma: 1
+    tcfd: 10001
+    tag_exp: >-
+      115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247
+    u_w: 800
+    u_h: 600
+    url: https://www.elmundo.es/
+    rcb: 13
+    label: YIiCCMLfrs8DENW41OIo
+    capi: 1
+    gtm_ee: 1
+    frm: 0
+    tiba: EL MUNDO - Diario online líder de información en español
+    did: dYmQxMT
+    gdid: dYmQxMT
+    hn: www.googleadservices.com
+    npa: 1
+    pscdl: noapi
+    auid: 1727220317.178183
+    uaa: ''
+    uab: ''
+    uafvl: ''
+    uamb: 0
+    uam: ''
+    uap: Linux
+    uapv: ''
+    uaw: 0
+    ec_mode: c
+    gcl_ctr: 1~0~0~0
+    data: event=conversion
+    category: acrcp_v1_512
+    em: tv.1
+    emd: tvd.1
+    ept: 5
+    ct_cookie_present: false
+    crd: >-
+      CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQIItMaxAgiT2rECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQIIy-OxAgiu5bECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAkordHJpZ2dlcjtuYXZpZ2F0aW9uLXNvdXJjZSwgbm90LWV2ZW50LXNvdXJjZVoDCgEBYgMKAQM
+    cerd: CgTaib4t
+    fsk: >-
+      ChEI8K7O0QYQ-qiE-cfcwOCcARIsAHmUDeFFqEP7H8VrT3e047iQ9rjvDBshDIAk7KE4lUikunBC5sROkulTZIoaAhwS
+    pscrd: >-
+      IhMI-vOvtIqSlQMV82odCR0dfS5yOhdodHRwczovL3d3dy5lbG11bmRvLmVzL0JYQ2hFSThLN08wUVlRc19URWktWFhpWWpaQVJJdEFNdEdGZlhDbEwzTkZFV1dsSmFsQkc5UDR4VDlzbkhZd0FxUmE5Z3c1eWF3NnF1Vmk3VmhKUnQyX0VCRnoMCAliCAgAEAAYACAA
+    is_vtc: 1
+    cid: >-
+      CAQSTwARCiqBrw1ztHLPWWq0hbkFyjx5LMdN4x8RakC3ECF_OUQuE4eq4v5xmE_nUcculfO1NI6rwUIYmJRhfMA9lSdzt_vDNy-N8tNLNEDULoM
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/pagead/1p-conversion/
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: >-
+    https://www.google.com/pagead/1p-conversion/10944322645/?random=571499031&cv=11&fst=1781830106365&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be66h0v895299419za200xec&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tcfd=10001&tag_exp=115616986~115938466~115938469~118395334~119027224~119392696~119392704~119456239~119456247&u_w=800&u_h=600&url=https%3A%2F%2Fwww.elmundo.es%2F&rcb=13&label=YIiCCMLfrs8DENW41OIo&capi=1&gtm_ee=1&frm=0&tiba=EL%20MUNDO%20-%20Diario%20online%20l%C3%ADder%20de%20informaci%C3%B3n%20en%20espa%C3%B1ol&did=dYmQxMT&gdid=dYmQxMT&hn=www.googleadservices.com&npa=1&pscdl=noapi&auid=1727220317.1781830106&uaa=&uab=&uafvl=&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=c&gcl_ctr=1~0~0~0&data=event%3Dconversion&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQIItMaxAgiT2rECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQIIy-OxAgiu5bECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAkordHJpZ2dlcjtuYXZpZ2F0aW9uLXNvdXJjZSwgbm90LWV2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=CgTaib4t&fsk=ChEI8K7O0QYQ-qiE-cfcwOCcARIsAHmUDeFFqEP7H8VrT3e047iQ9rjvDBshDIAk7KE4lUikunBC5sROkulTZIoaAhwS&pscrd=IhMI-vOvtIqSlQMV82odCR0dfS5yOhdodHRwczovL3d3dy5lbG11bmRvLmVzL0JYQ2hFSThLN08wUVlRc19URWktWFhpWWpaQVJJdEFNdEdGZlhDbEwzTkZFV1dsSmFsQkc5UDR4VDlzbkhZd0FxUmE5Z3c1eWF3NnF1Vmk3VmhKUnQyX0VCRnoMCAliCAgAEAAYACAA&is_vtc=1&cid=CAQSTwARCiqBrw1ztHLPWWq0hbkFyjx5LMdN4x8RakC3ECF_OUQuE4eq4v5xmE_nUcculfO1NI6rwUIYmJRhfMA9lSdzt_vDNy-N8tNLNEDULoM&random=2766113406
+  occurrances: 5
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: https://cdn.cxense.com/cx.js
+  occurrances: 2
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: DC-12125487
+    v: 3
+    t: t
+    pid: 1270062946
+    gtm: 45fe66h0v9190796485za200
+    seq: 1
+    exp: 115938466~115938469~119027224~119392696~119392704~119456239~119456247
+    dl: www.elmundo.es/
+    tdp: DC-12125487;190796485;0;3;1
+    frm: 0
+    slo: 27
+    hlo: 40
+    lst: 3
+    pcid: _UA-181957286-1
+    bt: 0
+    ct: 3
+    z: 0
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Fri, 19 Jun 2026 00:48:30 GMT
+  url: >-
+    https://www.googletagmanager.com/td?id=DC-12125487&v=3&t=t&pid=1270062946&gtm=45fe66h0v9190796485za200&seq=1&exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247&dl=www.elmundo.es%2F&tdp=DC-12125487;190796485;0;3;1&frm=0&slo=27&hlo=40&lst=3&pcid=_UA-181957286-1&bt=0&ct=3&z=0
+  occurrances: 3
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12125487.fls.doubleclick.net/activityi;dc_pre=COfkvraKkpUDFfWlNwgdcHcMow;src=12125487;type=elmundo;cat=ue_emhp;rcb=8;ord=9912700836576;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830110_0HqmCx12SLSF0paOTqnSNWiQgLmzR2plkA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12125487.fls.doubleclick.net/activityi;dc_pre=COfkvraKkpUDFfWlNwgdcHcMow;src=12125487;type=elmundo;cat=ue_emhp;rcb=8;ord=9912700836576;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830110_0HqmCx12SLSF0paOTqnSNWiQgLmzR2plkA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:31 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=COfkvraKkpUDFfWlNwgdcHcMow;src=12125487;type=elmundo;cat=ue_emhp;rcb=8;ord=9912700836576;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830110_0HqmCx12SLSF0paOTqnSNWiQgLmzR2plkA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||icu.newsroom.bi/ingest.php'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||icu.newsroom.bi/ingest.php
+  timestamp: Fri, 19 Jun 2026 00:48:31 GMT
+  url: https://icu.newsroom.bi/ingest.php
+  occurrances: 2
+- filter: /fusion/lucid/data/*
+  listName: easyprivacy.txt
+  query:
+    email: ''
+    visitor: ''
+    stored_visitor: ''
+    pnespid: ''
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter /fusion/lucid/data/*
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://api-esp.piano.io/publisher/fusion/lucid/data/hash/585F081C-0BFC-4EE1-9709-1F9360EADF68?email=&visitor=&stored_visitor=&pnespid=
+  occurrances: 4
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CO-l6raKkpUDFfMB-wMdzzkROA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=2601183297044;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830111_LtVIKKvsf-jESgGr9H9TVqT2wgqztNi-6w;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CO-l6raKkpUDFfMB-wMdzzkROA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=2601183297044;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830111_LtVIKKvsf-jESgGr9H9TVqT2wgqztNi-6w;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CO-l6raKkpUDFfMB-wMdzzkROA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=2601183297044;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830111_LtVIKKvsf-jESgGr9H9TVqT2wgqztNi-6w;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query:
+    json:
+      identities:
+        - type: ckp
+          id: mqk7n32smmrdvqru
+    callback: cXJsonpCB1
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22mqk7n32smmrdvqru%22%7D%5D%7D&callback=cXJsonpCB1
+  occurrances: 1
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query:
+    json:
+      context:
+        referrer: ''
+        neighborRemovalKeys:
+          - recs-articleid
+        neighbors:
+          - 6a343966fdddffef4a8b45b5
+          - 6a33d784fdddff1e798b45b7
+          - ''
+          - 6a3413edfc6c839a4d8b456d
+          - 6a340399e85ece797e8b45b4
+          - 6a3390d221efa017188b45c5
+          - 6a3410a821efa0682e8b458e
+          - 6a342346e85ece98488b458f
+          - 6a341a9d21efa054348b4589
+          - 6a33f19021efa03b6e8b458b
+          - 6a342aeee85ece8c428b45a6
+          - 6a15a04bfdddff22668b4580
+          - 6a05973ee4d4d8195c8b4580
+          - 68e8afd2e85ece98518b4580
+          - 68e8af36fc6c833c3b8b4596
+          - 68e8ae74e4d4d8471c8b45cf
+          - 68e8ad4afc6c8305538b4581
+          - 6a340492e85ece2e6d8b45ab
+          - 6a31807de4d4d80d358b45c5
+          - 6a346600fdddffe5448b45cb
+          - 6a3457e221efa03f3d8b458c
+          - 6a3381abe85ece55538b458e
+          - 6a32fcd821efa0d85a8b456d
+          - 6a32f9aae9cf4af14e8b45c2
+          - 6a338a4a21efa0a7728b45a2
+          - 6a3441e3e85ece797e8b45c6
+          - 6a343fe9fdddff94298b45c9
+          - 6a3471b521efa0b9278b4596
+          - 6a341228fdddff41558b45c9
+          - 6a34204221efa063488b4573
+          - 6a33bc3bfc6c83c37c8b45a7
+          - 6a33cb5f21efa03b6e8b4582
+          - 6a33bffbe9cf4acb288b45a3
+          - 6a33e63f21efa0b9278b4579
+          - 6a33f08bfdddffab4d8b45c0
+          - 6a341b4bfc6c83cb798b45af
+          - 6a3414b7e4d4d8ea6f8b459d
+          - 6a2ac6f221efa0cb268b458c
+          - 6a33fb51e9cf4acc4a8b4587
+          - 6a34522fe85ece576a8b45b1
+          - 6a33da22e9cf4a86578b456c
+          - 6a2ffe80e4d4d801168b4588
+          - 6a348572e4d4d8aa398b456f
+          - 6a347f03fdddff9d428b45c7
+          - 5ec3eb95fdddff92018b4596
+          - 69e745f821efa07b648b4597
+          - 6a339fdae9cf4aee4c8b457f
+          - 6a2b94f421efa070708b45a8
+          - 6a1eeee3e9cf4ada738b456a
+          - 6a3409e021efa0d85a8b45a8
+          - 6a34241721efa09c6a8b45ae
+          - 6a347ca121efa03f3d8b4597
+          - 6a33b818e4d4d8ba778b45a1
+          - 6a32b01afc6c831b578b4594
+          - 6a32780fe9cf4a14368b458b
+        categories:
+          testgroup: '26'
+        parameters:
+          - key: userState
+            value: anon
+          - key: testgroup
+            value: '26'
+        autoRefresh: false
+        url: https://www.elmundo.es/
+        browserTimezone: '-120'
+      widgetId: 9cfae19a97853fa9d04476bc16c9e5f0e38474c8
+      user:
+        ids:
+          usi: mqk7n32smmrdvqru
+      prnd: mqk7n32s320fhwqo
+    media: javascript
+    sid: 1140831963102337800
+    widgetId: 9cfae19a97853fa9d04476bc16c9e5f0e38474c8
+    resizeToContentSize: true
+    useSecureUrls: true
+    usi: mqk7n32smmrdvqru
+    rnd: 696185041
+    prnd: mqk7n32s320fhwqo
+    tzo: -120
+    callback: cXJsonpCB2
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://api.cxense.com/public/widget/data?json=%7B%22context%22%3A%7B%22referrer%22%3A%22%22%2C%22neighborRemovalKeys%22%3A%5B%22recs-articleid%22%5D%2C%22neighbors%22%3A%5B%226a343966fdddffef4a8b45b5%22%2C%226a33d784fdddff1e798b45b7%22%2C%22%22%2C%226a3413edfc6c839a4d8b456d%22%2C%226a340399e85ece797e8b45b4%22%2C%226a3390d221efa017188b45c5%22%2C%226a3410a821efa0682e8b458e%22%2C%226a342346e85ece98488b458f%22%2C%226a341a9d21efa054348b4589%22%2C%226a33f19021efa03b6e8b458b%22%2C%226a342aeee85ece8c428b45a6%22%2C%226a15a04bfdddff22668b4580%22%2C%226a05973ee4d4d8195c8b4580%22%2C%2268e8afd2e85ece98518b4580%22%2C%2268e8af36fc6c833c3b8b4596%22%2C%2268e8ae74e4d4d8471c8b45cf%22%2C%2268e8ad4afc6c8305538b4581%22%2C%226a340492e85ece2e6d8b45ab%22%2C%226a31807de4d4d80d358b45c5%22%2C%226a346600fdddffe5448b45cb%22%2C%226a3457e221efa03f3d8b458c%22%2C%226a3381abe85ece55538b458e%22%2C%226a32fcd821efa0d85a8b456d%22%2C%226a32f9aae9cf4af14e8b45c2%22%2C%226a338a4a21efa0a7728b45a2%22%2C%226a3441e3e85ece797e8b45c6%22%2C%226a343fe9fdddff94298b45c9%22%2C%226a3471b521efa0b9278b4596%22%2C%226a341228fdddff41558b45c9%22%2C%226a34204221efa063488b4573%22%2C%226a33bc3bfc6c83c37c8b45a7%22%2C%226a33cb5f21efa03b6e8b4582%22%2C%226a33bffbe9cf4acb288b45a3%22%2C%226a33e63f21efa0b9278b4579%22%2C%226a33f08bfdddffab4d8b45c0%22%2C%226a341b4bfc6c83cb798b45af%22%2C%226a3414b7e4d4d8ea6f8b459d%22%2C%226a2ac6f221efa0cb268b458c%22%2C%226a33fb51e9cf4acc4a8b4587%22%2C%226a34522fe85ece576a8b45b1%22%2C%226a33da22e9cf4a86578b456c%22%2C%226a2ffe80e4d4d801168b4588%22%2C%226a348572e4d4d8aa398b456f%22%2C%226a347f03fdddff9d428b45c7%22%2C%225ec3eb95fdddff92018b4596%22%2C%2269e745f821efa07b648b4597%22%2C%226a339fdae9cf4aee4c8b457f%22%2C%226a2b94f421efa070708b45a8%22%2C%226a1eeee3e9cf4ada738b456a%22%2C%226a3409e021efa0d85a8b45a8%22%2C%226a34241721efa09c6a8b45ae%22%2C%226a347ca121efa03f3d8b4597%22%2C%226a33b818e4d4d8ba778b45a1%22%2C%226a32b01afc6c831b578b4594%22%2C%226a32780fe9cf4a14368b458b%22%5D%2C%22categories%22%3A%7B%22testgroup%22%3A%2226%22%7D%2C%22parameters%22%3A%5B%7B%22key%22%3A%22userState%22%2C%22value%22%3A%22anon%22%7D%2C%7B%22key%22%3A%22testgroup%22%2C%22value%22%3A%2226%22%7D%5D%2C%22autoRefresh%22%3Afalse%2C%22url%22%3A%22https%3A%2F%2Fwww.elmundo.es%2F%22%2C%22browserTimezone%22%3A%22-120%22%7D%2C%22widgetId%22%3A%229cfae19a97853fa9d04476bc16c9e5f0e38474c8%22%2C%22user%22%3A%7B%22ids%22%3A%7B%22usi%22%3A%22mqk7n32smmrdvqru%22%7D%7D%2C%22prnd%22%3A%22mqk7n32s320fhwqo%22%7D&media=javascript&sid=1140831963102337818&widgetId=9cfae19a97853fa9d04476bc16c9e5f0e38474c8&resizeToContentSize=true&useSecureUrls=true&usi=mqk7n32smmrdvqru&rnd=696185041&prnd=mqk7n32s320fhwqo&tzo=-120&callback=cXJsonpCB2
+  occurrances: 4
+- filter: '||cxense.com^'
+  listName: easyprivacy.txt
+  query:
+    ver: 3.4.2
+    typ: pgv
+    rnd: mqk7n32s320fhwqo
+    sid: 1140831963102337800
+    loc: https://www.elmundo.es/
+    new: 1
+    arf: 0
+    ltm: 1781830112030
+    ref: ''
+    tzo: -120
+    wsz: 1680x927
+    res: 800x600
+    dpr: 1
+    col: 24
+    bln: es-ES
+    chs: ISO-8859-15
+    cks: mqk7n60dj53snrls
+    ckp: mqk7n32smmrdvqru
+    glb: ''
+    amo: 1781828639
+    cp_userState: anon
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||cxense.com^
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://comcluster.cxense.com/Repo/rep.gif?ver=3.4.2&typ=pgv&rnd=mqk7n32s320fhwqo&sid=1140831963102337818&loc=https%3A%2F%2Fwww.elmundo.es%2F&new=1&arf=0&ltm=1781830112030&ref=&tzo=-120&wsz=1680x927&res=800x600&dpr=1&col=24&bln=es-ES&chs=ISO-8859-15&cks=mqk7n60dj53snrls&ckp=mqk7n32smmrdvqru&glb=&amo=1781828639&cp_userState=anon
+  occurrances: 2
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:32 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=16155814348715745468;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-KmpubU7PHn1a8l6_f2RzuIBKSY2JTCtzSr0w;_dc_time=1781830110;cid=CAQSXQARCiqBfSTz7ihOAK8Wcr7ZgT8UhoI729GH5c7abE7kqBoQG2D5qbIcej-1e5yBXEZYvFJ-dpLuNAfyWMwtpHb3mqZZEFLxV0N7mS6nvmOKzeCqEuo0JukeIcSGTg;eps=AHas8cD-YiEYQapP-EXUap52XYl242uTzKzdpVgdnYcUgwqfw2QT2yRW6CDmP0J4l0bZvh4HHmv1FuWsUTdM9P58WbkqO-WEhjph8L9gUQRz67V37zX7;dc_pre=COPLt7aKkpUDFQt0QQIdrq0mNw;src=12125487;type=elmundo;cat=ue_emhp;rcb=8;ord=9912700836576;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830110_0HqmCx12SLSF0paOTqnSNWiQgLmzR2plkA;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||piano.io/tracker/'
+  listName: easyprivacy.txt
+  query:
+    story_url: https://www.elmundo.es/
+    visitor: a543yt2lzwc7u8p7
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||piano.io/tracker/
+  timestamp: Fri, 19 Jun 2026 00:48:33 GMT
+  url: >-
+    https://api-esp.piano.io/tracker/lucid/visit/331?story_url=https%3A%2F%2Fwww.elmundo.es%2F&visitor=a543yt2lzwc7u8p7
+  occurrances: 3
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:33 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=14544346836905481109;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-JY2wpb16YKj1CBhdarMOga05RGpUe14xNqyw;_dc_time=1781830111;cid=CAQSXQARCiqBrHrQbydgSwgs5qgCqK1Tdtgx50OUhzU_HDuFYQks56hROGvgDYh5ciYyL1zVNXGwbtksnJPsiK57sLpRIewaEto-VmqmR_ib-spWIfjmUQrFLF_ELGdyjw;eps=AHas8cDzvZLO1CZRTGl41eaOfbo1a6oG3YqUGhUh82LFKVMeQK3DXfQ5l--nD53Kz1maKRyIZfXbekGzfRaryKFwWUHhXlnnEINLza0jpEo1lLExe_6E;dc_pre=CNz957aKkpUDFWA6BgAdJNgOYA;src=12992475;type=visita;cat=cnt_u0;rcb=15;ord=2601183297044;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938468~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830111_LtVIKKvsf-jESgGr9H9TVqT2wgqztNi-6w;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||criteo.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    origin: publishertagids
+    topUrl: www.elmundo.es
+    gdpr: 1
+    gdpr_consent: >-
+      CQmDUEAQmDUEAAHABBENCjFgAAAAAELAAAAAAAAY0gXgA4AGaAZ8A6QCVQF-gMEAaMA48Bz4DtgHcgPPAfaA_YCAwEEQIKARpAj0BIiCSQJKASjAmGBOuCfoJ_AUFAo-BTUCqYFWQKwAVkAraBXcCvoFhALVgW8AuABdcC7QF3gL2AYgAxgBjQAYlABgACDJpSADAAEGTR0AGAAIMmkIAMAAQZNCQAYAAgyaWgAwABBk0AAA.IMmtX_H__bX9v-f736ft0eY1f9_j77uQxBhfJs-4FzLvW_JwX32E7NF36tqYKmRIEu3bBIQNtHJnUTVihaogVrzHMak2c4TtKJ-BkiHMZe29YCF5vm4tj-QKZ5_r_9nd92T_9_dv-3dzy3_1nv3f9_-f1eLyde5-tH_v_bxOb-_If9_7-_4v8_t_rk2_eT1v_9evv7__-_____f__9_f_____v_____-____f______6_________________f_________7d_______gAAA
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||criteo.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:33 GMT
+  url: >-
+    https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=www.elmundo.es&gdpr=1&gdpr_consent=CQmDUEAQmDUEAAHABBENCjFgAAAAAELAAAAAAAAY0gXgA4AGaAZ8A6QCVQF-gMEAaMA48Bz4DtgHcgPPAfaA_YCAwEEQIKARpAj0BIiCSQJKASjAmGBOuCfoJ_AUFAo-BTUCqYFWQKwAVkAraBXcCvoFhALVgW8AuABdcC7QF3gL2AYgAxgBjQAYlABgACDJpSADAAEGTR0AGAAIMmkIAMAAQZNCQAYAAgyaWgAwABBk0AAA.IMmtX_H__bX9v-f736ft0eY1f9_j77uQxBhfJs-4FzLvW_JwX32E7NF36tqYKmRIEu3bBIQNtHJnUTVihaogVrzHMak2c4TtKJ-BkiHMZe29YCF5vm4tj-QKZ5_r_9nd92T_9_dv-3dzy3_1nv3f9_-f1eLyde5-tH_v_bxOb-_If9_7-_4v8_t_rk2_eT1v_9evv7__-_____f__9_f_____v_____-____f______6_________________f_________7d_______gAAA#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22www.elmundo.es%22,%22topUrl%22:%22www.elmundo.es%22,%22version%22:107348,%22origin%22:%22publishertagids%22,%22requestId%22:%220.4618577871225501%22}
+  occurrances: 1
+- filter: $ping,third-party
+  listName: easyprivacy.txt
+  query:
+    aid: wQKkKmsRpu
+    items:
+      - mId: scrollDepthIX4TWNP324DS11
+        eId: EXA9B1HUGW2N
+        eV: 2
+        eeId: 18086hg0d0-000037mtb73lace8llgi0h3k9k
+      - mId: nonSiteAction28H5O9PJDUF015
+        eId: EXA9B1HUGW2N
+        eV: 2
+        eeId: 18086hg0d0-000037mtb73lace8llgi0h3k9k
+    execution_stats_context: >-
+      {kpdx}AAAA4cZr2ev1BgoAEhBtcWs3bjMyc21tcmR2cXJ1GhIAwjMyMGZod3FvIhJ2LSYA8U80ZWlkMGp3bGtmKmVNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDAuAgBzIFNhZmFyaTMA8xU6BggAEgJBTToGCAESAkFEOgYIAhICQ1A6BggDEgJQUjoGCAQIABMFCADQBhICQUQ6BggHEgJETA
+    ts: 1781830114665
+    source: rootTimer662
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  timestamp: Fri, 19 Jun 2026 00:48:34 GMT
+  url: >-
+    https://c2.piano.io/api/v3/composer/logExecutionStats?aid=wQKkKmsRpu&items=%5B%7B%22mId%22%3A%22scrollDepthIX4TWNP324DS11%22%2C%22eId%22%3A%22EXA9B1HUGW2N%22%2C%22eV%22%3A2%2C%22eeId%22%3A%2218086hg0d0-000037mtb73lace8llgi0h3k9k%22%7D%2C%7B%22mId%22%3A%22nonSiteAction28H5O9PJDUF015%22%2C%22eId%22%3A%22EXA9B1HUGW2N%22%2C%22eV%22%3A2%2C%22eeId%22%3A%2218086hg0d0-000037mtb73lace8llgi0h3k9k%22%7D%5D&execution_stats_context=%7Bkpdx%7DAAAA4cZr2ev1BgoAEhBtcWs3bjMyc21tcmR2cXJ1GhIAwjMyMGZod3FvIhJ2LSYA8U80ZWlkMGp3bGtmKmVNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDAuAgBzIFNhZmFyaTMA8xU6BggAEgJBTToGCAESAkFEOgYIAhICQ1A6BggDEgJQUjoGCAQIABMFCADQBhICQUQ6BggHEgJETA&ts=1781830114665&source=rootTimer662
+  occurrances: 3
+- filter: '||events.newsroom.bi^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||events.newsroom.bi^
+  timestamp: Fri, 19 Jun 2026 00:48:37 GMT
+  url: https://events.newsroom.bi/recirculation/recirculation.php
+  occurrances: 11
+- filter: '||taboola.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||taboola.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:38 GMT
+  url: https://cdn.taboola.com/webpush/tgframe_v2.html
+  occurrances: 2
+- filter: '||taboola.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    cat: webpush
+    platform_type: web
+    v: 4.1
+    pId: 2025287
+    src: unidadeditorial-network-push
+    event: push_promptRolloutUser
+    features: push_prompt
+    rollout_features: push_prompt
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||taboola.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:48:38 GMT
+  url: >-
+    https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.1&pId=2025287&src=unidadeditorial-network-push&event=push_promptRolloutUser&features=push_prompt&rollout_features=push_prompt
+  occurrances: 10
+- filter: /generate_204?$image
+  listName: easyprivacy.txt
+  query:
+    4zxN8w: null
+  stack:
+    - fileName: https://ep2.adtrafficquality.google/sodar/sodar2/254/runner.html
+      source: >-
+        requested from
+        https://ep2.adtrafficquality.google/sodar/sodar2/254/runner.html and
+        matched with easyprivacy.txt filter /generate_204?$image
+  timestamp: Fri, 19 Jun 2026 00:48:38 GMT
+  url: https://ep2.adtrafficquality.google/generate_204?4zxN8w
+  occurrances: 2
+- filter: $ping,third-party
+  listName: easyprivacy.txt
+  query:
+    ver: 3.4.2
+    rnd: mqk7n32s320fhwqo
+    ckp: mqk7n32smmrdvqru
+    loc: https://www.elmundo.es/
+    sid: 1140831963102337800
+    glb: cx:qs4atli4k14ujb5e0t7krr5c:22o2s3s1ge3rx
+    altm: 1781830112030
+    arnd: mqk7n32s320fhwqo
+    aatm: 1
+    axtl: ''
+    awsz: 1680x927
+    amvw: 1680x927
+    ascp: '0x0'
+    aclk: 0
+    ause: 80
+    altc: 548
+    aaid: >-
+      9cfae19a97853fa9d04476bc16c9e5f0e38474c8,ff4b50d25e6824b0bdfb37edb9aba663fbd67be1
+    aavp: 0,
+    aavt: 0x0,
+    aasz: 1680x350,
+    aaps: 0x6941,
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  timestamp: Fri, 19 Jun 2026 00:48:45 GMT
+  url: >-
+    https://comcluster.cxense.com/activity/push?ver=3.4.2&rnd=mqk7n32s320fhwqo&ckp=mqk7n32smmrdvqru&loc=https%3A%2F%2Fwww.elmundo.es%2F&sid=1140831963102337818&glb=cx%3Aqs4atli4k14ujb5e0t7krr5c%3A22o2s3s1ge3rx&altm=1781830112030&arnd=mqk7n32s320fhwqo&aatm=1&axtl=&awsz=1680x927&amvw=1680x927&ascp=0x0&aclk=0&ause=80&altc=548&aaid=9cfae19a97853fa9d04476bc16c9e5f0e38474c8,ff4b50d25e6824b0bdfb37edb9aba663fbd67be1&aavp=0,&aavt=0x0,&aasz=1680x350,&aaps=0x6941,
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Fri, 19 Jun 2026 00:48:50 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxVyrA2LUtQv3UVti_wM7oa08dvFegLKSF5cAw3T-LzMy56QP8e0ThnE2VbvewGEGsxi88ackZxM3tOsRnvGv_NCOEDl4Lt2k9G-lEjQPpM48RikEfkn_K25uFhYaoP9WYMZZGLRBQ==
+  occurrances: 7
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxODMwMTMxLDc3ODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxtdW5kby5lcy8iLG51bGwsW1s4LCJrRzVjUThKSEU2TSJdLFs5LCJlcyJdLFsxNiwiWzAsMCwwXSJdLFszNSwiMTc4MTgzMDEwMSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Fri, 19 Jun 2026 00:48:51 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxU2MHZpRoQCq4tTtOTxih5ah_Pjg3tn9lvr8IgETb7ZMiN8beCLSUathPdicg37yicrdwLS4sgQNBdNNo7hwLhXYHrjq9xx93T1A00fzAQhYLhICBQD2m1uw44kQ7JlSiosc-kZZw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxODMwMTMxLDc3ODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuZWxtdW5kby5lcy8iLG51bGwsW1s4LCJrRzVjUThKSEU2TSJdLFs5LCJlcyJdLFsxNiwiWzAsMCwwXSJdLFszNSwiMTc4MTgzMDEwMSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  occurrances: 1
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CJH1sMGKkpUDFc64JwIdYyQhaA;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=6282922774014;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_F7_1Vz5y7lNdbhEoulLwGr9TRmbYv2OLGg;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CJH1sMGKkpUDFc64JwIdYyQhaA;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=6282922774014;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_F7_1Vz5y7lNdbhEoulLwGr9TRmbYv2OLGg;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:54 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CJH1sMGKkpUDFc64JwIdYyQhaA;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=6282922774014;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_F7_1Vz5y7lNdbhEoulLwGr9TRmbYv2OLGg;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CLGhssGKkpUDFbiOJwIdqlQd2g;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=9864681759995;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_BPPRe94O0Q1-wzKfD48MlZl3jP-k_XuDuQ;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12992475.fls.doubleclick.net/activityi;dc_pre=CLGhssGKkpUDFbiOJwIdqlQd2g;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=9864681759995;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_BPPRe94O0Q1-wzKfD48MlZl3jP-k_XuDuQ;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:54 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CLGhssGKkpUDFbiOJwIdqlQd2g;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=9864681759995;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_BPPRe94O0Q1-wzKfD48MlZl3jP-k_XuDuQ;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||adservice.google.'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: >-
+        https://12125487.fls.doubleclick.net/activityi;dc_pre=CMn0wMGKkpUDFRutNwgdbRcVxQ;src=12125487;type=elmundo;cat=ue_emhp;rcb=4;ord=2385618756615;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_cgT4EtxclBopKr_KfuEo_J85fhOyUsjYWA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+      source: >-
+        requested from
+        https://12125487.fls.doubleclick.net/activityi;dc_pre=CMn0wMGKkpUDFRutNwgdbRcVxQ;src=12125487;type=elmundo;cat=ue_emhp;rcb=4;ord=2385618756615;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_cgT4EtxclBopKr_KfuEo_J85fhOyUsjYWA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        and matched with easyprivacy.txt filter ||adservice.google.
+  timestamp: Fri, 19 Jun 2026 00:48:54 GMT
+  url: >-
+    https://adservice.google.com/ddm/fls/z/dc_pre=CMn0wMGKkpUDFRutNwgdbRcVxQ;src=12125487;type=elmundo;cat=ue_emhp;rcb=4;ord=2385618756615;npa=1;auiddc=*;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_cgT4EtxclBopKr_KfuEo_J85fhOyUsjYWA;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F
+  occurrances: 1
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:55 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=12411857489823828829;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-KmCcmEXdvEga6iA-_OuhLcM3sRiC3SOIaSEA;_dc_time=1781830134;cid=CAQSXQARCiqBPjYxxL0uG9jNiXsoDPbob0ILarrgdBBl0D75lBcgPMct_eJgsGqbf8kw1OymHIABM_bVs3U1amhAHoOVcK3Z1UVRHJZtuVryv_5xzQgixiVyX0ml6q6XzQ;eps=AHas8cAGtQHvRLeXIvvAVr9_foojlWElnKS315s5mDnzZav8wuGfCLe9dfR8_gctjyyPPZPjmCjkuFjzEuvB1tZFZ4BxX6yuBV2C6_QDKmYOVmnfotMl;dc_pre=CMSwsMGKkpUDFQpxQQId_JkiJA;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=6282922774014;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_F7_1Vz5y7lNdbhEoulLwGr9TRmbYv2OLGg;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:55 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=17917681289877982985;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-IwcFrCVkoJQrLSCTqZbvTWJSXWnAalibQQDg;_dc_time=1781830134;cid=CAQSXQARCiqBN0twAVU5pBvxs5eD0gUh1CyC2CJmePIjLgkWft4x9W5JcY4oOkw-UwLXrRGmUOtalplPydbvvfsC2a99qKlD21Po6LNdgB9zl4p_nP9tjAlPi-6_L-gaAg;eps=AHas8cAyete2YG1H9th5qpIMrU37UUoIRhOkZHhSCt9sA08qxa_m9SyiZ01EN8UzzArxf0gMC5OSDihafyTVoAFjRDBugsoURoqbDjRDOHU8Bu8TUxeg;dc_pre=CNf_scGKkpUDFcVzQQIdXWMuzg;src=12992475;type=visita;cat=cnt_u0;rcb=13;ord=9864681759995;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_BPPRe94O0Q1-wzKfD48MlZl3jP-k_XuDuQ;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||google.com/gmp/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/gmp/
+  timestamp: Fri, 19 Jun 2026 00:48:55 GMT
+  url: >-
+    https://www.google.com/gmp/conversion/_dc_unique_id=16694952700340679409;_dc_ptd=ChEI8K7O0QYQsqT8y7X0n9mgARIfADuju-IavoTvFrfLT_gr_Fp5G1L188N3MoLAjxyLeQ;_dc_time=1781830134;cid=CAQSXQARCiqBk0vt8Lw-YTGb-s3UxjjYc3jm88tE-6iUlUaBOIX1AAA1TJGYykrlsyFQ7NP5xxVSFlYAnagQwWFnaLEAT1xNV_SIUaaXGKocb1WlvfwAED4fvzIl32UOpg;eps=AHas8cCmHau-glT6XFogXlGZIws4WTgNuQGYjaXwRGSFvC4VXaGHNQuWHFBGhVuzDjnV9MA0mtmg0ukaHL-VhfDZlqhGUJjJ61DD1CAoq7zrEfyB87fc;dc_pre=CKPawMGKkpUDFSyDfAYd2GgL9A;src=12125487;type=elmundo;cat=ue_emhp;rcb=4;ord=2385618756615;npa=1;auiddc=1727220317.1781830106;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190796485za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781830133_cgT4EtxclBopKr_KfuEo_J85fhOyUsjYWA;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+  occurrances: 1
+- filter: '||google.com/ccm/'
+  listName: easyprivacy.txt
+  query:
+    gtm: 45be66h0v895299419za200xec
+    gcd: 13l3l3l2l1l1
+    dma_cps: a
+    dma: 1
+    tcfd: 10001
+    tag_exp: 115938466~115938469~119027224~119392696~119392704~119456239~119456247
+    rcb: 9
+    did: dYmQxMT
+    gdid: dYmQxMT
+    npa: 1
+    frm: 0
+    pscdl: noapi
+    auid: 1727220317.178183
+    uaa: ''
+    uab: ''
+    uafvl: ''
+    uamb: 0
+    uam: ''
+    uap: Linux
+    uapv: ''
+    uaw: 0
+    ec_mode: c
+    _tu: IA
+    em: tv.1
+    emd: tvd.1
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||google.com/ccm/
+  timestamp: Fri, 19 Jun 2026 00:48:56 GMT
+  url: >-
+    https://www.google.com/ccm/form-data/10944322645?gtm=45be66h0v895299419za200xec&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tcfd=10001&tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247&rcb=9&did=dYmQxMT&gdid=dYmQxMT&npa=1&frm=0&pscdl=noapi&auid=1727220317.1781830106&uaa=&uab=&uafvl=&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=c&_tu=IA&em=tv.1&emd=tvd.1
+  occurrances: 1
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    v: 3
+    t: l
+    pid: 1582767075
+    rv: 66h0
+    tag_exp: 115938466~115938469~119027224~119392696~119392704~119456239~119456247
+    u: AAAAAAAAAAAAACAgCgAAEABA
+    ut: AgAAgA
+    h: Ag
+    gtm: 45be66h0v895299419za200
+    ccid: 95299419
+    cid: AW-10944322645
+    l: >-
+      L5917.B137.E3867.I6622.TC10.HTC0.F2656.C11~gtm.init_consent.S4.V1.E571~gtm.init.S1.V0.E815.TS5ogtadsdatatos.TI15.TE3.TS5ogt1pdatav2.TI7.TE4.TS5ccdadsfirst.TI16.TE0.TS5ccdemform.TI14.TE1.TS5ccdempageview.TI13.TE0.TS5ccdadsconvmarking.TI12.TE0.TS5ccdenablecm.TI11.TE1.TS5ccdadd1pdata.TI10.TE0.TS5ccdadslast.TI9.TE0~gtm.js.S2.V0.E792.TS5rep.TI5.TE0~*.S0.V0.E460~gtm.dom.S1.V0.E442~*.S0.V0.E445~*.S1.V0.E438~*.S1.V0.E400~*.S1.V0.E384~*.S1.V1.E367~*.S1.V1.E390~*.S0.V0.E241~gtm.historyChange-v2.S0.V0.E168~gtm.load.S1.V1.E262~AWCT2621.2835
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Fri, 19 Jun 2026 00:48:57 GMT
+  url: >-
+    https://www.googletagmanager.com/a?v=3&t=l&pid=1582767075&rv=66h0&tag_exp=115938466~115938469~119027224~119392696~119392704~119456239~119456247&u=AAAAAAAAAAAAACAgCgAAEABA&ut=AgAAgA&h=Ag&gtm=45be66h0v895299419za200&ccid=95299419&cid=AW-10944322645&l=L5917.B137.E3867.I6622.TC10.HTC0.F2656.C11~gtm.init_consent.S4.V1.E571~gtm.init.S1.V0.E815.TS5ogtadsdatatos.TI15.TE3.TS5ogt1pdatav2.TI7.TE4.TS5ccdadsfirst.TI16.TE0.TS5ccdemform.TI14.TE1.TS5ccdempageview.TI13.TE0.TS5ccdadsconvmarking.TI12.TE0.TS5ccdenablecm.TI11.TE1.TS5ccdadd1pdata.TI10.TE0.TS5ccdadslast.TI9.TE0~gtm.js.S2.V0.E792.TS5rep.TI5.TE0~*.S0.V0.E460~gtm.dom.S1.V0.E442~*.S0.V0.E445~*.S1.V0.E438~*.S1.V0.E400~*.S1.V0.E384~*.S1.V1.E367~*.S1.V1.E390~*.S0.V0.E241~gtm.historyChange-v2.S0.V0.E168~gtm.load.S1.V1.E262~AWCT2621.2835
+  occurrances: 1
+- filter: '||scorecardresearch.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    c1: 2
+    c2: 7184769
+    cs_it: b1
+    cv: 4.13.1+2508250908
+    ns__t: 1781830146586
+    ns_c: ISO-8859-15
+    cs_cfg: 1101110
+    c7: https://www.elmundo.es/
+    c8: EL MUNDO - Diario online líder de información en español
+    c9: ''
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter ||scorecardresearch.com^$third-party
+  timestamp: Fri, 19 Jun 2026 00:49:06 GMT
+  url: >-
+    https://sb.scorecardresearch.com/b?c1=2&c2=7184769&cs_it=b1&cv=4.13.1%2B2508250908&ns__t=1781830146586&ns_c=ISO-8859-15&cs_cfg=1101110&c7=https%3A%2F%2Fwww.elmundo.es%2F&c8=EL%20MUNDO%20-%20Diario%20online%20l%C3%ADder%20de%20informaci%C3%B3n%20en%20espa%C3%B1ol&c9=
+  occurrances: 1
+- filter: $ping,third-party
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.elmundo.es/
+      source: >-
+        requested from https://www.elmundo.es/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  timestamp: Fri, 19 Jun 2026 00:49:07 GMT
+  url: >-
+    https://adttelemetry2.unidadeditorial.es/adopslang/sites/adOpsLang/pages/metrics/metricsListener.php
+  occurrances: 1

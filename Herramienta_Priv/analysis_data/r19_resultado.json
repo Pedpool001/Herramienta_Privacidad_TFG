@@ -1,0 +1,20 @@
+{
+  "sitio": "Política de privacidad - RTVE.es",
+  "veredicto": "PASSED",
+  "evaluacion": {
+    "estado": "PASSED",
+    "detalle": "DPO designado y datos de contacto publicados (dirección postal). Cumple RGPD Art. 37.7."
+  },
+  "hallazgos": {
+    "mencion_dpo": true,
+    "emails_dpo": [],
+    "emails_otros": [],
+    "direccion_postal": true,
+    "nombre_dpo": null,
+    "fragmentos": [
+      "8558 e inscrita en el Registro Mercantil de Madrid, en el tomo 22.855, folio 141, sección 8, hoja número M-409826, inscripción 1ª.       Contacto del Delegado de protección de datos   Le informamos que la persona Delegado de Protección de Datos de RTVE se encarga de velar y supervisar el cumplimiento de la normativa de protección",
+      "22.855, folio 141, sección 8, hoja número M-409826, inscripción 1ª.       Contacto del Delegado de protección de datos   Le informamos que la persona Delegado de Protección de Datos de RTVE se encarga de velar y supervisar el cumplimiento de la normativa de protección de datos en RTVE, así como su participación y comunicación en",
+      "uestiones relativas a la protecciónde datos personales con los/las interesados/as.   Las/los interesadas/os podrán ponerse en contacto con la persona Delegado de Protección de Datos por lo que respecta a todas estas cuestiones en el correo:  .   Si tiene dudas acerca del uso que hace  RTVE  de sus datos personales, o si quiere ej"
+    ]
+  }
+}

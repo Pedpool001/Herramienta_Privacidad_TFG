@@ -18,7 +18,7 @@ from ._loader import ejecutar_analisis, TFG_DIR, ANALYSIS_DATA
 
 log = logging.getLogger(__name__)
 
-ANALYSIS_SCRIPTS   = TFG_DIR / "privacy-pioneer-web-crawler/analysis_scripts"
+ANALYSIS_SCRIPTS   = TFG_DIR / "Herramienta_Priv/requisitos"
 PLAYWRIGHT_TIMEOUT = 120
 R4_TIMEOUT         = 90
 

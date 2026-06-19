@@ -1,5 +1,6 @@
 import json
 import re
+from pathlib import Path
 
 def auditar_sencillez_r5(ruta_tree):
     print("[*] Iniciando auditoria topologica de eficiencia del R5...")
@@ -107,5 +108,5 @@ def auditar_sencillez_r5(ruta_tree):
 
 if __name__ == "__main__":
     # Este es el main que lanzará la prueba directamente sobre tu archivo
-    archivo_json = '/home/pedro/Escritorio/UNI/CUARTO/PoliGraph/example/accessibility_tree.json'
+    archivo_json = str(Path(__file__).resolve().parent / "PoliGraph/example/accessibility_tree.json")
     auditar_sencillez_r5(archivo_json)

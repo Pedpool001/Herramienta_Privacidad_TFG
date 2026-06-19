@@ -1,0 +1,307 @@
+{
+  "sitio": "rtve.es",
+  "veredicto": "FAILED",
+  "resumen": {
+    "FAILED": 8,
+    "WARNING": 1
+  },
+  "fallos": [
+    {
+      "script": "https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm",
+      "dominio": "gigya.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_gig_localStorage_test",
+            "gigyaCache"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_gig_localStorage_test",
+            "gig_gmid",
+            "gig_ucid",
+            "gmidTicket",
+            "gmidTicketExpiration"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://rtve-cdp-api.cinfo.es/jsclient/v1/rtve-cdp-api-client.js",
+      "dominio": "cinfo.es",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "__storage_test__"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "__storage_test__"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/",
+      "dominio": "socy.es",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "matSessionID",
+            "md_pxl_n",
+            "md_pxl_n_expires",
+            "original_visit"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "md_pxl_n",
+            "md_pxl_n_expires",
+            "original_visit"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.chartbeat.com/js/chartbeat_mab.js",
+      "dominio": "chartbeat.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_cb_ip",
+            "_cb_ls_test",
+            "_t_tests",
+            "_t_tests_expires"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_cb_ls_test"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_cb_ls_test"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.chartbeat.com/js/chartbeat.js",
+      "dominio": "chartbeat.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_SUPERFLY_lockout",
+            "_SUPERFLY_lockout_expires",
+            "_cb",
+            "_cb_expires",
+            "_cb_ip",
+            "_cb_ls_test",
+            "_cb_svref",
+            "_cb_svref_expires",
+            "_chartbeat2",
+            "_chartbeat2_expires",
+            "_chartbeat4",
+            "_chartbeat4_expires",
+            "_t__SUPERFLY_lockout",
+            "_t__SUPERFLY_lockout_expires"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_SUPERFLY_nosample",
+            "_SUPERFLY_nosample_expires",
+            "_cb_ls_test",
+            "_cb_svref",
+            "_cb_svref_expires",
+            "_t__SUPERFLY_nosample",
+            "_t__SUPERFLY_nosample_expires"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_cb",
+            "_cb_expires",
+            "_cb_ls_test",
+            "_cb_svref",
+            "_cb_svref_expires",
+            "_chartbeat2",
+            "_chartbeat2_expires"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService#origin=https://www.rtve.es/&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=getToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867866618_0&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=removeToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867867499_1&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_gig_localStorage_test"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    }
+  ],
+  "avisos": [
+    {
+      "script": "https://cdn.cookielaw.org/consent/1ce517c9-60a0-49ff-8d5d-a8d756cdb3cf/otSDKStub.js",
+      "dominio": "cookielaw.org",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "otPreviewData"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    }
+  ]
+}

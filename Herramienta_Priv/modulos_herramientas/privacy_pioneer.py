@@ -94,13 +94,36 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                 resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}
         return
 
-    # 3. Iniciar REST API
+    # 3. Iniciar REST API (liberar puerto 8080 si lo ocupa un proceso previo)
+    try:
+        subprocess.run(["fuser", "-k", "8080/tcp"], capture_output=True)
+    except FileNotFoundError:
+        subprocess.run(["pkill", "-f", "rest-api/index.js"], capture_output=True, check=False)
+    time.sleep(1)
+
+    # Preparar entorno con display (necesario para Firefox headful en Docker)
+    xvfb_proc = None
+    env = os.environ.copy()
+    if not env.get("DISPLAY"):
+        try:
+            xvfb_proc = subprocess.Popen(
+                ["Xvfb", ":99", "-screen", "0", "1280x720x24", "-ac"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            time.sleep(1)
+            env["DISPLAY"] = ":99"
+            log.info("Xvfb iniciado en :99 para Firefox headful")
+        except FileNotFoundError:
+            log.warning("Xvfb no disponible; Firefox puede fallar sin display")
     log.info("Iniciando REST API de Privacy Pioneer…")
+    api_log_path = output_dir / "rest_api.log"
+    api_log_file = open(api_log_path, "w")
     api_proc = subprocess.Popen(
         ["node", "index.js"],
         cwd=str(REST_API_DIR),
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        stdout=api_log_file,
+        stderr=api_log_file,
     )
     time.sleep(3)  # dar tiempo a que arranque
 
@@ -113,18 +136,54 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
             capture_output=True,
             text=True,
             timeout=CRAWLER_TIMEOUT,
+            env=env,
         )
-        if crawler.returncode != 0:
-            log.warning("Crawler terminó con código %d", crawler.returncode)
+        # Guardar stdout completo para diagnóstico
+        crawler_log = output_dir / "crawler.log"
+        crawler_log.write_text(crawler.stdout or "", encoding="utf-8", errors="replace")
+        log.info("Crawler terminó (código %d). Log completo en %s. Stdout últimas 15 líneas:\n%s",
+                 crawler.returncode, crawler_log,
+                 "\n".join(crawler.stdout.splitlines()[-15:]) if crawler.stdout else "(vacío)")
+        if crawler.stderr:
+            log.warning("Crawler stderr: %s", crawler.stderr[-400:])
+        # Comprobar cuántas filas se insertaron en MySQL
+        try:
+            import mysql.connector
+            _conn = mysql.connector.connect(
+                host=os.getenv("MYSQL_HOST", "localhost"),
+                user=os.getenv("MYSQL_USER", "pioneer"),
+                password=os.getenv("MYSQL_PASSWORD", "abc"),
+                database=os.getenv("MYSQL_DATABASE", "analysis"),
+            )
+            _cur = _conn.cursor()
+            _cur.execute("SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s", (f"%{dominio}%",))
+            _count = _cur.fetchone()[0]
+            _conn.close()
+            log.info("MySQL filas insertadas para %s: %d", dominio, _count)
+        except Exception as _e:
+            log.warning("No se pudo consultar MySQL post-crawl: %s", _e)
     except subprocess.TimeoutExpired:
         log.warning("Crawler superó timeout (%ds)", CRAWLER_TIMEOUT)
     finally:
         # 5. Matar REST API y restaurar CSV
+        if xvfb_proc:
+            try:
+                xvfb_proc.terminate()
+                xvfb_proc.wait(timeout=3)
+            except Exception:
+                pass
         api_proc.terminate()
         try:
             api_proc.wait(timeout=5)
         except subprocess.TimeoutExpired:
             api_proc.kill()
+        api_log_file.close()
+        # Loguear el output de la REST API
+        try:
+            api_log_content = api_log_path.read_text(encoding="utf-8", errors="replace")
+            log.info("REST API log:\n%s", api_log_content[-600:] if api_log_content else "(vacío)")
+        except Exception:
+            pass
 
         csv_sitio.unlink(missing_ok=True)
         if csv_bak.exists():
@@ -150,11 +209,15 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                 if script == "r2_r3_cookies_beacons":
                     # r2/r3: dict con clave "sitios" → {dominio: {veredicto, ...}}
                     sitios  = data.get("sitios", {})
-                    entrada = next(
-                        (v for k, v in sitios.items() if dominio in k or k in dominio),
-                        next(iter(sitios.values()), None)
-                    )
-                    veredicto = entrada.get("veredicto", "ERROR") if entrada else "ERROR"
+                    if data.get("no_evaluable") or not sitios:
+                        veredicto = "NO_EVALUABLE"
+                        entrada   = {"detalle": "No hay datos de Privacy Pioneer para este sitio."}
+                    else:
+                        entrada = next(
+                            (v for k, v in sitios.items() if dominio in k or k in dominio),
+                            next(iter(sitios.values()), None)
+                        )
+                        veredicto = entrada.get("veredicto", "ERROR") if entrada else "NO_EVALUABLE"
                     if "R2" in sel:
                         resultados["R2"] = {"veredicto": veredicto, "detalle": entrada or {}}
                     if "R3" in sel:
@@ -167,7 +230,7 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                     item  = next((d for d in lista if dominio in d.get("sitio", "")), None)
                     if item is None and lista:
                         item = lista[0]
-                    estado    = item.get("estado", "ERROR") if item else "ERROR"
+                    estado    = item.get("estado", "SIN_DATOS") if item else "SIN_DATOS"
                     veredicto = _ESTADO_MAP.get(estado, estado)
                     resultados["R9"] = {"veredicto": veredicto, "detalle": data}
 

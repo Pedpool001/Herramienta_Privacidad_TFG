@@ -1,0 +1,1661 @@
+- name: _ga_96F1LB48N7
+  value: GS2.1.s1781826081$o1$g1$t1781826103$j38$l0$h0
+  domain: elmundo.es
+  path: /
+  expires: 1816386103.934392
+  size: 59
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-23T23:41:43.934Z
+  expiresDays: 400
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 268
+        lineNumber: 426
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0
+        functionName: Iq
+        source: '    at Iq (https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0:426:268)'
+      - columnNumber: 239
+        lineNumber: 428
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0
+        functionName: Jq
+        source: '    at Jq (https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0:428:239)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: xbc
+  value: >-
+    %7Bkpex%7DWOqo8lm4BroWObAwgX8sAVjvbjJ5_3oVz0X36WpeDU62qComR1vrtiOA7O5svnc8y5seOR7UZ8Enb-VOvMWip-n48qAmKXX5xWfgpKrRnbvy6wUNVJZQ7_5MH41gxY7m
+  domain: elmundo.es
+  path: /
+  expires: 1816386102.458252
+  size: 141
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-23T23:41:42.458Z
+  expiresDays: 400
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: __tbc
+  value: '%7Bkpex%7Dx94zcB51BJJdf-Ke4Lc7Oh0JOEClq0q_3_GaB0jtOdBfwb9pUsQ3fKtFPsME8zhs'
+  domain: elmundo.es
+  path: /
+  expires: 1816386102.436263
+  size: 79
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-23T23:41:42.436Z
+  expiresDays: 400
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _ga
+  value: GA1.1.1540844042.1781826081
+  domain: elmundo.es
+  path: /
+  expires: 1816386101.141187
+  size: 30
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-23T23:41:41.141Z
+  expiresDays: 400
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 268
+        lineNumber: 426
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0
+        functionName: Iq
+        source: '    at Iq (https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0:426:268)'
+      - columnNumber: 239
+        lineNumber: 428
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0
+        functionName: Jq
+        source: '    at Jq (https://www.googletagmanager.com/gtag/js?id=G-96F1LB48N7&cx=c&gtm=4e66h0:428:239)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ue_privacyPolicy
+  value: '16'
+  domain: elmundo.es
+  path: /
+  expires: 1816386078.523613
+  size: 18
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-23T23:41:18.523Z
+  expiresDays: 400
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 4492
+        lineNumber: 1
+        fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+        functionName: 'y'
+        source: '    at y (https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:4492)'
+      - columnNumber: 19087
+        lineNumber: 1
+        fileName: https://e00-ue.uecdn.es/cookies/js/policy_v4.js
+        functionName: H.ge
+        source: '    at H.ge (https://e00-ue.uecdn.es/cookies/js/policy_v4.js:1:19087)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: cX_P
+  value: mqk58tohgli4cntp
+  domain: elmundo.es
+  path: /
+  expires: 1815954102
+  size: 20
+  httpOnly: false
+  secure: true
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-18T23:41:42.000Z
+  expiresDays: 395
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1097
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.cxense.com/cx.js:6:1097)'
+      - columnNumber: 52299
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.set
+        source: '    at Object.set (https://cdn.cxense.com/cx.js:6:52299)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _pcus
+  value: >-
+    eyJ1c2VyU2VnbWVudHMiOnsiQ09NUE9TRVIxWCI6eyJzZWdtZW50cyI6WyJMVHM6MTM2ZWRmMGViZDc0OGY2ZWE0YTc4Yzg5NWQ2OGMxZWFiYjQwMjNiMDowIiwiTFRyZWc6NDEwZGFlOTU3Mzk2NWExZmM0ZWUzMzRmZDhhN2E0Y2QyMmY5MGViYToxIiwiTFRyZXR1cm46ZTcxZjEzZWU4MzJlNjBkOGVhZGFlNzdjZWU4YWM2ZjM5NGQ3NmY1YjowIiwiQ1Njb3JlOmUwNGFiY2M5NDY2YmM1NDU0NTMyNGZiNTRjY2NjNzYzZDY5MDNlMjg6bm9fc2NvcmUiLCJSZXZlbnVlT3B0OjYwYjZlOTIzNjc4YTc3NmI5OTViMTc0MWU5Mjc2MTcxNmI0MTgwYmU6MzAiXX19fQ%3D%3D
+  domain: elmundo.es
+  path: /
+  expires: 1815954102
+  size: 433
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-18T23:41:42.000Z
+  expiresDays: 395
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 63041
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: f
+        source: '    at f (https://cdn.tinypass.com/api/tinypass.min.js:1:63041)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _pctx
+  value: >-
+    %7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAEzIEYOAWABgA4AzBwCcANmG8ATIMEB2fh34gAvkA
+  domain: elmundo.es
+  path: /
+  expires: 1815954101
+  size: 104
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-18T23:41:41.000Z
+  expiresDays: 395
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 63041
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: f
+        source: '    at f (https://cdn.tinypass.com/api/tinypass.min.js:1:63041)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _pcid
+  value: '%7B%22browserId%22%3A%22mqk58tohgli4cntp%22%7D'
+  domain: elmundo.es
+  path: /
+  expires: 1815954101
+  size: 51
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-18T23:41:41.000Z
+  expiresDays: 395
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 63041
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: f
+        source: '    at f (https://cdn.tinypass.com/api/tinypass.min.js:1:63041)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: cX_G
+  value: cx%3A2lgsras3nhc8npi6e8uzwnqlw%3A222zzfg2frfdv
+  domain: elmundo.es
+  path: /
+  expires: 1815954088
+  size: 50
+  httpOnly: false
+  secure: true
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-18T23:41:28.000Z
+  expiresDays: 395
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1097
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.cxense.com/cx.js:6:1097)'
+      - columnNumber: 52299
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.set
+        source: '    at Object.set (https://cdn.cxense.com/cx.js:6:52299)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: IDE
+  value: AHWqTUlFtJ26JPzkuX_p4RNhr1ceBA9zU8ex53ZCJRgveu4UjziwBhrVXSQH3j655HE
+  domain: doubleclick.net
+  path: /
+  expires: 1815522085.161307
+  size: 70
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-13T23:41:25.161Z
+  expiresDays: 390
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: >-
+          https://12992475.fls.doubleclick.net/activityi;dc_pre=CN755rb7kZUDFQpxQQId_JkiJA;src=12992475;type=visita;cat=cnt_u0;rcb=10;ord=840818779834;npa=1;auiddc=68802525.1781826083;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115616985~115938466~115938469~118395333~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781826084_3z7ExTuObAAlXJGMSN2g1g9sthEB82RSQw;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://12992475.fls.doubleclick.net/activityi;dc_pre=CN755rb7kZUDFQpxQQId_JkiJA;src=12992475;type=visita;cat=cnt_u0;rcb=10;ord=840818779834;npa=1;auiddc=68802525.1781826083;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=2;tcfd=10001;tag_exp=115616985~115938466~115938469~118395333~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781826084_3z7ExTuObAAlXJGMSN2g1g9sthEB82RSQw;_dc_test=1;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: FCCDCF
+  value: >-
+    %5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%2232168358-51f0-4bc9-884c-19531f6dcf6b%5C%22%2C%5B1781826078%2C744000000%5D%5D%22%5D%5D%5D
+  domain: elmundo.es
+  path: /
+  expires: 1815522078
+  size: 162
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-13T23:41:18.000Z
+  expiresDays: 390
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable
+        functionName: _.wg
+        source: '    at _.wg (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.kG5cQ8JHE6M.es5.O/d=1/rs=AJlcJMyl66spBBEfjxxTrz_NYWVRFrBqLg/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: didomi_token
+  value: >-
+    eyJ1c2VyX2lkIjoiMTllZGQxYzQtNzJiYy02MmUxLWIzM2QtNzk2ZTcxZTNkOTQ5IiwiY3JlYXRlZCI6IjIwMjYtMDYtMThUMjM6NDE6MTguNTA3WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTE4VDIzOjQxOjE4LjUxMFoiLCJ2ZXJzaW9uIjpudWxsfQ==
+  domain: elmundo.es
+  path: /
+  expires: 1813448478
+  size: 200
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T23:41:18.000Z
+  expiresDays: 366
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 240605
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+        functionName: a
+        source: '    at a (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:240605)'
+      - columnNumber: 140767
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js
+        functionName: h
+        source: '    at h (https://sdk.privacy-center.org/sdk/62996fabec7ca7b4f000a52cb25a00027421e1e7/modern/sdk.62996fabec7ca7b4f000a52cb25a00027421e1e7.js:2:140767)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: gckp
+  value: cx:2lgsras3nhc8npi6e8uzwnqlw:222zzfg2frfdv
+  domain: cxense.com
+  path: /
+  expires: 1813362103.199462
+  size: 46
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:43.199Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: >-
+          https://api.cxense.com/public/widget/data?json=%7B%22context%22%3A%7B%22referrer%22%3A%22%22%2C%22neighborRemovalKeys%22%3A%5B%22recs-articleid%22%5D%2C%22neighbors%22%3A%5B%226a343966fdddffef4a8b45b5%22%2C%226a33d784fdddff1e798b45b7%22%2C%22%22%2C%226a3413edfc6c839a4d8b456d%22%2C%226a340399e85ece797e8b45b4%22%2C%226a3390d221efa017188b45c5%22%2C%226a3410a821efa0682e8b458e%22%2C%226a342346e85ece98488b458f%22%2C%226a341a9d21efa054348b4589%22%2C%226a33f19021efa03b6e8b458b%22%2C%226a342aeee85ece8c428b45a6%22%2C%226a15a04bfdddff22668b4580%22%2C%226a05973ee4d4d8195c8b4580%22%2C%2268e8afd2e85ece98518b4580%22%2C%2268e8af36fc6c833c3b8b4596%22%2C%2268e8ae74e4d4d8471c8b45cf%22%2C%2268e8ad4afc6c8305538b4581%22%2C%226a347f03fdddff9d428b45c7%22%2C%226a3421dfe9cf4aee4c8b45a5%22%2C%226a346600fdddffe5448b45cb%22%2C%226a3457e221efa03f3d8b458c%22%2C%226a3381abe85ece55538b458e%22%2C%226a32fcd821efa0d85a8b456d%22%2C%226a32f9aae9cf4af14e8b45c2%22%2C%226a338a4a21efa0a7728b45a2%22%2C%226a3441e3e85ece797e8b45c6%22%2C%226a343fe9fdddff94298b45c9%22%2C%226a3471b521efa0b9278b4596%22%2C%226a341228fdddff41558b45c9%22%2C%226a34204221efa063488b4573%22%2C%226a33bc3bfc6c83c37c8b45a7%22%2C%226a328205e85ece3e618b4576%22%2C%226a315b35e4d4d8ae638b4599%22%2C%226a32c92c21efa01a308b458f%22%2C%226a3275bce85eceeb408b457c%22%2C%226a328e6221efa0c04b8b45bd%22%2C%226a3414b7e4d4d8ea6f8b459d%22%2C%226a2ac6f221efa0cb268b458c%22%2C%226a339fdae9cf4aee4c8b457f%22%2C%226a34156421efa0d45b8b4578%22%2C%226a33da22e9cf4a86578b456c%22%2C%226a347ca121efa03f3d8b4597%22%2C%226a34522fe85ece576a8b45b1%22%2C%226a342560fdddffdd428b4574%22%2C%225ec3eb95fdddff92018b4596%22%2C%2269e745f821efa07b648b4597%22%2C%226a33a7a3e4d4d844598b459e%22%2C%226a21430be85ece30608b4596%22%2C%226a3252fbfc6c837a1e8b45a2%22%2C%226a1eeee3e9cf4ada738b456a%22%2C%226a33a74321efa044518b456e%22%2C%226a33afa0e85ecef40e8b45a8%22%2C%226a33b818e4d4d8ba778b45a1%22%2C%226a32b01afc6c831b578b4594%22%2C%226a32780fe9cf4a14368b458b%22%5D%2C%22categories%22%3A%7B%22testgroup%22%3A%2262%22%7D%2C%22parameters%22%3A%5B%7B%22key%22%3A%22userState%22%2C%22value%22%3A%22anon%22%7D%2C%7B%22key%22%3A%22testgroup%22%2C%22value%22%3A%2262%22%7D%5D%2C%22autoRefresh%22%3Afalse%2C%22url%22%3A%22https%3A%2F%2Fwww.elmundo.es%2F%22%2C%22browserTimezone%22%3A%22-120%22%7D%2C%22widgetId%22%3A%22ff4b50d25e6824b0bdfb37edb9aba663fbd67be1%22%2C%22user%22%3A%7B%22ids%22%3A%7B%22usi%22%3A%22mqk58tohgli4cntp%22%7D%7D%2C%22prnd%22%3A%22mqk596zion0fsfuk%22%7D&media=javascript&sid=1140831963102337818&widgetId=ff4b50d25e6824b0bdfb37edb9aba663fbd67be1&resizeToContentSize=true&useSecureUrls=true&usi=mqk58tohgli4cntp&rnd=1002131570&prnd=mqk596zion0fsfuk&tzo=-120&callback=cXJsonpCB2
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://api.cxense.com/public/widget/data?json=%7B%22context%22%3A%7B%22referrer%22%3A%22%22%2C%22neighborRemovalKeys%22%3A%5B%22recs-articleid%22%5D%2C%22neighbors%22%3A%5B%226a343966fdddffef4a8b45b5%22%2C%226a33d784fdddff1e798b45b7%22%2C%22%22%2C%226a3413edfc6c839a4d8b456d%22%2C%226a340399e85ece797e8b45b4%22%2C%226a3390d221efa017188b45c5%22%2C%226a3410a821efa0682e8b458e%22%2C%226a342346e85ece98488b458f%22%2C%226a341a9d21efa054348b4589%22%2C%226a33f19021efa03b6e8b458b%22%2C%226a342aeee85ece8c428b45a6%22%2C%226a15a04bfdddff22668b4580%22%2C%226a05973ee4d4d8195c8b4580%22%2C%2268e8afd2e85ece98518b4580%22%2C%2268e8af36fc6c833c3b8b4596%22%2C%2268e8ae74e4d4d8471c8b45cf%22%2C%2268e8ad4afc6c8305538b4581%22%2C%226a347f03fdddff9d428b45c7%22%2C%226a3421dfe9cf4aee4c8b45a5%22%2C%226a346600fdddffe5448b45cb%22%2C%226a3457e221efa03f3d8b458c%22%2C%226a3381abe85ece55538b458e%22%2C%226a32fcd821efa0d85a8b456d%22%2C%226a32f9aae9cf4af14e8b45c2%22%2C%226a338a4a21efa0a7728b45a2%22%2C%226a3441e3e85ece797e8b45c6%22%2C%226a343fe9fdddff94298b45c9%22%2C%226a3471b521efa0b9278b4596%22%2C%226a341228fdddff41558b45c9%22%2C%226a34204221efa063488b4573%22%2C%226a33bc3bfc6c83c37c8b45a7%22%2C%226a328205e85ece3e618b4576%22%2C%226a315b35e4d4d8ae638b4599%22%2C%226a32c92c21efa01a308b458f%22%2C%226a3275bce85eceeb408b457c%22%2C%226a328e6221efa0c04b8b45bd%22%2C%226a3414b7e4d4d8ea6f8b459d%22%2C%226a2ac6f221efa0cb268b458c%22%2C%226a339fdae9cf4aee4c8b457f%22%2C%226a34156421efa0d45b8b4578%22%2C%226a33da22e9cf4a86578b456c%22%2C%226a347ca121efa03f3d8b4597%22%2C%226a34522fe85ece576a8b45b1%22%2C%226a342560fdddffdd428b4574%22%2C%225ec3eb95fdddff92018b4596%22%2C%2269e745f821efa07b648b4597%22%2C%226a33a7a3e4d4d844598b459e%22%2C%226a21430be85ece30608b4596%22%2C%226a3252fbfc6c837a1e8b45a2%22%2C%226a1eeee3e9cf4ada738b456a%22%2C%226a33a74321efa044518b456e%22%2C%226a33afa0e85ecef40e8b45a8%22%2C%226a33b818e4d4d8ba778b45a1%22%2C%226a32b01afc6c831b578b4594%22%2C%226a32780fe9cf4a14368b458b%22%5D%2C%22categories%22%3A%7B%22testgroup%22%3A%2262%22%7D%2C%22parameters%22%3A%5B%7B%22key%22%3A%22userState%22%2C%22value%22%3A%22anon%22%7D%2C%7B%22key%22%3A%22testgroup%22%2C%22value%22%3A%2262%22%7D%5D%2C%22autoRefresh%22%3Afalse%2C%22url%22%3A%22https%3A%2F%2Fwww.elmundo.es%2F%22%2C%22browserTimezone%22%3A%22-120%22%7D%2C%22widgetId%22%3A%22ff4b50d25e6824b0bdfb37edb9aba663fbd67be1%22%2C%22user%22%3A%7B%22ids%22%3A%7B%22usi%22%3A%22mqk58tohgli4cntp%22%7D%7D%2C%22prnd%22%3A%22mqk596zion0fsfuk%22%7D&media=javascript&sid=1140831963102337818&widgetId=ff4b50d25e6824b0bdfb37edb9aba663fbd67be1&resizeToContentSize=true&useSecureUrls=true&usi=mqk58tohgli4cntp&rnd=1002131570&prnd=mqk596zion0fsfuk&tzo=-120&callback=cXJsonpCB2
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: pnespsdk_visitor
+  value: e101ddib56b4b2pq
+  domain: www.elmundo.es
+  path: /
+  expires: 1813362103
+  size: 32
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:43.000Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 39603
+        lineNumber: 1
+        fileName: >-
+          https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68
+        functionName: y.setCookie
+        source: '    at y.setCookie (https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68:1:39603)'
+      - columnNumber: 33392
+        lineNumber: 1
+        fileName: >-
+          https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68
+        source: '    at https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68:1:33392'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: user_consent_policy
+  value: no choice
+  domain: elmundo.es
+  path: /
+  expires: 1813362099
+  size: 28
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:39.000Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 106
+        lineNumber: 608
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:608:106)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: utag_main
+  value: >-
+    v_id:019edd1c4c1b0011750339bcd16405065001705d00590$_sn:1$_se:5$_ss:0$_st:1781827899791$ses_id:1781826079809%3Bexp-session$_pn:2%3Bexp-session
+  domain: elmundo.es
+  path: /
+  expires: 1813362099
+  size: 150
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:39.000Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 16
+        lineNumber: 75
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.SC
+        source: '    at Object.SC (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:75:16)'
+      - columnNumber: 86
+        lineNumber: 58
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RDses
+        source: '    at Object.RDses (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:58:86)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: user_consent_gam
+  value: no choice
+  domain: elmundo.es
+  path: /
+  expires: 1813362099
+  size: 25
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:39.000Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 106
+        lineNumber: 610
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:610:106)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: apw_cache
+  value: >-
+    2a612d97-f836-4863-9041-6ad73121edd1.1781826070.4IovWQ.ES.0...0.0..0.wwogNX9jsPXeipcn3NkR5Wq9DmIDo8c72Y4-p8dtLHE
+  domain: elmundo.es
+  path: /
+  expires: 1813362070.67723
+  size: 121
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-18T23:41:10.677Z
+  expiresDays: 365
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.elmundo.es/apw.js?v=3
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.elmundo.es/apw.js?v=3
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: _pubcid
+  value: 9a4d8bda-ffa9-4d16-adac-c03c63d0a221
+  domain: www.elmundo.es
+  path: /
+  expires: 1812930080
+  size: 43
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-13T23:41:20.000Z
+  expiresDays: 360
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 2112
+        lineNumber: 1
+        fileName: >-
+          https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js
+        source: '    at https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js:1:2112'
+      - columnNumber: 2163
+        lineNumber: 1
+        fileName: >-
+          https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js
+        source: '    at https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js:1:2163'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: __Secure-ROLLOUT_TOKEN
+  value: CKK_jpCD2MOTjQEQnsCir_uRlQMYr_iCvPuRlQM%3D
+  domain: youtube.com
+  path: /
+  expires: 1797378096.153231
+  size: 64
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://elmundo.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-15T23:41:36.153Z
+  expiresDays: 180
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: VISITOR_PRIVACY_METADATA
+  value: CgJFUxIiEh4SHAsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicgIA%3D%3D
+  domain: youtube.com
+  path: /
+  expires: 1797378069.349949
+  size: 84
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://elmundo.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-15T23:41:09.349Z
+  expiresDays: 180
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: VISITOR_INFO1_LIVE
+  value: udPQEvma2bw
+  domain: youtube.com
+  path: /
+  expires: 1797378069.349902
+  size: 29
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://elmundo.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-15T23:41:09.349Z
+  expiresDays: 180
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: __Secure-YNID
+  value: >-
+    19.YT=sVGOc-yFOjabfqyvMXP6iynDiJGXQBPXZ3_CKcA2FxGAgUV7_2qKRc7y25_kM9k5enPfpxL4Of5hFqZ7bX16OOn1RopXkoEbg9-6afRzf4OK_CdH73OTYg4vjLu3jJzdkSnh53Y7cCHy2Wr6glMcsQGom6Fj2yTpK8gdjoJbEN-5Kd-tfvnCeSkgytxOx5BTBd-kPwSrO1pYApp6nq6YwtDH71U-gtaA_lm4tVv8pbgvf502noMPNSbi_vv4Wu1wLrJqNRHOKIkQcQYnfYywso5-SJdh6xx4_bZTfevDT94XIK3GKhgCF31M72YeMLLxa-z9LvMSf8BTUXKRnNaFoA
+  domain: youtube.com
+  path: /
+  expires: 1797378069.150227
+  size: 361
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://elmundo.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-15T23:41:09.150Z
+  expiresDays: 180
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: _gcl_au
+  value: 1.1.68802525.1781826083
+  domain: elmundo.es
+  path: /
+  expires: 1789602083
+  size: 30
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-09-16T23:41:23.000Z
+  expiresDays: 90
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 268
+        lineNumber: 335
+        fileName: >-
+          https://www.googletagmanager.com/gtag/destination?id=DC-12125487&cx=c&gtm=4e66h0
+        functionName: Iq
+        source: '    at Iq (https://www.googletagmanager.com/gtag/destination?id=DC-12125487&cx=c&gtm=4e66h0:335:268)'
+      - columnNumber: 239
+        lineNumber: 337
+        fileName: >-
+          https://www.googletagmanager.com/gtag/destination?id=DC-12125487&cx=c&gtm=4e66h0
+        functionName: Jq
+        source: '    at Jq (https://www.googletagmanager.com/gtag/destination?id=DC-12125487&cx=c&gtm=4e66h0:337:239)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: __pat
+  value: '7200000'
+  domain: elmundo.es
+  path: /
+  expires: 1784418102
+  size: 12
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-18T23:41:42.000Z
+  expiresDays: 30
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _pc_ltsvalue
+  value: '0'
+  domain: www.elmundo.es
+  path: /
+  expires: 1782258102
+  size: 13
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-23T23:41:42.000Z
+  expiresDays: 5
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: _pc_ltrvalue
+  value: '1'
+  domain: www.elmundo.es
+  path: /
+  expires: 1782258102
+  size: 13
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-23T23:41:42.000Z
+  expiresDays: 5
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: __pvi
+  value: >-
+    eyJpZCI6InYtbXFrNTh0cXV1cjQ3ZnN1cSIsImRvbWFpbiI6Ii5lbG11bmRvLmVzIiwidGltZSI6MTc4MTgyNjEwMTQyMX0%3D
+  domain: elmundo.es
+  path: /
+  expires: 1781912501
+  size: 103
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T23:41:41.000Z
+  expiresDays: 1
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _gid
+  value: GA1.2.183032770.1781826081
+  domain: elmundo.es
+  path: /
+  expires: 1781912499
+  size: 30
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T23:41:39.000Z
+  expiresDays: 1
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 401
+        lineNumber: 69
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: ma
+        source: '    at ma (https://www.google-analytics.com/analytics.js:69:401)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: AMP_TOKEN
+  value: '%24NOT_FOUND'
+  domain: elmundo.es
+  path: /
+  expires: 1781829687
+  size: 21
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T00:41:27.000Z
+  expiresDays: 0.04
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 117
+        lineNumber: 43
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: xc
+        source: '    at xc (https://www.google-analytics.com/analytics.js:43:117)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ue_consentState
+  value: '%7B%22step%22%3A1%7D'
+  domain: elmundo.es
+  path: /
+  expires: 1781829678.452121
+  size: 35
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T00:41:18.452Z
+  expiresDays: 0.04
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 49247
+        lineNumber: 1
+        fileName: >-
+          https://e00-elmundo.uecdn.es/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js
+        functionName: d.setCookie
+        source: '    at d.setCookie (https://e00-elmundo.uecdn.es/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js:1:49247)'
+      - columnNumber: 148112
+        lineNumber: 1
+        fileName: >-
+          https://e00-elmundo.uecdn.es/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js
+        functionName: z.handleLastConsentlessStep
+        source: '    at z.handleLastConsentlessStep (https://e00-elmundo.uecdn.es/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js:1:148112)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: __cf_bm
+  value: >-
+    2Xq53y3AwIBOiuj2GZgkf21FcqcTCz8UprN8ABYttag-1781826084.4102714-1.0.1.1-XryKX0hhB8a3q3HT3xyHLec6DoSYN4u5L1xG4Ak1OsJSO8UfzBEE0kIHfjVGkz1R20KFBrfrTDusNvudgeX1bcxbEn_woDfUbeSFUuq5MdhA_hwEgG_3PaO33V59_E06
+  domain: piano.io
+  path: /
+  expires: 1781827884.562531
+  size: 206
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T00:11:24.562Z
+  expiresDays: 0.02
+  log:
+    location: >-
+      https://api-esp.piano.io/publisher/fusion/lucid/data/hash/585F081C-0BFC-4EE1-9709-1F9360EADF68?email=&visitor=e101ddib56b4b2pq&stored_visitor=e101ddib56b4b2pq&pnespid=
+    stack:
+      - fileName: >-
+          https://api-esp.piano.io/publisher/fusion/lucid/data/hash/585F081C-0BFC-4EE1-9709-1F9360EADF68?email=&visitor=e101ddib56b4b2pq&stored_visitor=e101ddib56b4b2pq&pnespid=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://api-esp.piano.io/publisher/fusion/lucid/data/hash/585F081C-0BFC-4EE1-9709-1F9360EADF68?email=&visitor=e101ddib56b4b2pq&stored_visitor=e101ddib56b4b2pq&pnespid=
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: counter_page_view
+  value: 2>cont_expires=Fri, 19 Jun 2026 00:11:19 GMT>entryref=
+  domain: elmundo.es
+  path: /
+  expires: 1781827879
+  size: 71
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T00:11:19.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 220
+        lineNumber: 559
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: updateCookie
+        source: '    at updateCookie (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:559:220)'
+      - columnNumber: 2793
+        lineNumber: 552
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:552:2793)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: test_cookie
+  value: CheckForPermission
+  domain: doubleclick.net
+  path: /
+  expires: 1781826985.18806
+  size: 29
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-18T23:56:25.188Z
+  expiresDays: 0.01
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: >-
+          https://ad.doubleclick.net/activity;dc_pre=CIS74bb7kZUDFQOHfAYdTxQwhQ;src=12992475;type=visita;cat=cnt_u0;rcb=10;ord=3464469407067;npa=1;auiddc=68802525.1781826083;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115616985~115938466~115938469~118395333~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781826084_o3PwQSwYI-J30-7i8OKymLkKcSbWR8TpiQ;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://ad.doubleclick.net/activity;dc_pre=CIS74bb7kZUDFQOHfAYdTxQwhQ;src=12992475;type=visita;cat=cnt_u0;rcb=10;ord=3464469407067;npa=1;auiddc=68802525.1781826083;gdid=dYmQxMT;uaa=;uab=;uafvl=;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe66h0v9190320226za200xec;gcd=13l3l3l2l1l1;dma_cps=a;dma=1;dc_fmt=3;tcfd=10001;tag_exp=115616985~115938466~115938469~118395333~119027224~119392696~119392704~119456239~119456247;epver=2;dc_random=1781826084_o3PwQSwYI-J30-7i8OKymLkKcSbWR8TpiQ;~oref=https%3A%2F%2Fwww.elmundo.es%2F?
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: _gat_gtag_UA_181957286_1
+  value: '1'
+  domain: elmundo.es
+  path: /
+  expires: 1781826141
+  size: 25
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-18T23:42:21.000Z
+  expiresDays: 0
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 25
+        lineNumber: 84
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: Qd
+        source: '    at Qd (https://www.google-analytics.com/analytics.js:84:25)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: nvq_hid
+  value: 861e9ef2-b6b3-42c0-886e-2fa65b802349
+  domain: www.elmundo.es
+  path: /
+  expires: 1781826140
+  size: 43
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-18T23:42:20.000Z
+  expiresDays: 0
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 945
+        lineNumber: 1
+        fileName: >-
+          https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js
+        source: '    at https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js:1:945'
+      - columnNumber: 1533
+        lineNumber: 1
+        fileName: >-
+          https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js
+        source: '    at https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js:1:1533'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: YSC
+  value: ffTJREX4dbQ
+  domain: youtube.com
+  path: /
+  expires: -1
+  size: 14
+  httpOnly: true
+  secure: true
+  session: true
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://elmundo.es
+    hasCrossSiteAncestor: true
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: be_product_section_conversion
+  value: portada
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 36
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 16419
+        lineNumber: 414
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:414:16419)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: be_product_subsection_conversion
+  value: ''
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 32
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  firstPartyStorage: false
+- name: be_product_title_conversion
+  value: el mundo  diario online lider de informacion en espanol
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 82
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 17423
+        lineNumber: 414
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:414:17423)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: be_product_journalist_conversion
+  value: '0'
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 33
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1167
+        lineNumber: 450
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:450:1167)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: be_product_content_premium_detail_conversion
+  value: abierto
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 51
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 2572
+        lineNumber: 450
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:450:2572)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: be_product_content_type_conversion
+  value: portada
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 41
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1537
+        lineNumber: 452
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:452:1537)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: client_suscription_packagage_trigger
+  value: '0'
+  domain: elmundo.es
+  path: /
+  expires: -1
+  size: 37
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 2321
+        lineNumber: 414
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:414:2321)'
+      - columnNumber: 24
+        lineNumber: 97
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:97:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: previous_page_time
+  value: '10'
+  domain: www.elmundo.es
+  path: /
+  expires: -1
+  size: 20
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 3474
+        lineNumber: 450
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: setPageTimeCookie
+        source: '    at setPageTimeCookie (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:450:3474)'
+      - columnNumber: 97
+        lineNumber: 451
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js
+        functionName: HTMLDocument.<anonymous>
+        source: '    at HTMLDocument.<anonymous> (https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js:451:97)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: _pc_LTS
+  value: '0'
+  domain: www.elmundo.es
+  path: /
+  expires: -1
+  size: 8
+  httpOnly: false
+  secure: false
+  session: true
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: pnespsdk_ssn
+  value: '%7B%22%24s%22%3A1781826088149%2C%22visitNumber%22%3A2%7D'
+  domain: www.elmundo.es
+  path: /
+  expires: -1
+  size: 68
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 39603
+        lineNumber: 1
+        fileName: >-
+          https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68
+        functionName: y.setCookie
+        source: '    at y.setCookie (https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68:1:39603)'
+      - columnNumber: 32726
+        lineNumber: 1
+        fileName: >-
+          https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68
+        functionName: Object.<anonymous>
+        source: '    at Object.<anonymous> (https://api-esp.piano.io/public/sdk/vx/sdk.js?v=pz.2026.12.9-82baaafd&i=585F081C-0BFC-4EE1-9709-1F9360EADF68:1:32726)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- domain: es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1097
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: t
+        source: '    at t (https://cdn.cxense.com/cx.js:6:1097)'
+      - columnNumber: 1754
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.l [as getTopLevelDomain]
+        source: '    at Object.l [as getTopLevelDomain] (https://cdn.cxense.com/cx.js:6:1754)'
+    type: Cookie.JS
+  name: _cookie_test
+  path: /
+  value: mqk58lbf9oo3pp
+  expiresDays: 0
+  session: false
+  firstPartyStorage: false
+- domain: elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 1097
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: t
+        source: '    at t (https://cdn.cxense.com/cx.js:6:1097)'
+      - columnNumber: 1754
+        lineNumber: 6
+        fileName: https://cdn.cxense.com/cx.js
+        functionName: Object.l [as getTopLevelDomain]
+        source: '    at Object.l [as getTopLevelDomain] (https://cdn.cxense.com/cx.js:6:1754)'
+    type: Cookie.JS
+  name: _cookie_test
+  path: /
+  value: mqk58lbf9oo3pp
+  expiresDays: 0
+  session: false
+  firstPartyStorage: false
+- domain: elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 21392
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298
+        source: '    at https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:21392'
+      - columnNumber: 21364
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298
+        functionName: Ve
+        source: '    at Ve (https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:21364)'
+    type: Cookie.JS
+  name: mrf_cookie
+  path: /
+  value: ok
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 125154
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbmu.js
+        source: '    at https://e00-elmundo.uecdn.es/js/pbmu.js:12:125154'
+      - columnNumber: 123978
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbmu.js
+        functionName: 'y'
+        source: '    at y (https://e00-elmundo.uecdn.es/js/pbmu.js:12:123978)'
+    type: Cookie.JS
+  name: _rdc1781826082539
+  path: /
+  value: writeable
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: 'true'
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 644
+        lineNumber: 112
+        fileName: https://connect.facebook.net/es_ES/bundle/sdk.js/
+        functionName: u
+        source: '    at u (https://connect.facebook.net/es_ES/bundle/sdk.js/:112:644)'
+      - columnNumber: 1001
+        lineNumber: 112
+        fileName: https://connect.facebook.net/es_ES/bundle/sdk.js/
+        functionName: Object.d [as setDomain]
+        source: '    at Object.d [as setDomain] (https://connect.facebook.net/es_ES/bundle/sdk.js/:112:1001)'
+    type: Cookie.JS
+  name: fbm_279395918757488
+  path: /
+  value: base_domain=true
+  expiresDays: 365
+  session: false
+  firstPartyStorage: false
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  name: _pc_footer
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  name: _pc_cintillo
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  name: _pc_bloque
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  name: _pc_botonportada
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 36543
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: Object.t [as set]
+        source: '    at Object.t [as set] (https://cdn.tinypass.com/api/tinypass.min.js:1:36543)'
+      - columnNumber: 78411
+        lineNumber: 1
+        fileName: https://cdn.tinypass.com/api/tinypass.min.js
+        functionName: set
+        source: '    at set (https://cdn.tinypass.com/api/tinypass.min.js:1:78411)'
+    type: Cookie.JS
+  name: _pc_landing
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 24047
+        lineNumber: 1
+        fileName: https://cdn.taboola.com/webpush/publishers/2025287/taboola-push-sdk.js
+        source: '    at https://cdn.taboola.com/webpush/publishers/2025287/taboola-push-sdk.js:1:24047'
+      - columnNumber: 24122
+        lineNumber: 1
+        fileName: https://cdn.taboola.com/webpush/publishers/2025287/taboola-push-sdk.js
+        functionName: Fn
+        source: '    at Fn (https://cdn.taboola.com/webpush/publishers/2025287/taboola-push-sdk.js:1:24122)'
+    type: Cookie.JS
+  name: tblPushTestCookie
+  path: /
+  value: '1'
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: www.elmundo.es
+  log:
+    location: https://www.elmundo.es/
+    stack:
+      - columnNumber: 125154
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbmu.js
+        source: '    at https://e00-elmundo.uecdn.es/js/pbmu.js:12:125154'
+      - columnNumber: 123978
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbmu.js
+        functionName: 'y'
+        source: '    at y (https://e00-elmundo.uecdn.es/js/pbmu.js:12:123978)'
+    type: Cookie.JS
+  name: _rdc1781826099339
+  path: /
+  value: writeable
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true

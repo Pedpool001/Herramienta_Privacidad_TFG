@@ -1,0 +1,61 @@
+{
+  "sitio": "www.rtve.es",
+  "veredicto": "FAILED",
+  "resumen": {
+    "FAILED": 1,
+    "WARNING": 1,
+    "INFO": 3
+  },
+  "fallos": [
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "    at <anonymous>:2:427",
+      "dominio": "",
+      "eventos": [
+        "keyup"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    }
+  ],
+  "avisos": [
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "    at <anonymous>:2:427",
+      "dominio": "",
+      "eventos": [
+        "mousemove",
+        "mouseup"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    }
+  ],
+  "notas": [
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "    at <anonymous>:15:12462",
+      "dominio": "",
+      "eventos": [
+        "scroll"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    },
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://static.chartbeat.com/js/chartbeat.js",
+      "dominio": "chartbeat.com",
+      "eventos": [
+        "scroll"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    },
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://www.googletagmanager.com/gtm.js?id=GTM-XGJJ",
+      "dominio": "googletagmanager.com",
+      "eventos": [
+        "click"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    }
+  ]
+}

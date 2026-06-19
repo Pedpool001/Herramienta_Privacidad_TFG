@@ -1,0 +1,2139 @@
+{
+  "sitio": "Noticias de última hora, programas y series de televisión - RTVE.es",
+  "veredicto": "FAILED",
+  "evaluacion": {
+    "estado": "FAILED",
+    "detalle": "Banner '' detectado pero sin botón de rechazo directo ni acceso al panel de configuración. El usuario no puede retirar el consentimiento desde el banner. Incumple RGPD Art. 7.3."
+  },
+  "hallazgos": {
+    "banner_encontrado": true,
+    "fuente_deteccion": "region/complementary/banner (fallback)",
+    "nombre_banner": "",
+    "aceptar": [],
+    "rechazar": [],
+    "configurar": [],
+    "otros": [
+      {
+        "rol": "link",
+        "nombre": "México República de Corea"
+      },
+      {
+        "rol": "link",
+        "nombre": "Canadá Catar"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mundial 2026 en directo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Copa Mundial de la FIFA 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "Agenda Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Calendario Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Trump Israel"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Tiempo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Play Noticias"
+      },
+      {
+        "rol": "link",
+        "nombre": "arriba"
+      },
+      {
+        "rol": "link",
+        "nombre": "usuarios"
+      },
+      {
+        "rol": "link",
+        "nombre": "búsqueda"
+      },
+      {
+        "rol": "link",
+        "nombre": "Portada de RTVE.es"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mundial 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "El perro andaluz"
+      },
+      {
+        "rol": "link",
+        "nombre": "MasterChef"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Promesa"
+      },
+      {
+        "rol": "link",
+        "nombre": "EN PLAY"
+      },
+      {
+        "rol": "link",
+        "nombre": "Películas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Telediario"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Territorial desplegable"
+      },
+      {
+        "rol": "link",
+        "nombre": "Andalucía"
+      },
+      {
+        "rol": "link",
+        "nombre": "Aragón"
+      },
+      {
+        "rol": "link",
+        "nombre": "Asturias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Canarias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cantabria"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cataluña"
+      },
+      {
+        "rol": "link",
+        "nombre": "Castilla-La Mancha"
+      },
+      {
+        "rol": "link",
+        "nombre": "Castilla y León"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comunitat Valenciana"
+      },
+      {
+        "rol": "link",
+        "nombre": "Extremadura"
+      },
+      {
+        "rol": "link",
+        "nombre": "Galicia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Illes Balears"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Rioja"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comunidad de Madrid"
+      },
+      {
+        "rol": "link",
+        "nombre": "Región de Murcia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Navarra"
+      },
+      {
+        "rol": "link",
+        "nombre": "País Vasco"
+      },
+      {
+        "rol": "link",
+        "nombre": "Archivo"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Catalunya"
+      },
+      {
+        "rol": "link",
+        "nombre": "rtve play en directo Rtve Play en directo"
+      },
+      {
+        "rol": "link",
+        "nombre": "rne audio en directo RNE Audio en directo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Televisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Deportes"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Play"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE Audio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Clan"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Tiempo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Playz"
+      },
+      {
+        "rol": "link",
+        "nombre": "VER MÁS"
+      },
+      {
+        "rol": "button",
+        "nombre": "Cerrar este aviso"
+      },
+      {
+        "rol": "link",
+        "nombre": "EN DIRECTO"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página anterior"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página siguiente"
+      },
+      {
+        "rol": "link",
+        "nombre": "COPA MUNDIAL FIFA 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "Estados Unidos - Australia: lucha por el liderato con dos revelaciones en el escaparate"
+      },
+      {
+        "rol": "link",
+        "nombre": "JAVIER GALÁN"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mundial 2026, en directo: 'Pelea de gallos' en el Grupo D"
+      },
+      {
+        "rol": "link",
+        "nombre": "ÓSCAR LÓPEZ CANENCIA"
+      },
+      {
+        "rol": "link",
+        "nombre": "México logra la clasificación matemática a dieciseisavos gracias a un error del portero surcoreano (1-0)"
+      },
+      {
+        "rol": "link",
+        "nombre": "DIEGO ÁLVAREZ PATILLA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Goleada histórica de Canadá a la Catar de Lopetegui (6-0) en un partido marcado por la grave lesión de Koné"
+      },
+      {
+        "rol": "link",
+        "nombre": "Suiza derruye el muro bosnio en Los Ángeles (4-1) y coge vuelo en el Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sudáfrica logra un merecido empate (1-1) ante una Chequia que no consiguió cerrar el partido"
+      },
+      {
+        "rol": "link",
+        "nombre": "Marcos Llorente, en RNE: \"Quien no apoye a Luis de la Fuente o a la selección, no es español\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Los Ángeles Aztecs, o cómo buscar la esencia del fútbol en el país del 'soccer'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticias"
+      },
+      {
+        "rol": "link",
+        "nombre": "El juez Peinado abre una pieza separada en el caso Begoña Gómez para investigar los contratos del empresario Barrabés"
+      },
+      {
+        "rol": "link",
+        "nombre": "Zapatero, ante el juez por el rescate de Plus Ultra: \"No ejercí ni la más mínima influencia ni nadie me lo pidió\""
+      },
+      {
+        "rol": "link",
+        "nombre": "FÉLIX DONATE MAZCUÑÁN"
+      },
+      {
+        "rol": "link",
+        "nombre": "Trump promete un acuerdo nuclear con Irán mejor que el de Obama, aunque de momento Teherán mantiene su programa"
+      },
+      {
+        "rol": "link",
+        "nombre": "SUSANA SAMHAN"
+      },
+      {
+        "rol": "link",
+        "nombre": "Análisis | El disgusto de Israel por el acuerdo con Irán"
+      },
+      {
+        "rol": "link",
+        "nombre": "Israel deja varios muertos en ataques al Líbano mientras se suspende la cumbre entre EE.UU. e Irán en Suiza"
+      },
+      {
+        "rol": "link",
+        "nombre": "Peramato rechaza valorar las reuniones de la trama Leire con excargos de la Fiscalía al estar en curso los procedimientos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Llega la primera ola de calor del año: superaremos los 40°C este fin de semana"
+      },
+      {
+        "rol": "link",
+        "nombre": "El rey Felipe VI y la princesa de Asturias completan un histórico vuelo conjunto en la Academia de San Javier"
+      },
+      {
+        "rol": "link",
+        "nombre": "SANTIAGO RIESCO PÉREZ"
+      },
+      {
+        "rol": "link",
+        "nombre": "El juez Peinado abre una pieza separada en el caso Begoña Gómez para investigar los contratos del empresario Barrabés. Unable to play media. El juez Peinado abre una pieza separada en el caso Begoña Gómez para investigar los contratos del empresario Barrabés."
+      },
+      {
+        "rol": "link",
+        "nombre": "La justicia francesa confirma que el futbolista Achraf Hakimi será juzgado por una presunta agresión sexual a una mujer en 2023. Unable to play media. La justicia francesa confirma que el futbolista Achraf Hakimi será juzgado por una presunta agresión sexual a una mujer en 2023."
+      },
+      {
+        "rol": "link",
+        "nombre": "Alberto González Amador facturó al Grupo Quirón 4,4 millones de euros entre 2021 y 2023, cuando ya era pareja de Díaz Ayuso. Unable to play media. Alberto González Amador facturó al Grupo Quirón 4,4 millones de euros entre 2021 y 2023, cuando ya era pareja de Díaz Ayuso."
+      },
+      {
+        "rol": "link",
+        "nombre": "El juez Peinado abre una nueva línea de investigación a Begoña Gómez por dos nuevos delitos, prevaricación y fraude a los intereses de la Unión Europea, Unable to play media. El juez Peinado abre una nueva línea de investigación a Begoña Gómez por dos nuevos delitos, prevaricación y fraude a los intereses de la Unión Europea,"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pedro Sánchez mantiene que las elecciones serán en 2027, pero por primera vez plantea adelantarlas si no consigue sacar adelante los Presupuestos. Unable to play media. Pedro Sánchez mantiene que las elecciones serán en 2027, pero por primera vez plantea adelantarlas si no consigue sacar adelante los Presupuestos."
+      },
+      {
+        "rol": "link",
+        "nombre": "La declaración de Zapatero ante el juez por el rescate de Plus Ultra: Unable to play media. La declaración de Zapatero ante el juez por el rescate de Plus Ultra: \"No ejercí ni la más mínima influencia ni nadie me lo pidió\"."
+      },
+      {
+        "rol": "link",
+        "nombre": "#MVAM @almudena.ariza te hace un repaso express de la campaña de las presidenciales en Colombia: Unable to play media. #MVAM @almudena.ariza te hace un repaso express de la campaña de las presidenciales en Colombia:"
+      },
+      {
+        "rol": "link",
+        "nombre": "#YaTDigo te cuenta las noticias del día Unable to play media. #YaTDigo te cuenta las noticias del día"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pedro Sánchez traslada su Unable to play media. Pedro Sánchez traslada su \"solidaridad y empatía\" a las hijas de Zapatero tras su imputación."
+      },
+      {
+        "rol": "link",
+        "nombre": "Irán condena a 74 latigazos a una cantante por emitir un concierto virtual sin velo. Unable to play media. Irán condena a 74 latigazos a una cantante por emitir un concierto virtual sin velo."
+      },
+      {
+        "rol": "link",
+        "nombre": "Todo el mundo habla de la inteligencia artificial, pero casi nadie sabe de dónde viene. Unable to play media. Todo el mundo habla de la inteligencia artificial, pero casi nadie sabe de dónde viene."
+      },
+      {
+        "rol": "link",
+        "nombre": "El rey Felipe VI se reunirá con Claudia Sheinbaum en Ciudad de México durante su viaje al Mundial, según han confirmado fuentes de la Casa Real a RTVE. Unable to play media. El rey Felipe VI se reunirá con Claudia Sheinbaum en Ciudad de México durante su viaje al Mundial, según han confirmado fuentes de la Casa Real a RTVE."
+      },
+      {
+        "rol": "link",
+        "nombre": "Las intensas tormentas de anoche en Ourense dejan importantes destrozos en muchas localidades. Unable to play media. Las intensas tormentas de anoche en Ourense dejan importantes destrozos en muchas localidades."
+      },
+      {
+        "rol": "link",
+        "nombre": "El Banco de España eleva a 750 mil las viviendas que hacen falta para cubrir la actual demanda. Unable to play media. El Banco de España eleva a 750 mil las viviendas que hacen falta para cubrir la actual demanda."
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE accede al informe de la UCO sobre las cuentas de Gónzález Amador, la pareja de Díaz Ayuso. Unable to play media. RTVE accede al informe de la UCO sobre las cuentas de Gónzález Amador, la pareja de Díaz Ayuso."
+      },
+      {
+        "rol": "link",
+        "nombre": "Ucrania ataca la principal refinería de Moscú por segunda vez en esta semana. Unable to play media. Ucrania ataca la principal refinería de Moscú por segunda vez en esta semana."
+      },
+      {
+        "rol": "link",
+        "nombre": "El juez Calama acuerda investigar a las hijas de Zapatero y a su secretaria, Gertrudis Alcázar, en el caso Plus Ultra. Unable to play media. El juez Calama acuerda investigar a las hijas de Zapatero y a su secretaria, Gertrudis Alcázar, en el caso Plus Ultra."
+      },
+      {
+        "rol": "link",
+        "nombre": "15 dotaciones de bomberos continúan trabajando para apagar el incendio declarado en una nave en Villaverde, en Madrid. Unable to play media. 15 dotaciones de bomberos continúan trabajando para apagar el incendio declarado en una nave en Villaverde, en Madrid."
+      },
+      {
+        "rol": "link",
+        "nombre": "Salvamento Marítimo rescata a 70 personas de origen subsahariano que se encontraban a la deriva en la costa de Lanzarote. Unable to play media. Salvamento Marítimo rescata a 70 personas de origen subsahariano que se encontraban a la deriva en la costa de Lanzarote."
+      },
+      {
+        "rol": "link",
+        "nombre": "Trump y Pezeshkian firman a distancia el memorando de paz entre EE. UU. e Irán y el encuentro en Suiza queda en el aire. Unable to play media. Trump y Pezeshkian firman a distancia el memorando de paz entre EE. UU. e Irán y el encuentro en Suiza queda en el aire."
+      },
+      {
+        "rol": "link",
+        "nombre": "Más Noticias"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página anterior"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página siguiente"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Copa Mundial de la FIFA 2026'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Suiza - Bosnia: resumen, jugadas y goles del partido del Mundial 2026' de 'Copa Mundial de la FIFA 2026' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El perro andaluz by Manu Sánchez'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Vanesa Martín y Mercedes Milá' de 'El perro andaluz by Manu Sánchez' / No recomendable para menores de 16 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'La semana'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Polymarket, el futuro en venta' de 'La semana' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Cosas de palacio'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Quién es quién?' de 'Cosas de palacio' / No recomendable para menores de 7 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'En portada'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Elisa: investigación de un crimen' de 'En portada' / No recomendable para menores de 16 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Denominación de origen'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Episodio 1' de 'Denominación de origen' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Cine internacional'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Alma viva' de 'Cine internacional' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 1 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 2 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 3 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 4 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 5 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 6 de 7"
+      },
+      {
+        "rol": "button",
+        "nombre": "página 7 de 7"
+      },
+      {
+        "rol": "link",
+        "nombre": "Directos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Este directo todavía no ha comenzado"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página anterior"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página siguiente"
+      },
+      {
+        "rol": "link",
+        "nombre": "Canales temáticos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reproducir vídeo"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página anterior"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página siguiente"
+      },
+      {
+        "rol": "link",
+        "nombre": "Vanesa Martín, sobre el papel de la mujer en la industria musical: \"Tenemos que seguir conquistando derechos y puestos de poder\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Mercedes Milá: \"Se me abren las carnes cuando los niños de 15 años dicen que con Franco se vivía mejor\""
+      },
+      {
+        "rol": "link",
+        "nombre": "'Alma viva': una historia sobrenatural, pero sobre todo una carta de amor a las abuelas"
+      },
+      {
+        "rol": "link",
+        "nombre": "EE.UU. - Australia, esta noche en La 1 y RTVE Play"
+      },
+      {
+        "rol": "link",
+        "nombre": "Agenda y programación especial del Mundial hoy en RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Vuelve 'Comenta que sales' en Playz, el mejor plan para ver el España - Arabia Saudí"
+      },
+      {
+        "rol": "link",
+        "nombre": "El calendario televisivo de los partidos de España en el Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Participa en nuestras encuestas del Mundial y demuestra que eres el más futbolero"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lorena Vázquez revive uno de los peores momentos de su carrera: \"Hubo un acoso sexual directo delante de mis compañeros\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Anna Castillo: \"Cuando era pequeña le dije a mis padres que de mayor quería ser bisexual\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Revive los mejores momentos de 'MasterChef 14' y calienta motores para la gran final del lunes"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pepe ('MasterChef 14'), tras su bronca con los jueces: \"No me arrepiento, pero no fue mi mejor momento\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Salva Reina, invitado de 'Mi persona favorita': \"Me cuesta desconectar, estoy aprendiendo\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Henar Álvarez recibe a Lolita entre risas y emoción en 'Al cielo con ella'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Zoé Arnao, sobre empezar a rodar siendo una niña: \"Me ha hecho madurar muy rápido\""
+      },
+      {
+        "rol": "link",
+        "nombre": "¿Quién es quién en 'Cosas de palacio'?: los invitados nos enseñan sus imitaciones más divertidas"
+      },
+      {
+        "rol": "link",
+        "nombre": "El obispo acude a 'Valle Salvaje' para poner orden entre Victoria, José Luis y Dámaso"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lope consigue el perdón de Vera en 'La Promesa': mira su romántica reconciliación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Estrenos exclusivos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Estrenos de cine"
+      },
+      {
+        "rol": "link",
+        "nombre": "DEPORTES"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ibrahima Konaté, tercer jugador fichado para el Real Madrid 2026-2027, firma hasta junio de 2030"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Rayo Vallecano confirma a Beñat San José como su nuevo entrenador la temporada que viene"
+      },
+      {
+        "rol": "link",
+        "nombre": "Conoce a los 26 futbolistas de la selección española en el Mundial 2026 jugador por jugador"
+      },
+      {
+        "rol": "link",
+        "nombre": "ÓSCAR LÓPEZ CANENCIA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Así son los estadios del Mundial 2026: del mítico Azteca al moderno estadio de Los Ángeles"
+      },
+      {
+        "rol": "link",
+        "nombre": "RUBÉN HERAS"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Igualdad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Casi el 30% de las mujeres se ha visto forzada alguna vez en una relación sexual"
+      },
+      {
+        "rol": "link",
+        "nombre": "Gloria Fuertes: una exposición reconstruye la vida y el universo literario de la escritora"
+      },
+      {
+        "rol": "link",
+        "nombre": "Objetivo Igualdad, premio Acción por el Cambio de ONU Mujeres España"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sarah Winchester y la casa que nunca terminó"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE Audio reivindica el Lyceum Club Femenino en un especial desde la Feria del Libro de Madrid: \"Querían adelantar el reloj de España\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Eva Sandoval, directora de Radio Clásica: la música puede ayudarnos a vivir mejor"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mujeres jóvenes con escote y camisetas ajustadas: la IA manipula y sexualiza fotos de aficionadas del Mundial 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE EN DIRECTO"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página anterior"
+      },
+      {
+        "rol": "button",
+        "nombre": "Página siguiente"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las mañanas de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Rosana nos presenta 'OMOW', mucho más que música' de 'Las mañanas de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El último tren'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Nos adentramos en el Museo Camilo Sesto de Alcoy' de 'El último tren' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El despertador de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Te sabes la letra de esta canción de Raffaella Carrà?' de 'El despertador de RNE' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El resto es ruido'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La primera noche de un nuevo Sónar' de 'El resto es ruido' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Escapadas'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La Costa de los Dinosaurios' de 'Escapadas' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Programa de mano - Radio Clásica'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'El violonchelo de Pablo Ferrández en Barcelona' de 'Programa de mano - Radio Clásica' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Marca España'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '150 años de la creación de la Institución Libre de Enseñanza' de 'Marca España' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las tardes de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La grandeza de los Fernán Gómez' de 'Las tardes de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Mañana más'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Antonio Arias y el 'Mapa del trance'' de 'Mañana más' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Clásicos populares'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La muchacha de los ojos de esmalte' de 'Clásicos populares' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las mañanas de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver ''Carmen, nada de nadie', dueña de sí misma' de 'Las mañanas de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Especiales RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '\"El Lyceum Club Femenino quería adelantar el reloj de España\"' de 'Especiales RNE' / Clasificación no disponible"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El último tren'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'El día del 'Bloomsday' explicado por Manuel Vilas' de 'El último tren' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El despertador de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Prefieres sol o sombra al tomarte algo en una terraza?' de 'El despertador de RNE' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'ALTAGAMA'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Todo lo que pido es Nina Simone' de 'ALTAGAMA' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'La taberna del puerto'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Citas musicales del 49º Festival de Almagro' de 'La taberna del puerto' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Más cerca'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Vincent Rijmen, padre del algoritmo de seguridad en internet' de 'Más cerca' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Europa abierta'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Conexión con el pasado en las Jornadas Europeas de Arqueología' de 'Europa abierta' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las tardes de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La venganza de Don Mendo... revisitada' de 'Las tardes de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Mañana más'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Çantamarta y 'La esquina + violenta'' de 'Mañana más' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El ojo crítico'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Eva Sandoval: la música puede ayudarnos a vivir mejor' de 'El ojo crítico' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Clásicos populares'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Perdónanos, Chopin' de 'Clásicos populares' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las mañanas de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Al pan, pan: la cátedra y Panadarío' de 'Las mañanas de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El último tren'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Mayores que defienden sus derechos' de 'El último tren' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El despertador de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Nuestro viaje a ninguna parte: de Fernando Ónega a Paulina Rubio' de 'El despertador de RNE' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Turbo 3'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Eels y la filosofía del Monstruo de las Galletas' de 'Turbo 3' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Historia y ciencia por un tubo'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Un brindis por Lepanto' de 'Historia y ciencia por un tubo' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'La taberna del puerto'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La música en 'La Regenta'' de 'La taberna del puerto' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'A golpe de bit'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La enfermedad en el arte: 'Le seré sincero, no pinta bien'' de 'A golpe de bit' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las tardes de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Las tapas, según Missohlaura' de 'Las tardes de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Mañana más'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '3x161 - VÍDEO: Especial Teatro del Barrio con Xoel López y Zahara' de 'Mañana más' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El ojo crítico'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Ian de la Rosa estrena 'Iván & Hadoum' tras triunfar en Berlín' de 'El ojo crítico' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Clásicos populares'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Bach nunca estuvo en Italia' de 'Clásicos populares' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las mañanas de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Lorenzo Santamaría publica '80 aniversario'' de 'Las mañanas de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El último tren'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Miguel Hernández, un poeta en la historia' de 'El último tren' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El despertador de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Y si tu rincón favorito de la ciudad es un parque?' de 'El despertador de RNE' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El sótano'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Paul McCartney y los chicos de Dungeon Lane' de 'El sótano' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El pliegue del tiempo'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Pau Casals en la Casa Blanca' de 'El pliegue del tiempo' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Cuídate con Radio 5'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Diabetes: comprender para controlar' de 'Cuídate con Radio 5' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Cultura con Ñ'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver ''Los diarios de Manhattan', espectáculo musical y narrativo' de 'Cultura con Ñ' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Mañana más'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Lila Downs y el álbum más amoroso de su carrera' de 'Mañana más' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El ojo crítico'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Carlos del Amor, periodista de RTVE, Premio Nacional de Periodismo Cultural 2026' de 'El ojo crítico' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Concurso de Podcast Escolar'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'VÍDEO: Gala de entrega de premios VI edición del Concurso de Podcast Escolar (2026)' de 'Concurso de Podcast Escolar' / Especialmente recomendable para la infancia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Especiales RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Especial centenario del nacimiento de José Manuel Caballero Bonald' de 'Especiales RNE' / Clasificación no disponible"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Clásicos populares'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Tortilla, tapas o habanera?' de 'Clásicos populares' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Las mañanas de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La magia de la Zarzuela llega al Teatro Albéniz' de 'Las mañanas de RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Documentos RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Josefina Aldecoa, escribir y educar contra el olvido' de 'Documentos RNE' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Memoria de delfín'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Tripulantes de cabina: 'guardianes' a miles de pies de altura' de 'Memoria de delfín' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El despertador de RNE'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¿Se pueden usar filtros de belleza en un casting de vídeo?' de 'El despertador de RNE' / No recomendable para menores de 12 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Joyas del archivo sonoro'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Vuelve a disfrutar de la final del Mundial de Sudáfrica 2010 con la retransmisión de RNE' de 'Joyas del archivo sonoro' / Clasificación no disponible"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Joakinovsky y Perrukov'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '¡Maraca fina!' de 'Joakinovsky y Perrukov' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Sólo jazz'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Ellery Eskelin: creatividad contemporánea al cubo' de 'Sólo jazz' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Futuro abierto'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'La salud mental en los jóvenes' de 'Futuro abierto' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Españoles en el exterior'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Españoles en Honduras' de 'Españoles en el exterior' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'El ojo crítico'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Arantxa Echevarría: \"Estoy harta de tener que ser la mejor, también quiero ser mediocre\"' de 'El ojo crítico' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'No es un día cualquiera'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'María Trinidad Herrero: \"Las mujeres hemos estado infraestudiadas e infratratadas\"' de 'No es un día cualquiera' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Crónica de España'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver '1864: el vocabulario del dinero: duros, cuartos... con Álex Herrero' de 'Crónica de España' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Cruce de cables'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Anatomía de un ciberataque: ciberresiliencia, proteger y recuperar' de 'Cruce de cables' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Al margen de la ley'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Antonio Alonso: \"Hay investigaciones con trascendencia política\"' de 'Al margen de la ley' / No recomendable para menores de 18 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Más del programa 'Espacio en blanco'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ver 'Laguna punto 2' de 'Espacio en blanco' / Recomendable para todos los públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio"
+      },
+      {
+        "rol": "link",
+        "nombre": "\"Ayer... y siempre\", tercer y último capítulo de 'Indestructibles: 30 años de La Habitación Roja'"
+      },
+      {
+        "rol": "link",
+        "nombre": "'Extra Sí', un viaje por el sonido mákina"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lorena Vázquez revive uno de los peores momentos de su carrera: \"Hubo un acoso sexual directo delante de mis compañeros\""
+      },
+      {
+        "rol": "link",
+        "nombre": "El podcast para escuchar con tus hijos si ves 'Toy Story 5'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sapiensantes"
+      },
+      {
+        "rol": "link",
+        "nombre": "estrena su cuarta temporada"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio Clásica celebra el Día de la Música por su 60º aniversario"
+      },
+      {
+        "rol": "link",
+        "nombre": "Adriana Penedo, representante de influencers: \"Vemos lo bonito, pero también hay mucha mierda\""
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE Audio reivindica el Lyceum Club Femenino en un especial desde la Feria del Libro de Madrid"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cápsula Radio, el proyecto que une la ficción sonora con las salas de teatro"
+      },
+      {
+        "rol": "link",
+        "nombre": "Zahara y Xoel López en el último especial de 'Mañana más' desde el Teatro del Barrio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Josefina Aldecoa, escribir y educar contra el olvido"
+      },
+      {
+        "rol": "link",
+        "nombre": "Centenario del nacimiento de Caballero Bonald"
+      },
+      {
+        "rol": "link",
+        "nombre": "Las coincidencias que nos hacen soñar con un nuevo triunfo de La Roja"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE entrega los premios del VI Concurso de Podcast Escolar"
+      },
+      {
+        "rol": "link",
+        "nombre": "Corporación RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE presenta el Observatorio de la Infancia y la Adolescencia, pionero en las corporaciones audiovisuales españolas"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE presenta el Observatorio de la Infancia y la Adolescencia, pionero en las corporaciones audiovisuales españolas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: La Justicia da la razón a RTVE y frena la ofensiva de UTECA para paralizar la comercialización del Mundial 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Justicia da la razón a RTVE y frena la ofensiva de UTECA para paralizar la comercialización del Mundial 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Lucía Rodil, nueva directora del Centro Territorial de RTVE en Castilla y León"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lucía Rodil, nueva directora del Centro Territorial de RTVE en Castilla y León"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE solicita a la CNMC que supervise la Comisión de Investigación del Senado sobre RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE solicita a la CNMC que supervise la Comisión de Investigación del Senado sobre RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: La UER apoya a RTVE ante la creación de una Comisión de Investigación en el Senado"
+      },
+      {
+        "rol": "link",
+        "nombre": "La UER apoya a RTVE ante la creación de una Comisión de Investigación en el Senado"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: La Junta Electoral Central desestima tres denuncias del PP contra RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Junta Electoral Central desestima tres denuncias del PP contra RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: La CNMC archiva la denuncia de UTECA por la emisión de comunicaciones comerciales en 'La Revuelta'"
+      },
+      {
+        "rol": "link",
+        "nombre": "La CNMC archiva la denuncia de UTECA por la emisión de comunicaciones comerciales en \\'La Revuelta\\'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comunicado de RTVE sobre la propuesta del PP de crear una comisión de investigación en el Senado sobre la Corporación pública"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comunicado de RTVE sobre la propuesta del PP de crear una comisión de investigación en el Senado sobre la Corporación pública"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comunicado RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comunicado RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE vuelve a sumarse a 'La Hora del Planeta' en el 20º aniversario de la iniciativa"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE vuelve a sumarse a \\'La Hora del Planeta\\' en el 20º aniversario de la iniciativa"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE obtiene un superávit de más de 55 millones de euros en 2025"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE obtiene un superávit de más de 55 millones de euros en 2025"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE reivindica el legado del Lyceum Club en el 8M con un acto que devuelve a sus mujeres a la tribuna pública"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE reivindica el legado del Lyceum Club en el 8M con un acto que devuelve a sus mujeres a la tribuna pública"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE dedica su programación especial por el 8M, Día de la Mujer, a transmitir 'Las voces de TODAS'"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE dedica su programación especial por el 8M, Día de la Mujer, a transmitir \\'Las voces de TODAS\\'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comparecencia parlamentaria del presidente de la Corporación RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comparecencia parlamentaria del presidente de la Corporación RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: El Comité de Radio de la UER se reúne en RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Comité de Radio de la UER se reúne en RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE cierra 2025 con un superávit de 45 millones de euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE cierra 2025 con un superávit de 45 millones de euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE es elegida miembro de la ejecutiva de la Alianza de Medios Públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE es elegida miembro de la ejecutiva de la Alianza de Medios Públicos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: La jornada de Medios Públicos, organizada por RTVE, destaca la lucha contra la desinformación y los retos de la IA"
+      },
+      {
+        "rol": "link",
+        "nombre": "La jornada de Medios Públicos, organizada por RTVE, destaca la lucha contra la desinformación y los retos de la IA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE celebrará una jornada sobre los medios públicos como garantes de las libertades democráticas"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE celebrará una jornada sobre los medios públicos como garantes de las libertades democráticas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE lanza la campaña 'la solidaridad calienta más que el fuego' en apoyo a las personas sin hogar"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE lanza la campaña \\'la solidaridad calienta más que el fuego\\' en apoyo a las personas sin hogar"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Ana Peláez, directora del área de Artes y Conocimiento"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ana Peláez, directora del área de Artes y Conocimiento"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE es el prestador audiovisual que más contribuye en España a la alfabetización mediática"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE es el prestador audiovisual que más contribuye en España a la alfabetización mediática"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Esther Paniagua, presentadora de 'Ciberdelitos', Premio de Periodismo ESET en Ciberseguridad 2025"
+      },
+      {
+        "rol": "link",
+        "nombre": "Esther Paniagua, presentadora de \\'Ciberdelitos\\', Premio de Periodismo ESET en Ciberseguridad 2025"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE se retira del Festival de Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE se retira del Festival de Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE y la Agencia EFE firman un acuerdo de colaboración"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE y la Agencia EFE firman un acuerdo de colaboración"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE presenta un convenio con la Universidad de Cádiz para impulsar la formación audiovisual"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE presenta un convenio con la Universidad de Cádiz para impulsar la formación audiovisual"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Impulsa Visión RTVE entrega los diplomas de la VII convocatoria de Ayudas a la Investigación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Impulsa Visión RTVE entrega los diplomas de la VII convocatoria de Ayudas a la Investigación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Diego Garcés, nuevo director de RTVE en Andalucía"
+      },
+      {
+        "rol": "link",
+        "nombre": "Diego Garcés, nuevo director de RTVE en Andalucía"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE y el Festival de Sevilla sellan una alianza para reforzar el compromiso con la cultura cinematográfica y el cine europeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE y el Festival de Sevilla sellan una alianza para reforzar el compromiso con la cultura cinematográfica y el cine europeo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: El Observatorio de Igualdad de RTVE abordará el problema de la violencia vicaria a través del cine en el Festival de Sevilla"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Observatorio de Igualdad de RTVE abordará el problema de la violencia vicaria a través del cine en el Festival de Sevilla"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Santiago Echevarría, nuevo corresponsal de RNE en Jerusalén"
+      },
+      {
+        "rol": "link",
+        "nombre": "Santiago Echevarría, nuevo corresponsal de RNE en Jerusalén"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Presentada la VIII Convocatoria de Impulsa Visión RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Presentada la VIII Convocatoria de Impulsa Visión RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE y el Benidorm Fest, en BIME 2025: la televisión como motor cultural y puente entre España y Latinoamérica"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE y el Benidorm Fest, en BIME 2025: la televisión como motor cultural y puente entre España y Latinoamérica"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: El Observatorio de RTVE reivindica en Seminci el poder transformador de los nuevos oficios liderados por mujeres"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Observatorio de RTVE reivindica en Seminci el poder transformador de los nuevos oficios liderados por mujeres"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Manuel Segura Verdú, nuevo director de RTVE en la Región de Murcia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Manuel Segura Verdú, nuevo director de RTVE en la Región de Murcia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: José Pablo López: \"RTVE va a costar a los españoles menos dinero en 2025 que en 2024\""
+      },
+      {
+        "rol": "link",
+        "nombre": "José Pablo López: \\\"RTVE va a costar a los españoles menos dinero en 2025 que en 2024\\\""
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: El Centro Territorial de Castilla y León de RTVE inicia una nueva etapa con la construcción de su nueva sede"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Centro Territorial de Castilla y León de RTVE inicia una nueva etapa con la construcción de su nueva sede"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Asun Gómez Bueno, vicepresidenta del Comité de Informativos de la UER y Rosalía Alcubilla, miembro del Comité de Radiodifusión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Asun Gómez Bueno, vicepresidenta del Comité de Informativos de la UER y Rosalía Alcubilla, miembro del Comité de Radiodifusión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE participa en el Parlamento Europeo en el encuentro 'Canales de resiliencia: El papel de los medios en la seguridad y la defensa'"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE participa en el Parlamento Europeo en el encuentro \\'Canales de resiliencia: El papel de los medios en la seguridad y la defensa\\'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Pilar Requena, de RTVE, reelegida presidenta de la Red de Periodismo de Investigación de la UER"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pilar Requena, de RTVE, reelegida presidenta de la Red de Periodismo de Investigación de la UER"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE y FORTA presentan el Piloto Español de DVB-I"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE y FORTA presentan el Piloto Español de DVB-I"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comparecencia de José Pablo López en la comisión de control parlamentario de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comparecencia de José Pablo López en la comisión de control parlamentario de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comunicado del Consejo de Administración de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comunicado del Consejo de Administración de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: España se retirará de Eurovisión si Israel continúa en el certamen"
+      },
+      {
+        "rol": "link",
+        "nombre": "España se retirará de Eurovisión si Israel continúa en el certamen"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE se suma a la iniciativa mundial de Reporteros Sin Fronteras por los periodistas de Gaza"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE se suma a la iniciativa mundial de Reporteros Sin Fronteras por los periodistas de Gaza"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE pide abrir un debate en la UER sobre la participación de Israel en Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE pide abrir un debate en la UER sobre la participación de Israel en Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE hace público su organigrama directivo"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE hace público su organigrama directivo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Comparecencia de José Pablo López en la comisión de control parlamentario de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comparecencia de José Pablo López en la comisión de control parlamentario de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Sergio Jaén será el director artístico del Benidorm Fest 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sergio Jaén será el director artístico del Benidorm Fest 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: César Vallejo asume el cargo de jefe de la delegación española en Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "César Vallejo asume el cargo de jefe de la delegación española en Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE: Ana María Bordas asume la presidencia del Grupo de Referencia de la UER para Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE: Ana María Bordas asume la presidencia del Grupo de Referencia de la UER para Eurovisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Silvia Barba, nueva subdirectora de Deportes de RNE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Silvia Barba, nueva subdirectora de Deportes de RNE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Lola Martínez Rojo, nueva editora de Igualdad de RNE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lola Martínez Rojo, nueva editora de Igualdad de RNE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: José Pablo López reitera el compromiso de RTVE con la paz y los derechos humanos"
+      },
+      {
+        "rol": "link",
+        "nombre": "José Pablo López reitera el compromiso de RTVE con la paz y los derechos humanos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Esther González Garín, nueva directora de Magacines de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Esther González Garín, nueva directora de Magacines de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE cierra el primer trimestre del año en situación de equilibrio presupuestario"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE cierra el primer trimestre del año en situación de equilibrio presupuestario"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Constituido el nuevo Comité de Dirección de RTVE y publicados sus salarios"
+      },
+      {
+        "rol": "link",
+        "nombre": "Constituido el nuevo Comité de Dirección de RTVE y publicados sus salarios"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE entra en la senda del superávit y cierra enero con un resultado positivo de 0,8 millones de euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE entra en la senda del superávit y cierra enero con un resultado positivo de 0,8 millones de euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: Manuel Gómez Zotano, nuevo director de Sistemas e Innovación de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Manuel Gómez Zotano, nuevo director de Sistemas e Innovación de RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticia: RTVE publica el listado completo de contratos con productoras audiovisuales"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE publica el listado completo de contratos con productoras audiovisuales"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE.es"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noticias"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Play"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE Audio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Filmoteca"
+      },
+      {
+        "rol": "link",
+        "nombre": "Televisión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Deportes"
+      },
+      {
+        "rol": "link",
+        "nombre": "Tiempo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Clan"
+      },
+      {
+        "rol": "link",
+        "nombre": "Laboratorio"
+      },
+      {
+        "rol": "link",
+        "nombre": "TVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "2° Dividendo Digital"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Botón Rojo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Corresponsalías"
+      },
+      {
+        "rol": "link",
+        "nombre": "TVE Internacional"
+      },
+      {
+        "rol": "link",
+        "nombre": "TVE Catalunya"
+      },
+      {
+        "rol": "link",
+        "nombre": "TVE Canarias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Teletexto"
+      },
+      {
+        "rol": "link",
+        "nombre": "Centros Territoriales"
+      },
+      {
+        "rol": "link",
+        "nombre": "TVE en directo"
+      },
+      {
+        "rol": "link",
+        "nombre": "RNE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio Nacional"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio Clásica"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio 3"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ràdio 4"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio 5"
+      },
+      {
+        "rol": "link",
+        "nombre": "Radio Exterior"
+      },
+      {
+        "rol": "link",
+        "nombre": "Podcast"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Transparencia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sostenibilidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE Comunicación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Manual de estilo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Código de autorregulación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Derecho de acceso"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ofertas de empleo"
+      },
+      {
+        "rol": "link",
+        "nombre": "RTVE 2030"
+      },
+      {
+        "rol": "link",
+        "nombre": "Defensora de la Audiencia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Observatorio de Igualdad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Canal Ético"
+      },
+      {
+        "rol": "link",
+        "nombre": "Instituto RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Orquesta Sinfónica y Coro RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Dirección Comercial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Impulsa Visión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Perfil del Contratante"
+      },
+      {
+        "rol": "link",
+        "nombre": "Contratación audiovisuales"
+      },
+      {
+        "rol": "link",
+        "nombre": "Archivo RTVE"
+      },
+      {
+        "rol": "link",
+        "nombre": "Condiciones de utilización del sitio RTVE.es"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de RTVE sobre el tratamiento de datos personales"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de RTVE sobre el tratamiento de datos cookies"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de RTVE sobre el tratamiento de datos cookies"
+      },
+      {
+        "rol": "link",
+        "nombre": "Página sobre la accesibilidad del Portal de RTVE.es"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mapa del sitio RTVE.es"
+      },
+      {
+        "rol": "link",
+        "nombre": "Preguntas frecuentes, direcciones de contacto de la Corporación RTVE.es, Oficina del Defensor"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de RTVE.es sobre comentarios y participación social de usuarios"
+      },
+      {
+        "rol": "link",
+        "nombre": "© Corporación de Radio y Televisión Española 2026"
+      }
+    ],
+    "total_acciones": 530
+  }
+}

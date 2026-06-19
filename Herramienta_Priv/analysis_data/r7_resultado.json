@@ -1,0 +1,108 @@
+{
+  "sitio": "rtve.es",
+  "veredicto": "FAILED",
+  "total_scripts_terceros": 16,
+  "scripts_detectados": [
+    {
+      "script_url": "https://static.chartbeat.com/js/chartbeat.js",
+      "dominio": "chartbeat.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 8,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.platform": 2,
+        "window.navigator.plugins": 3,
+        "window.navigator.userAgent": 1,
+        "window.screen.colorDepth": 2
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint",
+        "Screen Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService#origin=https://www.rtve.es/&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 5,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appVersion": 1,
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=getToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867866618_0&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 5,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appVersion": 1,
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=removeToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867867499_1&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
+      "dominio": "gigya.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 5,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appVersion": 1,
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm",
+      "dominio": "gigya.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 5,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appVersion": 1,
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js",
+      "dominio": "cloudflare.com",
+      "site_url": "https://www.rtve.es/",
+      "puntuacion": 4,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.userAgent": 1,
+        "window.navigator.plugins": 3
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    }
+  ],
+  "resumen": {
+    "FAILED": 1,
+    "WARNING": 5
+  }
+}

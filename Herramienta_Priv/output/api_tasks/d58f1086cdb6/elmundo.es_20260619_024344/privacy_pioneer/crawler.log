@@ -1,0 +1,41 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'dac209d8-8867-44cd-b0e1-30f7f8dc890f',
+  '38d1a8fa-6728-4fa4-a12e-89f46c91481c'
+]
+PP window: 38d1a8fa-6728-4fa4-a12e-89f46c91481c
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.elmundo.es/
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 41 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: elmundo_es_
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Accept and continue"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+❌ Error en la visita: Firefox caído en POST: Failed to decode response from marionette
+------ Firefox crasheó en POST, reiniciando driver ------
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '60f05f0d-9abf-4c15-9f9b-98b14e44b02a',
+  '1f7a808d-4b3e-41a3-9f91-4ee00886a3c2'
+]
+PP window: 1f7a808d-4b3e-41a3-9f91-4ee00886a3c2
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+time spent:  127.728 total elapsed:  193.83

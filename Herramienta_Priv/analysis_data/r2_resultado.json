@@ -1,0 +1,57 @@
+{
+  "requisito": "R2",
+  "descripcion": "Bloqueo de cookies no exentas antes del consentimiento",
+  "sitios": {
+    "https://www.rtve.es/": {
+      "veredicto": "FAILED",
+      "evaluacion": {
+        "estado": "FAILED",
+        "detalle": "Se detectaron 6 rastreadores no exentos activos ANTES del consentimiento: Analítica de comportamiento, Publicidad comportamental, Píxel de seguimiento. Empresas implicadas: Adobe, Chartbeat, Conviva, Wingify. Incumple RGPD Art. 7 / LSSI Art. 22.2 (bloqueo previo al consentimiento)."
+      },
+      "violaciones": [
+        {
+          "dominio_rastreador": "static.chartbeat.com",
+          "url_completa": "https://static.chartbeat.com/js/chartbeat_mab.js",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "Chartbeat"
+        },
+        {
+          "dominio_rastreador": "dev.visualwebsiteoptimizer.com",
+          "url_completa": "https://dev.visualwebsiteoptimizer.com/j.php?a=864486&u=https%3A%2F%2Fwww.rtve.es%2F&vn=2.1&x=true",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "Wingify"
+        },
+        {
+          "dominio_rastreador": "rc.conviva.com",
+          "url_completa": "https://rc.conviva.com/js/fda447e9ebc2e42ee456a10f8aba4f81b6ff14e5/1.4.3/remote_config.json",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "Conviva"
+        },
+        {
+          "dominio_rastreador": "ping.chartbeat.net",
+          "url_completa": "https://ping.chartbeat.net/ping?h=rtve.es&p=%2F&u=DwEQ39J3VVTDT7L49&d=rtve.es&g=61531&g0=WEB%20%7CRTVE%2CRTVE%2CWEB%20&g1=RTVE.es&n=1&f=00001&c=0&x=0&m=0&y=11701&o=1296&w=656&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.rtve.es%2F&b=6310&t=DkZb6vDDN7pUwIh_owrPthsJJz2&V=151&i=Noticias%20de%20%C3%BAltima%20hora%2C%20programas%20y%20series%20de%20televisi%C3%B3n%20-%20RTVE.es&tz=-120&sn=1&sv=CoS8udDth4Ec9oc2Oea9aY-fjxB&sr=external&sd=1&im=06532c4f&_",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "Chartbeat"
+        },
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/id?d_visid_ver=5.2.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&d_nsid=0&ts=1781867910350",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUliAAAAHofOwO-",
+          "tipo": "trackingPixel",
+          "tipo_legible": "Píxel de seguimiento",
+          "empresa": "Adobe"
+        }
+      ]
+    }
+  }
+}

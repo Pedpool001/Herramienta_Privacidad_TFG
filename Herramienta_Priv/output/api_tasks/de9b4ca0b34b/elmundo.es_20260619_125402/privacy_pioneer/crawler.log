@@ -1,0 +1,27 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'e3261133-5688-41be-b5a5-f1df9ec8a466',
+  '83177092-197a-481d-a725-ade4bf87e0d4'
+]
+PP window: 83177092-197a-481d-a725-ade4bf87e0d4
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.elmundo.es/
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 46 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: elmundo_es_
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Accept and continue"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 65 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: elmundo_es_
+time spent:  74.239 total elapsed:  147.484

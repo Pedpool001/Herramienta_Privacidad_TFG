@@ -4,7 +4,8 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive \
     TZ=Europe/Madrid \
     PATH="/opt/conda/bin:$PATH" \
-    PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers
+    PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers \
+    FIREFOX_BINARY_PATH=/opt/firefox-nightly/firefox
 
 # ── Paquetes del sistema ──────────────────────────────────────────────────────
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -23,7 +24,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     fonts-liberation fonts-noto-color-emoji \
     # Dependencias de Firefox (Privacy Pioneer + PoliGraph)
     libgtk-3-0 libdbus-glib-1-2 \
+    # xz-utils para descomprimir Firefox Nightly (.tar.xz)
+    xz-utils \
     && rm -rf /var/lib/apt/lists/*
+
+# ── Firefox Nightly (Privacy Pioneer) ────────────────────────────────────────
+RUN curl -fsSL \
+    "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US" \
+    -o /tmp/firefox-nightly.tar \
+    && tar -xf /tmp/firefox-nightly.tar -C /opt/ \
+    && mv /opt/firefox /opt/firefox-nightly \
+    && rm /tmp/firefox-nightly.tar
 
 # ── Node.js 20 LTS ────────────────────────────────────────────────────────────
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
@@ -31,10 +42,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && rm -rf /var/lib/apt/lists/*
 
 # ── Miniconda ─────────────────────────────────────────────────────────────────
-RUN wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-        -O /tmp/miniconda.sh \
-    && bash /tmp/miniconda.sh -b -p /opt/conda \
-    && rm /tmp/miniconda.sh \
+RUN wget -q https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh \
+        -O /tmp/miniforge.sh \
+    && bash /tmp/miniforge.sh -b -p /opt/conda \
+    && rm /tmp/miniforge.sh \
     && conda clean -afy
 
 # ── Directorio de trabajo ─────────────────────────────────────────────────────
@@ -44,24 +55,41 @@ WORKDIR /app
 # .dockerignore excluye node_modules, __pycache__, venv, output, etc.
 COPY . .
 
+# ── Herramientas de sistema adicionales ───────────────────────────────────────
+# psmisc: fuser (liberar puerto 8080 antes de la REST API)
+# xvfb:   display virtual para Firefox headful (Privacy Pioneer en Docker)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    psmisc \
+    xvfb \
+    && rm -rf /var/lib/apt/lists/*
+
 # ── Entorno conda: openwpm ────────────────────────────────────────────────────
-RUN conda env create -f openWPM/OpenWPM/environment.yaml \
+RUN for i in 1 2 3; do \
+        conda env create -f openWPM/OpenWPM/environment.yaml && break; \
+        echo "Reintento $i en 30s..."; sleep 30; \
+    done \
     && conda clean -afy
 
 # ── Entorno conda: poligraph ──────────────────────────────────────────────────
 # El environment.yml tiene name: nlp20230531; lo creamos como "poligraph"
-RUN conda env create -f PoliGraph/environment.yml -n poligraph \
+RUN for i in 1 2 3; do \
+        conda env create -f PoliGraph/environment.yml -n poligraph && break; \
+        echo "Reintento $i en 30s..."; sleep 30; \
+    done \
     && conda run -n poligraph pip install --no-cache-dir \
         -e /app/PoliGraph/ \
         deep-translator \
-    && conda run -n poligraph playwright install firefox \
+    && conda run -n poligraph playwright install firefox chromium \
     && conda clean -afy
 
 # ── Entorno virtual webXray ───────────────────────────────────────────────────
 RUN python3 -m venv /app/webXray/venv_tfg \
     && /app/webXray/venv_tfg/bin/pip install --no-cache-dir --upgrade pip \
-    && /app/webXray/venv_tfg/bin/pip install --no-cache-dir \
-        -r /app/webXray/requirements.txt
+    && sed -e 's/^lxml.*/lxml>=5.0/' \
+           -e 's/^psycopg2-binary.*/psycopg2-binary>=2.9/' \
+       /app/webXray/requirements.txt > /tmp/wx_req.txt \
+    && /app/webXray/venv_tfg/bin/pip install --no-cache-dir -r /tmp/wx_req.txt \
+    && rm /tmp/wx_req.txt
 
 # ── Dependencias Node.js ──────────────────────────────────────────────────────
 RUN cd /app/WEC/website-evidence-collector \
@@ -72,6 +100,10 @@ RUN cd /app/BL/blacklight-collector \
 
 RUN cd /app/privacy-pioneer-web-crawler/selenium-crawler \
     && npm ci --omit=dev --no-audit --no-fund 2>/dev/null || npm install --no-audit --no-fund
+
+RUN cd /app/Herramienta_Priv/requisitos \
+    && npm install --no-audit --no-fund \
+    && npx playwright install chromium
 
 RUN cd /app/privacy-pioneer-web-crawler/rest-api \
     && npm ci --omit=dev --no-audit --no-fund 2>/dev/null || npm install --no-audit --no-fund

@@ -616,8 +616,9 @@ sin ningún cambio.
 Los scripts individuales **ya están preparados** para la integración:
 - Aceptan la ruta del directorio de salida de la herramienta como argumento CLI.
 - Devuelven un JSON pequeño en `analysis_data/`.
-- La ruta por defecto hardcodeada a `elpais_audit` es solo para pruebas en desarrollo;
-  la herramienta unificada siempre pasará la ruta correcta del sitio que está auditando.
+- La ruta por defecto apunta a `elpais_audit` (ejemplo) y se calcula dinámicamente con
+  `Path(__file__).resolve().parents[2]`; es solo para pruebas en desarrollo.
+  La herramienta unificada siempre pasa la ruta correcta del sitio que está auditando.
 
 El orquestador de la herramienta unificada es quien:
 1. Pasa a cada script la ruta del output del sitio actual.
@@ -1863,11 +1864,18 @@ En `r13_dark_patterns.py`:
 1. `page.on("pageerror", lambda _: None)` — registra un handler Python para el evento `pageerror` antes de navegar. Esto intercepta el error a nivel Python antes de que Playwright lo propague al handler interno de FFBrowserContext, evitando el crash del driver.
 2. Envolver todo el `async with AsyncCamoufox(...)` en `try/except` con una variable `resultado_interno` inicializada a UNKNOWN. Así, si el browser se cae de todas formas, el resultado que se haya podido recopilar se devuelve en lugar de propagar la excepción.
 
-### Bug 22 — Privacy Pioneer abre Firefox Nightly en modo visible (junto a Chromium de Playwright)
+### Bug 22 — Privacy Pioneer: extensión no detecta rastreadores en modo headless
 
-**Síntoma:** Al ejecutar la herramienta, se abren dos ventanas de navegador visibles simultáneamente: Firefox Nightly (Privacy Pioneer) y Chromium (captura del árbol de accesibilidad de Playwright).
-**Causa:** `selenium-crawler/local-crawler.js` línea 139 tiene `options.addArguments("--headful")` que fuerza Firefox a modo visible. Fue añadido en su momento para depuración visual. Playwright Chromium ya corre headless por defecto.
-**Fix:** Cambiar `"--headful"` por `"-headless"` en `local-crawler.js`. Firefox Selenium usa guión simple (`-headless`). La extensión Privacy Pioneer y toda la lógica de captura de cookies funcionan correctamente en modo headless.
+**Síntoma original:** Firefox Nightly abría ventana visible durante la auditoría.
+**Síntoma real (descubierto en Bug 37):** Al cambiar a `-headless`, el `webRequest` listener
+de la extensión Privacy Pioneer **deja de recibir eventos de red** en Firefox 123 headless.
+MySQL queda a 0 filas → R2/R3/R9 dan NO_EVALUABLE aunque el sitio tenga rastreadores.
+Las cookies de Selenium (`driver.manage().getCookies()`) sí funcionan en headless —
+es el listener de la extensión el que no funciona.
+**Fix definitivo:** Mantener `--headful` en `local-crawler.js`. Firefox abre una ventana
+visible durante el crawl (~2-3 min por sitio), lo cual es aceptable en entorno de escritorio.
+La ventana visible es la única forma de que el `webRequest` de la extensión funcione con
+Firefox 123 + geckodriver 0.36.
 
 ### Bug 23 — PoliGraph NO_EVALUABLE en decathlon.es: política en subdominio no detectada
 
@@ -2175,6 +2183,198 @@ Sin opción `headless`, Puppeteer v24 (WEC usa v24.37.5) abre Chrome en **modo v
 3. **`BL/blacklight-collector/blacklight_runner.js`:**
    Añadido `extraChromiumArgs: ['--no-first-run', '--no-default-browser-check', '--disable-default-apps']` al config de Blacklight como medida preventiva para Chrome 127.
 
+### Bug 36 — Privacy Pioneer falla silenciosamente cuando MySQL está vacío: ERROR en vez de NO_EVALUABLE
+
+**Síntoma:** R2, R3 y R9 aparecen como ERROR con `FileNotFoundError: .../r2_resultado.json` cuando Privacy Pioneer no tiene datos en MySQL para el sitio auditado.
+
+**Causa (doble):**
+1. `r2_r3_cookies_beacons.py` lines 225-227: cuando `todos_los_sitios` está vacío, el script imprime un aviso y sale con `sys.exit(0)` **sin escribir el fichero resultado**. `_loader.py` interpreta el código de salida 0 como éxito pero luego no encuentra el fichero y lanza `FileNotFoundError`, que se trata como ERROR en vez de NO_EVALUABLE.
+2. `constants.js` tenía como único fallback de Firefox `/opt/firefox-nightly/firefox` (ruta Docker), que no existe en el host. Sin `FIREFOX_BINARY_PATH` definida, el crawler lanzaba `InvalidArgumentError: binary is not a Firefox executable` y no populaba MySQL.
+
+**Fix 1 — `Herramienta_Priv/requisitos/r2_r3_cookies_beacons.py`:**
+Cuando no hay datos en MySQL, el script ahora escribe un resultado con `no_evaluable: true` y `sitios: {}` antes de salir:
+```python
+salida = {"requisito": "R2", "descripcion": "...", "sitios": {}, "no_evaluable": True}
+RESULTADO_PATH.parent.mkdir(parents=True, exist_ok=True)
+with open(RESULTADO_PATH, "w", encoding="utf-8") as f:
+    json.dump(salida, f, ...)
+sys.exit(0)
+```
+
+**Fix 2 — `Herramienta_Priv/modulos_herramientas/privacy_pioneer.py`:**
+Al parsear el resultado de `r2_r3_cookies_beacons`, si `no_evaluable` es `True` o `sitios` está vacío, el veredicto se establece a `NO_EVALUABLE` en vez de `ERROR`.
+
+**Fix 3 — `privacy-pioneer-web-crawler/selenium-crawler/constants.js`:**
+Nueva función `_findFirefox()` que prueba las rutas en orden usando `fs.existsSync`:
+1. `process.env.FIREFOX_BINARY_PATH`
+2. `/opt/firefox-nightly/firefox` (Docker)
+3. `path.resolve(__dirname, '../../../firefox/firefox')` (host: sibling del TFG)
+
+**Fix 4 — `privacy-pioneer-web-crawler/selenium-crawler/local-crawler.js`:**
+Eliminado el fallback hardcodeado en `.setBinary()`; ahora usa `FIREFOX_NIGHTLY_PATH` importado de `constants`.
+
+**Fix 5 — `Herramienta_Priv/modulos_herramientas/privacy_pioneer.py` (paso 3 — REST API):**
+Antes de arrancar la REST API, se ejecuta `fuser -k 8080/tcp` para matar cualquier proceso que ocupe el puerto. Sin esto, si una REST API de un test manual o auditoría anterior sigue viva en el puerto, el nuevo `Popen` falla silenciosamente con EADDRINUSE, se usa la REST API vieja que puede tener la conexión MySQL caída, y el crawler no guarda datos → R2/R3/R9 sin datos.
+
+### Bug 37 — Privacy Pioneer: `webRequest` listener no recibe eventos en Firefox headless
+
+**Síntoma:** R2/R3/R9 dan NO_EVALUABLE (en vez de PASSED/FAILED) aunque el sitio
+tiene rastreadores. MySQL queda a 0 filas tras el crawl aunque este termina con código 0.
+La REST API conecta a MySQL y recibe `/reset-auditoria` y `/notificar-clic` (enviados por
+`local-crawler.js`), pero ningún `/entries` POST de la extensión.
+
+**Diagnóstico:**
+- Se añadió logging completo en `privacy_pioneer.py`: la REST API conectó (thread 51), recibió
+  reset + clic, pero no recibió ningún evento de rastreador.
+- `reporte_auditoria.json` SÍ contiene cookies de Selenium (43 PRE, 64 POST para elmundo.es):
+  prueba de que el crawl funcionó, que Firefox arrancó y que Selenium cogió las cookies.
+- Sin embargo, el `webRequest` listener de la extensión Privacy Pioneer no intercepcionó
+  ninguna petición de red → nunca POSTeó a `/entries`.
+
+**Causa raíz:** Firefox 123 con la flag `-headless` (guión simple) no dispara los eventos
+`browser.webRequest` de WebExtensions para peticiones del frame principal. Las cookies de
+`driver.manage().getCookies()` sí se capturan (API de Selenium, no de la extensión).
+El Bug 22 asumió erróneamente que headless era equivalente a headful para la extensión.
+
+**Fix en `privacy-pioneer-web-crawler/selenium-crawler/local-crawler.js`:**
+Revertir `-headless` a `--headful`. Firefox abre una ventana visible (~2-3 min por sitio),
+aceptable en entorno de escritorio. Es la única forma de que el listener `webRequest`
+de Privacy Pioneer funcione con Firefox 123 + geckodriver 0.36.
+
+### Bug 38 — Privacy Pioneer: setup() falla con código 1 — `switchTo(undefined)` fuera del try/catch
+
+**Síntoma:** El crawler de Privacy Pioneer termina en ~33 segundos con código 1. La stdout solo muestra `built` y después el stderr muestra:
+```
+at async setup (/home/.../local-crawler.js:156:3)
+at async /home/.../local-crawler.js:491:3
+```
+Firefox se abre con la página de opciones de Privacy Pioneer y el diálogo inicial abierto, pero el proceso Node.js ya ha terminado.
+
+**Causa raíz (doble):**
+1. Las líneas 152-160 del setup() estaban **fuera** del bloque try/catch (que empieza en línea 162). Esto significa que cuando `windows[1]` es `undefined` (la extensión abre su página como pestaña nueva y tarda más de 2s), `driver.switchTo().window(undefined)` lanza una excepción no capturada que se propaga hasta el IIFE principal → Node.js sale con código 1.
+2. La espera fija de 2 segundos (`setTimeout(resolve, 2000)`) no es suficiente en algunos sistemas/condiciones para que Privacy Pioneer abra su segunda ventana/pestaña.
+
+**El catch block no ayudaba** porque el error ocurre ANTES del try (líneas 152-160), no dentro de él (líneas 162-194).
+
+**Fix en `privacy-pioneer-web-crawler/selenium-crawler/local-crawler.js`:**
+- Mover todo el código de ventana (líneas 152-160: getAllWindowHandles + switchTo) DENTRO del bloque try/catch.
+- Reemplazar la espera fija de 2s por un bucle de polling (máx. 15s) que espera hasta tener 2 handles de ventana.
+- Si después de 15s solo hay 1 handle, continuar sin hacer switchTo (la extensión está en la misma ventana).
+- En el catch: llamar `driver.quit()` ANTES de la llamada recursiva a setup() para evitar Firefox zombies.
+
+```javascript
+try {
+  // Wait up to 15s for PP extension window/tab
+  let windows = await driver.getAllWindowHandles();
+  const ppDeadline = Date.now() + 15000;
+  while (windows.length < 2 && Date.now() < ppDeadline) {
+    await new Promise(r => setTimeout(r, 1000));
+    windows = await driver.getAllWindowHandles();
+  }
+  const originalWindow = windows[0];
+  const privacyPioneerWindow = windows[1];
+  if (privacyPioneerWindow) {
+    await driver.switchTo().window(privacyPioneerWindow);
+  }
+  // ... resto del setup ...
+} catch (e) {
+  try { await driver.quit(); } catch (_) {}
+  await new Promise(r => setTimeout(r, 3000));
+  await setup();
+}
+```
+
+---
+
+### Bug 40 — Privacy Pioneer: `entries` tabla vacía aunque `allEv` tiene datos — ventana de extensión robando el foco
+
+**Síntoma:** Tras corregir el Bug 38, el setup completa con éxito. Sin embargo, `entries` en MySQL permanece a 0 filas tras el crawl, aunque `allEv` acumula miles de filas (21634 para elmundo.es). REST API log muestra solo una **línea en blanco** entre el reset y el clic. R2/R3/R9 dan NO_EVALUABLE.
+
+**Diagnóstico:**
+- `allEv` tiene datos → la extensión SÍ detecta rastreadores vía `IS_CRAWLING_TESTING`
+- La línea en blanco en el log viene de `console.log(reqBody.host)` cuando `host = ""`
+- `sender()` en `bundle.background.js` se crea como closure de `apiSend()`, que se dispara en `onDOMContentLoaded`
+- `apiSend()` lee `browser.tabs.query({active: true, currentWindow: true})[0].url` para capturar el hostname
+- La clave en `hostnameHold` controla si se programa el timer de 60s para ese hostname
+
+**Causa raíz:**
+Al arrancar Firefox durante `setup()`, se abren DOS ventanas:
+1. `originalWindow` (about:blank / luego elmundo.es)
+2. `privacyPioneerWindow` (página de opciones de la extensión, queda abierta)
+
+Secuencia de eventos de DOMContentLoaded con dos ventanas abiertas:
+1. `about:blank` DOMContentLoaded → `apiSend()` → `currentHostName = ""` → `hostnameHold[""] = T`, `setTimeout(sender_blank, 60000)`
+2. Página de extensión DOMContentLoaded → `apiSend()` → `getHostname("moz-extension://uuid/...")` → `psl.parse("uuid").domain = null ?? "" = ""` → `hostnameHold[""]` ya existe → **no se programa nuevo timer**
+3. elmundo.es DOMContentLoaded → `apiSend()` → `browser.tabs.query({active:true, currentWindow:true})` devuelve la ventana de extensión (que tenía el foco porque el crawler la abrió durante setup y no la cerró) → `currentHostName = ""` → `hostnameHold[""]` ya existe → **no se programa timer para "elmundo.es"**
+4. T+60s: `sender_blank()` dispara → `evidenceKeyval.get("")` → objeto vacío → POST `/entries` con `host=""` → línea en blanco en log → 0 inserts en MySQL
+5. `sender()` para "elmundo.es" **nunca existe** → 0 filas en `entries`
+
+**Fix en `privacy-pioneer-web-crawler/selenium-crawler/local-crawler.js` (línea 188):**
+Descomentar `await driver.close()` para cerrar la ventana de extensión tras el setup. Con una sola ventana, `browser.tabs.query({active:true, currentWindow:true})` siempre devuelve el tab de elmundo.es → `currentHostName = "elmundo.es"` → timer programado → sender() dispara con evidencia real.
+
+```javascript
+// Antes:
+//await driver.close(); //close pp window
+// Después:
+await driver.close(); //close pp window — needed so apiSend() captures correct hostname
+```
+
+**Fix adicional en `privacy-pioneer-web-crawler/rest-api/index.js`:**
+Mejor logging en `/entries` para diagnóstico futuro:
+```javascript
+// Antes:
+console.log(reqBody.host);
+// Después:
+console.log(`[/entries] host="${reqBody.host}" evidence_keys=${Object.keys(reqBody.evidence||{}).filter(k=>k!="lastSeen").length}`);
+```
+
+**Por qué no se había detectado antes:** Los 1858 registros en `entries` de sesiones anteriores (marvel.com, x.com, etc.) se generaron cuando la ventana de extensión tenía un comportamiento distinto de foco, o el navegador era headful y el sistema operativo devolvía el foco al original window automáticamente. Al pasar a headful con `--headful` (Bug 37), la ventana de extensión retiene el foco durante el crawl.
+
+---
+
+### Bug 41 — Docker: `fuser` no encontrado → Privacy Pioneer falla antes de lanzar Firefox
+
+**Síntoma:** `Privacy Pioneer falló: [Errno 2] No such file or directory: 'fuser'` en los logs de Docker. R2, R3, R9 pasan a ERROR inmediatamente.
+**Causa:** `privacy_pioneer.py` llama a `subprocess.run(["fuser", "-k", "8080/tcp"])` sin capturar `FileNotFoundError`. El comando `fuser` pertenece al paquete `psmisc`, no instalado en la imagen base `ubuntu:22.04`.
+**Fix en dos partes:**
+1. `Herramienta_Priv/modulos_herramientas/privacy_pioneer.py`: envuelto el `fuser` en `try/except FileNotFoundError` con fallback a `pkill -f rest-api/index.js`.
+2. `Dockerfile`: nuevo paso `RUN apt-get install psmisc xvfb` añadido después de `COPY . .` (sin invalidar las capas de conda cacheadas). `xvfb` también se instala porque Firefox headful requiere un display real o virtual; en Docker se levanta automáticamente Xvfb en `:99` cuando `DISPLAY` no está en el entorno.
+
+**Lógica Xvfb añadida en `privacy_pioneer.py`:**
+- Antes de arrancar la REST API, si `DISPLAY` no está en el entorno: lanza `Xvfb :99` como subproceso.
+- Pasa `env` con `DISPLAY=:99` al subproceso del crawler.
+- En el bloque `finally`, termina Xvfb.
+- En el host (donde `DISPLAY` sí está definido), Xvfb no se arranca y el comportamiento es idéntico al anterior.
+
+### Bug 42 — Docker: r4_granularidad crashea — Chromium no puede correr como root sin `--no-sandbox`
+
+**Síntoma:** `r4_granularidad falló` con traza de error en la línea `chromium.launch(...)`. El contenedor Docker corre como root por defecto, y Chromium rechaza iniciarse como root sin la flag `--no-sandbox`.
+**Causa:** `r4_granularidad.js` lanzaba Chromium con `chromium.launch({ headless: true })` sin `--no-sandbox`. Los scripts Python de Playwright ya tenían esta flag; el script Node.js no.
+**Fix en `Herramienta_Priv/requisitos/r4_granularidad.js`:**
+```javascript
+const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-dev-shm-usage'],
+});
+```
+
+### Bug 43 — Docker: r15 no puede conectar a MySQL — `localhost` hardcodeado
+
+**Síntoma:** `r15_responsables falló: Can't connect to MySQL server on 'localhost:3306' (111)`. En Docker, MySQL es el servicio `mysql` del compose, no `localhost`.
+**Causa:** `Herramienta_Priv/requisitos/r15_responsables.py` tenía `"host": "localhost"` hardcodeado en `DB_CONFIG` y no importaba `os`.
+**Fix en `r15_responsables.py`:**
+- Añadido `import os` al inicio.
+- `DB_CONFIG` ahora usa `os.getenv("MYSQL_HOST", "localhost")` (y análogamente para USER, PASSWORD, DATABASE), coherente con el resto de scripts que ya lo hacían.
+
+### Bug 44 — Docker: r12/r16 crashean con `FileNotFoundError` cuando webXray falla
+
+**Síntoma:** `r16_correspondencia falló: FileNotFoundError: '/app/webXray/reports/auditoria_ejemplo'` y `r12_software_terceros falló: FileNotFoundError: '.../auditoria_ejemplo/3p_domains.csv'`. Ambos deberían dar NO_EVALUABLE o PASSED (sin datos de webXray), no ERROR.
+**Causa:** Cuando webXray no genera `3p_domains.csv` (fallo del crawl), `combinados.py` llama a r12 y r16 sin el CSV. Ambos scripts caen en sus rutas por defecto (`webXray/reports/auditoria_ejemplo/`) que no existen en Docker. `cargar_webxray` y `cargar_3p_webxray` intentaban abrir el fichero sin comprobar si existe.
+**Fix:**
+- `Herramienta_Priv/requisitos/r12_software_terceros.py` → `cargar_webxray`: añadido `if not Path(ruta_csv).is_file(): return {}` antes de `open()`.
+- `Herramienta_Priv/requisitos/r16_correspondencia.py` → `cargar_3p_webxray`: añadido `if not Path(ruta_csv).is_file(): return []` antes de `open()`.
+Con estas comprobaciones, si webXray falla, r12 evalúa solo con datos de MySQL (Privacy Pioneer) y r16 evalúa solo con PoliGraph (sin cruzar dominios webXray → veredicto WARNING por falta de datos en lugar de ERROR).
+
 ---
 
 ## Docker — Contenedorización de la herramienta
@@ -2190,6 +2390,8 @@ Imagen única con todas las dependencias. Basada en `ubuntu:22.04`. Instala:
 - Paquetes Python del sistema principal (Flask, Playwright, etc.)
 - Playwright Chromium (para r13, r1/r5 del árbol de accesibilidad)
 - Firefox de Playwright en el entorno `poligraph` (para PoliGraph html_crawler)
+- `psmisc` (fuser — liberar puerto 8080 antes de la REST API)
+- `xvfb` (display virtual para Firefox headful de Privacy Pioneer en Docker)
 
 #### `docker-compose.yml`
 Orquesta dos servicios:
@@ -2249,8 +2451,8 @@ docker compose up --build
 # Arranques posteriores (sin rebuild)
 docker compose up
 
-# Con tracker-radar (descomenta el volumen en docker-compose.yml)
-# - /home/pedro/Escritorio/UNI/CUARTO/tracker-radar:/tracker-radar:ro
+# Con tracker-radar (ya configurado en docker-compose.yml como ruta relativa)
+# El volumen espera que tracker-radar/ esté al mismo nivel que la carpeta tfg/
 ```
 
 ### Advertencias
@@ -2261,3 +2463,53 @@ docker compose up
 - **Privacy Pioneer + Firefox Nightly**: El crawl de Selenium necesita Firefox Nightly
   instalado en el entorno `openwpm`. Si no está, R2/R3/R9/R12 fallarán con ERROR
   (el resto de requisitos siguen funcionando).
+
+---
+
+## Eliminación de rutas hardcodeadas — Reproducibilidad
+
+### Cambios realizados para portabilidad entre entornos
+
+Todos los scripts de análisis (`Herramienta_Priv/requisitos/*.py`) usaban rutas absolutas
+`/home/pedro/Escritorio/UNI/CUARTO/tfg/...` como valores por defecto para ejecución
+standalone (modo desarrollo). Se han sustituido por rutas calculadas dinámicamente:
+
+**Patrón aplicado en todos los scripts de análisis:**
+```python
+_TFG_DIR = Path(__file__).resolve().parents[2]   # scripts están en Herramienta_Priv/requisitos/
+POLIGRAPH_DEFAULT = _TFG_DIR / "PoliGraph/example/elpais_audit"
+```
+
+**Ficheros modificados:**
+- `Herramienta_Priv/requisitos/r1_capas.py` — `POLIGRAPH_DEFAULT`
+- `Herramienta_Priv/requisitos/r5_revocabilidad.py` — `POLIGRAPH_DEFAULT`
+- `Herramienta_Priv/requisitos/r6_keylogging.py` — `INSPECTION_DEFAULT`
+- `Herramienta_Priv/requisitos/r7_fingerprinting.py` — `DB_DEFAULT` → `openWPM/crawl-data.sqlite`
+- `Herramienta_Priv/requisitos/r8_storage_terceros.py` — `DB_DEFAULT` → `openWPM/crawl-data.sqlite`
+- `Herramienta_Priv/requisitos/r10_persistencia.py` — `WEC_OUTPUT_DEFAULT` + `OCD_PATH`
+- `Herramienta_Priv/requisitos/r11_desvinculacion.py` — `DB_DEFAULT` → `openWPM/crawl-data.sqlite`
+- `Herramienta_Priv/requisitos/r12_software_terceros.py` — `RUTA_WX_DEFAULT` (en bloque `__main__`)
+- `Herramienta_Priv/requisitos/r14_lenguaje.py` — `POLIGRAPH_DEFAULT`
+- `Herramienta_Priv/requisitos/r15_responsables.py` — `OCD_PATH` + `REPORTE_PATH`
+- `Herramienta_Priv/requisitos/r17_r18_seguridad.py` — `WEC_OUTPUT_DEFAULT`
+- `Herramienta_Priv/requisitos/r19_dpo.py` — `POLIGRAPH_DEFAULT`
+- `privacy-pioneer-web-crawler/selenium-crawler/local-crawler.js` — fallback Firefox path
+- `privacy-pioneer-web-crawler/selenium-crawler/constants.js` — `FIREFOX_NIGHTLY_PATH`
+- `docker-compose.yml` — volumen tracker-radar cambiado de ruta absoluta a `../tracker-radar`
+- `r5.py` (prototipo raíz) — path del árbol de accesibilidad
+
+**Open Cookie Database (OCD):**
+El fichero JSON del OCD estaba referenciado desde la extensión Chrome del usuario
+(`~/.config/google-chrome/.../open-cookie-database.json`). Se ha copiado al proyecto
+en `Herramienta_Priv/assets/open-cookie-database.json` y todos los scripts ahora
+lo referencian desde ahí. Esto hace que r10 y r15 funcionen sin Chrome instalado.
+
+**Firefox Nightly:**
+`constants.js` usa una función `_findFirefox()` que prueba las rutas en orden:
+1. `process.env.FIREFOX_BINARY_PATH` (variable de entorno, máxima prioridad)
+2. `/opt/firefox-nightly/firefox` (ruta que instala el Dockerfile)
+3. `path.resolve(__dirname, '../../../firefox/firefox')` (host: sibling del TFG en CUARTO/)
+
+Devuelve la primera que existe con `fs.existsSync`. Esto evita el problema anterior donde
+el fallback único `/opt/firefox-nightly/firefox` (solo Docker) hacía fallar Privacy Pioneer
+en el host cuando `FIREFOX_BINARY_PATH` no estaba definida.

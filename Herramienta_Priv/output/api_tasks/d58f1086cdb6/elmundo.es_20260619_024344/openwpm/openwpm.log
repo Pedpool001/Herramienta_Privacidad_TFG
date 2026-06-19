@@ -1,0 +1,194 @@
+2026-06-19 02:43:47,774 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2257711764: Launching browser...
+2026-06-19 02:43:47,776 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Spawn attempt 0 
+2026-06-19 02:43:47,779 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for TaskManager
+2026-06-19 02:43:47,798 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 2257711764: Saved extension config file to: /tmp/firefox_profile_ctjpnf3b/browser_params.json
+2026-06-19 02:43:47,808 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829827808	geckodriver	INFO	Listening on 127.0.0.1:49255
+2026-06-19 02:43:47,846 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829827844	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/home/pedro/Escritorio ...  "--headless" "--width=1366" "--height=768" "--remote-debugging-port" "58945" "--remote-allow-hosts" "localhost" "-no-remote"
+2026-06-19 02:43:47,908 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: *** You are running in headless mode.
+2026-06-19 02:43:48,072 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: Ignoring preference override of remote settings server
+2026-06-19 02:43:48,072 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2026-06-19 02:43:48,770 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829828767	Marionette	INFO	Marionette enabled
+2026-06-19 02:43:48,976 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "Warning: unrecognized command line flag" "-width"
+2026-06-19 02:43:48,977 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "Warning: unrecognized command line flag" "-height"
+2026-06-19 02:43:49,010 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829829009	Marionette	INFO	Listening on port 26941
+2026-06-19 02:43:49,042 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: WebDriver BiDi listening on ws://127.0.0.1:58945
+2026-06-19 02:43:49,051 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: Read port: 26941
+2026-06-19 02:43:49,216 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829829216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2026-06-19 02:43:51,857 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 2257711764: OpenWPM Firefox extension loaded
+2026-06-19 02:43:51,863 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Looking for extension port information in /tmp/firefox_profile_ctjpnf3b
+2026-06-19 02:43:51,869 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2026-06-19 02:43:51,870 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_ctjpnf3b/extension_port.txt
+2026-06-19 02:43:51,871 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2026-06-19 02:43:51,877 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2026-06-19 02:43:51,877 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for Browser-2257711764
+2026-06-19 02:43:51,899 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2026-06-19 02:43:51,908 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_ctjpnf3b/OPENWPM_STARTUP_SUCCESS.txt
+2026-06-19 02:43:51,907 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2026-06-19 02:43:51,964 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Connecting to extension on port 12361
+2026-06-19 02:43:51,965 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: BrowserManager ready.
+2026-06-19 02:43:51,972 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Browser spawn successful!
+2026-06-19 02:43:52,051 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for StorageControllerHandle
+2026-06-19 02:43:52,055 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id -1
+2026-06-19 02:43:52,056 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id -1 while finalizing
+2026-06-19 02:43:52,060 - MainProcess[MainThread]- task_manager         - INFO    : 
+
+OpenWPM Version: b'v0.32.0'
+Firefox Version: b'148.0'
+
+========== Manager Configuration ==========
+{
+  "_failure_limit": null,
+  "data_directory": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/d58f1086cdb6/elmundo.es_20260619_024344/openwpm",
+  "log_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/d58f1086cdb6/elmundo.es_20260619_024344/openwpm/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    23323
+  ],
+  "memory_watchdog": false,
+  "num_browsers": 1,
+  "process_watchdog": false,
+  "screenshot_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/d58f1086cdb6/elmundo.es_20260619_024344/openwpm/screenshots",
+  "source_dump_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/d58f1086cdb6/elmundo.es_20260619_024344/openwpm/sources",
+  "storage_controller_address": [
+    "127.0.0.1",
+    33715
+  ],
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "browser_id": 0,
+  "bot_mitigation": 1,
+  "browser": 2,
+  "callstack_instrument": 3,
+  "cookie_instrument": 4,
+  "custom_params": 5,
+  "display_mode": 6,
+  "dns_instrument": 7,
+  "donottrack": 8,
+  "http_instrument": 9,
+  "js_instrument": 10,
+  "js_instrument_settings": 11,
+  "maximum_profile_size": 12,
+  "navigation_instrument": 13,
+  "prefs": 14,
+  "profile_path": 15,
+  "recovery_tar": 16,
+  "save_content": 17,
+  "tmp_profile_dir": 18,
+  "tp_cookies": 19,
+  "tracking_protection": 20
+}
+
+         0  1      2        3      4     5    6         7     8      9     10    11                             12    13    14    15    16    17     18    19      20
+----------  -----  -------  -----  ----  ---  --------  ----  -----  ----  ----  -----------------------------  ----  ----  ----  ----  ----  -----  ----  ------  -----
+2257711764  False  firefox  False  True  {}   headless  True  False  True  True  ['collection_fingerprinting']        True  {}                False  /tmp  always  False
+
+========== JS Instrument Settings ==========
+{"2257711764":[{"object":"window['ScriptProcessorNode'].prototype","instrumentedName":"ScriptProcessorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['GainNode'].prototype","instrumentedName":"GainNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AnalyserNode'].prototype","instrumentedName":"AnalyserNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OscillatorNode'].prototype","instrumentedName":"OscillatorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OfflineAudioContext'].prototype","instrumentedName":"OfflineAudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AudioContext'].prototype","instrumentedName":"AudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['RTCPeerConnection'].prototype","instrumentedName":"RTCPeerConnection","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['HTMLCanvasElement'].prototype","instrumentedName":"HTMLCanvasElement","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['Storage'].prototype","instrumentedName":"Storage","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.navigator","instrumentedName":"window.navigator","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['CanvasRenderingContext2D'].prototype","instrumentedName":"CanvasRenderingContext2D","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":["lineTo","transform","beginPath","drawImage","canvas","setTransform","quadraticCurveTo","clearRect","translate","moveTo","closePath","globalAlpha"],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window","instrumentedName":"window","logSettings":{"propertiesToInstrument":["sessionStorage","name","localStorage"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.document","instrumentedName":"window.document","logSettings":{"propertiesToInstrument":["referrer","cookie"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":true,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.screen","instrumentedName":"window.screen","logSettings":{"propertiesToInstrument":["pixelDepth","colorDepth"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}}]}
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2026-06-19 02:43:52,068 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for StorageControllerHandle, because the underlying socket closed
+2026-06-19 02:43:52,780 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-06-19 02:43:52,782 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2026-06-19 02:43:52,786 - MainProcess[BrowserManagerHandle-2257711764]- browser_manager      - INFO    : Starting to work on CommandSequence with visit_id 1223503151381156 on browser with id 2257711764
+2026-06-19 02:43:52,791 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2257711764: EXECUTING COMMAND: InitializeCommand()
+2026-06-19 02:43:52,794 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2257711764: EXECUTING COMMAND: GetCommand(https://www.elmundo.es/,15)
+2026-06-19 02:43:52,821 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2026-06-19 02:43:56,662 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js, line 1: unreachable code after return statement
+2026-06-19 02:43:56,663 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js, line 1: unreachable code after return statement
+2026-06-19 02:43:56,686 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://www.elmundo.es/, line 949: unreachable code after return statement
+2026-06-19 02:43:57,525 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: https://www.elmundo.es/, line 2224: TypeError: can't access property "mobile", navigator.userAgentData is undefined
+2026-06-19 02:43:57,784 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-19 02:43:59,121 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js, line 455: unreachable code after return statement
+2026-06-19 02:44:02,832 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 33 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:03,771 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://tags.tiqcdn.com/utag/unidadeditorial/elmundo/prod/utag.js, line 455: unreachable code after return statement
+2026-06-19 02:44:07,837 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:12,842 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:17,878 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 5 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:23,216 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 46 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:24,337 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2257711764: EXECUTING COMMAND: FinalizeCommand(5)
+2026-06-19 02:44:25,815 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript warning: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298, line 2: Script terminated by timeout at:
+2026-06-19 02:44:25,816 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: getTimeSinceStart@https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:77541
+2026-06-19 02:44:25,816 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: handleEvent@https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:77723
+2026-06-19 02:44:25,817 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: eventTriggered@https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:77668
+2026-06-19 02:44:25,818 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 960/listenToEvents/this.removeBeforeLeavingListener<@https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:77106
+2026-06-19 02:44:25,821 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 960/P/<@https://sdk.mrf.io/statics/marfeel-sdk.js?id=2298:2:9348
+2026-06-19 02:44:25,822 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 
+2026-06-19 02:44:25,934 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:25,936 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:25,951 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:25,952 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,015 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,015 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,016 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,027 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,130 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,131 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,158 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,159 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,178 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: undefined, line 0: Error: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,179 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-06-19 02:44:26,215 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,216 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,221 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:26,222 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-extension://044e13f8-5d28-4098-a3a8-d3b5f17449ad/feature.js, line 737: TypeError: can't access property "windowId", sender.tab is undefined
+2026-06-19 02:44:28,222 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-06-19 02:44:31,321 - MainProcess[BrowserManagerHandle-2257711764]- browser_manager      - INFO    : Finished working on CommandSequence with visit_id 1223503151381156 on browser with id 2257711764
+2026-06-19 02:44:31,332 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id 1223503151381156
+2026-06-19 02:44:31,335 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id 1223503151381156 while finalizing
+2026-06-19 02:44:33,192 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: JavaScript error: moz-src:///browser/components/search/SearchOneOffs.sys.mjs, line 392: TypeError: aEngine.getIconURL is not a function
+2026-06-19 02:44:33,226 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-06-19 02:44:33,327 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Closing browser manager...
+2026-06-19 02:44:33,327 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Closing browser...
+2026-06-19 02:44:33,331 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Joining command thread
+2026-06-19 02:44:33,333 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: 0.000024 seconds to join command thread
+2026-06-19 02:44:33,340 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 1781829873340	Marionette	INFO	Stopped listening on port 26941
+2026-06-19 02:44:35,505 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+2026-06-19 02:44:35,552 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-06-19 02:44:35,555 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-06-19 02:44:35,558 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-06-19 02:44:35,559 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-06-19 02:44:35,559 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Amp", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-06-19 02:44:35,585 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/urlbar-persisted-search-terms sync interrupted by shutdown
+2026-06-19 02:44:35,586 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/fingerprinting-protection-overrides sync interrupted by shutdown
+2026-06-19 02:44:35,590 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
+2026-06-19 02:44:35,601 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/remote-permissions sync interrupted by shutdown
+2026-06-19 02:44:35,610 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/doh-providers sync interrupted by shutdown
+2026-06-19 02:44:35,624 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/newtab-frecency-boosted-sponsors sync interrupted by shutdown
+2026-06-19 02:44:35,639 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+2026-06-19 02:44:35,653 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/password-rules sync interrupted by shutdown
+2026-06-19 02:44:35,659 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/top-sites sync interrupted by shutdown
+2026-06-19 02:44:35,681 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: WebExtensions:
+2026-06-19 02:44:35,682 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///tmp/addon-8d555653-3c9e-4dc1-8d93-5401208c3324.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 49"  data: no]
+2026-06-19 02:44:35,682 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: Stack:
+2026-06-19 02:44:35,682 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: onInputStreamReady@jar:file:///tmp/addon-8d555653-3c9e-4dc1-8d93-5401208c3324.xpi!/privileged/sockets/api.js:49:33
+2026-06-19 02:44:35,683 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: 
+2026-06-19 02:44:35,685 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for Browser-2257711764, because the underlying socket closed
+2026-06-19 02:44:35,750 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.warn: services.settings: main/webcompat-interventions sync interrupted by shutdown
+2026-06-19 02:44:35,797 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: (new AbortError("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+2026-06-19 02:44:36,007 - MainProcess[log-interceptor-2257711764]- selenium_firefox     - DEBUG   : BROWSER 2257711764: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Mdn", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Request destroyed without completion (0x80004004)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Request destroyed without completion (0x80004004)"})
+2026-06-19 02:44:36,323 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: Browser manager closed successfully.
+2026-06-19 02:44:36,326 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2257711764: during_init=False | profile_archive_dir=None
+2026-06-19 02:44:36,456 - MainProcess[MainThread]- storage_controller   - DEBUG   : Sending the shutdown signal to the Storage Controller...
+2026-06-19 02:44:36,460 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for TaskManager, because the underlying socket closed
+2026-06-19 02:44:37,854 - MainProcess[MainThread]- storage_controller   - INFO    : Received shutdown signal!
+2026-06-19 02:44:37,858 - MainProcess[MainThread]- storage_controller   - INFO    : Closing Server
+2026-06-19 02:44:37,858 - MainProcess[MainThread]- storage_controller   - INFO    : Closed Server
+2026-06-19 02:44:37,859 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling status_queue_update
+2026-06-19 02:44:37,866 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled status_queue_update
+2026-06-19 02:44:37,867 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling timeout_check
+2026-06-19 02:44:37,868 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled timeout_check
+2026-06-19 02:44:37,874 - MainProcess[MainThread]- storage_controller   - INFO    : Starting wait_closed
+2026-06-19 02:44:37,878 - MainProcess[MainThread]- storage_controller   - INFO    : Completed wait_closed
+2026-06-19 02:44:37,878 - MainProcess[MainThread]- storage_controller   - INFO    : Entering self.shutdown
+2026-06-19 02:44:38,238 - MainProcess[MainThread]- storage_controller   - INFO    : structured_storage is shut down
+2026-06-19 02:44:38,413 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageControllerHandle took 1.9561026096343994 seconds to close.

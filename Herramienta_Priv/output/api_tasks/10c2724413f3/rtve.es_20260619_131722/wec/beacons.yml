@@ -1,0 +1,605 @@
+- filter: '||socy.es^$third-party'
+  listName: easyprivacy.txt
+  query:
+    o: AN
+    e: onPrint
+    d: >-
+      eyJhbmNob3JfaWQiOiI0MTUiLCJhbmNob3JfbW9kZWwiOiJNSVhfdjIiLCJhbmNob3JfZm9ybWF0IjoicG9ydHJhaXRfYmlnIiwiYW5jaG9yX3R5cGUiOiJNSVgiLCJpZF9jbGllbnRlIjoiVFZFRSIsIm1lZGlhX2lkIjoiNTQ5IiwibWVkaWFfdG9rZW4iOiJUVkVFXzczOF83NDZfNzM2IiwicmVmZXJlcmpzIjoiaHR0cHM6Ly93d3cucnR2ZS5lcy8iLCJldmVudCI6Im9uUHJpbnQiLCJ1bml4dGltZV91dGMiOjE3ODE4Njc4NTUsImZyYW1lcyI6WyIzMjM4ZDgyMDEyOTkzMjk5M2ZlOSIsIjA1ZTA5OWU3YTliOTQzY2UwMjI4IiwiZjA2ZDMxMTRiM2NkOWFlNjQ0OGYiLCI1NmQxZjRiMDk0M2VlMWYyMDVlMSIsIjYyY2Q2MTVjYWJhMWYwM2I0OWI0IiwiODViOTA0ZjMwYTNmNDI5NWY0YWQiLCIwNTQ1MzhjN2RjMWI3YzQ5MGUzMSIsIjg3YWMxOGI4NTJmZGI5MDlmZmFlIiwiNzMyNjM0Y2U3MzEzYTVlN2FlNjAiLCIxZDA1NzExOTlkMTdkYTdkMTJjOSJdfQ==
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||socy.es^$third-party
+  timestamp: Fri, 19 Jun 2026 11:17:34 GMT
+  url: >-
+    https://p1.socy.es/p1.json?o=AN&e=onPrint&d=eyJhbmNob3JfaWQiOiI0MTUiLCJhbmNob3JfbW9kZWwiOiJNSVhfdjIiLCJhbmNob3JfZm9ybWF0IjoicG9ydHJhaXRfYmlnIiwiYW5jaG9yX3R5cGUiOiJNSVgiLCJpZF9jbGllbnRlIjoiVFZFRSIsIm1lZGlhX2lkIjoiNTQ5IiwibWVkaWFfdG9rZW4iOiJUVkVFXzczOF83NDZfNzM2IiwicmVmZXJlcmpzIjoiaHR0cHM6Ly93d3cucnR2ZS5lcy8iLCJldmVudCI6Im9uUHJpbnQiLCJ1bml4dGltZV91dGMiOjE3ODE4Njc4NTUsImZyYW1lcyI6WyIzMjM4ZDgyMDEyOTkzMjk5M2ZlOSIsIjA1ZTA5OWU3YTliOTQzY2UwMjI4IiwiZjA2ZDMxMTRiM2NkOWFlNjQ0OGYiLCI1NmQxZjRiMDk0M2VlMWYyMDVlMSIsIjYyY2Q2MTVjYWJhMWYwM2I0OWI0IiwiODViOTA0ZjMwYTNmNDI5NWY0YWQiLCIwNTQ1MzhjN2RjMWI3YzQ5MGUzMSIsIjg3YWMxOGI4NTJmZGI5MDlmZmFlIiwiNzMyNjM0Y2U3MzEzYTVlN2FlNjAiLCIxZDA1NzExOTlkMTdkYTdkMTJjOSJdfQ%3D%3D
+  occurrances: 2
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: GTM-XGJJ
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Fri, 19 Jun 2026 11:17:39 GMT
+  url: https://www.googletagmanager.com/gtm.js?id=GTM-XGJJ
+  occurrances: 2
+- filter: /VisitorAPI.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter /VisitorAPI.js
+  timestamp: Fri, 19 Jun 2026 11:17:41 GMT
+  url: https://js2.rtve.es/js/omniture/VisitorAPI.js
+  occurrances: 2
+- filter: '||socy.es^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||socy.es^$third-party
+  timestamp: Fri, 19 Jun 2026 11:17:41 GMT
+  url: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+  occurrances: 2
+- filter: '||static.chartbeat.com/js/chartbeat.js$redirect=chartbeat.js,script'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter
+        ||static.chartbeat.com/js/chartbeat.js$redirect=chartbeat.js,script
+  timestamp: Fri, 19 Jun 2026 11:17:41 GMT
+  url: https://static.chartbeat.com/js/chartbeat.js
+  occurrances: 2
+- filter: '||static.chartbeat.com/js/chartbeat_mab.js$redirect=chartbeat.js,script'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter
+        ||static.chartbeat.com/js/chartbeat_mab.js$redirect=chartbeat.js,script
+  timestamp: Fri, 19 Jun 2026 11:17:41 GMT
+  url: https://static.chartbeat.com/js/chartbeat_mab.js
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    d_visid_ver: 5.2.0
+    d_fieldgroup: MC
+    d_rtbd: json
+    d_ver: 2
+    d_orgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    d_nsid: 0
+    ts: 1781867861623
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Fri, 19 Jun 2026 11:17:41 GMT
+  url: >-
+    https://dpm.demdex.net/id?d_visid_ver=5.2.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&d_nsid=0&ts=1781867861623
+  occurrances: 1
+- filter: /v.gif?
+  listName: easyprivacy.txt
+  query:
+    cd: 0
+    a: 864486
+    d: rtve.es
+    u: D16B42A934FEC1526301A5F8DA2F1BCD9
+    h: e805ff563c2b2fbe602a905b273ef38e
+    t: false
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter /v.gif?
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: >-
+    https://dev.visualwebsiteoptimizer.com/eu01/collect/v.gif?cd=0&a=864486&d=rtve.es&u=D16B42A934FEC1526301A5F8DA2F1BCD9&h=e805ff563c2b2fbe602a905b273ef38e&t=false
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query:
+    d_nsid: 0
+  stack:
+    - fileName: ''
+      source: >-
+        requested from undefined source and matched with easyprivacy.txt filter
+        ||demdex.net^
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: https://rtve.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.rtve.es
+  occurrances: 1
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    d_visid_ver: 5.2.0
+    d_fieldgroup: A
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    mid: 2.7565162096756373e+37
+    ts: 1781867862437
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/id?d_visid_ver=5.2.0&d_fieldgroup=A&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&mid=27565162096756373073336990884979337540&ts=1781867862437
+  occurrances: 1
+- filter: '||everesttech.net^'
+  listName: easyprivacy.txt
+  query:
+    d_uuid: 2.759360434570545e+37
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||everesttech.net^
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: >-
+    https://cm.everesttech.net/cm/dd?d_uuid=27593604345705447493334199564954647826
+  occurrances: 1
+- filter: '||socy.es^$third-party'
+  listName: easyprivacy.txt
+  query:
+    t: TVEE_738_746_736
+    r: ''
+    h: https://www.rtve.es/
+    _ga: ''
+    _gid: ''
+    _uid: bs.1.0.zj3StaWDeR1Z
+    _tcode: website
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||socy.es^$third-party
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: >-
+    https://tvee.spxl.socy.es/pixel.json?t=TVEE_738_746_736&r=&h=https%3A%2F%2Fwww.rtve.es%2F&_ga=&_gid=&_uid=bs.1.0.zj3StaWDeR1Z&_tcode=website
+  occurrances: 2
+- filter: /ping?h=
+  listName: easyprivacy.txt
+  query:
+    h: rtve.es
+    p: /
+    u: CW0uEVSCACsCPLbTP
+    d: rtve.es
+    g: 61531
+    g0: 'WEB |RTVE,RTVE,WEB '
+    g1: RTVE.es
+    'n': 1
+    f: '00001'
+    c: 0
+    x: 0
+    m: 0
+    'y': 11571
+    o: 1680
+    w: 927
+    j: 45
+    R: 1
+    W: 0
+    I: 0
+    E: 0
+    e: 0
+    r: ''
+    PA: https://www.rtve.es/
+    b: 13587
+    t: BCgo56DLbdxmBE8UY-Dcc3HVC-OZlh
+    V: 151
+    i: Noticias de última hora, programas y series de televisión - RTVE.es
+    tz: -120
+    sn: 1
+    sv: DD0w9DHXULyBxMH8UBRX485CMg4-N
+    sr: external
+    sd: 1
+    im: 06532c4f
+    _: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter /ping?h=
+  timestamp: Fri, 19 Jun 2026 11:17:42 GMT
+  url: >-
+    https://ping.chartbeat.net/ping?h=rtve.es&p=%2F&u=CW0uEVSCACsCPLbTP&d=rtve.es&g=61531&g0=WEB%20%7CRTVE%2CRTVE%2CWEB%20&g1=RTVE.es&n=1&f=00001&c=0&x=0&m=0&y=11571&o=1680&w=927&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.rtve.es%2F&b=13587&t=BCgo56DLbdxmBE8UY-Dcc3HVC-OZlh&V=151&i=Noticias%20de%20%C3%BAltima%20hora%2C%20programas%20y%20series%20de%20televisi%C3%B3n%20-%20RTVE.es&tz=-120&sn=1&sv=DD0w9DHXULyBxMH8UBRX485CMg4-N&sr=external&sd=1&im=06532c4f&_
+  occurrances: 2
+- filter: '||demdex.net^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||demdex.net^
+  timestamp: Fri, 19 Jun 2026 11:17:43 GMT
+  url: https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlVwAAAKaBhwNn
+  occurrances: 1
+- filter: '||chartbeat.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    host: rtve.es
+    domain: rtve.es
+    path: /
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||chartbeat.com^$third-party
+  timestamp: Fri, 19 Jun 2026 11:17:43 GMT
+  url: >-
+    https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=rtve.es&domain=rtve.es&path=%2F
+  occurrances: 2
+- filter: '||geolocation.onetrust.com^$third-party'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with
+        fanboy-annoyance.txt filter ||geolocation.onetrust.com^$third-party
+  timestamp: Fri, 19 Jun 2026 11:17:43 GMT
+  url: https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
+  occurrances: 2
+- filter: /AppMeasurement.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter /AppMeasurement.js
+  timestamp: Fri, 19 Jun 2026 11:17:43 GMT
+  url: https://js2.rtve.es/js/omniture/AppMeasurement.js
+  occurrances: 2
+- filter: /otBannerSdk.js
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with
+        fanboy-annoyance.txt filter /otBannerSdk.js
+  timestamp: Fri, 19 Jun 2026 11:17:43 GMT
+  url: https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js
+  occurrances: 2
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:46 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    ch: RTVE
+    server: www.rtve.es
+    events: event1
+    aamb: 6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y
+    c1: D=v1
+    v1: www.rtve.es
+    h1: WEB |RTVE
+    c2: D=v2
+    v2: WEB
+    c3: D=v3
+    v3: RTVE
+    v10: no aceptadas
+    c11: D=g
+    v11: D=g
+    c12: D=r
+    v12: D=r
+    c13: New
+    v13: D=c13
+    c14: Viernes
+    v14: D=c14
+    c15: 13
+    v15: D=c15
+    c16: '13:17'
+    v16: D=c16
+    c17: D=v19
+    v17: D=pageName
+    c18: D=v20
+    v19: no logado
+    v20: anonimo
+    v32: portada
+    c55: no aplica
+    v55: no aplica
+    c56: RTVE.es
+    v56: RTVE.es
+    v70: 0
+    v71: 0
+    v73: 'NO'
+    v76: no-iframe|match|no-webview|https://www.rtve.es/
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:46 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s73111569101246?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A46%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&ch=RTVE&server=www.rtve.es&events=event1&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=D%3Dv1&v1=www.rtve.es&h1=WEB%20%7CRTVE&c2=D%3Dv2&v2=WEB&c3=D%3Dv3&v3=RTVE&v10=no%20aceptadas&c11=D%3Dg&v11=D%3Dg&c12=D%3Dr&v12=D%3Dr&c13=New&v13=D%3Dc13&c14=Viernes&v14=D%3Dc14&c15=13&v15=D%3Dc15&c16=13%3A17&v16=D%3Dc16&c17=D%3Dv19&v17=D%3DpageName&c18=D%3Dv20&v19=no%20logado&v20=anonimo&v32=portada&c55=no%20aplica&v55=no%20aplica&c56=RTVE.es&v56=RTVE.es&v70=0&v71=0&v73=NO&v76=no-iframe%7Cmatch%7Cno-webview%7Chttps%3A%2F%2Fwww.rtve.es%2F&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+  occurrances: 1
+- filter: '||visualwebsiteoptimizer.com/cdn/analysis/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||visualwebsiteoptimizer.com/cdn/analysis/
+  timestamp: Fri, 19 Jun 2026 11:17:46 GMT
+  url: >-
+    https://dev.visualwebsiteoptimizer.com/cdn/analysis/4.0/opaEv-7ca40f171de3e2ec2a2e096e1eb22088br.js
+  occurrances: 3
+- filter: '||visualwebsiteoptimizer.com/cdn/analysis/'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||visualwebsiteoptimizer.com/cdn/analysis/
+  timestamp: Fri, 19 Jun 2026 11:17:46 GMT
+  url: >-
+    https://dev.visualwebsiteoptimizer.com/cdn/analysis/4.0/worker-70faafffa0475802f5ee03ca5ff74179br.js
+  occurrances: 2
+- filter: $ping,third-party
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter $ping,third-party
+  timestamp: Fri, 19 Jun 2026 11:17:51 GMT
+  url: https://privacyportal-eu.onetrust.com/request/v1/consentreceipts/anonymous
+  occurrances: 2
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:56 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    ch: RTVE
+    server: www.rtve.es
+    events: event1
+    aamb: 6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y
+    c1: D=v1
+    v1: www.rtve.es
+    h1: WEB |RTVE
+    c2: D=v2
+    v2: WEB
+    c3: D=v3
+    v3: RTVE
+    v10: no aceptadas
+    c11: D=g
+    v11: D=g
+    c12: D=r
+    v12: D=r
+    c13: New
+    v13: D=c13
+    c14: Viernes
+    v14: D=c14
+    c15: 13
+    v15: D=c15
+    c16: '13:17'
+    v16: D=c16
+    c17: D=v19
+    v17: D=pageName
+    c18: D=v20
+    v19: no logado
+    v20: anonimo
+    v32: portada
+    c55: no aplica
+    v55: no aplica
+    c56: RTVE.es
+    v56: RTVE.es
+    v70: 0
+    v71: 0
+    v73: 'NO'
+    v76: no-iframe|match|no-webview|https://www.rtve.es/
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:56 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s71135262948091?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A56%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&ch=RTVE&server=www.rtve.es&events=event1&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=D%3Dv1&v1=www.rtve.es&h1=WEB%20%7CRTVE&c2=D%3Dv2&v2=WEB&c3=D%3Dv3&v3=RTVE&v10=no%20aceptadas&c11=D%3Dg&v11=D%3Dg&c12=D%3Dr&v12=D%3Dr&c13=New&v13=D%3Dc13&c14=Viernes&v14=D%3Dc14&c15=13&v15=D%3Dc15&c16=13%3A17&v16=D%3Dc16&c17=D%3Dv19&v17=D%3DpageName&c18=D%3Dv20&v19=no%20logado&v20=anonimo&v32=portada&c55=no%20aplica&v55=no%20aplica&c56=RTVE.es&v56=RTVE.es&v70=0&v71=0&v73=NO&v76=no-iframe%7Cmatch%7Cno-webview%7Chttps%3A%2F%2Fwww.rtve.es%2F&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+  occurrances: 1
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:57 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    events: event40
+    pe: lnk_o
+    pev2: scroll_depth
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    lrt: 305
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:57 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s77073752375775?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event40&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&lrt=305&AQE=1
+  occurrances: 1
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:57 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    events: event41
+    pe: lnk_o
+    pev2: scroll_depth
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:57 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s72641140150868?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event41&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+  occurrances: 1
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:57 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    events: event42
+    pe: lnk_o
+    pev2: scroll_depth
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:57 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s73412583592606?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event42&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+  occurrances: 1
+- filter: '||sadbmetrics.rtve.es^'
+  listName: easyprivacy.txt
+  query:
+    AQB: 1
+    ndh: 1
+    pf: 1
+    t: 19/5/2026 13:17:57 5 -120
+    mid: 2.7565162096756373e+37
+    aamlh: 6
+    ce: UTF-8
+    ns: rtveglobal
+    pageName: >-
+      www.rtve.es:WEB:Noticias de ultima hora, programas y series de television
+      - RTVE.es
+    g: https://www.rtve.es/
+    cc: EUR
+    events: event43
+    pe: lnk_o
+    pev2: scroll_depth
+    s: 800x600
+    c: 24
+    j: 1.6
+    v: 'N'
+    k: 'Y'
+    bw: 1680
+    bh: 927
+    mcorgid: 0D3C2C1653DB264C0A490D4B@AdobeOrg
+    AQE: 1
+  stack:
+    - fileName: https://www.rtve.es/
+      source: >-
+        requested from https://www.rtve.es/ and matched with easyprivacy.txt
+        filter ||sadbmetrics.rtve.es^
+  timestamp: Fri, 19 Jun 2026 11:17:57 GMT
+  url: >-
+    https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s79331639279275?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event43&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+  occurrances: 1

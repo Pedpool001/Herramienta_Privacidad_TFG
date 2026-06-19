@@ -1,0 +1,935 @@
+- name: s_ecid
+  value: MCMID%7C27565162096756373073336990884979337540
+  domain: rtve.es
+  path: /
+  expires: 1816427877.898318
+  size: 52
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-24T11:17:57.898Z
+  expiresDays: 400
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s79331639279275?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event43&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://sadbmetrics.rtve.es/b/ss/rtveglobal/1/JS-2.17.0/s79331639279275?AQB=1&ndh=1&pf=1&t=19%2F5%2F2026%2013%3A17%3A57%205%20-120&mid=27565162096756373073336990884979337540&aamlh=6&ce=UTF-8&ns=rtveglobal&pageName=www.rtve.es%3AWEB%3ANoticias%20de%20ultima%20hora%2C%20programas%20y%20series%20de%20television%20-%20RTVE.es&g=https%3A%2F%2Fwww.rtve.es%2F&cc=EUR&events=event43&pe=lnk_o&pev2=scroll_depth&s=800x600&c=24&j=1.6&v=N&k=Y&bw=1680&bh=927&mcorgid=0D3C2C1653DB264C0A490D4B%40AdobeOrg&AQE=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: _cnv_id.b549
+  value: >-
+    15001e79-f952-4af2-8775-6667d075998a.1781867862.1.1781867876..40d83589-f384-48dc-afc4-2ffeb68614e8...
+  domain: www.rtve.es
+  path: /
+  expires: 1816427876.17779
+  size: 113
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-24T11:17:56.177Z
+  expiresDays: 400
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 84888
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+        functionName: ln
+        source: '    at ln (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:84888)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: AMCV_0D3C2C1653DB264C0A490D4B%40AdobeOrg
+  value: >-
+    -1124106680%7CMCIDTS%7C20624%7CMCMID%7C27565162096756373073336990884979337540%7CMCAAMLH-1782472662%7C6%7CMCAAMB-1782472662%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1781875063s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20631%7CvVersion%7C5.2.0
+  domain: rtve.es
+  path: /
+  expires: 1816427863.386944
+  size: 305
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-24T11:17:43.386Z
+  expiresDays: 400
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 14484
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/omniture/VisitorAPI.js
+        functionName: Object.set
+        source: '    at Object.set (https://js2.rtve.es/js/omniture/VisitorAPI.js:7:14484)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _cb
+  value: CW0uEVSCACsCPLbTP
+  domain: rtve.es
+  path: /
+  expires: 1815995873
+  size: 20
+  httpOnly: false
+  secure: true
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-19T11:17:53.000Z
+  expiresDays: 395
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 269
+        lineNumber: 34
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: L.create
+        source: '    at L.create (https://static.chartbeat.com/js/chartbeat.js:34:269)'
+      - columnNumber: 543
+        lineNumber: 35
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: n.create
+        source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:543)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _chartbeat2
+  value: .1781867862585.1781867873812.1.CiZxMzCu-QbdBFoANuCYolnQ2g-xx.1
+  domain: rtve.es
+  path: /
+  expires: 1815995873
+  size: 73
+  httpOnly: false
+  secure: true
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-19T11:17:53.000Z
+  expiresDays: 395
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 269
+        lineNumber: 34
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: L.create
+        source: '    at L.create (https://static.chartbeat.com/js/chartbeat.js:34:269)'
+      - columnNumber: 543
+        lineNumber: 35
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: n.create
+        source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:543)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _vwo_uuid_v2
+  value: D16B42A934FEC1526301A5F8DA2F1BCD9|e805ff563c2b2fbe602a905b273ef38e
+  domain: rtve.es
+  path: /
+  expires: 1813490273
+  size: 78
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-20T11:17:53.000Z
+  expiresDays: 366
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 679
+        lineNumber: 15
+        functionName: setValue
+        source: '    at setValue (<anonymous>:15:679)'
+      - columnNumber: 2344
+        lineNumber: 15
+        source: '    at <anonymous>:15:2344'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _vwo_uuid
+  value: D16B42A934FEC1526301A5F8DA2F1BCD9
+  domain: rtve.es
+  path: /
+  expires: 1813424814
+  size: 42
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T17:06:54.000Z
+  expiresDays: 365.24
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 41398
+        lineNumber: 2
+        functionName: Object._create
+        source: '    at Object._create (<anonymous>:2:41398)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: r_did
+  value: >-
+    {"did":"42eff9ae-7b97-4f4c-9ddc-f42009e2f66a","ct":1781867862991,"ut":1781867873728}
+  domain: rtve.es
+  path: /
+  expires: 1813403873
+  size: 89
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:53.000Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 512
+        lineNumber: 2
+        functionName: setCookieRDid
+        source: '    at setCookieRDid (<anonymous>:2:512)'
+      - columnNumber: 87
+        lineNumber: 3
+        source: '    at <anonymous>:3:87'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: __bs_id
+  value: bs.1.0.zj3StaWDeR1Z
+  domain: www.rtve.es
+  path: /
+  expires: 1813403873
+  size: 26
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:53.000Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 2602
+        lineNumber: 1
+        fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+        functionName: Pixel.token.setCookie
+        source: '    at Pixel.token.setCookie (https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:2602)'
+      - columnNumber: 6932
+        lineNumber: 1
+        fileName: https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/
+        functionName: new Pixel
+        source: '    at new Pixel (https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/:1:6932)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: ucid
+  value: u5Q56e-E4k2LcWFP5C8a8g
+  domain: users.rtve.es
+  path: /
+  expires: 1813403863.772352
+  size: 26
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:43.772Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: gmid
+  value: >-
+    gmid.ver4.AtLteJNsfQ.tHA-7eGs3YIg_sexhLbNh6qK9dD6STQb9_W9jlO-2bpO4aRLHTOZm9jjHR3jhKLN.S9y7nbiQJygCc0r47XxCeEtYaeo8cD8wuNed1V8TzEzYiMDubf4lWm1kYcTKbY1r6ng_EzUl-RDZ0Z4ZYRwLRg.sc3
+  domain: users.rtve.es
+  path: /
+  expires: 1813403863.772229
+  size: 180
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:43.772Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: >-
+    gig_bootstrap_3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm
+  value: users_ver4
+  domain: rtve.es
+  path: /
+  expires: 1813403863
+  size: 90
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:43.000Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 137125
+        lineNumber: 60
+        fileName: >-
+          https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm
+        functionName: e.setCookie
+        source: '    at e.setCookie (https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm:60:137125)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: kng_aflow
+  value: >-
+    {"did":"42eff9ae-7b97-4f4c-9ddc-f42009e2f66a","vdid":1781867862991,"sidex":1781867862993,"sid":"42eff9ae-7b97-4f4c-9ddc-f42009e2f66a-49105"}
+  domain: rtve.es
+  path: /
+  expires: 1813403862
+  size: 149
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-19T11:17:42.000Z
+  expiresDays: 365
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 37640
+        lineNumber: 1
+        fileName: https://js2.rtve.es/js/user-tracker/v2.6.3/mark-collector.iife.js
+        functionName: e.value
+        source: '    at e.value (https://js2.rtve.es/js/user-tracker/v2.6.3/mark-collector.iife.js:1:37640)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: hasGmid
+  value: ver4
+  domain: users.rtve.es
+  path: /
+  expires: 1797679063.772407
+  size: 11
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-12-19T11:17:43.772Z
+  expiresDays: 183
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://users.rtve.es/accounts.webSdkBootstrap?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&pageURL=https%3A%2F%2Fwww.rtve.es%2F&sdk=js_latest&sdkBuild=1930&format=json
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: OptanonConsent
+  value: >-
+    isGpcEnabled=0&datestamp=Fri+Jun+19+2026+13%3A17%3A55+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&consentId=78c35cd3-45ef-43b7-8aee-b6a0e3eed493&interactionCount=1&isAnonUser=1&landingPath=https%3A%2F%2Fwww.rtve.es%2F&groups=C0001%3A1%2CC0003%3A0%2CC0002%3A0%2CC0004%3A0%2CC006%3A0%2CC008%3A0%2CV2STACK42%3A0&hosts=H101%3A1%2CH102%3A1%2CH66%3A1%2CH109%3A1%2CH7%3A1%2CH1%3A0%2CH100%3A0%2CH25%3A0%2CH103%3A0%2CH31%3A0%2CH92%3A0%2CH106%3A0%2CH93%3A0%2CH94%3A0%2CH59%3A0%2CH104%3A0%2CH2%3A0%2CH13%3A0%2CH14%3A0%2CH17%3A0%2CH22%3A0%2CH83%3A0%2CH3%3A0%2CH96%3A0%2CH4%3A0%2CH77%3A0%2CH38%3A0%2CH6%3A0%2CH50%3A0%2CH88%3A0%2CH8%3A0%2CH56%3A0&genVendors=
+  domain: rtve.es
+  path: /
+  expires: 1797419875
+  size: 714
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-12-16T11:17:55.000Z
+  expiresDays: 180
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 37059
+        lineNumber: 7
+        fileName: https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js
+        functionName: xt.setCookie
+        source: '    at xt.setCookie (https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js:7:37059)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: dpm
+  value: '27593604345705447493334199564954647826'
+  domain: dpm.demdex.net
+  path: /
+  expires: 1797419863.296465
+  size: 41
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-12-16T11:17:43.296Z
+  expiresDays: 180
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlVwAAAKaBhwNn
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlVwAAAKaBhwNn
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: demdex
+  value: '27593604345705447493334199564954647826'
+  domain: demdex.net
+  path: /
+  expires: 1797419863.296328
+  size: 44
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-12-16T11:17:43.296Z
+  expiresDays: 180
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlVwAAAKaBhwNn
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlVwAAAKaBhwNn
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: _vis_opt_s
+  value: 1%7C
+  domain: rtve.es
+  path: /
+  expires: 1790507863
+  size: 14
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-09-27T11:17:43.000Z
+  expiresDays: 100
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 27243
+        lineNumber: 2
+        functionName: se
+        source: '    at se (<anonymous>:2:27243)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _vwo_ds
+  value: >-
+    3%3Aa_0%2Ct_0%3A0%241781867861%3A48.20956978%3A%3A%3A%3A4%2C%3A1781867861%3A1781867861%3A1
+  domain: rtve.es
+  path: /
+  expires: 1789643876
+  size: 97
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-09-17T11:17:56.000Z
+  expiresDays: 90
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 41398
+        lineNumber: 2
+        functionName: Object._create
+        source: '    at Object._create (<anonymous>:2:41398)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: s_nr
+  value: '1781867877698'
+  domain: rtve.es
+  path: /
+  expires: 1784459877
+  size: 17
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-19T11:17:57.000Z
+  expiresDays: 30
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 140
+        lineNumber: 218
+        fileName: https://js2.rtve.es/js/omniture/AppMeasurement.js
+        functionName: AppMeasurement.a.c_w.a.cookieWrite
+        source: '    at AppMeasurement.a.c_w.a.cookieWrite (https://js2.rtve.es/js/omniture/AppMeasurement.js:218:140)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _vwo_sn
+  value: 0%3A2%3A%3A%3A%3A%3A8
+  domain: rtve.es
+  path: /
+  expires: 1781869677
+  size: 28
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T11:47:57.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 41398
+        lineNumber: 2
+        functionName: Object._create
+        source: '    at Object._create (<anonymous>:2:41398)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _cnv_ses.b549
+  value: '*'
+  domain: www.rtve.es
+  path: /
+  expires: 1781869676
+  size: 14
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T11:47:56.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 84888
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js
+        functionName: ln
+        source: '    at ln (https://js2.rtve.es/js/conviva/convivaAppTracker-v1_4_3.js:7:84888)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: _cb_svref
+  value: external
+  domain: rtve.es
+  path: /
+  expires: 1781869673
+  size: 17
+  httpOnly: false
+  secure: true
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-19T11:47:53.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 269
+        lineNumber: 34
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: L.create
+        source: '    at L.create (https://static.chartbeat.com/js/chartbeat.js:34:269)'
+      - columnNumber: 543
+        lineNumber: 35
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: n.create
+        source: '    at n.create (https://static.chartbeat.com/js/chartbeat.js:35:543)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: gig_canary
+  value: latest
+  domain: cdns.eu1.gigya.com
+  path: /
+  expires: 1781868461.423869
+  size: 16
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://rtve.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-06-19T11:27:41.423Z
+  expiresDays: 0.01
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService#origin=https://www.rtve.es/&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService#origin=https://www.rtve.es/&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: gig_canary
+  value: latest
+  domain: cdns.gigya.com
+  path: /
+  expires: 1781868460.071474
+  size: 16
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://rtve.es
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-06-19T11:27:40.071Z
+  expiresDays: 0.01
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://cdns.gigya.com/sdk.config.get?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&httpStatusCodes=true&ver=1781867760000
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cdns.gigya.com/sdk.config.get?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&httpStatusCodes=true&ver=1781867760000
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: AMCVS_0D3C2C1653DB264C0A490D4B%40AdobeOrg
+  value: '1'
+  domain: rtve.es
+  path: /
+  expires: -1
+  size: 42
+  httpOnly: false
+  secure: true
+  session: true
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 14484
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/omniture/VisitorAPI.js
+        functionName: Object.set
+        source: '    at Object.set (https://js2.rtve.es/js/omniture/VisitorAPI.js:7:14484)'
+      - columnNumber: 7491
+        lineNumber: 8
+        fileName: https://js2.rtve.es/js/omniture/VisitorAPI.js
+        functionName: Je.S.cookieWrite
+        source: '    at Je.S.cookieWrite (https://js2.rtve.es/js/omniture/VisitorAPI.js:8:7491)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _vis_opt_test_cookie
+  value: '1'
+  domain: rtve.es
+  path: /
+  expires: -1
+  size: 21
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 27243
+        lineNumber: 2
+        functionName: se
+        source: '    at se (<anonymous>:2:27243)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: s_cc
+  value: 'true'
+  domain: rtve.es
+  path: /
+  expires: -1
+  size: 8
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 140
+        lineNumber: 218
+        fileName: https://js2.rtve.es/js/omniture/AppMeasurement.js
+        functionName: AppMeasurement.a.c_w.a.cookieWrite
+        source: '    at AppMeasurement.a.c_w.a.cookieWrite (https://js2.rtve.es/js/omniture/AppMeasurement.js:218:140)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- domain: rtve.es
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 14484
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/omniture/VisitorAPI.js
+        functionName: Object.set
+        source: '    at Object.set (https://js2.rtve.es/js/omniture/VisitorAPI.js:7:14484)'
+      - columnNumber: 15031
+        lineNumber: 7
+        fileName: https://js2.rtve.es/js/omniture/VisitorAPI.js
+        functionName: ee
+        source: '    at ee (https://js2.rtve.es/js/omniture/VisitorAPI.js:7:15031)'
+    type: Cookie.JS
+  name: test
+  path: /
+  value: cookie
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: gigya.com
+  log:
+    location: https://www.rtve.es
+    stack:
+      - columnNumber: 92929
+        lineNumber: 32
+        fileName: >-
+          https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService
+        functionName: e.setCookie
+        source: '    at e.setCookie (https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService:32:92929)'
+      - columnNumber: 85306
+        lineNumber: 32
+        fileName: >-
+          https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService
+        functionName: e._setCookieInternal
+        source: '    at e._setCookieInternal (https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService:32:85306)'
+    type: Cookie.JS
+  name: gig3pctest
+  path: /
+  value: 'true'
+  expiresDays: 0
+  session: false
+  firstPartyStorage: false
+- domain: rtve.es
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 210
+        lineNumber: 8
+        fileName: https://static.chartbeat.com/js/chartbeat_mab.js
+        functionName: F
+        source: '    at F (https://static.chartbeat.com/js/chartbeat_mab.js:8:210)'
+      - columnNumber: 982
+        lineNumber: 8
+        fileName: https://static.chartbeat.com/js/chartbeat_mab.js
+        functionName: ta
+        source: '    at ta (https://static.chartbeat.com/js/chartbeat_mab.js:8:982)'
+    type: Cookie.JS
+  name: _cbt
+  path: /
+  value: _cbt
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: everesttech.net
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://cm.everesttech.net/cm/dd?d_uuid=27593604345705447493334199564954647826
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.everesttech.net/cm/dd?d_uuid=27593604345705447493334199564954647826
+    type: Cookie.HTTP
+  name: everest_g_v2
+  path: /
+  value: g_surferid~ajUlVwAAAKaBhwNn
+  expiresDays: 365
+  session: false
+  firstPartyStorage: false
+- domain: everesttech.net
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - fileName: >-
+          https://cm.everesttech.net/cm/dd?d_uuid=27593604345705447493334199564954647826
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.everesttech.net/cm/dd?d_uuid=27593604345705447493334199564954647826
+    type: Cookie.HTTP
+  name: everest_session_v2
+  path: /
+  value: ajUlVwAAAKaBiANn
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: demdex.net
+  log:
+    location: https://www.rtve.es
+    stack:
+      - columnNumber: 99
+        lineNumber: 6
+        fileName: https://rtve.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.setCookie
+        source: '    at Object.setCookie (https://rtve.demdex.net/dest5.html?d_nsid=0:6:99)'
+      - columnNumber: 233
+        lineNumber: 5
+        fileName: https://rtve.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.canSetCookie
+        source: '    at Object.canSetCookie (https://rtve.demdex.net/dest5.html?d_nsid=0:5:233)'
+    type: Cookie.JS
+  name: _dp
+  path: /
+  value: '1'
+  expiresDays: -0.69
+  session: false
+  firstPartyStorage: false
+- domain: rtve.es
+  log:
+    location: https://www.rtve.es/
+    stack:
+      - columnNumber: 26705
+        lineNumber: 2
+        functionName: HTMLDocument.cookie
+        source: '    at HTMLDocument.cookie (<anonymous>:2:26705)'
+      - columnNumber: 269
+        lineNumber: 34
+        fileName: https://static.chartbeat.com/js/chartbeat.js
+        functionName: L.create
+        source: '    at L.create (https://static.chartbeat.com/js/chartbeat.js:34:269)'
+    type: Cookie.JS
+  name: _chartbeat4
+  path: /
+  value: t=BCgo56DLbdxmBE8UY-Dcc3HVC-OZlh&E=0&x=0&c=0.15&y=11576&w=927
+  expiresDays: 0
+  session: false
+  firstPartyStorage: false

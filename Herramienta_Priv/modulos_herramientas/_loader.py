@@ -7,8 +7,8 @@ from pathlib import Path
 
 # Derivado relativamente: _loader.py → modulos_herramientas/ → Herramienta_Priv/ → TFG_DIR
 TFG_DIR          = Path(__file__).resolve().parents[2]
-ANALYSIS_SCRIPTS = TFG_DIR / "privacy-pioneer-web-crawler/analysis_scripts"
-ANALYSIS_DATA    = TFG_DIR / "privacy-pioneer-web-crawler/analysis_data"
+ANALYSIS_SCRIPTS = TFG_DIR / "Herramienta_Priv/requisitos"
+ANALYSIS_DATA    = TFG_DIR / "Herramienta_Priv/analysis_data"
 
 # Cada script guarda su resultado con el número de requisito, no el nombre completo
 # del script. Ej: r7_fingerprinting.py → r7_resultado.json (no r7_fingerprinting_resultado.json).

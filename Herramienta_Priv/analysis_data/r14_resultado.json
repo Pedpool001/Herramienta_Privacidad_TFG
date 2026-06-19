@@ -1,0 +1,65 @@
+{
+  "sitio": "Política de privacidad - RTVE.es",
+  "veredicto": "WARNING",
+  "evaluacion": {
+    "estado": "WARNING",
+    "detalle": "Política: índice Szigriszt-Muñoz 40.2 (Algo difícil) → WARNING. Banner: Frases concisas (media 18.2 palabras/frase). Tecnicismos frecuentes: «ejecución de un contrato» (4×), «limitación del tratamiento» (4×), «interés legítimo» (3×), «responsable del tratamiento» (2×)."
+  },
+  "politica": {
+    "num_palabras": 3714,
+    "num_oraciones": 137,
+    "total_silabas": 8319,
+    "sil_por_palabra": 2.24,
+    "palabras_por_frase": 27.11,
+    "indice_szigriszt": 40.18
+  },
+  "banner": {
+    "disponible": true,
+    "num_frases": 28,
+    "media_palabras_frase": 18.2,
+    "veredicto": "PASSED",
+    "descripcion": "Frases concisas (media 18.2 palabras/frase)."
+  },
+  "tecnicismos": [
+    {
+      "termino": "ejecución de un contrato",
+      "ocurrencias": 4
+    },
+    {
+      "termino": "limitación del tratamiento",
+      "ocurrencias": 4
+    },
+    {
+      "termino": "interés legítimo",
+      "ocurrencias": 3
+    },
+    {
+      "termino": "responsable del tratamiento",
+      "ocurrencias": 2
+    },
+    {
+      "termino": "obligación legal",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de oposición",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de rectificación",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de supresión",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "derecho al olvido",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "anonimización",
+      "ocurrencias": 1
+    }
+  ]
+}
