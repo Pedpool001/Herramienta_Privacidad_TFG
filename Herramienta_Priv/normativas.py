@@ -36,17 +36,19 @@ NORMATIVAS: dict[str, dict] = {
     "RGPD": {
         "nombre": "RGPD",
         "detalle": "Reglamento (UE) 2016/679",
-        "requisitos": [f"R{i}" for i in range(1, 20)],
+        # R3 (web beacons) está fusionado en R2 en la numeración de publicación;
+        # se usa la numeración interna sin R3 para que el conteo cuadre.
+        "requisitos": [f"R{i}" for i in range(1, 20) if i != 3],
     },
     "ePrivacy": {
         "nombre": "Directiva ePrivacy",
         "detalle": "Directiva 2002/58/CE, art. 5.3",
-        "requisitos": ["R2", "R3", "R6", "R8", "R10"],
+        "requisitos": ["R2", "R6", "R8", "R10"],
     },
     "LSSI": {
         "nombre": "LSSI",
         "detalle": "Ley 34/2002, art. 22.2",
-        "requisitos": ["R2", "R3", "R6"],
+        "requisitos": ["R2", "R6"],
     },
     "AEPD": {
         "nombre": "AEPD",
@@ -163,8 +165,11 @@ def _donut(sigla: str, conteo: dict[str, int]) -> str:
     idx = indice_cumplimiento(conteo)
     pct = f"{idx:.0f}%" if idx is not None else "–"
 
+    # El tooltip lista los requisitos con su etiqueta de publicación (R1–R18),
+    # no con la numeración interna.
+    from publicacion import etiqueta as _etq
     n_reqs = len(meta["requisitos"])
-    reqs   = ", ".join(meta["requisitos"])
+    reqs   = ", ".join(_etq(r) for r in meta["requisitos"])
 
     return f"""
   <div class="norm-card">

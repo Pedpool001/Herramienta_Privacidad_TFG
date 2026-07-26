@@ -357,7 +357,7 @@
   <span class="logo">🔍</span>
   <div>
     <h1>Auditoría de Privacidad Web</h1>
-    <p>TFG · Herramienta de análisis de cumplimiento RGPD (R1–R19)</p>
+    <p>TFG · Herramienta de análisis de cumplimiento RGPD (R1–R18)</p>
   </div>
 </header>
 
@@ -494,7 +494,7 @@
 </div>
 
 <footer>
-  Herramienta de Auditoría de Privacidad Web · TFG · RGPD R1–R19
+  Herramienta de Auditoría de Privacidad Web · TFG · RGPD R1–R18
 </footer>
 
 <script>
@@ -504,39 +504,41 @@
   let _polling = null;
 
   // ── Datos de requisitos ─────────────────────────────────────────────────────
+  // 'id' es el identificador interno (el que entiende la API y los módulos);
+  // 'pub' es la etiqueta de publicación (R1–R18). R2 y R3 se fusionaron: la
+  // casilla R2 activa internamente ambos, y R3 ya no aparece por separado.
   const REQUISITOS_INFO = [
-    { id:'R1',  name:'Información por capas',         desc:'Banner de cookies con resumen visible y acceso a detalles técnicos.' },
-    { id:'R2',  name:'Bloqueo de cookies no exentas', desc:'Cookies de rastreo activas antes de que el usuario haya consentido.' },
-    { id:'R3',  name:'Web Beacons',                   desc:'Píxeles de seguimiento y beacons enviados antes del consentimiento.' },
-    { id:'R4',  name:'Granularidad en la elección',   desc:'El banner permite aceptar o rechazar categorías individuales de cookies.' },
-    { id:'R5',  name:'Revocabilidad sencilla',        desc:'Retirar el consentimiento debe ser igual de fácil que otorgarlo.' },
-    { id:'R6',  name:'Anti-Keylogging',               desc:'Scripts que monitorizan pulsaciones de teclado o movimientos del ratón.' },
-    { id:'R7',  name:'Protección contra Fingerprinting', desc:'Scripts de terceros que recogen señales del dispositivo para identificar al usuario.' },
-    { id:'R8',  name:'Integridad del dispositivo',    desc:'Scripts de terceros que escriben identificadores en el almacenamiento local.' },
-    { id:'R9',  name:'Minimización de datos',         desc:'Recogida excesiva de datos personales antes del consentimiento.' },
-    { id:'R10', name:'Limitación del plazo',          desc:'Cookies persistentes con fechas de expiración desproporcionadas.' },
-    { id:'R11', name:'Desvinculación y aislamiento',  desc:'Intercambio de identificadores entre plataformas de rastreo (cookie syncing).' },
-    { id:'R12', name:'Software de terceros',          desc:'Software comercial de terceros activo antes del consentimiento del usuario.' },
-    { id:'R13', name:'Dark Patterns',                 desc:'Patrones manipuladores en el banner (asimetría cromática, falta de rechazo).' },
-    { id:'R14', name:'Lenguaje claro y sencillo',     desc:'Legibilidad de la política de privacidad según el índice Szigriszt-Muñoz.' },
-    { id:'R15', name:'Identificación de responsables',desc:'Cada cookie de tercero tiene un propietario identificado y conocido.' },
-    { id:'R16', name:'Correspondencia aviso-ejecución',desc:'Todos los terceros activos están declarados en la política de privacidad.' },
-    { id:'R17', name:'Redirección HTTPS',             desc:'El sitio redirige HTTP a HTTPS de forma permanente (301) y tiene HSTS.' },
-    { id:'R18', name:'Content Security Policy',       desc:'Cabecera CSP presente y sin directivas inseguras (unsafe-inline, wildcards).' },
-    { id:'R19', name:'Designación del DPO',           desc:'La política de privacidad menciona al DPO con datos de contacto publicados.' },
+    { id:'R1',  pub:'R1',  name:'Información por capas',         desc:'Banner de cookies con resumen visible y acceso a detalles técnicos.' },
+    { id:'R2',  pub:'R2',  name:'Bloqueo de cookies y web beacons no exentos', desc:'Cookies de rastreo o píxeles de seguimiento activos antes del consentimiento.' },
+    { id:'R4',  pub:'R3',  name:'Granularidad en la elección',   desc:'El banner permite aceptar o rechazar categorías individuales de cookies.' },
+    { id:'R5',  pub:'R4',  name:'Revocabilidad sencilla',        desc:'Retirar el consentimiento debe ser igual de fácil que otorgarlo.' },
+    { id:'R6',  pub:'R5',  name:'Anti-Keylogging',               desc:'Scripts que monitorizan pulsaciones de teclado o movimientos del ratón.' },
+    { id:'R7',  pub:'R6',  name:'Protección contra Fingerprinting', desc:'Scripts de terceros que recogen señales del dispositivo para identificar al usuario.' },
+    { id:'R8',  pub:'R7',  name:'Integridad del dispositivo',    desc:'Scripts de terceros que escriben identificadores en el almacenamiento local.' },
+    { id:'R9',  pub:'R8',  name:'Minimización de datos',         desc:'Recogida excesiva de datos personales antes del consentimiento.' },
+    { id:'R10', pub:'R9',  name:'Limitación del plazo',          desc:'Cookies persistentes con fechas de expiración desproporcionadas.' },
+    { id:'R11', pub:'R10', name:'Desvinculación y aislamiento',  desc:'Intercambio de identificadores entre plataformas de rastreo (cookie syncing).' },
+    { id:'R12', pub:'R11', name:'Software de terceros',          desc:'Software comercial de terceros activo antes del consentimiento del usuario.' },
+    { id:'R13', pub:'R12', name:'Dark Patterns',                 desc:'Patrones manipuladores en el banner (asimetría cromática, falta de rechazo).' },
+    { id:'R14', pub:'R13', name:'Lenguaje claro y sencillo',     desc:'Legibilidad de la política de privacidad según el índice Szigriszt-Muñoz.' },
+    { id:'R15', pub:'R14', name:'Identificación de responsables',desc:'Cada cookie de tercero tiene un propietario identificado y conocido.' },
+    { id:'R16', pub:'R15', name:'Correspondencia aviso-ejecución',desc:'Todos los terceros activos están declarados en la política de privacidad.' },
+    { id:'R17', pub:'R16', name:'Redirección HTTPS',             desc:'El sitio redirige HTTP a HTTPS de forma permanente (301) y tiene HSTS.' },
+    { id:'R18', pub:'R17', name:'Content Security Policy',       desc:'Cabecera CSP presente y sin directivas inseguras (unsafe-inline, wildcards).' },
+    { id:'R19', pub:'R18', name:'Designación del DPO',           desc:'La política de privacidad menciona al DPO con datos de contacto publicados.' },
   ];
 
   // ── Construir la tabla de requisitos ────────────────────────────────────────
   (function buildReqGrid() {
     const grid = document.getElementById('req-grid');
-    REQUISITOS_INFO.forEach(({ id, name, desc }) => {
+    REQUISITOS_INFO.forEach(({ id, pub, name, desc }) => {
       const item = document.createElement('label');
       item.className = 'req-item';
       item.innerHTML = `
         <input type="checkbox" class="req-cb" value="${id}" checked>
         <span class="req-label">
           <span class="req-top">
-            <span class="req-num">${id}</span>
+            <span class="req-num">${pub}</span>
             <span class="req-name">${name}</span>
           </span>
           <span class="req-desc">${desc}</span>

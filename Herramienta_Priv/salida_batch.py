@@ -16,12 +16,15 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from normativas import grafico_normativas, CSS_NORMATIVAS
+from publicacion import etiqueta as _etq, internos_visibles
 
-REQUISITOS = [f"R{i}" for i in range(1, 20)]
+# Requisitos a mostrar, en orden de publicación y con R3 fusionado en R2.
+# Todas las iteraciones sobre REQUISITOS heredan esta fusión automáticamente.
+REQUISITOS = internos_visibles()
 
 NOMBRES_REQ: dict[str, str] = {
     "R1":  "Información por capas",
-    "R2":  "Bloqueo cookies no exentas",
+    "R2":  "Cookies y web beacons no exentos",
     "R3":  "Web Beacons",
     "R4":  "Granularidad en la elección",
     "R5":  "Revocabilidad sencilla",
@@ -260,7 +263,7 @@ def _barras_por_requisito(resultados_batch: dict) -> str:
         pct_pass = f"{c['PASSED']/n*100:.0f}%"
         filas += f"""
 <div class="bar-row">
-  <div class="bar-label"><span class="req-tag">{req}</span>{nombre}</div>
+  <div class="bar-label"><span class="req-tag">{_etq(req)}</span>{nombre}</div>
   <div class="bar-track">{segmentos}</div>
   <div class="bar-pct">{pct_pass}</div>
 </div>"""
@@ -316,7 +319,7 @@ def _matriz(resultados_batch: dict) -> str:
             "NO_EVALUABLE": "–", "ERROR": "E"}
 
     cab_reqs = "".join(
-        f'<th title="{NOMBRES_REQ.get(r, r)}">{r}</th>'
+        f'<th title="{NOMBRES_REQ.get(r, r)}">{_etq(r)}</th>'
         for r in REQUISITOS
     )
     cabecera = f"<tr><th>Sitio</th>{cab_reqs}</tr>"

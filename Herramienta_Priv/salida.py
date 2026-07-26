@@ -11,12 +11,15 @@ from datetime import datetime
 from pathlib import Path
 
 from normativas import grafico_normativas, CSS_NORMATIVAS
+from publicacion import etiqueta as _etq, internos_visibles, es_oculto, NOMBRE_PUB
 
 # ── Metadatos de cada requisito ───────────────────────────────────────────────
 
 REQUISITOS = {
     "R1":  ("Información por capas",                "RGPD Art. 12 / AEPD"),
-    "R2":  ("Bloqueo de cookies no exentas",        "RGPD Art. 7 / LSSI Art. 22.2"),
+    "R2":  ("Bloqueo de cookies y web beacons no exentos", "RGPD Art. 7 / LSSI Art. 22.2 / ePrivacy"),
+    # R3 (web beacons) se fusiona con R2 en la numeración de publicación; se
+    # conserva aquí para la maquinaria interna, pero no se muestra por separado.
     "R3":  ("Ausencia de web beacons en PRE",       "RGPD Art. 5.1.a / Directiva ePrivacy"),
     "R4":  ("Granularidad en la elección",          "RGPD Art. 7 / Considerando 43"),
     "R5":  ("Revocabilidad sencilla",               "RGPD Art. 7.3 / AEPD"),
@@ -56,6 +59,10 @@ def _resumen(resultados: dict) -> dict:
         # Las claves con "_" delante son metadatos de la auditoría (p. ej.
         # "_meta" con la información de bloqueo anti-bot), no requisitos.
         if req.startswith("_"):
+            continue
+        # R3 está fusionado en R2 en la numeración de publicación: no se cuenta
+        # aparte para no duplicar (R2 y R3 comparten veredicto).
+        if es_oculto(req):
             continue
         veredicto = v.get("veredicto", "ERROR")
         if veredicto == "NO_SOLICITADO":
@@ -150,16 +157,24 @@ def _extraer_info(req: str, detalle) -> dict:
         items += [f"🟢 Política de cookies: <em>{_esc(i['nombre'][:60])}</em>" for i in b[:3]]
         items += [f"🟡 Política privacidad general: <em>{_esc(i['nombre'][:60])}</em>" for i in c[:2]]
 
-    # ── R2 / R3: Cookies no exentas / web beacons ────────────────────────────
+    # ── R2: Cookies no exentas y web beacons (R2+R3 fusionados) ──────────────
     elif req in ("R2", "R3"):
         violaciones = detalle.get("violaciones", [])
         if violaciones:
             chips.append(("Rastreadores antes del consentimiento", str(len(violaciones))))
+            # Separar la causa del fallo: web beacon (trackingPixel) vs cookie de
+            # rastreo (el resto de tipos). Es lo que antes distinguían R3 y R2.
+            n_beacons = sum(1 for v in violaciones if v.get("tipo") == "trackingPixel")
+            n_cookies = len(violaciones) - n_beacons
+            if n_cookies:
+                items.append(f"🍪 Cookies de rastreo no exentas en PRE: {n_cookies}")
+            if n_beacons:
+                items.append(f"📡 Web beacons (píxeles de seguimiento) en PRE: {n_beacons}")
             tipos: dict = {}
             for v in violaciones:
                 t = v.get("tipo_descripcion") or v.get("tipo") or "—"
                 tipos[t] = tipos.get(t, 0) + 1
-            items = [f"• {_esc(t)}: {n}" for t, n in sorted(tipos.items(), key=lambda x: -x[1])]
+            items += [f"• {_esc(t)}: {n}" for t, n in sorted(tipos.items(), key=lambda x: -x[1])]
             empresas = list(dict.fromkeys(
                 v.get("empresa", "") for v in violaciones if v.get("empresa")
             ))
@@ -504,13 +519,15 @@ def _detalle_html(req: str, detalle) -> str:
 
 def _fila(req: str, datos: dict) -> str:
     nombre, normativa = REQUISITOS.get(req, (req, ""))
+    # El nombre de publicación puede diferir del interno (p. ej. R2 fusionado)
+    nombre            = NOMBRE_PUB.get(req, nombre)
     veredicto         = datos.get("veredicto", "ERROR")
     color_texto, color_fondo, icono = _color(veredicto)
     detalle           = datos.get("detalle", "")
 
     return f"""
     <tr>
-        <td class="req-id">{req}</td>
+        <td class="req-id">{_etq(req)}</td>
         <td>
             <span class="req-nombre">{nombre}</span>
             <span class="req-norm">{normativa}</span>
@@ -537,17 +554,17 @@ def generar_informe_unico(url_sitio: str, resultados: dict, ruta_salida: str) ->
     fecha   = datetime.now().strftime("%d/%m/%Y %H:%M")
     resumen = _resumen(resultados)
 
-    # Ordenar requisitos numéricamente (R1, R2, ..., R19)
+    # Filas en orden de publicación (R1–R18), con R3 fusionado en R2
     filas = "".join(
         _fila(req, resultados.get(req, {"veredicto": "ERROR"}))
-        for req in sorted(REQUISITOS, key=lambda r: int(r[1:]))
+        for req in internos_visibles()
     )
-    total = len(REQUISITOS)
+    total = len(internos_visibles())
 
     # Cumplimiento agregado por normativa (RGPD, ePrivacy, LSSI, AEPD, CEPD)
     normativas = grafico_normativas([
         (req, resultados.get(req, {}).get("veredicto", "ERROR"))
-        for req in REQUISITOS
+        for req in internos_visibles()
     ])
 
     aviso_bloqueo = _aviso_bloqueo(resultados)

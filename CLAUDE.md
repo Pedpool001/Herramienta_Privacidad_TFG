@@ -683,6 +683,57 @@ siguientes con el mismo motor. La reputación de IP se degrada con cada petició
 que las mediciones repetidas empeoran solas. Esto refuerza la necesidad de espaciar las
 peticiones y de no elevar el paralelismo entre sitios.
 
+## Fusión de R2+R3 y renumeración a R1–R18 (numeración de publicación)
+
+En la muestra de 107 sitios, R2 (cookies no exentas en PRE) y R3 (web beacons en PRE)
+dieron resultados idénticos: comparten script (`r2_r3_cookies_beacons.py`), metodología y
+veredicto, y el web beacon no es más que el tipo `trackingPixel` dentro del mismo conjunto
+de rastreadores no exentos. Para el estudio a publicar se fusionan en un único requisito y
+el resto se renumera de forma consecutiva (R1–R18).
+
+#### `Herramienta_Priv/publicacion.py` (fichero nuevo)
+
+Módulo compartido que define el mapa interno → etiqueta de publicación y qué requisitos se
+fusionan. Lo importan `salida.py`, `salida_batch.py` y `normativas.py`.
+
+```python
+from publicacion import etiqueta, internos_visibles, es_oculto, NOMBRE_PUB
+etiqueta("R7")        # → "R6"
+internos_visibles()   # → [R1, R2, R4, ..., R19]  (18 claves, sin R3)
+es_oculto("R3")       # → True  (fusionado en R2)
+```
+
+Mapa: R1→R1, R2→R2 (absorbe R3), R4→R3, R5→R4, … R19→R18.
+
+**Decisión de diseño — la renumeración vive en la capa de presentación, no en el código:**
+Toda la maquinaria de medición (los 17 scripts de análisis, los módulos de herramienta,
+`_loader`, las claves del dict de resultados) **sigue usando la numeración interna
+R1…R19**. Renombrar esos scripts y sus claves habría tocado el código que costó decenas de
+bugs depurar, con el riesgo de **corromper los datos del estudio en silencio** (como el bug
+de colisión en `analysis_data/`). En su lugar, la fusión y la renumeración se aplican solo
+al **generar los informes y la interfaz**: es donde el lector las ve, y un fallo aquí es
+inmediatamente visible en el HTML en lugar de alterar los veredictos.
+
+**Cambios asociados:**
+- `salida.py` — `_fila` muestra `etiqueta(req)` y el nombre de publicación de R2; el bucle
+  de filas y el índice por normativa iteran `internos_visibles()`; `_resumen` salta R3;
+  `_extraer_info` de R2 distingue explícitamente 🍪 cookies de rastreo vs 📡 web beacons
+  (`trackingPixel`), que es lo que antes separaban R2 y R3.
+- `salida_batch.py` — `REQUISITOS = internos_visibles()` (todas las iteraciones —barras,
+  matriz, stats, normativas— heredan la fusión); las etiquetas de barras y cabeceras de
+  matriz muestran `etiqueta(req)`.
+- `normativas.py` — R3 eliminado de los mapeos RGPD/ePrivacy/LSSI; el tooltip lista
+  etiquetas de publicación.
+- `templates/index.html` — `REQUISITOS_INFO` lleva ahora `id` (interno, va en el `value` de
+  la casilla y lo entiende la API) y `pub` (etiqueta mostrada). La casilla R3 se elimina; la
+  de R2 activa internamente ambos. Textos "R1–R19" → "R1–R18".
+
+**Verificación:** informe individual con 18 filas R1–R18 y R2 mostrando "🍪 Cookies: N /
+📡 Web beacons: M"; informe batch con matriz de 18 columnas R1–R18 y sin ningún R19
+residual. Todos los módulos compilan.
+
+---
+
 ### Privacy Pioneer: distinción entre captura fallida y sitio sin rastreadores
 
 **Problema:** cuando el crawl de Privacy Pioneer terminaba pero MySQL quedaba a 0 filas,
