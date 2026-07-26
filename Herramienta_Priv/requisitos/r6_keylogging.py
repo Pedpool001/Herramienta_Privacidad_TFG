@@ -34,6 +34,7 @@ Uso:
   python3 r6_keylogging.py --no-detalle             # solo resumen
 """
 
+import os
 import json
 import sys
 from pathlib import Path
@@ -42,7 +43,9 @@ from urllib.parse import urlparse
 # ── Rutas por defecto ─────────────────────────────────────────────────────────
 _TFG_DIR = Path(__file__).resolve().parents[2]
 INSPECTION_DEFAULT = _TFG_DIR / "BL/blacklight-collector/demo-dir/inspection.json"
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r6_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r6_resultado.json"
 
 # ── Clasificación de eventos ──────────────────────────────────────────────────
 EVENTOS_TECLADO  = {"keydown", "keyup", "keypress"}

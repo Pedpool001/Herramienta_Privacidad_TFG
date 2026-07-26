@@ -382,6 +382,415 @@ El HTML es autónomo (CSS y SVG inline, sin dependencias externas).
 
 ---
 
+#### `Herramienta_Priv/normativas.py`
+
+Módulo compartido que mapea cada requisito a las normativas de las que emana y genera
+la sección "Cumplimiento por normativa" de los informes. Lo importan tanto `salida.py`
+(informe individual) como `salida_batch.py` (informe batch).
+
+**API pública:**
+```python
+from normativas import grafico_normativas, CSS_NORMATIVAS
+grafico_normativas(pares)   # pares = [(requisito, veredicto), ...] → HTML
+CSS_NORMATIVAS              # str con el CSS de la sección
+```
+
+Ambos informes construyen una lista de pares `(requisito, veredicto)` y el módulo hace
+el resto. En el informe individual hay un par por requisito; en el batch, uno por cada
+combinación sitio × requisito.
+
+**Mapeo requisito → normativa (relación uno a varios):**
+
+| Normativa | Requisitos | Fundamento |
+|---|---|---|
+| RGPD | R1–R19 (todos) | Reglamento (UE) 2016/679 — principios del art. 5 y obligaciones concretas (arts. 7, 12, 13/14, 25, 32, 37-39) |
+| ePrivacy | R2, R3, R6, R8, R10 | Directiva 2002/58/CE art. 5.3 — acceso y almacenamiento en el equipo terminal |
+| LSSI | R2, R3, R6 | Ley 34/2002 art. 22.2 — transposición española de la ePrivacy |
+| AEPD | R1, R4, R5, R7, R13, R14 | Guía sobre el uso de las cookies y Guía de privacidad desde el diseño |
+| CEPD | R12, R13 | Directrices 3/2022 (patrones engañosos) y 4/2019 (privacidad desde el diseño) |
+
+**Decisión de diseño — por qué un mapeo de uno a varios y no el texto libre existente:**
+El dict `REQUISITOS` de `salida.py` ya anotaba la normativa de cada requisito, pero como
+cadena de texto y recogiendo solo la fuente *principal*. Parsear ese texto producía un
+reparto inservible para el gráfico: RGPD aparecía en los 19 requisitos (su donut sería
+idéntico al donut global ya existente) mientras que ePrivacy y CEPD quedaban con un único
+requisito cada uno, lo que da un porcentaje sin valor estadístico.
+
+La causa es que la etiqueta recogía la fuente principal, no todas las aplicables. En
+realidad la ePrivacy (art. 5.3) fundamenta **todo** lo relativo al acceso al terminal
+—cookies, web beacons, almacenamiento local y su plazo de persistencia— y la LSSI art. 22.2
+es su transposición española, por lo que ambas cubren varios requisitos. Se creó por tanto
+un mapeo explícito `normativa → lista de requisitos`, en el que un requisito puede computar
+en varias normativas a la vez (R2 deriva simultáneamente del RGPD, la ePrivacy y la LSSI).
+La suma de requisitos por normativa excede los 19 por este motivo.
+
+**Índice de cumplimiento:** `(PASSED + 0,5 × WARNING) / total × 100`, la misma fórmula
+empleada en el análisis por herramienta de la memoria, de modo que los porcentajes sean
+comparables entre secciones. Los veredictos sin dato (`NO_EVALUABLE` y `ERROR`) computan
+en el denominador y por tanto penalizan el índice; el donut los muestra como segmento
+propio para que el dato sea transparente. `NO_SOLICITADO` se excluye por completo, ya que
+el usuario decidió no medir ese requisito.
+
+**Salida visual:** rejilla de donuts SVG (uno por normativa, 120×120 px) con el porcentaje
+de cumplimiento en el centro, el nombre y detalle de la norma, y el número de requisitos
+asociados. Debajo, leyenda de colores y nota metodológica. Sin dependencias externas.
+
+**Cambios asociados en otros ficheros:**
+- `salida.py` — importa `grafico_normativas` y `CSS_NORMATIVAS`; añade la sección
+  "Cumplimiento por normativa" antes de la tabla de requisitos, que pasa a titularse
+  "Detalle por requisito". Nueva clase CSS `h2.seccion`.
+- `salida_batch.py` — misma importación; añade la sección entre "Resumen general" y
+  "Análisis por requisito".
+
+---
+
+## Paralelismo entre sitios (modo batch)
+
+Hasta esta versión el paralelismo era solo **intra-sitio**: los 8 hilos de herramienta
+de `main.auditar()`. El modo batch recorría los sitios de uno en uno, de modo que las
+~10-20 h de una auditoría de 107 sitios eran casi todas tiempo de espera.
+
+Ahora `batch.py` procesa **varios sitios a la vez** con un `ThreadPoolExecutor`.
+
+### Bug crítico detectado y corregido: colisión en `analysis_data/`
+
+**Síntoma:** ninguno. Ese era el problema.
+
+**Causa:** `analysis_data/` era un **único directorio compartido** y cada script de
+análisis escribía siempre en el mismo nombre fijo (`r7_resultado.json`,
+`r2_resultado.json`…). El flujo de `_loader.ejecutar_analisis()` era:
+
+```
+lanzar script → el script escribe analysis_data/rX_resultado.json → leer ese fichero
+```
+
+Con dos sitios en paralelo:
+
+| Momento | Sitio A | Sitio B | `r7_resultado.json` |
+|---|---|---|---|
+| t1 | lanza r7 | | — |
+| t2 | | lanza r7 | — |
+| t3 | escribe | | datos de **A** |
+| t4 | | escribe | datos de **B** |
+| t5 | **lee** | | ⚠️ obtiene datos de **B** |
+
+El sitio A recibía el veredicto del sitio B **sin excepción ni error visible**: los
+informes salían con resultados silenciosamente cruzados. Afectaba a los 17 scripts
+(los 16 Python vía `ejecutar_analisis` más `r4_granularidad.js`), no solo a una
+herramienta.
+
+**Fix — aislamiento por sitio mediante `ANALYSIS_DATA_DIR`:**
+
+Cada script respeta ahora una variable de entorno, siguiendo el mismo patrón `os.getenv`
+que ya se usaba en el proyecto para `MYSQL_HOST` y `TRACKER_RADAR_DIR`:
+
+```python
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r7_resultado.json"
+```
+
+Sin la variable definida se usa el directorio compartido de siempre, por lo que la
+ejecución standalone de cada script no cambia. `r4_granularidad.js` hace lo equivalente
+con `process.env.ANALYSIS_DATA_DIR`.
+
+En `_loader.py` se añadieron dos helpers:
+- `dir_analisis(output_dir, *, es_raiz=False)` — devuelve `<sitio>/analysis_data`. Los
+  módulos de herramienta reciben `output_dir = <sitio>/<herramienta>` y usan el valor
+  por defecto; `combinados` recibe ya la raíz del sitio y llama con `es_raiz=True`.
+- `entorno_analisis(salida_dir)` — copia el entorno añadiendo `ANALYSIS_DATA_DIR` y
+  creando el directorio.
+
+`ejecutar_analisis()` acepta ahora `salida_dir` y lee el resultado de ahí.
+
+**Ficheros modificados:** los 16 scripts de `requisitos/*.py` (una línea cada uno, más
+`import os` en los 11 que no lo tenían), `requisitos/r4_granularidad.js`,
+`modulos_herramientas/_loader.py` y los 7 módulos de herramienta en sus llamadas.
+
+**Verificación:** dos ejecuciones concurrentes de `r17_r18_seguridad` sobre HAR distintos
+(uno con CSP, otro sin) devuelven veredictos distintos y correctos (`WARNING` y `FAILED`)
+en ficheros separados. Antes uno habría sobrescrito al otro.
+
+### Privacy Pioneer: cerrojo global exclusivo
+
+Privacy Pioneer **no admite concurrencia** por cuatro recursos de proceso único:
+
+| Recurso | Consecuencia si hay 2 sitios a la vez |
+|---|---|
+| Puerto 8080 de la REST API (se libera con `fuser -k` al arrancar) | El sitio B **mata la REST API del sitio A** a mitad del crawl |
+| Tabla MySQL `entries` con un único timestamp global de consentimiento | Fases PRE/POST mal asignadas → R2/R3/R9/R12 corruptos |
+| CSV `selenium-crawler/prueba-tfg.csv` (+ `.bak`) | Un sitio pisa la URL del otro |
+| Firefox **headful** (Bug 37/40) | Varias ventanas peleándose por el foco reintroducen el Bug 40 |
+
+**Fix:** `privacy_pioneer.py` define un `threading.Lock` de módulo, `_EXCLUSIVO`. Los
+pasos 1-6 (limpiar MySQL → CSV → REST API → crawler → restaurar → copiar
+`reporte_auditoria.json`) se extrajeron a `_crawl()`, que solo se invoca bajo el cerrojo.
+
+El **paso 7 (análisis) queda fuera** del cerrojo: cada sitio escribe ya en su propio
+`analysis_data` y las consultas a MySQL van filtradas por dominio, así que el análisis de
+un sitio puede solaparse con el crawl de otro.
+
+Se extrajo a función en vez de reindentar el bloque para no tocar 120 líneas de lógica ya
+depurada. `_crawl()` devuelve `False` si no llega a arrancar (fallo al escribir el CSV).
+
+### Auto-dimensionado del número de workers
+
+`batch.calcular_workers()` calcula los sitios concurrentes según la máquina:
+
+```python
+por_cpu = max(1, os.cpu_count() // 3)          # cada sitio ya lanza ~7 navegadores
+por_ram = max(1, int(mem_available_gb // 4))   # ~200-300 MB por navegador
+workers = min(por_cpu, por_ram, 4)
+```
+
+Se usa `MemAvailable` de `/proc/meminfo` (memoria realmente usable sin swap), no la total.
+
+**Por qué el tope de 4:** con el crawl de Privacy Pioneer serializado, este pasa a ser el
+factor limitante (ley de Amdahl). Con ~3 min de crawl por sitio, 107 sitios suponen un
+suelo de ~5,4 h que no baja por mucho que se suba el paralelismo. Subir más solo aumenta
+el riesgo de que salten los timeouts de las herramientas y conviertan veredictos válidos
+en `ERROR`, es decir, **corrompe los datos en lugar de acelerar**.
+
+Estimación para 107 sitios: 1 worker ~12-20 h · 2 ~6-7 h · 3 ~5,5 h · 4+ ~5,4 h (techo).
+
+**Override manual:** `--workers N` en la CLI y `{"workers": N}` en el body de
+`POST /api/audit/batch`. `--workers 1` fuerza el modo secuencial, que conserva el formato
+de salida original por consola.
+
+### Trazabilidad de los logs
+
+Con varios sitios concurrentes las líneas de log se entrelazan. Como el formato ya incluía
+`%(threadName)s`, en `main.auditar()` se prefija el nombre de cada hilo con el dominio
+antes de arrancarlo, quedando `marca.com|PoliGraph`, `elpais.com|WEC`, etc.
+
+### Orden de resultados
+
+`as_completed()` devuelve los sitios según van terminando, no en el orden del fichero de
+entrada. Al final de `auditar_batch()` el dict se reordena según `urls` para que el
+informe batch respete el orden original.
+
+**Verificación del conjunto:** prueba con 8 sitios simulados y `workers=3` → máximo de 3
+sitios concurrentes, **máximo de 1 crawl de Privacy Pioneer simultáneo**, orden preservado
+y speedup ~2x.
+
+---
+
+#### `Herramienta_Priv/anti_bot.py`
+
+Detecta si una respuesta corresponde a una página de desafío de un sistema anti-bot,
+e identifica cuál. Módulo sin dependencias externas.
+
+**Problema que resuelve:** la herramienta no distinguía "el sitio no tiene banner /
+no publica política localizable" de "el sitio nos ha bloqueado". Ambos casos acababan
+en el mismo sitio sin dejar rastro del motivo, y un bloqueo podía registrarse como
+incumplimiento del sitio en lugar de como limitación de medición. Sin esta distinción
+tampoco se puede cuantificar cuántos sitios de la muestra quedan fuera de alcance ni
+medir si una técnica de evasión mejora algo.
+
+**API pública:**
+```python
+from anti_bot import detectar_bloqueo, detectar_bloqueo_pagina, describir
+
+detectar_bloqueo(html=..., titulo=..., status=..., cabeceras=..., n_enlaces=...)
+detectar_bloqueo_pagina(page, status=..., cabeceras=...)   # página Playwright
+describir(bloqueo)                                          # texto para logs
+```
+
+Devuelve `None` si no hay indicios, o
+`{"sistema": "Cloudflare", "senal": "html", "status": 403, "confianza": "alta"}`.
+
+**Sistemas reconocidos:** Cloudflare, DataDome, Akamai, PerimeterX/HUMAN e
+Imperva/Incapsula, por artefactos de su página de desafío (`challenges.cloudflare.com`,
+`cdn-cgi/challenge-platform`, `captcha-delivery.com`, `_abck`, `px-captcha`,
+`_incap_`…), por cabeceras (`cf-mitigated`, `x-datadome`, `x-iinfo`…) y por título.
+
+**Orden de comprobación — decisión de diseño:** las firmas se evalúan por *tipo de
+señal* (primero el HTML de todas las firmas, luego las cabeceras, y por último los
+títulos), no firma por firma. Comprobando firma a firma, un título ambiguo como
+"Access Denied" —que usan varios sistemas— casaba antes que el HTML inequívoco de
+otro y atribuía el bloqueo al sistema equivocado (Akamai se reportaba como Cloudflare).
+Por el mismo motivo "access denied" se excluyó del patrón de título de Cloudflare.
+
+**Detección genérica (confianza media):** si ninguna firma casa, se sospecha bloqueo
+por código de estado (401, 403, 405, 406, 429, 503) o por un DOM anormalmente pobre
+(< 2000 bytes, < 3 enlaces). Se exige un status de bloqueo **o** dos señales
+estructurales coincidentes, para no marcar como bloqueado un sitio legítimamente
+simple. Estos casos se etiquetan con `confianza: "media"` frente a la `"alta"` de
+las firmas reconocidas.
+
+**Integración:**
+- `buscador_politica.py` — tras el `page.goto` inicial comprueba el bloqueo y lo
+  guarda en `resultado["bloqueo"]`. **No aborta**: las fases de fallback (DDG, sondeo
+  de rutas y de subdominios) no dependen del DOM y pueden encontrar la política
+  igualmente; el dato solo explica por qué el DOM viene vacío.
+- `main.py/_hilo_poligraph` — cuando no hay política, distingue el motivo. Si hubo
+  bloqueo, el detalle de R1/R5/R14/R15/R16/R19 pasa a ser
+  `"Sitio protegido por DataDome (html) — política inaccesible"` en vez del genérico
+  `"no localizable automáticamente"`.
+
+**Verificación sobre sitios reales** (Chromium + playwright-stealth):
+
+| Sitio | Enlaces en DOM | Resultado |
+|---|---|---|
+| decathlon.es | 2 | bloqueado por **Cloudflare** (html, HTTP 403) |
+| elpais.com | 0 | bloqueado por **DataDome** (html, HTTP 403) |
+| abc.es | 380 | sin bloqueo |
+
+Confirma lo documentado en los Bugs 20 y 25, ahora de forma automática y cuantificable.
+
+### Falso positivo corregido: páginas reales que mencionan a su protector
+
+La portada **real** de decathlon.es (HTTP 200, 1,2 MB, 335 enlaces, título correcto)
+se marcaba como bloqueada porque su HTML incluye un blob de configuración con
+`cloudflareTurnstileChallengeScriptURL: "https://challenges.cloudflare.com/turnstile/…"`
+—Turnstile lo usa el propio sitio para sus formularios—. La firma de Cloudflare casaba
+sobre contenido legítimo, invirtiendo el resultado justo en el caso que interesaba medir.
+
+**Fix:** `_parece_pagina_real()` se evalúa **antes** que las firmas y corta la detección
+si la respuesta es inequívocamente la página real: código de estado no bloqueante **y**
+(≥ 15 enlaces **o** > 150 KB de HTML). Una página de desafío nunca alcanza esos valores.
+Verificado que sigue detectando los bloqueos reales (challenge de Cloudflare con 2
+enlaces, DataDome con 0) y los desafíos servidos con HTTP 200 pero DOM pobre.
+
+### Diagnóstico por capas: dónde bloquea cada sistema
+
+Medición empírica sobre los dos sitios problemáticos, comparando motores que atacan
+capas distintas de detección:
+
+| Motor | Capas que cubre | decathlon.es (Cloudflare) | elpais.com (DataDome) |
+|---|---|---|---|
+| Chromium + playwright-stealth | 4 (fingerprint JS) | ❌ 403, 2 enlaces | ❌ 403, 0 enlaces |
+| Patchright | 3 + 4 (CDP + JS) | ❌ 403, 2 enlaces | ⚠️ intermitente |
+| **curl_cffi** (`impersonate="chrome"`) | 2 (TLS/JA3), sin JS | ✅ **200, 1 MB** | ❌ 403 |
+| **Camoufox** (Firefox parcheado en C++) | 2 + 3 + 4 | ✅ **200, 335 enlaces** | ❌ 403, 0 enlaces |
+
+**Conclusión — los dos sistemas bloquean en capas distintas:**
+
+- **decathlon.es / Cloudflare → capa 2 (fingerprint TLS).** `curl` plano recibe 403 pero
+  `curl_cffi` con fingerprint de Chrome recibe 200 sin ejecutar una sola línea de
+  JavaScript. Es evadible con el motor adecuado (curl_cffi o Camoufox).
+- **elpais.com / DataDome → capa 1 (reputación de IP).** Recibe 403 incluso con TLS
+  perfecto, sin JS y sin señales de automatización. Ninguna técnica de navegador lo
+  resuelve; solo cambiar de IP.
+
+**Prueba que aísla la capa:** `curl` sin JavaScript ni fingerprint de navegador recibe
+403 de ambos sitios, mientras que abc.es y marca.com devuelven 200 desde la misma IP.
+Si el bloqueo dependiera del fingerprint JS o del protocolo de automatización, `curl`
+—que no tiene ninguno de los dos— habría pasado.
+
+**Resultados no deterministas:** elpais.com devolvió 200 en una prueba y 403 en las
+siguientes con el mismo motor. La reputación de IP se degrada con cada petición, por lo
+que las mediciones repetidas empeoran solas. Esto refuerza la necesidad de espaciar las
+peticiones y de no elevar el paralelismo entre sitios.
+
+### Privacy Pioneer: distinción entre captura fallida y sitio sin rastreadores
+
+**Problema:** cuando el crawl de Privacy Pioneer terminaba pero MySQL quedaba a 0 filas,
+el veredicto de R2/R3/R9 era NO_EVALUABLE con un mensaje genérico ("No hay datos…") que
+no distinguía dos situaciones muy distintas:
+- **Captura fallida** — la extensión no registró tráfico (Bugs 22/37/40). Es lo que
+  ocurre casi siempre, porque un sitio real siempre genera peticiones de red.
+- **Sitio sin rastreadores** — genuinamente no hay rastreadores no exentos.
+
+Además, un veredicto PASSED/FAILED basado en 3 evidencias es mucho menos fiable que uno
+basado en 88, dada la **variabilidad de la publicidad programática (RTB)**: cada carga
+de página subasta y sirve rastreadores distintos en instantes distintos, y como la fase
+PRE/POST se asigna comparando el timestamp de cada evidencia con el del clic en el banner
+(`rest-api/index.js`), el mismo sitio puede dar PASSED en una ejecución y FAILED en la
+siguiente. Verificado empíricamente: abc.es capturó 88 filas (→ PASSED) en una ejecución
+y 31 (→ FAILED) en la siguiente.
+
+**Fix en `modulos_herramientas/privacy_pioneer.py`:**
+- Nueva función `_contar_evidencias(dominio)` — cuenta las filas del dominio en MySQL tras
+  el crawl. Devuelve `None` si no se pudo consultar (para no confundirlo con 0 filas).
+- En el paso de análisis se calcula `n_evidencias` y `captura_vacia = n_evidencias == 0`.
+- Si el veredicto es NO_EVALUABLE **y** la captura está vacía, el detalle pasa a explicar
+  que es un probable fallo de captura, **no** ausencia de rastreadores.
+- `n_evidencias` se adjunta al detalle de R2/R3/R9 como señal de fiabilidad.
+
+**Fix en `salida.py`:**
+- `_extraer_info` para R2/R3 añade un chip "Evidencias capturadas: N" y, si `0 < N < 10`,
+  un aviso de que el veredicto puede variar entre ejecuciones por la naturaleza dinámica
+  de la publicidad programática.
+- `_extraer_info` ahora también lee un `detalle` a nivel raíz (no solo `evaluacion.detalle`),
+  para que el mensaje de captura vacía se muestre como texto legible.
+
+**Nota metodológica para la memoria:** esta variabilidad no es un defecto de la
+herramienta sino una propiedad del objeto medido. A nivel de sitio individual los
+requisitos de fase PRE (R2, R3, R9, R12) presentan variabilidad entre ejecuciones; a
+nivel agregado sobre la muestra completa las tendencias son estables, que es el nivel al
+que se formulan las conclusiones del estudio.
+
+### `Herramienta_Priv/navegador.py` — cascada de motores y control de ritmo
+
+Módulo que centraliza la navegación resiliente. Tres piezas:
+
+- **`esperar_turno(url)`** — impone un retardo mínimo (`RETARDO_DOMINIO`, 4 s) entre
+  peticiones al mismo dominio. Seguro entre hilos, ya que la auditoría batch procesa
+  varios sitios a la vez. Reserva el turno *antes* de dormir para que dos hilos no
+  calculen sobre el mismo valor.
+- **`abrir_pagina(url, motor)`** — context manager que entrega una página cargada con
+  `chromium` (+ playwright-stealth) o `camoufox`.
+- **`descargar_html(url)`** — descarga solo HTML con `curl_cffi` imitando el
+  fingerprint TLS de Chrome. No ejecuta JavaScript.
+- **`con_cascada(url, accion)`** — ejecuta `accion(page)` con el primer motor que no
+  resulte bloqueado; devuelve `(resultado, motor_usado, bloqueo)`.
+
+**Por qué esta cascada y no otra.** Se descartó Patchright tras medirlo: parchea el
+protocolo de automatización (capa 3), que no es la capa por la que bloquean estos
+sitios. Camoufox, en cambio, resuelve el fingerprint TLS (capa 2) y recupera
+decathlon.es. Chromium se mantiene como primera opción porque es más rápido y basta
+para la mayoría de sitios; Camoufox solo entra cuando el detector confirma bloqueo, de
+modo que los ~70 sitios que ya funcionaban no pagan el sobrecoste.
+
+**Limitación conocida:** Camoufox es Firefox y **no expone CDP**, por lo que los usos
+que dependen de `Accessibility.getFullAXTree` (árbol de accesibilidad para R1/R5 en
+`playwright_mod.py`) solo pueden emplear Chromium y no admiten este fallback.
+
+**Integración en `buscador_politica.py`:** el bloque `with sync_playwright()` que
+rastreaba el DOM se sustituyó por una llamada a `con_cascada()` con la extracción
+(scroll + hreflang + enlaces) como callback. El resto de la función es idéntico. Si
+hay bloqueo se registra en `resultado["bloqueo"]` sin abortar, ya que las fases de
+fallback (DDG, sondeo de rutas y subdominios) no dependen del DOM.
+
+**Resultado medido en decathlon.es:** pasa de **0 candidatos** en el DOM —lo que
+obligaba a recurrir a DuckDuckGo— a **22 candidatos**, localizando la política
+directamente desde la portada. abc.es sigue resolviéndose con Chromium a la primera,
+sin penalización de tiempo.
+
+### Propagación del bloqueo a los informes
+
+El bloqueo detectado se guarda como metadato de la auditoría y se muestra al usuario,
+para que quien lea el informe entienda **por qué** hay requisitos sin dato en lugar de
+suponer un fallo de la herramienta o un incumplimiento del sitio.
+
+**Transporte del dato:** `main.py/_hilo_poligraph` escribe
+`resultados["_meta"]["bloqueo"]` bajo el lock del dict compartido. La clave lleva `_`
+delante porque **no es un requisito**, y los conteos deben ignorarla. Esto obligó a
+corregir `salida._resumen()`, que iteraba `resultados.values()` a ciegas y habría
+contado `_meta` como un requisito en ERROR, inflando el total de 19 a 20. Ahora itera
+`.items()` y salta las claves que empiezan por `_`. El resto de consumidores
+(`salida_batch`, `batch`, `normativas`) ya recorrían la constante `REQUISITOS`, por lo
+que no se veían afectados.
+
+**Informe individual (`salida.py`) — función `_aviso_bloqueo()`:** banner ámbar sobre
+la sección de normativas que nombra el sistema detectado, muestra las señales
+(HTTP, tipo de señal, y "confianza media" cuando procede) y aclara explícitamente que
+los requisitos sin dato **no implican incumplimiento**, precisando además que los
+requisitos medidos sobre tráfico de red sí son válidos. Solo se emite si hubo bloqueo.
+
+**Informe batch (`salida_batch.py`) — función `_resumen_bloqueos()`:** sección
+"Sitios inaccesibles por anti-bot" con el total y porcentaje sobre la muestra, más una
+tabla de sistema → nº de sitios → dominios afectados, ordenada por incidencia. La
+sección (y su `<h2>`) se omite por completo cuando no hay ningún bloqueo.
+
+**Verificación:** con datos simulados (elpais.com/DataDome, decathlon.es/Cloudflare,
+abc.es sin bloqueo) el conteo de requisitos sigue dando 19 pese a la presencia de
+`_meta`, el aviso aparece en el informe del sitio bloqueado y no en el del sitio
+normal, y el batch informa "2 de 3 sitios (67%)" con el desglose correcto por sistema.
+
+---
+
 #### `Herramienta_Priv/buscador_politica.py`
 
 Localiza la URL de la política de privacidad de un sitio web dado de forma **completamente

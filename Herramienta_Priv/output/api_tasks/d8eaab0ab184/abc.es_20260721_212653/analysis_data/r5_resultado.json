@@ -1,0 +1,942 @@
+{
+  "sitio": "ABC - Últimas noticias de España y el mundo hoy",
+  "veredicto": "PASSED",
+  "evaluacion": {
+    "estado": "PASSED",
+    "detalle": "Banner '': botón de rechazo directo detectado ('Rechazar y pagar') al mismo nivel que \"Aceptar y continuar\". Revocación tan sencilla como aceptación. Cumple RGPD Art. 7.3."
+  },
+  "hallazgos": {
+    "banner_encontrado": true,
+    "fuente_deteccion": "region/complementary/banner (fallback)",
+    "nombre_banner": "",
+    "aceptar": [
+      {
+        "rol": "button",
+        "nombre": "Aceptar y continuar"
+      }
+    ],
+    "rechazar": [
+      {
+        "rol": "button",
+        "nombre": "Rechazar y pagar"
+      }
+    ],
+    "configurar": [
+      {
+        "rol": "link",
+        "nombre": "Configurar"
+      }
+    ],
+    "otros": [
+      {
+        "rol": "link",
+        "nombre": "Política de Cookies"
+      },
+      {
+        "rol": "link",
+        "nombre": "Aviso Legal"
+      },
+      {
+        "rol": "link",
+        "nombre": "Aviso Legal"
+      },
+      {
+        "rol": "link",
+        "nombre": "nuestros 698 socios"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de Cookies"
+      },
+      {
+        "rol": "link",
+        "nombre": "Saltar al contenido"
+      },
+      {
+        "rol": "link",
+        "nombre": "Zapatero"
+      },
+      {
+        "rol": "link",
+        "nombre": "Tabaco"
+      },
+      {
+        "rol": "link",
+        "nombre": "España"
+      },
+      {
+        "rol": "link",
+        "nombre": "Jordi Cruz"
+      },
+      {
+        "rol": "link",
+        "nombre": "Melendi"
+      },
+      {
+        "rol": "link",
+        "nombre": "Gonzalo Bernardos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Inés García"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ramona"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noemí Navarro"
+      },
+      {
+        "rol": "link",
+        "nombre": "Juan Avellaneda"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mario Picazo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Juan Orduña"
+      },
+      {
+        "rol": "link",
+        "nombre": "Noemí Seva"
+      },
+      {
+        "rol": "link",
+        "nombre": "Manuel García-Castellón"
+      },
+      {
+        "rol": "link",
+        "nombre": "Feng Shui"
+      },
+      {
+        "rol": "button",
+        "nombre": "Desplegar menú principal"
+      },
+      {
+        "rol": "link",
+        "nombre": "ABC: últimas noticias y actualidad de España y el mundo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Nacional"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sevilla"
+      },
+      {
+        "rol": "link",
+        "nombre": "Suscribete a ABC"
+      },
+      {
+        "rol": "link",
+        "nombre": "Iniciar sesión"
+      },
+      {
+        "rol": "link",
+        "nombre": "Newsletters"
+      },
+      {
+        "rol": "link",
+        "nombre": "PORTADA"
+      },
+      {
+        "rol": "link",
+        "nombre": "OPINIÓN"
+      },
+      {
+        "rol": "link",
+        "nombre": "MUNDIAL 2026"
+      },
+      {
+        "rol": "link",
+        "nombre": "ESPAÑA"
+      },
+      {
+        "rol": "link",
+        "nombre": "MADRID"
+      },
+      {
+        "rol": "link",
+        "nombre": "INTERNACIONAL"
+      },
+      {
+        "rol": "link",
+        "nombre": "ECONOMÍA"
+      },
+      {
+        "rol": "link",
+        "nombre": "SOCIEDAD"
+      },
+      {
+        "rol": "link",
+        "nombre": "CULTURA"
+      },
+      {
+        "rol": "link",
+        "nombre": "GENTE"
+      },
+      {
+        "rol": "link",
+        "nombre": "PLAY"
+      },
+      {
+        "rol": "link",
+        "nombre": "HISTORIA"
+      },
+      {
+        "rol": "link",
+        "nombre": "ÚLTIMA HORA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Patrocinio"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Martínez asegura que fue Zapatero quien le abrió las puertas de Venezuela y le presentó a Delcy Rodríguez"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Martínez asegura que fue Zapatero quien le abrió las puertas de Venezuela y le presentó a Delcy Rodríguez"
+      },
+      {
+        "rol": "link",
+        "nombre": "Carmen Lucas-Torres"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Martínez se presenta como un «correveidile» entre Zapatero y Plus Ultra"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cargos del PSOE urgen a distanciarse del expresidente: «No podemos ser un escudo político»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ni Ábalos ni Leire ni 'Julito', estas tramas tienen su «X»"
+      },
+      {
+        "rol": "link",
+        "nombre": "EDITORIAL"
+      },
+      {
+        "rol": "link",
+        "nombre": "Editorial"
+      },
+      {
+        "rol": "link",
+        "nombre": "La abogada de Koldo pide citar a Aldama por las acusaciones de intento de soborno de Carmen Pano"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Gobierno prohibirá fumar en playas además de en las terrazas de los bares"
+      },
+      {
+        "rol": "link",
+        "nombre": "Rodrigo Alonso"
+      },
+      {
+        "rol": "link",
+        "nombre": "Estanqueros y hosteleros rechazan la normativa"
+      },
+      {
+        "rol": "link",
+        "nombre": "El incendio de La Mierla entra en fase de estabilización tras calcinar más de 30.000 hectáreas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Fernando Franco"
+      },
+      {
+        "rol": "link",
+        "nombre": "Paredes empuja a Gavi una vez termina la final del Mundial."
+      },
+      {
+        "rol": "link",
+        "nombre": "Leandro Paredes, el futbolista pendenciero"
+      },
+      {
+        "rol": "link",
+        "nombre": "Laura Marta"
+      },
+      {
+        "rol": "link",
+        "nombre": "Opinión Una final esférica, por el historiador Juan Pimentel"
+      },
+      {
+        "rol": "link",
+        "nombre": "Opinión Se acabó el Mundial, ¿y ahora qué hacemos?, por Enrique Arnaldo"
+      },
+      {
+        "rol": "link",
+        "nombre": "El silencio de Marlaska ante los incidentes por la final del Mundial en Navarra indigna a los policías"
+      },
+      {
+        "rol": "link",
+        "nombre": "Borja Méndez y"
+      },
+      {
+        "rol": "link",
+        "nombre": "Juan Casillas Bayo"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Diputación de Álava prohibió a los niños de un campamento ver la final"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sumar acusa a Ferran Torres de «especular» con la vivienda y llama «fondo buitre» a su empresa"
+      },
+      {
+        "rol": "link",
+        "nombre": "Hotel de Iberostar en La Habana"
+      },
+      {
+        "rol": "link",
+        "nombre": "Iberostar y Barceló siguen a Meliá y completan el gran éxodo hotelero en Cuba"
+      },
+      {
+        "rol": "link",
+        "nombre": "Antonio Ramírez Cerezo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Meliá dejará de operar este mismo viernes en la isla"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sede del Tribunal de Cuentas, en Madrid"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Fiscalía insta al Tribunal de Cuentas a que aplique ya la amnistía y levante los embargos del 'procés'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Nati Villanueva"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Supremo reprocha a la Fiscalía que dé un «valor histórico» a las urnas del referéndum ilegal del 1-O"
+      },
+      {
+        "rol": "link",
+        "nombre": "Trump ha recibido en la Casa Blanca al presidente del Líbano, Joseph Aoun."
+      },
+      {
+        "rol": "link",
+        "nombre": "Trump no descarta contactos con Hizbolá para estabilizar el Líbano"
+      },
+      {
+        "rol": "link",
+        "nombre": "David Alandete"
+      },
+      {
+        "rol": "link",
+        "nombre": "EE.UU. concede la residencia permanente a Eduardo Bolsonaro por sus «habilidades extraordinarias»"
+      },
+      {
+        "rol": "link",
+        "nombre": "División interna en la CIA sobre la revelación de la injerencia electoral chavista"
+      },
+      {
+        "rol": "link",
+        "nombre": "El nuevo primer ministro británico, Andy Burnham."
+      },
+      {
+        "rol": "link",
+        "nombre": "El nuevo primer ministro británico elimina el IVA de la electricidad en los hogares"
+      },
+      {
+        "rol": "link",
+        "nombre": "Alemania y el nuevo Gobierno británico siguen adelante con su misil de largo alcance"
+      },
+      {
+        "rol": "link",
+        "nombre": "Un tanque Leopard aleman durante unas maniobras de la OTAN."
+      },
+      {
+        "rol": "link",
+        "nombre": "El Gobierno alemán se hará con el control del fabricante de tanques KNDS «de una forma u otra»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Rosalía Sánchez"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Guardia Civil descarta un crimen machista tras la muerte de una mujer en Almoradí (Alicante)"
+      },
+      {
+        "rol": "link",
+        "nombre": "La Guardia Civil descarta un crimen machista tras la muerte de una mujer en Almoradí"
+      },
+      {
+        "rol": "link",
+        "nombre": "Toni Jiménez"
+      },
+      {
+        "rol": "link",
+        "nombre": "Asesinada una mujer de 45 años en Alameda de la Sagra (Toledo) y detenida su pareja"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Su expareja sigue en la cárcel, pero no quiere decir dónde está el cuerpo de Mónica»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Iglesias en una imagen reciente"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Iglesias demanda a Yolanda Díaz y le reclama 50.000 euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "Nacho Serrano"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ayudas desde 4.500 euros para la compra de coches electrificados: luz verde al Plan Auto+"
+      },
+      {
+        "rol": "link",
+        "nombre": "Patxi Fernández"
+      },
+      {
+        "rol": "link",
+        "nombre": "Carla Díaz Álvarez de Toledo, actual directora general del Tesoro, sustituirá en el cargo al frente del FROB a Álvaro López Barcelo."
+      },
+      {
+        "rol": "link",
+        "nombre": "El Gobierno elige a Carla Díaz Álvarez de Toledo para presidir el FROB"
+      },
+      {
+        "rol": "link",
+        "nombre": "María Jesús Pérez"
+      },
+      {
+        "rol": "link",
+        "nombre": "OPINIÓN"
+      },
+      {
+        "rol": "link",
+        "nombre": "Birras y estrellas"
+      },
+      {
+        "rol": "link",
+        "nombre": "BIRRAS Y ESTRELLAS"
+      },
+      {
+        "rol": "link",
+        "nombre": "RAMÓN PALOMAR"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ramón Palomar"
+      },
+      {
+        "rol": "link",
+        "nombre": "CUESTIÓN DE VIDA O MUERTE"
+      },
+      {
+        "rol": "link",
+        "nombre": "PEDRO GARCÍA CUARTANGO"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pedro García Cuartango"
+      },
+      {
+        "rol": "link",
+        "nombre": "UNIDAD Y VICTORIA"
+      },
+      {
+        "rol": "link",
+        "nombre": "CARTAS AL DIRECTOR"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cartas al director"
+      },
+      {
+        "rol": "link",
+        "nombre": "Notigrama"
+      },
+      {
+        "rol": "link",
+        "nombre": "Notigrama"
+      },
+      {
+        "rol": "link",
+        "nombre": "Crucigrama"
+      },
+      {
+        "rol": "link",
+        "nombre": "Crucigrama"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sudoku"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sudoku"
+      },
+      {
+        "rol": "link",
+        "nombre": "Word Guess"
+      },
+      {
+        "rol": "link",
+        "nombre": "Word Guess"
+      },
+      {
+        "rol": "link",
+        "nombre": "Rueda de palabras"
+      },
+      {
+        "rol": "link",
+        "nombre": "Rueda de palabras"
+      },
+      {
+        "rol": "link",
+        "nombre": "Autodefinido"
+      },
+      {
+        "rol": "link",
+        "nombre": "Autodefinido"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sopa de letras"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sopa de letras"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Yo soy español», el cántico inspirado en 'Kalinka' que festeja los éxitos de España"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Yo soy español», el cántico futbolero inspirado en 'Kalinka'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Miguel Zarza"
+      },
+      {
+        "rol": "link",
+        "nombre": "Un presentador argentino llama «hijo de puta» al piloto español que hizo creer a sus pasajeros que Argentina ganó el Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lola Índigo y Ana Mena durante su actuación en la celebración del Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ana Mena, Lola Índigo o Aitana: tres formas de lucir la camiseta de la selección"
+      },
+      {
+        "rol": "link",
+        "nombre": "María I. Ortiz"
+      },
+      {
+        "rol": "link",
+        "nombre": "Metro de Madrid lanza una camiseta de la selección española edición «campeón del mundo»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Vinícius Jr. en una imagen de archivo."
+      },
+      {
+        "rol": "link",
+        "nombre": "El retoque estético de Vinícius Jr. tras el Mundial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Inés García, pareja de Lamine Yamal, víctima de una suplantación de identidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "icon"
+      },
+      {
+        "rol": "link",
+        "nombre": "Josep Pedrerol ficha por Mediaset."
+      },
+      {
+        "rol": "link",
+        "nombre": "Josep Pedrerol lleva su 'Chiringuito' a Mediaset tras no ser renovado por Atresmedia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Olaia Maneiro, Aida Tarrío y Sabela Maneiro (Tanxugueiras) en la sede de ABC"
+      },
+      {
+        "rol": "link",
+        "nombre": "Tanxugueiras: «Ya vivíamos de la música, pero nunca tuvimos una exposición tan extrema»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reyes Silva"
+      },
+      {
+        "rol": "link",
+        "nombre": "Punkaharju, en Savonnlina, Finlandia"
+      },
+      {
+        "rol": "link",
+        "nombre": "Los lagos de Finlandia en verano: un increíble paraíso natural aún virgen"
+      },
+      {
+        "rol": "link",
+        "nombre": "Laura Pintos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Los duques de Kent, en una imagen de 1961."
+      },
+      {
+        "rol": "link",
+        "nombre": "La duquesa de Kent y el único testamento público de los Windsor: ya se conoce el destinatario de 1,7 millones de euros"
+      },
+      {
+        "rol": "link",
+        "nombre": "A.B. Buendía"
+      },
+      {
+        "rol": "link",
+        "nombre": "Así se vive dentro de los palacios de la realeza: de las quejas de la Princesa Diana a los secretos de Kensington"
+      },
+      {
+        "rol": "link",
+        "nombre": "Los hijos de la tradición"
+      },
+      {
+        "rol": "link",
+        "nombre": "Los hijos de la tradición"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ben Affleck, en unos premios."
+      },
+      {
+        "rol": "link",
+        "nombre": "Ben Affleck vende a Netflix su compañía de Inteligencia Artificial por más de 500 millones"
+      },
+      {
+        "rol": "link",
+        "nombre": "Marina Ortiz Cortés"
+      },
+      {
+        "rol": "link",
+        "nombre": "Kaylee Hottle."
+      },
+      {
+        "rol": "link",
+        "nombre": "Muere la actriz Kaylee Hottle, conocida por 'Godzilla vs Kong', a los 19 años"
+      },
+      {
+        "rol": "link",
+        "nombre": "Cómo elegir el mejor protector solar para no quemarse ni desarrollar manchas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Araceli Nicolás"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Uno de cada tres niños que sufre acoso jamás lo cuenta», Jero García"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Uno de cada tres niños que sufre acoso jamás lo cuenta», Jero García"
+      },
+      {
+        "rol": "link",
+        "nombre": "Nubes de tormenta se ciernen sobre la supremacía financiera estadounidense"
+      },
+      {
+        "rol": "link",
+        "nombre": "Nubes de tormenta se ciernen sobre la supremacía financiera estadounidense"
+      },
+      {
+        "rol": "link",
+        "nombre": "The Economist"
+      },
+      {
+        "rol": "link",
+        "nombre": "DEPORTES"
+      },
+      {
+        "rol": "link",
+        "nombre": "Mario Hezonja contra Valencia Basket"
+      },
+      {
+        "rol": "link",
+        "nombre": "La desbandada de Mario Hezonja"
+      },
+      {
+        "rol": "link",
+        "nombre": "España arrasa con todo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Laura Marta"
+      },
+      {
+        "rol": "link",
+        "nombre": "La selección, a su llegada a Barajas"
+      },
+      {
+        "rol": "link",
+        "nombre": "Eufóricos con causa"
+      },
+      {
+        "rol": "link",
+        "nombre": "ÁNGEL ANTONIO HERRERA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ángel Antonio Herrera"
+      },
+      {
+        "rol": "link",
+        "nombre": "Remco Evenepoel, durante la carrera contra el reloj."
+      },
+      {
+        "rol": "link",
+        "nombre": "Evenepoel vuelve a batir a Pogacar"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pedro Cifuentes"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Zapatero tiene un futuro judicial muy negro, que Julio Martínez haya decidido colaborar con la justicia supone que tiene pruebas»"
+      },
+      {
+        "rol": "link",
+        "nombre": "«Zapatero tiene un futuro judicial muy negro, que Julio Martínez haya decidido colaborar con la justicia supone que tiene pruebas»"
+      },
+      {
+        "rol": "link",
+        "nombre": "El mapa en tiempo real con los incendios forestales que afectan a España: por comunidad y provincia"
+      },
+      {
+        "rol": "link",
+        "nombre": "El mapa en tiempo real con los incendios forestales que afectan a España: por comunidad y provincia"
+      },
+      {
+        "rol": "link",
+        "nombre": "FALSA - SIX"
+      },
+      {
+        "rol": "link",
+        "nombre": "Las puertas de la discoteca Berghain: ¿un misterio sin resolver?"
+      },
+      {
+        "rol": "link",
+        "nombre": "Roberto Leal en 'Pasapalabra'"
+      },
+      {
+        "rol": "link",
+        "nombre": "Roberto Leal pone contra las cuerdas a David en la prueba que más se le resiste: «Le estoy haciendo sufrir»"
+      },
+      {
+        "rol": "link",
+        "nombre": "María Robert"
+      },
+      {
+        "rol": "link",
+        "nombre": "Imagen SVG AÑADIDA"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Iglesias pone a la venta su mansión en Galicia: siete dormitorios, trece cuartos de baño y un lago artificial"
+      },
+      {
+        "rol": "link",
+        "nombre": "Julio Iglesias pone a la venta su mansión en Galicia: siete dormitorios, trece cuartos de baño y un lago artificial"
+      },
+      {
+        "rol": "link",
+        "nombre": "El cantante Julio Iglesias ha decidido desprenderse de la exclusiva propiedad que adquirió hace un año en una aldea gallega, sin que llegara nunca a residir en ella."
+      },
+      {
+        "rol": "link",
+        "nombre": "Vitamina D: ¿cuestión de sol? Por qué es tan importante la letra D"
+      },
+      {
+        "rol": "link",
+        "nombre": "Vivimos bajo uno de los cielos más luminosos de Europa, pero tenemos déficit de esta vitamina que se sintetiza con la radiación ultravioleta. ¿Por qué?"
+      },
+      {
+        "rol": "link",
+        "nombre": "Esther Martínez: «Unos miserables quisieron aguarnos la fiesta; no podemos dar ni un paso atrás»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Un muerto al salir despedido de un coche que se ha estrellado con otros tres heridos"
+      },
+      {
+        "rol": "link",
+        "nombre": "Las tres incongruencias de Zapatero, al descubierto tras la confesión de Julio Martínez y el presidente de Plus Ultra"
+      },
+      {
+        "rol": "link",
+        "nombre": "El Gobierno regional ve «incomprensible» que Page, presidente con mayoría absoluta, afronte unas primarias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Begoña Gómez pide a la Audiencia de Madrid una nueva fecha para resolver su recurso contra el archivo de la denuncia a Vito Quiles"
+      },
+      {
+        "rol": "link",
+        "nombre": "Montserrat Beltrán, experta en Feng Shui: «Los baños pueden hacer que la riqueza se pierda. Las tapas del inodoro deberían estar bajadas siempre»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Ramona, 85 años: «Con los años, aprendí que hay que cuidarse. Me propuse venir todos los días al gimnasio y ahora me encuentro más joven»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Juan Avellaneda ve los trajes de la Selección en la celebración del Mundial y opina sin filtros: «No me gustan nada»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Gonzalo Bernardos, economista: «El absentismo laboral no es un problema de los empleados ni de los empresarios, sino del país»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pablo Gil, economista: «A mí me espanta pensar que la mitad de la población quiere ser funcionaria»"
+      },
+      {
+        "rol": "link",
+        "nombre": "Logo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Logo"
+      },
+      {
+        "rol": "link",
+        "nombre": "App Store"
+      },
+      {
+        "rol": "link",
+        "nombre": "Google Play"
+      },
+      {
+        "rol": "link",
+        "nombre": "Vocento"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sobre nosotros"
+      },
+      {
+        "rol": "link",
+        "nombre": "Contacto"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de privacidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Política de cookies"
+      },
+      {
+        "rol": "link",
+        "nombre": "Condiciones de uso"
+      },
+      {
+        "rol": "link",
+        "nombre": "Aviso legal"
+      },
+      {
+        "rol": "link",
+        "nombre": "Accesibilidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Reglamento UE 2024/1083"
+      },
+      {
+        "rol": "link",
+        "nombre": "Condiciones de contratación"
+      },
+      {
+        "rol": "link",
+        "nombre": "Compromisos editoriales"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comprobar Lotería Niño"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lotería Niño"
+      },
+      {
+        "rol": "link",
+        "nombre": "Comprobar Lotería Navidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Lotería Navidad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Horóscopo"
+      },
+      {
+        "rol": "link",
+        "nombre": "Programación TV"
+      },
+      {
+        "rol": "link",
+        "nombre": "Últimas noticias"
+      },
+      {
+        "rol": "link",
+        "nombre": "Loterías"
+      },
+      {
+        "rol": "link",
+        "nombre": "Escucha las noticias del día"
+      },
+      {
+        "rol": "link",
+        "nombre": "Preguntas frecuentes"
+      },
+      {
+        "rol": "link",
+        "nombre": "Sorteo del Niño comprobar número - La Verdad"
+      },
+      {
+        "rol": "link",
+        "nombre": "Pódcast"
+      },
+      {
+        "rol": "link",
+        "nombre": "Logo"
+      },
+      {
+        "rol": "button",
+        "nombre": "Webs de Vocento"
+      }
+    ],
+    "total_acciones": 230
+  }
+}

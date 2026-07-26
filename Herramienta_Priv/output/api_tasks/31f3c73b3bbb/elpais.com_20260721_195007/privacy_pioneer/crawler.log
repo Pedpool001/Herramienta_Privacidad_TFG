@@ -1,0 +1,33 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '0c786144-c408-44c2-bf6b-17907706e7df',
+  '5e256cc5-b6ef-4b96-8d83-2040d5f66f2f'
+]
+PP window: 5e256cc5-b6ef-4b96-8d83-2040d5f66f2f
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://elpais.com
+❌ Error en la visita: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//elpais.com/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20elpais.com.
+------ Reiniciando driver por error crítico ------
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  'ee9769d5-0a7f-4c2e-bdee-c20168ddfe29',
+  'f2a02dd7-3391-4932-92bf-bff54c42a009'
+]
+PP window: f2a02dd7-3391-4932-92bf-bff54c42a009
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+time spent:  62.48 total elapsed:  111.004

@@ -1,0 +1,678 @@
+{
+  "title": "Blacklight Inspection",
+  "page_title": "Tienda de deportes, ropa y material deportivo | Decathlon",
+  "uri_ins": "https://www.decathlon.es",
+  "uri_dest": "https://www.decathlon.es/es",
+  "uri_redirects": [
+    "https://www.decathlon.es/"
+  ],
+  "secure_connection": {},
+  "host": "www.decathlon.es",
+  "config": {
+    "emulateDevice": {
+      "name": "iPhone 13 Mini",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "isLandscape": false
+      }
+    },
+    "cleareCache": true,
+    "captureHar": true,
+    "captureLinks": false,
+    "enableAdBlock": false,
+    "saveBrowserProfile": false,
+    "numPages": 1,
+    "defaultTimeout": 35000,
+    "defaultWaitUntil": "networkidle2",
+    "headless": true,
+    "headers": {},
+    "extraChromiumArgs": [
+      "--no-sandbox",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--disable-default-apps"
+    ],
+    "extraPuppeteerOptions": {}
+  },
+  "browser": {
+    "name": "Chromium",
+    "version": "Chrome/127.0.6533.88",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "6.8.0-124-generic"
+    }
+  },
+  "script": {
+    "host": "pedro-SATELLITE-L50-A-1DL",
+    "version": {
+      "npm": "3.10.0",
+      "commit": "dev"
+    },
+    "node_version": "v20.20.0"
+  },
+  "start_time": "2026-07-21T19:29:22.405Z",
+  "end_time": "2026-07-21T19:29:39.532Z",
+  "browsing_history": [
+    "https://www.decathlon.es/es",
+    "https://www.decathlon.es/es/servicios/personalizacion"
+  ],
+  "hosts": {
+    "requests": {
+      "first_party": [
+        "www.decathlon.es"
+      ],
+      "third_party": [
+        "contents.mediadecathlon.com",
+        "prod.transcript.decathlon.net",
+        "www.googletagmanager.com",
+        "sdk.privacy-center.org",
+        "insights.v3.decathlon.net",
+        "cdn.caast.tv",
+        "halc.iadvize.com",
+        "cache.caast.tv",
+        "static.iadvize.com",
+        "api.iadvize.com"
+      ]
+    }
+  },
+  "reports": {
+    "behaviour_event_listeners": {
+      "MOUSE": {
+        "https://www.decathlon.es/_next/static/chunks/248-41fe1b96e6f45018.js": [
+          "mousedown",
+          "scroll"
+        ],
+        "https://halc.iadvize.com/iadvize.js": [
+          "scroll"
+        ],
+        "https://www.googletagmanager.com/gtm.js?id=GTM-KN9WWJCV": [
+          "click"
+        ],
+        "https://www.decathlon.es/_next/static/chunks/1643-6a98b4834cda7c51.js": [
+          "scroll"
+        ],
+        "https://www.decathlon.es/_next/static/chunks/1769-a0361d84de9edc5a.js": [
+          "scroll"
+        ],
+        "https://www.decathlon.es/_next/static/chunks/3ad57037-3ec83be4c9eb0773.js": [
+          "dblclick",
+          "scroll",
+          "mouseup",
+          "mousemove",
+          "mousedown",
+          "click"
+        ],
+        "https://static.iadvize.com/livechat/unversioned/notification.js": [
+          "scroll"
+        ]
+      },
+      "KEYBOARD": {
+        "https://halc.iadvize.com/iadvize.js": [
+          "keypress"
+        ],
+        "https://www.decathlon.es/_next/static/chunks/3ad57037-3ec83be4c9eb0773.js": [
+          "keyup",
+          "keypress",
+          "keydown",
+          "input"
+        ]
+      },
+      "TOUCH": {
+        "https://www.decathlon.es/_next/static/chunks/3ad57037-3ec83be4c9eb0773.js": [
+          "touchmove",
+          "touchstart",
+          "touchend",
+          "touchcancel"
+        ]
+      }
+    },
+    "canvas_fingerprinters": {
+      "data_url": {},
+      "fingerprinters": [],
+      "styles": {},
+      "texts": {}
+    },
+    "canvas_font_fingerprinters": {
+      "canvas_font": {},
+      "text_measure": {}
+    },
+    "cookies": [
+      {
+        "name": "AUTH_STATE",
+        "value": "eyJhcHAiOiJXTkYifQ%3D%3D",
+        "domain": "www.decathlon.es",
+        "path": "/",
+        "expires": "2026-08-05T19:29:32.401Z",
+        "size": 34,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "Lax",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "ecom_user_id",
+        "value": "686de0b5-5ff2-43d6-a3ee-50c05a2dfe74",
+        "domain": "www.decathlon.es",
+        "path": "/",
+        "expires": "2027-07-21T19:29:32.401Z",
+        "size": 48,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "__cf_bm",
+        "value": "qwQsZuc0dqIqoFh_PHSsTC5TMjc3QP_2yILjwJzj5.U-1784662169.07442-1.0.1.1-OarF9bMyMTydidgoF1x1PpoasJRiQAEx59.hGB.rlNNW_h3e0N9OE.hdmPJz7tRWr2lM5i7bU1sNHR3fw.r.d5GVQu9vHrBKSRzYB_ExMld9fGlM5DynJ0bKGhwd4l0Q",
+        "domain": "www.decathlon.es",
+        "path": "/",
+        "expires": "2026-07-21T19:59:32.401Z",
+        "size": 204,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "_cfuvid",
+        "value": "42siSbEvwWYQRpOPBot59Dtfam_1sJz0HeoEpw2TlkQ-1784662169.07442-1.0.1.1-bBewsqAGxwfLKjdkvTKp7FHK3D5i0M6NnMH6brTN390",
+        "domain": "www.decathlon.es",
+        "path": "/",
+        "expires": -1,
+        "size": 119,
+        "httpOnly": true,
+        "secure": true,
+        "session": true,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "iadvize-6445-vuid",
+        "value": "%7B%22vuid%22%3A%22ca58aad5ebd44e75858e7b0c219b6a7db00fcbd0ff414%22%2C%22splitGroup%22%3A9%7D",
+        "domain": "decathlon.es",
+        "path": "/",
+        "expires": "2027-07-21T19:29:36.336Z",
+        "size": 110,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      }
+    ],
+    "fb_pixel_events": [],
+    "tiktok_pixel_events": [],
+    "twitter_pixel_events": [],
+    "google_analytics_events": [],
+    "key_logging": {},
+    "session_recorders": {},
+    "third_party_trackers": [
+      {
+        "data": {
+          "body": {
+            "event": "engagement.page-view.created",
+            "properties": {
+              "deviceId": "d3c69c10-2893-45ff-88b4-416aa63b9dc1",
+              "eventId": "e10aa471-797c-4982-85c8-52f57eeae24e",
+              "eventTime": "2026-07-21T19:29:36.339Z",
+              "eventType": "engagement.page-view.created",
+              "pageType": "sport_page",
+              "projectId": "ha-6445",
+              "sourceVisitorId": "ca58aad5ebd44e75858e7b0c219b6a7db00fcbd0ff414",
+              "url": "https://www.decathlon.es/es/servicios/personalizacion",
+              "visitorDate": "2026-07-21T19:29:36.339Z"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es/servicios/personalizacion",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.tag.loaded",
+            "properties": {
+              "buildVersion": "9db3c30e453de9d126a7894aaa216152f313310f",
+              "cookieConsent": "true",
+              "deviceId": "d3c69c10-2893-45ff-88b4-416aa63b9dc1",
+              "projectId": "ha-6445",
+              "referrer": "",
+              "sourceVisitorId": "ca58aad5ebd44e75858e7b0c219b6a7db00fcbd0ff414",
+              "storageType": "FIRST_PARTY",
+              "tagVersion": "LIGHT",
+              "url": "https://www.decathlon.es/es/servicios/personalizacion",
+              "useExplicitCookiesConsent": false,
+              "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+              "visitorDate": "2026-07-21T19:29:36.338Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es/servicios/personalizacion",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "GTM-KN9WWJCV"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es/servicios/personalizacion",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KN9WWJCV"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "GTM-MW4Z6VP"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es/servicios/personalizacion",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MW4Z6VP"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "conversations.chatbox.videobox.visitorCameraCapability",
+            "properties": {
+              "browser": "Safari",
+              "cookieConsent": "true",
+              "device": "mobile",
+              "deviceId": "40b47487-e317-44bf-94f0-aae6dd27eeb9",
+              "projectId": "ha-6445",
+              "sourceVisitorId": "43a9ee0cdd344b109dfca3b22fff63674e43818b76d44",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.672Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "conversations.chatbox.videobox.visitorMicroCapability",
+            "properties": {
+              "browser": "Safari",
+              "cookieConsent": "true",
+              "device": "mobile",
+              "deviceId": "40b47487-e317-44bf-94f0-aae6dd27eeb9",
+              "projectId": "ha-6445",
+              "sourceVisitorId": "43a9ee0cdd344b109dfca3b22fff63674e43818b76d44",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.672Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.notification.displayed",
+            "properties": {
+              "browser": "Safari",
+              "cookieConsent": "true",
+              "device": "mobile",
+              "deviceId": "40b47487-e317-44bf-94f0-aae6dd27eeb9",
+              "displayTime": 1784662169602,
+              "engagementRuleId": "25222f09-f808-443a-b94b-fc0ae0055de7",
+              "isFromNavigate": false,
+              "notificationChannels": [
+                "chat"
+              ],
+              "notificationId": "5410bf3c-f715-454b-b28e-9b979b85b660",
+              "notificationTemplateId": "4361aee2-4fac-4eb9-95d2-45ce9668fed6",
+              "notificationType": "templated_notification",
+              "pageId": "ffd334a2-8d76-4f20-9c35-75a86e995c33",
+              "projectId": "ha-6445",
+              "sourceVisitorId": "43a9ee0cdd344b109dfca3b22fff63674e43818b76d44",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.606Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.page-view.exposed",
+            "properties": {
+              "browser": null,
+              "device": null,
+              "eventId": "5f4d1b96-9075-478c-80ca-b5c25cdb32ea",
+              "eventTime": "2026-07-21T19:29:29.603Z",
+              "eventType": "engagement.page-view.exposed",
+              "pageType": "homepage",
+              "projectId": "ha-6445",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.603Z"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.rule.executed",
+            "properties": {
+              "browser": "Safari",
+              "cookieConsent": "true",
+              "device": "mobile",
+              "deviceId": "40b47487-e317-44bf-94f0-aae6dd27eeb9",
+              "engagementRuleId": "25222f09-f808-443a-b94b-fc0ae0055de7",
+              "projectId": "ha-6445",
+              "sourceVisitorId": "43a9ee0cdd344b109dfca3b22fff63674e43818b76d44",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.440Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.tag.loaded",
+            "properties": {
+              "browser": "Safari",
+              "buildVersion": "9db3c30e453de9d126a7894aaa216152f313310f",
+              "cookieConsent": "true",
+              "device": "mobile",
+              "deviceId": "40b47487-e317-44bf-94f0-aae6dd27eeb9",
+              "projectId": "ha-6445",
+              "referrer": "",
+              "sourceVisitorId": "43a9ee0cdd344b109dfca3b22fff63674e43818b76d44",
+              "storageType": "FIRST_PARTY",
+              "tagVersion": "FULL",
+              "url": "https://www.decathlon.es/es",
+              "useExplicitCookiesConsent": false,
+              "visitorDate": "2026-07-21T19:29:29.437Z",
+              "visitorLanguage": "es"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {
+            "event": "engagement.page-view.created",
+            "properties": {
+              "browser": null,
+              "device": null,
+              "eventId": "2d012fa1-d75d-4a01-a9f9-254c70748e29",
+              "eventTime": "2026-07-21T19:29:29.448Z",
+              "eventType": "engagement.page-view.created",
+              "pageType": "homepage",
+              "projectId": "ha-6445",
+              "url": "https://www.decathlon.es/es",
+              "visitorDate": "2026-07-21T19:29:29.448Z"
+            }
+          },
+          "filter": "||iadvize.com/collector/",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://api.iadvize.com/collector/ha/live/events"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "GTM-KN9WWJCV"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KN9WWJCV"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "GTM-MW4Z6VP"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.decathlon.es/es",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-MW4Z6VP"
+      }
+    ]
+  }
+}

@@ -18,7 +18,7 @@ import logging
 import threading
 from pathlib import Path
 
-from ._loader import ejecutar_analisis
+from ._loader import ejecutar_analisis, dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -71,7 +71,8 @@ def ejecutar(
                 args_r16 = [str(graph_yml)]
                 if csv_3p.exists():
                     args_r16.append(str(csv_3p))
-                data = ejecutar_analisis("r16_correspondencia", *args_r16)
+                data = ejecutar_analisis("r16_correspondencia", *args_r16,
+                                          salida_dir=dir_analisis(output_dir, es_raiz=True))
                 with lock:
                     resultados["R16"] = {
                         "veredicto": data.get("veredicto", "ERROR"),
@@ -89,7 +90,8 @@ def ejecutar(
     if "R12" in sel:
         try:
             args_r12 = [str(csv_3p)] if csv_3p.exists() else []
-            data = ejecutar_analisis("r12_software_terceros", *args_r12)
+            data = ejecutar_analisis("r12_software_terceros", *args_r12,
+                                      salida_dir=dir_analisis(output_dir, es_raiz=True))
             veredicto = "PASSED"
             for sitio_data in (data.values() if isinstance(data, dict) else []):
                 if isinstance(sitio_data, dict) and sitio_data.get("estado") == "FALLO":
@@ -106,7 +108,8 @@ def ejecutar(
     if "R15" in sel:
         try:
             args_r15 = [str(graph_yml)] if graph_yml.exists() else []
-            data = ejecutar_analisis("r15_responsables", *args_r15)
+            data = ejecutar_analisis("r15_responsables", *args_r15,
+                                      salida_dir=dir_analisis(output_dir, es_raiz=True))
             veredicto_global = "PASSED"
             for sitio_data in data.values() if isinstance(data, dict) else []:
                 if isinstance(sitio_data, dict):

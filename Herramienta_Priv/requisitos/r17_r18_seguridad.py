@@ -33,6 +33,7 @@ Uso:
   python3 r17_r18_seguridad.py --no-detalle           # solo resumen
 """
 
+import os
 import json
 import sys
 import warnings
@@ -45,7 +46,9 @@ from urllib.parse import urlparse
 # ── Rutas ─────────────────────────────────────────────────────────────────────
 _TFG_DIR = Path(__file__).resolve().parents[2]
 WEC_OUTPUT_DEFAULT = _TFG_DIR / "WEC/website-evidence-collector/output"
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r17_r18_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r17_r18_resultado.json"
 
 ICONO = {"PASSED": "✅", "WARNING": "⚠️ ", "FAILED": "❌", "UNKNOWN": "❓"}
 

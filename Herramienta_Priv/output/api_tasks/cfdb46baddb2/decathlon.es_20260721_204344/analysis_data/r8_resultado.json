@@ -1,0 +1,157 @@
+{
+  "sitio": "decathlon.es",
+  "veredicto": "FAILED",
+  "resumen": {
+    "FAILED": 4,
+    "WARNING": 1
+  },
+  "fallos": [
+    {
+      "script": "https://prod.transcript.decathlon.net/content/tracker.v2.prod.min.js",
+      "dominio": "decathlon.net",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "clickstream-tracker/config"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "undefined"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "clickstream-tracker/config",
+            "undefined"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "dominio": "privacy-center.org",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "didomi_auth_token",
+            "didomi_token",
+            "euconsent-v2"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "euconsent-v2"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "didomi_token"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://prod.transcript.decathlon.net/csm/1.55.0/tracker.v2.prod.min.js",
+      "dominio": "decathlon.net",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "PersadoVariant",
+            "__anon_id",
+            "__user_id",
+            "__user_traits",
+            "activityModule/activity",
+            "clickstream-tracker/config",
+            "clickstream/navigation",
+            "experimentsHistory"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "undefined"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "__anon_id",
+            "activityModule/activity",
+            "clickstream-tracker/config",
+            "clickstream/navigation",
+            "undefined"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://halc.iadvize.com/iadvize.js",
+      "dominio": "iadvize.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "idz_pageId"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "idz_pageId"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    }
+  ],
+  "avisos": [
+    {
+      "script": "https://static.iadvize.com/livechat/unversioned/light-mode.chunk.js",
+      "dominio": "iadvize.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "idz-debugTool"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    }
+  ]
+}

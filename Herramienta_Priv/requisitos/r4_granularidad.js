@@ -38,10 +38,11 @@ const fs = require('fs');
 chromium.use(stealth);
 
 // ── Rutas de salida ───────────────────────────────────────────────────────────
-const ANALYSIS_DATA = path.resolve(
-    __dirname,
-    '../analysis_data'
-);
+// ANALYSIS_DATA_DIR permite aislar la salida por sitio cuando la auditoría
+// corre en paralelo; sin la variable se usa el directorio compartido de siempre.
+const ANALYSIS_DATA = process.env.ANALYSIS_DATA_DIR
+    ? path.resolve(process.env.ANALYSIS_DATA_DIR)
+    : path.resolve(__dirname, '../analysis_data');
 const RESULTADO_PATH = path.join(ANALYSIS_DATA, 'r4_resultado.json');
 
 // ── Configuración ─────────────────────────────────────────────────────────────

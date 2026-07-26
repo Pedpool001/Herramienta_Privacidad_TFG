@@ -17,6 +17,9 @@ import logging
 import requests as _requests
 from urllib.parse import urljoin, urlparse
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
+
+from anti_bot import detectar_bloqueo_pagina, describir
+from navegador import con_cascada, MOTORES
 from playwright_stealth import Stealth
 try:
     from ddgs import DDGS as _DDGS
@@ -414,84 +417,88 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
             "candidatos": list[dict],   # todos los candidatos encontrados
         }
     """
-    resultado = {"url": None, "es_ingles": False, "fuente": None, "candidatos": []}
+    resultado = {"url": None, "es_ingles": False, "fuente": None,
+                 "candidatos": [], "bloqueo": None}
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = _nuevo_contexto(browser)
-        page = context.new_page()
+    # ── Rastreo del DOM con cascada de motores ────────────────────────────────
+    # Si Chromium resulta bloqueado, se reintenta con Camoufox, que supera los
+    # bloqueos por fingerprint TLS (Cloudflare). Los bloqueos por reputación de
+    # IP (DataDome) no los resuelve ningún motor y se registran para el informe.
+    logger.info(f"Navegando a {url_sitio}")
 
-        try:
-            logger.info(f"Navegando a {url_sitio}")
-            page.goto(url_sitio, wait_until="domcontentloaded", timeout=timeout_ms)
-            page.wait_for_timeout(2000)
-            # Scroll al fondo para activar lazy loading de footer
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            page.wait_for_timeout(1500)
-        except PlaywrightTimeout:
-            logger.warning(f"Timeout al cargar {url_sitio}")
-            browser.close()
-            return resultado
-        except Exception as e:
-            logger.error(f"Error al navegar a {url_sitio}: {e}")
-            browser.close()
-            return resultado
-
-        # ── Estrategia 1: hreflang="en" en el <head> ──────────────────────────
-        hreflang_en = page.eval_on_selector_all(
+    def _extraer_del_dom(page):
+        # Scroll al fondo para activar el lazy loading del footer, que es donde
+        # suelen vivir los enlaces legales
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(1500)
+        hreflang = page.eval_on_selector_all(
             'link[hreflang]',
             """links => links
                 .filter(l => /^en($|-)/i.test(l.hreflang))
                 .map(l => l.href)""",
         )
-        # hreflang puede apuntar a la home; filtrar solo los que parecen política
-        hreflang_politica = [
-            h for h in hreflang_en
-            if _es_candidato(h, "") or _RELEVANCIA_ALTA.search(h)
-        ]
-
-        # ── Extracción de todos los enlaces de la página ───────────────────────
-        enlaces_raw = page.evaluate(
+        enlaces = page.evaluate(
             """() => Array.from(document.querySelectorAll('a[href]'))
                   .map(a => ({href: a.href, texto: (a.innerText || '').trim()}))"""
         )
+        return hreflang, enlaces
 
-        base = url_sitio.rstrip("/")
-        parsed_base = urlparse(base)
-        dominio_sitio = parsed_base.netloc  # ej: "www.decathlon.es"
-        # URL de la homepage para no confundirla con una página de política
-        homepage_paths = {"", "/", "/index.html", "/index.php"}
+    datos, motor, _bloqueo = con_cascada(
+        url_sitio, _extraer_del_dom, timeout_ms=timeout_ms)
 
-        candidatos = []
-        for item in enlaces_raw:
-            href = item.get("href", "")
-            texto = item.get("texto", "")
-            if not href or href.startswith("javascript:") or href.startswith("mailto:"):
-                continue
-            href = urljoin(base, href)
-            parsed = urlparse(href)
-            # Descartar si apunta a la homepage (path trivial del mismo dominio)
-            if parsed.netloc == parsed_base.netloc and parsed.path.rstrip("/") in homepage_paths:
-                continue
-            if _es_candidato(href, texto):
-                score = _puntuacion(href, texto, dominio_sitio)
-                candidatos.append({
-                    "url": href,
-                    "texto": texto[:80],
-                    "score": score,
-                    "en_url": _es_ingles_url(href),
-                    "en_texto": _es_ingles_texto(texto),
-                })
+    if _bloqueo:
+        # No se aborta: las fases de fallback (DDG, sondeo de rutas y de
+        # subdominios) no dependen del DOM y pueden encontrar la política
+        # igualmente. Pero queda constancia de por qué el DOM viene vacío.
+        resultado["bloqueo"] = _bloqueo
+        logger.warning("%s: %s", url_sitio, describir(_bloqueo))
+    elif motor and motor != MOTORES[0]:
+        resultado["motor"] = motor
 
-        # Deduplicar por URL
-        vistos = {}
-        for c in candidatos:
-            if c["url"] not in vistos or c["score"] > vistos[c["url"]]["score"]:
-                vistos[c["url"]] = c
-        candidatos = sorted(vistos.values(), key=lambda x: -x["score"])
-        resultado["candidatos"] = candidatos
+    hreflang_en, enlaces_raw = datos if datos else ([], [])
 
-        browser.close()
+    # hreflang puede apuntar a la home; filtrar solo los que parecen política
+    hreflang_politica = [
+        h for h in hreflang_en
+        if _es_candidato(h, "") or _RELEVANCIA_ALTA.search(h)
+    ]
+
+
+    base = url_sitio.rstrip("/")
+    parsed_base = urlparse(base)
+    dominio_sitio = parsed_base.netloc  # ej: "www.decathlon.es"
+    # URL de la homepage para no confundirla con una página de política
+    homepage_paths = {"", "/", "/index.html", "/index.php"}
+
+    candidatos = []
+    for item in enlaces_raw:
+        href = item.get("href", "")
+        texto = item.get("texto", "")
+        if not href or href.startswith("javascript:") or href.startswith("mailto:"):
+            continue
+        href = urljoin(base, href)
+        parsed = urlparse(href)
+        # Descartar si apunta a la homepage (path trivial del mismo dominio)
+        if parsed.netloc == parsed_base.netloc and parsed.path.rstrip("/") in homepage_paths:
+            continue
+        if _es_candidato(href, texto):
+            score = _puntuacion(href, texto, dominio_sitio)
+            candidatos.append({
+                "url": href,
+                "texto": texto[:80],
+                "score": score,
+                "en_url": _es_ingles_url(href),
+                "en_texto": _es_ingles_texto(texto),
+            })
+
+    # Deduplicar por URL
+    vistos = {}
+    for c in candidatos:
+        if c["url"] not in vistos or c["score"] > vistos[c["url"]]["score"]:
+            vistos[c["url"]] = c
+    candidatos = sorted(vistos.values(), key=lambda x: -x["score"])
+    resultado["candidatos"] = candidatos
+
 
     # ── Selección final ────────────────────────────────────────────────────────
 

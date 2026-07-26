@@ -1,19 +1,11 @@
 {
-  "sitio": "rtve.es",
-  "veredicto": "WARNING",
+  "sitio": "marca.com",
+  "veredicto": "PASSED",
   "syncs_tercero_tercero": [],
-  "syncs_sitio_tercero": [
-    {
-      "trigger_dominio": "rtve.es",
-      "trigger_origin": "https://www.rtve.es",
-      "receptor_dominio": "demdex.net",
-      "receptor_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=ajUlWQAAAORBQwN-",
-      "sitio": "rtve.es"
-    }
-  ],
+  "syncs_sitio_tercero": [],
   "grafo_sincronizacion": [],
   "resumen": {
     "total_3p_3p": 0,
-    "total_1p_3p": 1
+    "total_1p_3p": 0
   }
 }

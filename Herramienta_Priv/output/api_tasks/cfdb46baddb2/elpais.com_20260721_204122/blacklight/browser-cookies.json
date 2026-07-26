@@ -1,0 +1,65 @@
+{
+  "browser_cookies": [
+    {
+      "name": "datadome",
+      "value": "VZ4UBE1rsFb4kcj2xg6FBhoazFNyVdhc4YwBx7pRTVCZV67MVA8N~gL_9BQ1drs3h_XjIi6gUmLs2UjTN~b7svFJvoUZdxoJa0nR36gib~gBhM1zga0dXoKjywTso_lw",
+      "domain": "elpais.com",
+      "path": "/",
+      "expires": "2027-07-21T18:41:28.730Z",
+      "size": 136,
+      "httpOnly": false,
+      "secure": true,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "arc-geo",
+      "value": "{\"georegion\":\"200\",\"countrycode\":\"ES\",\"regioncode\":\"VC\",\"timezone\":\"GMT+1\",\"continent\":\"EU\"}",
+      "domain": "elpais.com",
+      "path": "/",
+      "expires": "2026-07-21T18:56:28.859Z",
+      "size": 99,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "eptz",
+      "value": "ES",
+      "domain": "elpais.com",
+      "path": "/",
+      "expires": -1,
+      "size": 6,
+      "httpOnly": false,
+      "secure": false,
+      "session": true,
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "hpage",
+      "value": "1",
+      "domain": "elpais.com",
+      "path": "/",
+      "expires": "2027-07-21T18:41:28.859Z",
+      "size": 6,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ]
+}

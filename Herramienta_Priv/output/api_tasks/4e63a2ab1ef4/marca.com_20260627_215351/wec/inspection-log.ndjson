@@ -1,0 +1,747 @@
+{"level":"info","message":"No proxy configuration found.","timestamp":"2026-06-27T19:53:59.207Z"}
+{"level":"info","message":"Chromium called  with following options: ","timestamp":"2026-06-27T19:53:59.251Z"}
+{"level":"info","message":"Done: Creating puppeteer chrome session","timestamp":"2026-06-27T19:54:06.941Z"}
+{"level":"info","message":"Run testHttps","timestamp":"2026-06-27T19:54:06.946Z"}
+{"level":"info","message":"Done: Testing connection using testHttps and testSSL","timestamp":"2026-06-27T19:54:07.755Z"}
+{"level":"info","message":"browsing now to https://www.marca.com","timestamp":"2026-06-27T19:54:07.757Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.825Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.838Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.857Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.870Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.877Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.878Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.898Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.903Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.906Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.920Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.927Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.932Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.937Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.938Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.939Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.945Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.947Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.950Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.952Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.957Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.960Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.963Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.968Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.970Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Device for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:08.971Z"}
+{"level":"info","message":"LocalStorage filled with key(s) geocached for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:09.825Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.531Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.534Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.539Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.544Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.544Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.549Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.555Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.557Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.558Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.608Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.614Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.619Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.620Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.631Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.632Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.632Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.650Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.651Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.670Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.677Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.681Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.687Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.694Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.698Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.709Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.713Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.718Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.723Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.726Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.731Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.836Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.837Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.837Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.862Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.863Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.864Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.876Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.883Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:10.885Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.014Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.035Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.036Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.037Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.038Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.038Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.040Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.041Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.044Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.380Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.380Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.382Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.387Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.390Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:11.392Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key euconsent-v2.","timestamp":"2026-06-27T19:54:13.856Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key didomi_token.","timestamp":"2026-06-27T19:54:13.861Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.875Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.897Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.906Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.912Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.923Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.928Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.945Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.946Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.951Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.955Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.959Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.962Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.969Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.977Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.981Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.982Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.982Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:13.992Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.001Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.052Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.065Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.066Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.078Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.086Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.094Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.103Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.110Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.111Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.116Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.120Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.124Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.126Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.131Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.134Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.137Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.143Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.143Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.144Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.148Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.159Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.390Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.394Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.401Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.410Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.411Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.412Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.413Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.414Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.416Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.427Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.427Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.428Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.429Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.429Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.438Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.441Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.442Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.707Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.707Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.709Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.710Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.711Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.715Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.718Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.720Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.721Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.726Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.731Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.732Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.734Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.735Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.735Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.739Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.742Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.743Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.788Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.796Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.799Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.800Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.809Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.810Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.811Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.811Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.812Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.834Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.835Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.837Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.841Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.841Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.847Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.849Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.851Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.854Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.967Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.968Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.983Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.984Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.989Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:14.995Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.004Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.005Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.017Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.018Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.019Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.020Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.026Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.028Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.029Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.047Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.048Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.052Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.060Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.065Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.071Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.076Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.080Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.081Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.083Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.089Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.091Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastVisitMonth1 for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.441Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastVisit30 for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:15.442Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ue_consentState.","timestamp":"2026-06-27T19:54:15.668Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.marca.com with key euconsent-v2.","timestamp":"2026-06-27T19:54:16.249Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key euconsent-v2.","timestamp":"2026-06-27T19:54:16.255Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key didomi_token.","timestamp":"2026-06-27T19:54:16.262Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.262Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ue_privacyPolicy.","timestamp":"2026-06-27T19:54:16.274Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentGoogle for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.282Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentComscore for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.286Z"}
+{"level":"info","message":"LocalStorage filled with key(s) random2 for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.371Z"}
+{"level":"info","message":"LocalStorage filled with key(s) telP for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.831Z"}
+{"level":"info","message":"LocalStorage filled with key(s) telPId for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:16.835Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCCDCF.","timestamp":"2026-06-27T19:54:17.208Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCCDCF.","timestamp":"2026-06-27T19:54:17.212Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCCDCF.","timestamp":"2026-06-27T19:54:17.214Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCCDCF.","timestamp":"2026-06-27T19:54:17.222Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:17.714Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:17.732Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __t__ for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:17.777Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:17.805Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:17.830Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:17.833Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:17.838Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:17.839Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key counter_page_view.","timestamp":"2026-06-27T19:54:17.844Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_kw_landing_page.","timestamp":"2026-06-27T19:54:17.845Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_url_qs_landing_page.","timestamp":"2026-06-27T19:54:17.850Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:17.873Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channeloriginator.","timestamp":"2026-06-27T19:54:17.874Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelcloser.","timestamp":"2026-06-27T19:54:17.877Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:17.879Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:17.880Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:17.881Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:17.896Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:17.896Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:17.906Z"}
+{"level":"info","message":"LocalStorage filled with key(s) geocached for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:18.676Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key _rdc1782590058786.","timestamp":"2026-06-27T19:54:18.790Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key _rdc1782590058786.","timestamp":"2026-06-27T19:54:18.795Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.marca.com with key utag_clean_done.","timestamp":"2026-06-27T19:54:19.155Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:19.171Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:19.177Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:19.177Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:19.191Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:19.194Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:19.197Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_kw_landing_page.","timestamp":"2026-06-27T19:54:19.197Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_url_qs_landing_page.","timestamp":"2026-06-27T19:54:19.200Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:19.202Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:19.211Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:19.218Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:19.229Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:19.231Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:19.234Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:19.242Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:19.667Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:19.673Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:19.685Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:19.758Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:19.759Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:19.763Z"}
+{"level":"info","message":"LocalStorage filled with key(s) permutive-consent for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:19.876Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key permutive-id.","timestamp":"2026-06-27T19:54:19.900Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key permutive-session.","timestamp":"2026-06-27T19:54:19.901Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _permutive_ls_test for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:19.902Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:20.124Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _gid.","timestamp":"2026-06-27T19:54:20.129Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key AMP_TOKEN.","timestamp":"2026-06-27T19:54:20.201Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:20.265Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:20.272Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:20.273Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test__1782590060271 for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:20.283Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:20.420Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:20.454Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:20.461Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:20.477Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:20.481Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:20.555Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:20.641Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:20.645Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:20.646Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key _hjTLDTest.","timestamp":"2026-06-27T19:54:20.758Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjTLDTest.","timestamp":"2026-06-27T19:54:20.766Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _hjLocalStorageTest for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:20.799Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjSessionUser_413277.","timestamp":"2026-06-27T19:54:20.806Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjSession_413277.","timestamp":"2026-06-27T19:54:20.811Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjSession_413277.","timestamp":"2026-06-27T19:54:20.817Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjSession_413277.","timestamp":"2026-06-27T19:54:20.832Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ce_localstorage_test for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:21.697Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ce.s.","timestamp":"2026-06-27T19:54:21.701Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ce.s.","timestamp":"2026-06-27T19:54:21.715Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key mrf_cookie.","timestamp":"2026-06-27T19:54:21.728Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key mrf_cookie.","timestamp":"2026-06-27T19:54:21.731Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key AMP_TOKEN.","timestamp":"2026-06-27T19:54:21.885Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:22.015Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _gid.","timestamp":"2026-06-27T19:54:22.018Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:22.573Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:22.574Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:22.576Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:22.584Z"}
+{"level":"info","message":"LocalStorage filled with key(s) be_adblocking for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:22.589Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:22.897Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:22.907Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:22.929Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:22.945Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:22.945Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:22.946Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_kw_landing_page.","timestamp":"2026-06-27T19:54:22.947Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_url_qs_landing_page.","timestamp":"2026-06-27T19:54:22.956Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:22.961Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:22.967Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:22.972Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:22.979Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:22.985Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:22.993Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:22.995Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:23.047Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:23.086Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:23.106Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:23.857Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:23.858Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:23.861Z"}
+{"level":"info","message":"reloading to https://www.marca.com/","timestamp":"2026-06-27T19:54:26.865Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:26.911Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:26.919Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:26.927Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.767Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.786Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.786Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.787Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.800Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.803Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.809Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.815Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.816Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.817Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.817Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.818Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.834Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.842Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.857Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.863Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.869Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:27.878Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.312Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.315Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.318Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.322Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.325Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.326Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.326Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.327Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.329Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.371Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.373Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.374Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.378Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.384Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.387Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.389Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.393Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.394Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.433Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.435Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.441Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.449Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.458Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.460Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.461Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.469Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.470Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.479Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.480Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.485Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.525Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.526Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.526Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.527Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.527Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.532Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.536Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.537Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.542Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.631Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.632Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.633Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.641Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.649Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.651Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.659Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.659Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.660Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.670Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.678Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.683Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.685Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.690Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:29.694Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.113Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.117Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.119Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.123Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.126Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.131Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.132Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.133Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.136Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.159Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.165Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.167Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.172Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.173Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.174Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.175Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.177Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.178Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.226Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.228Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.230Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.234Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.234Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.235Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.238Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.242Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.245Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.255Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.257Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.259Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.268Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.275Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.276Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.291Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.292Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.301Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.365Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.366Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.371Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.382Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.383Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.384Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.389Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.390Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.392Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.628Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.634Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.638Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.643Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.649Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.654Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.655Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.656Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.657Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.680Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.685Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.690Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.692Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.695Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.699Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.701Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.702Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.704Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.767Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.782Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.786Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.788Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.790Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.792Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.794Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.796Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.797Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.799Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.800Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.802Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.805Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.809Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.810Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.817Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.818Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.820Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.890Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.894Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.895Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.898Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.900Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.905Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.909Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.916Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.917Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.926Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.931Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.933Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.934Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.939Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.940Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.941Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.942Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:30.945Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.211Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.212Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.213Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.214Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.215Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.217Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.218Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.219Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.220Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.236Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.240Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.241Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.242Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.243Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.244Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.248Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.250Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.251Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentGoogle for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.930Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueUserContentComscore for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.931Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ueConsentData for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:31.932Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:32.464Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:32.468Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __t__ for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:32.473Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:32.485Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:32.492Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:32.493Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:32.495Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:32.502Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key counter_page_view.","timestamp":"2026-06-27T19:54:32.512Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:32.523Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelcloser.","timestamp":"2026-06-27T19:54:32.524Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:32.530Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:32.531Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:32.536Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:32.538Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:32.540Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:32.546Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:33.001Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:33.010Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:33.016Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:33.024Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:33.029Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:33.030Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:33.038Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:33.041Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:33.043Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:33.045Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:33.047Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:33.050Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:33.056Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.090Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.096Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.104Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.206Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.207Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:33.208Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:33.262Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _gid.","timestamp":"2026-06-27T19:54:33.274Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga.","timestamp":"2026-06-27T19:54:33.299Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _gid.","timestamp":"2026-06-27T19:54:33.304Z"}
+{"level":"info","message":"LocalStorage filled with key(s) permutive-consent for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.335Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key permutive-id.","timestamp":"2026-06-27T19:54:33.340Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key permutive-session.","timestamp":"2026-06-27T19:54:33.344Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _permutive_ls_test for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.352Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:33.402Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:33.404Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbm_279395918757488.","timestamp":"2026-06-27T19:54:33.405Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:33.411Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:33.412Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host true with key fbsr_279395918757488.","timestamp":"2026-06-27T19:54:33.417Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.438Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:33.454Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.474Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.481Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.493Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:33.501Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key _hjTLDTest.","timestamp":"2026-06-27T19:54:33.539Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjTLDTest.","timestamp":"2026-06-27T19:54:33.547Z"}
+{"level":"info","message":"LocalStorage filled with key(s) _hjLocalStorageTest for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:33.558Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _hjSessionUser_413277.","timestamp":"2026-06-27T19:54:33.559Z"}
+{"level":"info","message":"LocalStorage filled with key(s) ce_localstorage_test for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:34.192Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ce.s.","timestamp":"2026-06-27T19:54:34.199Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ce.s.","timestamp":"2026-06-27T19:54:34.202Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key mrf_cookie.","timestamp":"2026-06-27T19:54:34.678Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key mrf_cookie.","timestamp":"2026-06-27T19:54:34.682Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:34.977Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:34.981Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:34.986Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key FCNEC.","timestamp":"2026-06-27T19:54:34.990Z"}
+{"level":"info","message":"LocalStorage filled with key(s) be_adblocking for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:35.000Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:35.623Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:35.632Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:35.633Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:35.642Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:35.643Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:35.644Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:35.644Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:35.650Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:35.651Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:35.652Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:35.664Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:35.666Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:35.668Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:35.685Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:35.696Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:35.701Z"}
+{"level":"info","message":"Done: Loading page","timestamp":"2026-06-27T19:54:35.730Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key _rdc1782590076337.","timestamp":"2026-06-27T19:54:36.341Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key _rdc1782590076337.","timestamp":"2026-06-27T19:54:36.346Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.marca.com with key MARCA_suscrp.","timestamp":"2026-06-27T19:54:36.530Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:36.531Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:36.544Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:36.545Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:36.546Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:36.551Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:36.556Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:36.558Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:36.562Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:36.563Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:36.565Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:36.572Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:36.574Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:36.575Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:36.575Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:36.586Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:36.590Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:38.980Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:38.981Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:38.982Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:38.995Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.002Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.009Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.010Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.012Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.017Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.019Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.025Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.026Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.027Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.028Z"}
+{"level":"info","message":"LocalStorage filled with key(s) Service_Geo for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.030Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.033Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.034Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.037Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.041Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.044Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.044Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.560Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.561Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.562Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.563Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.567Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.570Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.571Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.576Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.577Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.578Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.578Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.579Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.581Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.585Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.586Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.587Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.587Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.588Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.590Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.595Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.595Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.596Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.596Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.597Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.600Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.602Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.608Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.611Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.616Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.617Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.619Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.622Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.624Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.625Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.626Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.627Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.628Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.629Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.631Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.633Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.635Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.636Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.639Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.644Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.647Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.648Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.650Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.655Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.658Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.658Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.659Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.659Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.664Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.665Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.666Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.667Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.671Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.672Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.673Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:39.673Z"}
+{"level":"info","message":"Done: Collecting screenshots","timestamp":"2026-06-27T19:54:41.993Z"}
+{"level":"info","message":"Done: Collecting links","timestamp":"2026-06-27T19:54:42.101Z"}
+{"level":"info","message":"Done: Collecting forms","timestamp":"2026-06-27T19:54:42.104Z"}
+{"level":"info","message":"Done: Collecting cookies","timestamp":"2026-06-27T19:54:42.106Z"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-27T19:54:42.110Z","type":"Browser"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-06-27T19:54:42.111Z","type":"Browser"}
+{"level":"info","message":"Done: Collecting local storage","timestamp":"2026-06-27T19:54:42.111Z"}
+{"level":"info","message":"Done: Collecting websocket log","timestamp":"2026-06-27T19:54:42.111Z"}
+{"level":"info","message":"Done: Browsing samples","timestamp":"2026-06-27T19:54:42.128Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key utag_main.","timestamp":"2026-06-27T19:54:42.235Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_product_content_type_conversion.","timestamp":"2026-06-27T19:54:42.236Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_section.","timestamp":"2026-06-27T19:54:42.236Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_article_title.","timestamp":"2026-06-27T19:54:42.237Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_newsID.","timestamp":"2026-06-27T19:54:42.238Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_entry_referrer.","timestamp":"2026-06-27T19:54:42.238Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key channelflow.","timestamp":"2026-06-27T19:54:42.239Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_page_subsection.","timestamp":"2026-06-27T19:54:42.240Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key ga4_ses_text_journalist.","timestamp":"2026-06-27T19:54:42.241Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_policy.","timestamp":"2026-06-27T19:54:42.242Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key user_consent_gam.","timestamp":"2026-06-27T19:54:42.242Z"}
+{"level":"info","message":"Session Cookie (JS) set for host marca.com with key be_logreg_title_conversion​.","timestamp":"2026-06-27T19:54:42.243Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:42.244Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host elmundo.es with key user_consent_policy.","timestamp":"2026-06-27T19:54:42.245Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:42.246Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host marca.com with key _ga_V1WMLM3DL4.","timestamp":"2026-06-27T19:54:42.247Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.248Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.249Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.249Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_d for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.250Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_m for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.251Z"}
+{"level":"info","message":"LocalStorage filled with key(s) psp_hist_h for origin https://www.marca.com.","timestamp":"2026-06-27T19:54:42.251Z"}
+{"level":"info","message":"Done: Ending session","timestamp":"2026-06-27T19:54:42.437Z"}

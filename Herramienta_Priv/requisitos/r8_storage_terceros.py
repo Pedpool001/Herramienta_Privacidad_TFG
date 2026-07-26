@@ -32,6 +32,7 @@ Uso:
   python3 r8_storage_terceros.py --no-detalle                 # solo resumen
 """
 
+import os
 import sqlite3
 import sys
 import json
@@ -40,7 +41,9 @@ from urllib.parse import urlparse
 from collections import defaultdict
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r8_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r8_resultado.json"
 
 # ── Clasificación de símbolos ─────────────────────────────────────────────────
 SIMBOLOS_FAILED = {

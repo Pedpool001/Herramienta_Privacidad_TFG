@@ -1,0 +1,18 @@
+{
+  "sitio": "www.decathlon.es",
+  "url": "https://www.decathlon.es",
+  "veredicto": "FAILED",
+  "evaluacion": {
+    "estado": "FAILED",
+    "detalle": "Error técnico: page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.decathlon.es/\nCall log:\n\u001b[2m  - navigating to \"https://www.decathlon.es/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  "hallazgos": {
+    "panel_localizado": false,
+    "boton_config_texto": null,
+    "indicador_toggles": 0,
+    "indicador_botones": 0,
+    "total_opciones": 0,
+    "categorias_detectadas": [],
+    "screenshot": null
+  }
+}

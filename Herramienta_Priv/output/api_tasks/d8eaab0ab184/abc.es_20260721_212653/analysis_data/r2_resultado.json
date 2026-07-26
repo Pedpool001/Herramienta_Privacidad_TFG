@@ -1,0 +1,36 @@
+{
+  "requisito": "R2",
+  "descripcion": "Bloqueo de cookies no exentas antes del consentimiento",
+  "sitios": {
+    "https://www.abc.es/": {
+      "veredicto": "FAILED",
+      "evaluacion": {
+        "estado": "FAILED",
+        "detalle": "Se detectaron 3 rastreadores no exentos activos ANTES del consentimiento: Publicidad comportamental, Píxel de seguimiento. Empresas implicadas: Adobe. Incumple RGPD Art. 7 / LSSI Art. 22.2 (bloqueo previo al consentimiento)."
+      },
+      "violaciones": [
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEGsfE7Nn73mZBPap8cSkLP4&google_cver=1?gdpr=0&gdpr_consent=",
+          "tipo": "trackingPixel",
+          "tipo_legible": "Píxel de seguimiento",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1784662092503",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app",
+          "url_completa": "https://28986622-e6be-473d-9a8f-e603a25f3c66.edge.permutive.app/28986622-e6be-473d-9a8f-e603a25f3c66-web.js",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Desconocida"
+        }
+      ]
+    }
+  }
+}

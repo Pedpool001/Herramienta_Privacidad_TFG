@@ -1,0 +1,11 @@
+{
+  "sitio": "",
+  "veredicto": "PASSED",
+  "syncs_tercero_tercero": [],
+  "syncs_sitio_tercero": [],
+  "grafo_sincronizacion": [],
+  "resumen": {
+    "total_3p_3p": 0,
+    "total_1p_3p": 0
+  }
+}

@@ -1,0 +1,242 @@
+{"level":"info","message":"No proxy configuration found.","timestamp":"2026-07-21T19:26:59.500Z"}
+{"level":"info","message":"Chromium called  with following options: ","timestamp":"2026-07-21T19:26:59.536Z"}
+{"level":"info","message":"Done: Creating puppeteer chrome session","timestamp":"2026-07-21T19:27:03.281Z"}
+{"level":"info","message":"Run testHttps","timestamp":"2026-07-21T19:27:03.284Z"}
+{"level":"info","message":"Done: Testing connection using testHttps and testSSL","timestamp":"2026-07-21T19:27:04.226Z"}
+{"level":"info","message":"browsing now to https://www.abc.es","timestamp":"2026-07-21T19:27:04.228Z","type":"Browser"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key ev_sid.","timestamp":"2026-07-21T19:27:07.461Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key ev_did.","timestamp":"2026-07-21T19:27:07.475Z"}
+{"level":"warn","message":"Unable to parse cookie: kangaroo-test-cookie","timestamp":"2026-07-21T19:27:07.988Z"}
+{"level":"warn","message":"Unable to parse cookie: kangaroo-test-cookie; expires=Thu, 01 Jan 1970 00:00:00 UTC;","timestamp":"2026-07-21T19:27:08.001Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key receive-cookie-deprecation.","timestamp":"2026-07-21T19:27:08.318Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key com.adobe.alloy.getTld.","timestamp":"2026-07-21T19:27:09.953Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key com.adobe.alloy.getTld.","timestamp":"2026-07-21T19:27:09.961Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key kndctr_9854C13E58403FEB0A495D53_AdobeOrg_consent.","timestamp":"2026-07-21T19:27:09.976Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.core.visitorTracking.sessionCount for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:10.001Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.core.visitorTracking.pagesViewed for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:10.011Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.034Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.053Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.055Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.065Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.075Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:10.091Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:10.093Z"}
+{"level":"info","message":"LocalStorage filled with key(s) msftWemass for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:11.061Z"}
+{"level":"info","message":"LocalStorage filled with key(s) wemass for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:11.075Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key euconsent-v2.","timestamp":"2026-07-21T19:27:12.743Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key didomi_token.","timestamp":"2026-07-21T19:27:12.752Z"}
+{"level":"info","message":"LocalStorage filled with key(s) didomi_token for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:12.763Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.622Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.630Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.635Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.649Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.665Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:13.670Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host demdex.net with key _dp.","timestamp":"2026-07-21T19:27:14.032Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key vtm_op.","timestamp":"2026-07-21T19:27:14.144Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:14.232Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:14.239Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key AMCV_9854C13E58403FEB0A495D53%40AdobeOrg.","timestamp":"2026-07-21T19:27:14.289Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host demdex.net with key dextp.","timestamp":"2026-07-21T19:27:14.302Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCCDCF.","timestamp":"2026-07-21T19:27:14.532Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCCDCF.","timestamp":"2026-07-21T19:27:14.536Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCCDCF.","timestamp":"2026-07-21T19:27:14.547Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCCDCF.","timestamp":"2026-07-21T19:27:14.548Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_information.","timestamp":"2026-07-21T19:27:14.980Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_edtn.","timestamp":"2026-07-21T19:27:14.991Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_uuid.","timestamp":"2026-07-21T19:27:15.009Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_nfryl_volver_al_origen.","timestamp":"2026-07-21T19:27:15.019Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_nfryl_volver_al_origen_backup.","timestamp":"2026-07-21T19:27:15.025Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __vocuser_storage_test_enabled__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.033Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:15.036Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:15.039Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __vocuser_storage_test_enabled__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.043Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:15.051Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:15.053Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_paywall.","timestamp":"2026-07-21T19:27:15.054Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_paywall.","timestamp":"2026-07-21T19:27:15.055Z"}
+{"level":"info","message":"LocalStorage filled with key(s) rtim:gis-control for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.296Z"}
+{"level":"info","message":"LocalStorage filled with key(s) rtim:gis-control for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.302Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc-rtim.","timestamp":"2026-07-21T19:27:15.317Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.396Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.398Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.402Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.409Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.415Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.418Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.437Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.446Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.451Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.456Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.460Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.465Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.469Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.474Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.476Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.481Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:15.485Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity.","timestamp":"2026-07-21T19:27:15.778Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster.","timestamp":"2026-07-21T19:27:15.783Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.145Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.287Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.296Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.300Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.304Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.306Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.309Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.310Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.313Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.317Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.318Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.321Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.325Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.326Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.330Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.340Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.341Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.347Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.355Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.356Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.357Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.368Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.370Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.387Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.388Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.393Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.395Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.396Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.398Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.399Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.400Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.402Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.404Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.408Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.409Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.412Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.415Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:16.417Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:16.453Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:16.455Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:16.456Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:16.458Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastExternalReferrer for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:17.118Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastExternalReferrerTime for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:17.131Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key mrf_cookie.","timestamp":"2026-07-21T19:27:17.408Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key mrf_cookie.","timestamp":"2026-07-21T19:27:17.413Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:18.464Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:18.993Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:18.994Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:19.000Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:19.004Z"}
+{"level":"info","message":"reloading to https://www.abc.es/","timestamp":"2026-07-21T19:27:22.141Z","type":"Browser"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:22.326Z"}
+{"level":"warn","message":"Unable to parse cookie: kangaroo-test-cookie","timestamp":"2026-07-21T19:27:23.978Z"}
+{"level":"warn","message":"Unable to parse cookie: kangaroo-test-cookie; expires=Thu, 01 Jan 1970 00:00:00 UTC;","timestamp":"2026-07-21T19:27:23.981Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key receive-cookie-deprecation.","timestamp":"2026-07-21T19:27:24.270Z"}
+{"level":"info","message":"LocalStorage filled with key(s) msftWemass for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:24.982Z"}
+{"level":"info","message":"LocalStorage filled with key(s) wemass for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:24.983Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key com.adobe.alloy.getTld.","timestamp":"2026-07-21T19:27:25.001Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key com.adobe.alloy.getTld.","timestamp":"2026-07-21T19:27:25.004Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.core.visitorTracking.pagesViewed for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:25.017Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.018Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.020Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.025Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.034Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.036Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key TEST_AMCV_COOKIE_WRITE.","timestamp":"2026-07-21T19:27:25.038Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key vtm_op.","timestamp":"2026-07-21T19:27:25.859Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_information.","timestamp":"2026-07-21T19:27:26.193Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_edtn.","timestamp":"2026-07-21T19:27:26.202Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_uuid.","timestamp":"2026-07-21T19:27:26.210Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_nfryl_volver_al_origen.","timestamp":"2026-07-21T19:27:26.215Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key vocuser_nfryl_volver_al_origen_backup.","timestamp":"2026-07-21T19:27:26.218Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __vocuser_storage_test_enabled__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.232Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:26.234Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:26.237Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __vocuser_storage_test_enabled__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.244Z"}
+{"level":"info","message":"Session Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:26.252Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key cookietest.","timestamp":"2026-07-21T19:27:26.254Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_paywall.","timestamp":"2026-07-21T19:27:26.255Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc_paywall.","timestamp":"2026-07-21T19:27:26.256Z"}
+{"level":"info","message":"LocalStorage filled with key(s) rtim:gis-control for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.310Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key voc-rtim.","timestamp":"2026-07-21T19:27:26.313Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.431Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.434Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.436Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.438Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.438Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.441Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.443Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.445Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.446Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.453Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.455Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.456Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.458Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.462Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.464Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.466Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.467Z"}
+{"level":"info","message":"LocalStorage filled with key(s) __test_local_storage__ for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.716Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.737Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.739Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.745Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.751Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.755Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.761Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.763Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.765Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.780Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.787Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.788Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.792Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.793Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.802Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.803Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.803Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.804Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.805Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.810Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: ppid for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.815Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentosCDP for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.820Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: segmentsEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.821Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.821Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.822Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.823Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: navegacionSinCookies for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.830Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.833Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.835Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.837Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.839Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.841Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.842Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.844Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.846Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: vocCookie for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.847Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: IDEvolok for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.849Z"}
+{"level":"info","message":"LocalStorage filled with key(s) com.adobe.reactor.dataElements.AEP: visitorID for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.851Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastExternalReferrer for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.975Z"}
+{"level":"info","message":"LocalStorage filled with key(s) lastExternalReferrerTime for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:26.978Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:27.192Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:27.375Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host www.abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:27.387Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:27.388Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key FCNEC.","timestamp":"2026-07-21T19:27:27.394Z"}
+{"level":"info","message":"Session Cookie (JS) set for host abc.es with key mrf_cookie.","timestamp":"2026-07-21T19:27:27.719Z"}
+{"level":"info","message":"Persistent Cookie (JS) set for host abc.es with key mrf_cookie.","timestamp":"2026-07-21T19:27:27.726Z"}
+{"level":"info","message":"Done: Loading page","timestamp":"2026-07-21T19:27:28.208Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:28.439Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:29.172Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:30.006Z"}
+{"level":"info","message":"Done: Collecting screenshots","timestamp":"2026-07-21T19:27:31.841Z"}
+{"level":"info","message":"Done: Collecting links","timestamp":"2026-07-21T19:27:31.881Z"}
+{"level":"info","message":"Done: Collecting forms","timestamp":"2026-07-21T19:27:31.883Z"}
+{"level":"info","message":"Done: Collecting cookies","timestamp":"2026-07-21T19:27:31.886Z"}
+{"level":"warn","message":"Protocol error (DOMStorage.getDOMStorageItems): Frame not found for the given storage id","timestamp":"2026-07-21T19:27:31.888Z","type":"Browser"}
+{"level":"info","message":"Done: Collecting local storage","timestamp":"2026-07-21T19:27:31.888Z"}
+{"level":"info","message":"Done: Collecting websocket log","timestamp":"2026-07-21T19:27:31.888Z"}
+{"level":"info","message":"Done: Browsing samples","timestamp":"2026-07-21T19:27:31.896Z"}
+{"level":"info","message":"LocalStorage filled with key(s) NRBA_SESSION::b699b1ff for origin https://www.abc.es.","timestamp":"2026-07-21T19:27:32.007Z"}
+{"level":"info","message":"Done: Ending session","timestamp":"2026-07-21T19:27:32.369Z"}

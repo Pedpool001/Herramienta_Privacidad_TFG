@@ -1,77 +1,117 @@
 {
-  "sitio": "https://www.rtve.es",
+  "sitio": "https://www.marca.com",
   "veredicto": "PASSED",
   "banner_detectado": true,
-  "banner_selector": "#onetrust-consent-sdk",
-  "total_botones": 5,
+  "banner_selector": "[role='dialog'][aria-modal='true']",
+  "total_botones": 9,
   "clasificados": {
     "aceptar": [
       {
-        "texto": "aceptar todas las cookies",
-        "bg_color": "rgb(52, 110, 74)",
+        "texto": "acepto y continúo gratis",
+        "bg_color": "rgb(4, 101, 200)",
         "color": "rgb(255, 255, 255)",
-        "font_size": 13.008,
+        "font_size": 16,
         "opacity": 1,
         "visible": true,
-        "width": 158,
-        "height": 57
+        "width": 215,
+        "height": 40
       }
     ],
     "rechazar": [
       {
-        "texto": "rechazar todas las cookies",
-        "bg_color": "rgb(52, 110, 74)",
+        "texto": "rechazo y me suscribo",
+        "bg_color": "rgb(4, 101, 200)",
         "color": "rgb(255, 255, 255)",
-        "font_size": 13.008,
+        "font_size": 16,
         "opacity": 1,
         "visible": true,
-        "width": 158,
-        "height": 57
+        "width": 204,
+        "height": 40
       }
     ],
     "configurar": [
       {
-        "texto": "preferencias de privacidad",
-        "bg_color": "rgb(52, 110, 74)",
-        "color": "rgb(255, 255, 255)",
-        "font_size": 13.008,
+        "texto": "configuración de cookies",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(18, 18, 18)",
+        "font_size": 12,
         "opacity": 1,
         "visible": true,
-        "width": 158,
-        "height": 57
+        "width": 129,
+        "height": 14
+      },
+      {
+        "texto": "configuración de cookies",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(112, 112, 112)",
+        "font_size": 11,
+        "opacity": 1,
+        "visible": true,
+        "width": 124,
+        "height": 13
       }
     ],
     "otro": [
       {
-        "texto": "política de cookies",
+        "texto": "aquí",
         "bg_color": "rgba(0, 0, 0, 0)",
-        "color": "rgb(56, 96, 190)",
-        "font_size": 13.008,
+        "color": "rgb(18, 18, 18)",
+        "font_size": 12,
         "opacity": 1,
         "visible": true,
-        "width": 110,
-        "height": 15
+        "width": 22,
+        "height": 14
       },
       {
-        "texto": "lista de asociados (proveedores)",
+        "texto": "política de cookies",
         "bg_color": "rgba(0, 0, 0, 0)",
-        "color": "rgb(56, 96, 190)",
-        "font_size": 13.008,
+        "color": "rgb(18, 18, 18)",
+        "font_size": 12,
         "opacity": 1,
         "visible": true,
-        "width": 197,
-        "height": 20
+        "width": 98,
+        "height": 14
+      },
+      {
+        "texto": "política de cookies",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(112, 112, 112)",
+        "font_size": 11,
+        "opacity": 1,
+        "visible": true,
+        "width": 92,
+        "height": 13
+      },
+      {
+        "texto": "nuestros socios",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(112, 112, 112)",
+        "font_size": 11,
+        "opacity": 1,
+        "visible": true,
+        "width": 77,
+        "height": 13
+      },
+      {
+        "texto": "inicia sesión",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(4, 101, 200)",
+        "font_size": 16,
+        "opacity": 1,
+        "visible": true,
+        "width": 87,
+        "height": 19
       }
     ]
   },
   "evaluaciones": {
     "obstruccion": {
       "estado": "PASSED",
-      "detalle": "Botón de rechazo visible encontrado: 'rechazar todas las cookies'."
+      "detalle": "Botón de rechazo visible encontrado: 'rechazo y me suscribo'."
     },
     "asimetria": {
       "estado": "PASSED",
-      "detalle": "Sin asimetría cromática relevante. aceptar='rgb(52, 110, 74)' / rechazar='rgb(52, 110, 74)'."
+      "detalle": "Sin asimetría cromática relevante. aceptar='rgb(4, 101, 200)' / rechazar='rgb(4, 101, 200)'."
     },
     "ocultacion": {
       "estado": "PASSED",

@@ -125,7 +125,8 @@ def _run_single(task_id: str, url: str,
 
 
 def _run_batch(task_id: str, urls: list[str],
-               requisitos: set | None = None) -> None:
+               requisitos: set | None = None,
+               workers: int | None = None) -> None:
     task_dir = _TASKS_DIR / task_id
     handler = _TaskLogHandler(task_id)
     root_log = logging.getLogger()
@@ -157,7 +158,7 @@ def _run_batch(task_id: str, urls: list[str],
 
             _main.auditar = _auditar_con_progreso
             _batch.auditar_batch(tmp_path, dir_salida=str(task_dir),
-                                 requisitos=requisitos)
+                                 requisitos=requisitos, workers=workers)
         finally:
             if _original_auditar is not None:
                 _main.auditar = _original_auditar
@@ -211,13 +212,18 @@ def api_single():
 
 @app.route("/api/audit/batch", methods=["POST"])
 def api_batch():
-    # Acepta JSON {urls: ["url1", ...], requisitos: ["R1", ...]} o form con textarea/fichero
+    # Acepta JSON {urls: [...], requisitos: [...], workers: N} o form con textarea/fichero
     requisitos = None
+    workers = None
     if request.is_json:
         data = request.get_json(force=True, silent=True) or {}
         raw = data.get("urls") or []
         urls = [u.strip() for u in raw if isinstance(u, str) and u.strip()]
         requisitos = _parse_requisitos(data)
+        try:
+            workers = int(data["workers"]) if data.get("workers") else None
+        except (TypeError, ValueError):
+            workers = None
     else:
         uploaded = request.files.get("file")
         if uploaded:
@@ -237,7 +243,7 @@ def api_batch():
     task_id = _nueva_tarea("batch", sitios_total=len(urls))
     threading.Thread(
         target=_run_batch, args=(task_id, urls),
-        kwargs={"requisitos": requisitos},
+        kwargs={"requisitos": requisitos, "workers": workers},
         daemon=True, name=f"batch-{task_id[:6]}",
     ).start()
     return jsonify({"task_id": task_id}), 202

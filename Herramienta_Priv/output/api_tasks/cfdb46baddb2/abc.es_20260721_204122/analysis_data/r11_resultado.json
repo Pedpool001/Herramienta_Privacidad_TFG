@@ -1,0 +1,47 @@
+{
+  "sitio": "abc.es",
+  "veredicto": "FAILED",
+  "syncs_tercero_tercero": [
+    {
+      "trigger_dominio": "demdex.net",
+      "trigger_origin": "https://vocento.demdex.net",
+      "receptor_dominio": "doubleclick.net",
+      "receptor_url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=NzI0NjMwODY4NTYyNzkzMzI",
+      "sitio": "abc.es"
+    },
+    {
+      "trigger_dominio": "demdex.net",
+      "trigger_origin": "https://vocento.demdex.net",
+      "receptor_dominio": "doubleclick.net",
+      "receptor_url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=NzI0NjMwODY4NTYyNzkzMz",
+      "sitio": "abc.es"
+    }
+  ],
+  "syncs_sitio_tercero": [
+    {
+      "trigger_dominio": "abc.es",
+      "trigger_origin": "https://www.abc.es",
+      "receptor_dominio": "demdex.net",
+      "receptor_url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=al_9aQAAAGaL7wN-",
+      "sitio": "abc.es"
+    },
+    {
+      "trigger_dominio": "abc.es",
+      "trigger_origin": "https://www.abc.es",
+      "receptor_dominio": "demdex.net",
+      "receptor_url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A",
+      "sitio": "abc.es"
+    }
+  ],
+  "grafo_sincronizacion": [
+    {
+      "origen": "demdex.net",
+      "destino": "doubleclick.net",
+      "eventos": 2
+    }
+  ],
+  "resumen": {
+    "total_3p_3p": 2,
+    "total_1p_3p": 2
+  }
+}

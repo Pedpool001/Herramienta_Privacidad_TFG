@@ -1,0 +1,33 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '3aa0dba2-f173-4c19-b7ba-451191e50111',
+  '3337bb73-a1d0-4cfb-b887-df10961450be'
+]
+PP window: 3337bb73-a1d0-4cfb-b887-df10961450be
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.decathlon.es
+❌ Error en la visita: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.decathlon.es/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.decathlon.es.
+------ Reiniciando driver por error crítico ------
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '457ea950-a38d-4ad1-9ff4-0ba3ffaf3b02',
+  '078326cf-51aa-4925-be9c-f678283607fe'
+]
+PP window: 078326cf-51aa-4925-be9c-f678283607fe
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+time spent:  62.772 total elapsed:  110.818

@@ -12,7 +12,7 @@ import threading
 from pathlib import Path
 from urllib.parse import urlparse
 
-from ._loader import ejecutar_analisis, TFG_DIR
+from ._loader import ejecutar_analisis, TFG_DIR, dir_analisis as _dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -62,7 +62,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
     # 2. Analizar R17 y R18 (a partir del HAR)
     if {"R17", "R18"} & sel:
         try:
-            data_17_18 = ejecutar_analisis("r17_r18_seguridad", str(output_dir))
+            data_17_18 = ejecutar_analisis("r17_r18_seguridad", str(output_dir),
+                                          salida_dir=_dir_analisis(output_dir))
             with lock:
                 if "R17" in sel:
                     resultados["R17"] = {
@@ -89,7 +90,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                 resultados["R10"] = {"veredicto": "NO_EVALUABLE", "detalle": "cookies.yml no encontrado"}
             return
         try:
-            data_10 = ejecutar_analisis("r10_persistencia", str(output_dir))
+            data_10 = ejecutar_analisis("r10_persistencia", str(output_dir),
+                                      salida_dir=_dir_analisis(output_dir))
             with lock:
                 resultados["R10"] = {
                     "veredicto": data_10.get("veredicto", "ERROR"),

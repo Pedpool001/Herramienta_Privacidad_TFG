@@ -1,0 +1,918 @@
+- name: s_ecid
+  value: MCMID%7C20818467783099088942074780201596035586
+  domain: elpais.com
+  path: /
+  expires: 1819216953.429522
+  size: 52
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-25T18:02:33.429Z
+  expiresDays: 400
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://smetrics.elpais.com/b/ss/prisacomglobal/1/JS-2.23.0-LGU4/s66351107127930
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://smetrics.elpais.com/b/ss/prisacomglobal/1/JS-2.23.0-LGU4/s66351107127930
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: mbox
+  value: >-
+    session#cff5bd77b89a4d798371444527206356#1784658814|PC#cff5bd77b89a4d798371444527206356.37_0#1847901753
+  domain: elpais.com
+  path: /
+  expires: 1819216953.207165
+  size: 107
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-25T18:02:33.207Z
+  expiresDays: 400
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 28432
+        lineNumber: 16
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.r [as set]
+        source: '    at Object.r [as set] (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:16:28432)'
+      - columnNumber: 29514
+        lineNumber: 16
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: e
+        source: '    at e (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:16:29514)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: AMCV_2387401053DB208C0A490D4C%40AdobeOrg
+  value: >-
+    179643557%7CMCIDTS%7C20656%7CMCMID%7C20818467783099088942074780201596035586%7CMCAAMLH-1785261752%7C6%7CMCAAMB-1785261752%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCCIDH%7C41353582%7CMCOPTOUT-1784664152s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C5.5.0
+  domain: elpais.com
+  path: /
+  expires: 1819216952.349343
+  size: 299
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-25T18:02:32.349Z
+  expiresDays: 400
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 22611
+        lineNumber: 14
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:14:22611)'
+      - columnNumber: 14981
+        lineNumber: 15
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Ue.P.cookieWrite
+        source: '    at Ue.P.cookieWrite (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:15:14981)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: kndctr_2387401053DB208C0A490D4C_AdobeOrg_identity
+  value: >-
+    CiYyMDgxODQ2Nzc4MzA5OTA4ODk0MjA3NDc4MDIwMTU5NjAzNTU4NlIRCPud3674MxgBKgRJUkwxMAPwAfud3674Mw==
+  domain: elpais.com
+  path: /
+  expires: 1818784944
+  size: 141
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-20T18:02:24.000Z
+  expiresDays: 395
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 23847
+        lineNumber: 8
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.n [as set]
+        source: '    at Object.n [as set] (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:8:23847)'
+      - columnNumber: 181
+        lineNumber: 9
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:9:181)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: IDE
+  value: AHWqTUk1ai3Lwnwr836ager88b3fhvN-u74AAMuQ0KbuaimRGrgyk1bvk86Df9-S1F8
+  domain: doubleclick.net
+  path: /
+  expires: 1818352943.903448
+  size: 70
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-15T18:02:23.903Z
+  expiresDays: 390
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=MjA4NDY0OTY0MDMwMzc0MjM3MjIwNzE5NDI1NjU2Njc2OTgyMzI=&google_tc=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=MjA4NDY0OTY0MDMwMzc0MjM3MjIwNzE5NDI1NjU2Njc2OTgyMzI=&google_tc=
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: FCCDCF
+  value: >-
+    %5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22bdc27f39-4080-4107-92d0-0384c947a7db%5C%22%2C%5B1784656933%2C595000000%5D%5D%22%5D%5D%5D
+  domain: elpais.com
+  path: /
+  expires: 1818352933
+  size: 162
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-15T18:02:13.000Z
+  expiresDays: 390
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.ug
+        source: '    at _.ug (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: didomi_token
+  value: >-
+    eyJ1c2VyX2lkIjoiMTlmODVkN2MtODU0Zi02ZDYxLWE0OWYtNmFhOGMzZmM5M2NhIiwiY3JlYXRlZCI6IjIwMjYtMDctMjFUMTg6MDI6MTkuMDkyWiIsInVwZGF0ZWQiOiIyMDI2LTA3LTIxVDE4OjAyOjE5LjA5NFoiLCJ2ZXJzaW9uIjpudWxsfQ==
+  domain: elpais.com
+  path: /
+  expires: 1816279339
+  size: 200
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-22T18:02:19.000Z
+  expiresDays: 366
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 241292
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js
+        functionName: a
+        source: '    at a (https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js:2:241292)'
+      - columnNumber: 143088
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js
+        functionName: h
+        source: '    at h (https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js:2:143088)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: pmuser
+  value: >-
+    {"skus":[],"entitlements":[],"UT":"ANONYMOUS","AR":"","lastUpdated":1784656932446}
+  domain: elpais.com
+  path: /
+  expires: 1816200136
+  size: 88
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T20:02:16.000Z
+  expiresDays: 365.08
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 24804
+        lineNumber: 2
+        fileName: https://static.prisa.com/dist/subs/pmuser/2.5.0/pmuser.min.js
+        functionName: _
+        source: '    at _ (https://static.prisa.com/dist/subs/pmuser/2.5.0/pmuser.min.js:2:24804)'
+      - columnNumber: 51693
+        lineNumber: 2
+        fileName: https://static.prisa.com/dist/subs/pmuser/2.5.0/pmuser.min.js
+        functionName: t.<anonymous>
+        source: '    at t.<anonymous> (https://static.prisa.com/dist/subs/pmuser/2.5.0/pmuser.min.js:2:51693)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: datadome
+  value: >-
+    lmy7G9TwAoaicK3m_VTb2gprPpHFZHWwumVBsizqicamopkrZvCYtvT4uoIcHvvmkSte1io~b4oVPDUpha3TnFbcE3XLTVDMhvhROhA3rAi98zUoa~M82gdcy4Ja~9Rm
+  domain: elpais.com
+  path: /
+  expires: 1816192955.165596
+  size: 136
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:02:35.165Z
+  expiresDays: 365
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/enp-footer-el-pais/?outputType=clean
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://elpais.com/enp-footer-el-pais/?outputType=clean
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: hpage
+  value: '1'
+  domain: elpais.com
+  path: /
+  expires: 1816192928.921113
+  size: 6
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:02:08.921Z
+  expiresDays: 365
+  log:
+    location: about:blank
+    stack:
+      - fileName: https://elpais.com/
+        source: set in Set-Cookie HTTP response header for https://elpais.com/
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: demdex
+  value: '20846496403037423722071942565667698232'
+  domain: demdex.net
+  path: /
+  expires: 1800208952.075075
+  size: 44
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:02:32.075Z
+  expiresDays: 180
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&d_orgid=2387401053DB208C0A490D4C%40AdobeOrg&d_nsid=0&d_mid=20818467783099088942074780201596035586&d_blob=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&d_cid_ic=user_id%0120818467783099088942074780201596035586%011&d_cid_ic=AdobeCampaignID%0120818467783099088942074780201596035586%011&d_cid_ic=anon_id%0120818467783099088942074780201596035586%012&ts=1784656951946
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&d_orgid=2387401053DB208C0A490D4C%40AdobeOrg&d_nsid=0&d_mid=20818467783099088942074780201596035586&d_blob=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&d_cid_ic=user_id%0120818467783099088942074780201596035586%011&d_cid_ic=AdobeCampaignID%0120818467783099088942074780201596035586%011&d_cid_ic=anon_id%0120818467783099088942074780201596035586%012&ts=1784656951946
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: dpm
+  value: '20846496403037423722071942565667698232'
+  domain: dpm.demdex.net
+  path: /
+  expires: 1800208944.82297
+  size: 41
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:02:24.822Z
+  expiresDays: 180
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://dpm.demdex.net/ibs:dpid=963840&dpuuid=2cad8ec4-7bcb-4bd4-9776-46d172b639f3
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://dpm.demdex.net/ibs:dpid=963840&dpuuid=2cad8ec4-7bcb-4bd4-9776-46d172b639f3
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: dextp
+  value: >-
+    358-1-1784656942983|771-1-1784656943096|903-1-1784656943198|19566-1-1784656943303|175765-1-1784656943419|963840-1-1784656943523
+  domain: demdex.net
+  path: /
+  expires: 1800208943
+  size: 132
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:02:23.000Z
+  expiresDays: 180
+  log:
+    location: https://elpais.com
+    stack:
+      - columnNumber: 99
+        lineNumber: 6
+        fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.setCookie
+        source: '    at Object.setCookie (https://prisacom.demdex.net/dest5.html?d_nsid=0:6:99)'
+      - columnNumber: 502
+        lineNumber: 11
+        fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.processIBS
+        source: '    at Object.processIBS (https://prisacom.demdex.net/dest5.html?d_nsid=0:11:502)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: s_nr30
+  value: 1784656953149-New
+  domain: elpais.com
+  path: /
+  expires: 1787248953
+  size: 23
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-08-20T18:02:33.000Z
+  expiresDays: 30
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 27209
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: window.cookieWrite
+        source: '    at window.cookieWrite (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:27209)'
+      - columnNumber: 27791
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: e.getNewRepeat
+        source: '    at e.getNewRepeat (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:27791)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: uuid-s
+  value: 2cad8ec4-7bcb-4bd4-9776-46d172b639f3
+  domain: live.streamtheworld.com
+  path: /
+  expires: 1787248944.662408
+  size: 42
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-08-20T18:02:24.662Z
+  expiresDays: 30
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://playerservices.live.streamtheworld.com/api/getuuid?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D963840%26dpuuid%3D%40UUID%40
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://playerservices.live.streamtheworld.com/api/getuuid?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D963840%26dpuuid%3D%40UUID%40
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: pmsegments
+  value: '{"20818467783099088942074780201596035586":{},"lastUpdated":1784656952904}'
+  domain: elpais.com
+  path: /
+  expires: 1785261752
+  size: 83
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-28T18:02:32.000Z
+  expiresDays: 7
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 2179
+        lineNumber: 2
+        source: '    at <anonymous>:2:2179'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: s_vncd
+  value: 1784671199702%26vn%3D1
+  domain: elpais.com
+  path: /
+  expires: 1784671199
+  size: 28
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T21:59:59.000Z
+  expiresDays: 0.17
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 27209
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: window.cookieWrite
+        source: '    at window.cookieWrite (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:27209)'
+      - columnNumber: 26408
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: e.getVisitNum
+        source: '    at e.getVisitNum (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:26408)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: s_ivc
+  value: 'true'
+  domain: elpais.com
+  path: /
+  expires: 1784658753
+  size: 9
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T18:32:33.000Z
+  expiresDays: 0.02
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 27209
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: window.cookieWrite
+        source: '    at window.cookieWrite (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:27209)'
+      - columnNumber: 26181
+        lineNumber: 13
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: e.getVisitNum
+        source: '    at e.getVisitNum (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:13:26181)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: kndctr_2387401053DB208C0A490D4C_AdobeOrg_cluster
+  value: irl1
+  domain: elpais.com
+  path: /
+  expires: 1784658752
+  size: 52
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T18:32:32.000Z
+  expiresDays: 0.02
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 23847
+        lineNumber: 8
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.n [as set]
+        source: '    at Object.n [as set] (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:8:23847)'
+      - columnNumber: 181
+        lineNumber: 9
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:9:181)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: arc-geo
+  value: >-
+    {"georegion":"200","countrycode":"ES","regioncode":"VC","timezone":"GMT+1","continent":"EU"}
+  domain: elpais.com
+  path: /
+  expires: 1784657828.910604
+  size: 99
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T18:17:08.910Z
+  expiresDays: 0.01
+  log:
+    location: about:blank
+    stack:
+      - fileName: https://elpais.com/
+        source: set in Set-Cookie HTTP response header for https://elpais.com/
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: eptz
+  value: ES
+  domain: elpais.com
+  path: /
+  expires: -1
+  size: 6
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/pf/resources/manifests/site.webmanifest?d=2516
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://elpais.com/pf/resources/manifests/site.webmanifest?d=2516
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: at_check
+  value: 'true'
+  domain: elpais.com
+  path: /
+  expires: -1
+  size: 12
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 28432
+        lineNumber: 16
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.r [as set]
+        source: '    at Object.r [as set] (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:16:28432)'
+      - columnNumber: 29514
+        lineNumber: 16
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: e
+        source: '    at e (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:16:29514)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: AMCVS_2387401053DB208C0A490D4C%40AdobeOrg
+  value: '1'
+  domain: elpais.com
+  path: /
+  expires: -1
+  size: 42
+  httpOnly: false
+  secure: true
+  session: true
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 22611
+        lineNumber: 14
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:14:22611)'
+      - columnNumber: 14981
+        lineNumber: 15
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Ue.P.cookieWrite
+        source: '    at Ue.P.cookieWrite (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:15:14981)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: s_cc
+  value: 'true'
+  domain: elpais.com
+  path: /
+  expires: -1
+  size: 8
+  httpOnly: false
+  secure: true
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 1680
+        lineNumber: 2
+        fileName: >-
+          https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js
+        functionName: AppMeasurement.t.c_w.t.cookieWrite
+        source: '    at AppMeasurement.t.c_w.t.cookieWrite (https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js:2:1680)'
+      - columnNumber: 12342
+        lineNumber: 2
+        fileName: >-
+          https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js
+        functionName: AppMeasurement.t.Wb
+        source: '    at AppMeasurement.t.Wb (https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js:2:12342)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- domain: com
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/
+        source: set in Set-Cookie HTTP response header for https://elpais.com/
+    type: Cookie.HTTP
+  name: AKA_A2
+  path: /
+  value: A
+  expiresDays: 0.04
+  session: false
+  firstPartyStorage: false
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 23847
+        lineNumber: 8
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.n [as set]
+        source: '    at Object.n [as set] (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:8:23847)'
+      - columnNumber: 3708
+        lineNumber: 9
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Et
+        source: '    at Et (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:9:3708)'
+    type: Cookie.JS
+  name: com.adobe.alloy.getTld
+  path: /
+  value: com.adobe.alloy.getTld
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 22611
+        lineNumber: 14
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:14:22611)'
+      - columnNumber: 23147
+        lineNumber: 14
+        fileName: >-
+          https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js
+        functionName: $
+        source: '    at $ (https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js:14:23147)'
+    type: Cookie.JS
+  name: TEST_AMCV_COOKIE_WRITE
+  path: /
+  value: cookie
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 18292
+        lineNumber: 1
+        fileName: https://ak-ads-ns.prisasd.com/slot/elpais/slot.js
+        source: '    at https://ak-ads-ns.prisasd.com/slot/elpais/slot.js:1:18292'
+      - columnNumber: 18788
+        lineNumber: 1
+        fileName: https://ak-ads-ns.prisasd.com/slot/elpais/slot.js
+        source: '    at https://ak-ads-ns.prisasd.com/slot/elpais/slot.js:1:18788'
+    type: Cookie.JS
+  name: _gd1784656938514
+  path: /
+  value: _gd1784656938514
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 82838
+        lineNumber: 2
+        fileName: https://dd.elpais.com/tags.js
+        functionName: cn.C
+        source: '    at cn.C (https://dd.elpais.com/tags.js:2:82838)'
+      - columnNumber: 101562
+        lineNumber: 2
+        fileName: https://dd.elpais.com/tags.js
+        source: '    at https://dd.elpais.com/tags.js:2:101562'
+    type: Cookie.JS
+  name: dd_testcookie
+  path: /
+  value: '1'
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: demdex.net
+  log:
+    location: https://elpais.com
+    stack:
+      - columnNumber: 99
+        lineNumber: 6
+        fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.setCookie
+        source: '    at Object.setCookie (https://prisacom.demdex.net/dest5.html?d_nsid=0:6:99)'
+      - columnNumber: 233
+        lineNumber: 5
+        fileName: https://prisacom.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.canSetCookie
+        source: '    at Object.canSetCookie (https://prisacom.demdex.net/dest5.html?d_nsid=0:5:233)'
+    type: Cookie.JS
+  name: _dp
+  path: /
+  value: '1'
+  expiresDays: -0.69
+  session: false
+  firstPartyStorage: false
+- domain: doubleclick.net
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MjA4NDY0OTY0MDMwMzc0MjM3MjIwNzE5NDI1NjU2Njc2OTgyMzI=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MjA4NDY0OTY0MDMwMzc0MjM3MjIwNzE5NDI1NjU2Njc2OTgyMzI=
+    type: Cookie.HTTP
+  name: test_cookie
+  path: /
+  value: CheckForPermission
+  expiresDays: 0.01
+  session: false
+  firstPartyStorage: false
+- domain: adswizz.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://synchroscript.deliveryengine.adswizz.com/getUID?curl=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D175765%26dpuuid%3D%24%7BUID%7D
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://synchroscript.deliveryengine.adswizz.com/getUID?curl=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D175765%26dpuuid%3D%24%7BUID%7D
+    type: Cookie.HTTP
+  name: OAID
+  path: /
+  value: 40399b10b2dc765f1f6d74f4d4e9b4c3
+  expiresDays: 30
+  session: false
+  firstPartyStorage: false
+- domain: live.streamtheworld.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: >-
+          https://playerservices.live.streamtheworld.com/api/getuuid?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D963840%26dpuuid%3D%40UUID%40
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://playerservices.live.streamtheworld.com/api/getuuid?redir=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D963840%26dpuuid%3D%40UUID%40
+    type: Cookie.HTTP
+  name: uuid
+  path: /
+  value: 2cad8ec4-7bcb-4bd4-9776-46d172b639f3
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: prisa.arcpublishing.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 2276
+        lineNumber: 2
+        source: '    at <anonymous>:2:2276'
+    type: Cookie.JS
+  name: pmsegments
+  path: /
+  value: '{"20818467783099088942074780201596035586":{},"lastUpdated":1784656945147}'
+  expiresDays: 7
+  session: false
+  firstPartyStorage: false
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 21392
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2223
+        source: '    at https://sdk.mrf.io/statics/marfeel-sdk.js?id=2223:2:21392'
+      - columnNumber: 21364
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2223
+        functionName: Ve
+        source: '    at Ve (https://sdk.mrf.io/statics/marfeel-sdk.js?id=2223:2:21364)'
+    type: Cookie.JS
+  name: mrf_cookie
+  path: /
+  value: ok
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: elpais.com
+  log:
+    location: https://elpais.com/
+    stack:
+      - columnNumber: 18292
+        lineNumber: 1
+        fileName: https://ak-ads-ns.prisasd.com/slot/elpais/slot.js
+        source: '    at https://ak-ads-ns.prisasd.com/slot/elpais/slot.js:1:18292'
+      - columnNumber: 18788
+        lineNumber: 1
+        fileName: https://ak-ads-ns.prisasd.com/slot/elpais/slot.js
+        source: '    at https://ak-ads-ns.prisasd.com/slot/elpais/slot.js:1:18788'
+    type: Cookie.JS
+  name: _gd1784656952458
+  path: /
+  value: _gd1784656952458
+  expires: -1
+  session: true
+  firstPartyStorage: true

@@ -610,8 +610,8 @@
   "marca_com": {
     "PRE": {
       "estado": "PASS",
-      "total": 36,
-      "identificadas": 36,
+      "total": 38,
+      "identificadas": 38,
       "no_identificadas": 0,
       "cookies": [
         {
@@ -621,7 +621,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358864
+          "expiry": 1814126107
         },
         {
           "nombre": "MARCA_idusr",
@@ -630,7 +630,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876513664
+          "expiry": 1877280908
         },
         {
           "nombre": "ue_privacyPolicy",
@@ -639,7 +639,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1846622864
+          "expiry": 1847390108
         },
         {
           "nombre": "UE_pref",
@@ -648,7 +648,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876430864
+          "expiry": 1877198109
         },
         {
           "nombre": "MARCA_edition",
@@ -657,7 +657,25 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876430864
+          "expiry": 1877198109
+        },
+        {
+          "nombre": "FCCDCF",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1816286109
+        },
+        {
+          "nombre": "_gat_gtag_UA_181957286_2",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1782590170
         },
         {
           "nombre": "ue_consentState",
@@ -666,7 +684,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781826466
+          "expiry": 1782593712
         },
         {
           "nombre": "didomi_token",
@@ -675,25 +693,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1813445266
-        },
-        {
-          "nombre": "_gat_gtag_UA_181957286_2",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1781822926
-        },
-        {
-          "nombre": "FCCDCF",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1815518867
+          "expiry": 1814212512
         },
         {
           "nombre": "be_product_content_type_conversion",
@@ -747,7 +747,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781824667
+          "expiry": 1782591912
         },
         {
           "nombre": "ga4_ses_page_kw_landing_page",
@@ -774,7 +774,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358867
+          "expiry": 1814126112
         },
         {
           "nombre": "channelcloser",
@@ -783,7 +783,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358867
+          "expiry": 1814126112
         },
         {
           "nombre": "ga4_ses_page_subsection",
@@ -819,34 +819,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1782427667
-        },
-        {
-          "nombre": "AMP_TOKEN",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1781826467
-        },
-        {
-          "nombre": "_ga",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1844894867
-        },
-        {
-          "nombre": "_gid",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1781909267
+          "expiry": 1783194913
         },
         {
           "nombre": "_hjSessionUser_413277",
@@ -855,7 +828,7 @@
           "plataforma": "Hotjar",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1813358868
+          "expiry": 1814126113
         },
         {
           "nombre": "_hjSession_413277",
@@ -864,16 +837,7 @@
           "plataforma": "Hotjar",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1781824668
-        },
-        {
-          "nombre": "_ce.s",
-          "dominio": ".marca.com",
-          "propietario": "Crazy Egg",
-          "plataforma": "Crazy Egg",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1813358868
+          "expiry": 1782591913
         },
         {
           "nombre": "MARCA_suscrp",
@@ -882,16 +846,43 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781909268
+          "expiry": 1782676513
         },
         {
-          "nombre": "FCNEC",
+          "nombre": "AMP_TOKEN",
           "dominio": ".marca.com",
           "propietario": "Google",
-          "plataforma": "Google",
+          "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1813358869
+          "expiry": 1782593713
+        },
+        {
+          "nombre": "_ga",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1845662113
+        },
+        {
+          "nombre": "_gid",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1782676513
+        },
+        {
+          "nombre": "cebs",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": null
         },
         {
           "nombre": "utag_main",
@@ -900,7 +891,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358869
+          "expiry": 1814126114
         },
         {
           "nombre": "channelflow",
@@ -909,7 +900,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781822929
+          "expiry": 1782590174
         },
         {
           "nombre": "user_consent_policy",
@@ -918,7 +909,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358869
+          "expiry": 1814126114
         },
         {
           "nombre": "user_consent_gam",
@@ -927,7 +918,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358869
+          "expiry": 1814126114
         },
         {
           "nombre": "_ga_V1WMLM3DL4",
@@ -936,14 +927,41 @@
           "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1844894869
+          "expiry": 1845662114
+        },
+        {
+          "nombre": "_ce.clock_data",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1782676514
+        },
+        {
+          "nombre": "cebsp_",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": null
+        },
+        {
+          "nombre": "_ce.s",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814126127
         }
       ]
     },
     "POST": {
       "estado": "PASS",
-      "total": 55,
-      "identificadas": 55,
+      "total": 57,
+      "identificadas": 57,
       "no_identificadas": 0,
       "cookies": [
         {
@@ -953,7 +971,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358864
+          "expiry": 1814126107
         },
         {
           "nombre": "MARCA_idusr",
@@ -962,7 +980,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876513664
+          "expiry": 1877280908
         },
         {
           "nombre": "ue_privacyPolicy",
@@ -971,7 +989,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1846622864
+          "expiry": 1847390108
         },
         {
           "nombre": "UE_pref",
@@ -980,7 +998,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876430864
+          "expiry": 1877198109
         },
         {
           "nombre": "MARCA_edition",
@@ -989,16 +1007,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1876430864
-        },
-        {
-          "nombre": "_gat_gtag_UA_181957286_2",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1781822926
+          "expiry": 1877198109
         },
         {
           "nombre": "FCCDCF",
@@ -1007,7 +1016,16 @@
           "plataforma": "Google",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1815518867
+          "expiry": 1816286109
+        },
+        {
+          "nombre": "_gat_gtag_UA_181957286_2",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google Analytics",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1782590170
         },
         {
           "nombre": "be_product_content_type_conversion",
@@ -1061,7 +1079,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781824667
+          "expiry": 1782591912
         },
         {
           "nombre": "ga4_ses_page_kw_landing_page",
@@ -1088,7 +1106,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358867
+          "expiry": 1814126112
         },
         {
           "nombre": "channelcloser",
@@ -1097,7 +1115,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358867
+          "expiry": 1814126112
         },
         {
           "nombre": "ga4_ses_page_subsection",
@@ -1133,16 +1151,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1782427667
-        },
-        {
-          "nombre": "AMP_TOKEN",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google Analytics",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1781826467
+          "expiry": 1783194913
         },
         {
           "nombre": "_hjSessionUser_413277",
@@ -1151,16 +1160,7 @@
           "plataforma": "Hotjar",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1813358868
-        },
-        {
-          "nombre": "_ce.s",
-          "dominio": ".marca.com",
-          "propietario": "Crazy Egg",
-          "plataforma": "Crazy Egg",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1813358868
+          "expiry": 1814126113
         },
         {
           "nombre": "MARCA_suscrp",
@@ -1169,16 +1169,43 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781909268
+          "expiry": 1782676513
         },
         {
-          "nombre": "FCNEC",
+          "nombre": "AMP_TOKEN",
           "dominio": ".marca.com",
           "propietario": "Google",
-          "plataforma": "Google",
+          "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1813358869
+          "expiry": 1782593713
+        },
+        {
+          "nombre": "cebs",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": null
+        },
+        {
+          "nombre": "_ce.clock_data",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1782676514
+        },
+        {
+          "nombre": "cebsp_",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": null
         },
         {
           "nombre": "utag_main",
@@ -1187,7 +1214,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358886
+          "expiry": 1814126131
         },
         {
           "nombre": "channelflow",
@@ -1196,7 +1223,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781822946
+          "expiry": 1782590191
         },
         {
           "nombre": "user_consent_policy",
@@ -1205,7 +1232,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358886
+          "expiry": 1814126131
         },
         {
           "nombre": "user_consent_gam",
@@ -1214,7 +1241,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358886
+          "expiry": 1814126131
         },
         {
           "nombre": "ueUserInformationChecks",
@@ -1223,7 +1250,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781826486
+          "expiry": 1782593731
         },
         {
           "nombre": "didomi_token",
@@ -1232,7 +1259,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1813445286
+          "expiry": 1814212531
         },
         {
           "nombre": "euconsent-v2",
@@ -1241,34 +1268,7 @@
           "plataforma": "Didomi",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1813445286
-        },
-        {
-          "nombre": "___nrbic",
-          "dominio": ".marca.com",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1797378486
-        },
-        {
-          "nombre": "___nrbi",
-          "dominio": ".marca.com",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1797378486
-        },
-        {
-          "nombre": "compass_uid",
-          "dominio": ".marca.com",
-          "propietario": "Marfeel",
-          "plataforma": "Marfeel",
-          "categoria": "Analytics",
-          "fuente": "Open Cookie Database",
-          "expiry": 1797378486
+          "expiry": 1814212531
         },
         {
           "nombre": "_scor_uid",
@@ -1277,16 +1277,34 @@
           "plataforma": "Marfeel",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1815518886
+          "expiry": 1816286131
         },
         {
-          "nombre": "permutive-id",
+          "nombre": "___nrbic",
           "dominio": ".marca.com",
-          "propietario": "Permutive",
-          "plataforma": "Permutive",
-          "categoria": "Functional",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1798145731
+        },
+        {
+          "nombre": "___nrbi",
+          "dominio": ".marca.com",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1798145731
+        },
+        {
+          "nombre": "compass_uid",
+          "dominio": ".marca.com",
+          "propietario": "Marfeel",
+          "plataforma": "Marfeel",
+          "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1797637668
+          "expiry": 1798145731
         },
         {
           "nombre": "_ga",
@@ -1295,7 +1313,7 @@
           "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1844894886
+          "expiry": 1845662132
         },
         {
           "nombre": "_gid",
@@ -1304,7 +1322,7 @@
           "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1781909286
+          "expiry": 1782676532
         },
         {
           "nombre": "_ga_V1WMLM3DL4",
@@ -1313,7 +1331,16 @@
           "plataforma": "Google Analytics",
           "categoria": "Analytics",
           "fuente": "Open Cookie Database",
-          "expiry": 1844894886
+          "expiry": 1845662132
+        },
+        {
+          "nombre": "permutive-id",
+          "dominio": ".marca.com",
+          "propietario": "Permutive",
+          "plataforma": "Permutive",
+          "categoria": "Functional",
+          "fuente": "Open Cookie Database",
+          "expiry": 1798404913
         },
         {
           "nombre": "nvq_hid",
@@ -1322,7 +1349,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1781822946
+          "expiry": 1782590192
         },
         {
           "nombre": "_pubcid",
@@ -1331,79 +1358,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1812926886
-        },
-        {
-          "nombre": "__gads",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "DoubleClick/Google Marketing",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1815518886
-        },
-        {
-          "nombre": "__gpi",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google AdSense",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1815518886
-        },
-        {
-          "nombre": "__eoi",
-          "dominio": ".marca.com",
-          "propietario": "Google",
-          "plataforma": "Google AdSense",
-          "categoria": "Functional",
-          "fuente": "Open Cookie Database",
-          "expiry": 1797374886
-        },
-        {
-          "nombre": "lotame_domain_check",
-          "dominio": ".marca.com",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1781822898
-        },
-        {
-          "nombre": "_cc_id",
-          "dominio": ".marca.com",
-          "propietario": "Lotame",
-          "plataforma": "Lotame",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1805150888
-        },
-        {
-          "nombre": "panoramaId_expiry",
-          "dominio": ".marca.com",
-          "propietario": "Lotame",
-          "plataforma": "Lotame",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1782427688
-        },
-        {
-          "nombre": "panoramaId",
-          "dominio": ".marca.com",
-          "propietario": "Lotame",
-          "plataforma": "Lotame",
-          "categoria": "Marketing",
-          "fuente": "Open Cookie Database",
-          "expiry": 1782427688
-        },
-        {
-          "nombre": "panoramaIdType",
-          "dominio": ".marca.com",
-          "propietario": "Sitio propio",
-          "plataforma": "",
-          "categoria": "",
-          "fuente": "Dominio propio",
-          "expiry": 1782427688
+          "expiry": 1813694132
         },
         {
           "nombre": "connectId",
@@ -1412,7 +1367,79 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1813358888
+          "expiry": 1814126132
+        },
+        {
+          "nombre": "lotame_domain_check",
+          "dominio": ".marca.com",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1782590143
+        },
+        {
+          "nombre": "_cc_id",
+          "dominio": ".marca.com",
+          "propietario": "Lotame",
+          "plataforma": "Lotame",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1805918133
+        },
+        {
+          "nombre": "panoramaId_expiry",
+          "dominio": ".marca.com",
+          "propietario": "Lotame",
+          "plataforma": "Lotame",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1783194933
+        },
+        {
+          "nombre": "panoramaId",
+          "dominio": ".marca.com",
+          "propietario": "Lotame",
+          "plataforma": "Lotame",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1783194933
+        },
+        {
+          "nombre": "panoramaIdType",
+          "dominio": ".marca.com",
+          "propietario": "Sitio propio",
+          "plataforma": "",
+          "categoria": "",
+          "fuente": "Dominio propio",
+          "expiry": 1783194933
+        },
+        {
+          "nombre": "__gads",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "DoubleClick/Google Marketing",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1816286133
+        },
+        {
+          "nombre": "__gpi",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google AdSense",
+          "categoria": "Marketing",
+          "fuente": "Open Cookie Database",
+          "expiry": 1816286133
+        },
+        {
+          "nombre": "__eoi",
+          "dominio": ".marca.com",
+          "propietario": "Google",
+          "plataforma": "Google AdSense",
+          "categoria": "Functional",
+          "fuente": "Open Cookie Database",
+          "expiry": 1798142133
         },
         {
           "nombre": "cto_bundle",
@@ -1421,7 +1448,7 @@
           "plataforma": "",
           "categoria": "",
           "fuente": "Dominio propio",
-          "expiry": 1815518890
+          "expiry": 1816286136
         },
         {
           "nombre": "_fbp",
@@ -1430,7 +1457,16 @@
           "plataforma": "Facebook",
           "categoria": "Marketing",
           "fuente": "Open Cookie Database",
-          "expiry": 1789598892
+          "expiry": 1790366138
+        },
+        {
+          "nombre": "_ce.s",
+          "dominio": ".marca.com",
+          "propietario": "Crazy Egg",
+          "plataforma": "Crazy Egg",
+          "categoria": "Analytics",
+          "fuente": "Open Cookie Database",
+          "expiry": 1814126174
         },
         {
           "nombre": "_hjSession_413277",
@@ -1439,7 +1475,7 @@
           "plataforma": "Hotjar",
           "categoria": "Functional",
           "fuente": "Open Cookie Database",
-          "expiry": 1781824698
+          "expiry": 1782591974
         }
       ]
     },

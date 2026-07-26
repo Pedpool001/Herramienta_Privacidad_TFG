@@ -24,6 +24,7 @@ Uso:
   python3 r13_dark_patterns.py https://elpais.com --screenshot
 """
 
+import os
 import sys
 import json
 import re
@@ -32,7 +33,9 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 from playwright_stealth import Stealth
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r13_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r13_resultado.json"
 
 _UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "

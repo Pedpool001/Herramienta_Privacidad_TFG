@@ -1,0 +1,83 @@
+{
+  "browser_cookies": [
+    {
+      "name": "AUTH_STATE",
+      "value": "eyJhcHAiOiJXTkYifQ%3D%3D",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2026-08-05T18:04:31.894Z",
+      "size": 34,
+      "httpOnly": true,
+      "secure": true,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "ecom_user_id",
+      "value": "e8a64396-df7f-4429-83a8-0105b7695379",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2027-07-21T18:04:31.894Z",
+      "size": 48,
+      "httpOnly": false,
+      "secure": true,
+      "session": false,
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__cf_bm",
+      "value": "TIX7dBgxXccTMVX7R_k42etxbENKQ000Qf5t19r6SRg-1784657068.3687124-1.0.1.1-LRROsVIGLDfQA87wBNG3h3YVJY5IVtV8m1k5tD2H8xX9o6Q0hm5diN_2uqHUCDZDXLJHdyDCSP3sX3VeslSl2QBSUms5CToPcRtqbq9sW0DtrF5b8FAEe56AGctONoZW",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2026-07-21T18:34:31.894Z",
+      "size": 206,
+      "httpOnly": true,
+      "secure": true,
+      "session": false,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_cfuvid",
+      "value": "fyo3ATpVU_uPw5dov3K59NR3A5l8u_uwDQf_8MlVb8A-1784657068.3687124-1.0.1.1-zbiM6fnPemP9OO4PBMqDbQp6SigkpwekjmbCbwxxdEA",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": -1,
+      "size": 121,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "iadvize-6445-vuid",
+      "value": "%7B%22vuid%22%3A%22b574cfdf58444d64a1f57e0bbb44204707ca5fdeda024%22%2C%22splitGroup%22%3A4%7D",
+      "domain": "decathlon.es",
+      "path": "/",
+      "expires": "2027-07-21T18:04:38.534Z",
+      "size": 110,
+      "httpOnly": false,
+      "secure": true,
+      "session": false,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ]
+}

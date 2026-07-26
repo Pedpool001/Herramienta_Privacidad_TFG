@@ -1,0 +1,488 @@
+- filter: >-
+    /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
+  listName: easyprivacy.txt
+  query:
+    r: https://www.marca.com/polideportivo.html
+    s: marca
+    d: 4tFQoh0114wWyM-0WRv
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter
+        /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
+  timestamp: Sat, 27 Jun 2026 19:54:08 GMT
+  url: >-
+    https://pixelcounter.marca.com/pixelcontabilizacion/pixelcontabilizacion.gifctl?r=https%3A%2F%2Fwww.marca.com%2Fpolideportivo.html&s=marca&d=4tFQoh0114wWyM-0WRv
+  occurrances: 4
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    ers: 1
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:08 GMT
+  url: https://fundingchoicesmessages.google.com/i/pub-2081531155174950?ers=1
+  occurrances: 2
+- filter: /cdn_cookie_service.html
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter /cdn_cookie_service.html
+  timestamp: Sat, 27 Jun 2026 19:54:15 GMT
+  url: https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+  occurrances: 1
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: UA-181957286-2
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Sat, 27 Jun 2026 19:54:15 GMT
+  url: https://www.googletagmanager.com/gtag/js?id=UA-181957286-2
+  occurrances: 8
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:15 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxVIhA115dXdX-lwwrkmv-hFwUqfPTQ5w-ZJgvQt3o-7Ydy7pF8qJtxYk9mfDnGd-ainSZxNWCvu7vlB8qETvze8CND6zzHT70lc9mWSZJtfbKDFIAkKuJuaSircK4CdRiPs9T7J6w==
+  occurrances: 12
+- filter: /utag.sync.js
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter /utag.sync.js
+  timestamp: Sat, 27 Jun 2026 19:54:16 GMT
+  url: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.sync.js
+  occurrances: 2
+- filter: '||permutive.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||permutive.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:16 GMT
+  url: https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgyNTkwMDU3LDI0NDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cubWFyY2EuY29tLyIsbnVsbCxbWzgsInVFY3FDckZtV29RIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgyNTkwMDU3Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWpaLko9885FQ38VrgjZ51gXR8Auj8cMd9s3nocXqI5UawpLoZU37qQ84uVVCNHG3BCsAHHzyo3TxYh4Ze_Iv5tO9T6ceL7H3hTut7JxThB5wLu_hQfhVsiNzNU-xqnMkHsTq-xlw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgyNTkwMDU3LDI0NDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cubWFyY2EuY29tLyIsbnVsbCxbWzgsInVFY3FDckZtV29RIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgyNTkwMDU3Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  occurrances: 1
+- filter: '||scorecardresearch.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||scorecardresearch.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://sb.scorecardresearch.com/cs/7184769/beacon.js
+  occurrances: 2
+- filter: '||aswpsdkeu.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||aswpsdkeu.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://aswpsdkeu.com/notify/v1/ua-sdk.min.js
+  occurrances: 6
+- filter: '||hotjar.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    sv: 6
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||hotjar.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://static.hotjar.com/c/hotjar-413277.js?sv=6
+  occurrances: 2
+- filter: '||applets.ebxcdn.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||applets.ebxcdn.com^
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://applets.ebxcdn.com/ebx.js
+  occurrances: 2
+- filter: '||google-analytics.com^$script,third-party,xmlhttprequest'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||google-analytics.com^$script,third-party,xmlhttprequest
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://www.google-analytics.com/analytics.js
+  occurrances: 2
+- filter: '||sdk.mrf.io/statics/marfeel-sdk.js'
+  listName: easyprivacy.txt
+  query:
+    id: 2165
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||sdk.mrf.io/statics/marfeel-sdk.js
+  timestamp: Sat, 27 Jun 2026 19:54:17 GMT
+  url: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165
+  occurrances: 2
+- filter: '||scorecardresearch.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||scorecardresearch.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:18 GMT
+  url: https://sb.scorecardresearch.com/internal-cs/default/beacon.js
+  occurrances: 2
+- filter: '||crazyegg.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||crazyegg.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:19 GMT
+  url: https://script.crazyegg.com/pages/scripts/0027/6864.js
+  occurrances: 2
+- filter: '||google-analytics.com^$script,third-party,xmlhttprequest'
+  listName: easyprivacy.txt
+  query:
+    v: 2
+    tid: G-V1WMLM3DL4
+    gtm: 45je66o1v885306509za200
+    _p: 1782590055429
+    gcs: G101
+    gcd: 13m3nPm2m5l1
+    npa: 1
+    dma_cps: '-'
+    dma: 1
+    tcfd: 10001
+    are: 1
+    cid: 1258977966.178259
+    frm: 0
+    pscdl: denied
+    rcb: 19
+    sr: 800x600
+    uaa: ''
+    uab: ''
+    uafvl: ''
+    uam: ''
+    uamb: 0
+    uap: Linux
+    uapv: ''
+    uaw: 0
+    ul: es-es
+    _s: 1
+    tag_exp: 115938465~115938468~118395333~119027224~119576891~119576895
+    sid: 1782590059
+    sct: 1
+    seg: 0
+    dl: https://www.marca.com/
+    dt: MARCA - Diario online líder en información deportiva
+    tfd: 11916
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||google-analytics.com^$script,third-party,xmlhttprequest
+  timestamp: Sat, 27 Jun 2026 19:54:19 GMT
+  url: >-
+    https://region1.google-analytics.com/g/collect?v=2&tid=G-V1WMLM3DL4&gtm=45je66o1v885306509za200&_p=1782590055429&gcs=G101&gcd=13m3nPm2m5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&are=1&cid=1258977966.1782590060&frm=0&pscdl=denied&rcb=19&sr=800x600&uaa=&uab=&uafvl=&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=es-es&_s=1&tag_exp=115938465~115938468~118395333~119027224~119576891~119576895&sid=1782590059&sct=1&seg=0&dl=https%3A%2F%2Fwww.marca.com%2F&dt=MARCA%20-%20Diario%20online%20l%C3%ADder%20en%20informaci%C3%B3n%20deportiva&tfd=11916
+  occurrances: 4
+- filter: '||googletagmanager.com^'
+  listName: easyprivacy.txt
+  query:
+    id: G-V1WMLM3DL4
+    v: 3
+    t: t
+    pid: 817014321
+    gtm: 45je66o1v885306509za200
+    seq: 1
+    exp: 115938465~115938468~118395333~119027224~119576891~119576895
+    dl: www.marca.com/
+    tdp: G-V1WMLM3DL4;85306509;0;2;0
+    frm: 0
+    slo: 25
+    hlo: 30
+    lst: 3
+    pcid: _UA-181957286-2
+    bt: 0
+    ct: 3
+    jsp: 1~3
+    z: 0
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||googletagmanager.com^
+  timestamp: Sat, 27 Jun 2026 19:54:19 GMT
+  url: >-
+    https://www.googletagmanager.com/td?id=G-V1WMLM3DL4&v=3&t=t&pid=817014321&gtm=45je66o1v885306509za200&seq=1&exp=115938465~115938468~118395333~119027224~119576891~119576895&dl=www.marca.com%2F&tdp=G-V1WMLM3DL4;85306509;0;2;0&frm=0&slo=25&hlo=30&lst=3&pcid=_UA-181957286-2&bt=0&ct=3&jsp=1~3&z=0
+  occurrances: 5
+- filter: '||applets.ebxcdn.com^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||applets.ebxcdn.com^
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: https://applets.ebxcdn.com/applets/www.marca.com/scripts.js
+  occurrances: 2
+- filter: '||hotjar.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||hotjar.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+  occurrances: 2
+- filter: /publisher:getClientId?key=
+  listName: easyprivacy.txt
+  query:
+    key: AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter /publisher:getClientId?key=
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: >-
+    https://ampcid.google.com/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  occurrances: 1
+- filter: '||crazyegg.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    t: 1
+  stack:
+    - fileName: about:blank
+      source: >-
+        requested from about:blank and matched with easyprivacy.txt filter
+        ||crazyegg.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: >-
+    https://script.crazyegg.com/pages/data-scripts/0027/6864/site/www.marca.com.json?t=1
+  occurrances: 2
+- filter: '||crazyegg.com^$third-party'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||crazyegg.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: >-
+    https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js
+  occurrances: 2
+- filter: '||hotjar.io^$third-party'
+  listName: easyprivacy.txt
+  query:
+    s: 0.25
+    r: 0.13549827354315014
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||hotjar.io^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:20 GMT
+  url: https://vc.hotjar.io/sessions/413277?s=0.25&r=0.13549827354315014
+  occurrances: 1
+- filter: /publisher:getClientId?key=
+  listName: easyprivacy.txt
+  query:
+    key: AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter /publisher:getClientId?key=
+  timestamp: Sat, 27 Jun 2026 19:54:21 GMT
+  url: >-
+    https://ampcid.google.es/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM
+  occurrances: 1
+- filter: '||crazyegg.com^$third-party'
+  listName: easyprivacy.txt
+  query:
+    t: 1
+  stack:
+    - fileName: about:blank
+      source: >-
+        requested from about:blank and matched with easyprivacy.txt filter
+        ||crazyegg.com^$third-party
+  timestamp: Sat, 27 Jun 2026 19:54:21 GMT
+  url: >-
+    https://script.crazyegg.com/pages/data-scripts/0027/6864/sampling/www.marca.com.json?t=1
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:21 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWlXKygNT8bhjMdm7d8q43k7Ol19hd8QdwUsxL7IFS6i3p1jpBk_tX1XRIkPR1pR0oCJPwoEdHXTPCqJiCszZ9QPBL7bpu_0aEvaljhExpOQL34TipoB7tQpbhnSTY7zTI1PZm7xjfgEQvU8avb0oDFouKKTVl8oi-NpXJKQDdM1MAn3Od5W6rrcaRX/__ChatAd__468x80-/ad-template./turbo_ad./websie-ads-
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgyNTkwMDYyLDEzMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3Lm1hcmNhLmNvbS8iLG51bGwsW1s4LCJ1RWNxQ3JGbVdvUSJdLFs5LCJlcyJdLFsxNiwiWzEsMSwxXSJdLFszNSwiMTc4MjU5MDA1NyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:22 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxWkqfFSHpsx4kzVFDm_wSKHpqHlpz5HveyreFODg7Uj2QwP_ObPiyh_va_Gc7y7TZ5VMTfGvLfNkYvE-kJH8DbIlKNjOIRonF9KWkl3oMNHwhrV1_2Cxp8CRSUTVgUY1eYqWD6SzQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgyNTkwMDYyLDEzMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3Lm1hcmNhLmNvbS8iLG51bGwsW1s4LCJ1RWNxQ3JGbVdvUSJdLFs5LCJlcyJdLFsxNiwiWzEsMSwxXSJdLFszNSwiMTc4MjU5MDA1NyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:22 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxXxT9LJ4PmYWNwp0rGTeL7jDMZLkAObP0z5U1LL_zWZUPH1FvfWijmdogNMa4ALWOX7ot0V9f_MFEmvhLAupg14Wm5eMqNPZzbKktFeWb2PUQKqdOLZ0P1odThV3w-SGmURJnChbw==
+  occurrances: 1
+- filter: '||events.newsroom.bi^'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||events.newsroom.bi^
+  timestamp: Sat, 27 Jun 2026 19:54:26 GMT
+  url: https://events.newsroom.bi/ingest.php
+  occurrances: 4
+- filter: '||icu.newsroom.bi/ingest.php'
+  listName: easyprivacy.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with easyprivacy.txt
+        filter ||icu.newsroom.bi/ingest.php
+  timestamp: Sat, 27 Jun 2026 19:54:27 GMT
+  url: https://icu.newsroom.bi/ingest.php
+  occurrances: 2
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:31 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxWIg5DIhwiYfGUhP5uKq_FlpNyGEGQlcT64pyhUlgMQ-Gb8Zx19U3nva8DODMaRQZOlFwZh_in91sA2vLK2XPaAwNbkTf3rVgWa5EerpX9pWh7lqwDhWQALT39hL6aOaN_SzyeAEw==
+  occurrances: 11
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W1siQUtzUm9sX2h6TVJQaGNXSmtpeWxpaEFVS0ZXaWRFMGxwWG1CeXpfakNqdGdEazhuU0ZSNTdYa25fSzlGcTdwajc0Zkp0VFp1Q09GcWZYU2dWVGVMNFJMeWZ3ODNVZHBtUG9DcE1SWGVsbXVGOEZXMHFYakJNRE1ab3pGSTJiUzFENHROZHlXblp4XzByblZVQzk0RTIwZUVCZzVzREw4dVNBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODI1OTAwNzIsMjkwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5tYXJjYS5jb20vIixudWxsLFtbOCwidUVjcUNyRm1Xb1EiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODI1OTAwNTciXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:32 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxUtSFvW6BRScQoG5STCtYZZ_VbnoYyz4JP7rFl1ks9RvicdVvVKT9v_EIkLi6tzsoNG5dMnPIRazHAbM59CZApqaie8MxrYyJP4MM2V2L0slaQTo1VY8xcJ7jhuC54bI3MhwomJrQ==?fccs=W1siQUtzUm9sX2h6TVJQaGNXSmtpeWxpaEFVS0ZXaWRFMGxwWG1CeXpfakNqdGdEazhuU0ZSNTdYa25fSzlGcTdwajc0Zkp0VFp1Q09GcWZYU2dWVGVMNFJMeWZ3ODNVZHBtUG9DcE1SWGVsbXVGOEZXMHFYakJNRE1ab3pGSTJiUzFENHROZHlXblp4XzByblZVQzk0RTIwZUVCZzVzREw4dVNBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODI1OTAwNzIsMjkwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5tYXJjYS5jb20vIixudWxsLFtbOCwidUVjcUNyRm1Xb1EiXSxbOSwiZXMiXSxbMTYsIlsxLDEsMV0iXSxbMzUsIjE3ODI1OTAwNTciXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:34 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxXgQdoyTBakM8GQHXGhZsAsOyHRIHOzgu5l-PMaKGrnAdfNfk2iOOCxGtAnhkZZw1zJRtAhyhUJc7j8TVxcNBiBv0WE3iPOTmKsUCiHpVSU3yFOiZfqa95fyaRI9QklIV_mpHbqTzLP_hovRICHQn01oM4xAyxnBCKYnoZhoBHTAjvxMadWh96JONhD/_=clkads/-adSponsors./ads/square-.adserver1._adbanner.
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query:
+    fccs: >-
+      W1siQUtzUm9sX2h6TVJQaGNXSmtpeWxpaEFVS0ZXaWRFMGxwWG1CeXpfakNqdGdEazhuU0ZSNTdYa25fSzlGcTdwajc0Zkp0VFp1Q09GcWZYU2dWVGVMNFJMeWZ3ODNVZHBtUG9DcE1SWGVsbXVGOEZXMHFYakJNRE1ab3pGSTJiUzFENHROZHlXblp4XzByblZVQzk0RTIwZUVCZzVzREw4dVNBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODI1OTAwNzQsNzk0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubWFyY2EuY29tLyIsbnVsbCxbWzgsInVFY3FDckZtV29RIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgyNTkwMDU3Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:34 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/f/AGSKWxX2SCzxCA_5MVxzjWHgGPSEt-OMD4H-_dX8UhkXGqJQk1enEAstbVYH-XRYZp_Nhsi1AzSjuAK2UgI3dOPD9ImbWvj4F5Pl5NDwWUd_ZBnHCePMOHLMmP5_mYMOI_LMjuqpVTaG6A==?fccs=W1siQUtzUm9sX2h6TVJQaGNXSmtpeWxpaEFVS0ZXaWRFMGxwWG1CeXpfakNqdGdEazhuU0ZSNTdYa25fSzlGcTdwajc0Zkp0VFp1Q09GcWZYU2dWVGVMNFJMeWZ3ODNVZHBtUG9DcE1SWGVsbXVGOEZXMHFYakJNRE1ab3pGSTJiUzFENHROZHlXblp4XzByblZVQzk0RTIwZUVCZzVzREw4dVNBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3ODI1OTAwNzQsNzk0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubWFyY2EuY29tLyIsbnVsbCxbWzgsInVFY3FDckZtV29RIl0sWzksImVzIl0sWzE2LCJbMSwxLDFdIl0sWzM1LCIxNzgyNTkwMDU3Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d
+  occurrances: 1
+- filter: '||fundingchoicesmessages.google.com^'
+  listName: fanboy-annoyance.txt
+  query: null
+  stack:
+    - fileName: https://www.marca.com/
+      source: >-
+        requested from https://www.marca.com/ and matched with
+        fanboy-annoyance.txt filter ||fundingchoicesmessages.google.com^
+  timestamp: Sat, 27 Jun 2026 19:54:34 GMT
+  url: >-
+    https://fundingchoicesmessages.google.com/el/AGSKWxXjunI7z4XyWYpLJJd6RiT31_QAiazGf6aPvMXp_JZ0qTT83RHnV5gVcqSwwWLTe6NYpL3n5DRG7XOtvdOCNRnPdCDapGE0jUjT__HuU30Xgw0AO_vHlW3OXKlaSVifQxIKReWFBA==
+  occurrances: 1

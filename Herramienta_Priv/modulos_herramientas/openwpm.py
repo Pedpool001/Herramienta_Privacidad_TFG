@@ -13,7 +13,7 @@ import threading
 from pathlib import Path
 from urllib.parse import urlparse
 
-from ._loader import ejecutar_analisis, TFG_DIR
+from ._loader import ejecutar_analisis, TFG_DIR, dir_analisis as _dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -120,7 +120,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
         if req not in sel:
             continue
         try:
-            data = ejecutar_analisis(script, str(db_path))
+            data = ejecutar_analisis(script, str(db_path),
+                                     salida_dir=_dir_analisis(output_dir))
             with lock:
                 resultados[req] = {
                     "veredicto": data.get("veredicto", "ERROR"),

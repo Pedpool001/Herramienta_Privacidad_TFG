@@ -1,0 +1,61 @@
+{
+  "sitio": "Vocento.com",
+  "veredicto": "WARNING",
+  "evaluacion": {
+    "estado": "WARNING",
+    "detalle": "Política: índice Szigriszt-Muñoz 40.1 (Algo difícil) → WARNING. Banner: no disponible (accessibility_tree.json no encontrado). Tecnicismos frecuentes: «Corresponsable» (40×), «interés legítimo» (9×), «cláusulas contractuales tipo» (8×), «obligación legal» (1×)."
+  },
+  "politica": {
+    "num_palabras": 6164,
+    "num_oraciones": 248,
+    "total_silabas": 14038,
+    "sil_por_palabra": 2.28,
+    "palabras_por_frase": 24.85,
+    "indice_szigriszt": 40.1
+  },
+  "banner": {
+    "disponible": false
+  },
+  "tecnicismos": [
+    {
+      "termino": "Corresponsable",
+      "ocurrencias": 40
+    },
+    {
+      "termino": "interés legítimo",
+      "ocurrencias": 9
+    },
+    {
+      "termino": "cláusulas contractuales tipo",
+      "ocurrencias": 8
+    },
+    {
+      "termino": "obligación legal",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "datos sensibles",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de oposición",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de rectificación",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "Derecho de supresión",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "limitación del tratamiento",
+      "ocurrencias": 1
+    },
+    {
+      "termino": "anonimización",
+      "ocurrencias": 1
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "sitio": "https://www.abc.es",
+  "veredicto": "WARNING",
+  "banner_detectado": true,
+  "banner_selector": "div.evolok-popup-notice",
+  "total_botones": 8,
+  "clasificados": {
+    "aceptar": [
+      {
+        "texto": "aceptar y continuar",
+        "bg_color": "rgb(32, 32, 32)",
+        "color": "rgb(255, 255, 255)",
+        "font_size": 16,
+        "opacity": 1,
+        "visible": true,
+        "width": 426,
+        "height": 48
+      }
+    ],
+    "rechazar": [
+      {
+        "texto": "rechazar y pagar",
+        "bg_color": "rgb(255, 255, 255)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 16,
+        "opacity": 1,
+        "visible": true,
+        "width": 426,
+        "height": 48
+      }
+    ],
+    "configurar": [
+      {
+        "texto": "configurar",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 61,
+        "height": 15
+      }
+    ],
+    "otro": [
+      {
+        "texto": "política de cookies",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 111,
+        "height": 15
+      },
+      {
+        "texto": "aviso legal",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 67,
+        "height": 15
+      },
+      {
+        "texto": "aviso legal",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 67,
+        "height": 15
+      },
+      {
+        "texto": "nuestros 698 socios",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 116,
+        "height": 15
+      },
+      {
+        "texto": "política de cookies",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "color": "rgb(32, 32, 32)",
+        "font_size": 13,
+        "opacity": 1,
+        "visible": true,
+        "width": 111,
+        "height": 15
+      }
+    ]
+  },
+  "evaluaciones": {
+    "obstruccion": {
+      "estado": "PASSED",
+      "detalle": "Botón de rechazo visible encontrado: 'rechazar y pagar'."
+    },
+    "asimetria": {
+      "estado": "WARNING",
+      "detalle": "Diferencia de luminosidad notable (223/255) entre aceptar ('rgb(32, 32, 32)') y rechazar ('rgb(255, 255, 255)')."
+    },
+    "ocultacion": {
+      "estado": "PASSED",
+      "detalle": "Sin señales de ocultación CSS en botones de rechazo/configuración."
+    }
+  },
+  "botones_detalle": true
+}

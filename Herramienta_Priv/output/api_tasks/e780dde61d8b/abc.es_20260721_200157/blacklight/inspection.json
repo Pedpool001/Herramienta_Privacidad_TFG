@@ -1,0 +1,4006 @@
+{
+  "title": "Blacklight Inspection",
+  "page_title": "ABC - Últimas noticias de España y el mundo hoy",
+  "uri_ins": "https://www.abc.es",
+  "uri_dest": "https://www.abc.es/",
+  "uri_redirects": [],
+  "secure_connection": {},
+  "host": "www.abc.es",
+  "config": {
+    "emulateDevice": {
+      "name": "iPhone 13 Mini",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "isLandscape": false
+      }
+    },
+    "cleareCache": true,
+    "captureHar": true,
+    "captureLinks": false,
+    "enableAdBlock": false,
+    "saveBrowserProfile": false,
+    "numPages": 1,
+    "defaultTimeout": 35000,
+    "defaultWaitUntil": "networkidle2",
+    "headless": true,
+    "headers": {},
+    "extraChromiumArgs": [
+      "--no-sandbox",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--disable-default-apps"
+    ],
+    "extraPuppeteerOptions": {}
+  },
+  "browser": {
+    "name": "Chromium",
+    "version": "Chrome/127.0.6533.88",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "6.8.0-124-generic"
+    }
+  },
+  "script": {
+    "host": "pedro-SATELLITE-L50-A-1DL",
+    "version": {
+      "npm": "3.10.0",
+      "commit": "dev"
+    },
+    "node_version": "v20.20.0"
+  },
+  "start_time": "2026-07-21T18:02:01.696Z",
+  "end_time": "2026-07-21T18:02:39.416Z",
+  "browsing_history": [
+    "https://www.abc.es/",
+    "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html"
+  ],
+  "hosts": {
+    "requests": {
+      "first_party": [
+        "www.abc.es",
+        "static.abc.es",
+        "sadbmetrics.abc.es",
+        "metrics.abc.es",
+        "data.abc.es"
+      ],
+      "third_party": [
+        "s1.abcstatics.com",
+        "static.vocstatic.com",
+        "players.brightcove.net",
+        "vocx.evolok.net",
+        "edge.api.brightcove.com",
+        "metrics.brightcove.com",
+        "sdk.privacy-center.org",
+        "c.amazon-adsystem.com",
+        "securepubads.g.doubleclick.net",
+        "assets.adobedtm.com",
+        "service.wemass.com",
+        "fundingchoicesmessages.google.com",
+        "dpm.demdex.net",
+        "connect.facebook.net",
+        "static.adsafeprotected.com",
+        "pagead2.googlesyndication.com",
+        "static.vocento.com",
+        "widgets.outbrain.com",
+        "vocento.demdex.net",
+        "cm.everesttech.net",
+        "comments.vocento.com",
+        "widget-pixels.outbrainimg.com",
+        "widgets.teads-xo.com",
+        "mv.outbrainimg.com",
+        "amplify.outbrain.com",
+        "dmp-telemetry.wemass.com",
+        "widgets.outbrainimg.com",
+        "mcdp-nldc1.outbrainimg.com",
+        "tcheck.outbrainimg.com",
+        "images.outbrainimg.com",
+        "eventlog.outbrainimg.com",
+        "ob.brilliantchap.com",
+        "es-config.sensic.net",
+        "sdk.mrf.io",
+        "17846569559421d646eb434e21a9f5f10d637b0e3ab74524baf4a81d.trk.sensic.net",
+        "es1-s2s.sensic.net",
+        "obs.brilliantchap.com",
+        "localhost.sensic.net"
+      ]
+    }
+  },
+  "reports": {
+    "behaviour_event_listeners": {
+      "MOUSE": {
+        "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ],
+        "https://www.abc.es/": [
+          "click",
+          "scroll"
+        ]
+      },
+      "KEYBOARD": {
+        "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html": [
+          "keydown",
+          "keyup",
+          "keypress",
+          "input"
+        ],
+        "https://www.abc.es/": [
+          "keydown"
+        ]
+      },
+      "TOUCH": {
+        "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ]
+      },
+      "SENSOR": {
+        "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html": [
+          "orientationchange"
+        ]
+      }
+    },
+    "canvas_fingerprinters": {
+      "data_url": {},
+      "fingerprinters": [],
+      "styles": {},
+      "texts": {}
+    },
+    "canvas_font_fingerprinters": {
+      "canvas_font": {},
+      "text_measure": {}
+    },
+    "cookies": [
+      {
+        "name": "cookietest",
+        "value": "1",
+        "domain": "www.abc.es",
+        "path": "/deportes/futbol/mundial",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "geo",
+        "value": "{\"c\": \"ES\",\"r\": \"V\",\"o\": \"EU\"}",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2026-07-22T18:02:20.598Z",
+        "size": 33,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "ev_sid",
+        "value": "6a5fb42a322ac91f2638816a",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-16T18:02:22.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ev_did",
+        "value": "6a5fb42a322ac91f26388169",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-16T18:02:22.000Z",
+        "size": 30,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vtm_op",
+        "value": "false",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 11,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "s_ecid",
+        "value": "MCMID%7C31201257144951952681768439924799251204",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-08-25T18:02:25.346Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 42,
+        "httpOnly": false,
+        "secure": true,
+        "session": true,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "FCCDCF",
+        "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%222023aa9b-a9db-4fe5-8093-61f9ccc59dad%5C%22%2C%5B1784656946%2C54000000%5D%5D%22%5D%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-08-15T18:02:26.000Z",
+        "size": 161,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_information",
+        "value": "%7B%7D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-21T18:02:33.000Z",
+        "size": 25,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc_edtn",
+        "value": "nacional",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-21T18:02:33.000Z",
+        "size": 16,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_uuid",
+        "value": "0eed9707-0bc0-4176-963d-db89bd59654f",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-21T18:02:33.000Z",
+        "size": 48,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "vocuser_nfryl_volver_al_origen",
+        "value": "https%3A%2F%2Fwww.abc.es%2Fdeportes%2Ffutbol%2Fmundial%2Fextasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-07-22T18:02:33.000Z",
+        "size": 162,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+        "value": "179643557%7CMCIDTS%7C20656%7CMCMID%7C31201257144951952681768439924799251204%7CMCAID%7CNONE%7CMCOPTOUT-1784664146s%7CNONE%7CMCAAMLH-1785261746%7C6%7CMCAAMB-1785261746%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI%7CMCSYNCSOP%7C411-20663%7CvVersion%7C5.5.0",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-08-25T18:02:29.092Z",
+        "size": 298,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "voc-rtim",
+        "value": "{ \"geo-europe\" : false}",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-08-20T18:02:33.000Z",
+        "size": 31,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+        "value": "CiYzMTIwMTI1NzE0NDk1MTk1MjY4MTc2ODQzOTkyNDc5OTI1MTIwNFIRCLnH3674MxgCKgRJUkwxMAPwAbnH3674Mw%3D%3D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-08-20T18:02:29.324Z",
+        "size": 145,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+        "value": "irl1",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2026-07-21T18:32:35.990Z",
+        "size": 52,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "voc_paywall",
+        "value": "https://www.abc.es|anonimo",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-21T18:02:33.000Z",
+        "size": 37,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "FCNEC",
+        "value": "%5B%5B%22AKsRol-kvdsJXwnoP2SQehizl5vIVN8ZgycGPis63QZ82kQSP4IZayGDiAQR9ylmZvT8OaeBLX-Pe82rU1bPXCdwW2ZQlexFeEtQFO2k1nf9filjI0rJL4syXYtQavkHFRAkXubTi4EnAbbOBKMJ0BDXn075uP25Dw%3D%3D%22%5D%5D",
+        "domain": "abc.es",
+        "path": "/",
+        "expires": "2027-07-21T18:02:36.000Z",
+        "size": 191,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "_cq_duid",
+        "value": "1.1784656957.FQU9cQqM11cTi9Md",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2026-10-21T00:02:37.000Z",
+        "size": 37,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "_cq_suid",
+        "value": "1.1784656957.kDGYSIlRlEal42bB",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": -1,
+        "size": 37,
+        "httpOnly": false,
+        "secure": true,
+        "session": true,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "_cq_session",
+        "value": "1.1784656957217.UqDbAKIEL6PoxfLY.1784656957216",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2027-08-25T18:02:37.218Z",
+        "size": 57,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "_cq_s",
+        "value": "JuFo0WUoSyCrh5OC:P+mcs9QMp4qUgjBYG4ZmHAmI/ddD7iZSBlh/xE40hw/37Ix98qBqdy3ZqYHKWjFknjoUE1jGbEI+3+c3t8Tf2MzF486/rtJFJgpxFLecrpWNko2tAlVINg1p3hLKsyHeeE7H4aNb/KKvnBUy5v+kHakDOaDRr24gGU0cEjKnx0NWzpqGP1tjFF5XCt1oE15xf1gb6Xy3r84ejxMiyxBg8o1Kx1gMimM0mpK2tzskbhKezdEN1ON2WIZszS6k5ZFH99m49lxCqHktVWqRUq+A0FAiuCowxunPIewjvbgpLu4Xo3T7EscjOQImnitrqjerSGpMqQjGEJBxvtdLH2t8RBewM9B+IyB6dABS6ns8ccVptI5Qt6Na5Xanv3BEAtzaySV/7jLVN1HgtHMHZ7HHNB4Yg/J04TJMACH7jtoAVP0rSjImAQnxvrUPoSkLJcE4jR0Wqn18QJ9PCXmWVCnhth4iF8spyMA0n/eEmo8YRIezyHLqAq/XDKhYnIvrGQRJwKwZaQM4tq1YQgb+Ekyf4svNg/J2BA+Qx5kSCkUyPfumy0HEGEuEOBhzR6W2w88Fg9XjguNmfyFDWnATAelo2obApw6+uJdR6zpPzDZVlI6gcRm44baz6U/W8B1mw6yOpHl6lPEWHSb/lecWstf7DrIsJp4qiOYvTGMEh+bor5sHjz0q9jYBfnWdduVmpHYobJ/pRw==:TNDmQYGBAfQk2Bpcz+qWNQ==",
+        "domain": "www.abc.es",
+        "path": "/",
+        "expires": "2026-07-28T18:02:38.000Z",
+        "size": 759,
+        "httpOnly": false,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      }
+    ],
+    "fb_pixel_events": [],
+    "tiktok_pixel_events": [],
+    "twitter_pixel_events": [],
+    "google_analytics_events": [],
+    "key_logging": {},
+    "session_recorders": {},
+    "third_party_trackers": [
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC407298c5d763426da8881a8214c4c86a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC9047f78517444501968cdba7c171fb26-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC77b28969ef864c80bd66b197af2a33d9-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC7536b7ffb5be48ec83063c0582004acd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC7c12e02fa3964b86954b8737f88c5114-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||connect.facebook.net/signals/$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "domain": "www.abc.es",
+            "ex_m": "107,208,158,22,73,74,149,69,68,11,167,93,16,141,130,39,76,81,137,163,169,26,27,28,30,48,150,78,115,18,20,44,40,42,41,86,95,99,113,148,151,46,114,24,21,122,70,36,153,152,154,145,143,25,35,59,112,165,71,17,156,117,84,67,19,88,89,119,87,139,138,142,164,34,49,116,47,8,4,5,7,6,3,94,104,170,175,222,75,235,234,233,23,33,55,106,61,10,64,100,101,102,108,133,31,29,135,136,132,131,159,77,162,160,161,50,60,126,15,166,45,280,281,279,294,310,215,204,62,205,203,313,304,52,216,110,134,83,124,54,123,129,128,58,65,63,155,79,80,118,37,32,53,56,103,168,1,127,14,125,12,2,57,96,66,121,92,91,171,172,97,98,9,105,51,146,90,82,72,120,109,43,147,0,85,140,144,157,38,111,13,173",
+            "hme": "1179b74563cacb97c6ebae600e40937237ab12824fb84996eee07eca65cabbd4",
+            "r": "stable",
+            "v": "2.9.358"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/signals/config/1246353057568670?v=2.9.358&r=stable&domain=www.abc.es&hme=1179b74563cacb97c6ebae600e40937237ab12824fb84996eee07eca65cabbd4&ex_m=107%2C208%2C158%2C22%2C73%2C74%2C149%2C69%2C68%2C11%2C167%2C93%2C16%2C141%2C130%2C39%2C76%2C81%2C137%2C163%2C169%2C26%2C27%2C28%2C30%2C48%2C150%2C78%2C115%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C113%2C148%2C151%2C46%2C114%2C24%2C21%2C122%2C70%2C36%2C153%2C152%2C154%2C145%2C143%2C25%2C35%2C59%2C112%2C165%2C71%2C17%2C156%2C117%2C84%2C67%2C19%2C88%2C89%2C119%2C87%2C139%2C138%2C142%2C164%2C34%2C49%2C116%2C47%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C104%2C170%2C175%2C222%2C75%2C235%2C234%2C233%2C23%2C33%2C55%2C106%2C61%2C10%2C64%2C100%2C101%2C102%2C108%2C133%2C31%2C29%2C135%2C136%2C132%2C131%2C159%2C77%2C162%2C160%2C161%2C50%2C60%2C126%2C15%2C166%2C45%2C280%2C281%2C279%2C294%2C310%2C215%2C204%2C62%2C205%2C203%2C313%2C304%2C52%2C216%2C110%2C134%2C83%2C124%2C54%2C123%2C129%2C128%2C58%2C65%2C63%2C155%2C79%2C80%2C118%2C37%2C32%2C53%2C56%2C103%2C168%2C1%2C127%2C14%2C125%2C12%2C2%2C57%2C96%2C66%2C121%2C92%2C91%2C171%2C172%2C97%2C98%2C9%2C105%2C51%2C146%2C90%2C82%2C72%2C120%2C109%2C43%2C147%2C0%2C85%2C140%2C144%2C157%2C38%2C111%2C13%2C173"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17846569559421D646EB434E21A9F5F10D637B0E3AB74524BAF4A81D",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=AbcWeb&r=www.abc.es&p=es1&instanceid=17846569559421D646EB434E21A9F5F10D637B0E3AB74524BAF4A81D&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCbe6651486dfa492b81dcea9d79510236-source.min.js"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=AbcWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=17846569559421D646EB434E21A9F5F10D637B0E3AB74524BAF4A81D&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.abc.es&cp_c1=abc.es&cp_c2=deportes",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "17846569559421D646EB434E21A9F5F10D637B0E3AB74524BAF4A81D",
+            "ipad": false,
+            "m": "AbcWeb",
+            "p": "es1",
+            "r": "www.abc.es",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://17846569559421d646eb434e21a9f5f10d637b0e3ab74524baf4a81d.trk.sensic.net/tp.gif?m=AbcWeb&r=www.abc.es&p=es1&instanceid=17846569559421D646EB434E21A9F5F10D637B0E3AB74524BAF4A81D&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC3b9b2b754fe94f7196eb032e0dc6dd2d-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC890b19287f9c4b558ebada0bdcd15749-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC26fd274b8ae4434580741ee1d5779a18-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCf0d5b09b490f4cdeaf1747d1a18aaf5a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC0603e8e2afb64295843d81cf06a25bda-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC97c4717d25ed477391b9b3a98aeb44fd-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC7e16fcb2ad6c4bfeaab443b5bb5bcb5c-source.min.js"
+      },
+      {
+        "data": {
+          "body": "------WebKitFormBoundaryEfoNQkuZR1vQtplN\r\nContent-Disposition: form-data; name=\"sessionId\"\r\n\r\n080448cec36607d666d3594326674a971784656954448\r\n------WebKitFormBoundaryEfoNQkuZR1vQtplN\r\nContent-Disposition: form-data; name=\"eventGroup\"\r\n\r\ngnr_exploreMore\r\n------WebKitFormBoundaryEfoNQkuZR1vQtplN\r\nContent-Disposition: form-data; name=\"eventTypeId\"\r\n\r\n66005\r\n------WebKitFormBoundaryEfoNQkuZR1vQtplN\r\nContent-Disposition: form-data; name=\"requestId\"\r\n\r\n080448cec36607d666d3594326674a97\r\n------WebKitFormBoundaryEfoNQkuZR1vQtplN\r\nContent-Disposition: form-data; name=\"attributes\"\r\n\r\n{\"action\":\"script_load\",\"reason\":\"setting_on\",\"ajaxMethod\":\"beacon\",\"clientTimestamp\":1784656954450,\"timestamp\":\"\",\"publisherId\":2571,\"pvId\":\"bab603824ac6bf7640820970fd6cc960\",\"sectionId\":4317520,\"widgetJsId\":\"CRMB_12\",\"widgetId\":379,\"subWidgetJsId\":\"CRMB_12\",\"subWidgetId\":379,\"cardIdx\":\"\",\"docId\":6259365559,\"platform\":\"mobile\",\"deviceOs\":\"\",\"deviceOrientation\":\"portrait\",\"layeredTest\":\"9820-89554-,13580-99423-,13180-95726-\",\"abrex\":\"1550:5795\"}\r\n------WebKitFormBoundaryEfoNQkuZR1vQtplN--\r\n",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://eventlog.outbrainimg.com/logger/v1/widget/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/ads/js_",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUu29EkZWFMvpmbxxHFKhfgu73oVSRqXBNzRg7EHWNJnWuvjNzlUnnDo1vyyIxirjrK4olZFhPS2r9zlxASjWvanc2VeQpDs6XdwNYkrdgIBeaR9QRQNLV0L1vBpotLW26MQb-E8GOYxciLga3XBcjSjlWA2ZoOixir8YhkeNXIp73JK6cYRAT3Km8=/_&ad_classid=/ads/js_/tmnadsense-_contest_ad_/120x600."
+      },
+      {
+        "data": {
+          "body": "------WebKitFormBoundary2AAqFWTbAdl0N3Cn\r\nContent-Disposition: form-data; name=\"sessionId\"\r\n\r\n080448cec36607d666d3594326674a971784656954360\r\n------WebKitFormBoundary2AAqFWTbAdl0N3Cn\r\nContent-Disposition: form-data; name=\"eventGroup\"\r\n\r\ngnr_interstitial\r\n------WebKitFormBoundary2AAqFWTbAdl0N3Cn\r\nContent-Disposition: form-data; name=\"eventTypeId\"\r\n\r\n66005\r\n------WebKitFormBoundary2AAqFWTbAdl0N3Cn\r\nContent-Disposition: form-data; name=\"requestId\"\r\n\r\n080448cec36607d666d3594326674a97\r\n------WebKitFormBoundary2AAqFWTbAdl0N3Cn\r\nContent-Disposition: form-data; name=\"attributes\"\r\n\r\n{\"action\":\"script_load\",\"reason\":\"setting_on\",\"ajaxMethod\":\"beacon\",\"clientTimestamp\":1784656954365,\"timestamp\":\"\",\"publisherId\":2571,\"pvId\":\"bab603824ac6bf7640820970fd6cc960\",\"sectionId\":4317520,\"widgetJsId\":\"CRMB_12\",\"widgetId\":379,\"subWidgetJsId\":\"CRMB_12\",\"subWidgetId\":379,\"cardIdx\":\"\",\"docId\":6259365559,\"platform\":\"mobile\",\"deviceOs\":\"\",\"deviceOrientation\":\"portrait\",\"layeredTest\":\"9820-89554-,13580-99423-,13180-95726-\",\"abrex\":\"1550:5795\"}\r\n------WebKitFormBoundary2AAqFWTbAdl0N3Cn--\r\n",
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://eventlog.outbrainimg.com/logger/v1/widget/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCbf15496093304f41b4bea4b4b48dc857-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tcheck.outbrainimg.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tcheck.outbrainimg.com/tcheck/check/d3d3LmFiYy5lcw=="
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amplify.outbrain.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://amplify.outbrain.com/cp/obtp.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/px.gif?",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "ch": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://widget-pixels.outbrainimg.com/widget/detect/px.gif?ch=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCb2523a91fb7f4e04bd20e9021590d921-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCcaa83c1be69f4f9d953462c54b41003a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202607150101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.33.0/prebid.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RC91f321fa8f794845a394afffbbbc4d0c-source.min.js"
+      },
+      {
+        "data": {
+          "body": {
+            "data": [
+              {
+                "browser_bodyHeight": 10561,
+                "browser_bodyWidth": 375,
+                "browser_context": "top",
+                "browser_declaredAsMobile": false,
+                "browser_declaredPlatorm": "",
+                "browser_devicePixelRatio": 3,
+                "browser_domain": "www.abc.es",
+                "browser_executionStart": 1784656943106,
+                "browser_hidden": false,
+                "browser_isInTop": true,
+                "browser_lang_0": "es-ES",
+                "browser_nPageHides": 0,
+                "browser_nPageShows": 0,
+                "browser_navigatorHeight": 812,
+                "browser_navigatorWidth": 375,
+                "browser_origin_0": null,
+                "browser_origin_1": null,
+                "browser_origin_2": null,
+                "browser_pageLoadTime": 0,
+                "browser_pageReadyTime": 3491,
+                "browser_path": "/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+                "browser_path1": "deportes",
+                "browser_path2": "futbol",
+                "browser_topAccess": true,
+                "browser_url": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+                "browser_visitStart": 1784656939370,
+                "config_DMP_type": "permutive",
+                "config_active": true,
+                "config_domains_0": "abc.es",
+                "config_domains_1": "sevilla.abc.es",
+                "config_domains_10": "hoy.es",
+                "config_domains_11": "ideal.es",
+                "config_domains_12": "larioja.com",
+                "config_domains_13": "laverdad.es",
+                "config_domains_14": "lavozdigital.es",
+                "config_domains_15": "lasprovincias.es",
+                "config_domains_16": "leonoticias.com",
+                "config_domains_17": "mujerhoy.com",
+                "config_domains_18": "elnortedecastilla.es",
+                "config_domains_19": "xlsemanal.com",
+                "config_domains_2": "burgosconecta.es",
+                "config_domains_20": "new-www.todoalicantes.es",
+                "config_domains_21": "todoalicante.es",
+                "config_domains_22": "new-www-salamancahoy.es",
+                "config_domains_23": "salamancahoy.es",
+                "config_domains_3": "canarias7.es",
+                "config_domains_4": "eldiariomontanes.es",
+                "config_domains_5": "diariosur.es",
+                "config_domains_6": "diariovasco.com",
+                "config_domains_7": "elbierzonoticias.com",
+                "config_domains_8": "elcomercio.es",
+                "config_domains_9": "elcorreo.com",
+                "config_filename": "d94422aa8614fd4bf4e0cafd66f9c097.js",
+                "config_intext_detector_gam_is_active": false,
+                "config_intext_detector_gam_publisher_library_lib_name": "vocento",
+                "config_intext_detector_gam_publisher_library_location": "top",
+                "config_intext_detector_gam_publisher_library_method": "every",
+                "config_intext_detector_gam_publisher_library_path": "config/vam/options/posicion_desktop/layer_inpage/desactivadoen",
+                "config_intext_detector_gam_publisher_library_predicate": "(i) => i !== top.vocento.config.vam.pageType",
+                "config_intext_detector_gam_slots_key_names_0": "pos",
+                "config_intext_detector_gam_slots_key_values_0": "layer_inpage",
+                "config_intext_detector_node_is_active": true,
+                "config_intext_detector_node_selector_list_0_selector": ".v-adv--lyr",
+                "config_intext_detector_node_selector_list_1_selector": ".v-adv--ly",
+                "config_intext_detector_node_selector_list_2_selector": "#layer_inpage-id",
+                "config_intext_detector_paywall_pattern_old": "abc",
+                "config_key_count_limit": 100,
+                "config_key_list_0": "skin",
+                "config_key_list_1": "halo",
+                "config_key_list_2": "intext",
+                "config_key_list_3": "permutive",
+                "config_permutive_excludedAddonPageTypes_0": "portadilla",
+                "config_permutive_namespace": "permutive",
+                "config_permutive_organization_id": "28986622-e6be-473d-9a8f-e603a25f3c66",
+                "config_permutive_public_api_key": "390f11db-6eea-42eb-9ef9-4d27b1bb2bab",
+                "config_permutive_watsinizables_0": "noticia",
+                "config_permutive_watsinizables_1": "fotogaleria",
+                "config_permutive_watsinizables_2": "video",
+                "config_permutive_watsinizables_3": "otros",
+                "config_permutive_workspace_id": "28986622-e6be-473d-9a8f-e603a25f3c66",
+                "config_publisher": "VOCENTO",
+                "config_tcf_v2_0": 1,
+                "config_tcf_v2_1": 3,
+                "config_tcf_v2_2": 4,
+                "config_tcf_v2_3": 7,
+                "config_tcf_v2_4": 10,
+                "config_website_0": "ABC",
+                "config_website_1": "ABC Sevilla",
+                "config_website_10": "HOY.es",
+                "config_website_11": "IDEAL",
+                "config_website_12": "La Rioja",
+                "config_website_13": "LA VERDAD",
+                "config_website_14": "LA VOZ DIGITAL",
+                "config_website_15": "LAS PROVINCIAS",
+                "config_website_16": "LEON NOTICIAS",
+                "config_website_17": "MUJER HOY",
+                "config_website_18": "NORTE DE CASTILLA",
+                "config_website_19": "XLSemanal",
+                "config_website_2": "BURGOS CONECTA",
+                "config_website_20": "todoalicante",
+                "config_website_21": "salamancahoy",
+                "config_website_3": "Canarias7",
+                "config_website_4": "DIARIO MONTAÑES",
+                "config_website_5": "DIARIO SUR",
+                "config_website_6": "DIARIO VASCO",
+                "config_website_7": "EL BIERZO NOTICIAS",
+                "config_website_8": "EL COMERCIO",
+                "config_website_9": "EL CORREO",
+                "device_batteryCharging": null,
+                "device_batteryLevel": null,
+                "device_cpu": 8,
+                "device_device": "mobile",
+                "device_name": "Safari",
+                "device_netInfoDownlink": 0,
+                "device_netInfoDownlinkMax": 400,
+                "device_netInfoEffType": 1.45,
+                "device_netInfoType": "3g",
+                "device_osMajorVersion": "15",
+                "device_osName": "iOS",
+                "device_osVersion": "15.0",
+                "device_platform": "Linux x86_64",
+                "device_processorSpeed": 1.3999999999068677,
+                "device_screenHeight": 812,
+                "device_screenWidth": 375,
+                "device_version": "15.4",
+                "execution_inside_executing_key_value_service_init_function": true,
+                "execution_is_in_AMP_frame": false,
+                "execution_is_in_safe_frame": false,
+                "execution_main_controller_init": true,
+                "execution_version": "6.3.0",
+                "intextDetector_gam_checker_config_present": true,
+                "intextDetector_gam_checker_publisher_library_check_configured": true,
+                "intextDetector_gam_checker_slots_check_configured": true,
+                "intextDetector_initializing_intext_detector": true,
+                "intextDetector_inside_validation_logic": true,
+                "intextDetector_intext_detector_config_present": true,
+                "intextDetector_is_gam_checker_active": false,
+                "intextDetector_is_intext_detected_by_gam": false,
+                "intextDetector_is_intext_detected_by_node": true,
+                "intextDetector_is_node_checker_active": true,
+                "intextDetector_is_paywall_detected_on_page": false,
+                "intextDetector_node_checker_config_present": true,
+                "intextDetector_on_check_method": false,
+                "intextDetector_on_gam_checker_check_method": true,
+                "intextDetector_on_node_checker_check_method": true,
+                "intextDetector_paywall_checker": "vocento",
+                "intextDetector_paywall_pattern_config_present": true,
+                "prebid_config_render_skin_bid": false,
+                "prebid_init_prebid_service": true,
+                "prebid_is_pbjs_loaded": false,
+                "prebid_log_skin_ad_unit": false,
+                "prebid_publisher_bidder_timeout_config": 3000,
+                "prebid_validate_pbjs": false,
+                "segments_are_segment_formated": true,
+                "segments_error_getting_permutive_segments": false,
+                "segments_execution_start_to_override_get_segments_delta": 88,
+                "segments_execution_start_to_override_get_string_segments_delta": 88,
+                "segments_first_log_segments_is_skin_bid_requested": false,
+                "segments_format_segments_format": "msft",
+                "segments_get_extra_keys": true,
+                "segments_get_segments": true,
+                "segments_get_segments_count": 2,
+                "segments_get_segments_options_format": "msft",
+                "segments_init_double_verify": false,
+                "segments_inside_format_segments_function": true,
+                "segments_inside_get_all_key_values_list_function": true,
+                "segments_inside_get_double_verify_key_values_function": true,
+                "segments_inside_get_extra_keys_function": true,
+                "segments_inside_get_intext_key_values_function": true,
+                "segments_inside_get_permutive_key_name_function": true,
+                "segments_inside_get_permutive_key_values_function": true,
+                "segments_inside_get_skin_key_values_function": true,
+                "segments_inside_limit_key_values_by_priority_function": true,
+                "segments_is_adding_extra_kw": false,
+                "segments_is_intext_detected": true,
+                "segments_is_key_values_limit_exceeded": false,
+                "segments_is_options_an_object": false,
+                "segments_is_options_undefined": true,
+                "segments_limited_key_permutive_tms_values_count": 0,
+                "segments_limited_key_permutive_values_count": 0,
+                "segments_limited_key_values_total_count": 3,
+                "segments_limited_key_wirr_values_count": 1,
+                "segments_limited_key_wmhl_values_count": 1,
+                "segments_limited_key_wmsk_values_count": 1,
+                "segments_not_limited_key_permutive_tms_values_count": 0,
+                "segments_not_limited_key_permutive_values_count": 0,
+                "segments_not_limited_key_values_total_count": 3,
+                "segments_not_limited_key_wirr_values_count": 1,
+                "segments_not_limited_key_wmhl_values_count": 1,
+                "segments_not_limited_key_wmsk_values_count": 1,
+                "segments_override_get_segments": true,
+                "segments_overriding_get_segments": true,
+                "segments_overriding_get_segments_async": true,
+                "segments_overriding_get_string_segments": true,
+                "segments_permutive_key_name": "permutive",
+                "segments_permutive_local_storage_key": "_papns",
+                "segments_visit_start_to_override_get_segments_delta": 3824,
+                "segments_visit_start_to_override_get_string_segments_delta": 3824,
+                "segments_wmsk_key_values_wmhl_0": "false",
+                "segments_wmsk_key_values_wmsk_0": "mobile"
+              }
+            ]
+          },
+          "filter": "$ping,third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dmp-telemetry.wemass.com/events.php"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amplify.outbrain.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://amplify.outbrain.com/cp/obtp.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCf8c2cccfb63d4681b9c2f1f8ae7dc02a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "dpuuid": "al_0LwAAAD2VWRbM",
+            "et:ibs|data:dpid": 411
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=411&dpuuid=al_0LwAAAD2VWRbM"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/px.gif?",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "ch": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://widget-pixels.outbrainimg.com/widget/detect/px.gif?ch=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=al_0LwAAAD2VWRbM"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCbdd29dadae934c8a982f33809dba6c78-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||everesttech.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_uuid": 3.135898344833809e+37
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cm.everesttech.net/cm/dd?d_uuid=31358983448338090261748198876269416706"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_nsid": 0
+          }
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://vocento.demdex.net/dest5.html?d_nsid=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "AAM",
+            "d_mid": 3.120125714495195e+37,
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_visid_ver": "5.5.0",
+            "ts": 1784656945457
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&d_mid=31201257144951952681768439924799251204&ts=1784656945457"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCfc1d34f76f214f5389a4dacb85c10bcb-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCc9e9bc05fdc846a7a527bbe28630b879-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCb2523a91fb7f4e04bd20e9021590d921-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1784656943480
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1784656943480"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCcaa83c1be69f4f9d953462c54b41003a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1784656943480
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1784656943480"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202607150101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/deportes/futbol/mundial/extasis-final-cibeles-campeones-mundo-juntos-fuertes-20260720233400-nt.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.33.0/prebid.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||pagead2.googlesyndication.com^",
+          "listName": "easylist.txt",
+          "query": {
+            "fcd": true
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/predictad.",
+          "listName": "easylist.txt",
+          "query": {
+            "AdID": "/adtadd1./savvyads."
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWyYM9RWYfh1xGw7NuyCdZ_Yx3WiwCl3jcD9dwC6DWRD9mFN7lSsTQkwyoVuuouqTKZrAZzeyXPkcFA7v6l--TFJtXrsSBrScFvxww3ORolXhrdWKWHyXB42DP6Sa2_VwURhvJd1-tHEhu8686sMI9EDffw5cMnrRNyyy5PBlLNQCDBv09DNi636k8=/_/src/ads_/predictad..ashx?AdID=/adtadd1./savvyads."
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1784656937209
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1784656937209"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCc75907c1a8254b57a54ef6b50421b591-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCb2523a91fb7f4e04bd20e9021590d921-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adsafeprotected.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||adobedtm.com^$third-party,domain=~adobe.com",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/e89fcd00c173/RCcaa83c1be69f4f9d953462c54b41003a-source.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/fbevents.js",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||demdex.net^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "d_fieldgroup": "MC",
+            "d_nsid": 0,
+            "d_orgid": "9854C13E58403FEB0A495D53@AdobeOrg",
+            "d_rtbd": "json",
+            "d_ver": 2,
+            "d_verify": 1,
+            "d_visid_ver": "5.5.0",
+            "ts": 1784656937209
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=9854C13E58403FEB0A495D53%40AdobeOrg&d_nsid=0&ts=1784656937209"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/79501589-9cd8-448d-b11f-e5cfacf49383/10s/master.m3u8?fastly_token=NmE2MDAyNjNfYjk0NGEzMjMyNGZiMzAyODM3MjNkN2NkM2NkNzhhNGY0Y2I5ZjIyNjlkZDk2MDQ1YzJlYWI2OGJmZjJjNTM1ZA%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401739922112",
+            "seq": "4_0",
+            "session": "35396d073c4444f2e4c940e",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656936375,
+            "video": 6401739922112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 61,
+            "video_name": "Isabel Aaiún tiene que huir con sus caballos por la proximidad del incendio en Segovia"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=35396d073c4444f2e4c940e&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656936375&event=video_impression&video=6401739922112&video_name=Isabel%20Aai%C3%BAn%20tiene%20que%20huir%20con%20sus%20caballos%20por%20la%20proximidad%20del%20incendio%20en%20Segovia&reference_id=abc-6401739922112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=61&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F79501589-9cd8-448d-b11f-e5cfacf49383%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAyNjNfYjk0NGEzMjMyNGZiMzAyODM3MjNkN2NkM2NkNzhhNGY0Y2I5ZjIyNjlkZDk2MDQ1YzJlYWI2OGJmZjJjNTM1ZA%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/66613dcf-5c0e-49bf-99ca-97a76ea87ae0/10s/master.m3u8?fastly_token=NmE2MDAxZWNfZWY1MmI4YjliM2Y1MWQ4NDdhMzIxNjA5MjRjMjI2OThlYjU0ODI5ZWE0ZmE5ZDgzMWFhZjE5NDg1MGJkZTA2OA%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401740120112",
+            "seq": "4_0",
+            "session": "550ced93c6975de8701ae3c6",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656936249,
+            "video": 6401740120112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 19,
+            "video_name": "El cambio de 'look' de Vinicius tras la eliminación de Brasil en el Mundial"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=550ced93c6975de8701ae3c6&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656936249&event=video_impression&video=6401740120112&video_name=El%20cambio%20de%20%27look%27%20de%20Vinicius%20tras%20la%20eliminaci%C3%B3n%20de%20Brasil%20en%20el%20Mundial&reference_id=abc-6401740120112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=19&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F66613dcf-5c0e-49bf-99ca-97a76ea87ae0%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAxZWNfZWY1MmI4YjliM2Y1MWQ4NDdhMzIxNjA5MjRjMjI2OThlYjU0ODI5ZWE0ZmE5ZDgzMWFhZjE5NDg1MGJkZTA2OA%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/887dd3a7-822b-49e1-a96e-bc708cdf8886/10s/master.m3u8?fastly_token=NmE2MDAyYTVfNWUyNTBiOGJlNTY1NDgwYTgzZWFkNTgxZmYwMGE2NmJjOWRmNjIzNGU4NGJkYzFhYThjZjk0NWIwY2VhOGIyMw%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401741401112",
+            "seq": "4_0",
+            "session": "95bc238afb059ac167e9fa12",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656936245,
+            "video": 6401741401112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 45,
+            "video_name": "«Al partir un beso y una flor», la imagen que resume la unión de los españols por el Mundial"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=95bc238afb059ac167e9fa12&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656936245&event=video_impression&video=6401741401112&video_name=%C2%ABAl%20partir%20un%20beso%20y%20una%20flor%C2%BB%2C%20la%20imagen%20que%20resume%20la%20uni%C3%B3n%20de%20los%20espa%C3%B1ols%20por%20el%20Mundial&reference_id=abc-6401741401112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=45&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F887dd3a7-822b-49e1-a96e-bc708cdf8886%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAyYTVfNWUyNTBiOGJlNTY1NDgwYTgzZWFkNTgxZmYwMGE2NmJjOWRmNjIzNGU4NGJkYzFhYThjZjk0NWIwY2VhOGIyMw%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/f9e927a5-566b-407b-9981-f1a7781b71ab/10s/master.m3u8?fastly_token=NmE2MDAzNmJfZTEwYjI1OWIwMmVlYjNkZjU4ZTczZTdlZjNhZjY2ZjVjOWY0ZGVmZjU3MDc4NmNhOTMxM2FjNjU2MmVlMGEzZg%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401741496112",
+            "seq": "4_0",
+            "session": "a5174ea45ff9b258fe8d3e9",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656936226,
+            "video": 6401741496112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 170,
+            "video_name": "Mucho baile, fiesta y dos millones de personas entregadas a los campeones del mundo"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=a5174ea45ff9b258fe8d3e9&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656936226&event=video_impression&video=6401741496112&video_name=Mucho%20baile%2C%20fiesta%20y%20dos%20millones%20de%20personas%20entregadas%20a%20los%20campeones%20del%20mundo&reference_id=abc-6401741496112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=170&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2Ff9e927a5-566b-407b-9981-f1a7781b71ab%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAzNmJfZTEwYjI1OWIwMmVlYjNkZjU4ZTczZTdlZjNhZjY2ZjVjOWY0ZGVmZjU3MDc4NmNhOTMxM2FjNjU2MmVlMGEzZg%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31099834
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202607200101/pubads_impl.js?cb=31099834"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 516,
+            "seq": 3,
+            "session": "35396d073c4444f2e4c940e",
+            "source": "",
+            "time": 1784656934463,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401739922112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=35396d073c4444f2e4c940e&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401739922112&time=1784656934463&seq=3&response_time_ms=516"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 554,
+            "seq": 3,
+            "session": "550ced93c6975de8701ae3c6",
+            "source": "",
+            "time": 1784656934447,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401740120112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=550ced93c6975de8701ae3c6&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401740120112&time=1784656934447&seq=3&response_time_ms=554"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 584,
+            "seq": 3,
+            "session": "95bc238afb059ac167e9fa12",
+            "source": "",
+            "time": 1784656934434,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741401112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=95bc238afb059ac167e9fa12&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741401112&time=1784656934434&seq=3&response_time_ms=584"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 623,
+            "seq": 3,
+            "session": "a5174ea45ff9b258fe8d3e9",
+            "source": "",
+            "time": 1784656934416,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741496112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=a5174ea45ff9b258fe8d3e9&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741496112&time=1784656934416&seq=3&response_time_ms=623"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656934015,
+            "qos.performance.bcInit": 212.69999999995343,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 42667891,
+            "qos.performance.memory.usedJSHeapSize": 26510939,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656932803,
+            "qos.performance.timing.connectStart": 1784656932803,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656933381,
+            "qos.performance.timing.domainLookupEnd": 1784656932803,
+            "qos.performance.timing.domainLookupStart": 1784656932803,
+            "qos.performance.timing.fetchStart": 1784656932802,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656932801,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656932804,
+            "qos.performance.timing.responseEnd": 0,
+            "qos.performance.timing.responseStart": 1784656933316,
+            "qos.performance.timing.secureConnectionStart": 1784656932803,
+            "qos.performance.timing.unloadEventEnd": 1784656933362,
+            "qos.performance.timing.unloadEventStart": 1784656933362,
+            "qos.player.dimensions": [
+              [
+                1784656934115,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656934115,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656934115,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "35396d073c4444f2e4c940e",
+            "source": "",
+            "time": 1784656934116,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=35396d073c4444f2e4c940e&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656934116&qos.events.content.volumechange=1784656934015&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=26510939&qos.performance.memory.totalJSHeapSize=42667891&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656933381&qos.performance.timing.responseEnd=0&qos.performance.timing.responseStart=1784656933316&qos.performance.timing.requestStart=1784656932804&qos.performance.timing.secureConnectionStart=1784656932803&qos.performance.timing.connectEnd=1784656932803&qos.performance.timing.connectStart=1784656932803&qos.performance.timing.domainLookupEnd=1784656932803&qos.performance.timing.domainLookupStart=1784656932803&qos.performance.timing.fetchStart=1784656932802&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=1784656933362&qos.performance.timing.unloadEventStart=1784656933362&qos.performance.timing.navigationStart=1784656932801&qos.performance.bcInit=212.69999999995343&qos.player.dimensions=%5B%5B1784656934115%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656934115%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656934115%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656934013,
+            "qos.performance.bcInit": 200.39999999990687,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 42666964,
+            "qos.performance.memory.usedJSHeapSize": 24924512,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656932803,
+            "qos.performance.timing.connectStart": 1784656932803,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656933381,
+            "qos.performance.timing.domainLookupEnd": 1784656932803,
+            "qos.performance.timing.domainLookupStart": 1784656932803,
+            "qos.performance.timing.fetchStart": 1784656932802,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656932801,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656932804,
+            "qos.performance.timing.responseEnd": 0,
+            "qos.performance.timing.responseStart": 1784656933316,
+            "qos.performance.timing.secureConnectionStart": 1784656932803,
+            "qos.performance.timing.unloadEventEnd": 1784656933362,
+            "qos.performance.timing.unloadEventStart": 1784656933362,
+            "qos.player.dimensions": [
+              [
+                1784656934102,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656934102,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656934102,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "550ced93c6975de8701ae3c6",
+            "source": "",
+            "time": 1784656934104,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=550ced93c6975de8701ae3c6&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656934104&qos.events.content.volumechange=1784656934013&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=24924512&qos.performance.memory.totalJSHeapSize=42666964&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656933381&qos.performance.timing.responseEnd=0&qos.performance.timing.responseStart=1784656933316&qos.performance.timing.requestStart=1784656932804&qos.performance.timing.secureConnectionStart=1784656932803&qos.performance.timing.connectEnd=1784656932803&qos.performance.timing.connectStart=1784656932803&qos.performance.timing.domainLookupEnd=1784656932803&qos.performance.timing.domainLookupStart=1784656932803&qos.performance.timing.fetchStart=1784656932802&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=1784656933362&qos.performance.timing.unloadEventStart=1784656933362&qos.performance.timing.navigationStart=1784656932801&qos.performance.bcInit=200.39999999990687&qos.player.dimensions=%5B%5B1784656934102%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656934102%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656934102%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656934010,
+            "qos.performance.bcInit": 188.30000000004657,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 42666964,
+            "qos.performance.memory.usedJSHeapSize": 24924512,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656932803,
+            "qos.performance.timing.connectStart": 1784656932803,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656933381,
+            "qos.performance.timing.domainLookupEnd": 1784656932803,
+            "qos.performance.timing.domainLookupStart": 1784656932803,
+            "qos.performance.timing.fetchStart": 1784656932802,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656932801,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656932804,
+            "qos.performance.timing.responseEnd": 0,
+            "qos.performance.timing.responseStart": 1784656933316,
+            "qos.performance.timing.secureConnectionStart": 1784656932803,
+            "qos.performance.timing.unloadEventEnd": 1784656933362,
+            "qos.performance.timing.unloadEventStart": 1784656933362,
+            "qos.player.dimensions": [
+              [
+                1784656934087,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656934087,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656934087,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "95bc238afb059ac167e9fa12",
+            "source": "",
+            "time": 1784656934089,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=95bc238afb059ac167e9fa12&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656934089&qos.events.content.volumechange=1784656934010&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=24924512&qos.performance.memory.totalJSHeapSize=42666964&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656933381&qos.performance.timing.responseEnd=0&qos.performance.timing.responseStart=1784656933316&qos.performance.timing.requestStart=1784656932804&qos.performance.timing.secureConnectionStart=1784656932803&qos.performance.timing.connectEnd=1784656932803&qos.performance.timing.connectStart=1784656932803&qos.performance.timing.domainLookupEnd=1784656932803&qos.performance.timing.domainLookupStart=1784656932803&qos.performance.timing.fetchStart=1784656932802&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=1784656933362&qos.performance.timing.unloadEventStart=1784656933362&qos.performance.timing.navigationStart=1784656932801&qos.performance.bcInit=188.30000000004657&qos.player.dimensions=%5B%5B1784656934087%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656934087%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656934087%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656934007,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 42666964,
+            "qos.performance.memory.usedJSHeapSize": 24924512,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656932803,
+            "qos.performance.timing.connectStart": 1784656932803,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656933381,
+            "qos.performance.timing.domainLookupEnd": 1784656932803,
+            "qos.performance.timing.domainLookupStart": 1784656932803,
+            "qos.performance.timing.fetchStart": 1784656932802,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656932801,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656932804,
+            "qos.performance.timing.responseEnd": 0,
+            "qos.performance.timing.responseStart": 1784656933316,
+            "qos.performance.timing.secureConnectionStart": 1784656932803,
+            "qos.performance.timing.unloadEventEnd": 1784656933362,
+            "qos.performance.timing.unloadEventStart": 1784656933362,
+            "qos.player.dimensions": [
+              [
+                1784656934072,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656934072,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656934072,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "a5174ea45ff9b258fe8d3e9",
+            "source": "",
+            "time": 1784656934075,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=a5174ea45ff9b258fe8d3e9&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656934075&qos.events.content.volumechange=1784656934007&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=24924512&qos.performance.memory.totalJSHeapSize=42666964&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656933381&qos.performance.timing.responseEnd=0&qos.performance.timing.responseStart=1784656933316&qos.performance.timing.requestStart=1784656932804&qos.performance.timing.secureConnectionStart=1784656932803&qos.performance.timing.connectEnd=1784656932803&qos.performance.timing.connectStart=1784656932803&qos.performance.timing.domainLookupEnd=1784656932803&qos.performance.timing.domainLookupStart=1784656932803&qos.performance.timing.fetchStart=1784656932802&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=1784656933362&qos.performance.timing.unloadEventStart=1784656933362&qos.performance.timing.navigationStart=1784656932801&qos.player.dimensions=%5B%5B1784656934072%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656934072%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656934072%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "35396d073c4444f2e4c940e",
+            "source": "",
+            "time": 1784656933947,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401739922112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=35396d073c4444f2e4c940e&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401739922112&time=1784656933947&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "35396d073c4444f2e4c940e",
+            "source": "",
+            "time": 1784656933940
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=35396d073c4444f2e4c940e&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656933940&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "550ced93c6975de8701ae3c6",
+            "source": "",
+            "time": 1784656933893,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401740120112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=550ced93c6975de8701ae3c6&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401740120112&time=1784656933893&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "550ced93c6975de8701ae3c6",
+            "source": "",
+            "time": 1784656933889
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=550ced93c6975de8701ae3c6&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656933889&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "95bc238afb059ac167e9fa12",
+            "source": "",
+            "time": 1784656933850,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741401112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=95bc238afb059ac167e9fa12&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741401112&time=1784656933850&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "95bc238afb059ac167e9fa12",
+            "source": "",
+            "time": 1784656933847
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=95bc238afb059ac167e9fa12&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656933847&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "a5174ea45ff9b258fe8d3e9",
+            "source": "",
+            "time": 1784656933793,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741496112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=a5174ea45ff9b258fe8d3e9&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741496112&time=1784656933793&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "a5174ea45ff9b258fe8d3e9",
+            "source": "",
+            "time": 1784656933785
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=a5174ea45ff9b258fe8d3e9&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656933785&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.33.0/prebid.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {
+            "cb": 31099834
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202607200101/pubads_impl.js?cb=31099834"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/f9e927a5-566b-407b-9981-f1a7781b71ab/10s/master.m3u8?fastly_token=NmE2MDAzNmJfZTEwYjI1OWIwMmVlYjNkZjU4ZTczZTdlZjNhZjY2ZjVjOWY0ZGVmZjU3MDc4NmNhOTMxM2FjNjU2MmVlMGEzZg%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401741496112",
+            "seq": "4_0",
+            "session": "c0f119f0c09b9eeeb00984f",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656930527,
+            "video": 6401741496112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 170,
+            "video_name": "Mucho baile, fiesta y dos millones de personas entregadas a los campeones del mundo"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=c0f119f0c09b9eeeb00984f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656930527&event=video_impression&video=6401741496112&video_name=Mucho%20baile%2C%20fiesta%20y%20dos%20millones%20de%20personas%20entregadas%20a%20los%20campeones%20del%20mundo&reference_id=abc-6401741496112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=170&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2Ff9e927a5-566b-407b-9981-f1a7781b71ab%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAzNmJfZTEwYjI1OWIwMmVlYjNkZjU4ZTczZTdlZjNhZjY2ZjVjOWY0ZGVmZjU3MDc4NmNhOTMxM2FjNjU2MmVlMGEzZg%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/79501589-9cd8-448d-b11f-e5cfacf49383/10s/master.m3u8?fastly_token=NmE2MDAyNjNfYjk0NGEzMjMyNGZiMzAyODM3MjNkN2NkM2NkNzhhNGY0Y2I5ZjIyNjlkZDk2MDQ1YzJlYWI2OGJmZjJjNTM1ZA%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401739922112",
+            "seq": "4_0",
+            "session": "caca558817ec8bc56cdad3a",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656930497,
+            "video": 6401739922112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 61,
+            "video_name": "Isabel Aaiún tiene que huir con sus caballos por la proximidad del incendio en Segovia"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=caca558817ec8bc56cdad3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656930497&event=video_impression&video=6401739922112&video_name=Isabel%20Aai%C3%BAn%20tiene%20que%20huir%20con%20sus%20caballos%20por%20la%20proximidad%20del%20incendio%20en%20Segovia&reference_id=abc-6401739922112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=61&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F79501589-9cd8-448d-b11f-e5cfacf49383%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAyNjNfYjk0NGEzMjMyNGZiMzAyODM3MjNkN2NkM2NkNzhhNGY0Y2I5ZjIyNjlkZDk2MDQ1YzJlYWI2OGJmZjJjNTM1ZA%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/887dd3a7-822b-49e1-a96e-bc708cdf8886/10s/master.m3u8?fastly_token=NmE2MDAyYTVfNWUyNTBiOGJlNTY1NDgwYTgzZWFkNTgxZmYwMGE2NmJjOWRmNjIzNGU4NGJkYzFhYThjZjk0NWIwY2VhOGIyMw%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401741401112",
+            "seq": "4_0",
+            "session": "1cf56bf737b613808ca77b4f",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656930465,
+            "video": 6401741401112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 45,
+            "video_name": "«Al partir un beso y una flor», la imagen que resume la unión de los españols por el Mundial"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=1cf56bf737b613808ca77b4f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656930465&event=video_impression&video=6401741401112&video_name=%C2%ABAl%20partir%20un%20beso%20y%20una%20flor%C2%BB%2C%20la%20imagen%20que%20resume%20la%20uni%C3%B3n%20de%20los%20espa%C3%B1ols%20por%20el%20Mundial&reference_id=abc-6401741401112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=45&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F887dd3a7-822b-49e1-a96e-bc708cdf8886%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAyYTVfNWUyNTBiOGJlNTY1NDgwYTgzZWFkNTgxZmYwMGE2NmJjOWRmNjIzNGU4NGJkYzFhYThjZjk0NWIwY2VhOGIyMw%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "custom_fields": "[object Object]",
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "video_impression",
+            "media_type": "video",
+            "media_url": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/55814260001/66613dcf-5c0e-49bf-99ca-97a76ea87ae0/10s/master.m3u8?fastly_token=NmE2MDAxZWNfZWY1MmI4YjliM2Y1MWQ4NDdhMzIxNjA5MjRjMjI2OThlYjU0ODI5ZWE0ZmE5ZDgzMWFhZjE5NDg1MGJkZTA2OA%3D%3D",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "preload": "none",
+            "qos.content.sourceMimeType": "application/vnd.apple.mpegurl",
+            "reference_id": "abc-6401740120112",
+            "seq": "4_0",
+            "session": "8ad00e629b8c973b95a5ad09",
+            "source": "",
+            "tags": "x:no_publicar",
+            "time": 1784656930434,
+            "video": 6401740120112,
+            "video_ads_supported": false,
+            "video_data": "[object Object]",
+            "video_duration": 19,
+            "video_name": "El cambio de 'look' de Vinicius tras la eliminación de Brasil en el Mundial"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=8ad00e629b8c973b95a5ad09&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&media_type=video&time=1784656930434&event=video_impression&video=6401740120112&video_name=El%20cambio%20de%20%27look%27%20de%20Vinicius%20tras%20la%20eliminaci%C3%B3n%20de%20Brasil%20en%20el%20Mundial&reference_id=abc-6401740120112&custom_fields=%5Bobject%20Object%5D&video_data=%5Bobject%20Object%5D&video_ads_supported=false&tags=x%3Ano_publicar&video_duration=19&media_url=https%3A%2F%2Fmanifest.prod.boltdns.net%2Fmanifest%2Fv1%2Fhls%2Fv4%2Fclear%2F55814260001%2F66613dcf-5c0e-49bf-99ca-97a76ea87ae0%2F10s%2Fmaster.m3u8%3Ffastly_token%3DNmE2MDAxZWNfZWY1MmI4YjliM2Y1MWQ4NDdhMzIxNjA5MjRjMjI2OThlYjU0ODI5ZWE0ZmE5ZDgzMWFhZjE5NDg1MGJkZTA2OA%253D%253D&qos.content.sourceMimeType=application%2Fvnd.apple.mpegurl&seq=4_0&preload=none"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 874,
+            "seq": 3,
+            "session": "c0f119f0c09b9eeeb00984f",
+            "source": "",
+            "time": 1784656930078,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741496112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=c0f119f0c09b9eeeb00984f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741496112&time=1784656930078&seq=3&response_time_ms=874"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 489,
+            "seq": 3,
+            "session": "caca558817ec8bc56cdad3a",
+            "source": "",
+            "time": 1784656929944,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401739922112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=caca558817ec8bc56cdad3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401739922112&time=1784656929944&seq=3&response_time_ms=489"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 630,
+            "seq": 3,
+            "session": "1cf56bf737b613808ca77b4f",
+            "source": "",
+            "time": 1784656929939,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741401112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=1cf56bf737b613808ca77b4f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741401112&time=1784656929939&seq=3&response_time_ms=630"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_response",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "response_time_ms": 550,
+            "seq": 3,
+            "session": "8ad00e629b8c973b95a5ad09",
+            "source": "",
+            "time": 1784656929927,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401740120112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=8ad00e629b8c973b95a5ad09&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&event=catalog_response&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401740120112&time=1784656929927&seq=3&response_time_ms=550"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656929509,
+            "qos.performance.bcInit": 277,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 22167317,
+            "qos.performance.memory.usedJSHeapSize": 11777373,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656923114,
+            "qos.performance.timing.connectStart": 1784656922827,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656923255,
+            "qos.performance.timing.domainLookupEnd": 1784656922827,
+            "qos.performance.timing.domainLookupStart": 1784656922827,
+            "qos.performance.timing.fetchStart": 1784656922806,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656922799,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656923114,
+            "qos.performance.timing.responseEnd": 1784656923490,
+            "qos.performance.timing.responseStart": 1784656923205,
+            "qos.performance.timing.secureConnectionStart": 1784656922932,
+            "qos.performance.timing.unloadEventEnd": 0,
+            "qos.performance.timing.unloadEventStart": 0,
+            "qos.player.dimensions": [
+              [
+                1784656929666,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656929666,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656929666,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "caca558817ec8bc56cdad3a",
+            "source": "",
+            "time": 1784656929668,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=caca558817ec8bc56cdad3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656929668&qos.events.content.volumechange=1784656929509&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=11777373&qos.performance.memory.totalJSHeapSize=22167317&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656923255&qos.performance.timing.responseEnd=1784656923490&qos.performance.timing.responseStart=1784656923205&qos.performance.timing.requestStart=1784656923114&qos.performance.timing.secureConnectionStart=1784656922932&qos.performance.timing.connectEnd=1784656923114&qos.performance.timing.connectStart=1784656922827&qos.performance.timing.domainLookupEnd=1784656922827&qos.performance.timing.domainLookupStart=1784656922827&qos.performance.timing.fetchStart=1784656922806&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=0&qos.performance.timing.unloadEventStart=0&qos.performance.timing.navigationStart=1784656922799&qos.performance.bcInit=277&qos.player.dimensions=%5B%5B1784656929666%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656929666%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656929666%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656929505,
+            "qos.performance.bcInit": 249.19999999995343,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 20592076,
+            "qos.performance.memory.usedJSHeapSize": 10094724,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656923114,
+            "qos.performance.timing.connectStart": 1784656922827,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656923255,
+            "qos.performance.timing.domainLookupEnd": 1784656922827,
+            "qos.performance.timing.domainLookupStart": 1784656922827,
+            "qos.performance.timing.fetchStart": 1784656922806,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656922799,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656923114,
+            "qos.performance.timing.responseEnd": 1784656923490,
+            "qos.performance.timing.responseStart": 1784656923205,
+            "qos.performance.timing.secureConnectionStart": 1784656922932,
+            "qos.performance.timing.unloadEventEnd": 0,
+            "qos.performance.timing.unloadEventStart": 0,
+            "qos.player.dimensions": [
+              [
+                1784656929645,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656929645,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656929645,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "8ad00e629b8c973b95a5ad09",
+            "source": "",
+            "time": 1784656929647,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=8ad00e629b8c973b95a5ad09&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656929647&qos.events.content.volumechange=1784656929505&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=10094724&qos.performance.memory.totalJSHeapSize=20592076&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656923255&qos.performance.timing.responseEnd=1784656923490&qos.performance.timing.responseStart=1784656923205&qos.performance.timing.requestStart=1784656923114&qos.performance.timing.secureConnectionStart=1784656922932&qos.performance.timing.connectEnd=1784656923114&qos.performance.timing.connectStart=1784656922827&qos.performance.timing.domainLookupEnd=1784656922827&qos.performance.timing.domainLookupStart=1784656922827&qos.performance.timing.fetchStart=1784656922806&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=0&qos.performance.timing.unloadEventStart=0&qos.performance.timing.navigationStart=1784656922799&qos.performance.bcInit=249.19999999995343&qos.player.dimensions=%5B%5B1784656929645%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656929645%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656929645%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656929504,
+            "qos.performance.bcInit": 233.5999999998603,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 20592076,
+            "qos.performance.memory.usedJSHeapSize": 10094724,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656923114,
+            "qos.performance.timing.connectStart": 1784656922827,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656923255,
+            "qos.performance.timing.domainLookupEnd": 1784656922827,
+            "qos.performance.timing.domainLookupStart": 1784656922827,
+            "qos.performance.timing.fetchStart": 1784656922806,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656922799,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656923114,
+            "qos.performance.timing.responseEnd": 1784656923490,
+            "qos.performance.timing.responseStart": 1784656923205,
+            "qos.performance.timing.secureConnectionStart": 1784656922932,
+            "qos.performance.timing.unloadEventEnd": 0,
+            "qos.performance.timing.unloadEventStart": 0,
+            "qos.player.dimensions": [
+              [
+                1784656929621,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656929621,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656929621,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "1cf56bf737b613808ca77b4f",
+            "source": "",
+            "time": 1784656929623,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=1cf56bf737b613808ca77b4f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656929623&qos.events.content.volumechange=1784656929504&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=10094724&qos.performance.memory.totalJSHeapSize=20592076&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656923255&qos.performance.timing.responseEnd=1784656923490&qos.performance.timing.responseStart=1784656923205&qos.performance.timing.requestStart=1784656923114&qos.performance.timing.secureConnectionStart=1784656922932&qos.performance.timing.connectEnd=1784656923114&qos.performance.timing.connectStart=1784656922827&qos.performance.timing.domainLookupEnd=1784656922827&qos.performance.timing.domainLookupStart=1784656922827&qos.performance.timing.fetchStart=1784656922806&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=0&qos.performance.timing.unloadEventStart=0&qos.performance.timing.navigationStart=1784656922799&qos.performance.bcInit=233.5999999998603&qos.player.dimensions=%5B%5B1784656929621%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656929621%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656929621%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "ads_enabled": false,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_load",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "qos.events.content.volumechange": 1784656929500,
+            "qos.performance.memory.jsHeapSizeLimit": 4294705152,
+            "qos.performance.memory.totalJSHeapSize": 20592076,
+            "qos.performance.memory.usedJSHeapSize": 10094724,
+            "qos.performance.navigation.directedMigration": false,
+            "qos.performance.navigation.redirectCount": 0,
+            "qos.performance.navigation.type": 0,
+            "qos.performance.timing.connectEnd": 1784656923114,
+            "qos.performance.timing.connectStart": 1784656922827,
+            "qos.performance.timing.domComplete": 0,
+            "qos.performance.timing.domContentLoadedEventEnd": 0,
+            "qos.performance.timing.domContentLoadedEventStart": 0,
+            "qos.performance.timing.domInteractive": 0,
+            "qos.performance.timing.domLoading": 1784656923255,
+            "qos.performance.timing.domainLookupEnd": 1784656922827,
+            "qos.performance.timing.domainLookupStart": 1784656922827,
+            "qos.performance.timing.fetchStart": 1784656922806,
+            "qos.performance.timing.loadEventEnd": 0,
+            "qos.performance.timing.loadEventStart": 0,
+            "qos.performance.timing.navigationStart": 1784656922799,
+            "qos.performance.timing.redirectEnd": 0,
+            "qos.performance.timing.redirectStart": 0,
+            "qos.performance.timing.requestStart": 1784656923114,
+            "qos.performance.timing.responseEnd": 1784656923490,
+            "qos.performance.timing.responseStart": 1784656923205,
+            "qos.performance.timing.secureConnectionStart": 1784656922932,
+            "qos.performance.timing.unloadEventEnd": 0,
+            "qos.performance.timing.unloadEventStart": 0,
+            "qos.player.dimensions": [
+              [
+                1784656929596,
+                "0x0",
+                "375x812"
+              ]
+            ],
+            "qos.player.pixelratio": [
+              [
+                1784656929596,
+                3
+              ]
+            ],
+            "qos.player.screendimensions": [
+              [
+                1784656929596,
+                "375x812"
+              ]
+            ],
+            "seq": 2,
+            "session": "c0f119f0c09b9eeeb00984f",
+            "source": "",
+            "time": 1784656929598,
+            "usage": "vocEvents!,vocReels!,inpage-embed"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=c0f119f0c09b9eeeb00984f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&autoplay=false&ads_enabled=false&usage=vocEvents!%2CvocReels!%2Cinpage-embed&event=player_load&time=1784656929598&qos.events.content.volumechange=1784656929500&qos.performance.memory.jsHeapSizeLimit=4294705152&qos.performance.memory.usedJSHeapSize=10094724&qos.performance.memory.totalJSHeapSize=20592076&qos.performance.navigation.redirectCount=0&qos.performance.navigation.type=0&qos.performance.navigation.directedMigration=false&qos.performance.timing.loadEventEnd=0&qos.performance.timing.loadEventStart=0&qos.performance.timing.domComplete=0&qos.performance.timing.domContentLoadedEventEnd=0&qos.performance.timing.domContentLoadedEventStart=0&qos.performance.timing.domInteractive=0&qos.performance.timing.domLoading=1784656923255&qos.performance.timing.responseEnd=1784656923490&qos.performance.timing.responseStart=1784656923205&qos.performance.timing.requestStart=1784656923114&qos.performance.timing.secureConnectionStart=1784656922932&qos.performance.timing.connectEnd=1784656923114&qos.performance.timing.connectStart=1784656922827&qos.performance.timing.domainLookupEnd=1784656922827&qos.performance.timing.domainLookupStart=1784656922827&qos.performance.timing.fetchStart=1784656922806&qos.performance.timing.redirectEnd=0&qos.performance.timing.redirectStart=0&qos.performance.timing.unloadEventEnd=0&qos.performance.timing.unloadEventStart=0&qos.performance.timing.navigationStart=1784656922799&qos.player.dimensions=%5B%5B1784656929596%2C%220x0%22%2C%22375x812%22%5D%5D&qos.player.pixelratio=%5B%5B1784656929596%2C3%5D%5D&qos.player.screendimensions=%5B%5B1784656929596%2C%22375x812%22%5D%5D&seq=2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "caca558817ec8bc56cdad3a",
+            "source": "",
+            "time": 1784656929455,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401739922112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=caca558817ec8bc56cdad3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401739922112&time=1784656929455&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "caca558817ec8bc56cdad3a",
+            "source": "",
+            "time": 1784656929451
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=caca558817ec8bc56cdad3a&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656929451&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "8ad00e629b8c973b95a5ad09",
+            "source": "",
+            "time": 1784656929377,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401740120112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=8ad00e629b8c973b95a5ad09&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401740120112&time=1784656929377&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "8ad00e629b8c973b95a5ad09",
+            "source": "",
+            "time": 1784656929371
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=8ad00e629b8c973b95a5ad09&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656929371&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "1cf56bf737b613808ca77b4f",
+            "source": "",
+            "time": 1784656929309,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741401112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=1cf56bf737b613808ca77b4f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741401112&time=1784656929309&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "1cf56bf737b613808ca77b4f",
+            "source": "",
+            "time": 1784656929305
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=1cf56bf737b613808ca77b4f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656929305&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "catalog_request",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 1,
+            "session": "c0f119f0c09b9eeeb00984f",
+            "source": "",
+            "time": 1784656929205,
+            "url": "https://edge.api.brightcove.com/playback/v1/accounts/55814260001/videos/ref%3Aabc-6401741496112"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=c0f119f0c09b9eeeb00984f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=catalog_request&url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback%2Fv1%2Faccounts%2F55814260001%2Fvideos%2Fref%253Aabc-6401741496112&time=1784656929205&autoplay=false&seq=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||metrics.brightcove.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "account": 55814260001,
+            "autoplay": false,
+            "destination": "https://www.abc.es/",
+            "domain": "videocloud",
+            "event": "player_init",
+            "platform": "video-js",
+            "platform_version": "7.42.4",
+            "player": "players.brightcove.com/55814260001/8WkPPcv56h_default",
+            "player_mode": "media",
+            "player_name": "Player abc REELS (NO AD)",
+            "seq": 0,
+            "session": "c0f119f0c09b9eeeb00984f",
+            "source": "",
+            "time": 1784656929182
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://metrics.brightcove.com/v2/tracker?domain=videocloud&platform=video-js&session=c0f119f0c09b9eeeb00984f&player_mode=media&account=55814260001&destination=https%3A%2F%2Fwww.abc.es%2F&platform_version=7.42.4&player=players.brightcove.com%2F55814260001%2F8WkPPcv56h_default&player_name=Player%20abc%20REELS%20(NO%20AD)&source=&event=player_init&time=1784656929182&autoplay=false&seq=0"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/prebid.$domain=~prebid.org",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.abc.es/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.vocstatic.com/vam/7.33.0/prebid.js"
+      }
+    ]
+  }
+}

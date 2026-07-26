@@ -15,6 +15,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
+from normativas import grafico_normativas, CSS_NORMATIVAS
+
 REQUISITOS = [f"R{i}" for i in range(1, 20)]
 
 NOMBRES_REQ: dict[str, str] = {
@@ -139,6 +141,49 @@ def _tarjetas_resumen(resultados_batch: dict) -> str:
         for lbl, val, c, bg in tarjetas
     )
     return f'<div class="cards">{items}</div>'
+
+
+def _resumen_bloqueos(resultados_batch: dict) -> str:
+    """
+    Sección con los sitios inaccesibles por sistemas anti-bot, desglosados por
+    sistema. Permite cuantificar qué parte de la muestra queda fuera de alcance
+    y distinguirlo de los sitios que sí se midieron y fallaron.
+    """
+    por_sistema: dict[str, list[str]] = {}
+    for url, res in resultados_batch.items():
+        bloqueo = (res.get("_meta") or {}).get("bloqueo")
+        if bloqueo:
+            por_sistema.setdefault(bloqueo.get("sistema", "Desconocido"), []).append(
+                _dominio(url))
+
+    n_bloqueados = sum(len(v) for v in por_sistema.values())
+    n_total      = len(resultados_batch)
+    if not n_bloqueados:
+        return ""
+
+    filas = "".join(
+        f'<tr><td class="bl-sistema">{sistema}</td>'
+        f'<td class="bl-num">{len(dominios)}</td>'
+        f'<td class="bl-sitios">{", ".join(sorted(dominios))}</td></tr>'
+        for sistema, dominios in sorted(por_sistema.items(),
+                                        key=lambda kv: -len(kv[1]))
+    )
+    pct = n_bloqueados / n_total * 100 if n_total else 0
+
+    return f"""
+<div class="bloqueos-wrap">
+  <p class="bl-intro">
+    <strong>{n_bloqueados} de {n_total} sitios ({pct:.0f}%)</strong> sirvieron una
+    página de verificación anti-bot en lugar de su contenido real. En ellos, los
+    requisitos que dependen de la política de privacidad o del banner de cookies
+    figuran como <em>sin dato</em>: no han podido medirse en este entorno, lo que
+    <strong>no implica que el sitio los incumpla</strong>.
+  </p>
+  <table class="bl-tabla">
+    <thead><tr><th>Sistema</th><th>Sitios</th><th>Dominios afectados</th></tr></thead>
+    <tbody>{filas}</tbody>
+  </table>
+</div>"""
 
 
 def _grafico_donut(resultados_batch: dict) -> str:
@@ -326,6 +371,16 @@ def generar_informe_batch(resultados_batch: dict, ruta_salida: str) -> None:
     barras_req  = _barras_por_requisito(resultados_batch)
     barras_sit  = _barras_por_sitio(resultados_batch)
     matriz    = _matriz(resultados_batch)
+    bloqueos  = _resumen_bloqueos(resultados_batch)
+    bloqueos_seccion = (f'<h2>Sitios inaccesibles por anti-bot</h2>{bloqueos}'
+                        if bloqueos else '')
+
+    # Cumplimiento agregado por normativa: un par por cada sitio × requisito
+    normativas = grafico_normativas([
+        (req, _veredicto(res, req))
+        for res in resultados_batch.values()
+        for req in REQUISITOS
+    ])
 
     html = f"""<!DOCTYPE html>
 <html lang="es">
@@ -361,8 +416,18 @@ def generar_informe_batch(resultados_batch: dict, ruta_salida: str) -> None:
   /* Leyenda */
   .leyenda{{display:flex;flex-wrap:wrap;gap:10px}}
   .leyenda.mb{{margin-bottom:14px}}
+  .bloqueos-wrap{{margin:10px 0 4px}}
+  .bl-intro{{font-size:13px;color:#57606a;line-height:1.6;max-width:820px;margin-bottom:12px}}
+  .bl-tabla{{border-collapse:collapse;font-size:13px}}
+  .bl-tabla th{{text-align:left;padding:6px 14px 6px 0;color:#57606a;
+                font-weight:600;border-bottom:1px solid #d0d7de}}
+  .bl-tabla td{{padding:6px 14px 6px 0;border-bottom:1px solid #eaeef2;vertical-align:top}}
+  .bl-sistema{{font-weight:600;color:#24292f;white-space:nowrap}}
+  .bl-num{{text-align:right;font-variant-numeric:tabular-nums}}
+  .bl-sitios{{color:#57606a}}
   .leg-item{{display:flex;align-items:center;gap:5px;font-size:12px}}
   .leg-dot{{width:12px;height:12px;border-radius:50%;flex-shrink:0}}
+{CSS_NORMATIVAS}
 
   /* Barras */
   .bar-chart{{display:flex;flex-direction:column;gap:7px}}
@@ -401,11 +466,16 @@ def generar_informe_batch(resultados_batch: dict, ruta_salida: str) -> None:
   {tarjetas}
   {donut}
 
+  <h2>Cumplimiento por normativa</h2>
+  {normativas}
+
   <h2>Análisis por requisito</h2>
   {barras_req}
 
   <h2>Análisis por sitio</h2>
   {barras_sit}
+
+  {bloqueos_seccion}
 
   <h2>Matriz completa</h2>
   {matriz}

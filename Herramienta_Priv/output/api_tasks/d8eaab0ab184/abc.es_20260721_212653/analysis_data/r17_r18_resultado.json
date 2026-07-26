@@ -1,0 +1,28 @@
+{
+  "sitio": "abc.es",
+  "r17": {
+    "veredicto": "FAILED",
+    "redirect_http": {
+      "estado": "FAILED",
+      "status_code": 301,
+      "location": "http://www.abc.es/",
+      "motivo": "Redirección 301 pero el destino NO es HTTPS: http://www.abc.es/"
+    },
+    "hsts": {
+      "presente": true,
+      "max_age": 31557600,
+      "include_subdomains": true,
+      "preload": false,
+      "estado": "PASSED",
+      "motivo": "HSTS correctamente configurado"
+    }
+  },
+  "r18": {
+    "veredicto": "FAILED",
+    "modo": null,
+    "valor": null,
+    "directivas_problematicas": [],
+    "directivas_faltantes": [],
+    "motivo": "Cabecera Content-Security-Policy ausente"
+  }
+}

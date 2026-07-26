@@ -227,7 +227,7 @@ def imprimir_reporte(resultados: list[dict]):
     print("=" * 60)
 
 
-def guardar_json(resultados: list[dict], ruta: str = str(Path(__file__).resolve().parents[1] / "analysis_data/r9_resultado.json")):
+def guardar_json(resultados: list[dict], ruta: str = str(Path(os.getenv("ANALYSIS_DATA_DIR", str(Path(__file__).resolve().parents[1] / "analysis_data"))) / "r9_resultado.json")):
     with open(ruta, "w", encoding="utf-8") as f:
         json.dump(resultados, f, ensure_ascii=False, indent=2)
     print(f"\n💾 Resultado guardado en: {ruta}")

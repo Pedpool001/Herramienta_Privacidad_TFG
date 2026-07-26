@@ -1,11 +1,11 @@
 {
-  "sitio": "rtve.es",
+  "sitio": "marca.com",
   "r17": {
     "veredicto": "WARNING",
     "redirect_http": {
       "estado": "PASSED",
       "status_code": 301,
-      "location": "https://www.rtve.es/",
+      "location": "https://marca.com/",
       "motivo": "Redirección 301 permanente a HTTPS"
     },
     "hsts": {

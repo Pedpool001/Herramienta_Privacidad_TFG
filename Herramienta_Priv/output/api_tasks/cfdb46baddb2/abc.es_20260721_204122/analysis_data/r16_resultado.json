@@ -1,0 +1,166 @@
+{
+  "sitio": "webxray",
+  "veredicto": "FAILED",
+  "evaluacion": {
+    "estado": "FAILED",
+    "detalle": "De 21 dominios de terceros, 16 tienen propietario identificado que NO está declarado en la política de privacidad: iDalgo, Adobe Experience Cloud, Integral Ad Science, AdSense (+9 más). RGPD Art. 13/14 exige informar de todos los destinatarios."
+  },
+  "hallazgos": {
+    "actores_declarados": [],
+    "dominios_analizados": 21,
+    "declarados": [],
+    "no_declarados_identificados": [
+      {
+        "dominio": "adobedtm.com",
+        "nombres_entidad": [
+          "Adobe Experience Cloud",
+          "Adobe Systems"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "adsafeprotected.com",
+        "nombres_entidad": [
+          "Integral Ad Science"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "amazon-adsystem.com",
+        "nombres_entidad": [
+          "Amazon Marketing Services",
+          "Amazon"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "demdex.net",
+        "nombres_entidad": [
+          "Adobe Audience Manager",
+          "Adobe Experience Cloud",
+          "Adobe Systems"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "doubleclick.net",
+        "nombres_entidad": [
+          "DoubleClick",
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "everesttech.net",
+        "nombres_entidad": [
+          "Adobe Experience Cloud",
+          "Adobe Systems"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "facebook.net",
+        "nombres_entidad": [
+          "Facebook"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "google.com",
+        "nombres_entidad": [
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "googlesyndication.com",
+        "nombres_entidad": [
+          "AdSense",
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "idalgo-hosting.com",
+        "nombres_entidad": [
+          "iDalgo"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "mrf.io",
+        "nombres_entidad": [
+          "Marfeel Solutions, S.L.",
+          "Marfeel"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "newrelic.com",
+        "nombres_entidad": [
+          "New Relic"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "nr-data.net",
+        "nombres_entidad": [
+          "New Relic"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "privacy-center.org",
+        "nombres_entidad": [
+          "Didomi"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "sensic.net",
+        "nombres_entidad": [
+          "GfK"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "gstatic.com",
+        "nombres_entidad": [
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      }
+    ],
+    "no_declarados_sin_owner": [
+      {
+        "dominio": "abcstatics.com",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "evolok.net",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "newsroom.bi",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "vocstatic.com",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "wemass.com",
+        "fuente": "ninguna",
+        "nombres": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sitio": "decathlon.es",
+  "veredicto": "PASSED",
+  "resumen_cookies": {
+    "PASSED": 1,
+    "WARNING": 0,
+    "FAILED": 0
+  },
+  "total_ls_terceros": 0,
+  "cookies": [
+    {
+      "nombre": "__cf_bm",
+      "dominio": "www.decathlon.es",
+      "dias": 0.02,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Cloudflare",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    }
+  ],
+  "local_storage": []
+}

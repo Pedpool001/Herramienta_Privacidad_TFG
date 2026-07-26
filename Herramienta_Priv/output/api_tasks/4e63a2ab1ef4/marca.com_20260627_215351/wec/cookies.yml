@@ -1,0 +1,1282 @@
+- name: _ga_V1WMLM3DL4
+  value: GS2.1.s1782590059$o1$g1$t1782590076$j43$l0$h0
+  domain: marca.com
+  path: /
+  expires: 1817150076.50668
+  size: 59
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:36.506Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 268
+        lineNumber: 425
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1
+        functionName: Hq
+        source: '    at Hq (https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1:425:268)'
+      - columnNumber: 239
+        lineNumber: 427
+        fileName: >-
+          https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1
+        functionName: Iq
+        source: '    at Iq (https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1:427:239)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _ga
+  value: GA1.2.1258977966.1782590060
+  domain: marca.com
+  path: /
+  expires: 1817150073.298587
+  size: 30
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:33.298Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 15
+        lineNumber: 70
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: ma
+        source: '    at ma (https://www.google-analytics.com/analytics.js:70:15)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ue_privacyPolicy
+  value: '22'
+  domain: marca.com
+  path: /
+  expires: 1817150056.270067
+  size: 18
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:16.270Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 4492
+        lineNumber: 1
+        fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+        functionName: 'y'
+        source: '    at y (https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:4492)'
+      - columnNumber: 20024
+        lineNumber: 1
+        fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+        functionName: H.ge
+        source: '    at H.ge (https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:20024)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: MARCA_edition
+  value: '%7B%22e%22%3A%22n%22%2C%22v%22%3A3%7D'
+  domain: marca.com
+  path: /
+  expires: 1817150055.376215
+  size: 50
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:15.376Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: UE_pref
+  value: >-
+    %7B%22v%22%3A%22n%22%2C%22d%22%3A%22e%22%2C%22u%22%3A0%2C%22c%22%3A%224%22%7D
+  domain: marca.com
+  path: /
+  expires: 1817150055.375241
+  size: 84
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:15.375Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: MARCA_idusr
+  value: akAqZwoAAnAAAABfTeE-cea35b9dd85a1e09e47f99535720ef7f
+  domain: marca.com
+  path: /
+  expires: 1817150055.374119
+  size: 63
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-01T19:54:15.374Z
+  expiresDays: 400
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.marca.com/ue-cdn/services/cdn_cookie_service.html
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: FCCDCF
+  value: >-
+    %5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22cc9bc3e7-3557-471d-9ca8-9333aec60cc1%5C%22%2C%5B1782590057%2C137000000%5D%5D%22%5D%5D%5D
+  domain: marca.com
+  path: /
+  expires: 1816286057
+  size: 162
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-22T19:54:17.000Z
+  expiresDays: 390
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable
+        functionName: _.wg
+        source: '    at _.wg (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: didomi_token
+  value: >-
+    eyJ1c2VyX2lkIjoiMTlmMGFhNWEtNzNhNy02YWZiLTk4OGMtNDc2YzRlOGQ0YTRlIiwiY3JlYXRlZCI6IjIwMjYtMDYtMjdUMTk6NTQ6MTYuMjUwWiIsInVwZGF0ZWQiOiIyMDI2LTA2LTI3VDE5OjU0OjE2LjI1OFoiLCJ2ZXJzaW9uIjpudWxsfQ==
+  domain: marca.com
+  path: /
+  expires: 1814212456
+  size: 200
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-28T19:54:16.000Z
+  expiresDays: 366
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 240624
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js
+        functionName: a
+        source: '    at a (https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js:2:240624)'
+      - columnNumber: 140786
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js
+        functionName: h
+        source: '    at h (https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js:2:140786)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: user_consent_policy
+  value: no choice
+  domain: marca.com
+  path: /
+  expires: 1814126076
+  size: 28
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:36.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 106
+        lineNumber: 599
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:599:106)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: user_consent_gam
+  value: no choice
+  domain: marca.com
+  path: /
+  expires: 1814126076
+  size: 25
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:36.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 106
+        lineNumber: 601
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:601:106)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: utag_main
+  value: >-
+    v_id:019f0aa5acd400111a2485c4c88705065001605d00590$_sn:1$_se:7$_ss:0$_st:1782591876453$ses_id:1782590057711%3Bexp-session$_pn:2%3Bexp-session
+  domain: marca.com
+  path: /
+  expires: 1814126076
+  size: 150
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:36.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 16
+        lineNumber: 48
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.SC
+        source: '    at Object.SC (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:48:16)'
+      - columnNumber: 86
+        lineNumber: 31
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RDses
+        source: '    at Object.RDses (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:31:86)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _ce.s
+  value: lcw~1782590074197
+  domain: marca.com
+  path: /
+  expires: 1814126074
+  size: 22
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Strict
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:34.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 167958
+        lineNumber: 2
+        fileName: >-
+          https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js
+        functionName: Object.write
+        source: '    at Object.write (https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js:2:167958)'
+      - columnNumber: 161828
+        lineNumber: 2
+        fileName: >-
+          https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js
+        functionName: S
+        source: '    at S (https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js:2:161828)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: FCNEC
+  value: >-
+    %5B%5B%22AKsRol_2fyivXmeJn4xbraCqNwoJ9LVreyjgl34i9UrernCdUOOFeroNMiOu5B3ZIrCDuOY2TvE3dTIITl4Ina90LHymqCeJXVwwZQpwgCNiabXTwteeS8rpF7_i81PL21b19l6BFV4kg9RmfhSwNr-hw-3eckU24g%3D%3D%22%5D%5D
+  domain: marca.com
+  path: /
+  expires: 1814126074
+  size: 191
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:34.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable
+        functionName: _.wg
+        source: '    at _.wg (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _hjSessionUser_413277
+  value: >-
+    eyJpZCI6IjFkZjNkNmE4LTkwM2YtNWQ1MC05ZDdjLWNmNGM4ZTFjNWRjMyIsImNyZWF0ZWQiOjE3ODI1OTAwNjA4MDAsImV4aXN0aW5nIjp0cnVlfQ==
+  domain: marca.com
+  path: /
+  expires: 1814126073
+  size: 137
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:33.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 231283
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        functionName: Object.o [as set]
+        source: '    at Object.o [as set] (https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:231283)'
+      - columnNumber: 212417
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        functionName: u._setCookie
+        source: '    at u._setCookie (https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:212417)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: channelcloser
+  value: directo
+  domain: marca.com
+  path: /
+  expires: 1814126072
+  size: 20
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:32.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 48
+        lineNumber: 506
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:506:48)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: channeloriginator
+  value: directo
+  domain: marca.com
+  path: /
+  expires: 1814126057
+  size: 24
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:17.000Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 181
+        lineNumber: 505
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:505:181)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: apw_cache
+  value: >-
+    6f869f52-75ea-4c6a-8a3a-16a691cc538b.1782590048.QRNrFQ.ES.0...0.0..0.fTLR41cPc2Nh2cKRMtXPkj8N1mE9BVqcdh5JQ4Tv1bw
+  domain: marca.com
+  path: /
+  expires: 1814126048.410342
+  size: 121
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-06-27T19:54:08.410Z
+  expiresDays: 365
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.marca.com/apw.js?v=3
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.marca.com/apw.js?v=3
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: __Secure-ROLLOUT_TOKEN
+  value: CMCZrszgudCTMxCg9eW0maiVAxjH0vG9maiVAw%3D%3D
+  domain: youtube.com
+  path: /
+  expires: 1798142067.312273
+  size: 66
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://marca.com
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-24T19:54:27.312Z
+  expiresDays: 180
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: __Secure-YNID
+  value: >-
+    19.YT=bsZhBkZYFXICjGgJO_LAlLLuEXAU0AKlw55zwEHGKPJFuZ9Fo0eIgkpWlxzPvua9LzvhfnbQ2ttgxonbAAs898enc0OKFFU3dAdOIqNJhBNAb-2cHaJ6eIf25M-qayzx7pKR7EEnVgrm8UOu94qOSkjhnGDfIpCf78C71TXcZjqGPyo-FTh8waMQTM0Q7E5amhHmTAb6bLPZhob_DqQcKSqzVhmaQLq-N25LkLTukJpAUg9lq2uZZoyLl_1Ck-3yaafpkYUbywXRvsZ9XOIClmdMdZXQur9amK8c3hSPA5LpL1UGUbNHlPe_vza-lmDflP3urTCLM0ZUW-idxKEf-A
+  domain: youtube.com
+  path: /
+  expires: 1798142048.307503
+  size: 361
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://marca.com
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-24T19:54:08.307Z
+  expiresDays: 180
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: VISITOR_PRIVACY_METADATA
+  value: CgJFUxIiEh4SHAsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicgWA%3D%3D
+  domain: youtube.com
+  path: /
+  expires: 1798142048.229056
+  size: 84
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://marca.com
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-24T19:54:08.229Z
+  expiresDays: 180
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: VISITOR_INFO1_LIVE
+  value: Bx-wHtWH9vk
+  domain: youtube.com
+  path: /
+  expires: 1798142048.229009
+  size: 29
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://marca.com
+    hasCrossSiteAncestor: true
+  expiresUTC: 2026-12-24T19:54:08.229Z
+  expiresDays: 180
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: utag_clean_done
+  value: '1'
+  domain: www.marca.com
+  path: /
+  expires: 1783194859.119934
+  size: 16
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-04T19:54:19.119Z
+  expiresDays: 7
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 330
+        lineNumber: 670
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:670:330)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: MARCA_suscrp
+  value: suscrip_yes
+  domain: www.marca.com
+  path: /
+  expires: 1782676476
+  size: 23
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-28T19:54:36.000Z
+  expiresDays: 1
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 33
+        lineNumber: 3470
+        fileName: https://www.marca.com/
+        functionName: bandaSuscripcionCookie
+        source: '    at bandaSuscripcionCookie (https://www.marca.com/:3470:33)'
+      - columnNumber: 25
+        lineNumber: 3485
+        fileName: https://www.marca.com/
+        functionName: HTMLDocument.checkSuscription
+        source: '    at HTMLDocument.checkSuscription (https://www.marca.com/:3485:25)'
+    type: Cookie.JS
+  firstPartyStorage: true
+- name: _gid
+  value: GA1.2.47637234.1782590060
+  domain: marca.com
+  path: /
+  expires: 1782676473
+  size: 29
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-28T19:54:33.000Z
+  expiresDays: 1
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 401
+        lineNumber: 69
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: ma
+        source: '    at ma (https://www.google-analytics.com/analytics.js:69:401)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: AMP_TOKEN
+  value: '%24NOT_FOUND'
+  domain: marca.com
+  path: /
+  expires: 1782593661
+  size: 21
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-27T20:54:21.000Z
+  expiresDays: 0.04
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 585
+        lineNumber: 37
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: zc
+        source: '    at zc (https://www.google-analytics.com/analytics.js:37:585)'
+      - columnNumber: 117
+        lineNumber: 43
+        fileName: https://www.google-analytics.com/analytics.js
+        functionName: xc
+        source: '    at xc (https://www.google-analytics.com/analytics.js:43:117)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ue_consentState
+  value: '%7B%22step%22%3A1%7D'
+  domain: marca.com
+  path: /
+  expires: 1782593655.665856
+  size: 35
+  httpOnly: false
+  secure: false
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-27T20:54:15.665Z
+  expiresDays: 0.04
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 49413
+        lineNumber: 1
+        fileName: >-
+          https://objetos.estaticos-marca.com/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js
+        functionName: d.setCookie
+        source: '    at d.setCookie (https://objetos.estaticos-marca.com/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js:1:49413)'
+      - columnNumber: 148278
+        lineNumber: 1
+        fileName: >-
+          https://objetos.estaticos-marca.com/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js
+        functionName: z.handleLastConsentlessStep
+        source: '    at z.handleLastConsentlessStep (https://objetos.estaticos-marca.com/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js:1:148278)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: _hjSession_413277
+  value: >-
+    eyJpZCI6ImJmYTc2YjY5LWRlNWQtNGU4NS1iM2Q0LTg0MmJlMjI1N2YwYSIsImMiOjE3ODI1OTAwNjA4MDQsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=
+  domain: marca.com
+  path: /
+  expires: 1782591860
+  size: 165
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-27T20:24:20.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 231283
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        functionName: Object.o [as set]
+        source: '    at Object.o [as set] (https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:231283)'
+      - columnNumber: 212417
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        functionName: u._setCookie
+        source: '    at u._setCookie (https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:212417)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: counter_page_view
+  value: 2>cont_expires=Sat, 27 Jun 2026 20:24:17 GMT>entryref=directo
+  domain: marca.com
+  path: /
+  expires: 1782591857
+  size: 78
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-27T20:24:17.000Z
+  expiresDays: 0.02
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 220
+        lineNumber: 470
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: updateCookie
+        source: '    at updateCookie (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:470:220)'
+      - columnNumber: 10084
+        lineNumber: 464
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:464:10084)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: channelflow
+  value: directo
+  domain: marca.com
+  path: /
+  expires: 1782590136
+  size: 18
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-06-27T19:55:36.000Z
+  expiresDays: 0
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 1051
+        lineNumber: 508
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:508:1051)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: YSC
+  value: _EpMX22SEag
+  domain: youtube.com
+  path: /
+  expires: -1
+  size: 14
+  httpOnly: true
+  secure: true
+  session: true
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  partitionKey:
+    topLevelSite: https://marca.com
+    hasCrossSiteAncestor: true
+  log:
+    location: https://www.marca.com/
+    stack:
+      - fileName: https://www.youtube.com/iframe_api?ima=1
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.youtube.com/iframe_api?ima=1
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: be_product_content_type_conversion
+  value: portada
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 41
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 385
+        lineNumber: 409
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:409:385)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_section
+  value: portada
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 27
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 2082
+        lineNumber: 464
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:464:2082)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_article_title
+  value: portada
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 33
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 3203
+        lineNumber: 464
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:464:3203)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_newsID
+  value: 8c257d307923b2499acef663
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 43
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 6580
+        lineNumber: 464
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:464:6580)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_entry_referrer
+  value: directo
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 34
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 7746
+        lineNumber: 464
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:464:7746)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_kw_landing_page
+  value: ''
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 28
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  firstPartyStorage: false
+- name: ga4_ses_page_url_qs_landing_page
+  value: https://www.marca.com/
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 54
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 1440
+        lineNumber: 470
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:470:1440)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_page_subsection
+  value: no aplica
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 32
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 2346
+        lineNumber: 508
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:508:2346)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ga4_ses_text_journalist
+  value: no aplica
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 32
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 2961
+        lineNumber: 508
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:508:2961)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: be_logreg_title_conversion​
+  value: portada
+  domain: marca.com
+  path: /
+  expires: -1
+  size: 36
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 1056
+        lineNumber: 636
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: utag.handler.extend
+        source: '    at utag.handler.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:636:1056)'
+      - columnNumber: 24
+        lineNumber: 70
+        fileName: https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js
+        functionName: Object.RE
+        source: '    at Object.RE (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js:70:24)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- domain: www.marca.com
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 125154
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbma.js
+        source: '    at https://e00-elmundo.uecdn.es/js/pbma.js:12:125154'
+      - columnNumber: 123978
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbma.js
+        functionName: 'y'
+        source: '    at y (https://e00-elmundo.uecdn.es/js/pbma.js:12:123978)'
+    type: Cookie.JS
+  name: _rdc1782590058786
+  path: /
+  value: writeable
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true
+- domain: elmundo.es
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 182
+        lineNumber: 8
+        fileName: >-
+          https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.53.js?utv=ut4.48.202606250735
+        functionName: u.extend
+        source: '    at u.extend (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.53.js?utv=ut4.48.202606250735:8:182)'
+      - columnNumber: 1513
+        lineNumber: 8
+        fileName: >-
+          https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.53.js?utv=ut4.48.202606250735
+        functionName: u.send
+        source: '    at u.send (https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.53.js?utv=ut4.48.202606250735:8:1513)'
+    type: Cookie.JS
+  name: user_consent_policy
+  path: /
+  value: no choice
+  expiresDays: 365
+  session: false
+  firstPartyStorage: false
+- domain: 'true'
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 644
+        lineNumber: 112
+        fileName: https://connect.facebook.net/es_ES/bundle/sdk.js/
+        functionName: u
+        source: '    at u (https://connect.facebook.net/es_ES/bundle/sdk.js/:112:644)'
+      - columnNumber: 1001
+        lineNumber: 112
+        fileName: https://connect.facebook.net/es_ES/bundle/sdk.js/
+        functionName: Object.d [as setDomain]
+        source: '    at Object.d [as setDomain] (https://connect.facebook.net/es_ES/bundle/sdk.js/:112:1001)'
+    type: Cookie.JS
+  name: fbm_279395918757488
+  path: /
+  value: base_domain=true
+  expiresDays: 365
+  session: false
+  firstPartyStorage: false
+- domain: marca.com
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 231283
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        functionName: Object.o [as set]
+        source: '    at Object.o [as set] (https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:231283)'
+      - columnNumber: 116557
+        lineNumber: 2
+        fileName: https://script.hotjar.com/modules.87d8c9dd104c309e4245.js
+        source: '    at https://script.hotjar.com/modules.87d8c9dd104c309e4245.js:2:116557'
+    type: Cookie.JS
+  name: _hjTLDTest
+  path: /
+  value: .marca.com
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: marca.com
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 21392
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165
+        source: '    at https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165:2:21392'
+      - columnNumber: 21364
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165
+        functionName: Ve
+        source: '    at Ve (https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165:2:21364)'
+    type: Cookie.JS
+  name: mrf_cookie
+  path: /
+  value: ok
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: www.marca.com
+  log:
+    location: https://www.marca.com/
+    stack:
+      - columnNumber: 125154
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbma.js
+        source: '    at https://e00-elmundo.uecdn.es/js/pbma.js:12:125154'
+      - columnNumber: 123978
+        lineNumber: 12
+        fileName: https://e00-elmundo.uecdn.es/js/pbma.js
+        functionName: 'y'
+        source: '    at y (https://e00-elmundo.uecdn.es/js/pbma.js:12:123978)'
+    type: Cookie.JS
+  name: _rdc1782590076337
+  path: /
+  value: writeable
+  expiresDays: 0
+  session: false
+  firstPartyStorage: true

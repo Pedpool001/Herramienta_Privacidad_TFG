@@ -14,7 +14,8 @@ import subprocess
 import threading
 from pathlib import Path
 
-from ._loader import ejecutar_analisis, TFG_DIR, ANALYSIS_DATA
+from ._loader import (ejecutar_analisis, TFG_DIR, ANALYSIS_DATA,
+                       dir_analisis as _dir_analisis, entorno_analisis)
 
 log = logging.getLogger(__name__)
 
@@ -35,7 +36,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
     # ── R13: Dark Patterns (Python + Playwright) ──────────────────────────────
     if "R13" in sel:
         try:
-            data_13    = ejecutar_analisis("r13_dark_patterns", url, timeout=PLAYWRIGHT_TIMEOUT)
+            data_13    = ejecutar_analisis("r13_dark_patterns", url, timeout=PLAYWRIGHT_TIMEOUT,
+                                          salida_dir=_dir_analisis(output_dir))
             veredicto  = data_13.get("veredicto", "ERROR")
             if veredicto == "UNKNOWN":
                 veredicto = "NO_EVALUABLE"
@@ -88,13 +90,17 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
     # ── R4: Granularidad (Node.js) ────────────────────────────────────────────
     if "R4" in sel:
         r4_script = ANALYSIS_SCRIPTS / "r4_granularidad.js"
-        r4_result  = ANALYSIS_DATA / "r4_resultado.json"
+        # r4_granularidad.js respeta ANALYSIS_DATA_DIR igual que los scripts Python,
+        # para que su JSON no colisione con el de otro sitio en modo paralelo.
+        r4_dir     = _dir_analisis(output_dir)
+        r4_result  = r4_dir / "r4_resultado.json"
         try:
             proc = subprocess.run(
                 ["node", str(r4_script), url, "--no-detalle"],
                 capture_output=True,
                 text=True,
                 timeout=R4_TIMEOUT,
+                env=entorno_analisis(r4_dir),
             )
             if proc.returncode != 0:
                 raise RuntimeError(f"r4_granularidad.js: {proc.stderr[-400:]}")

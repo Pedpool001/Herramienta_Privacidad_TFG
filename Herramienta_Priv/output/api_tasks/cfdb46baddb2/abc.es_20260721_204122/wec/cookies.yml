@@ -1,0 +1,843 @@
+- name: AMCV_9854C13E58403FEB0A495D53%40AdobeOrg
+  value: >-
+    179643557%7CMCIDTS%7C20656%7CMCMID%7C13847569849468177752003283761903838191%7CMCAAMLH-1785264102%7C6%7CMCAAMB-1785264102%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1784666502s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20663%7CvVersion%7C5.5.0
+  domain: abc.es
+  path: /
+  expires: 1819219302.778108
+  size: 303
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-25T18:41:42.778Z
+  expiresDays: 400
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 3277
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:3277)'
+      - columnNumber: 28385
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Ue.w.cookieWrite
+        source: '    at Ue.w.cookieWrite (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:28385)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: s_ecid
+  value: MCMID%7C13847569849468177752003283761903838191
+  domain: abc.es
+  path: /
+  expires: 1819219302.492437
+  size: 52
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-25T18:41:42.492Z
+  expiresDays: 400
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://sadbmetrics.abc.es/id?d_visid_ver=5.5.0&d_fieldgroup=A&mcorgid=9854C13E58403FEB0A495D53%40AdobeOrg&mid=13847569849468177752003283761903838191&ts=1784659302133
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://sadbmetrics.abc.es/id?d_visid_ver=5.5.0&d_fieldgroup=A&mcorgid=9854C13E58403FEB0A495D53%40AdobeOrg&mid=13847569849468177752003283761903838191&ts=1784659302133
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity
+  value: >-
+    CiYxMzg0NzU2OTg0OTQ2ODE3Nzc1MjAwMzI4Mzc2MTkwMzgzODE5MVIRCPao76_4MxgBKgRJUkwxMAPwAfao76_4Mw==
+  domain: abc.es
+  path: /
+  expires: 1818787304
+  size: 141
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-20T18:41:44.000Z
+  expiresDays: 395
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 6057
+        lineNumber: 6
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.o [as set]
+        source: '    at Object.o [as set] (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:6:6057)'
+      - columnNumber: 16010
+        lineNumber: 6
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:6:16010)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: IDE
+  value: AHWqTUmx7qXJlH6Z0iH1PPIew_VsNGxRkZaaTdlMdUMZgWXCILSzrtlVgdfESFyybVE
+  domain: doubleclick.net
+  path: /
+  expires: 1818355303.057601
+  size: 70
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-15T18:41:43.057Z
+  expiresDays: 390
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=MTQ0MTA3OTMzMjE3NTgyNTEyOTE5NDY5NzY1MzUwOTA1MzI4NDE=&google_tc=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm=&gdpr=0&gdpr_consent=&google_hm=MTQ0MTA3OTMzMjE3NTgyNTEyOTE5NDY5NzY1MzUwOTA1MzI4NDE=&google_tc=
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: FCCDCF
+  value: >-
+    %5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%221392bb76-eb05-48bb-ae32-da29cd21765c%5C%22%2C%5B1784659303%2C358000000%5D%5D%22%5D%5D%5D
+  domain: abc.es
+  path: /
+  expires: 1818355303
+  size: 162
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-08-15T18:41:43.000Z
+  expiresDays: 390
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.ug
+        source: '    at _.ug (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: didomi_token
+  value: >-
+    eyJ1c2VyX2lkIjoiMTlmODVmYmQtNGUwNS02NTE2LWExYzMtZTA4YTQxMWI3NDI3IiwiY3JlYXRlZCI6IjIwMjYtMDctMjFUMTg6NDE6NDEuNjAwWiIsInVwZGF0ZWQiOiIyMDI2LTA3LTIxVDE4OjQxOjQxLjYwMloiLCJ2ZXJzaW9uIjpudWxsfQ==
+  domain: abc.es
+  path: /
+  expires: 1816281701
+  size: 200
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-22T18:41:41.000Z
+  expiresDays: 366
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 241292
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js
+        functionName: a
+        source: '    at a (https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js:2:241292)'
+      - columnNumber: 143088
+        lineNumber: 2
+        fileName: >-
+          https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js
+        functionName: h
+        source: '    at h (https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js:2:143088)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: FCNEC
+  value: >-
+    %5B%5B%22AKsRol8GbfXQ7jZKyFKT1oH2n4dbqCRICHFpAe0TrMFmF2zr8JqEcwmRVnvKwJDqK_AnNVM5Jys4xfVuCGNhsA6BtWGQn-Pz-iOna0Lbk6h65GDecyoOXNWKLh7o6zhqvHyV_CaQFtqUsOHo23dqEH4osOWMWsUPPQ%3D%3D%22%5D%5D
+  domain: abc.es
+  path: /
+  expires: 1816195316
+  size: 191
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:56.000Z
+  expiresDays: 365
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 1366
+        lineNumber: 158
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.m.set
+        source: '    at _.m.set (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:158:1366)'
+      - columnNumber: 476
+        lineNumber: 155
+        fileName: >-
+          /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable
+        functionName: _.ug
+        source: '    at _.ug (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.15pGjcizKfQ.es5.O/d=1/rs=AJlcJMxxjvZ5dCtA_jVEcZFAcVKNR2nawA/m=kernel_loader,loader_js_executable:155:476)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: vocuser_information
+  value: '{}'
+  domain: abc.es
+  path: /
+  expires: 1816195315
+  size: 21
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:55.000Z
+  expiresDays: 365
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95505
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.setCookiePureJS
+        source: '    at Function.setCookiePureJS (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95505)'
+      - columnNumber: 85499
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.deleteFieldInCookieVocuser
+        source: '    at Object.deleteFieldInCookieVocuser (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:85499)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: voc_edtn
+  value: nacional
+  domain: abc.es
+  path: /
+  expires: 1816195315
+  size: 16
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:55.000Z
+  expiresDays: 365
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95505
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.setCookiePureJS
+        source: '    at Function.setCookiePureJS (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95505)'
+      - columnNumber: 89435
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.setCookieVocEdtn
+        source: '    at Object.setCookieVocEdtn (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:89435)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: vocuser_uuid
+  value: da24ff7b-155f-46f1-82c2-25a7acbf22f6
+  domain: abc.es
+  path: /
+  expires: 1816195315
+  size: 48
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:55.000Z
+  expiresDays: 365
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95505
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.setCookiePureJS
+        source: '    at Function.setCookiePureJS (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95505)'
+      - columnNumber: 78876
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.createCookieUserUUID
+        source: '    at Object.createCookieUserUUID (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:78876)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: voc_paywall
+  value: https://www.abc.es|anonimo
+  domain: abc.es
+  path: /
+  expires: 1816195315
+  size: 37
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:55.000Z
+  expiresDays: 365
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95505
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.setCookiePureJS
+        source: '    at Function.setCookiePureJS (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95505)'
+      - columnNumber: 80565
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.setVocPaywallCookie
+        source: '    at Object.setVocPaywallCookie (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:80565)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ev_sid
+  value: 6a5fbd5c6d16cb59a46f834f
+  domain: abc.es
+  path: /
+  expires: 1815763295
+  size: 30
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-16T18:41:35.000Z
+  expiresDays: 360
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 18478
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/accessctrl.js
+        source: '    at https://static.vocstatic.com/widgets/4.41.0/accessctrl.js:1:18478'
+      - columnNumber: 18493
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/accessctrl.js
+        functionName: Object.setCookiePureJS
+        source: '    at Object.setCookiePureJS (https://static.vocstatic.com/widgets/4.41.0/accessctrl.js:1:18493)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: ev_did
+  value: 6a5fbd5c6d16cb59a46f834e
+  domain: abc.es
+  path: /
+  expires: 1815763295
+  size: 30
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-16T18:41:35.000Z
+  expiresDays: 360
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 18478
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/accessctrl.js
+        source: '    at https://static.vocstatic.com/widgets/4.41.0/accessctrl.js:1:18478'
+      - columnNumber: 18493
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/accessctrl.js
+        functionName: Object.setCookiePureJS
+        source: '    at Object.setCookiePureJS (https://static.vocstatic.com/widgets/4.41.0/accessctrl.js:1:18493)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: demdex
+  value: '14410793321758251291946976535090532841'
+  domain: demdex.net
+  path: /
+  expires: 1800211304.685594
+  size: 44
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:41:44.685Z
+  expiresDays: 180
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://adobedc.demdex.net/ee/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=f8e8cd24-7776-4363-a23b-423d40f07f81
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://adobedc.demdex.net/ee/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=f8e8cd24-7776-4363-a23b-423d40f07f81
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: dpm
+  value: '14410793321758251291946976535090532841'
+  domain: dpm.demdex.net
+  path: /
+  expires: 1800211303.12411
+  size: 41
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:41:43.124Z
+  expiresDays: 180
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEPvDITXg1nZTSmrAXfeKreE&google_cver=1?gdpr=0&gdpr_consent=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEPvDITXg1nZTSmrAXfeKreE&google_cver=1?gdpr=0&gdpr_consent=
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: dextp
+  value: 771-1-1784659302753
+  domain: demdex.net
+  path: /
+  expires: 1800211302
+  size: 24
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-01-17T18:41:42.000Z
+  expiresDays: 180
+  log:
+    location: https://www.abc.es
+    stack:
+      - columnNumber: 99
+        lineNumber: 6
+        fileName: https://vocento.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.setCookie
+        source: '    at Object.setCookie (https://vocento.demdex.net/dest5.html?d_nsid=0:6:99)'
+      - columnNumber: 98
+        lineNumber: 12
+        fileName: https://vocento.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.processIBS
+        source: '    at Object.processIBS (https://vocento.demdex.net/dest5.html?d_nsid=0:12:98)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: voc-rtim
+  value: '{ "geo-europe" : false}'
+  domain: abc.es
+  path: /
+  expires: 1787251315
+  size: 31
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-08-20T18:41:55.000Z
+  expiresDays: 30
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 23786
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/loader.js
+        source: '    at https://static.vocstatic.com/widgets/4.41.0/loader.js:1:23786'
+      - columnNumber: 23973
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/widgets/4.41.0/loader.js
+        functionName: Object.setCookiePureJS
+        source: '    at Object.setCookiePureJS (https://static.vocstatic.com/widgets/4.41.0/loader.js:1:23973)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: vocuser_nfryl_volver_al_origen
+  value: https%3A%2F%2Fwww.abc.es%2F
+  domain: abc.es
+  path: /
+  expires: 1784745715
+  size: 57
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-22T18:41:55.000Z
+  expiresDays: 1
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95505
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.setCookiePureJS
+        source: '    at Function.setCookiePureJS (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95505)'
+      - columnNumber: 81605
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.createCookieForNfryl
+        source: '    at Object.createCookieForNfryl (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:81605)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: geo
+  value: '{"c": "ES","r": "V","o": "EU"}'
+  domain: www.abc.es
+  path: /
+  expires: 1784745694.517942
+  size: 33
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-22T18:41:34.517Z
+  expiresDays: 1
+  log:
+    location: about:blank
+    stack:
+      - fileName: https://www.abc.es/
+        source: set in Set-Cookie HTTP response header for https://www.abc.es/
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster
+  value: irl1
+  domain: abc.es
+  path: /
+  expires: 1784661116.483843
+  size: 52
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T19:11:56.483Z
+  expiresDays: 0.02
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://data.abc.es/ee/irl1/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=48b53bed-404d-4cd4-9cfd-6a6946b4759c
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://data.abc.es/ee/irl1/v1/interact?configId=9f59cc6e-7ee3-46fa-8ba5-cb24d107dd07&requestId=48b53bed-404d-4cd4-9cfd-6a6946b4759c
+    type: Cookie.HTTP
+  firstPartyStorage: false
+- name: AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg
+  value: '1'
+  domain: abc.es
+  path: /
+  expires: -1
+  size: 42
+  httpOnly: false
+  secure: true
+  session: true
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 3277
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:3277)'
+      - columnNumber: 28385
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Ue.w.cookieWrite
+        source: '    at Ue.w.cookieWrite (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:28385)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- name: vtm_op
+  value: 'true'
+  domain: abc.es
+  path: /
+  expires: -1
+  size: 10
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 108987
+        lineNumber: 2
+        fileName: https://static.vocstatic.com/voonto2/2.26.2/vendor-bundle.js
+        functionName: o.i [as set]
+        source: '    at o.i [as set] (https://static.vocstatic.com/voonto2/2.26.2/vendor-bundle.js:2:108987)'
+      - columnNumber: 29133
+        lineNumber: 2
+        fileName: https://static.vocstatic.com/tag-manager/latest/vtm.js
+        functionName: Object.track
+        source: '    at Object.track (https://static.vocstatic.com/tag-manager/latest/vtm.js:2:29133)'
+    type: Cookie.JS
+  firstPartyStorage: false
+- domain: abc.es
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 72159
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/vam/7.33.0/vam.js
+        source: '    at https://static.vocstatic.com/vam/7.33.0/vam.js:1:72159'
+      - columnNumber: 72246
+        lineNumber: 1
+        fileName: https://static.vocstatic.com/vam/7.33.0/vam.js
+        functionName: Object.getCookieWithValue
+        source: '    at Object.getCookieWithValue (https://static.vocstatic.com/vam/7.33.0/vam.js:1:72246)'
+    type: Cookie.JS
+  name: receive-cookie-deprecation
+  path: /
+  value: '1'
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: abc.es
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 6057
+        lineNumber: 6
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.o [as set]
+        source: '    at Object.o [as set] (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:6:6057)'
+      - columnNumber: 19521
+        lineNumber: 6
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: At
+        source: '    at At (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:6:19521)'
+    type: Cookie.JS
+  name: com.adobe.alloy.getTld
+  path: /
+  value: com.adobe.alloy.getTld
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: abc.es
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 3277
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: Object.set
+        source: '    at Object.set (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:3277)'
+      - columnNumber: 3813
+        lineNumber: 12
+        fileName: >-
+          https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js
+        functionName: H
+        source: '    at H (https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js:12:3813)'
+    type: Cookie.JS
+  name: TEST_AMCV_COOKIE_WRITE
+  path: /
+  value: cookie
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: demdex.net
+  log:
+    location: https://www.abc.es
+    stack:
+      - columnNumber: 99
+        lineNumber: 6
+        fileName: https://vocento.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.setCookie
+        source: '    at Object.setCookie (https://vocento.demdex.net/dest5.html?d_nsid=0:6:99)'
+      - columnNumber: 233
+        lineNumber: 5
+        fileName: https://vocento.demdex.net/dest5.html?d_nsid=0
+        functionName: Object.canSetCookie
+        source: '    at Object.canSetCookie (https://vocento.demdex.net/dest5.html?d_nsid=0:5:233)'
+    type: Cookie.JS
+  name: _dp
+  path: /
+  value: '1'
+  expiresDays: -0.69
+  session: false
+  firstPartyStorage: false
+- domain: everesttech.net
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://cm.everesttech.net/cm/dd?d_uuid=14410793321758251291946976535090532841
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.everesttech.net/cm/dd?d_uuid=14410793321758251291946976535090532841
+    type: Cookie.HTTP
+  name: everest_g_v2
+  path: /
+  value: g_surferid~al_9YwAAAHH9ogN-
+  expiresDays: 365
+  session: false
+  firstPartyStorage: false
+- domain: everesttech.net
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://cm.everesttech.net/cm/dd?d_uuid=14410793321758251291946976535090532841
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.everesttech.net/cm/dd?d_uuid=14410793321758251291946976535090532841
+    type: Cookie.HTTP
+  name: everest_session_v2
+  path: /
+  value: '"al@9YwAAAHH9owN-"'
+  expires: -1
+  session: true
+  firstPartyStorage: false
+- domain: doubleclick.net
+  log:
+    location: https://www.abc.es/
+    stack:
+      - fileName: >-
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MTQ0MTA3OTMzMjE3NTgyNTEyOTE5NDY5NzY1MzUwOTA1MzI4NDE=
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MTQ0MTA3OTMzMjE3NTgyNTEyOTE5NDY5NzY1MzUwOTA1MzI4NDE=
+    type: Cookie.HTTP
+  name: test_cookie
+  path: /
+  value: CheckForPermission
+  expiresDays: 0.01
+  session: false
+  firstPartyStorage: false
+- domain: www.abc.es
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 95619
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Function.areCookiesEnabled
+        source: '    at Function.areCookiesEnabled (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:95619)'
+      - columnNumber: 199876
+        lineNumber: 2
+        fileName: >-
+          https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js
+        functionName: Object.getCommonData
+        source: '    at Object.getCommonData (https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js:2:199876)'
+    type: Cookie.JS
+  name: cookietest
+  path: /
+  value: '1'
+  expires: -1
+  session: true
+  firstPartyStorage: true
+- domain: abc.es
+  log:
+    location: https://www.abc.es/
+    stack:
+      - columnNumber: 21392
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058
+        source: '    at https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058:2:21392'
+      - columnNumber: 21364
+        lineNumber: 2
+        fileName: https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058
+        functionName: Ve
+        source: '    at Ve (https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058:2:21364)'
+    type: Cookie.JS
+  name: mrf_cookie
+  path: /
+  value: ok
+  expires: -1
+  session: true
+  firstPartyStorage: false

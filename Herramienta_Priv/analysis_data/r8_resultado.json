@@ -1,37 +1,51 @@
 {
-  "sitio": "rtve.es",
+  "sitio": "marca.com",
   "veredicto": "FAILED",
   "resumen": {
-    "FAILED": 8,
-    "WARNING": 1
+    "FAILED": 12,
+    "WARNING": 8
   },
   "fallos": [
     {
-      "script": "https://cdns.gigya.com/js/gigya.js?apikey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm",
-      "dominio": "gigya.com",
+      "script": "https://adtcdn.unidadeditorial.es/mdw/migrate.js",
+      "dominio": "unidadeditorial.es",
       "nivel": "FAILED",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "_gig_localStorage_test",
-            "gigyaCache"
-          ]
-        },
-        {
-          "symbol": "Storage.removeItem",
-          "claves": [
-            "_gig_localStorage_test",
-            "gig_gmid",
-            "gig_ucid",
-            "gmidTicket",
-            "gmidTicketExpiration"
+            "GAMExp",
+            "Service_CachedCMP",
+            "Service_Device",
+            "Service_Geo",
+            "Service_Migrate",
+            "auto-refresh-counter",
+            "dpvc",
+            "geocached",
+            "permutive-id",
+            "psp_hist_d",
+            "psp_hist_h",
+            "psp_hist_m",
+            "psp_hist_ses",
+            "random2",
+            "suscriptor",
+            "telP",
+            "telPId"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "_gig_localStorage_test"
+            "Service_Device",
+            "dpvc",
+            "geocached",
+            "psp_hist_d",
+            "psp_hist_h",
+            "psp_hist_m",
+            "psp_hist_ses",
+            "random2",
+            "telP",
+            "telPId"
           ]
         },
         {
@@ -45,20 +59,40 @@
       ]
     },
     {
-      "script": "https://rtve-cdp-api.cinfo.es/jsclient/v1/rtve-cdp-api-client.js",
-      "dominio": "cinfo.es",
+      "script": "https://e00-ue.uecdn.es/cookies/js/policy_v5.js",
+      "dominio": "uecdn.es",
       "nivel": "FAILED",
       "operaciones": [
         {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "361",
+            "573",
+            "758",
+            "euconsent-v2",
+            "storedConsents",
+            "ue-dcv",
+            "ue-dcv-policy",
+            "ueUserContentComscore",
+            "ueUserContentGoogle",
+            "ueUserPurposes"
+          ]
+        },
+        {
           "symbol": "Storage.removeItem",
           "claves": [
-            "__storage_test__"
+            "storedConsents",
+            "ueConsentData",
+            "ueUserContentComscore",
+            "ueUserContentGoogle",
+            "ueUserPurposes"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "__storage_test__"
+            "ueUserContentComscore",
+            "ueUserContentGoogle"
           ]
         },
         {
@@ -68,61 +102,21 @@
       ]
     },
     {
-      "script": "https://tvee.spxl.socy.es/pixel/js/TVEE_738_746_736/",
-      "dominio": "socy.es",
+      "script": "https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js",
+      "dominio": "unidadeditorial.es",
       "nivel": "FAILED",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "matSessionID",
-            "md_pxl_n",
-            "md_pxl_n_expires",
-            "original_visit"
+            "gexpIntextDebug",
+            "random2"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "md_pxl_n",
-            "md_pxl_n_expires",
-            "original_visit"
-          ]
-        },
-        {
-          "symbol": "window.localStorage",
-          "claves": []
-        },
-        {
-          "symbol": "window.sessionStorage",
-          "claves": []
-        }
-      ]
-    },
-    {
-      "script": "https://static.chartbeat.com/js/chartbeat_mab.js",
-      "dominio": "chartbeat.com",
-      "nivel": "FAILED",
-      "operaciones": [
-        {
-          "symbol": "Storage.getItem",
-          "claves": [
-            "_cb_ip",
-            "_cb_ls_test",
-            "_t_tests",
-            "_t_tests_expires"
-          ]
-        },
-        {
-          "symbol": "Storage.removeItem",
-          "claves": [
-            "_cb_ls_test"
-          ]
-        },
-        {
-          "symbol": "Storage.setItem",
-          "claves": [
-            "_cb_ls_test"
+            "random2"
           ]
         },
         {
@@ -132,80 +126,21 @@
       ]
     },
     {
-      "script": "https://static.chartbeat.com/js/chartbeat.js",
-      "dominio": "chartbeat.com",
+      "script": "https://objetos.estaticos-marca.com/assets/v33/js/desktop-819bb8af08b2ed0df74c422f740cb083136436dc.min.js",
+      "dominio": "estaticos-marca.com",
       "nivel": "FAILED",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "_SUPERFLY_lockout",
-            "_SUPERFLY_lockout_expires",
-            "_cb",
-            "_cb_expires",
-            "_cb_ip",
-            "_cb_ls_test",
-            "_cb_svref",
-            "_cb_svref_expires",
-            "_chartbeat2",
-            "_chartbeat2_expires",
-            "_chartbeat4",
-            "_chartbeat4_expires",
-            "_t__SUPERFLY_lockout",
-            "_t__SUPERFLY_lockout_expires"
-          ]
-        },
-        {
-          "symbol": "Storage.removeItem",
-          "claves": [
-            "_SUPERFLY_nosample",
-            "_SUPERFLY_nosample_expires",
-            "_cb_ls_test",
-            "_cb_svref",
-            "_cb_svref_expires",
-            "_t__SUPERFLY_nosample",
-            "_t__SUPERFLY_nosample_expires"
+            "dmpue_bt",
+            "suscriptor"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "_cb",
-            "_cb_expires",
-            "_cb_ls_test",
-            "_cb_svref",
-            "_cb_svref_expires",
-            "_chartbeat2",
-            "_chartbeat2_expires"
-          ]
-        },
-        {
-          "symbol": "window.localStorage",
-          "claves": []
-        }
-      ]
-    },
-    {
-      "script": "https://cdns.eu1.gigya.com/js/Api.htm?apiKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&version=latest&build=1930&flavor=base&serviceName=apiService#origin=https://www.rtve.es/&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
-      "dominio": "gigya.com",
-      "nivel": "FAILED",
-      "operaciones": [
-        {
-          "symbol": "Storage.getItem",
-          "claves": [
-            "_gig_localStorage_test"
-          ]
-        },
-        {
-          "symbol": "Storage.removeItem",
-          "claves": [
-            "_gig_localStorage_test"
-          ]
-        },
-        {
-          "symbol": "Storage.setItem",
-          "claves": [
-            "_gig_localStorage_test"
+            "suscriptor"
           ]
         },
         {
@@ -219,26 +154,69 @@
       ]
     },
     {
-      "script": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=getToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867866618_0&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
-      "dominio": "gigya.com",
+      "script": "https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js",
+      "dominio": "privacy-center.org",
       "nivel": "FAILED",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "_gig_localStorage_test"
+            "didomi_auth_token",
+            "didomi_token",
+            "euconsent-v2"
           ]
         },
         {
           "symbol": "Storage.removeItem",
           "claves": [
-            "_gig_localStorage_test"
+            "euconsent-v2"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "_gig_localStorage_test"
+            "didomi_token"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165",
+      "dominio": "mrf.io",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "___m_rec",
+            "___nrbi",
+            "___nrbic",
+            "__nrCookieConsent",
+            "compass_rfv_2165",
+            "marfeel-sdk-store",
+            "mrfHudStorage-2165",
+            "mrfdebug"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "__test_local_storage__",
+            "__test_session_storage__"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "___nrbi",
+            "___nrbic",
+            "__test_local_storage__",
+            "__test_session_storage__",
+            "marfeel-sdk-store"
           ]
         },
         {
@@ -252,26 +230,218 @@
       ]
     },
     {
-      "script": "https://cdns.eu1.gigya.com/js/sso.htm?APIKey=3_xpC-b4gZO0jIm0DrLJUPp05bL-fjbLPeNZ9t8wTTQpB2DJyf2nz2ksLmTwl8LJzW&ssoSegment=&version=latest&build=1930&flavor=base&sourceKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm#m=removeToken&d=https%3A%2F%2Fwww.rtve.es&callbackID=gig_sso_cb1781867867499_1&sAPIKey=3_MVrnwOzwUbykkDXOuSGkJfyMFEpG8k4MI3A66RsIKg91icSRNMZ4XnfzYXsU6cmm&gig_loggerConfig=%7B%22logLevel%22%3A0%2C%22clientMuteLevel%22%3A0%2C%22logTheme%22%3A1%7D",
-      "dominio": "gigya.com",
+      "script": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js",
+      "dominio": "tiqcdn.com",
       "nivel": "FAILED",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "_gig_localStorage_test"
+            "auto-refresh-counter",
+            "be_adblocking",
+            "be_internal_campaign",
+            "dmpue_id",
+            "dmpue_segs",
+            "energizeEvents",
+            "geocached",
+            "internalCampaign",
+            "lastVisit30",
+            "lastVisitMonth1",
+            "menuParams",
+            "tealium_va",
+            "tealium_va_unidadeditorial_marca",
+            "ueConsentData"
           ]
         },
         {
           "symbol": "Storage.removeItem",
           "claves": [
-            "_gig_localStorage_test"
+            "__t__"
           ]
         },
         {
           "symbol": "Storage.setItem",
           "claves": [
-            "_gig_localStorage_test"
+            "__t__",
+            "geocached"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://connect.facebook.net/es_ES/bundle/sdk.js/",
+      "dominio": "facebook.net",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "fblst_279395918757488",
+            "fbssls_279395918757488",
+            "iglst_279395918757488"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "__test__1782590064483",
+            "__test__1782590064492",
+            "fblst_279395918757488"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "__test__1782590064483",
+            "__test__1782590064492",
+            "fbssls_279395918757488"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js",
+      "dominio": "permutive.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "__permutiveConfigQueryParams",
+            "_permutive_ls_test",
+            "permutive-consent",
+            "permutive-data-misc",
+            "permutive-data-queries",
+            "permutive-id",
+            "permutive-session"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_permutive_ls_test",
+            "permutive-id"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_permutive_ls_test",
+            "permutive-consent"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://applets.ebxcdn.com/ebx.js",
+      "dominio": "ebxcdn.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "ebx_webtag_"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "ebx_webtag_"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js",
+      "dominio": "hotjar.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "HJ_OVERRIDE_FEATURE:ingestion.http",
+            "HJ_OVERRIDE_FEATURE:sessionizer_beta_enabled",
+            "HJ_OVERRIDE_FEATURE:uch_routing",
+            "HJ_OVERRIDE_FEATURE:wsky.session_rate_limiting",
+            "hj-uut",
+            "hjVerifyInstall"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "_hjLocalStorageTest",
+            "_hjSessionStorageTest"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "_hjLocalStorageTest",
+            "_hjSessionStorageTest"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js",
+      "dominio": "crazyegg.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "ce-hud-launch-params",
+            "ce_bot_detector",
+            "powerup"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "ce_localstorage_test"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "ce_localstorage_test"
           ]
         },
         {
@@ -287,16 +457,147 @@
   ],
   "avisos": [
     {
-      "script": "https://cdn.cookielaw.org/consent/1ce517c9-60a0-49ff-8d5d-a8d756cdb3cf/otSDKStub.js",
-      "dominio": "cookielaw.org",
+      "script": "https://e00-elmundo.uecdn.es/js/pbma.js",
+      "dominio": "uecdn.es",
       "nivel": "WARNING",
       "operaciones": [
         {
           "symbol": "Storage.getItem",
           "claves": [
-            "otPreviewData"
+            "__pbjs_debugging__",
+            "_pbjs_id_optout"
           ]
         },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://objetos.estaticos-marca.com/assets/v33/js/ue-scoreboard-wrapper-366d2ffb90ccda0a941a.min.js",
+      "dominio": "estaticos-marca.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "geocached"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://c.amazon-adsystem.com/aax2/apstag.js",
+      "dominio": "amazon-adsystem.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "aps:_system:prepend/events",
+            "apstagCfg",
+            "apstagDebug"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://objetos.estaticos-marca.com/assets/uedailymotion/v1/uedailymotion_marca_dad21d1d302c6a9d8dee1eb2feb1a72f2b2224a8.min.js",
+      "dominio": "estaticos-marca.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "ue-dcv",
+            "ue-dcv-dmotion"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://objetos.estaticos-marca.com/assets/consent/v1/ueconsent-b01c2e56f080aed52e37dfa136cec3405645a45f.min.js",
+      "dominio": "estaticos-marca.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "debug-consent-mode",
+            "geocached",
+            "ueAmpConsentAccepted"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://objetos.estaticos-marca.com/assets/uelogin/v2/ueLogin.ea78ca8536c8c1f323c3.js",
+      "dominio": "estaticos-marca.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "uejwt"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://e00-ue.uecdn.es/permutive/ue-permutive.min.js",
+      "dominio": "uecdn.es",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_pdfps",
+            "euconsent-v2",
+            "permutive-consent",
+            "permutive-data-misc",
+            "permutive-id",
+            "ue-dcv",
+            "ue-dcv-permutive",
+            "ue-permutive-consent-status",
+            "uejwt"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://aswpsdkeu.com/notify/v1/ua-sdk.min.js",
+      "dominio": "aswpsdkeu.com",
+      "nivel": "WARNING",
+      "operaciones": [
         {
           "symbol": "window.sessionStorage",
           "claves": []

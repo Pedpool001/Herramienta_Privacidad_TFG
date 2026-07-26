@@ -54,7 +54,9 @@ WEBXRAY_DEFAULT   = BASE / "webXray/reports/auditoria_ejemplo"
 # tracker-radar es un directorio hermano del TFG; también configurable via env var
 DDG_BASE = Path(os.getenv("TRACKER_RADAR_DIR", str(BASE.parent / "tracker-radar")))
 
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r16_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r16_resultado.json"
 
 ICONO = {"PASSED": "✅", "WARNING": "⚠️ ", "FAILED": "❌"}
 

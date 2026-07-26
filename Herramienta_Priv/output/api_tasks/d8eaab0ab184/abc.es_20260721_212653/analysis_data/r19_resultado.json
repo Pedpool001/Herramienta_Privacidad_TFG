@@ -1,0 +1,19 @@
+{
+  "sitio": "Vocento.com",
+  "veredicto": "WARNING",
+  "evaluacion": {
+    "estado": "WARNING",
+    "detalle": "DPO mencionado en la política pero sin datos de contacto específicos (email ni dirección postal). RGPD Art. 37.7 exige publicar el método de contacto."
+  },
+  "hallazgos": {
+    "mencion_dpo": true,
+    "emails_dpo": [],
+    "emails_otros": [],
+    "direccion_postal": false,
+    "nombre_dpo": null,
+    "fragmentos": [
+      "ón correspondiente que encontrarás  aquí .   Igualmente, te informamos de que el grupo Vocento (al cual pertenecen los Corresponsables) cuenta con un Delegado de Protección de Datos designado a nivel de Grupo, con quien te podrás poner en contacto y solicitar información a través de  esta dirección .   Sin perjuicio de todo lo an",
+      "ncias desde la configuración de la App.   Por otra parte, te informamos que puedes elevar cualquier cuestión o reclamación en la materia ante nuestro Delegado de Protección de Datos del grupo Vocento a través de  esta dirección  o ante la Agencia Española de Protección de Datos ( www.aepd.es )   Los medios aquí descritos podrán s"
+    ]
+  }
+}

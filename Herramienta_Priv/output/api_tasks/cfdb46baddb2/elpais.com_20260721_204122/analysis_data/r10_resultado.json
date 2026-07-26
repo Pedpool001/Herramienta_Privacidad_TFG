@@ -1,0 +1,68 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "PASSED",
+  "resumen_cookies": {
+    "PASSED": 5,
+    "WARNING": 0,
+    "FAILED": 0
+  },
+  "total_ls_terceros": 0,
+  "cookies": [
+    {
+      "nombre": "datadome",
+      "dominio": "elpais.com",
+      "dias": 365,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "hpage",
+      "dominio": "elpais.com",
+      "dias": 365,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "arc-geo",
+      "dominio": "elpais.com",
+      "dias": 0.01,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "eptz",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "dd_testcookie",
+      "dominio": "geo.captcha-delivery.com",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    }
+  ],
+  "local_storage": []
+}

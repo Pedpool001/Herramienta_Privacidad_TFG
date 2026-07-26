@@ -3,76 +3,63 @@
   "veredicto": "FAILED",
   "evaluacion": {
     "estado": "FAILED",
-    "detalle": "De 17 dominios de terceros, 14 tienen propietario identificado que NO está declarado en la política de privacidad: Google APIs, Google, Adobe Audience Manager, Chartbeat (+7 más). RGPD Art. 13/14 exige informar de todos los destinatarios."
+    "detalle": "De 24 dominios de terceros, 20 tienen propietario identificado que NO está declarado en la política de privacidad: Google APIs, jsDelivr, Tealium, UNIDAD EDITORIAL SA (+14 más). RGPD Art. 13/14 exige informar de todos los destinatarios."
   },
   "hallazgos": {
     "actores_declarados": [],
-    "dominios_analizados": 17,
+    "dominios_analizados": 24,
     "declarados": [],
     "no_declarados_identificados": [
       {
-        "dominio": "chartbeat.com",
+        "dominio": "amazon-adsystem.com",
         "nombres_entidad": [
-          "Chartbeat"
+          "Amazon Marketing Services",
+          "Amazon"
         ],
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "chartbeat.net",
+        "dominio": "doubleclick.net",
         "nombres_entidad": [
-          "Chartbeat"
+          "DoubleClick",
+          "Google",
+          "Alphabet"
         ],
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "cloudflare.com",
+        "dominio": "facebook.com",
         "nombres_entidad": [
-          "Cloudflare"
+          "Facebook"
         ],
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "conviva.com",
+        "dominio": "facebook.net",
         "nombres_entidad": [
-          "Conviva"
+          "Facebook"
         ],
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "cookielaw.org",
+        "dominio": "google-analytics.com",
         "nombres_entidad": [
-          "OneTrust LLC",
-          "OneTrust"
-        ],
-        "fuente_owner": "ddg"
-      },
-      {
-        "dominio": "demdex.net",
-        "nombres_entidad": [
-          "Adobe Audience Manager",
-          "Adobe Experience Cloud",
-          "Adobe Systems"
-        ],
-        "fuente_owner": "webxray"
-      },
-      {
-        "dominio": "everesttech.net",
-        "nombres_entidad": [
-          "Adobe Experience Cloud",
-          "Adobe Systems"
-        ],
-        "fuente_owner": "webxray"
-      },
-      {
-        "dominio": "gigya.com",
-        "nombres_entidad": [
-          "Gigya",
-          "SAP"
+          "Google Analytics",
+          "Google",
+          "Alphabet"
         ],
         "fuente_owner": "webxray"
       },
       {
         "dominio": "google.com",
+        "nombres_entidad": [
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "google.es",
         "nombres_entidad": [
           "Google",
           "Alphabet"
@@ -89,6 +76,15 @@
         "fuente_owner": "webxray"
       },
       {
+        "dominio": "googlesyndication.com",
+        "nombres_entidad": [
+          "AdSense",
+          "Google",
+          "Alphabet"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
         "dominio": "googletagmanager.com",
         "nombres_entidad": [
           "Google Tag Manager",
@@ -98,43 +94,100 @@
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "gstatic.com",
+        "dominio": "jsdelivr.net",
         "nombres_entidad": [
-          "Google",
-          "Alphabet"
+          "jsDelivr",
+          "Prospect One"
         ],
         "fuente_owner": "webxray"
       },
       {
-        "dominio": "onetrust.com",
+        "dominio": "mrf.io",
         "nombres_entidad": [
-          "OneTrust LLC",
-          "OneTrust"
+          "Marfeel Solutions, S.L.",
+          "Marfeel"
         ],
         "fuente_owner": "ddg"
       },
       {
-        "dominio": "visualwebsiteoptimizer.com",
+        "dominio": "permutive.com",
         "nombres_entidad": [
-          "Visual Website Optimizer",
-          "Wingify"
+          "Permutive"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "privacy-center.org",
+        "nombres_entidad": [
+          "Didomi"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "scorecardresearch.com",
+        "nombres_entidad": [
+          "ScorecardResearch",
+          "comScore"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "sensic.net",
+        "nombres_entidad": [
+          "GfK"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "taboola.com",
+        "nombres_entidad": [
+          "Taboola"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "tiqcdn.com",
+        "nombres_entidad": [
+          "Tealium"
+        ],
+        "fuente_owner": "webxray"
+      },
+      {
+        "dominio": "uecdn.es",
+        "nombres_entidad": [
+          "UNIDAD EDITORIAL SA",
+          "UNIDAD EDITORIAL"
+        ],
+        "fuente_owner": "ddg"
+      },
+      {
+        "dominio": "youtube.com",
+        "nombres_entidad": [
+          "YouTube",
+          "Google",
+          "Alphabet"
         ],
         "fuente_owner": "webxray"
       }
     ],
     "no_declarados_sin_owner": [
       {
-        "dominio": "cinfo.es",
+        "dominio": "ebxcdn.com",
         "fuente": "ninguna",
         "nombres": []
       },
       {
-        "dominio": "socy.cloud",
+        "dominio": "estaticos-marca.com",
         "fuente": "ninguna",
         "nombres": []
       },
       {
-        "dominio": "socy.es",
+        "dominio": "newsroom.bi",
+        "fuente": "ninguna",
+        "nombres": []
+      },
+      {
+        "dominio": "unidadeditorial.es",
         "fuente": "ninguna",
         "nombres": []
       }

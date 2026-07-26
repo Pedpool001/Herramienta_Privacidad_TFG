@@ -41,6 +41,7 @@ Uso:
   python3 r7_fingerprinting.py --no-detalle                 # solo resumen
 """
 
+import os
 import sqlite3
 import sys
 import json
@@ -49,7 +50,9 @@ from urllib.parse import urlparse
 from collections import defaultdict
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r7_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r7_resultado.json"
 
 # ── Sistema de pesos ──────────────────────────────────────────────────────────
 PESOS = {

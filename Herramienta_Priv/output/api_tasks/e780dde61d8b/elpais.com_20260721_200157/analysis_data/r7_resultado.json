@@ -1,0 +1,67 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "FAILED",
+  "total_scripts_terceros": 3,
+  "scripts_detectados": [
+    {
+      "script_url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAgU5y8FJIBasAiy8Rmg==&cid=NlPkMb_0I6ZapbOT3YHLb5DQRyLauUBeQsU7heq6jjabVcSNm27ULubEdhbfMDwTz4zVWCsYI8afcMwX41tIwFGo7UF79fsruArJlCZzEQW4R8ApCqMmmPe8FMni6UwR&referer=https%3A%2F%2Felpais.com%2F&hash=04152210A438DDFD27083ABE40645B&t=fe&s=60549&e=f9160f8994dc129481dc0215bdd3a07cdcaabc55e9544e7a768ef56effe0a85ab145f22327155d71378968cf6247e16d&ir=5&dm=dc_ir&b=2125301",
+      "dominio": "captcha-delivery.com",
+      "site_url": "https://elpais.com/",
+      "puntuacion": 21,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.languages": 1,
+        "window.navigator.buildID": 2,
+        "window.navigator.vendor": 1,
+        "window.navigator.platform": 2,
+        "window.navigator.userAgent": 1,
+        "window.navigator.hardwareConcurrency": 2,
+        "window.navigator.plugins": 3,
+        "window.screen.colorDepth": 2,
+        "window.navigator.maxTouchPoints": 1,
+        "HTMLCanvasElement.getContext": 1
+      },
+      "bonuses": [
+        "+2 Batería de navigator (9 señales distintas)"
+      ],
+      "tecnicas": [
+        "Canvas Font Fingerprint",
+        "Navigator Fingerprint",
+        "Screen Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAgU5y8FJIBasAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=FbhX8g60FkWxyzlmQ5I6amiiV3HO6flCbqpRuiWtedCWlZbA2Tv6ELi1DWN6MMNpo3zPVPnxs3qs~M_YLkiA87wWT2OLWyYXC754sXph4JObsz~vimWhY5iLLvBLBipb&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=2ef6484a156ecd9f0cd9d551046744153f7c478881a846cda9a50214ac98002a3c385c3c2a1f736bd3ee121c188147e9&b=2125301&dm=cd",
+      "dominio": "captcha-delivery.com",
+      "site_url": "https://elpais.com/",
+      "puntuacion": 21,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.mimeTypes": 3,
+        "window.navigator.languages": 1,
+        "window.navigator.buildID": 2,
+        "window.navigator.vendor": 1,
+        "window.navigator.platform": 2,
+        "window.navigator.userAgent": 1,
+        "window.navigator.hardwareConcurrency": 2,
+        "window.navigator.plugins": 3,
+        "window.screen.colorDepth": 2,
+        "window.navigator.maxTouchPoints": 1,
+        "HTMLCanvasElement.getContext": 1
+      },
+      "bonuses": [
+        "+2 Batería de navigator (9 señales distintas)"
+      ],
+      "tecnicas": [
+        "Canvas Font Fingerprint",
+        "Navigator Fingerprint",
+        "Screen Fingerprint"
+      ]
+    }
+  ],
+  "resumen": {
+    "FAILED": 2,
+    "WARNING": 0
+  }
+}

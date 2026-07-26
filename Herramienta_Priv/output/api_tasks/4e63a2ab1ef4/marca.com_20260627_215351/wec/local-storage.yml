@@ -1,0 +1,347 @@
+https://www.marca.com:
+  ueUserContentGoogle:
+    value: -1
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 21646
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:21646'
+        - columnNumber: 21240
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          functionName: H.pe
+          source: '    at H.pe (https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:21240)'
+      type: Storage.LocalStorage
+  psp_hist_d:
+    value:
+      version: '0.1'
+      current_daily: 2026-5-27
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 48
+      empty_count: 48
+      requestsCount: 38
+      visitDuration_count: 6
+      visitDuration_total: 71625
+      visitDuration_avg: 11937.5
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 412157
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:412157)'
+        - columnNumber: 413989
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:413989)'
+      type: Storage.LocalStorage
+  telP:
+    value: 504.1203661754056
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 466956
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:466956)'
+        - columnNumber: 457238
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:457238'
+      type: Storage.LocalStorage
+  permutive-consent:
+    value:
+      opt_in: false
+      token: ''
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 102948
+          lineNumber: 1
+          fileName: >-
+            https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+          functionName: c.put
+          source: '    at c.put (https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js:1:102948)'
+        - columnNumber: 254689
+          lineNumber: 1
+          fileName: >-
+            https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js
+          source: '    at https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js:1:254689'
+      type: Storage.LocalStorage
+  lastVisitMonth1:
+    value: 5
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 26
+          lineNumber: 3794
+          fileName: https://www.marca.com/
+          functionName: recurrentUser
+          source: '    at recurrentUser (https://www.marca.com/:3794:26)'
+        - columnNumber: 48
+          lineNumber: 3840
+          fileName: https://www.marca.com/
+          source: '    at https://www.marca.com/:3840:48'
+      type: Storage.LocalStorage
+  geocached:
+    value:
+      country_code: ES
+      city: alcantarilla
+      lat: '37.970'
+      long: '-1.210'
+      region: MU
+      postal_code: '30820'
+      gpt_ad_id: '99071977'
+      client_ip: 79.150.28.74
+      timestamp: 1782590057777
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 442476
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:442476'
+      type: Storage.LocalStorage
+  psp_hist_m:
+    value:
+      version: '0.1'
+      current_monthly: 2026-5
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 48
+      empty_count: 48
+      requestsCount: 38
+      visitDuration_count: 6
+      visitDuration_total: 71625
+      visitDuration_avg: 11937.5
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 412157
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:412157)'
+        - columnNumber: 413989
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:413989)'
+      type: Storage.LocalStorage
+  psp_hist_h:
+    value:
+      version: '0.1'
+      firstSeen: 1782590048841
+      nVisits: 3
+      pageViews: 3
+      impressionsCount: 48
+      empty_count: 48
+      requestsCount: 38
+      visitDuration_count: 6
+      visitDuration_total: 71625
+      visitDuration_avg: 11937.5
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 412157
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:412157)'
+        - columnNumber: 413989
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:413989)'
+      type: Storage.LocalStorage
+  telPId:
+    value: null
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 466987
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: t.value
+          source: '    at t.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:466987)'
+        - columnNumber: 457238
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:457238'
+      type: Storage.LocalStorage
+  ueUserContentComscore:
+    value: -1
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 21646
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:21646'
+        - columnNumber: 21240
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          functionName: H.pe
+          source: '    at H.pe (https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:21240)'
+      type: Storage.LocalStorage
+  didomi_token:
+    value: >-
+      eyJ1c2VyX2lkIjoiMTlmMGFhNWEtNzNhNy02YWZiLTk4OGMtNDc2YzRlOGQ0YTRlIiwiY3JlYXRlZCI6IjIwMjYtMDYtMjdUMTk6NTQ6MTYuMjUwWiIsInVwZGF0ZWQiOiIyMDI2LTA2LTI3VDE5OjU0OjE2LjI1OFoiLCJ2ZXJzaW9uIjpudWxsfQ==
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 72489
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js
+          functionName: s
+          source: '    at s (https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js:2:72489)'
+        - columnNumber: 140851
+          lineNumber: 2
+          fileName: >-
+            https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js
+          functionName: h
+          source: '    at h (https://sdk.privacy-center.org/sdk/da97e3a020d59f84d93523f973a3ed2828a593de/modern/sdk.da97e3a020d59f84d93523f973a3ed2828a593de.js:2:140851)'
+      type: Storage.LocalStorage
+  Service_Device:
+    value:
+      name: Chrome
+      version: '140.0'
+      osName: Linux
+      osVersion: ''
+      osMajorVersion: ''
+      device: desktop
+      batteryLevel: null
+      batteryCharging: null
+      screenWidth: 800
+      screenHeight: 600
+      processorSpeed: 1.6000000014901161
+      netInfoDownlink: 10
+      netInfoEffType: 4g
+      netInfoRtt: 50
+      platform: Linux x86_64
+      simpleType: desktop
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 355800
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: e.value
+          source: '    at e.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:355800)'
+        - columnNumber: 355592
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:355592'
+      type: Storage.LocalStorage
+  lastVisit30:
+    value: 4
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 26
+          lineNumber: 3794
+          fileName: https://www.marca.com/
+          functionName: recurrentUser
+          source: '    at recurrentUser (https://www.marca.com/:3794:26)'
+        - columnNumber: 46
+          lineNumber: 3841
+          fileName: https://www.marca.com/
+          source: '    at https://www.marca.com/:3841:46'
+      type: Storage.LocalStorage
+  be_adblocking:
+    value: no bloqueada
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 620
+          lineNumber: 4462
+          fileName: https://www.marca.com/
+          functionName: AD_BLOCK_DATA_READY
+          source: '    at AD_BLOCK_DATA_READY (https://www.marca.com/:4462:620)'
+        - columnNumber: 94
+          lineNumber: 328
+          fileName: >-
+            /_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable
+          functionName: Io.push
+          source: '    at Io.push (/_/mss/boq-content-ads-contributor/_/js/k=boq-content-ads-contributor.ContributorServingResponseClientJs.es.uEcqCrFmWoQ.es5.O/d=1/rs=AJlcJMzgS-U08rT95jhP17daaN1miuvFnA/m=kernel_loader,loader_js_executable:328:94)'
+      type: Storage.LocalStorage
+  random2:
+    value: 14
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 658200
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js
+          functionName: new GAMExp
+          source: '    at new GAMExp (https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js:1:658200)'
+        - columnNumber: 16
+          lineNumber: 3
+          fileName: https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js
+          source: '    at https://adtcdn.unidadeditorial.es/gexp/_gam_kv_.js:3:16'
+      type: Storage.LocalStorage
+  ueConsentData:
+    value: >-
+      CQmdrkAQmdrkAAHABBENCkFgAAAAAELAAAAAAAAZOgXgA4AGaAZ8A6QCVQF-gMEAaMA48Bz4DtgHcgPPAfaA_YCAwEEQIKARpAj0BIiCSQJKASjAmGBOuCfoJ_QUEBQUCj4FNQKpgVZArABWQCtoFdwK-gWEAtWBbwC4AF2gLvAXsAxABjADGgGTgBiUAGAAIMnFIAMAAQZOHQAYAAgycQgAwABBk4JABgACDJxaADAAEGTg.IMnNX_H__bX9v-f736ft0eY1f9_j77uQxBhfJs-4FzLvW_JwX32E7NF36tqYKmRIEu3bBIQNtHJnUTVihaogVrzHMak2c4TtKJ-BkiHMZe29YCF5vm4tj-QKZ5_r_9nd92T_9_dv-3dzy3_1nv3f9_-f1eLyde5-tH_v_bxOb-_If9_7-_4v8_t_rk2_eT1v_9evv7__-_____f__9_f___________-____f______6_________________f_________7d_______wAAA.YAAACFgAAAAA
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 19844
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          functionName: H.ue
+          source: '    at H.ue (https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:19844)'
+        - columnNumber: 14538
+          lineNumber: 1
+          fileName: https://e00-ue.uecdn.es/cookies/js/policy_v5.js
+          source: '    at https://e00-ue.uecdn.es/cookies/js/policy_v5.js:1:14538'
+      type: Storage.LocalStorage
+  Service_Geo:
+    value:
+      country_code: ES
+      city: alcantarilla
+      lat: '37.970'
+      long: '-1.210'
+      region: MU
+      postal_code: '30820'
+      gpt_ad_id: '99071977'
+      client_ip: 79.150.28.74
+      timestamp: 1782590057777
+      main_zone: SPAIN
+    firstPartyStorage: true
+    log:
+      location: https://www.marca.com/
+      stack:
+        - columnNumber: 355800
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          functionName: e.value
+          source: '    at e.value (https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:355800)'
+        - columnNumber: 355592
+          lineNumber: 1
+          fileName: https://adtcdn.unidadeditorial.es/mdw/migrate.js
+          source: '    at https://adtcdn.unidadeditorial.es/mdw/migrate.js:1:355592'
+      type: Storage.LocalStorage

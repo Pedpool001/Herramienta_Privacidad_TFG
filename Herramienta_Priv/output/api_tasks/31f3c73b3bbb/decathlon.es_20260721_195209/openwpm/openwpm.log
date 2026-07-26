@@ -1,0 +1,181 @@
+2026-07-21 19:52:12,443 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 720709380: Launching browser...
+2026-07-21 19:52:12,445 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Spawn attempt 0 
+2026-07-21 19:52:12,449 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for TaskManager
+2026-07-21 19:52:12,457 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 720709380: Saved extension config file to: /tmp/firefox_profile_v5ega9lv/browser_params.json
+2026-07-21 19:52:12,464 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656332464	geckodriver	INFO	Listening on 127.0.0.1:27459
+2026-07-21 19:52:12,494 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656332493	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/home/pedro/Escritorio ...  "--headless" "--width=1366" "--height=768" "--remote-debugging-port" "13779" "--remote-allow-hosts" "localhost" "-no-remote"
+2026-07-21 19:52:12,520 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: *** You are running in headless mode.
+2026-07-21 19:52:12,625 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.warn: services.settings: Ignoring preference override of remote settings server
+2026-07-21 19:52:12,625 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2026-07-21 19:52:13,062 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656333061	Marionette	INFO	Marionette enabled
+2026-07-21 19:52:13,182 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "Warning: unrecognized command line flag" "-width"
+2026-07-21 19:52:13,182 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "Warning: unrecognized command line flag" "-height"
+2026-07-21 19:52:13,205 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656333205	Marionette	INFO	Listening on port 17389
+2026-07-21 19:52:13,221 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: WebDriver BiDi listening on ws://127.0.0.1:13779
+2026-07-21 19:52:13,295 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Read port: 17389
+2026-07-21 19:52:13,370 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656333370	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2026-07-21 19:52:14,439 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: RSLoader:
+2026-07-21 19:52:14,440 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Failed to retrieve recipes from Remote Settings
+2026-07-21 19:52:14,440 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Message: Error: Could not sync nimbus-desktop-experiments: get-exception
+2026-07-21 19:52:14,440 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Stack:
+2026-07-21 19:52:14,441 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: RemoteSettingsSyncError@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:1360:5
+2026-07-21 19:52:14,441 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: getRecipesFromCollection@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:645:13
+2026-07-21 19:52:14,441 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 
+2026-07-21 19:52:14,736 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,736 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,737 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,737 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,737 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Amo", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,786 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 720709380: OpenWPM Firefox extension loaded
+2026-07-21 19:52:14,789 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Looking for extension port information in /tmp/firefox_profile_v5ega9lv
+2026-07-21 19:52:14,790 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Connecting to extension on port 25993
+2026-07-21 19:52:14,790 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for Browser-720709380
+2026-07-21 19:52:14,791 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2026-07-21 19:52:14,791 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_v5ega9lv/extension_port.txt
+2026-07-21 19:52:14,793 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2026-07-21 19:52:14,793 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,793 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,794 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,794 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,794 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Amp", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,796 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2026-07-21 19:52:14,800 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,801 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,801 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,801 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,801 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Mdn", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,804 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2026-07-21 19:52:14,807 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2026-07-21 19:52:14,807 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_v5ega9lv/OPENWPM_STARTUP_SUCCESS.txt
+2026-07-21 19:52:14,884 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,885 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,885 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,885 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,886 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Dynamic", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,887 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,888 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,888 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,888 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,888 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Weather", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,890 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,891 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,891 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,891 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: BrowserManager ready.
+2026-07-21 19:52:14,892 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,892 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Browser spawn successful!
+2026-07-21 19:52:14,892 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Wikipedia", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,893 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,894 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,894 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,894 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 19:52:14,895 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Yelp", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 19:52:14,928 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for StorageControllerHandle
+2026-07-21 19:52:14,930 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id -1
+2026-07-21 19:52:14,930 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id -1 while finalizing
+2026-07-21 19:52:14,932 - MainProcess[MainThread]- task_manager         - INFO    : 
+
+OpenWPM Version: b'v0.32.0'
+Firefox Version: b'148.0'
+
+========== Manager Configuration ==========
+{
+  "_failure_limit": null,
+  "data_directory": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/31f3c73b3bbb/decathlon.es_20260721_195209/openwpm",
+  "log_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/31f3c73b3bbb/decathlon.es_20260721_195209/openwpm/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    62141
+  ],
+  "memory_watchdog": false,
+  "num_browsers": 1,
+  "process_watchdog": false,
+  "screenshot_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/31f3c73b3bbb/decathlon.es_20260721_195209/openwpm/screenshots",
+  "source_dump_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/31f3c73b3bbb/decathlon.es_20260721_195209/openwpm/sources",
+  "storage_controller_address": [
+    "127.0.0.1",
+    36241
+  ],
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "browser_id": 0,
+  "bot_mitigation": 1,
+  "browser": 2,
+  "callstack_instrument": 3,
+  "cookie_instrument": 4,
+  "custom_params": 5,
+  "display_mode": 6,
+  "dns_instrument": 7,
+  "donottrack": 8,
+  "http_instrument": 9,
+  "js_instrument": 10,
+  "js_instrument_settings": 11,
+  "maximum_profile_size": 12,
+  "navigation_instrument": 13,
+  "prefs": 14,
+  "profile_path": 15,
+  "recovery_tar": 16,
+  "save_content": 17,
+  "tmp_profile_dir": 18,
+  "tp_cookies": 19,
+  "tracking_protection": 20
+}
+
+        0  1      2        3      4     5    6         7     8      9     10    11                             12    13    14    15    16    17     18    19      20
+---------  -----  -------  -----  ----  ---  --------  ----  -----  ----  ----  -----------------------------  ----  ----  ----  ----  ----  -----  ----  ------  -----
+720709380  False  firefox  False  True  {}   headless  True  False  True  True  ['collection_fingerprinting']        True  {}                False  /tmp  always  False
+
+========== JS Instrument Settings ==========
+{"720709380":[{"object":"window['ScriptProcessorNode'].prototype","instrumentedName":"ScriptProcessorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['GainNode'].prototype","instrumentedName":"GainNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AnalyserNode'].prototype","instrumentedName":"AnalyserNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OscillatorNode'].prototype","instrumentedName":"OscillatorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OfflineAudioContext'].prototype","instrumentedName":"OfflineAudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AudioContext'].prototype","instrumentedName":"AudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['RTCPeerConnection'].prototype","instrumentedName":"RTCPeerConnection","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['HTMLCanvasElement'].prototype","instrumentedName":"HTMLCanvasElement","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['Storage'].prototype","instrumentedName":"Storage","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.navigator","instrumentedName":"window.navigator","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['CanvasRenderingContext2D'].prototype","instrumentedName":"CanvasRenderingContext2D","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":["clearRect","lineTo","canvas","transform","quadraticCurveTo","setTransform","translate","globalAlpha","closePath","drawImage","beginPath","moveTo"],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window","instrumentedName":"window","logSettings":{"propertiesToInstrument":["localStorage","name","sessionStorage"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.document","instrumentedName":"window.document","logSettings":{"propertiesToInstrument":["cookie","referrer"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":true,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.screen","instrumentedName":"window.screen","logSettings":{"propertiesToInstrument":["pixelDepth","colorDepth"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}}]}
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2026-07-21 19:52:14,941 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for StorageControllerHandle, because the underlying socket closed
+2026-07-21 19:52:17,448 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2026-07-21 19:52:17,447 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-07-21 19:52:17,449 - MainProcess[BrowserManagerHandle-720709380]- browser_manager      - INFO    : Starting to work on CommandSequence with visit_id 5548665096593865 on browser with id 720709380
+2026-07-21 19:52:17,452 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 720709380: EXECUTING COMMAND: InitializeCommand()
+2026-07-21 19:52:17,458 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 720709380: EXECUTING COMMAND: GetCommand(https://www.decathlon.es,15)
+2026-07-21 19:52:17,492 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2026-07-21 19:52:17,723 - MainProcess[BrowserManagerHandle-720709380]- browser_manager      - INFO    : BROWSER 720709380: Received neterror dnsNotFound while executing command: GetCommand(https://www.decathlon.es,15)
+2026-07-21 19:52:17,724 - MainProcess[BrowserManagerHandle-720709380]- browser_manager      - DEBUG   : BROWSER 720709380: Browser restart required
+2026-07-21 19:52:17,725 - MainProcess[BrowserManagerHandle-720709380]- browser_manager      - INFO    : Finished working on CommandSequence with visit_id 5548665096593865 on browser with id 720709380
+2026-07-21 19:52:17,725 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id 5548665096593865
+2026-07-21 19:52:17,725 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id 5548665096593865 while finalizing
+2026-07-21 19:52:17,726 - MainProcess[MainThread]- sql_provider         - WARNING : Visit with visit_id 5548665096593865 got interrupted
+2026-07-21 19:52:19,726 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Closing browser manager...
+2026-07-21 19:52:19,727 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Closing browser...
+2026-07-21 19:52:19,728 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Joining command thread
+2026-07-21 19:52:19,729 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: 0.000053 seconds to join command thread
+2026-07-21 19:52:19,736 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 1784656339736	Marionette	INFO	Stopped listening on port 17389
+2026-07-21 19:52:20,401 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+2026-07-21 19:52:20,422 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: console.error: WebExtensions:
+2026-07-21 19:52:20,422 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for Browser-720709380, because the underlying socket closed
+2026-07-21 19:52:20,422 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///tmp/addon-7576a011-b246-4d8f-a58e-9c101cffa162.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 49"  data: no]
+2026-07-21 19:52:20,423 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: Stack:
+2026-07-21 19:52:20,423 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: onInputStreamReady@jar:file:///tmp/addon-7576a011-b246-4d8f-a58e-9c101cffa162.xpi!/privileged/sockets/api.js:49:33
+2026-07-21 19:52:20,424 - MainProcess[log-interceptor-720709380]- selenium_firefox     - DEBUG   : BROWSER 720709380: driver: 
+2026-07-21 19:52:20,626 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: Browser manager closed successfully.
+2026-07-21 19:52:20,627 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 720709380: during_init=False | profile_archive_dir=None
+2026-07-21 19:52:20,637 - MainProcess[MainThread]- storage_controller   - DEBUG   : Sending the shutdown signal to the Storage Controller...
+2026-07-21 19:52:20,638 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for TaskManager, because the underlying socket closed
+2026-07-21 19:52:22,450 - MainProcess[MainThread]- storage_controller   - INFO    : Received shutdown signal!
+2026-07-21 19:52:22,451 - MainProcess[MainThread]- storage_controller   - INFO    : Closing Server
+2026-07-21 19:52:22,452 - MainProcess[MainThread]- storage_controller   - INFO    : Closed Server
+2026-07-21 19:52:22,453 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling status_queue_update
+2026-07-21 19:52:22,454 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled status_queue_update
+2026-07-21 19:52:22,455 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling timeout_check
+2026-07-21 19:52:22,456 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled timeout_check
+2026-07-21 19:52:22,457 - MainProcess[MainThread]- storage_controller   - INFO    : Starting wait_closed
+2026-07-21 19:52:22,458 - MainProcess[MainThread]- storage_controller   - INFO    : Completed wait_closed
+2026-07-21 19:52:22,459 - MainProcess[MainThread]- storage_controller   - INFO    : Entering self.shutdown
+2026-07-21 19:52:27,466 - MainProcess[MainThread]- storage_controller   - INFO    : structured_storage is shut down
+2026-07-21 19:52:27,471 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageControllerHandle took 6.832885265350342 seconds to close.

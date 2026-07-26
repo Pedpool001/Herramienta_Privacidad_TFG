@@ -1,0 +1,67 @@
+{
+  "browser_cookies": [
+    {
+      "name": "AUTH_STATE",
+      "value": "eyJhcHAiOiJXTkYifQ%3D%3D",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2026-08-05T18:43:58.046Z",
+      "size": 34,
+      "httpOnly": true,
+      "secure": true,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "ecom_user_id",
+      "value": "06969876-c96e-4ee3-9a1d-21edff627dd1",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2027-07-21T18:43:58.046Z",
+      "size": 48,
+      "httpOnly": false,
+      "secure": true,
+      "session": false,
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__cf_bm",
+      "value": "BxKm_WzpTfssOg5rDVZKyRLn8R0X8sEUNb_6NBqbjK0-1784659434.4539104-1.0.1.1-x_3hWgwHUl1T0WVn8wLO8GGVhzk_1.u5TAZ8vAugkzC8SXrqCZM9daiG_xAHSdKY.2C6HBrNrcAECxalMfrgcCexBZ2MTD3elIW_pJED99ypfcS0Ig1s9WLCe6BQDHLb",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": "2026-07-21T19:13:58.046Z",
+      "size": 206,
+      "httpOnly": true,
+      "secure": true,
+      "session": false,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_cfuvid",
+      "value": "lrB3NVZdxlf3kyYK2C0YZV_kfNUViWzN.uHNAal9SQc-1784659434.4539104-1.0.1.1-1Zbe4GpMqZlfPrpTkISsILXiXG.9xjq_w2EHLe3Hrvc",
+      "domain": "www.decathlon.es",
+      "path": "/",
+      "expires": -1,
+      "size": 121,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ]
+}

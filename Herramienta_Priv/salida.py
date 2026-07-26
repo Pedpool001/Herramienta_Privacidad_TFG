@@ -10,6 +10,8 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+from normativas import grafico_normativas, CSS_NORMATIVAS
+
 # ── Metadatos de cada requisito ───────────────────────────────────────────────
 
 REQUISITOS = {
@@ -50,12 +52,57 @@ def _color(veredicto: str) -> tuple:
 
 def _resumen(resultados: dict) -> dict:
     conteo = {k: 0 for k in COLORES if k != "NO_SOLICITADO"}
-    for v in resultados.values():
+    for req, v in resultados.items():
+        # Las claves con "_" delante son metadatos de la auditoría (p. ej.
+        # "_meta" con la información de bloqueo anti-bot), no requisitos.
+        if req.startswith("_"):
+            continue
         veredicto = v.get("veredicto", "ERROR")
         if veredicto == "NO_SOLICITADO":
             continue
         conteo[veredicto] = conteo.get(veredicto, 0) + 1
     return conteo
+
+
+def _aviso_bloqueo(resultados: dict) -> str:
+    """
+    Banner explicativo cuando la auditoría se topó con un sistema anti-bot.
+
+    Sin esto, el usuario ve varios requisitos "sin dato" sin saber por qué, y
+    puede interpretarlos como un fallo de la herramienta o, peor, como un
+    incumplimiento del sitio.
+    """
+    bloqueo = (resultados.get("_meta") or {}).get("bloqueo")
+    if not bloqueo:
+        return ""
+
+    sistema   = _esc(str(bloqueo.get("sistema", "desconocido")))
+    confianza = bloqueo.get("confianza", "alta")
+    detalles  = []
+    if bloqueo.get("status"):
+        detalles.append(f"HTTP {bloqueo['status']}")
+    if bloqueo.get("senal"):
+        detalles.append(f"señal: {_esc(str(bloqueo['senal']))}")
+    if confianza == "media":
+        detalles.append("detección de confianza media")
+    sufijo = f" ({' · '.join(detalles)})" if detalles else ""
+
+    return f"""
+<div class="aviso-bloqueo">
+  <div class="aviso-icono">🛡️</div>
+  <div>
+    <div class="aviso-titulo">Sitio protegido por {sistema}</div>
+    <p class="aviso-texto">
+      El sitio ha servido una página de verificación anti-bot en lugar de su
+      contenido real{sufijo}. Los requisitos que dependen de analizar la política
+      de privacidad o el banner de cookies aparecen como
+      <strong>Sin dato</strong>: no ha sido posible medirlos en este entorno.
+      <strong>Esto no significa que el sitio los incumpla</strong>, sino que la
+      auditoría automática no ha podido comprobarlos. El resto de requisitos,
+      que se miden sobre el tráfico de red, sí son válidos.
+    </p>
+  </div>
+</div>"""
 
 
 def _esc(text: object) -> str:
@@ -84,7 +131,12 @@ def _extraer_info(req: str, detalle) -> dict:
     # Extraer el texto de evaluacion.detalle (patrón más común en los scripts)
     # detalle puede ser dict, list (R9) o str — solo los dicts tienen .get()
     ev = (detalle.get("evaluacion") or {}) if isinstance(detalle, dict) else {}
-    texto = ev.get("detalle") or ""
+    # Preferir evaluacion.detalle (patrón de los scripts); si no, un "detalle"
+    # a nivel raíz (p. ej. el mensaje de captura vacía de Privacy Pioneer).
+    texto = ev.get("detalle") or (detalle.get("detalle")
+                                  if isinstance(detalle, dict)
+                                  and isinstance(detalle.get("detalle"), str)
+                                  else "") or ""
 
     # ── R1: Información por capas ─────────────────────────────────────────────
     if req == "R1":
@@ -114,6 +166,16 @@ def _extraer_info(req: str, detalle) -> dict:
             if empresas:
                 sufijo = f" (+{len(empresas) - 5} más)" if len(empresas) > 5 else ""
                 items.append(f"Empresas implicadas: {_esc(', '.join(empresas[:5]))}{sufijo}")
+        # Señal de fiabilidad: nº de evidencias capturadas por la extensión.
+        # Un veredicto basado en pocas evidencias es menos robusto por la
+        # variabilidad de la publicidad programática entre cargas de página.
+        n_ev = detalle.get("n_evidencias")
+        if isinstance(n_ev, int):
+            chips.append(("Evidencias capturadas", str(n_ev)))
+            if 0 < n_ev < 10:
+                items.append("⚠️ Pocas evidencias capturadas: el veredicto puede "
+                             "variar entre ejecuciones por la naturaleza dinámica "
+                             "de la publicidad programática.")
 
     # ── R4: Granularidad ──────────────────────────────────────────────────────
     elif req == "R4":
@@ -482,6 +544,14 @@ def generar_informe_unico(url_sitio: str, resultados: dict, ruta_salida: str) ->
     )
     total = len(REQUISITOS)
 
+    # Cumplimiento agregado por normativa (RGPD, ePrivacy, LSSI, AEPD, CEPD)
+    normativas = grafico_normativas([
+        (req, resultados.get(req, {}).get("veredicto", "ERROR"))
+        for req in REQUISITOS
+    ])
+
+    aviso_bloqueo = _aviso_bloqueo(resultados)
+
     html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -677,6 +747,22 @@ def generar_informe_unico(url_sitio: str, resultados: dict, ruta_salida: str) ->
   }}
 
   .sin-datos {{ font-size: 12px; color: #57606a; font-style: italic; }}
+
+  h2.seccion {{
+    font-size: 17px; margin: 26px 0 4px; color: #24292f;
+    padding-bottom: 6px; border-bottom: 1px solid #d0d7de;
+  }}
+
+  .aviso-bloqueo {{
+    display: flex; gap: 14px; align-items: flex-start;
+    background: #fff8c5; border: 1px solid #d4a72c;
+    border-left: 4px solid #9a6700;
+    border-radius: 6px; padding: 14px 16px; margin: 18px 0;
+  }}
+  .aviso-icono  {{ font-size: 22px; line-height: 1; flex-shrink: 0; }}
+  .aviso-titulo {{ font-weight: 600; color: #7d4e00; margin-bottom: 4px; }}
+  .aviso-texto  {{ font-size: 13px; color: #57606a; line-height: 1.6; }}
+{CSS_NORMATIVAS}
 </style>
 </head>
 <body>
@@ -710,6 +796,12 @@ def generar_informe_unico(url_sitio: str, resultados: dict, ruta_salida: str) ->
   </div>
 </div>
 
+{aviso_bloqueo}
+
+<h2 class="seccion">Cumplimiento por normativa</h2>
+{normativas}
+
+<h2 class="seccion">Detalle por requisito</h2>
 <div class="tabla-wrap">
   <table>
     <thead>

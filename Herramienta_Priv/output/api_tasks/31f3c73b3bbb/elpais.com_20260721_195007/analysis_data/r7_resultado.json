@@ -1,0 +1,10 @@
+{
+  "sitio": "desconocido",
+  "veredicto": "PASSED",
+  "total_scripts_terceros": 0,
+  "scripts_detectados": [],
+  "resumen": {
+    "FAILED": 0,
+    "WARNING": 0
+  }
+}

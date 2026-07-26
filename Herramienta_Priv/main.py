@@ -42,6 +42,7 @@ from modulos_herramientas import (
 )
 
 from buscador_politica import buscar_url_politica, _sondear_subdominios
+from anti_bot import describir
 from modulos_herramientas.poligraph import WrongPolicyPageError
 
 log = logging.getLogger(__name__)
@@ -155,11 +156,30 @@ def _hilo_poligraph(url_sitio: str, output_dir: Path,
     url_politica = info_politica.get("url")
 
     if not url_politica:
-        log.warning("No se encontró política de privacidad. "
-                    "Requisitos de PoliGraph marcados como NO_EVALUABLE.")
+        # Distinguir "el sitio no publica política localizable" de "nos han
+        # bloqueado": ambos dan NO_EVALUABLE, pero el motivo que se registra en
+        # el informe es distinto y permite cuantificar el alcance real del
+        # anti-bot sobre la muestra.
+        bloqueo = info_politica.get("bloqueo")
+        if bloqueo:
+            motivo = (f"Sitio protegido por {bloqueo['sistema']} "
+                      f"({bloqueo.get('senal', '')}) — política inaccesible")
+            log.warning("Política inaccesible: %s. "
+                        "Requisitos de PoliGraph marcados como NO_EVALUABLE.",
+                        describir(bloqueo))
+            # Guardar el bloqueo como metadato de la auditoría para que el
+            # informe pueda explicárselo al usuario. La clave lleva "_" delante
+            # porque no es un requisito y los conteos deben ignorarla.
+            with lock:
+                resultados.setdefault("_meta", {})["bloqueo"] = bloqueo
+        else:
+            motivo = "Política de privacidad no localizable automáticamente"
+            log.warning("No se encontró política de privacidad. "
+                        "Requisitos de PoliGraph marcados como NO_EVALUABLE.")
+
         _marcar_no_evaluable(resultados, lock,
                              ["R1", "R5", "R14", "R15", "R16", "R19"],
-                             "Política de privacidad no localizable automáticamente")
+                             motivo)
         evento.set()
         return
 
@@ -382,7 +402,12 @@ def auditar(url_sitio: str, ruta_salida: str | None = None,
              "(requisitos seleccionados: %s)",
              len(hilos), url_sitio,
              ", ".join(sorted(sel)) if sel != _TODOS_REQS else "todos")
+    # Prefijar el nombre de hilo con el dominio: en modo paralelo los logs de
+    # varios sitios se entrelazan y el formato ya incluye %(threadName)s, así
+    # que cada línea queda identificada como "marca.com|PoliGraph".
+    _etiqueta = urlparse(url_sitio).netloc.replace("www.", "") or url_sitio
     for h in hilos:
+        h.name = f"{_etiqueta}|{h.name}"
         h.start()
 
     for h in hilos:
@@ -419,11 +444,17 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--batch", metavar="FILE",
-        help="Fichero .txt con una URL por línea. Ejecuta auditorías secuenciales.",
+        help="Fichero .txt con una URL por línea. Audita varios sitios en paralelo.",
     )
     parser.add_argument(
         "--salida", metavar="PATH",
         help="Ruta del informe HTML (modo único) o directorio de salida (modo batch).",
+    )
+    parser.add_argument(
+        "--workers", type=int, metavar="N",
+        help="Sitios a auditar en paralelo (solo con --batch). Por defecto se "
+             "calcula según los recursos de la máquina; usa 1 para forzar el "
+             "modo secuencial.",
     )
     args = parser.parse_args()
 
@@ -436,7 +467,7 @@ if __name__ == "__main__":
     if args.batch:
         # ── Modo batch ────────────────────────────────────────────────────────
         import batch as _batch
-        _batch.auditar_batch(args.batch, args.salida)
+        _batch.auditar_batch(args.batch, args.salida, workers=args.workers)
 
     elif args.url:
         # ── Modo sitio único ──────────────────────────────────────────────────

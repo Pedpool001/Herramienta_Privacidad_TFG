@@ -1,0 +1,14 @@
+{
+  "requisito": "R2",
+  "descripcion": "Bloqueo de cookies no exentas antes del consentimiento",
+  "sitios": {
+    "https://www.abc.es/": {
+      "veredicto": "PASSED",
+      "evaluacion": {
+        "estado": "PASSED",
+        "detalle": "No se detectó ningún rastreador no exento activo antes del consentimiento. Cumple RGPD Art. 7 / LSSI Art. 22.2."
+      },
+      "violaciones": []
+    }
+  }
+}

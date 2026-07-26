@@ -1,0 +1,27 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '9e8f8796-4ee3-4fcd-ac0b-ee9cd4ccfe47',
+  '4947af50-1136-473f-bf5c-526b7329e558'
+]
+PP window: 4947af50-1136-473f-bf5c-526b7329e558
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.abc.es
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 16 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: abc_es
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Aceptar y continuar"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 40 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: abc_es
+time spent:  75.223 total elapsed:  134.157

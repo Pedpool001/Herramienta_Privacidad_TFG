@@ -1,0 +1,50 @@
+{
+  "sitio": "www.decathlon.es",
+  "veredicto": "FAILED",
+  "resumen": {
+    "FAILED": 1,
+    "WARNING": 0,
+    "INFO": 3
+  },
+  "fallos": [
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://halc.iadvize.com/iadvize.js",
+      "dominio": "iadvize.com",
+      "eventos": [
+        "keypress"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    }
+  ],
+  "avisos": [],
+  "notas": [
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://halc.iadvize.com/iadvize.js",
+      "dominio": "iadvize.com",
+      "eventos": [
+        "scroll"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    },
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://www.googletagmanager.com/gtm.js?id=GTM-KN9WWJCV",
+      "dominio": "googletagmanager.com",
+      "eventos": [
+        "click"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    },
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://static.iadvize.com/livechat/unversioned/notification.js",
+      "dominio": "iadvize.com",
+      "eventos": [
+        "scroll"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    }
+  ]
+}

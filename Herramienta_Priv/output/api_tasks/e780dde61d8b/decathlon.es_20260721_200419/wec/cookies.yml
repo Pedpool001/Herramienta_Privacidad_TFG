@@ -1,0 +1,27 @@
+- name: __cf_bm
+  value: >-
+    5TttxkynvjIk9lYSNGFTgm8EsnBPXEpFwa3VmXeL1gU-1784657070.568495-1.0.1.1-rUOvWqMIdCcNWkBW_en05rw_TVOsvGgk.ZmqwM0gtecYQpFw3wO_V74dSno30pnM3HrRqO6CQ3UWRB.Ow29J523WjHc9_Q1Jf9o0SQndAGSAPNDI7fWUJUrf09Bh7S.M
+  domain: www.decathlon.es
+  path: /
+  expires: 1784658873.742045
+  size: 205
+  httpOnly: true
+  secure: true
+  session: false
+  sameSite: None
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T18:34:33.742Z
+  expiresDays: 0.02
+  log:
+    location: https://www.decathlon.es/
+    stack:
+      - fileName: >-
+          https://www.decathlon.es/cdn-cgi/challenge-platform/h/b/fo/714867806:1784653820:bPissYbh3jdPdlL8tKmJ1VGOLIO1NnLbA3HF5C9ko9k/a1ec20dd1cb00863/B41ttktDVEBYJUI1n4f3DRkYJhc2zQznqTZQQQqdoP4-1784657069-1.2.1.1-CL1B.OgYB.5Ot5.W_Qf6dnHakuFGezGAaBlvDKC54MfKHpn18XTySeKSXeSEKYS0
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://www.decathlon.es/cdn-cgi/challenge-platform/h/b/fo/714867806:1784653820:bPissYbh3jdPdlL8tKmJ1VGOLIO1NnLbA3HF5C9ko9k/a1ec20dd1cb00863/B41ttktDVEBYJUI1n4f3DRkYJhc2zQznqTZQQQqdoP4-1784657069-1.2.1.1-CL1B.OgYB.5Ot5.W_Qf6dnHakuFGezGAaBlvDKC54MfKHpn18XTySeKSXeSEKYS0
+    type: Cookie.HTTP
+  firstPartyStorage: true

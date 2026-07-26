@@ -1,0 +1,146 @@
+{
+  "sitio": "abc.es",
+  "veredicto": "FAILED",
+  "total_scripts_terceros": 31,
+  "scripts_detectados": [
+    {
+      "script_url": "https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js",
+      "dominio": "vocstatic.com",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 9,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.appCodeName": 1,
+        "window.navigator.platform": 2,
+        "window.navigator.appName": 1,
+        "window.navigator.appVersion": 1,
+        "window.navigator.userAgent": 1,
+        "window.navigator.vendor": 1
+      },
+      "bonuses": [
+        "+2 Batería de navigator (6 señales distintas)"
+      ],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://service.wemass.com/dmp/d94422aa8614fd4bf4e0cafd66f9c097.js",
+      "dominio": "wemass.com",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 8,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.languages": 1,
+        "window.navigator.hardwareConcurrency": 2,
+        "window.navigator.platform": 2,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [
+        "+2 Batería de navigator (4 señales distintas)"
+      ],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://es-config.sensic.net/s2s-web.js",
+      "dominio": "sensic.net",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 4,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.platform": 2,
+        "window.navigator.userAgent": 1,
+        "window.navigator.maxTouchPoints": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "dominio": "adobedtm.com",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appName": 1,
+        "window.navigator.appVersion": 1,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://players.brightcove.net/55814260001/8WkPPcv56h_default/index.min.js",
+      "dominio": "brightcove.net",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.languages": 1,
+        "window.navigator.userAgent": 1,
+        "window.navigator.maxTouchPoints": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "dominio": "privacy-center.org",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.languages": 1,
+        "window.navigator.vendor": 1,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://static.vocstatic.com/portalsjs/3.14.0/portals.js",
+      "dominio": "vocstatic.com",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.platform": 2,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://static.vocstatic.com/voonto2/2.26.2/vendor-bundle.js",
+      "dominio": "vocstatic.com",
+      "site_url": "https://www.abc.es/",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.vendor": 1,
+        "window.navigator.appVersion": 1,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    }
+  ],
+  "resumen": {
+    "FAILED": 2,
+    "WARNING": 6
+  }
+}

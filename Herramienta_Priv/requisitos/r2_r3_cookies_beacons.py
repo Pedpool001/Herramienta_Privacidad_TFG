@@ -59,7 +59,9 @@ DB_CONFIG = {
     "database": os.getenv("MYSQL_DATABASE", "analysis"),
 }
 
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r2_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r2_resultado.json"
 
 # Tipos que REQUIEREN consentimiento (no exentos)
 TIPOS_NO_EXENTOS = {"advertising", "analytics", "social", "trackingPixel", "fingerprinting"}

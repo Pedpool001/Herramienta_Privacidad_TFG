@@ -23,7 +23,7 @@ from pathlib import Path
 
 import requests as _requests
 
-from ._loader import ejecutar_analisis, TFG_DIR
+from ._loader import ejecutar_analisis, TFG_DIR, dir_analisis as _dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -241,7 +241,19 @@ def ejecutar(url_politica: str, output_dir: Path,
                 raise WrongPolicyPageError(stderr_msg)
             if "HTTP error 403" in stderr_msg or "Got HTTP error 403" in stderr_msg:
                 log.warning("PoliGraph html_crawler: HTTP 403 — política bloqueada por anti-bot")
+                # El bloqueo puede darse aquí aunque la portada cargara bien: la
+                # página de la política suele estar protegida por separado. Se
+                # registra en _meta para que el informe lo contabilice igual que
+                # los bloqueos detectados en el buscador de políticas; sin esto,
+                # estos casos no aparecían en el recuento de sitios inaccesibles.
                 with lock:
+                    resultados.setdefault("_meta", {}).setdefault("bloqueo", {
+                        "sistema":   "Desconocido",
+                        "senal":     "HTTP 403 en la política de privacidad",
+                        "status":    403,
+                        "confianza": "media",
+                        "fase":      "politica",
+                    })
                     for req in requisitos_poligraph:
                         resultados[req] = {
                             "veredicto": "NO_EVALUABLE",
@@ -354,7 +366,8 @@ def ejecutar(url_politica: str, output_dir: Path,
         else:
             script_input = str(output_dir)
         try:
-            data = ejecutar_analisis(script, script_input)
+            data = ejecutar_analisis(script, script_input,
+                                     salida_dir=_dir_analisis(output_dir))
             with lock:
                 resultados[req] = {
                     "veredicto": data.get("veredicto", "ERROR"),

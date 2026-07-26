@@ -1,0 +1,495 @@
+{
+  "sitio": "abc.es",
+  "veredicto": "FAILED",
+  "resumen_cookies": {
+    "PASSED": 23,
+    "WARNING": 0,
+    "FAILED": 8
+  },
+  "total_ls_terceros": 17,
+  "cookies": [
+    {
+      "nombre": "AMCV_9854C13E58403FEB0A495D53%40AdobeOrg",
+      "dominio": "abc.es",
+      "dias": 400,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (400)"
+    },
+    {
+      "nombre": "s_ecid",
+      "dominio": "abc.es",
+      "dias": 400,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Advertiser's website",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (400)"
+    },
+    {
+      "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_identity",
+      "dominio": "abc.es",
+      "dias": 395,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "FAILED",
+      "motivo": "3ª parte (categoría: desconocida) excede 365 días (395)"
+    },
+    {
+      "nombre": "IDE",
+      "dominio": "doubleclick.net",
+      "dias": 390,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Google",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (390)"
+    },
+    {
+      "nombre": "FCCDCF",
+      "dominio": "abc.es",
+      "dias": 390,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "Cookie CMP dentro de 13 meses (390 días)"
+    },
+    {
+      "nombre": "didomi_token",
+      "dominio": "abc.es",
+      "dias": 366,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Didomi",
+      "estado": "PASSED",
+      "motivo": "Cookie CMP dentro de 13 meses (366 días)"
+    },
+    {
+      "nombre": "FCNEC",
+      "dominio": "abc.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "vocuser_information",
+      "dominio": "abc.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "voc_edtn",
+      "dominio": "abc.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "vocuser_uuid",
+      "dominio": "abc.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "voc_paywall",
+      "dominio": "abc.es",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "ev_sid",
+      "dominio": "abc.es",
+      "dias": 360,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (360 días)"
+    },
+    {
+      "nombre": "ev_did",
+      "dominio": "abc.es",
+      "dias": 360,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (360 días)"
+    },
+    {
+      "nombre": "demdex",
+      "dominio": "demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "dpm",
+      "dominio": "dpm.demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "dextp",
+      "dominio": "demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "voc-rtim",
+      "dominio": "abc.es",
+      "dias": 30,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (30 días)"
+    },
+    {
+      "nombre": "vocuser_nfryl_volver_al_origen",
+      "dominio": "abc.es",
+      "dias": 1,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (1 días)"
+    },
+    {
+      "nombre": "geo",
+      "dominio": "www.abc.es",
+      "dias": 1,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (1 días)"
+    },
+    {
+      "nombre": "kndctr_9854C13E58403FEB0A495D53_AdobeOrg_cluster",
+      "dominio": "abc.es",
+      "dias": 0.02,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "AMCVS_9854C13E58403FEB0A495D53%40AdobeOrg",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "vtm_op",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "receive-cookie-deprecation",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "com.adobe.alloy.getTld",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "TEST_AMCV_COOKIE_WRITE",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "everest_g_v2",
+      "dominio": "everesttech.net",
+      "dias": 365,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (365)"
+    },
+    {
+      "nombre": "everest_session_v2",
+      "dominio": "everesttech.net",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_dp",
+      "dominio": "demdex.net",
+      "dias": -0.69,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie ya expirada al momento del análisis"
+    },
+    {
+      "nombre": "cookietest",
+      "dominio": "www.abc.es",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "test_cookie",
+      "dominio": "doubleclick.net",
+      "dias": 0.01,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "mrf_cookie",
+      "dominio": "abc.es",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    }
+  ],
+  "local_storage": [
+    {
+      "nombre": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "msftWemass",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://static.vocstatic.com/tag-manager/latest/vtm.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "rtim:gis-control",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://static.vocstatic.com/widgets/4.41.0/loader.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "NRBA_SESSION::b699b1ff",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://js-agent.newrelic.com/nr-full-1.318.0.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: segmentosCDP",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: navegacionSinCookies",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "lastExternalReferrerTime",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://connect.facebook.net/en_US/fbevents.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "didomi_token",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": {
+        "estado_cookie": "PASSED",
+        "dias_cookie": 366,
+        "motivo_cookie": "Cookie CMP dentro de 13 meses (366 días)"
+      }
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.visitorID",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: segmentsEvolok",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: IDEvolok",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: ppid",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: vocCookie",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "lastExternalReferrer",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://connect.facebook.net/en_US/fbevents.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.core.visitorTracking.sessionCount",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "wemass",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://static.vocstatic.com/tag-manager/latest/vtm.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "com.adobe.reactor.dataElements.AEP: visitorID",
+      "sitio": "https://www.abc.es",
+      "script_tercero": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    }
+  ]
+}

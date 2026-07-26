@@ -1,0 +1,25 @@
+{
+  "sitio": "www.abc.es",
+  "url": "https://www.abc.es",
+  "veredicto": "PASSED",
+  "evaluacion": {
+    "estado": "PASSED",
+    "detalle": "Panel de configuración localizado (\"Configurar\"). Se detectaron 34 opciones granulares independientes. El usuario puede elegir por finalidad. Cumple RGPD Art. 7."
+  },
+  "hallazgos": {
+    "panel_localizado": true,
+    "boton_config_texto": "Configurar",
+    "indicador_toggles": 34,
+    "indicador_botones": 0,
+    "total_opciones": 34,
+    "categorias_detectadas": [
+      "YOU ALLOW",
+      "Store and/or access information on a device",
+      "Use limited data to select advertising",
+      "Actively scan device characteristics for identification",
+      "Use precise geolocation data",
+      "Use limited data to select content"
+    ],
+    "screenshot": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/d8eaab0ab184/abc.es_20260721_212653/analysis_data/r4_panel_www_abc_es.png"
+  }
+}

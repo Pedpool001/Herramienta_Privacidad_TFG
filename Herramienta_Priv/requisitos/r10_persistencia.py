@@ -30,6 +30,7 @@ Uso:
   python3 r10_persistencia.py --no-detalle             # solo resumen
 """
 
+import os
 import json
 import sys
 import fnmatch
@@ -42,7 +43,9 @@ from collections import Counter
 _TFG_DIR = Path(__file__).resolve().parents[2]
 WEC_OUTPUT_DEFAULT = _TFG_DIR / "WEC/website-evidence-collector/output"
 OCD_PATH = _TFG_DIR / "Herramienta_Priv/assets/open-cookie-database.json"
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r10_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r10_resultado.json"
 
 # ── Patrones de detección de consent/CMP cookies ──────────────────────────────
 CMP_PATTERNS = [

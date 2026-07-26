@@ -1,0 +1,92 @@
+{
+  "requisito": "R2",
+  "descripcion": "Bloqueo de cookies no exentas antes del consentimiento",
+  "sitios": {
+    "https://elpais.com/": {
+      "veredicto": "FAILED",
+      "evaluacion": {
+        "estado": "FAILED",
+        "detalle": "Se detectaron 11 rastreadores no exentos activos ANTES del consentimiento: Analítica de comportamiento, Publicidad comportamental, Píxel de seguimiento. Empresas implicadas: AT&T, Adobe, Google, PubMatic, The Trade Desk, nurago. Incumple RGPD Art. 7 / LSSI Art. 22.2 (bloqueo previo al consentimiento)."
+      },
+      "violaciones": [
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/id/rd?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=2387401053DB208C0A490D4C%40AdobeOrg&d_nsid=0&ts=1784662217677",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "prisacom.tt.omtrdc.net",
+          "url_completa": "https://prisacom.tt.omtrdc.net/rest/v1/delivery?client=prisacom&sessionId=821e2f5427c0476c8158e246fab954d5&version=2.11.4",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "ib.adnxs.com",
+          "url_completa": "https://ib.adnxs.com/getuid?https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D358%26dpuuid%3D%24UID",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "AT&T"
+        },
+        {
+          "dominio_rastreador": "match.adsrvr.org",
+          "url_completa": "https://match.adsrvr.org/track/cmf/generic?ttd_pid=aam&gdpr=0&gdpr_consent=&domain=elpais.com&ttd_tpi=1",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "The Trade Desk"
+        },
+        {
+          "dominio_rastreador": "image6.pubmatic.com",
+          "url_completa": "https://image6.pubmatic.com/AdServer/UCookieSetPug?p=166334&rd=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid=19566%26dpuuid=%23PM_USER_ID",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "PubMatic"
+        },
+        {
+          "dominio_rastreador": "pagead2.googlesyndication.com",
+          "url_completa": "https://pagead2.googlesyndication.com/pagead/osd.js?fcd=true",
+          "tipo": "advertising",
+          "tipo_legible": "Publicidad comportamental",
+          "empresa": "Google"
+        },
+        {
+          "dominio_rastreador": "es-config.sensic.net",
+          "url_completa": "https://es-config.sensic.net/s2s-web.js",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "nurago"
+        },
+        {
+          "dominio_rastreador": "edge.adobedc.net",
+          "url_completa": "https://edge.adobedc.net/ee/v1/identity/acquire?configId=9ad480a3-985a-4cc5-9907-d80eae43012e&requestId=7fce2208-0cde-4897-8878-ae2f44ed615e",
+          "tipo": "analytics",
+          "tipo_legible": "Analítica de comportamiento",
+          "empresa": "Desconocida"
+        },
+        {
+          "dominio_rastreador": "ib.adnxs.com",
+          "url_completa": "https://ib.adnxs.com/getuid?https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D358%26dpuuid%3D%24UID",
+          "tipo": "trackingPixel",
+          "tipo_legible": "Píxel de seguimiento",
+          "empresa": "AT&T"
+        },
+        {
+          "dominio_rastreador": "dpm.demdex.net",
+          "url_completa": "https://dpm.demdex.net/ibs:dpid=771&dpuuid=CAESEHjgSeBYjed8o1uTM-tCNZo&google_cver=1?gdpr=0&gdpr_consent=",
+          "tipo": "trackingPixel",
+          "tipo_legible": "Píxel de seguimiento",
+          "empresa": "Adobe"
+        },
+        {
+          "dominio_rastreador": "image6.pubmatic.com",
+          "url_completa": "https://image6.pubmatic.com/AdServer/UCookieSetPug?p=166334&rd=https%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid=19566%26dpuuid=%23PM_USER_ID",
+          "tipo": "trackingPixel",
+          "tipo_legible": "Píxel de seguimiento",
+          "empresa": "PubMatic"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "sitio": "abc.es",
+  "veredicto": "FAILED",
+  "resumen": {
+    "FAILED": 9,
+    "WARNING": 10
+  },
+  "fallos": [
+    {
+      "script": "https://static.vocstatic.com/tag-manager/latest/vtm.js",
+      "dominio": "vocstatic.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "currentPathname",
+            "fc-kms",
+            "utiqPass",
+            "vtm:last-content-type",
+            "vtm:last-pathname",
+            "vtm:orden-pagina-vista"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "currentPathname",
+            "msftWemass",
+            "vtm:last-content-type",
+            "vtm:last-pathname",
+            "vtm:orden-pagina-vista",
+            "wemass"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/portalsjs/3.14.0/nibara-layout-script.js",
+      "dominio": "vocstatic.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "isFirstTimeLoaded"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "isFirstTimeLoaded"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://assets.adobedtm.com/062a88abff57/46c664a2bb51/launch-c03de8dbe9b7.min.js",
+      "dominio": "adobedtm.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "aepSegmentosCDP",
+            "com.adobe.alloy.9854C13E58403FEB0A495D53_AdobeOrg.decisioning.events",
+            "com.adobe.alloy.instance.alloy.debug",
+            "com.adobe.reactor.core.maxFrequency.RLed093a3d9c7a435c882f76bde7bb2463.session",
+            "com.adobe.reactor.core.visitorTracking.landingPage",
+            "com.adobe.reactor.core.visitorTracking.pagesViewed",
+            "com.adobe.reactor.core.visitorTracking.sessionCount",
+            "com.adobe.reactor.core.visitorTracking.trafficSource",
+            "com.adobe.reactor.debug"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "com.adobe.reactor.core.visitorTracking.landingPage",
+            "com.adobe.reactor.core.visitorTracking.landingTime",
+            "com.adobe.reactor.core.visitorTracking.pagesViewed",
+            "com.adobe.reactor.core.visitorTracking.sessionCount",
+            "com.adobe.reactor.core.visitorTracking.trafficSource",
+            "com.adobe.reactor.dataElements.AEP: IDEvolok",
+            "com.adobe.reactor.dataElements.AEP: mktID",
+            "com.adobe.reactor.dataElements.AEP: navegacionSinCookies",
+            "com.adobe.reactor.dataElements.AEP: ppid",
+            "com.adobe.reactor.dataElements.AEP: segmentosCDP",
+            "com.adobe.reactor.dataElements.AEP: segmentsEvolok",
+            "com.adobe.reactor.dataElements.AEP: sitioRegistro",
+            "com.adobe.reactor.dataElements.AEP: visitorID",
+            "com.adobe.reactor.dataElements.AEP: vocCookie",
+            "com.adobe.reactor.dataElements.visitorID"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/user-identity/1.86.2/user-identity-framework.js",
+      "dominio": "vocstatic.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "__vocuser_storage_test_enabled__"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "__vocuser_storage_test_enabled__"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "dominio": "privacy-center.org",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "didomi_auth_token",
+            "didomi_token",
+            "euconsent-v2"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "euconsent-v2"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "didomi_token"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/widgets/4.41.0/loader.js",
+      "dominio": "vocstatic.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "rtim:gis-control"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "isIncognito",
+            "rtim:gis-control"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2058",
+      "dominio": "mrf.io",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "___m_rec",
+            "___nrbi",
+            "___nrbic",
+            "__nrCookieConsent",
+            "compass_rfv_2058",
+            "marfeel-sdk-store",
+            "mrfHudStorage-2058",
+            "mrfdebug"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "__test_local_storage__",
+            "__test_session_storage__"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "___nrbi",
+            "___nrbic",
+            "__test_local_storage__",
+            "__test_session_storage__",
+            "marfeel-sdk-store"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://connect.facebook.net/en_US/fbevents.js",
+      "dominio": "facebook.net",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "FACEBOOK_IWL_CONFIG_STORAGE_KEY",
+            "lastExternalReferrer",
+            "lastExternalReferrerTime"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "lastExternalReferrer",
+            "lastExternalReferrerTime"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://js-agent.newrelic.com/nr-full-1.318.0.min.js",
+      "dominio": "newrelic.com",
+      "nivel": "FAILED",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "NRBA_SESSION::b699b1ff"
+          ]
+        },
+        {
+          "symbol": "Storage.setItem",
+          "claves": [
+            "NRBA_SESSION::b699b1ff"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    }
+  ],
+  "avisos": [
+    {
+      "script": "https://static.vocstatic.com/widgets/4.41.0/accessctrl.js",
+      "dominio": "vocstatic.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "audiences",
+            "com.adobe.reactor.dataElements.AEP: segmentosCDP",
+            "isIncognito",
+            "rtim_bypass_incognito"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://players.brightcove.net/55814260001/8WkPPcv56h_default/index.min.js",
+      "dominio": "brightcove.net",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "vjs-text-track-settings"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/voonto2/latest/voonto.js",
+      "dominio": "vocstatic.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "kangaroo-unavailable"
+          ]
+        },
+        {
+          "symbol": "window.navigator.storage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/vam/7.33.0/prebid.js",
+      "dominio": "vocstatic.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "__pbjs_debugging__"
+          ]
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://service.wemass.com/dmp/d94422aa8614fd4bf4e0cafd66f9c097.js",
+      "dominio": "wemass.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "_papns",
+            "permutive_tms"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://c.amazon-adsystem.com/aax2/apstag.js",
+      "dominio": "amazon-adsystem.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "aps:_system:prepend/events",
+            "apstagCfg",
+            "apstagDebug"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.adsafeprotected.com/publisher/929841/7cabdb71-325f-11f1-aa09-0e6958f30139.min.js",
+      "dominio": "adsafeprotected.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "ias_pgd"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://static.vocstatic.com/widgets/4.41.0/ev-em.min.js",
+      "dominio": "vocstatic.com",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "evolok:ev_profile",
+            "evolok:ev_session"
+          ]
+        },
+        {
+          "symbol": "Storage.removeItem",
+          "claves": [
+            "evolok:ev_profile",
+            "evolok:ev_session"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        },
+        {
+          "symbol": "window.sessionStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://es-config.sensic.net/s2s-web.js",
+      "dominio": "sensic.net",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "sensic-logLevel"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    },
+    {
+      "script": "https://es-config.sensic.net/3pc.html",
+      "dominio": "sensic.net",
+      "nivel": "WARNING",
+      "operaciones": [
+        {
+          "symbol": "Storage.getItem",
+          "claves": [
+            "sensic-logLevel"
+          ]
+        },
+        {
+          "symbol": "window.localStorage",
+          "claves": []
+        }
+      ]
+    }
+  ]
+}

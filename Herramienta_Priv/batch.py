@@ -7,12 +7,52 @@ Uso:
 """
 
 import logging
+import os
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
 log = logging.getLogger(__name__)
 
 REQUISITOS = [f"R{i}" for i in range(1, 20)]
+
+# Tope duro de sitios concurrentes. Por encima de 3-4 no se gana tiempo: el
+# crawl de Privacy Pioneer está serializado (usa puerto y BD globales) y pasa a
+# ser el factor limitante. Subir más solo aumenta el riesgo de que los timeouts
+# de las herramientas salten y conviertan veredictos válidos en ERROR.
+_MAX_WORKERS_TOPE = 4
+
+
+def calcular_workers() -> int:
+    """
+    Calcula cuántos sitios auditar en paralelo según los recursos de la máquina.
+
+    Cada sitio lanza ya ~7 navegadores (uno por herramienta), por lo que el
+    número de sitios concurrentes debe ser bastante menor que el de núcleos.
+    Se toma el mínimo entre la capacidad de CPU y la de memoria, ya que un
+    navegador consume del orden de 200-300 MB.
+    """
+    try:
+        nucleos = os.cpu_count() or 2
+    except Exception:
+        nucleos = 2
+
+    # Memoria disponible (no total): lo que realmente se puede usar sin swap
+    ram_gb = None
+    try:
+        with open("/proc/meminfo", encoding="utf-8") as f:
+            for linea in f:
+                if linea.startswith("MemAvailable:"):
+                    ram_gb = int(linea.split()[1]) / 1024 / 1024
+                    break
+    except Exception:
+        pass
+
+    por_cpu = max(1, nucleos // 3)
+    por_ram = max(1, int(ram_gb // 4)) if ram_gb else por_cpu
+
+    return max(1, min(por_cpu, por_ram, _MAX_WORKERS_TOPE))
 
 _COLORES_TERMINAR = {
     "PASSED":       "\033[92m",
@@ -40,15 +80,18 @@ def leer_urls(fichero: str) -> list[str]:
 
 
 def auditar_batch(fichero_urls: str, dir_salida: str | None = None,
-                  requisitos: set | None = None) -> dict:
+                  requisitos: set | None = None,
+                  workers: int | None = None) -> dict:
     """
-    Ejecuta auditorías secuenciales para cada URL del fichero.
+    Audita todos los sitios del fichero, procesando varios en paralelo.
 
     Args:
         fichero_urls: Ruta al fichero .txt con una URL por línea.
         dir_salida:   Directorio donde guardar los informes. Si es None,
                       se crea automáticamente output/batch_<timestamp>/.
         requisitos:   Conjunto de requisitos a evaluar. None = todos.
+        workers:      Sitios a auditar en paralelo. None = automático según
+                      los recursos de la máquina. 1 fuerza el modo secuencial.
 
     Returns:
         {url: {R1: {veredicto, detalle}, ...}, ...}
@@ -68,23 +111,51 @@ def auditar_batch(fichero_urls: str, dir_salida: str | None = None,
     resultados_batch: dict[str, dict] = {}
     total = len(urls)
 
-    for i, url in enumerate(urls, 1):
-        separador = "=" * 62
-        print(f"\n{separador}")
-        print(f"  [{i}/{total}]  {url}")
-        print(separador)
+    n_workers = workers if workers and workers > 0 else calcular_workers()
+    n_workers = min(n_workers, total)
 
+    print(f"\n  Auditando {total} sitios · {n_workers} en paralelo")
+    if n_workers > 1:
+        print("  (el crawl de Privacy Pioneer se serializa: usa puerto y BD globales)")
+
+    # `print` desde varios hilos entrelaza líneas; este lock las mantiene juntas
+    io_lock = threading.Lock()
+    completados = 0
+
+    def _auditar_uno(url: str) -> tuple[str, dict]:
+        """Audita un sitio y devuelve (url, resultados). No lanza excepciones."""
         try:
-            res = auditar(url, parent_dir=base_dir, requisitos=requisitos)
-            resultados_batch[url] = res
+            return url, auditar(url, parent_dir=base_dir, requisitos=requisitos)
         except Exception as e:
             log.error("Error auditando %s: %s", url, e)
-            resultados_batch[url] = {
-                r: {"veredicto": "ERROR", "detalle": str(e)}
-                for r in REQUISITOS
-            }
+            return url, {r: {"veredicto": "ERROR", "detalle": str(e)}
+                         for r in REQUISITOS}
 
-        _imprimir_fila_resumen(url, resultados_batch[url], i, total)
+    if n_workers == 1:
+        # Modo secuencial: se conserva el formato de salida original
+        for i, url in enumerate(urls, 1):
+            separador = "=" * 62
+            print(f"\n{separador}")
+            print(f"  [{i}/{total}]  {url}")
+            print(separador)
+            _, res = _auditar_uno(url)
+            resultados_batch[url] = res
+            _imprimir_fila_resumen(url, res, i, total)
+    else:
+        with ThreadPoolExecutor(max_workers=n_workers,
+                                thread_name_prefix="sitio") as pool:
+            futuros = {pool.submit(_auditar_uno, u): u for u in urls}
+            for fut in as_completed(futuros):
+                url, res = fut.result()
+                resultados_batch[url] = res
+                with io_lock:
+                    completados += 1
+                    print(f"\n  [{completados}/{total}]  {url}")
+                    _imprimir_fila_resumen(url, res, completados, total)
+
+    # Reordenar según el fichero de entrada: as_completed devuelve los sitios en
+    # orden de finalización, y el informe debe respetar el orden original.
+    resultados_batch = {u: resultados_batch[u] for u in urls if u in resultados_batch}
 
     # ── Informe batch ─────────────────────────────────────────────────────────
     ruta_informe = str(base_dir / "informe_batch.html")

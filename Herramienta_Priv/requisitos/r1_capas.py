@@ -30,6 +30,7 @@ Uso:
   python3 r1_capas.py /ruta/poligraph/output/ --no-detalle
 """
 
+import os
 import sys
 import json
 import re
@@ -38,7 +39,9 @@ from pathlib import Path
 # ── Rutas por defecto ─────────────────────────────────────────────────────────
 _TFG_DIR = Path(__file__).resolve().parents[2]
 POLIGRAPH_DEFAULT = _TFG_DIR / "PoliGraph/example/elpais_audit"
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r1_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r1_resultado.json"
 
 ICONO = {"PASSED": "✅", "WARNING": "⚠️ ", "FAILED": "❌"}
 

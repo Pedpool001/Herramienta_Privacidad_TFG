@@ -1,18 +1,82 @@
 {
-  "sitio": "www.rtve.es",
+  "sitio": "www.marca.com",
   "veredicto": "FAILED",
   "resumen": {
-    "FAILED": 1,
-    "WARNING": 1,
-    "INFO": 3
+    "FAILED": 8,
+    "WARNING": 7,
+    "INFO": 4
   },
   "fallos": [
     {
+      "tipo": "SESSION_RECORDER",
+      "script": "script.hotjar.com",
+      "eventos": [],
+      "evidencia": [
+        "script.hotjar.com/modules.87d8c9dd104c309e4245.js"
+      ],
+      "motivo": "Grabador de sesión activo (captura pulsaciones y movimientos)"
+    },
+    {
+      "tipo": "SESSION_RECORDER",
+      "script": "static.hotjar.com",
+      "eventos": [],
+      "evidencia": [
+        "static.hotjar.com/c/hotjar-413277.js"
+      ],
+      "motivo": "Grabador de sesión activo (captura pulsaciones y movimientos)"
+    },
+    {
       "tipo": "KEYBOARD_LISTENER",
-      "script": "    at <anonymous>:2:427",
-      "dominio": "",
+      "script": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165",
+      "dominio": "mrf.io",
+      "eventos": [
+        "keydown",
+        "keyup"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    },
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1",
+      "dominio": "googletagmanager.com",
       "eventos": [
         "keyup"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    },
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://www.google-analytics.com/analytics.js",
+      "dominio": "google-analytics.com",
+      "eventos": [
+        "keyup"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    },
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1",
+      "dominio": "googletagmanager.com",
+      "eventos": [
+        "keyup"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    },
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js",
+      "dominio": "hotjar.com",
+      "eventos": [
+        "keypress"
+      ],
+      "motivo": "Monitorización de pulsaciones de teclado por tercero"
+    },
+    {
+      "tipo": "KEYBOARD_LISTENER",
+      "script": "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/ue-tournament-group-stages.js",
+      "dominio": "unidadeditorial.es",
+      "eventos": [
+        "keydown"
       ],
       "motivo": "Monitorización de pulsaciones de teclado por tercero"
     }
@@ -20,11 +84,68 @@
   "avisos": [
     {
       "tipo": "MOUSE_TRACKING",
-      "script": "    at <anonymous>:2:427",
-      "dominio": "",
+      "script": "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165",
+      "dominio": "mrf.io",
       "eventos": [
+        "mousedown",
         "mousemove",
         "mouseup"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js",
+      "dominio": "crazyegg.com",
+      "eventos": [
+        "mousedown"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1",
+      "dominio": "googletagmanager.com",
+      "eventos": [
+        "mousedown"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://www.google-analytics.com/analytics.js",
+      "dominio": "google-analytics.com",
+      "eventos": [
+        "mousedown"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1",
+      "dominio": "googletagmanager.com",
+      "eventos": [
+        "mousedown"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js",
+      "dominio": "hotjar.com",
+      "eventos": [
+        "mousemove"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    },
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/swiper.b3442673.js",
+      "dominio": "unidadeditorial.es",
+      "eventos": [
+        "touchend",
+        "touchmove",
+        "touchstart"
       ],
       "motivo": "Monitorización de movimientos de ratón/toque por tercero"
     }
@@ -32,8 +153,17 @@
   "notas": [
     {
       "tipo": "MOUSE_BASICO",
-      "script": "    at <anonymous>:15:12462",
-      "dominio": "",
+      "script": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js",
+      "dominio": "tiqcdn.com",
+      "eventos": [
+        "click"
+      ],
+      "motivo": "Eventos básicos de ratón (scroll/click) por tercero"
+    },
+    {
+      "tipo": "MOUSE_BASICO",
+      "script": "https://objetos.estaticos-marca.com/assets/v33/js/mobile-819bb8af08b2ed0df74c422f740cb083136436dc.min.js",
+      "dominio": "estaticos-marca.com",
       "eventos": [
         "scroll"
       ],
@@ -41,8 +171,8 @@
     },
     {
       "tipo": "MOUSE_BASICO",
-      "script": "https://static.chartbeat.com/js/chartbeat.js",
-      "dominio": "chartbeat.com",
+      "script": "https://objetos.estaticos-marca.com/assets/navcontinua/v9/navegacioncontinua-1fcfad2e882ee548aba7.js",
+      "dominio": "estaticos-marca.com",
       "eventos": [
         "scroll"
       ],
@@ -50,8 +180,8 @@
     },
     {
       "tipo": "MOUSE_BASICO",
-      "script": "https://www.googletagmanager.com/gtm.js?id=GTM-XGJJ",
-      "dominio": "googletagmanager.com",
+      "script": "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/ue-tournament-group-stages.js",
+      "dominio": "unidadeditorial.es",
       "eventos": [
         "click"
       ],

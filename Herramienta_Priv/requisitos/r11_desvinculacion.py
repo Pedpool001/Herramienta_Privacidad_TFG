@@ -26,6 +26,7 @@ Uso:
   python3 r11_desvinculacion.py --no-detalle             # solo resumen
 """
 
+import os
 import sqlite3
 import sys
 import json
@@ -35,7 +36,9 @@ from urllib.parse import urlparse, parse_qs
 from collections import defaultdict
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
-RESULTADO_PATH = Path(__file__).resolve().parents[1] / "analysis_data/r11_resultado.json"
+_ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
+                                str(Path(__file__).resolve().parents[1] / "analysis_data")))
+RESULTADO_PATH = _ANALYSIS_DIR / "r11_resultado.json"
 
 # ── Patrones de URL que identifican un evento de cookie sync ──────────────────
 # Cada patrón corresponde a un mecanismo real de intercambio de identificadores:

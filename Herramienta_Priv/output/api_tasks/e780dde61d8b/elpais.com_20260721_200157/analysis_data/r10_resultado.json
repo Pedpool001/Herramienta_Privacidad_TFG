@@ -1,0 +1,454 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "FAILED",
+  "resumen_cookies": {
+    "PASSED": 29,
+    "WARNING": 3,
+    "FAILED": 4
+  },
+  "total_ls_terceros": 5,
+  "cookies": [
+    {
+      "nombre": "s_ecid",
+      "dominio": "elpais.com",
+      "dias": 400,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Advertiser's website",
+      "estado": "WARNING",
+      "motivo": "1ª parte publicitaria excede 180 días (400)"
+    },
+    {
+      "nombre": "mbox",
+      "dominio": "elpais.com",
+      "dias": 400,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "WARNING",
+      "motivo": "1ª parte publicitaria excede 180 días (400)"
+    },
+    {
+      "nombre": "AMCV_2387401053DB208C0A490D4C%40AdobeOrg",
+      "dominio": "elpais.com",
+      "dias": 400,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "WARNING",
+      "motivo": "1ª parte publicitaria excede 180 días (400)"
+    },
+    {
+      "nombre": "kndctr_2387401053DB208C0A490D4C_AdobeOrg_identity",
+      "dominio": "elpais.com",
+      "dias": 395,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (395 días)"
+    },
+    {
+      "nombre": "IDE",
+      "dominio": "doubleclick.net",
+      "dias": 390,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Google",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (390)"
+    },
+    {
+      "nombre": "FCCDCF",
+      "dominio": "elpais.com",
+      "dias": 390,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "Cookie CMP dentro de 13 meses (390 días)"
+    },
+    {
+      "nombre": "didomi_token",
+      "dominio": "elpais.com",
+      "dias": 366,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Didomi",
+      "estado": "PASSED",
+      "motivo": "Cookie CMP dentro de 13 meses (366 días)"
+    },
+    {
+      "nombre": "pmuser",
+      "dominio": "elpais.com",
+      "dias": 365.08,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "datadome",
+      "dominio": "elpais.com",
+      "dias": 365,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "hpage",
+      "dominio": "elpais.com",
+      "dias": 365,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (365 días)"
+    },
+    {
+      "nombre": "demdex",
+      "dominio": "demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "dpm",
+      "dominio": "dpm.demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "dextp",
+      "dominio": "demdex.net",
+      "dias": 180,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "FAILED",
+      "motivo": "3ª parte publicitaria excede 90 días (180)"
+    },
+    {
+      "nombre": "s_nr30",
+      "dominio": "elpais.com",
+      "dias": 30,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (30 días)"
+    },
+    {
+      "nombre": "uuid-s",
+      "dominio": "live.streamtheworld.com",
+      "dias": 30,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (30 días)"
+    },
+    {
+      "nombre": "pmsegments",
+      "dominio": "elpais.com",
+      "dias": 7,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (7 días)"
+    },
+    {
+      "nombre": "s_vncd",
+      "dominio": "elpais.com",
+      "dias": 0.17,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "s_ivc",
+      "dominio": "elpais.com",
+      "dias": 0.02,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "kndctr_2387401053DB208C0A490D4C_AdobeOrg_cluster",
+      "dominio": "elpais.com",
+      "dias": 0.02,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "arc-geo",
+      "dominio": "elpais.com",
+      "dias": 0.01,
+      "primera_parte": true,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "1ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "eptz",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "at_check",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "AMCVS_2387401053DB208C0A490D4C%40AdobeOrg",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "s_cc",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "analytics",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "AKA_A2",
+      "dominio": "com",
+      "dias": 0.04,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Akamai",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "com.adobe.alloy.getTld",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "TEST_AMCV_COOKIE_WRITE",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_gd1784656938514",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "dd_testcookie",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_dp",
+      "dominio": "demdex.net",
+      "dias": -0.69,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "Adobe",
+      "estado": "PASSED",
+      "motivo": "Cookie ya expirada al momento del análisis"
+    },
+    {
+      "nombre": "test_cookie",
+      "dominio": "doubleclick.net",
+      "dias": 0.01,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "functional",
+      "empresa_ocd": "Google",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (0 días)"
+    },
+    {
+      "nombre": "OAID",
+      "dominio": "adswizz.com",
+      "dias": 30,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "OpenX",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (30 días)"
+    },
+    {
+      "nombre": "uuid",
+      "dominio": "live.streamtheworld.com",
+      "dias": null,
+      "primera_parte": false,
+      "sesion": true,
+      "categoria_ocd": "marketing",
+      "empresa_ocd": "MediaMath",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "pmsegments",
+      "dominio": "prisa.arcpublishing.com",
+      "dias": 7,
+      "primera_parte": false,
+      "sesion": false,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "3ª parte dentro del umbral (7 días)"
+    },
+    {
+      "nombre": "mrf_cookie",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    },
+    {
+      "nombre": "_gd1784656952458",
+      "dominio": "elpais.com",
+      "dias": null,
+      "primera_parte": true,
+      "sesion": true,
+      "categoria_ocd": "desconocida",
+      "empresa_ocd": "",
+      "estado": "PASSED",
+      "motivo": "Cookie de sesión — sin caducidad fija"
+    }
+  ],
+  "local_storage": [
+    {
+      "nombre": "tgt:tlm:lower",
+      "sitio": "https://elpais.com",
+      "script_tercero": "https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "didomi_token",
+      "sitio": "https://elpais.com",
+      "script_tercero": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": {
+        "estado_cookie": "PASSED",
+        "dias_cookie": 366,
+        "motivo_cookie": "Cookie CMP dentro de 13 meses (366 días)"
+      }
+    },
+    {
+      "nombre": "tgt:tlm:upper",
+      "sitio": "https://elpais.com",
+      "script_tercero": "https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "tgt:tlm:0",
+      "sitio": "https://elpais.com",
+      "script_tercero": "https://assets.adobedtm.com/0681c221600c/d0943e7fed9e/launch-90f4fb204f3b.min.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    },
+    {
+      "nombre": "cmpVideoVendorsConsent",
+      "sitio": "https://elpais.com",
+      "script_tercero": "https://cmp.prisa.com/dist/cmp_ep.js",
+      "estado": "FAILED",
+      "motivo": "LocalStorage escrito por tercero — sin expiración (persistencia indefinida)",
+      "duplica_cookie": null
+    }
+  ]
+}

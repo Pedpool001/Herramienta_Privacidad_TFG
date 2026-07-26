@@ -1,0 +1,24 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "WARNING",
+  "resumen": {
+    "FAILED": 0,
+    "WARNING": 1,
+    "INFO": 0
+  },
+  "fallos": [],
+  "avisos": [
+    {
+      "tipo": "MOUSE_TRACKING",
+      "script": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAbn7MgZQc2BwAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=C7M1eJ0xpPrLryxeBl5IRvlsycyR5q8WCBl7Tys~Bpl6y76GcF4huF3ZVoC3xT0bYntki3d6ZWTVFsn52ZkrjCk~o1uhBch5pojBSoE0VwwspE9fQT68DAmS_IQ10g3b&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=7b4d0a454916493665ea432cbc09b2016a23b1a2c859607d33870aea227075760feb97ad72561a33ddca909d5acb40fe&dm=cd",
+      "dominio": "captcha-delivery.com",
+      "eventos": [
+        "touchend",
+        "touchmove",
+        "touchstart"
+      ],
+      "motivo": "Monitorización de movimientos de ratón/toque por tercero"
+    }
+  ],
+  "notas": []
+}

@@ -21,7 +21,7 @@ import time
 from pathlib import Path
 from urllib.parse import urlparse
 
-from ._loader import ejecutar_analisis, TFG_DIR, ANALYSIS_DATA
+from ._loader import ejecutar_analisis, TFG_DIR, ANALYSIS_DATA, dir_analisis as _dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -36,6 +36,35 @@ CRAWLER_TIMEOUT = 360
 
 def _dominio(url: str) -> str:
     return urlparse(url).netloc.lstrip("www.")
+
+
+def _contar_evidencias(dominio: str) -> int | None:
+    """
+    Cuenta las filas que la extensión registró en MySQL para este dominio.
+
+    Es la señal que distingue "el sitio no tiene rastreadores" de "la captura
+    falló": un sitio real siempre genera tráfico de red, así que 0 filas tras un
+    crawl que sí visitó el sitio indica casi siempre un fallo de captura de la
+    extensión (Bugs 22/37/40), no ausencia de rastreadores. Devuelve None si no
+    se pudo consultar MySQL (para no confundir el fallo de consulta con 0 filas).
+    """
+    try:
+        import mysql.connector
+        conn = mysql.connector.connect(
+            host=os.getenv("MYSQL_HOST", "localhost"),
+            user=os.getenv("MYSQL_USER", "pioneer"),
+            password=os.getenv("MYSQL_PASSWORD", "abc"),
+            database=os.getenv("MYSQL_DATABASE", "analysis"),
+        )
+        cur = conn.cursor()
+        cur.execute("SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s",
+                    (f"%{dominio}%",))
+        n = cur.fetchone()[0]
+        conn.close()
+        return int(n)
+    except Exception as e:
+        log.warning("No se pudo contar evidencias de %s: %s", dominio, e)
+        return None
 
 
 def _limpiar_mysql(dominio: str) -> None:
@@ -57,26 +86,25 @@ def _limpiar_mysql(dominio: str) -> None:
         log.warning("No se pudo limpiar MySQL: %s", e)
 
 
-def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
-             requisitos: set | None = None) -> None:
+_EXCLUSIVO = threading.Lock()
+"""
+Cerrojo global del crawl de Privacy Pioneer.
+
+El crawl usa recursos de proceso único que no admiten concurrencia: el puerto
+8080 de la REST API (que además se libera con `fuser -k` al arrancar, matando
+la instancia de otro sitio), la tabla MySQL `entries` con un único timestamp
+de consentimiento global, el CSV `prueba-tfg.csv` del crawler y la ventana de
+Firefox headful. Por eso, aunque la auditoría procese varios sitios en
+paralelo, solo un sitio puede estar crawleando con Privacy Pioneer a la vez.
+"""
+
+
+def _crawl(url: str, output_dir: Path, dominio: str,
+           resultados: dict, lock: threading.Lock) -> bool:
     """
-    Lanza Privacy Pioneer para el sitio dado, luego evalúa R2, R3 y R9.
-
-    El crawl siempre se ejecuta (sus datos los consume también combinados para
-    R12 y R15). Solo se ejecutan los scripts de análisis cuyos requisitos
-    estén en `requisitos`.
-
-    Args:
-        url:        URL del sitio a auditar.
-        output_dir: Directorio donde guardar la salida de la herramienta.
-        resultados: Dict compartido entre hilos.
-        lock:       Lock para escribir en resultados.
-        requisitos: Conjunto de requisitos seleccionados. None = todos.
+    Ejecuta el crawl de Privacy Pioneer (pasos 1-6). Debe invocarse siempre
+    bajo `_EXCLUSIVO`. Devuelve False si no se pudo ni siquiera arrancar.
     """
-    output_dir.mkdir(parents=True, exist_ok=True)
-    sel = set(requisitos) if requisitos else {"R2", "R3", "R9"}
-    dominio = _dominio(url)
-
     # 1. Limpiar MySQL
     _limpiar_mysql(dominio)
 
@@ -92,7 +120,7 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
         with lock:
             for r in ["R2", "R3", "R9"]:
                 resultados[r] = {"veredicto": "ERROR", "detalle": str(e)}
-        return
+        return False
 
     # 3. Iniciar REST API (liberar puerto 8080 si lo ocupa un proceso previo)
     try:
@@ -195,6 +223,46 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
         import shutil
         shutil.copy2(reporte_src, output_dir / "reporte_auditoria.json")
 
+    return True
+
+
+def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
+             requisitos: set | None = None) -> None:
+    """
+    Lanza Privacy Pioneer para el sitio dado, luego evalúa R2, R3 y R9.
+
+    El crawl siempre se ejecuta (sus datos los consume también combinados para
+    R12 y R15). Solo se ejecutan los scripts de análisis cuyos requisitos
+    estén en `requisitos`.
+
+    Args:
+        url:        URL del sitio a auditar.
+        output_dir: Directorio donde guardar la salida de la herramienta.
+        resultados: Dict compartido entre hilos.
+        lock:       Lock para escribir en resultados.
+        requisitos: Conjunto de requisitos seleccionados. None = todos.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    sel = set(requisitos) if requisitos else {"R2", "R3", "R9"}
+    dominio = _dominio(url)
+
+    # Sección crítica: solo un sitio puede crawlear con Privacy Pioneer a la vez.
+    with _EXCLUSIVO:
+        log.info("Privacy Pioneer: turno exclusivo para %s", dominio)
+        if not _crawl(url, output_dir, dominio, resultados, lock):
+            return
+
+    # A partir de aquí ya no hay recursos compartidos: cada sitio escribe su
+    # JSON en su propio analysis_data y las consultas MySQL van filtradas por
+    # dominio, así que el análisis puede solaparse con el crawl de otro sitio.
+
+    # Nº de evidencias capturadas: sirve para (a) distinguir captura fallida de
+    # sitio limpio cuando el veredicto es NO_EVALUABLE, y (b) informar de la
+    # fiabilidad de un veredicto (uno basado en 3 evidencias es menos robusto
+    # que uno basado en 88, dada la variabilidad de la publicidad programática).
+    n_evidencias = _contar_evidencias(dominio)
+    captura_vacia = n_evidencias == 0
+
     # 7. Ejecutar análisis (solo para requisitos seleccionados)
     for req, script, args in [
         (["R2", "R3"], "r2_r3_cookies_beacons", [dominio]),
@@ -203,7 +271,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
         if not any(r in sel for r in req):
             continue
         try:
-            data = ejecutar_analisis(script, *args)
+            data = ejecutar_analisis(script, *args,
+                                     salida_dir=_dir_analisis(output_dir))
 
             with lock:
                 if script == "r2_r3_cookies_beacons":
@@ -211,13 +280,27 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                     sitios  = data.get("sitios", {})
                     if data.get("no_evaluable") or not sitios:
                         veredicto = "NO_EVALUABLE"
-                        entrada   = {"detalle": "No hay datos de Privacy Pioneer para este sitio."}
+                        # Distinguir captura fallida de sitio sin rastreadores:
+                        # 0 filas tras visitar el sitio es casi siempre un fallo
+                        # de captura de la extensión, no un sitio limpio.
+                        if captura_vacia:
+                            entrada = {"detalle":
+                                "Captura vacía: el crawler visitó el sitio pero la extensión "
+                                "de Privacy Pioneer no registró tráfico de red. Probable fallo "
+                                "de captura, no ausencia de rastreadores.",
+                                "n_evidencias": 0}
+                        else:
+                            entrada = {"detalle":
+                                "No hay datos de Privacy Pioneer para este sitio.",
+                                "n_evidencias": n_evidencias}
                     else:
                         entrada = next(
                             (v for k, v in sitios.items() if dominio in k or k in dominio),
                             next(iter(sitios.values()), None)
                         )
                         veredicto = entrada.get("veredicto", "ERROR") if entrada else "NO_EVALUABLE"
+                        if entrada is not None and n_evidencias is not None:
+                            entrada["n_evidencias"] = n_evidencias
                     if "R2" in sel:
                         resultados["R2"] = {"veredicto": veredicto, "detalle": entrada or {}}
                     if "R3" in sel:
@@ -232,7 +315,13 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
                         item = lista[0]
                     estado    = item.get("estado", "SIN_DATOS") if item else "SIN_DATOS"
                     veredicto = _ESTADO_MAP.get(estado, estado)
-                    resultados["R9"] = {"veredicto": veredicto, "detalle": data}
+                    detalle_r9 = {"resultado": data, "n_evidencias": n_evidencias}
+                    # Si el veredicto es NO_EVALUABLE por captura vacía, aclararlo
+                    if veredicto == "NO_EVALUABLE" and captura_vacia:
+                        detalle_r9["detalle"] = (
+                            "Captura vacía: la extensión de Privacy Pioneer no registró "
+                            "tráfico. Probable fallo de captura, no ausencia de datos.")
+                    resultados["R9"] = {"veredicto": veredicto, "detalle": detalle_r9}
 
         except Exception as e:
             log.error("%s falló: %s", script, e)

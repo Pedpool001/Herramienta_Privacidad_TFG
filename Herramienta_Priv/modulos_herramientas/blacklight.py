@@ -10,7 +10,7 @@ import subprocess
 import threading
 from pathlib import Path
 
-from ._loader import ejecutar_analisis, TFG_DIR
+from ._loader import ejecutar_analisis, TFG_DIR, dir_analisis as _dir_analisis
 
 log = logging.getLogger(__name__)
 
@@ -59,7 +59,8 @@ def ejecutar(url: str, output_dir: Path, resultados: dict, lock: threading.Lock,
     # 3. Analizar R6
     if "R6" in sel:
         try:
-            data = ejecutar_analisis("r6_keylogging", str(inspection))
+            data = ejecutar_analisis("r6_keylogging", str(inspection),
+                                   salida_dir=_dir_analisis(output_dir))
             with lock:
                 resultados["R6"] = {
                     "veredicto": data.get("veredicto", "ERROR"),

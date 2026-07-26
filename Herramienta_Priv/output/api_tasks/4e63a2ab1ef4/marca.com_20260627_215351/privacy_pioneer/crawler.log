@@ -1,0 +1,27 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '138c7ab3-143a-4908-8845-abacfa479d7d',
+  'ca7a9fd4-d541-4191-a2d5-6c0d824f6fbb'
+]
+PP window: ca7a9fd4-d541-4191-a2d5-6c0d824f6fbb
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.marca.com
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 38 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: marca_com
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Acepto y continúo gratis"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 57 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: marca_com
+time spent:  74.064 total elapsed:  141.39

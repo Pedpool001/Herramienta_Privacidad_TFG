@@ -1,0 +1,10 @@
+{
+  "sitio": "",
+  "veredicto": "PASSED",
+  "resumen": {
+    "FAILED": 0,
+    "WARNING": 0
+  },
+  "fallos": [],
+  "avisos": []
+}

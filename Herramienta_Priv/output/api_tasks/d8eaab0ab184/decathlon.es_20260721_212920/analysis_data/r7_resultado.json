@@ -1,0 +1,60 @@
+{
+  "sitio": "decathlon.es",
+  "veredicto": "WARNING",
+  "total_scripts_terceros": 9,
+  "scripts_detectados": [
+    {
+      "script_url": "https://prod.transcript.decathlon.net/csm/1.55.0/439.tracker.v2.prod.min.js",
+      "dominio": "decathlon.net",
+      "site_url": "https://www.decathlon.es/es",
+      "puntuacion": 5,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.screen.colorDepth": 2,
+        "window.screen.pixelDepth": 2,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint",
+        "Screen Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://prod.transcript.decathlon.net/csm/1.55.0/tracker.v2.prod.min.js",
+      "dominio": "decathlon.net",
+      "site_url": "https://www.decathlon.es/es",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.appVersion": 1,
+        "window.navigator.languages": 1,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    },
+    {
+      "script_url": "https://sdk.privacy-center.org/sdk/30dfbb1062016f5156603c1039810e9b1ae9cf60/modern/sdk.30dfbb1062016f5156603c1039810e9b1ae9cf60.js",
+      "dominio": "privacy-center.org",
+      "site_url": "https://www.decathlon.es/es",
+      "puntuacion": 3,
+      "estado": "WARNING",
+      "simbolos_hit": {
+        "window.navigator.languages": 1,
+        "window.navigator.vendor": 1,
+        "window.navigator.userAgent": 1
+      },
+      "bonuses": [],
+      "tecnicas": [
+        "Navigator Fingerprint"
+      ]
+    }
+  ],
+  "resumen": {
+    "FAILED": 0,
+    "WARNING": 3
+  }
+}

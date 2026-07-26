@@ -1,0 +1,39 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "FAILED",
+  "total_scripts_terceros": 2,
+  "scripts_detectados": [
+    {
+      "script_url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAsn1vWkuULL8Aiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=~PX75G3O2t03JamUWHK21sDr6rJXS7giLm8CfJwUa1bFpG4ArDAsF8fYgweW2vltCSbAGLqnqxSxOmAiNG7UVVg6odQHB~cy1NmxTZnL573hn3QLlgtwSvO2zkWwPhYA&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=618f087ab4f9d4deddc8cf20acfdb23032d2ff5bb847aa6171ca25b727c7528103d532dc5eef8e33af27e2913f574e3b&dm=cd",
+      "dominio": "captcha-delivery.com",
+      "site_url": "https://elpais.com/",
+      "puntuacion": 21,
+      "estado": "FAILED",
+      "simbolos_hit": {
+        "window.navigator.hardwareConcurrency": 2,
+        "window.navigator.buildID": 2,
+        "window.navigator.maxTouchPoints": 1,
+        "window.navigator.languages": 1,
+        "window.navigator.vendor": 1,
+        "window.navigator.plugins": 3,
+        "window.navigator.platform": 2,
+        "window.screen.colorDepth": 2,
+        "window.navigator.userAgent": 1,
+        "window.navigator.mimeTypes": 3,
+        "HTMLCanvasElement.getContext": 1
+      },
+      "bonuses": [
+        "+2 Batería de navigator (9 señales distintas)"
+      ],
+      "tecnicas": [
+        "Canvas Font Fingerprint",
+        "Navigator Fingerprint",
+        "Screen Fingerprint"
+      ]
+    }
+  ],
+  "resumen": {
+    "FAILED": 1,
+    "WARNING": 0
+  }
+}

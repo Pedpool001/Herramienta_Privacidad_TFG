@@ -1,0 +1,12 @@
+{
+  "sitio": "elpais.com",
+  "veredicto": "PASSED",
+  "resumen": {
+    "FAILED": 0,
+    "WARNING": 0,
+    "INFO": 0
+  },
+  "fallos": [],
+  "avisos": [],
+  "notas": []
+}

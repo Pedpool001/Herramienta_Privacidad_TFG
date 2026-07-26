@@ -1,0 +1,187 @@
+2026-07-21 20:02:02,527 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2602816346: Launching browser...
+2026-07-21 20:02:02,529 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Spawn attempt 0 
+2026-07-21 20:02:02,545 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for TaskManager
+2026-07-21 20:02:02,558 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 2602816346: Saved extension config file to: /tmp/firefox_profile_x5hcwbp7/browser_params.json
+2026-07-21 20:02:02,617 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656922616	geckodriver	INFO	Listening on 127.0.0.1:59213
+2026-07-21 20:02:02,657 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656922657	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/home/pedro/Escritorio ...  "--headless" "--width=1366" "--height=768" "--remote-debugging-port" "44455" "--remote-allow-hosts" "localhost" "-no-remote"
+2026-07-21 20:02:02,778 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: *** You are running in headless mode.
+2026-07-21 20:02:03,076 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: Ignoring preference override of remote settings server
+2026-07-21 20:02:03,078 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2026-07-21 20:02:04,231 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656924230	Marionette	INFO	Marionette enabled
+2026-07-21 20:02:04,848 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "Warning: unrecognized command line flag" "-width"
+2026-07-21 20:02:04,849 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "Warning: unrecognized command line flag" "-height"
+2026-07-21 20:02:04,888 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656924886	Marionette	INFO	Listening on port 21151
+2026-07-21 20:02:04,921 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: WebDriver BiDi listening on ws://127.0.0.1:44455
+2026-07-21 20:02:04,973 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: Read port: 21151
+2026-07-21 20:02:05,159 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656925157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2026-07-21 20:02:07,532 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-07-21 20:02:09,397 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 2602816346: OpenWPM Firefox extension loaded
+2026-07-21 20:02:09,405 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Looking for extension port information in /tmp/firefox_profile_x5hcwbp7
+2026-07-21 20:02:09,421 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_x5hcwbp7/extension_port.txt
+2026-07-21 20:02:09,421 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2026-07-21 20:02:09,422 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for Browser-2602816346
+2026-07-21 20:02:09,430 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2026-07-21 20:02:09,434 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2026-07-21 20:02:09,457 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2026-07-21 20:02:09,462 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2026-07-21 20:02:09,465 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.log: WebExtensions: Wrote to /tmp/firefox_profile_x5hcwbp7/OPENWPM_STARTUP_SUCCESS.txt
+2026-07-21 20:02:09,508 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Connecting to extension on port 18067
+2026-07-21 20:02:09,509 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: BrowserManager ready.
+2026-07-21 20:02:09,511 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Browser spawn successful!
+2026-07-21 20:02:09,578 - MainProcess[MainThread]- storage_controller   - INFO    : Initializing new handler for StorageControllerHandle
+2026-07-21 20:02:09,583 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id -1
+2026-07-21 20:02:09,585 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id -1 while finalizing
+2026-07-21 20:02:09,593 - MainProcess[MainThread]- task_manager         - INFO    : 
+
+OpenWPM Version: b'v0.32.0'
+Firefox Version: b'148.0'
+
+========== Manager Configuration ==========
+{
+  "_failure_limit": null,
+  "data_directory": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/e780dde61d8b/abc.es_20260721_200157/openwpm",
+  "log_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/e780dde61d8b/abc.es_20260721_200157/openwpm/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    41537
+  ],
+  "memory_watchdog": false,
+  "num_browsers": 1,
+  "process_watchdog": false,
+  "screenshot_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/e780dde61d8b/abc.es_20260721_200157/openwpm/screenshots",
+  "source_dump_path": "/home/pedro/Escritorio/UNI/CUARTO/tfg/Herramienta_Priv/output/api_tasks/e780dde61d8b/abc.es_20260721_200157/openwpm/sources",
+  "storage_controller_address": [
+    "127.0.0.1",
+    30659
+  ],
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "browser_id": 0,
+  "bot_mitigation": 1,
+  "browser": 2,
+  "callstack_instrument": 3,
+  "cookie_instrument": 4,
+  "custom_params": 5,
+  "display_mode": 6,
+  "dns_instrument": 7,
+  "donottrack": 8,
+  "http_instrument": 9,
+  "js_instrument": 10,
+  "js_instrument_settings": 11,
+  "maximum_profile_size": 12,
+  "navigation_instrument": 13,
+  "prefs": 14,
+  "profile_path": 15,
+  "recovery_tar": 16,
+  "save_content": 17,
+  "tmp_profile_dir": 18,
+  "tp_cookies": 19,
+  "tracking_protection": 20
+}
+
+         0  1      2        3      4     5    6         7     8      9     10    11                             12    13    14    15    16    17     18    19      20
+----------  -----  -------  -----  ----  ---  --------  ----  -----  ----  ----  -----------------------------  ----  ----  ----  ----  ----  -----  ----  ------  -----
+2602816346  False  firefox  False  True  {}   headless  True  False  True  True  ['collection_fingerprinting']        True  {}                False  /tmp  always  False
+
+========== JS Instrument Settings ==========
+{"2602816346":[{"object":"window['ScriptProcessorNode'].prototype","instrumentedName":"ScriptProcessorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['GainNode'].prototype","instrumentedName":"GainNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AnalyserNode'].prototype","instrumentedName":"AnalyserNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OscillatorNode'].prototype","instrumentedName":"OscillatorNode","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['OfflineAudioContext'].prototype","instrumentedName":"OfflineAudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['AudioContext'].prototype","instrumentedName":"AudioContext","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['RTCPeerConnection'].prototype","instrumentedName":"RTCPeerConnection","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['HTMLCanvasElement'].prototype","instrumentedName":"HTMLCanvasElement","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['Storage'].prototype","instrumentedName":"Storage","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.navigator","instrumentedName":"window.navigator","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window['CanvasRenderingContext2D'].prototype","instrumentedName":"CanvasRenderingContext2D","logSettings":{"propertiesToInstrument":[],"nonExistingPropertiesToInstrument":[],"excludedProperties":["translate","quadraticCurveTo","closePath","beginPath","lineTo","transform","globalAlpha","moveTo","canvas","drawImage","setTransform","clearRect"],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window","instrumentedName":"window","logSettings":{"propertiesToInstrument":["name","localStorage","sessionStorage"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.document","instrumentedName":"window.document","logSettings":{"propertiesToInstrument":["referrer","cookie"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":true,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}},{"object":"window.screen","instrumentedName":"window.screen","logSettings":{"propertiesToInstrument":["colorDepth","pixelDepth"],"nonExistingPropertiesToInstrument":[],"excludedProperties":[],"logCallStack":false,"logFunctionsAsStrings":false,"logFunctionGets":false,"preventSets":false,"recursive":false,"depth":5}}]}
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2026-07-21 20:02:09,595 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2026-07-21 20:02:09,598 - MainProcess[BrowserManagerHandle-2602816346]- browser_manager      - INFO    : Starting to work on CommandSequence with visit_id 1029254788168384 on browser with id 2602816346
+2026-07-21 20:02:09,606 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2602816346: EXECUTING COMMAND: InitializeCommand()
+2026-07-21 20:02:09,611 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for StorageControllerHandle, because the underlying socket closed
+2026-07-21 20:02:09,613 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2602816346: EXECUTING COMMAND: GetCommand(https://www.abc.es,15)
+2026-07-21 20:02:09,726 - MainProcess[Thread-1 (_start_listener)]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2026-07-21 20:02:12,534 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:17,535 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:22,590 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 26 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:27,591 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:32,599 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:37,612 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:42,614 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:44,514 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 2602816346: EXECUTING COMMAND: FinalizeCommand(5)
+2026-07-21 20:02:44,773 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript warning: https://www.abc.es/, line 6: Script terminated by timeout at:
+2026-07-21 20:02:44,774 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: nrWrapper@https://www.abc.es/:6:18834
+2026-07-21 20:02:44,774 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 
+2026-07-21 20:02:44,836 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,837 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,838 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,839 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,842 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,857 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,860 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:44,863 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:45,219 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: undefined, line 0: Error: Invalid tab ID: 1
+2026-07-21 20:02:47,617 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 1 visit_ids
+2026-07-21 20:02:48,309 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: JavaScript error: moz-src:///browser/components/search/SearchOneOffs.sys.mjs, line 392: TypeError: aEngine.getIconURL is not a function
+2026-07-21 20:02:49,905 - MainProcess[BrowserManagerHandle-2602816346]- browser_manager      - INFO    : Finished working on CommandSequence with visit_id 1029254788168384 on browser with id 2602816346
+2026-07-21 20:02:49,907 - MainProcess[MainThread]- storage_controller   - INFO    : Awaiting all tasks for visit_id 1029254788168384
+2026-07-21 20:02:49,909 - MainProcess[MainThread]- storage_controller   - DEBUG   : Awaited all tasks for visit_id 1029254788168384 while finalizing
+2026-07-21 20:02:51,906 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Closing browser manager...
+2026-07-21 20:02:51,907 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Closing browser...
+2026-07-21 20:02:51,907 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Joining command thread
+2026-07-21 20:02:51,908 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: 0.000019 seconds to join command thread
+2026-07-21 20:02:51,914 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 1784656971913	Marionette	INFO	Stopped listening on port 21151
+2026-07-21 20:02:52,618 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageController status: There are currently 0 scheduled tasks for 0 visit_ids
+2026-07-21 20:02:53,012 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+2026-07-21 20:02:53,027 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "error_support::handling: remote-settings-unexpected: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 20:02:53,028 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "app-services-error-reporter::error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 20:02:53,029 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: services.settings:
+2026-07-21 20:02:53,030 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: Object
+2026-07-21 20:02:53,030 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - prototype Object
+2026-07-21 20:02:53,031 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - columnNumber = 11
+2026-07-21 20:02:53,031 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - data = null
+2026-07-21 20:02:53,031 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - filename = resource://gre/modules/ServiceRequest.sys.mjs
+2026-07-21 20:02:53,032 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - lineNumber = 126
+2026-07-21 20:02:53,032 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":25,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":24,"lineNumber":273,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":24,"lineNumber":224,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"timedFetch/<","sourceId":728,"lineNumber":580,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"timedFetch","sourceId":728,"lineNumber":555,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"request","sourceId":728,"lineNumber":645,"columnNumber":33,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"execute","sourceId":728,"lineNumber":2613,"columnNumber":36,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-common/kinto-http-client.sys.mjs","name":"getData","sourceId":728,"lineNumber":1099,"columnNumber":40,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"maybeSync","sourceId":22,"lineNumber":781,"columnNumber":54,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"getData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"execute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"request@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"timedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"timedFetch/<@resource://services-common/kinto-http-client.sys.mjs:580:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:224:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:580:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:273:15\nfetch@resource://services-settings/Utils.sys.mjs:224:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:580:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:273:15\nfetch@resource://services-settings/Utils.sys.mjs:224:12\ntimedFetch/<@resource://services-common/kinto-http-client.sys.mjs:580:12\ntimedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12\nrequest@resource://services-common/kinto-http-client.sys.mjs:645:33\nexecute@resource://services-common/kinto-http-client.sys.mjs:2613:36\ngetData@resource://services-common/kinto-http-client.sys.mjs:1099:40\nmaybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54\n","nativeSavedFrame":{}}
+2026-07-21 20:02:53,033 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - message =
+2026-07-21 20:02:53,034 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - name =
+2026-07-21 20:02:53,034 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - result = 2152071198
+2026-07-21 20:02:53,035 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:273:15|fetch@resource://services-settings/Utils.sys.mjs:224:12|timedFetch/<@resource://services-common/kinto-http-client.sys.mjs:580:12|timedFetch@resource://services-common/kinto-http-client.sys.mjs:555:12|request@resource://services-common/kinto-http-client.sys.mjs:645:33|execute@resource://services-common/kinto-http-client.sys.mjs:2613:36|getData@resource://services-common/kinto-http-client.sys.mjs:1099:40|maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:781:54|
+2026-07-21 20:02:53,035 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: - prototype Object
+2026-07-21 20:02:53,037 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "error_support::handling: suggest-unexpected: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 20:02:53,038 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: "app-services-error-reporter::error: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"
+2026-07-21 20:02:53,039 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Amp", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Failed to get response status (0x80040111)"})
+2026-07-21 20:02:53,057 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
+2026-07-21 20:02:53,059 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+2026-07-21 20:02:53,061 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
+2026-07-21 20:02:53,064 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/password-recipes sync interrupted by shutdown
+2026-07-21 20:02:53,068 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/language-dictionaries sync interrupted by shutdown
+2026-07-21 20:02:53,072 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: WebExtensions:
+2026-07-21 20:02:53,073 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for Browser-2602816346, because the underlying socket closed
+2026-07-21 20:02:53,073 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///tmp/addon-7194cd2b-30f5-433b-9dac-c9d0ddec96d8.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 49"  data: no]
+2026-07-21 20:02:53,074 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: Stack:
+2026-07-21 20:02:53,074 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: onInputStreamReady@jar:file:///tmp/addon-7194cd2b-30f5-433b-9dac-c9d0ddec96d8.xpi!/privileged/sockets/api.js:49:33
+2026-07-21 20:02:53,075 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: 
+2026-07-21 20:02:53,470 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/hijack-blocklists sync interrupted by shutdown
+2026-07-21 20:02:53,476 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
+2026-07-21 20:02:53,477 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.warn: services.settings: main/sites-classification sync interrupted by shutdown
+2026-07-21 20:02:53,478 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: ({details:{id:"ecf46491-801a-ee6b-c771-432925b584da", last_modified:1725526980846, bucket:"main", collection:"cookie-banner-rules-list", host:"firefox.settings.services.mozilla.com"}})
+2026-07-21 20:02:53,606 - MainProcess[log-interceptor-2602816346]- selenium_firefox     - DEBUG   : BROWSER 2602816346: driver: console.error: URLBar - QuickSuggest.SuggestBackendRust: "Ingest error" ({type:"Mdn", error:(new Error("reason: Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Request destroyed without completion (0x80004004)", "moz-src:///toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs", 3593)), reason:"Error from Remote Settings: Remote settings error: Error sending request: [no-sentry] Backend error: Request destroyed without completion (0x80004004)"})
+2026-07-21 20:02:53,751 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: Browser manager closed successfully.
+2026-07-21 20:02:53,751 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 2602816346: during_init=False | profile_archive_dir=None
+2026-07-21 20:02:53,783 - MainProcess[MainThread]- storage_controller   - DEBUG   : Sending the shutdown signal to the Storage Controller...
+2026-07-21 20:02:53,783 - MainProcess[MainThread]- storage_controller   - INFO    : Terminating handler for TaskManager, because the underlying socket closed
+2026-07-21 20:02:57,623 - MainProcess[MainThread]- storage_controller   - INFO    : Received shutdown signal!
+2026-07-21 20:02:57,623 - MainProcess[MainThread]- storage_controller   - INFO    : Closing Server
+2026-07-21 20:02:57,623 - MainProcess[MainThread]- storage_controller   - INFO    : Closed Server
+2026-07-21 20:02:57,624 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling status_queue_update
+2026-07-21 20:02:57,624 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled status_queue_update
+2026-07-21 20:02:57,624 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelling timeout_check
+2026-07-21 20:02:57,624 - MainProcess[MainThread]- storage_controller   - INFO    : Cancelled timeout_check
+2026-07-21 20:02:57,625 - MainProcess[MainThread]- storage_controller   - INFO    : Starting wait_closed
+2026-07-21 20:02:57,625 - MainProcess[MainThread]- storage_controller   - INFO    : Completed wait_closed
+2026-07-21 20:02:57,625 - MainProcess[MainThread]- storage_controller   - INFO    : Entering self.shutdown
+2026-07-21 20:02:57,626 - MainProcess[MainThread]- storage_controller   - INFO    : structured_storage is shut down
+2026-07-21 20:02:57,638 - MainProcess[MainThread]- storage_controller   - DEBUG   : StorageControllerHandle took 3.8538899421691895 seconds to close.

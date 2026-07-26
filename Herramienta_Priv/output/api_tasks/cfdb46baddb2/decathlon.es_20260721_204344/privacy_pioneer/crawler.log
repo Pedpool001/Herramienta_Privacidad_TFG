@@ -1,0 +1,27 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '526a3692-3f4a-489e-9f8b-1eef2ac6c4cf',
+  'd5fb5559-3f63-4605-b63a-e5189d19effa'
+]
+PP window: d5fb5559-3f63-4605-b63a-e5189d19effa
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.decathlon.es
+⏳ Fase Pre-Consentimiento...
+🍪 [PRE] Almacenamiento leído: 6 cookies encontradas.
+💾 [PRE] Evidencia unificada y guardada para: decathlon_es
+🔍 Buscando banner de cookies...
+🎯 Botón real cazado: "Continuar sin aceptar"
+✅ Clic de consentimiento exitoso.
+✅ Clic notificado a la API (Main window)
+⏳ Analizando comportamiento POST-CONSENTIMIENTO...
+🍪 [POST] Almacenamiento leído: 7 cookies encontradas.
+💾 [POST] Evidencia unificada y guardada para: decathlon_es
+time spent:  67.597 total elapsed:  110.877

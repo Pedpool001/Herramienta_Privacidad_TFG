@@ -1,0 +1,2708 @@
+{
+  "title": "Blacklight Inspection",
+  "page_title": "MARCA - Diario online líder en información deportiva",
+  "uri_ins": "https://www.marca.com",
+  "uri_dest": "https://www.marca.com/",
+  "uri_redirects": [],
+  "secure_connection": {},
+  "host": "www.marca.com",
+  "config": {
+    "emulateDevice": {
+      "name": "iPhone 13 Mini",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "isLandscape": false
+      }
+    },
+    "cleareCache": true,
+    "captureHar": true,
+    "captureLinks": false,
+    "enableAdBlock": false,
+    "saveBrowserProfile": false,
+    "numPages": 1,
+    "defaultTimeout": 35000,
+    "defaultWaitUntil": "networkidle2",
+    "headless": true,
+    "headers": {},
+    "extraChromiumArgs": [
+      "--no-sandbox",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--disable-default-apps"
+    ],
+    "extraPuppeteerOptions": {}
+  },
+  "browser": {
+    "name": "Chromium",
+    "version": "Chrome/127.0.6533.88",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "6.8.0-124-generic"
+    }
+  },
+  "script": {
+    "host": "pedro-SATELLITE-L50-A-1DL",
+    "version": {
+      "npm": "3.10.0",
+      "commit": "dev"
+    },
+    "node_version": "v20.20.0"
+  },
+  "start_time": "2026-06-27T19:53:57.572Z",
+  "end_time": "2026-06-27T19:54:42.197Z",
+  "browsing_history": [
+    "https://www.marca.com/",
+    "https://www.marca.com/futbol/mundial-sub-20.html"
+  ],
+  "hosts": {
+    "requests": {
+      "first_party": [
+        "www.marca.com",
+        "pixelcounter.marca.com"
+      ],
+      "third_party": [
+        "e01.uecdn.es",
+        "objetos.estaticos-marca.com",
+        "e00-ue.uecdn.es",
+        "imasdk.googleapis.com",
+        "www.youtube.com",
+        "adtcdn.unidadeditorial.es",
+        "impes.tradedoubler.com",
+        "components.unidadeditorial.es",
+        "objetos-xlk.estaticos-marca.com",
+        "securepubads.g.doubleclick.net",
+        "e00-elmundo.uecdn.es",
+        "c.amazon-adsystem.com",
+        "sdk.privacy-center.org",
+        "img.tradedoubler.com",
+        "e01-marca.uecdn.es",
+        "e00-marca.uecdn.es",
+        "tags.tiqcdn.com",
+        "cdn.permutive.com",
+        "connect.facebook.net",
+        "www.googletagmanager.com",
+        "aswpsdkeu.com",
+        "static.hotjar.com",
+        "applets.ebxcdn.com",
+        "cdn.jsdelivr.net",
+        "api.unidadeditorial.es",
+        "script.crazyegg.com",
+        "sb.scorecardresearch.com",
+        "script.hotjar.com",
+        "e00.uecdn.es",
+        "www.google-analytics.com",
+        "sdk.mrf.io",
+        "adtcdn2.unidadeditorial.es",
+        "www.facebook.com",
+        "region1.google-analytics.com",
+        "marfeelexperimentsexperienceengine.mrf.io",
+        "es-config.sensic.net",
+        "178259006633795f3b1104c7beaedc4a4b449f27674b934fee30b8ca.trk.sensic.net",
+        "es1-s2s.sensic.net",
+        "localhost.sensic.net",
+        "ampcid.google.com",
+        "ampcid.google.es",
+        "events.newsroom.bi",
+        "178259007610215f7d52f49fb6478c7a8441d50e16fc47ea1c50ec0e.trk.sensic.net"
+      ]
+    }
+  },
+  "reports": {
+    "behaviour_event_listeners": {
+      "MOUSE": {
+        "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165": [
+          "click",
+          "scroll",
+          "mousemove",
+          "mouseup",
+          "mousedown"
+        ],
+        "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js": [
+          "mousedown"
+        ],
+        "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1": [
+          "mousedown"
+        ],
+        "https://www.google-analytics.com/analytics.js": [
+          "mousedown"
+        ],
+        "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.js": [
+          "click"
+        ],
+        "https://objetos.estaticos-marca.com/assets/v33/js/mobile-819bb8af08b2ed0df74c422f740cb083136436dc.min.js": [
+          "scroll"
+        ],
+        "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1": [
+          "mousedown"
+        ],
+        "https://objetos.estaticos-marca.com/assets/navcontinua/v9/navegacioncontinua-1fcfad2e882ee548aba7.js": [
+          "scroll"
+        ],
+        "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js": [
+          "scroll",
+          "mousemove",
+          "click"
+        ],
+        "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/ue-tournament-group-stages.js": [
+          "click"
+        ]
+      },
+      "KEYBOARD": {
+        "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165": [
+          "keydown",
+          "keyup"
+        ],
+        "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1": [
+          "keyup"
+        ],
+        "https://www.google-analytics.com/analytics.js": [
+          "keyup"
+        ],
+        "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1": [
+          "keyup"
+        ],
+        "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js": [
+          "keypress"
+        ],
+        "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/ue-tournament-group-stages.js": [
+          "keydown"
+        ]
+      },
+      "TOUCH": {
+        "https://sdk.mrf.io/statics/marfeel-sdk.js?id=2165": [
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ],
+        "https://components.unidadeditorial.es/ueTournamentGroupStages/v1/swiper.b3442673.js": [
+          "touchcancel",
+          "touchend",
+          "touchmove",
+          "touchstart"
+        ]
+      },
+      "SENSOR": {
+        "https://objetos.estaticos-marca.com/assets/navcontinua/v9/navegacioncontinua-1fcfad2e882ee548aba7.js": [
+          "orientationchange"
+        ]
+      }
+    },
+    "canvas_fingerprinters": {
+      "data_url": {},
+      "fingerprinters": [],
+      "styles": {},
+      "texts": {}
+    },
+    "canvas_font_fingerprinters": {
+      "canvas_font": {},
+      "text_measure": {}
+    },
+    "cookies": [
+      {
+        "name": "apw_cache",
+        "value": "4c266e1b-8050-4db5-88d1-69a1ef294878.1782590064.QRNrFQ.ES.0...0.0..0.6lxUA15SJqENRYW_yCqYSGlju_-Vz_JJbG4lIBMQrXM",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:24.749Z",
+        "size": 121,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "ue_privacyPolicy",
+        "value": "22",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-08-01T19:54:25.624Z",
+        "size": 18,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "sameSite": "Lax",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "be_product_content_type_conversion",
+        "value": "portadilla",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 44,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_section",
+        "value": "futbol",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 26,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_article_title",
+        "value": "mundial sub 20",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 40,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_subsection",
+        "value": "mundial sub 20",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 37,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_newsID",
+        "value": "7f359368c76a4f24cbfbd371",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 43,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_entry_referrer",
+        "value": "directo",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 34,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_kw_landing_page",
+        "value": "",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 28,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_page_url_qs_landing_page",
+        "value": "https://www.marca.com/futbol/mundial-sub-20.html",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 80,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "channeloriginator",
+        "value": "directo",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:27.000Z",
+        "size": 24,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "channelcloser",
+        "value": "directo",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:38.000Z",
+        "size": 20,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "channelflow",
+        "value": "directo",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2026-06-27T19:55:39.000Z",
+        "size": 18,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ga4_ses_text_journalist",
+        "value": "no aplica",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 32,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "user_consent_policy",
+        "value": "no choice",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:39.000Z",
+        "size": 28,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "user_consent_gam",
+        "value": "no choice",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:39.000Z",
+        "size": 25,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "be_logreg_title_conversion​",
+        "value": "mundial sub 20",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": -1,
+        "size": 43,
+        "httpOnly": false,
+        "secure": false,
+        "session": true,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "ue_consentState",
+        "value": "%7B%22step%22%3A1%7D",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2026-06-27T20:54:28.479Z",
+        "size": 35,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "sameSite": "Lax",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "didomi_token",
+        "value": "eyJ1c2VyX2lkIjoiMTlmMGFhNWQtNzA5MS02ODJkLThhY2YtOTBhYTY1Y2Y1ZThhIiwiY3JlYXRlZCI6IjIwMjYtMDYtMjdUMTk6NTQ6MjguNDg5WiIsInVwZGF0ZWQiOiIyMDI2LTA2LTI3VDE5OjU0OjI4LjUwNFoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-28T19:54:28.000Z",
+        "size": 200,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "utag_clean_done",
+        "value": "1",
+        "domain": "www.marca.com",
+        "path": "/",
+        "expires": "2026-07-04T19:54:28.644Z",
+        "size": 16,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "unknown",
+        "third_party": false
+      },
+      {
+        "name": "AMP_TOKEN",
+        "value": "%24NOT_FOUND",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2026-06-27T20:54:30.000Z",
+        "size": 21,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.501762.1782590071",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2026-06-28T19:54:39.000Z",
+        "size": 27,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "__Secure-ROLLOUT_TOKEN",
+        "value": "CKKV65aBrcqhyAEQiKDLvJmolQMY_p-swZmolQM%3D",
+        "domain": "youtube.com",
+        "path": "/",
+        "expires": "2026-12-24T19:54:34.565Z",
+        "size": 64,
+        "httpOnly": true,
+        "secure": true,
+        "session": false,
+        "sameSite": "None",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "partitionKey": {
+          "topLevelSite": "https://marca.com",
+          "hasCrossSiteAncestor": true
+        },
+        "type": "unknown",
+        "third_party": true
+      },
+      {
+        "name": "counter_page_view",
+        "value": "2>cont_expires=Sat, 27 Jun 2026 20:24:27 GMT>entryref=directo",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2026-06-27T20:24:27.000Z",
+        "size": 78,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.39376518.1782590070",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-08-01T19:54:39.623Z",
+        "size": 28,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "utag_main",
+        "value": "v_id:019f0aa5d32200aadc24ad0c2dc800087003007f004bb$_sn:1$_se:6$_ss:0$_st:1782591879732$ses_id:1782590067498%3Bexp-session$_pn:2%3Bexp-session",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:39.000Z",
+        "size": 150,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "_ga_V1WMLM3DL4",
+        "value": "GS2.1.s1782590070$o1$g1$t1782590079$j51$l0$h0",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-08-01T19:54:39.967Z",
+        "size": 59,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      },
+      {
+        "name": "_ce.s",
+        "value": "lcw~1782590080582",
+        "domain": "marca.com",
+        "path": "/",
+        "expires": "2027-06-27T19:54:40.000Z",
+        "size": 22,
+        "httpOnly": false,
+        "secure": false,
+        "session": false,
+        "sameSite": "Strict",
+        "priority": "Medium",
+        "sameParty": false,
+        "sourceScheme": "Secure",
+        "sourcePort": 443,
+        "type": "js",
+        "third_party": false
+      }
+    ],
+    "fb_pixel_events": [],
+    "tiktok_pixel_events": [],
+    "twitter_pixel_events": [],
+    "google_analytics_events": [],
+    "key_logging": {},
+    "session_recorders": {
+      "script.hotjar.com": [
+        "script.hotjar.com/modules.87d8c9dd104c309e4245.js"
+      ],
+      "static.hotjar.com": [
+        "static.hotjar.com/c/hotjar-413277.js"
+      ]
+    },
+    "third_party_trackers": [
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": "en=impresion&_ee=1&ep.event_category=envioImpConsentimientos&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590078214&ep.timestamp_formatted=21%3A54%3A38%3A214&ep.login_status_hit=not%20logged&ep.event_label=popup_consentimiento&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=2&ep.ga4_sesiones_ue=0&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&epn.consentCookies=1&ep.dt=2026-06-27&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=granted&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&_et=26&up.privacy=cqmdrkaqmdrkaahabbenckfgaaaaaelaaaaaaaazogxga4agaaz8a6qcvqf-gmeaama48bz4dtghcgppafaa_ycaweeqikarpaj0biicsqjkasjamgboucfoj_quebqucj4fnqkpgvzarabwqctofdwk-gweatwbbwc4af2glvaxsaxabjadgggtgbiuagaaimnfiamaaqzohqayaagycqgawabbk4jabgacdjxaadaaegtg.imnnx_h__bx9v-f736ft0ey1f9_j77uqxbhfjs-4fzlvw_jwx32e7nf36tqykmrieu3bbiqnthjnutvihaogvrzhmak2c4ttkj-bkihmze29ycf5vm4tj-qkz5_r_9nd92t_9_dv-3dzy3_1nv3f9_-f1elyde5-th_v_bxob-_if9_7-_4v8_t_rk2_et1v_9evv7__-_____f__9_f___________-____f______6_________________f_________7d_______waaa.yaaacfgaaaaa&up.login_status=not%20logged&up.region=mu&up.city=alcantarilla&up.country=es&up.user_time_30day_recurr=repeat&up.user_time_monthly_recurr=repeat&up.user_agent=mozilla%2F5.0%20(iphone%3B%20cpu%20iphone%20os%2015_0%20like%20mac%20os%20x)%20applewebkit%2F605.1.15%20(khtml%2C%20like%20gecko)%20version%2F15.4%20mobile%2F15e148%20safari%2F604.1&up.user_internal=false&up.user_ga_id=39376518.1782590070&up.user_tealium_session_id=1782590067498&up.user_tealium_user_id=019f0aa5d32200aadc24ad0c2dc800087003007f004bb&up.zip_code=30820\r\nen=page_view&_ee=1&ep.event_category=envioImpConsentimientos&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590078214&ep.timestamp_formatted=21%3A54%3A38%3A214&ep.login_status_hit=not%20logged&ep.event_label=popup_consentimiento&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=2&ep.ga4_sesiones_ue=0&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&epn.consentCookies=1&ep.dt=2026-06-27&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=granted&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&_et=6\r\nen=taboola_impression&_ee=1&ep.event_category=taboola&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590078214&ep.timestamp_formatted=21%3A54%3A38%3A214&ep.login_status_hit=not%20logged&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=2&ep.ga4_sesiones_ue=0&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.taboola_mode=classic&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&epn.consentCookies=1&ep.dt=2026-06-27&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=denied&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&_et=289\r\nen=user_engagement&_et=1882",
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "_eu": "AAAAAAQ",
+            "_p": 1782590078410,
+            "_s": 1,
+            "are": 1,
+            "cid": 39376518.17825901,
+            "dl": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "dma": 1,
+            "dma_cps": "-",
+            "dt": "mundial sub 20",
+            "frm": 0,
+            "gcd": "13q3vPq2q5l1",
+            "gcs": "G101",
+            "gdid": "dYmQxMT",
+            "gtm": "45je66o1v885306509za200",
+            "npa": 1,
+            "pscdl": "denied",
+            "rcb": 1,
+            "sct": 1,
+            "seg": 1,
+            "sid": 1782590070,
+            "sr": "375x812",
+            "tag_exp": "115938466~115938469~119027224~119576891~119576895",
+            "tcfd": 10001,
+            "tfd": 7648,
+            "tid": "G-V1WMLM3DL4",
+            "uaa": "",
+            "uab": "",
+            "uafvl": "",
+            "uam": "",
+            "uamb": 0,
+            "uap": "",
+            "uapv": "",
+            "uaw": 0,
+            "ul": "es-es",
+            "v": 2
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-V1WMLM3DL4&gtm=45je66o1v885306509za200&_p=1782590078410&gcs=G101&gcd=13q3vPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&gdid=dYmQxMT&_eu=AAAAAAQ&are=1&cid=39376518.1782590070&frm=0&pscdl=denied&rcb=1&sr=375x812&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=es-es&tag_exp=115938466~115938469~119027224~119576891~119576895&dt=mundial%20sub%2020&dl=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&sid=1782590070&sct=1&seg=1&_s=1&tfd=7648"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/sampling/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/site/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "cx": "c",
+            "gtm": "4e66o1",
+            "id": "G-V1WMLM3DL4",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon-ios.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/applets/www.marca.com/scripts.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/cs/7184769/beacon.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2&l=dataLayerUE"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/ebx.js"
+      },
+      {
+        "data": {
+          "body": {
+            "id": {
+              "instanceid": "178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E"
+            },
+            "privacy": {
+              "providedOptin": false
+            },
+            "source": "sensic-sdk-web",
+            "tracking": false,
+            "version": "2"
+          },
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/id"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||permutive.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/uecomscore_",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://e00-elmundo.uecdn.es/js/uecomscore_cmp_event.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/utag.sync.",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.sync.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E",
+            "ipad": false,
+            "m": "MarcaWeb",
+            "p": "es1",
+            "r": "www.marca.com",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=MarcaWeb&r=www.marca.com&p=es1&instanceid=178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=MarcaWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.marca.com&cp_c1=marca.com&cp_c2=F%C3%BAtbol",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E",
+            "ipad": false,
+            "m": "MarcaWeb",
+            "p": "es1",
+            "r": "www.marca.com",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://178259007610215f7d52f49fb6478c7a8441d50e16fc47ea1c50ec0e.trk.sensic.net/tp.gif?m=MarcaWeb&r=www.marca.com&p=es1&instanceid=178259007610215F7D52F49FB6478C7A8441D50E16FC47EA1C50EC0E&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606230101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://img.tradedoubler.com/images/inv.gif"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {
+            "type(inv)g(24133136)a(2407712)": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://impes.tradedoubler.com/imp?type(inv)g(24133136)a(2407712)"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||imasdk.googleapis.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": "en=page_view&_ee=1&ep.event_category=envioImpConsentimientos&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590067551&ep.timestamp_formatted=21%3A54%3A27%3A551&ep.login_status_hit=not%20logged&ep.event_label=popup_consentimiento&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=1&ep.ga4_sesiones_ue=1&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=denied&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&_et=42\r\nen=taboola_impression&_ee=1&ep.event_category=taboola&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590067551&ep.timestamp_formatted=21%3A54%3A27%3A551&ep.login_status_hit=not%20logged&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=1&ep.ga4_sesiones_ue=1&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.taboola_mode=classic&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&epn.consentCookies=1&ep.dt=2026-06-27&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=denied&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&_et=23\r\nen=user_engagement&_et=3668",
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "_eu": "AAAAAAQ",
+            "_p": 1782590068089,
+            "_s": 2,
+            "are": 1,
+            "cid": 39376518.17825901,
+            "dl": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "dma": 1,
+            "dma_cps": "-",
+            "dt": "mundial sub 20",
+            "frm": 0,
+            "gcd": "13q3vPq2q5l1",
+            "gcs": "G101",
+            "gdid": "dYmQxMT",
+            "gtm": "45je66o1v885306509za200",
+            "npa": 1,
+            "pscdl": "denied",
+            "rcb": 3,
+            "sct": 1,
+            "seg": 1,
+            "sid": 1782590070,
+            "sr": "375x812",
+            "tag_exp": "115616985~115938465~115938468~118395335~119027224~119576891~119576895",
+            "tcfd": 10001,
+            "tfd": 10129,
+            "tid": "G-V1WMLM3DL4",
+            "uaa": "",
+            "uab": "",
+            "uafvl": "",
+            "uam": "",
+            "uamb": 0,
+            "uap": "",
+            "uapv": "",
+            "uaw": 0,
+            "ul": "es-es",
+            "v": 2
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-V1WMLM3DL4&gtm=45je66o1v885306509za200&_p=1782590068089&gcs=G101&gcd=13q3vPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&gdid=dYmQxMT&_eu=AAAAAAQ&are=1&cid=39376518.1782590070&frm=0&pscdl=denied&rcb=3&sr=375x812&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=es-es&tag_exp=115616985~115938465~115938468~118395335~119027224~119576891~119576895&dt=mundial%20sub%2020&dl=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&sid=1782590070&sct=1&seg=1&_s=2&tfd=10129"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||events.newsroom.bi^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://events.newsroom.bi/ingest.php"
+      },
+      {
+        "data": {
+          "body": "en=impresion&_fv=1&_nsi=1&_ss=1&_ee=1&ep.event_category=envioImpConsentimientos&ep.tealium_environment=prod&ep.be_page_site_version=movil&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.be_page_entry_referrer=directo&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_section=futbol&ep.be_page_subsection1=mundial%20sub%2020&ep.be_page_hierarchy=marca.com%7C%7Cfutbol%7Cmundial%20sub%2020%7C%7C%7C%7C%7C&ep.be_page_content_type=portadilla&ep.be_page_cms_template=xalok&ep.be_page_article_title=mundial%20sub%2020&ep.be_page_newsID=7f359368c76a4f24cbfbd371&ep.be_date_first_publication=2026-06-03%2014%3A14%3A00&epn.be_content_branded=0&ep.be_content_premium=0&ep.be_content_premium_detail=abierto&ep.be_content_signwall=0&ep.be_content_signwall_detail=abierto&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_text_total_comments=0&ep.be_navigation_type=origen&ep.be_page_multimedia=imagenes&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.client_subscription_package_hit=0&epn.timestamp=1782590067551&ep.timestamp_formatted=21%3A54%3A27%3A551&ep.login_status_hit=not%20logged&ep.event_label=popup_consentimiento&ep.ga4_ses_page_url_qs_landing_page=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&ep.ga4_ses_page_entry_referrer=directo&ep.total_hits_metric=1&ep.be_amp=0&epn.be_counter_page_view=1&ep.ga4_sesiones_ue=1&ep.channel_source=directo&ep.channel_name=directo&ep.user_consent_policy=no%20choice&ep.user_consent_gam=no%20choice&ep.marca_pref_edition=not%20set&ep.marca_edition=spain&ep.be_page_publi=sin%20publi%20-%20consent_denied&epn.be_page_no_consent=1&ep.be_registered_nologin=false&ep.gcm_ads=denied&ep.gcm_analytics=denied&ep.be_page_subsidy=false&ep.be_product_content_type_conversion=portadilla&up.privacy=cqmdrkaqmdrkaahabbenckfgaaaaaelaaaaaaaazogxga4agaaz8a6qcvqf-gmeaama48bz4dtghcgppafaa_ycaweeqikarpaj0biicsqjkasjamgboucfoj_quebqucj4fnqkpgvzarabwqctofdwk-gweatwbbwc4af2glvaxsaxabjadgggtgbiuagaaimnfiamaaqzohqayaagycqgawabbk4jabgacdjxaadaaegtg.imnnx_h__bx9v-f736ft0ey1f9_j77uqxbhfjs-4fzlvw_jwx32e7nf36tqykmrieu3bbiqnthjnutvihaogvrzhmak2c4ttkj-bkihmze29ycf5vm4tj-qkz5_r_9nd92t_9_dv-3dzy3_1nv3f9_-f1elyde5-th_v_bxob-_if9_7-_4v8_t_rk2_et1v_9evv7__-_____f__9_f___________-____f______6_________________f_________7d_______waaa.yaaacfgaaaaa&up.login_status=not%20logged&up.region=mu&up.city=alcantarilla&up.country=es&up.user_time_30day_recurr=repeat&up.user_time_monthly_recurr=repeat&up.user_agent=mozilla%2F5.0%20(iphone%3B%20cpu%20iphone%20os%2015_0%20like%20mac%20os%20x)%20applewebkit%2F605.1.15%20(khtml%2C%20like%20gecko)%20version%2F15.4%20mobile%2F15e148%20safari%2F604.1&up.user_internal=false&up.user_tealium_session_id=1782590067498&up.user_tealium_user_id=019f0aa5d32200aadc24ad0c2dc800087003007f004bb&up.zip_code=30820",
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "_p": 1782590068089,
+            "_s": 1,
+            "are": 1,
+            "cid": 39376518.17825901,
+            "dl": "https://www.marca.com/futbol/mundial-sub-20.html",
+            "dma": 1,
+            "dma_cps": "-",
+            "dt": "mundial sub 20",
+            "frm": 0,
+            "gcd": "13q3vPq2q5l1",
+            "gcs": "G101",
+            "gdid": "dYmQxMT",
+            "gtm": "45je66o1v885306509za200",
+            "npa": 1,
+            "pscdl": "denied",
+            "rcb": 3,
+            "sct": 1,
+            "seg": 0,
+            "sid": 1782590070,
+            "sr": "375x812",
+            "tag_exp": "115616985~115938465~115938468~118395335~119027224~119576891~119576895",
+            "tcfd": 10001,
+            "tfd": 6286,
+            "tid": "G-V1WMLM3DL4",
+            "uaa": "",
+            "uab": "",
+            "uafvl": "",
+            "uam": "",
+            "uamb": 0,
+            "uap": "",
+            "uapv": "",
+            "uaw": 0,
+            "ul": "es-es",
+            "v": 2
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-V1WMLM3DL4&gtm=45je66o1v885306509za200&_p=1782590068089&gcs=G101&gcd=13q3vPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&gdid=dYmQxMT&are=1&cid=39376518.1782590070&frm=0&pscdl=denied&rcb=3&sr=375x812&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=es-es&_s=1&tag_exp=115616985~115938465~115938468~118395335~119027224~119576891~119576895&dt=mundial%20sub%2020&dl=https%3A%2F%2Fwww.marca.com%2Ffutbol%2Fmundial-sub-20.html&sid=1782590070&sct=1&seg=0&tfd=6286"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/sampling/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {
+            "originScope": "AMP_ECID_GOOGLE"
+          },
+          "filter": "/publisher:getClientId?key=",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "key": "AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://ampcid.google.es/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM"
+      },
+      {
+        "data": {
+          "body": {
+            "originScope": "AMP_ECID_GOOGLE"
+          },
+          "filter": "/publisher:getClientId?key=",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "key": "AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://ampcid.google.com/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "cx": "c",
+            "gtm": "4e66o1",
+            "id": "G-V1WMLM3DL4",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&l=dataLayerUE&cx=c&gtm=4e66o1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/site/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon-ios.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/applets/www.marca.com/scripts.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/cs/7184769/beacon.js"
+      },
+      {
+        "data": {
+          "body": {
+            "id": {
+              "instanceid": "178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA"
+            },
+            "privacy": {
+              "providedOptin": false
+            },
+            "source": "sensic-sdk-web",
+            "tracking": false,
+            "version": "2"
+          },
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/id"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2&l=dataLayerUE"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/ebx.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||permutive.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/uecomscore_",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://e00-elmundo.uecdn.es/js/uecomscore_cmp_event.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/utag.sync.",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.sync.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA",
+            "ipad": false,
+            "m": "MarcaWeb",
+            "p": "es1",
+            "r": "www.marca.com",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://localhost.sensic.net:54325/?&m=MarcaWeb&r=www.marca.com&p=es1&instanceid=178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": "ty=IM&p=es1&m=MarcaWeb&t=s2s-w&v=2.5.2&os=&dt=&at=WEB&c=default&instanceid=178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&l=es-ES&r=https%3A%2F%2Fwww.marca.com&cp_c1=marca.com&cp_c2=F%C3%BAtbol",
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es1-s2s.sensic.net/"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/3pc.html"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "instanceid": "178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA",
+            "ipad": false,
+            "m": "MarcaWeb",
+            "p": "es1",
+            "r": "www.marca.com",
+            "redirect": "manual"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://178259006633795f3b1104c7beaedc4a4b449f27674b934fee30b8ca.trk.sensic.net/tp.gif?m=MarcaWeb&r=www.marca.com&p=es1&instanceid=178259006633795F3B1104C7BEAEDC4A4B449F27674B934FEE30B8CA&ipad=false&redirect=manual"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606230101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||sensic.net^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://es-config.sensic.net/s2s-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://img.tradedoubler.com/images/inv.gif"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/sampling/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": "en=page_view&_fv=1&_ss=1&_ee=1&ep.be_date_first_publication=2026-06-27%2023%3A52%3A51&ep.be_page_article_title=portada&ep.be_page_newsID=8c257d307923b2499acef663&ep.be_page_characters=0&ep.be_page_wordcounter=0&ep.be_page_section=portada&ep.be_page_subsection1=&ep.be_page_subsection2=&ep.be_page_subsection3=&ep.be_page_subsection4=&ep.be_page_subsection5=&ep.be_page_subsection6=&ep.be_page_ad_section=portada&ep.be_page_url=https%3A%2F%2Fwww.marca.com%2F&ep.be_page_domain=marca.com&ep.be_page_subdomain=www.marca.com&ep.be_page_hierarchy=marca.com%7C%7Cportada%7C%7C%7C%7C%7C%7C&ep.be_text_seoTags=&ep.iab_taxonomies=&ep.be_page_site_version=movil&ep.be_page_multimedia=imagenes&ep.be_galleries_count=&ep.be_galleries_position=&ep.be_galleries_quantity=&ep.be_page_cms_template=xalok&ep.be_page_content_type=portada&ep.be_navigation_type=origen&ep.be_scroll_type=&ep.be_text_journalist=&ep.be_content_premium_detail=abierto&ep.be_content_premium=0&ep.be_product_section_conversion=&ep.be_product_subsection_conversion=&ep.be_product_title_conversion=&ep.be_content_signwall_detail=abierto&ep.be_content_signwall=0&ep.be_signwall_section_conversion=&ep.be_signwall_subsection_conversion=&ep.be_signwall_title_conversion=&ep.marca_edition=spain&ep.cmsId=&ep.be_bt_modules_showed=marca_elmundo%2Cmarca_fueradeserie&ep.be_page_cwv=%5B%22gfk%22%2C%22marfeel%22%2C%22ga%22%5D&ep.be_page_url_qs=https%3A%2F%2Fwww.marca.com%2F&ep.be_content_branded=0&ep.be_amp=0&ep.be_page_kw=&ep.user_consent_policy=no%20choice&ep.user_consent_GAM=no%20choice&ep.be_page_entry_referrer=&ep.cmp_cookie_consent=&ep.cmp_cookie_consent_accepted=&ep.privacy=&ep.be_adblocking=sin%20be_adblocking%20en%20localstorage&ep.be_page_publi=sin%20publi%20-%20consent_denied&ep.user_time_monthly_recurrence=repeat&ep.user_time_30day_recurrence=repeat&ep.timestamp_formatted=21%3A54%3A15%3A926&ep.be_page_url_referrer=&ep.login_status_hit=not%20logged&ep.login_status=not%20logged&ep.user_ga_id=&epn.be_page_no_consent=1&ep.reload=function()%7Binit()%3B%7D&ep.sendAnalyticsPage=function(namePage)%7Bvar%20conditionNamePage%3D(typeof%20namePage!%3D%3D'undefined'%26%26namePage!%3D%3D''%26%26namePage!%3D%3Dnull)%3Btry%7Bwindow.ueDataLayer.reload()%3Bif(window.utag)%7Bwindow.formatData()%3Bwindow.utag.view(%7B%22tealium_event%22%3A%22view_sendAnalyticsPage%22%2C%22metrica_funnel_login_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login')%3F1%3A0%2C%22metrica_funnel_registro_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'registry')%3F1%3A0%2C%22metrica_funnel_login_signwall_contrasena%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_password')%3F1%3A0%2C%22metrica_funnel_login_signwall_success%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_success')%3F1%3A0%2C%22metrica_funnel_login_signwall_incorrecto%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_incorrect')%3F1%3A0%2C%22metrica_funnel_login_signwall_recuperar%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'recover_password')%3F1%3A0%2C%22metrica_funnel_step2_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'send_email')%3F1%3A0%2C%22metrica_funnel_step3_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'email_confirmation')%3F1%3A0%2C%22metrica_funnel_registro_signwall_otra_cuenta%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'activate_account')%3F1%3A0%7D)%3B%7Delse%7Bwindow.ueDataLayer.entryError('No%20existe%20utag')%3B%7D%7Dcatch(e)%7Bwindow.ueDataLayer.entryError('Error'%2Be)%3Bif(window.utag)%7Bwindow.formatData()%3Bwindow.utag.view(%7B%22tealium_event%22%3A%22view_sendAnalyticsPage%22%2C%22metrica_funnel_login_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login')%3F1%3A0%2C%22metrica_funnel_registro_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'registry')%3F1%3A0%2C%22metrica_funnel_login_signwall_contrasena%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_password')%3F1%3A0%2C%22metrica_funnel_login_signwall_success%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_success')%3F1%3A0%2C%22metrica_funnel_login_signwall_incorrecto%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'login_incorrect')%3F1%3A0%2C%22metrica_funnel_login_signwall_recuperar%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'recover_password')%3F1%3A0%2C%22metrica_funnel_step2_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'send_email')%3F1%3A0%2C%22metrica_funnel_step3_signwall%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'email_confirmation')%3F1%3A0%2C%22metrica_funnel_registro_signwall_otra_cuenta%22%3A(conditionNamePage%26%26namePage%3D%3D%3D'activate_account')%3F1%3A0%7D)%3B%7Delse%7Bwindow.ueDataLayer.entryError('No%20existe%20utag')%3B%7D%7D%7D&ep.entryError=function(string)%7Bif(typeof%20window.ueDataLayer.error_log%3D%3D%3D'undefined'%7C%7Cwindow.ueDataLayer.error_log%3D%3D%3D'')%7Bwindow.ueDataLayer.error_log%3Dstring%3B%7Delse%7Bwindow.ueDataLayer.error_log%3Dwindow.ueDataLayer.error_log%2B'%7C'%2Bstring%3B%7D%7D&epn.hour=21&epn.day=27&epn.month=6&epn.year=2026&ep.date=2026-06-27&ep.day_week=saturday&epn.timestamp=1782590055926&ep.be_emailing_campaign=&ep.be_external_campaign=&ep.be_internal_campaign=&ep.be_internal_search_kw=&ep.be_source=&ep.be_page_url_raw=https%3A%2F%2Fwww.marca.com%2F&ep.user_adobe_id=&ep.user_tealium_session_id=1782590046984&ep.user_tealium_user_id=019f0aa582fd007ea636c394ace800087001607f004bb&ep.user_pixelin_id=&ep.country=ES&ep.city=alcantarilla&ep.region=MU&ep.zip_code=30820&ep.user_ip=79.150.28.74&ep.user_internal=false&epn.client_auto_push_web=0&ep.client_auto_push_app=&ep.user_agent=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2015_0%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F15.4%20Mobile%2F15E148%20Safari%2F604.1&ep.device_category=mobile&ep.aa_model_propensity=&ep.be_virality=&ep.be_text_total_comments=0&ep.marca_pref_edition=not%20set",
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "_p": 1782590056680,
+            "_s": 1,
+            "are": 1,
+            "cid": 1691004670.178259,
+            "dl": "https://www.marca.com/",
+            "dma": 1,
+            "dma_cps": "-",
+            "dt": "MARCA - Diario online líder en información deportiva",
+            "frm": 0,
+            "gcd": "13m3nPm2m5l1",
+            "gcs": "G101",
+            "gtm": "45je66o1v885306509za200",
+            "npa": 1,
+            "pscdl": "denied",
+            "rcb": 4,
+            "sct": 1,
+            "seg": 0,
+            "sid": 1782590060,
+            "sr": "375x812",
+            "tag_exp": "115938465~115938468~118395333~119027224~119576881~119576885~119576891~119576895",
+            "tcfd": 10001,
+            "tfd": 10215,
+            "tid": "G-V1WMLM3DL4",
+            "uaa": "",
+            "uab": "",
+            "uafvl": "",
+            "uam": "",
+            "uamb": 0,
+            "uap": "",
+            "uapv": "",
+            "uaw": 0,
+            "ul": "es-es",
+            "v": 2
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-V1WMLM3DL4&gtm=45je66o1v885306509za200&_p=1782590056680&gcs=G101&gcd=13m3nPm2m5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&are=1&cid=1691004670.1782590060&frm=0&pscdl=denied&rcb=4&sr=375x812&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=es-es&_s=1&tag_exp=115938465~115938468~118395333~119027224~119576881~119576885~119576891~119576895&sid=1782590060&sct=1&seg=0&dl=https%3A%2F%2Fwww.marca.com%2F&dt=MARCA%20-%20Diario%20online%20l%C3%ADder%20en%20informaci%C3%B3n%20deportiva&tfd=10215"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/versioned/common-scripts/d892378aebb6dbc4da99df634f69dd11.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "cx": "c",
+            "gtm": "4e66o1",
+            "id": "G-V1WMLM3DL4"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/site/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon-ios.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/applets/www.marca.com/scripts.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||hotjar.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2&l=dataLayerUE"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/cs/7184769/beacon.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/ebx.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||hotjar.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "sv": 6
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.hotjar.com/c/hotjar-413277.js?sv=6"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||aswpsdkeu.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://aswpsdkeu.com/notify/v1/ua-sdk.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||permutive.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/uecomscore_",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://e00-elmundo.uecdn.es/js/uecomscore_cmp_event.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/utag.sync.",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.sync.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606230101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://img.tradedoubler.com/images/inv.gif"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {
+            "type(inv)g(24133136)a(2407712)": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://impes.tradedoubler.com/imp?type(inv)g(24133136)a(2407712)"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||imasdk.googleapis.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||google-analytics.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.google-analytics.com/analytics.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "cx": "c",
+            "gtm": "4e66o1",
+            "id": "G-V1WMLM3DL4"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-V1WMLM3DL4&cx=c&gtm=4e66o1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "t": 1
+          }
+        },
+        "stack": [
+          {
+            "fileName": "about:blank",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/data-scripts/0027/6864/site/www.marca.com.json?t=1"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/applets/www.marca.com/scripts.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||hotjar.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.hotjar.com/modules.87d8c9dd104c309e4245.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/internal-cs/default/beacon-ios.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2",
+            "l": "dataLayerUE"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2&l=dataLayerUE"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||scorecardresearch.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://sb.scorecardresearch.com/cs/7184769/beacon.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||crazyegg.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://script.crazyegg.com/pages/scripts/0027/6864.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||applets.ebxcdn.com^",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://applets.ebxcdn.com/ebx.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||hotjar.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "sv": 6
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://static.hotjar.com/c/hotjar-413277.js?sv=6"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||aswpsdkeu.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://aswpsdkeu.com/notify/v1/ua-sdk.min.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||googletagmanager.com^",
+          "listName": "easyprivacy.txt",
+          "query": {
+            "id": "UA-181957286-2"
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-181957286-2"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||permutive.com^$third-party",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://cdn.permutive.com/10453011-272d-49cd-9043-1964fdb36fd8-web.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/uecomscore_",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://e00-elmundo.uecdn.es/js/uecomscore_cmp_event.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "/utag.sync.",
+          "listName": "easyprivacy.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://tags.tiqcdn.com/utag/unidadeditorial/marca/prod/utag.sync.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606230101/pubads_impl.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://img.tradedoubler.com/images/inv.gif"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||amazon-adsystem.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||doubleclick.net^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||tradedoubler.com^$third-party",
+          "listName": "easylist.txt",
+          "query": {
+            "type(inv)g(24133136)a(2407712)": ""
+          }
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://impes.tradedoubler.com/imp?type(inv)g(24133136)a(2407712)"
+      },
+      {
+        "data": {
+          "body": {},
+          "filter": "||imasdk.googleapis.com^",
+          "listName": "easylist.txt",
+          "query": {}
+        },
+        "stack": [
+          {
+            "fileName": "https://www.marca.com/",
+            "source": "ThirdPartyTracker RequestHandler"
+          }
+        ],
+        "type": "TrackingRequest",
+        "url": "https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+      }
+    ]
+  }
+}

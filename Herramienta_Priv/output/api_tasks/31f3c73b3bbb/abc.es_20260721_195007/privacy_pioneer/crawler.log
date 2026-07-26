@@ -1,0 +1,33 @@
+Selenium Manager binary found at /home/pedro/Escritorio/UNI/CUARTO/tfg/privacy-pioneer-web-crawler/selenium-crawler/node_modules/selenium-webdriver/bin/linux/selenium-manager
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '689c9bdd-e4e7-47d6-b8b8-999daa07985d',
+  '199b9449-9c78-42cf-9902-f48467e9d9e6'
+]
+PP window: 199b9449-9c78-42cf-9902-f48467e9d9e6
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+🌍 Iniciando visita a: https://www.abc.es
+❌ Error en la visita: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.abc.es/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.abc.es.
+------ Reiniciando driver por error crítico ------
+Driver path: /usr/local/bin/geckodriver
+Browser path: /home/pedro/Escritorio/UNI/CUARTO/firefox/firefox
+built
+all windows: 2 [
+  '7706cd76-8942-4035-bc68-43179041d75a',
+  'a7843051-e29a-4578-96a4-97b2869e5354'
+]
+PP window: a7843051-e29a-4578-96a4-97b2869e5354
+switch to PP window
+closed alert
+input zip code: 06457
+clicked alert
+alert closed/tour skipped
+setup complete
+time spent:  62.957 total elapsed:  114.776

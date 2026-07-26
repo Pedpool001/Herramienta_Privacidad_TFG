@@ -1,0 +1,117 @@
+- name: datadome
+  value: >-
+    aOnNCW7gkCEOzGX1obcl~CBxoMQbVdRMxVUlXTbOnPhof1jQd2piixwrlgBqtuNXjAwH_tMKlxNhF9U220IYdBnTmFqJtz74UIbhvsVsNy25xFbALoTUDYnslpG8QUYA
+  domain: elpais.com
+  path: /
+  expires: 1816195300.487829
+  size: 136
+  httpOnly: false
+  secure: true
+  session: false
+  sameSite: Lax
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:40.487Z
+  expiresDays: 365
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/
+        source: set in Set-Cookie HTTP response header for https://elpais.com/
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: hpage
+  value: '1'
+  domain: elpais.com
+  path: /
+  expires: 1816195296.385678
+  size: 6
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2027-07-21T18:41:36.385Z
+  expiresDays: 365
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/favicon.ico
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://elpais.com/favicon.ico
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: arc-geo
+  value: >-
+    {"georegion":"200","countrycode":"ES","regioncode":"VC","timezone":"GMT+1","continent":"EU"}
+  domain: elpais.com
+  path: /
+  expires: 1784660196.385459
+  size: 99
+  httpOnly: false
+  secure: false
+  session: false
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  expiresUTC: 2026-07-21T18:56:36.385Z
+  expiresDays: 0.01
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/favicon.ico
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://elpais.com/favicon.ico
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- name: eptz
+  value: ES
+  domain: elpais.com
+  path: /
+  expires: -1
+  size: 6
+  httpOnly: false
+  secure: false
+  session: true
+  priority: Medium
+  sameParty: false
+  sourceScheme: Secure
+  sourcePort: 443
+  log:
+    location: https://elpais.com/
+    stack:
+      - fileName: https://elpais.com/favicon.ico
+        source: >-
+          set in Set-Cookie HTTP response header for
+          https://elpais.com/favicon.ico
+    type: Cookie.HTTP
+  firstPartyStorage: true
+- domain: geo.captcha-delivery.com
+  log:
+    location: https://elpais.com
+    stack:
+      - columnNumber: 182868
+        lineNumber: 489
+        fileName: >-
+          https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAIkgQOFQvHBMAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=aOnNCW7gkCEOzGX1obcl~CBxoMQbVdRMxVUlXTbOnPhof1jQd2piixwrlgBqtuNXjAwH_tMKlxNhF9U220IYdBnTmFqJtz74UIbhvsVsNy25xFbALoTUDYnslpG8QUYA&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=cba35b48362dc9fd2f98a3bea0fc765f3d6fc14a8650170dff24dc0dd8c53d7083b729c9f01c21daf1254adbad3b4971&dm=cd
+        source: '    at https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAIkgQOFQvHBMAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=aOnNCW7gkCEOzGX1obcl~CBxoMQbVdRMxVUlXTbOnPhof1jQd2piixwrlgBqtuNXjAwH_tMKlxNhF9U220IYdBnTmFqJtz74UIbhvsVsNy25xFbALoTUDYnslpG8QUYA&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=cba35b48362dc9fd2f98a3bea0fc765f3d6fc14a8650170dff24dc0dd8c53d7083b729c9f01c21daf1254adbad3b4971&dm=cd:489:182868'
+      - columnNumber: 183572
+        lineNumber: 489
+        fileName: >-
+          https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAIkgQOFQvHBMAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=aOnNCW7gkCEOzGX1obcl~CBxoMQbVdRMxVUlXTbOnPhof1jQd2piixwrlgBqtuNXjAwH_tMKlxNhF9U220IYdBnTmFqJtz74UIbhvsVsNy25xFbALoTUDYnslpG8QUYA&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=cba35b48362dc9fd2f98a3bea0fc765f3d6fc14a8650170dff24dc0dd8c53d7083b729c9f01c21daf1254adbad3b4971&dm=cd
+        functionName: ZC.L
+        source: '    at ZC.L (https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAIkgQOFQvHBMAiy8Rmg%3D%3D&hash=04152210A438DDFD27083ABE40645B&cid=aOnNCW7gkCEOzGX1obcl~CBxoMQbVdRMxVUlXTbOnPhof1jQd2piixwrlgBqtuNXjAwH_tMKlxNhF9U220IYdBnTmFqJtz74UIbhvsVsNy25xFbALoTUDYnslpG8QUYA&t=fe&referer=https%3A%2F%2Felpais.com%2F&s=60549&e=cba35b48362dc9fd2f98a3bea0fc765f3d6fc14a8650170dff24dc0dd8c53d7083b729c9f01c21daf1254adbad3b4971&dm=cd:489:183572)'
+    type: Cookie.JS
+  name: dd_testcookie
+  path: /
+  value: '1'
+  expires: -1
+  session: true
+  firstPartyStorage: false
