@@ -50,11 +50,38 @@ const URL_DEFAULT  = 'https://www.decathlon.es';
 const TIMEOUT_NAV  = 60000;
 const TIMEOUT_PANEL = 5000;
 
-// Regex para localizar el botón de acceso al panel de configuración
-const REGEX_CONFIG = /configurar|preferencias|opciones|personalizar|manage|settings|customize|choices|cookie\s*(?:settings|policy|preferences)/i;
+// Regex para localizar el botón de acceso al panel de configuración.
+// Cubre el vocabulario de los CMP más extendidos en España (Didomi, OneTrust,
+// Cookiebot) y el estándar IAB TCF. Notas:
+//   - Se usa el stem "configura" para casar tanto "configurar" como
+//     "configuración" (la regex anterior solo tenía "configurar" y fallaba con
+//     "Configuración de cookies").
+//   - "personaliza" cubre personalizar/personalización.
+//   - "gestionar", "ajustes", "más opciones/información" son variantes comunes
+//     de acceso al panel en español.
+//   - "purposes"/"manage"/"more options" corresponden al panel del IAB TCF.
+const REGEX_CONFIG = new RegExp(
+    [
+        'configura', 'configuraci[oó]n',
+        'preferencias', 'opciones', 'personaliza',
+        'gestionar', 'administrar', 'ajustes',
+        'm[aá]s\\s+(?:opciones|informaci[oó]n|detalles)',
+        'ver\\s+(?:opciones|preferencias|detalles)',
+        'manage', 'settings', 'customize', 'choices', 'options',
+        'purposes', 'more\\s+options', 'show\\s+purposes',
+        // "policy" queda fuera a propósito: "Cookie Policy" / "Política de
+        // cookies" es un enlace al documento, no un acceso a la configuración,
+        // y casarlo hacía clic en la política en vez de en el panel de toggles.
+        'cookie\\s*(?:settings|preferences)',
+    ].join('|'),
+    'i',
+);
 
-// Regex para el botón global de aceptar (solo para el conteo de tipo B)
-const REGEX_ACEPTAR = /^(aceptar|accept|si|yes|accepter|akzeptieren)$/i;
+// Regex para el botón de aceptar por categoría (conteo de tipo B). Anclada con
+// ^…$ a propósito: cuenta botones "Aceptar" individuales por categoría, no el
+// "Aceptar todo" global. Se añaden variantes de activación por categoría que
+// usan algunos CMP (permitir/allow/activar/on) además de los "sí/aceptar".
+const REGEX_ACEPTAR = /^(aceptar|acepto|accept|permitir|allow|activar|s[ií]|yes|on|accepter|akzeptieren|zulassen)$/i;
 
 
 // Palabras de acción que NO son nombres de categoría
@@ -105,6 +132,85 @@ async function extraerCategorias(page) {
 }
 
 
+// Selectores de contenedor de banner de los CMP más extendidos. Acotar la
+// búsqueda del botón a estos contenedores evita casar con texto ajeno al banner
+// (p. ej. titulares de noticias que contengan "opciones"), que era un falso
+// positivo real en webs de noticias.
+const SELECTOR_BANNER = [
+    '[id*="didomi" i]', '[class*="didomi" i]',
+    '#onetrust-banner-sdk', '[id*="onetrust" i]', '[class*="onetrust" i]', '[class*="ot-sdk" i]',
+    '[id*="cookiebot" i]', '#CybotCookiebotDialog',
+    '[id*="usercentrics" i]', '[class*="uc-banner" i]',
+    '[id*="cmp" i]', '[class*="cmp" i]',
+    '[id*="consent" i]', '[class*="consent" i]',
+    '[id*="cookie" i]', '[class*="cookie" i]',
+    '[role="dialog"]', '[role="alertdialog"]',
+    '[aria-label*="cookie" i]', '[aria-label*="consent" i]', '[aria-label*="privacidad" i]',
+].join(',');
+
+// Regex estricta para el fallback a página completa (sin banner identificable):
+// solo términos inequívocamente de configuración de cookies, para no casar con
+// contenido genérico de la página.
+const REGEX_CONFIG_ESTRICTO = /configura|preferencias|personaliza|gestionar\s+cookies|ajustes\s+de\s+cookies|cookie\s*(?:settings|preferences)|manage\s+(?:cookies|preferences|options)|show\s+purposes/i;
+
+
+// Busca dentro de `locator` el primer botón/enlace visible cuyo texto, aria-label
+// o title case con `regex`. Comprobar aria-label/title (no solo el texto visible)
+// capta los botones de icono (engranaje ⚙) o con nombre accesible por atributo.
+// Recoge TODOS los índices que casan y devuelve el primero visible: el primer
+// candidato puede estar oculto, y descartar por él perdería un botón visible
+// posterior (p. ej. "Personaliza tus Cookies" tras enlaces de política).
+async function _primerBotonVisible(locator, regex) {
+    const indices = await locator.evaluateAll((els, reSrc) => {
+        const re  = new RegExp(reSrc, 'i');
+        const out = [];
+        for (let i = 0; i < els.length; i++) {
+            const el    = els[i];
+            const texto = (el.innerText || el.textContent || '').trim();
+            const aria  = el.getAttribute('aria-label') || '';
+            const title = el.getAttribute('title') || '';
+            if (re.test(`${texto} ${aria} ${title}`)) out.push(i);
+        }
+        return out;
+    }, regex.source).catch(() => []);
+
+    for (const idx of indices) {
+        const el = locator.nth(idx);
+        if (await el.isVisible().catch(() => false)) {
+            const texto = ((await el.innerText().catch(() => '')) ||
+                           (await el.getAttribute('aria-label').catch(() => '')) ||
+                           (await el.getAttribute('title').catch(() => '')) || '').trim();
+            return { btn: el, texto };
+        }
+    }
+    return null;
+}
+
+
+// Localiza el botón de acceso al panel de configuración.
+//   1º) Dentro de los contenedores de banner conocidos, con la regex generosa.
+//   2º) Si no hay banner identificable, en toda la página pero con regex estricta.
+async function localizarBotonConfig(page) {
+    // Paso 1: acotado al banner (preciso, evita falsos positivos de contenido)
+    for (const frame of page.frames()) {
+        const dentroBanner = frame.locator(SELECTOR_BANNER).locator(
+            'button, a, [role="button"], [role="link"], [role="menuitem"]'
+        );
+        const res = await _primerBotonVisible(dentroBanner, REGEX_CONFIG);
+        if (res) return { ...res, frame };
+    }
+    // Paso 2: fallback a página completa con criterio estricto
+    for (const frame of page.frames()) {
+        const todos = frame.locator(
+            'button, a, [role="button"], [role="link"], [role="menuitem"]'
+        );
+        const res = await _primerBotonVisible(todos, REGEX_CONFIG_ESTRICTO);
+        if (res) return { ...res, frame };
+    }
+    return null;
+}
+
+
 // ── Auditoría principal ───────────────────────────────────────────────────────
 async function auditarR4(url, mostrarDetalle) {
     const browser = await chromium.launch({
@@ -132,23 +238,11 @@ async function auditarR4(url, mostrarDetalle) {
     try {
         console.log(`[*] Navegando a: ${url}`);
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: TIMEOUT_NAV });
-        await page.waitForTimeout(4000);
+        await page.waitForTimeout(5000);   // margen para CMP que inyectan el banner tarde
 
         // ── 1. Localizar botón de acceso al panel ─────────────────────────────
-        let btnAcceso = null;
-        let frameAcceso = null;
-
-        for (const frame of page.frames()) {
-            const candidato = frame
-                .locator('button, a, [role="button"], [role="link"]')
-                .filter({ hasText: REGEX_CONFIG })
-                .first();
-            if (await candidato.isVisible().catch(() => false)) {
-                btnAcceso   = candidato;
-                frameAcceso = frame;
-                break;
-            }
-        }
+        const acceso    = await localizarBotonConfig(page);
+        const btnAcceso  = acceso ? acceso.btn : null;
 
         if (!btnAcceso) {
             resultado.evaluacion.detalle =
@@ -158,7 +252,9 @@ async function auditarR4(url, mostrarDetalle) {
             return resultado;
         }
 
-        const textoBtn = (await btnAcceso.innerText().catch(() => '')).trim();
+        // Texto del botón: el que devolvió el localizador (puede venir del
+        // aria-label/title si no había texto visible, p. ej. botones de icono).
+        const textoBtn = acceso.texto || (await btnAcceso.innerText().catch(() => '')).trim();
         resultado.hallazgos.boton_config_texto = textoBtn;
         console.log(`[!] Botón de configuración encontrado: "${textoBtn}". Abriendo panel...`);
 

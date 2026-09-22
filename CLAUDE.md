@@ -734,6 +734,45 @@ residual. Todos los módulos compilan.
 
 ---
 
+### R4: detección del botón de configuración ampliada (regex + aria-label + acotado al banner)
+
+**Problema:** R4 solo localizaba el acceso al panel si el **texto visible** del botón casaba con
+una regex corta. Fallaba en dos frentes: (1) la regex no cubría variantes muy comunes —el caso
+más sangrante, **"Configuración"**, porque la regex tenía `configurar` y "configuración" no lo
+contiene—, y (2) no miraba `aria-label`/`title`, así que los botones de icono sin texto visible
+quedaban fuera.
+
+**Cambios en `requisitos/r4_granularidad.js`:**
+- **`REGEX_CONFIG` ampliada** con el vocabulario de los CMP más usados en España (Didomi,
+  OneTrust, Cookiebot) e IAB TCF: stem `configura` (cubre configurar/configuración),
+  `personaliza`, `gestionar`, `administrar`, `ajustes`, `más opciones/información`,
+  `ver opciones/preferencias`, `manage`, `purposes`, `show purposes`, `more options`. Se
+  **excluye `policy`** a propósito: "Cookie Policy"/"Política de cookies" es el enlace al
+  documento, no el acceso a la configuración, y casarlo hacía clic en la política.
+- **`REGEX_ACEPTAR` ampliada** (conteo por categoría, tipo B) con variantes de activación por
+  finalidad: `permitir`, `allow`, `activar`, `on`, además de los `aceptar/sí/yes`. Sigue
+  anclada `^…$` para no casar el "Aceptar todo" global.
+- **Coincidencia por texto + `aria-label` + `title`** (`_primerBotonVisible`), no solo texto
+  visible. Recoge **todos** los candidatos que casan y usa el primero **visible** (el primero
+  puede estar oculto, y descartar por él perdía botones válidos posteriores).
+- **Búsqueda acotada al contenedor del banner** (`SELECTOR_BANNER`: didomi/onetrust/cookiebot/
+  cmp/consent/cookie/`role=dialog`…). Sin esto, en webs de noticias la regex casaba titulares
+  ("…tiene más **opciones**…") → falso positivo. Fallback a página completa solo con una regex
+  **estricta** si no hay contenedor identificable.
+
+**Verificación sobre sitios reales:**
+| Sitio | Antes | Ahora |
+|---|---|---|
+| lavanguardia.com | FAILED (regex no cogía "…y configuración") | **PASSED** ✓ |
+| 20minutos.es | falso positivo (clicaba un titular) | **PASSED** con el botón real "Configurar cookies" |
+| elmundo.es | casaba "Cookie Policy" (enlace) | encuentra el botón real "Configuración de cookies" |
+| abc.es | PASSED | PASSED (sin regresión) |
+
+**Limitación pendiente (separada de este cambio):** en elmundo.es el botón correcto ya se
+localiza, pero tras abrirlo el conteo de toggles da 0 (CMP con 25 iframes y estructura no
+estándar). Es un problema del **conteo de granularidad**, no de la detección del botón, y queda
+como posible mejora futura.
+
 ### R9 siempre NO_EVALUABLE — causa raíz real: `--no-detalle` tomado como filtro de sitio
 
 **Síntoma:** R9 salía `[]` (→ NO_EVALUABLE) incluso con snippets ya presentes en MySQL.
