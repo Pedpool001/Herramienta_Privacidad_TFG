@@ -38,7 +38,7 @@ def _dominio(url: str) -> str:
     return urlparse(url).netloc.lstrip("www.")
 
 
-def _contar_evidencias(dominio: str) -> int | None:
+def _contar_evidencias(dominio: str, *, solo_snippets: bool = False) -> int | None:
     """
     Cuenta las filas que la extensión registró en MySQL para este dominio.
 
@@ -47,6 +47,9 @@ def _contar_evidencias(dominio: str) -> int | None:
     crawl que sí visitó el sitio indica casi siempre un fallo de captura de la
     extensión (Bugs 22/37/40), no ausencia de rastreadores. Devuelve None si no
     se pudo consultar MySQL (para no confundir el fallo de consulta con 0 filas).
+
+    Con `solo_snippets=True` cuenta únicamente las filas con `snippet` no vacío,
+    que son las que necesita R9 (minimización) para poder evaluarse.
     """
     try:
         import mysql.connector
@@ -57,14 +60,53 @@ def _contar_evidencias(dominio: str) -> int | None:
             database=os.getenv("MYSQL_DATABASE", "analysis"),
         )
         cur = conn.cursor()
-        cur.execute("SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s",
-                    (f"%{dominio}%",))
+        sql = "SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s"
+        if solo_snippets:
+            sql += " AND snippet IS NOT NULL AND snippet != ''"
+        cur.execute(sql, (f"%{dominio}%",))
         n = cur.fetchone()[0]
         conn.close()
         return int(n)
     except Exception as e:
         log.warning("No se pudo contar evidencias de %s: %s", dominio, e)
         return None
+
+
+def _esperar_estabilizacion(dominio: str, timeout: float = 25.0,
+                            intervalo: float = 2.0) -> int | None:
+    """
+    Espera a que la evidencia del dominio esté completa en MySQL.
+
+    La extensión Privacy Pioneer no inserta la evidencia poco a poco, sino de
+    golpe cuando su temporizador `sender` dispara. Antes de ese instante hay 0
+    filas; justo después, todas. Por eso NO basta con esperar a "dos lecturas
+    iguales": si el sondeo cae en la ventana previa al envío, leería 0, 0 y daría
+    por estable un 0 que en realidad era "aún no ha llegado nada" → R9 correría
+    contra MySQL vacío y saldría SIN_DATOS.
+
+    La corrección: un 0 nunca se considera estable. Solo se acepta la
+    estabilización cuando ya hay filas (`total > 0`) y dos lecturas consecutivas
+    de (total, con_snippet) coinciden. Si el conteo sigue en 0 hasta el timeout,
+    entonces sí es un sitio sin rastreadores o una captura fallida, y se devuelve
+    0 con conocimiento de causa. Se estabiliza también sobre el nº de filas con
+    snippet porque son las que R9 necesita.
+
+    Debe invocarse con la REST API todavía viva, para dar margen a que el envío
+    de la extensión termine de insertarse.
+    """
+    prev, t0, n_total = None, time.monotonic(), 0
+    while time.monotonic() - t0 < timeout:
+        n_total = _contar_evidencias(dominio)
+        if n_total is None:               # no se pudo consultar: no bloquear
+            return None
+        n_snip = _contar_evidencias(dominio, solo_snippets=True) or 0
+        actual = (n_total, n_snip)
+        # Un 0 no cuenta como estable: puede ser "el sender aún no ha disparado".
+        if n_total > 0 and actual == prev:
+            break                         # dos lecturas iguales y con datos
+        prev = actual
+        time.sleep(intervalo)
+    return n_total
 
 
 def _limpiar_mysql(dominio: str) -> None:
@@ -174,22 +216,12 @@ def _crawl(url: str, output_dir: Path, dominio: str,
                  "\n".join(crawler.stdout.splitlines()[-15:]) if crawler.stdout else "(vacío)")
         if crawler.stderr:
             log.warning("Crawler stderr: %s", crawler.stderr[-400:])
-        # Comprobar cuántas filas se insertaron en MySQL
-        try:
-            import mysql.connector
-            _conn = mysql.connector.connect(
-                host=os.getenv("MYSQL_HOST", "localhost"),
-                user=os.getenv("MYSQL_USER", "pioneer"),
-                password=os.getenv("MYSQL_PASSWORD", "abc"),
-                database=os.getenv("MYSQL_DATABASE", "analysis"),
-            )
-            _cur = _conn.cursor()
-            _cur.execute("SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s", (f"%{dominio}%",))
-            _count = _cur.fetchone()[0]
-            _conn.close()
-            log.info("MySQL filas insertadas para %s: %d", dominio, _count)
-        except Exception as _e:
-            log.warning("No se pudo consultar MySQL post-crawl: %s", _e)
+        # Esperar a que la evidencia se estabilice ANTES de matar la REST API:
+        # la extensión inserta los snippets (que necesita R9) con retardo, y si
+        # el análisis corre demasiado pronto esa evidencia se pierde.
+        _count = _esperar_estabilizacion(dominio)
+        log.info("MySQL filas insertadas para %s: %s", dominio,
+                 _count if _count is not None else "?")
     except subprocess.TimeoutExpired:
         log.warning("Crawler superó timeout (%ds)", CRAWLER_TIMEOUT)
     finally:

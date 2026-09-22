@@ -236,7 +236,11 @@ def guardar_json(resultados: list[dict], ruta: str = str(Path(os.getenv("ANALYSI
 if __name__ == "__main__":
     import sys
 
-    sitio = sys.argv[1] if len(sys.argv) > 1 else None
+    # `_loader.ejecutar_analisis` antepone "--no-detalle" al dominio, así que hay
+    # que filtrarlo antes de leer el sitio; si no, `sitio` valdría "--no-detalle"
+    # y la consulta `rootUrl LIKE '%--no-detalle%'` no casaría con nada → [].
+    args  = [a for a in sys.argv[1:] if a != "--no-detalle"]
+    sitio = args[0] if args else None
 
     try:
         resultados = auditar_r9(sitio_filtro=sitio)

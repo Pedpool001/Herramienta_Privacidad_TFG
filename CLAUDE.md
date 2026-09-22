@@ -734,6 +734,61 @@ residual. Todos los módulos compilan.
 
 ---
 
+### R9 siempre NO_EVALUABLE — causa raíz real: `--no-detalle` tomado como filtro de sitio
+
+**Síntoma:** R9 salía `[]` (→ NO_EVALUABLE) incluso con snippets ya presentes en MySQL.
+Ejecutar `python3 r9_minimizacion.py abc.es` a mano daba el veredicto correcto, pero la
+auditoría seguía dando `[]`.
+
+**Causa raíz:** `_loader.ejecutar_analisis` invoca los scripts anteponiendo el flag:
+`r9_minimizacion.py --no-detalle abc.es`. El bloque `__main__` de r9 leía el sitio con
+`sitio = sys.argv[1]`, que en esa llamada vale **`--no-detalle`**, no `abc.es`. La consulta
+quedaba `WHERE rootUrl LIKE '%--no-detalle%'` → 0 filas → `[]`. Los demás scripts
+(p. ej. `r2_r3_cookies_beacons.py`) ya filtraban el flag; r9 era el único que no.
+
+**Fix en `requisitos/r9_minimizacion.py`:** filtrar `--no-detalle` antes de leer el sitio,
+igual que r2_r3:
+```python
+args  = [a for a in sys.argv[1:] if a != "--no-detalle"]
+sitio = args[0] if args else None
+```
+
+**Verificación:** reproduciendo la llamada exacta de la auditoría
+(`r9_minimizacion.py --no-detalle abc.es` vía subprocess con `ANALYSIS_DATA_DIR`) el JSON
+pasa de `[]` a `{estado: OK, hallazgos_POST: {IP_ADDRESS, USER_ID}}`.
+
+**Nota:** este era el bloqueo de fondo. Los dos arreglos previos (WAIT_TIME=90 para que la
+evidencia con snippet llegue a tiempo, y la corrección de `_esperar_estabilizacion` para no
+"estabilizar en 0") también eran necesarios, pero por sí solos no bastaban porque r9 nunca
+llegaba a leer el sitio correcto.
+
+### R9: WAIT_TIME y estabilización (necesarios pero no suficientes)
+
+**Síntoma:** R9 (minimización de datos) salía NO_EVALUABLE en todos los sitios, incluso
+en los que Privacy Pioneer capturaba filas (abc.es con 11 filas). El JSON `r9_resultado.json`
+guardado durante la auditoría era una **lista vacía** en las tres ejecuciones probadas,
+mientras que ejecutar `r9_minimizacion.py abc.es` a mano —minutos después— devolvía
+ADVERTENCIA detectando la IP del usuario en fase PRE.
+
+**Causa:** R9 analiza el campo `snippet` de la tabla `entries` (el contenido de las
+peticiones donde aparecen los datos personales). A diferencia de R2/R3, que solo necesitan
+el **tipo** de rastreador (se inserta pronto), R9 necesita el **snippet**, que la extensión
+envía de forma **asíncrona y con retardo**. El flujo original contaba las filas y mataba la
+REST API nada más terminar el crawler; el análisis (paso 7) corría inmediatamente después,
+cuando los snippets aún no se habían insertado. Resultado: r9 no veía ningún snippet y
+devolvía SIN_DATOS → NO_EVALUABLE. Que R2/R3 sí funcionaran y R9 no era la pista: ambos leen
+la misma tabla, pero solo R9 depende del snippet tardío.
+
+**Fix en `modulos_herramientas/privacy_pioneer.py`:** nueva función
+`_esperar_estabilizacion(dominio)` que, **antes de matar la REST API**, hace polling del nº
+de filas del dominio hasta que se estabiliza (dos lecturas iguales seguidas) o vence un
+timeout de 18 s. Sustituye al conteo simple post-crawl. Así se da tiempo a que la evidencia
+con snippet se inserte mientras la API sigue viva. Para sitios sin datos, dos lecturas de 0
+consecutivas cortan la espera en ~4-6 s, sin penalización apreciable.
+
+**Verificación:** el helper devuelve en ~4 s sobre datos ya estables. Pendiente de
+confirmar sobre un crawl real que R9 pase de NO_EVALUABLE a su veredicto real.
+
 ### Privacy Pioneer: distinción entre captura fallida y sitio sin rastreadores
 
 **Problema:** cuando el crawl de Privacy Pioneer terminaba pero MySQL quedaba a 0 filas,
