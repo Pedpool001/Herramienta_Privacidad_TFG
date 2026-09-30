@@ -162,6 +162,18 @@ def _frase_en_texto(frase: str, texto: str) -> bool:
     return (" " + frase + " ") in (" " + texto + " ")
 
 
+# Rechazo del tipo "solo las esenciales/necesarias", robusto al orden de las
+# palabras. En inglés el orden habitual es "essential cookies only" (no "only
+# essential"), que las frases fijas no capturaban → CNN daba rechazar:0 y un
+# falso obstrucción=FAILED. "only/solo" + "essential/necessary" en cualquier
+# orden = rechazo (usar únicamente las cookies imprescindibles).
+_RE_SOLO_ESENCIALES = re.compile(
+    r"\b(only|just|solo|s[oó]lo)\b.*(essential|necessary|required|necesari|esencial|imprescindibl)"
+    r"|(essential|necessary|required|necesari|esencial|imprescindibl).*\b(only|solo|s[oó]lo|[uú]nicament)",
+    re.IGNORECASE,
+)
+
+
 def clasificar_texto(texto: str) -> str:
     t = texto.strip().lower()
     if t in PALABRAS_ACEPTAR:
@@ -170,6 +182,8 @@ def clasificar_texto(texto: str) -> str:
         return "rechazar"
     if t in PALABRAS_CONFIGURAR:
         return "configurar"
+    if _RE_SOLO_ESENCIALES.search(t):
+        return "rechazar"
     for p in PALABRAS_RECHAZAR:
         if _frase_en_texto(p, t):
             return "rechazar"
@@ -229,25 +243,28 @@ function deepQueryAll(root, sel) {
 
 
 # ── Detección del banner ──────────────────────────────────────────────────────
-def detectar_banner(page) -> str | None:
+def _detectar_en_frame(frame) -> str | None:
     """
-    Detecta el banner de cookies en dos fases:
+    Detecta el banner de cookies dentro de UN frame (página principal o iframe):
     1. Selectores CSS conocidos de los principales CMPs.
     2. Fallback JS con Shadow DOM traversal.
+
+    Se usa `query_selector` (inmediato) en vez de `wait_for_selector`, porque la
+    espera global de 8 s ya se hizo antes de llamar aquí; esperar 2 s por cada
+    selector y frame dispararía el tiempo con CMPs en iframe (varios frames).
     """
     # Fase 1: selectores conocidos
     for selector in SELECTORES_CMP:
         try:
-            page.wait_for_selector(selector, timeout=2000, state="visible")
-            return selector
-        except PlaywrightTimeout:
-            continue
+            el = frame.query_selector(selector)
+            if el and el.is_visible():
+                return selector
         except Exception:
             continue
 
     # Fase 2: fallback genérico con Shadow DOM
     try:
-        selector = page.evaluate("""() => {
+        selector = frame.evaluate("""() => {
             """ + _JS_DEEP_QUERY + """
             // Incluir <a>: muchos CMP (p. ej. muros "consent or pay" como el de
             // 20minutos) usan enlaces con clase de botón, no <button>.
@@ -294,15 +311,47 @@ def detectar_banner(page) -> str | None:
     return None
 
 
+def localizar_banner(page):
+    """
+    Busca el banner en TODOS los frames (principal + iframes) y devuelve
+    `(frame, selector, botones)` del primero cuyo banner contenga botones.
+
+    Iterar los iframes es imprescindible para los CMP que renderizan el banner
+    dentro de un `<iframe>` (Sourcepoint en theguardian.com y bbc.com →
+    `sourcepoint.*` / `cdn.privacy-mgmt.com`, TrustArc, algunas configs de
+    Quantcast). En esos casos la página principal solo tiene un placeholder
+    (`sp_message_container`) sin botones; los controles reales viven en el iframe.
+    Por eso no basta con detectar el contenedor: nos quedamos con el frame que
+    realmente aporta botones, y así el placeholder vacío no gana.
+
+    Si algún frame tiene banner pero ningún frame aporta botones, se devuelve
+    `(None, selector_visto, [])` para poder informar NO_EVALUABLE (no FAILED).
+    """
+    selector_visto = None
+    for frame in page.frames:
+        try:
+            sel = _detectar_en_frame(frame)
+        except Exception:
+            sel = None
+        if not sel:
+            continue
+        if selector_visto is None:
+            selector_visto = sel
+        botones = extraer_botones(frame, sel)
+        if botones:
+            return frame, sel, botones
+    return None, selector_visto, []
+
+
 # ── Extracción de propiedades de botones ──────────────────────────────────────
-def extraer_botones(page, banner_selector: str) -> list[dict]:
+def extraer_botones(frame, banner_selector: str) -> list[dict]:
     """
     Extrae todos los botones e interactivos del banner, incluyendo los que están
     dentro de Shadow DOM (típico en Didomi, OneTrust v2).
 
-    Usa page.evaluate() con el selector como argumento, en vez de
-    eval_on_selector(), para poder manejar tanto shadow hosts como elementos
-    normales sin cambiar el punto de llamada.
+    Opera sobre un `frame` (página principal o iframe) con `frame.evaluate()` y
+    el selector como argumento, para poder manejar tanto shadow hosts como
+    elementos normales sin cambiar el punto de llamada.
     """
     js = """
     (sel) => {
@@ -343,7 +392,7 @@ def extraer_botones(page, banner_selector: str) -> list[dict]:
     }
     """
     try:
-        botones = page.evaluate(js, banner_selector)
+        botones = frame.evaluate(js, banner_selector)
         # Conservar los botones con CUALQUIER etiqueta (texto, aria-label o
         # title). Antes se exigía texto visible, lo que descartaba los
         # botones-icono (✕ de rechazo, engranaje de configuración) que solo
@@ -573,18 +622,26 @@ def auditar(url: str, screenshot: bool = False) -> dict:
                 except Exception:
                     pass
 
-            # ── Detección del banner ──────────────────────────────────────────
-            banner_selector = detectar_banner(page)
+            # ── Detección del banner + extracción (busca en todos los frames) ──
+            banner_frame, banner_selector, botones = localizar_banner(page)
 
             if not banner_selector:
                 browser.close()
-                return resultado_interno  # UNKNOWN
+                return resultado_interno  # UNKNOWN — no se detectó banner
 
             print(f"[*] Banner encontrado: {banner_selector}")
-
-            # ── Extracción de botones (con Shadow DOM traversal) ──────────────
-            botones = extraer_botones(page, banner_selector)
             print(f"[*] Botones extraídos del banner: {len(botones)}")
+
+            # Banner detectado pero sin botones analizables (p. ej. contenedor
+            # placeholder o iframe que no pudimos leer): NO_EVALUABLE, no FAILED.
+            # Marcar FAILED aquí daría un falso incumplimiento por un límite de
+            # medición, no por un dark pattern real.
+            if not botones:
+                resultado_interno["banner_detectado"] = True
+                resultado_interno["banner_selector"] = banner_selector
+                resultado_interno["total_botones"] = 0
+                browser.close()
+                return resultado_interno  # UNKNOWN
 
             clasificados: dict[str, list] = {
                 "aceptar":    [],

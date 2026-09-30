@@ -734,6 +734,45 @@ residual. Todos los módulos compilan.
 
 ---
 
+### R13: soporte de CMP en iframe (Sourcepoint/Quantcast/TrustArc) + guarda 0 botones
+
+**Problema (detectado al validar con webs en inglés):** R13 solo analizaba la **página
+principal**, nunca los `iframes`. Muchos CMP anglosajones —Sourcepoint (theguardian.com →
+`sourcepoint.theguardian.com`, bbc.com → `cdn.privacy-mgmt.com`), TrustArc, algunas configs
+de Quantcast— renderizan el banner **dentro de un `<iframe>`**. La página principal solo tiene
+un placeholder (`sp_message_container`) sin botones. Resultado: R13 detectaba ese contenedor
+pero extraía **0 botones** y, además, devolvía **FAILED** (falso incumplimiento).
+
+Nota: no era un problema de idioma. Las regex y palabras ya son bilingües (cnn.com, OneTrust
+inline, funcionaba). El problema era estructural: **CMP en iframe**.
+
+**Cambios en `requisitos/r13_dark_patterns.py`:**
+- `detectar_banner(page)` → `_detectar_en_frame(frame)`: detecta dentro de un frame concreto y
+  usa `query_selector` (inmediato) en vez de `wait_for_selector` (evita esperar 2 s × selector
+  × frame ahora que hay varios frames).
+- Nueva `localizar_banner(page)`: itera **todos los frames** (principal + iframes), detecta el
+  banner y extrae botones en cada uno, y se queda con **el primer frame que aporta botones**.
+  Así el placeholder vacío de la página principal (Sourcepoint) no gana frente al iframe que sí
+  tiene los controles.
+- `extraer_botones(frame, sel)`: opera sobre un frame (antes sobre `page`).
+- **Guarda 0 botones → NO_EVALUABLE** (antes FAILED): si se detecta banner pero ningún frame
+  aporta botones analizables, es un límite de medición, no un dark pattern.
+
+**Clasificación de rechazo "solo esenciales" robusta al orden (inglés):** en inglés el
+rechazo suele frasearse **"essential cookies only"** (no "only essential"), orden que las
+frases fijas no capturaban → cnn.com daba `rechazar:0` y un falso `obstrucción=FAILED`. Se
+añadió `_RE_SOLO_ESENCIALES`, un patrón que reconoce "only/solo" + "essential/necessary/
+necesari/esencial" en **cualquier orden** (cubre "essential cookies only", "only necessary
+cookies", "solo las necesarias", "use only necessary cookies"…). Verificado que no dispara con
+"accept all" ni "essential guide to cookies".
+
+**Verificación sobre webs en inglés:**
+| Sitio | CMP | Antes | Ahora |
+|---|---|---|---|
+| theguardian.com | Sourcepoint (iframe) | banner + 0 botones → FAILED falso | PASSED (10 botones, rechazo detectado) |
+| bbc.com | Sourcepoint (iframe) | sin banner | veredicto real (Sourcepoint sin rechazo en capa 1 → FAILED legítimo) |
+| cnn.com | OneTrust (inline) | rechazar:0 (perdía "essential cookies only") | rechazo clasificado correctamente |
+
 ### R13: clasificación de botones ampliada (aria-label + regex + fallback con `<a>`)
 
 **Problema:** R13 clasificaba los botones del banner (aceptar/rechazar/configurar) usando
