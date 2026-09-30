@@ -44,26 +44,41 @@ _UA = (
 
 # ── Palabras clave para clasificar botones ────────────────────────────────────
 PALABRAS_ACEPTAR = {
-    "aceptar", "aceptar todo", "aceptar todos", "acepto", "accept", "accept all",
+    "aceptar", "aceptar todo", "aceptar todos", "aceptar todas", "acepto", "accept",
+    "accept all", "accept cookies", "aceptar cookies", "aceptar y cerrar",
+    "aceptar y continuar", "aceptar y seguir", "sí, acepto", "si acepto",
     "accepter", "accepter tout", "accetta", "accetta tutto", "alle akzeptieren",
-    "agree", "i agree", "allow all", "permitir", "permitir todo", "autorizar",
-    "entendido", "understood", "got it",
+    "agree", "i agree", "agree and close", "allow all", "allow", "permitir",
+    "permitir todo", "permitir todas", "autorizar", "consentir", "consiento",
+    "de acuerdo", "estoy de acuerdo", "vale", "aceptar y cerrar (recomendado)",
+    "entendido", "understood", "got it", "ok",
 }
 
 PALABRAS_RECHAZAR = {
-    "rechazar", "rechazar todo", "rechazar todos", "rechazo",
-    "no acepto", "no aceptar",
-    "reject", "reject all", "refuse", "refuser", "tout refuser", "rifiuta",
-    "ablehnen", "alle ablehnen", "deny", "decline", "solo necesarias",
-    "solo esenciales", "only necessary", "only essential", "only required",
-    "continuar sin aceptar", "continue without accepting", "usar solo necesarias",
+    "rechazar", "rechazar todo", "rechazar todos", "rechazar todas", "rechazo",
+    "rechazar cookies", "rechazar y cerrar", "rechazar y continuar",
+    "denegar", "denegar todo", "denegar todas",
+    "no acepto", "no aceptar", "no consiento", "no, gracias", "no gracias",
+    "reject", "reject all", "reject cookies", "refuse", "refuser", "tout refuser",
+    "rifiuta", "ablehnen", "alle ablehnen", "deny", "deny all", "decline",
+    "disagree", "disagree and close", "do not accept",
+    "solo necesarias", "solo esenciales", "solo las necesarias", "solo funcionales",
+    "only necessary", "only essential", "only required", "necessary only",
+    "continuar sin aceptar", "continue without accepting", "seguir sin aceptar",
+    "usar solo necesarias", "prescindir",
 }
 
 PALABRAS_CONFIGURAR = {
-    "configurar", "configuración", "configuracion", "configure", "settings",
-    "preferencias", "preferences", "personalizar", "customize", "gestionar",
-    "manage", "mehr optionen", "plus d'options", "more options", "más opciones",
-    "más información", "more info", "ver opciones", "opciones",
+    "configurar", "configuración", "configuracion", "configurar cookies",
+    "configurar preferencias", "configure", "settings", "cookie settings",
+    "ajustes", "ajustes de cookies", "administrar", "administrar opciones",
+    "preferencias", "preferences", "mis preferencias", "personalizar", "customize",
+    "gestionar", "gestionar cookies", "gestionar opciones", "manage",
+    "manage options", "manage preferences", "mehr optionen", "plus d'options",
+    "more options", "más opciones", "mas opciones", "mis opciones",
+    "más información", "mas informacion", "more info", "more information",
+    "ver opciones", "ver preferencias", "opciones", "elegir",
+    "mostrar finalidades", "show purposes", "purposes",
 }
 
 # ── Selectores de CMPs conocidos ──────────────────────────────────────────────
@@ -78,7 +93,13 @@ SELECTORES_CMP = [
     ".didomi-popup-container",
     # Quantcast / Sourcepoint
     "#sp-cc",
+    "[id^='sp_message_container']",
+    ".message-container",
     "[data-testid='cookie-policy-dialog']",
+    # Usercentrics
+    "#usercentrics-root",
+    "[data-testid='uc-app']",
+    "#uc-center-container",
     # Genéricos con ARIA
     "[role='dialog'][aria-modal='true']",
     "[role='alertdialog']",
@@ -161,6 +182,36 @@ def clasificar_texto(texto: str) -> str:
     return "otro"
 
 
+def _etiqueta_boton(b: dict) -> str:
+    """Etiqueta legible del botón para los informes: texto visible o, si no lo
+    hay (botón-icono), su aria-label o title."""
+    return (b.get("texto") or b.get("aria") or b.get("title") or "").strip()
+
+
+def clasificar_boton(b: dict) -> str:
+    """
+    Clasifica un botón usando su texto visible y, como respaldo, su `aria-label`
+    y `title`. Portado de la mejora de R4: los botones de icono (rechazo ✕,
+    engranaje de configuración) no llevan texto visible pero sí exponen su nombre
+    accesible por atributo. Sin esto se clasificaban como "otro" y R13 concluía
+    erróneamente que no había botón de rechazo (falso obstrucción=FAILED).
+
+    Se prioriza el texto visible: solo se recurre a aria-label/title cuando el
+    texto no permite clasificar (evita que un aria genérico pise una etiqueta
+    de texto clara).
+    """
+    cat = clasificar_texto(b.get("texto", "") or "")
+    if cat != "otro":
+        return cat
+    for campo in ("aria", "title"):
+        val = b.get(campo, "") or ""
+        if val:
+            c = clasificar_texto(val)
+            if c != "otro":
+                return c
+    return "otro"
+
+
 # ── JS compartido: traversal de Shadow DOM ────────────────────────────────────
 # Muchos CMPs (Didomi, OneTrust v2, etc.) renderizan su banner dentro de un
 # Shadow Root. La función deepQueryAll() atraviesa recursivamente todos los
@@ -198,29 +249,41 @@ def detectar_banner(page) -> str | None:
     try:
         selector = page.evaluate("""() => {
             """ + _JS_DEEP_QUERY + """
-            const RE = /rechazar|reject|decline|aceptar|accept|akzeptieren/i;
-            const btns = deepQueryAll(document, 'button, [role="button"]')
-                .filter(b => RE.test(b.innerText || ''));
-            if (btns.length < 2) return null;
+            // Incluir <a>: muchos CMP (p. ej. muros "consent or pay" como el de
+            // 20minutos) usan enlaces con clase de botón, no <button>.
+            const RE  = /rechazar|reject|decline|denegar|aceptar|accept|akzeptieren|consent|permitir|configurar|preferenc|personaliza|ajustes/i;
+            const ACC = /aceptar|accept|akzeptieren|permitir|de acuerdo|estoy de acuerdo|agree|consent/i;
+            const texto = b => (b.innerText || '') + ' ' + (b.getAttribute('aria-label') || '');
 
-            // Subir desde el primer botón hasta el contenedor con ≥ 2 botones relevantes.
-            // Si el botón está en un shadow root, getRootNode().host sube al host element.
-            let el = btns[0];
-            for (let i = 0; i < 15; i++) {
-                const parent = el.parentElement
-                    || (el.getRootNode && el.getRootNode() !== document
-                        ? el.getRootNode().host : null);
-                if (!parent || parent === document.body) break;
-                el = parent;
-                const contained = deepQueryAll(el, 'button, [role="button"]')
-                    .filter(b => RE.test(b.innerText || ''));
-                if (contained.length >= 2) break;
+            const todos    = deepQueryAll(document, 'button, a, [role="button"]');
+            const matches  = todos.filter(b => RE.test(texto(b)));
+            if (matches.length < 2) return null;
+
+            // Semillas: botones de ACEPTAR, que viven en el banner y no en el
+            // footer (donde suele haber solo un enlace "Personalizar cookies").
+            // Si no hay ninguno (posible obstrucción), se usan todos.
+            let seeds = matches.filter(b => ACC.test(texto(b)));
+            if (seeds.length === 0) seeds = matches;
+
+            // Desde cada semilla, subir hasta el contenedor que agrupa ≥ 2
+            // controles de consentimiento y tiene id o clase con la que anclar.
+            for (const seed of seeds) {
+                let el = seed;
+                for (let i = 0; i < 15; i++) {
+                    const parent = el.parentElement
+                        || (el.getRootNode && el.getRootNode() !== document
+                            ? el.getRootNode().host : null);
+                    if (!parent || parent === document.body) break;
+                    el = parent;
+                    const contained = deepQueryAll(el, 'button, a, [role="button"]')
+                        .filter(b => RE.test(texto(b)));
+                    if (contained.length >= 2) {
+                        if (el.id) return '#' + CSS.escape(el.id);
+                        const cls = (el.className + '').trim().split(/\\s+/)[0];
+                        if (cls) return el.tagName.toLowerCase() + '.' + CSS.escape(cls);
+                    }
+                }
             }
-            if (!el || el === document.body) return null;
-
-            if (el.id) return '#' + CSS.escape(el.id);
-            const cls = (el.className + '').trim().split(/\\s+/)[0];
-            if (cls) return el.tagName.toLowerCase() + '.' + CSS.escape(cls);
             return null;
         }""")
         if selector:
@@ -266,6 +329,8 @@ def extraer_botones(page, banner_selector: str) -> list[dict]:
             const rect = el.getBoundingClientRect();
             return {
                 texto:     (el.innerText || el.textContent || '').trim().toLowerCase(),
+                aria:      (el.getAttribute('aria-label') || '').trim().toLowerCase(),
+                title:     (el.getAttribute('title') || '').trim().toLowerCase(),
                 bg_color:  st.backgroundColor,
                 color:     st.color,
                 font_size: parseFloat(st.fontSize),
@@ -279,7 +344,12 @@ def extraer_botones(page, banner_selector: str) -> list[dict]:
     """
     try:
         botones = page.evaluate(js, banner_selector)
-        return [b for b in botones if b["texto"] and len(b["texto"]) > 1]
+        # Conservar los botones con CUALQUIER etiqueta (texto, aria-label o
+        # title). Antes se exigía texto visible, lo que descartaba los
+        # botones-icono (✕ de rechazo, engranaje de configuración) que solo
+        # exponen su nombre por aria-label.
+        return [b for b in botones
+                if len(b.get("texto", "")) > 1 or b.get("aria") or b.get("title")]
     except Exception:
         return []
 
@@ -301,7 +371,7 @@ def evaluar_obstruccion(clasificados: dict) -> dict:
         }
     return {
         "estado": "PASSED",
-        "detalle": f"Botón de rechazo visible encontrado: '{visibles[0]['texto']}'.",
+        "detalle": f"Botón de rechazo visible encontrado: '{_etiqueta_boton(visibles[0])}'.",
     }
 
 
@@ -362,14 +432,15 @@ def evaluar_ocultacion(clasificados: dict) -> dict:
 
     problemas = []
     for b in candidatos:
+        etq = _etiqueta_boton(b)
         if b["opacity"] < 0.5:
-            problemas.append(f"'{b['texto']}': opacidad={b['opacity']:.2f}")
+            problemas.append(f"'{etq}': opacidad={b['opacity']:.2f}")
         if b["font_size"] and b["font_size"] < 11:
-            problemas.append(f"'{b['texto']}': fuente={b['font_size']}px")
+            problemas.append(f"'{etq}': fuente={b['font_size']}px")
         if b["width"] > 0 and b["height"] > 0:
             if b["width"] < 30 or b["height"] < 12:
                 problemas.append(
-                    f"'{b['texto']}': tamaño={b['width']}×{b['height']}px"
+                    f"'{etq}': tamaño={b['width']}×{b['height']}px"
                 )
 
     if problemas:
@@ -443,7 +514,7 @@ def imprimir(resultado: dict, detalle: bool) -> None:
                 continue
             print(f"  [{cat.upper()}]")
             for b in botones:
-                print(f"    · '{b['texto'][:50]}'")
+                print(f"    · '{_etiqueta_boton(b)[:50]}'")
                 print(f"       bg={b['bg_color']}  fuente={b['font_size']}px  "
                       f"opac={b['opacity']}  {b['width']}×{b['height']}px")
         print()
@@ -522,7 +593,7 @@ def auditar(url: str, screenshot: bool = False) -> dict:
                 "otro":       [],
             }
             for b in botones:
-                cat = clasificar_texto(b["texto"])
+                cat = clasificar_boton(b)
                 clasificados[cat].append(b)
 
             evaluaciones = {

@@ -734,6 +734,39 @@ residual. Todos los módulos compilan.
 
 ---
 
+### R13: clasificación de botones ampliada (aria-label + regex + fallback con `<a>`)
+
+**Problema:** R13 clasificaba los botones del banner (aceptar/rechazar/configurar) usando
+**solo el texto visible** (`innerText`/`textContent`). Consecuencias:
+- Un botón de rechazo de tipo icono (✕) o con su etiqueta en `aria-label` se clasificaba
+  como "otro" → R13 concluía que **no había botón de rechazo** → falso `obstrucción=FAILED`.
+- El filtro `if b["texto"]` **descartaba** los botones sin texto visible antes de clasificar.
+- El fallback de detección solo buscaba `button, [role=button]`, no `<a>`: los CMP tipo muro
+  "consent or pay" (p. ej. 20minutos, con enlaces `a.mrf-button reject/accept`) no se
+  detectaban → NO_EVALUABLE.
+
+**Cambios en `requisitos/r13_dark_patterns.py` (portados de R4):**
+- **Clasificación por texto → `aria-label` → `title`** (`clasificar_boton`): se prioriza el
+  texto visible y solo se recurre a los atributos cuando el texto no permite clasificar, para
+  no pisar una etiqueta clara con un aria genérico. Helper `_etiqueta_boton` para los informes.
+- **`extraer_botones`** captura `aria` y `title`, y su filtro conserva los botones-icono (con
+  aria/title aunque no tengan texto).
+- **Conjuntos de palabras ampliados** (PALABRAS_ACEPTAR/RECHAZAR/CONFIGURAR) con variantes
+  frecuentes en CMP españoles: "denegar", "seguir sin aceptar", "no, gracias", "de acuerdo",
+  "aceptar y cerrar", "ajustes", "administrar", "mis opciones", "mostrar finalidades"…
+- **Fallback de detección reescrito**: incluye `<a>`; sistema de **semillas desde botones de
+  aceptar** (que viven en el banner, no en el footer donde suele haber un enlace "Personalizar
+  cookies" aislado), con caída a todos los controles si no hay "aceptar" (posible obstrucción);
+  asciende desde cada semilla hasta el contenedor con ≥2 controles de consentimiento. El
+  fallback y `deepQueryAll` también miran `aria-label`.
+- **Selectores CMP** ampliados con Usercentrics y Sourcepoint.
+
+**Verificación sobre sitios reales:**
+| Sitio | Antes | Ahora |
+|---|---|---|
+| 20minutos.es | NO_EVALUABLE (banner `<a>` no detectado) | detecta `div.mrf-cmp__columns`, veredicto real |
+| abc.es | (funcionaba) | WARNING, detecta aceptar/rechazar/configurar (sin regresión) |
+
 ### R4: detección del botón de configuración ampliada (regex + aria-label + acotado al banner)
 
 **Problema:** R4 solo localizaba el acceso al panel si el **texto visible** del botón casaba con
