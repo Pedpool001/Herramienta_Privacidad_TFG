@@ -683,6 +683,28 @@ siguientes con el mismo motor. La reputación de IP se degrada con cada petició
 que las mediciones repetidas empeoran solas. Esto refuerza la necesidad de espaciar las
 peticiones y de no elevar el paralelismo entre sitios.
 
+### Matización: DataDome no siempre es reputación de IP (reuters.com)
+
+**Hallazgo (al investigar por qué reuters.com no mostraba banner en la auditoría):** el
+Chromium headless + stealth recibe una página vacía (title "reuters.com", **0 enlaces**, sin
+iframe de CMP) a los 4–16 s. `curl_cffi` (fingerprint TLS de Chrome, sin JS) recibe **HTTP
+401, 774 bytes**, y `anti_bot` lo clasifica como **DataDome**. Pero el Chrome real (headful)
+del usuario **sí** carga reuters desde la **misma IP**. Y, de forma decisiva, **Camoufox
+headless** (Firefox parcheado, sin CDP) recupera la página completa: **348 enlaces** y el
+banner Sourcepoint/IAB TCF visible ("Aceptar todas / Rechazar todas / Mostrar Propósitos").
+
+**Conclusión — DataDome tiene (al menos) dos modos:**
+- **DataDome por reputación de IP** (elpais.com): 401/403 incluso con TLS perfecto y sin
+  señales de automatización; **ningún motor** lo resuelve, solo cambiar de IP.
+- **DataDome por fingerprint / headless** (reuters.com): bloquea a Chromium headless pero
+  **Camoufox sí pasa** desde la misma IP. Es decir, **es evitable con el motor adecuado**, no
+  requiere VPN.
+
+Esto corrige el supuesto anterior de que "DataDome ⇒ reputación de IP ⇒ inevitable". La
+cascada de `navegador.py` (Chromium→Camoufox) ya resolvería reuters; **R4 y R13 todavía no la
+usan** (R4 es Node.js y no tiene Camoufox; R13 usa Chromium sync). Pendiente de decidir si se
+enrutan los sitios bloqueados de estos requisitos por Camoufox.
+
 ## Fusión de R2+R3 y renumeración a R1–R18 (numeración de publicación)
 
 En la muestra de 107 sitios, R2 (cookies no exentas en PRE) y R3 (web beacons en PRE)
