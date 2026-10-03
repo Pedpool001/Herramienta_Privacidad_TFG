@@ -153,6 +153,20 @@ const SELECTOR_BANNER = [
 // contenido genérico de la página.
 const REGEX_CONFIG_ESTRICTO = /configura|preferencias|personaliza|gestionar\s+cookies|ajustes\s+de\s+cookies|cookie\s*(?:settings|preferences)|manage\s+(?:cookies|preferences|options)|show\s+purposes/i;
 
+// Hosts de iframes de CMP. Algunos CMP (Sourcepoint, Quantcast, el iframe de
+// finalidades del IAB TCF, TrustArc…) renderizan el banner y el panel DENTRO de
+// un <iframe> servido desde otro dominio. En ese iframe TODO el documento es el
+// consentimiento, así que no tiene sentido acotar por SELECTOR_BANNER (sus
+// clases internas no coinciden con las de un banner inline): se busca en el
+// frame entero con la regex generosa. Sin esto, R4 no encontraba el botón de
+// configuración de theguardian.com / bbc.com (Sourcepoint).
+const FRAME_CMP_RE = /privacy-mgmt\.com|sourcepoint|consensu\.org|quantcast|trustarc|cookielaw\.org|onetrust|didomi\.io|usercentrics|\/consent|cmp\./i;
+
+function _esFrameCmp(frame) {
+    try { return FRAME_CMP_RE.test(frame.url() || ''); }
+    catch { return false; }
+}
+
 
 // Busca dentro de `locator` el primer botón/enlace visible cuyo texto, aria-label
 // o title case con `regex`. Comprobar aria-label/title (no solo el texto visible)
@@ -191,19 +205,21 @@ async function _primerBotonVisible(locator, regex) {
 //   1º) Dentro de los contenedores de banner conocidos, con la regex generosa.
 //   2º) Si no hay banner identificable, en toda la página pero con regex estricta.
 async function localizarBotonConfig(page) {
-    // Paso 1: acotado al banner (preciso, evita falsos positivos de contenido)
+    const SELECTOR_BOTONES = 'button, a, [role="button"], [role="link"], [role="menuitem"]';
+
+    // Paso 1: acotado al banner (preciso, evita falsos positivos de contenido).
+    // Si el frame es un iframe de CMP conocido, su documento ENTERO es el banner,
+    // así que se busca en todo el frame (sin acotar por SELECTOR_BANNER).
     for (const frame of page.frames()) {
-        const dentroBanner = frame.locator(SELECTOR_BANNER).locator(
-            'button, a, [role="button"], [role="link"], [role="menuitem"]'
-        );
-        const res = await _primerBotonVisible(dentroBanner, REGEX_CONFIG);
+        const ambito = _esFrameCmp(frame)
+            ? frame.locator(SELECTOR_BOTONES)
+            : frame.locator(SELECTOR_BANNER).locator(SELECTOR_BOTONES);
+        const res = await _primerBotonVisible(ambito, REGEX_CONFIG);
         if (res) return { ...res, frame };
     }
     // Paso 2: fallback a página completa con criterio estricto
     for (const frame of page.frames()) {
-        const todos = frame.locator(
-            'button, a, [role="button"], [role="link"], [role="menuitem"]'
-        );
+        const todos = frame.locator(SELECTOR_BOTONES);
         const res = await _primerBotonVisible(todos, REGEX_CONFIG_ESTRICTO);
         if (res) return { ...res, frame };
     }

@@ -845,6 +845,31 @@ localiza, pero tras abrirlo el conteo de toggles da 0 (CMP con 25 iframes y estr
 estándar). Es un problema del **conteo de granularidad**, no de la detección del botón, y queda
 como posible mejora futura.
 
+#### R4: soporte de CMP en iframe (Sourcepoint/Quantcast/TrustArc)
+
+**Problema (detectado al validar webs en inglés):** R4 ya iteraba `page.frames()`, pero al
+buscar el botón de configuración acotaba cada frame a `SELECTOR_BANNER` (clases tipo
+didomi/onetrust/cookie). Dentro de un **iframe de CMP** (Sourcepoint en theguardian.com/
+bbc.com → `cdn.privacy-mgmt.com`/`sourcepoint.*`; Quantcast; el iframe de finalidades del IAB
+TCF) el markup interno no tiene esas clases, así que el acotado dejaba el iframe sin explorar y
+R4 no encontraba el botón. La regex estricta del Paso 2 tampoco lo salvaba ("Manage my
+cookies" no casa con `manage\s+(?:cookies|...)` por el "my" intermedio).
+
+**Cambio en `requisitos/r4_granularidad.js`:** nuevo `FRAME_CMP_RE` + `_esFrameCmp(frame)`
+que reconocen los frames servidos desde dominios de CMP. En el Paso 1 de `localizarBotonConfig`,
+si el frame es de un CMP, se busca en **todo el frame** con la regex generosa (`REGEX_CONFIG`)
+en lugar de acotar por `SELECTOR_BANNER` —porque el iframe entero *es* el banner—. Para los
+frames normales (la página) se mantiene el acotado, que evita falsos positivos con titulares.
+El conteo de toggles ya recorría todos los frames, así que al abrir el panel dentro del iframe
+los interruptores se cuentan sin cambios adicionales.
+
+**Verificación sobre sitios reales:**
+| Sitio | CMP | Resultado |
+|---|---|---|
+| bloomberg.com | CMP en iframe | **PASSED** — "Manage Preferences" localizado en el iframe, panel con ≥2 toggles |
+| theguardian.com | Sourcepoint (iframe) | FAILED legítimo — capa 1 "Accept all / Reject all and subscribe" sin acceso a configuración granular |
+| abc.es | Didomi inline | PASSED (sin regresión; frames no-CMP siguen acotados) |
+
 ### R9 siempre NO_EVALUABLE — causa raíz real: `--no-detalle` tomado como filtro de sitio
 
 **Síntoma:** R9 salía `[]` (→ NO_EVALUABLE) incluso con snippets ya presentes en MySQL.
