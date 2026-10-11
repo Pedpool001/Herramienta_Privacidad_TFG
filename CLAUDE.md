@@ -701,9 +701,41 @@ banner Sourcepoint/IAB TCF visible ("Aceptar todas / Rechazar todas / Mostrar Pr
   requiere VPN.
 
 Esto corrige el supuesto anterior de que "DataDome ⇒ reputación de IP ⇒ inevitable". La
-cascada de `navegador.py` (Chromium→Camoufox) ya resolvería reuters; **R4 y R13 todavía no la
-usan** (R4 es Node.js y no tiene Camoufox; R13 usa Chromium sync). Pendiente de decidir si se
-enrutan los sitios bloqueados de estos requisitos por Camoufox.
+cascada de `navegador.py` (Chromium→Camoufox) ya resolvería reuters. **R13 ya usa este
+fallback** (ver sección siguiente); **R4 todavía no** (es Node.js y no tiene binding de
+Camoufox — queda pendiente).
+
+### R13: fallback a Camoufox cuando Chromium es bloqueado por anti-bot
+
+**Motivación:** reuters.com (DataDome por fingerprint/headless) devolvía UNKNOWN en R13 porque
+Chromium headless recibe página vacía. Camoufox sí carga el sitio desde la misma IP (ver
+sección anterior). Se añade a R13 un respaldo con Camoufox.
+
+**Cambios en `requisitos/r13_dark_patterns.py`:**
+- Import guardado de `camoufox.sync_api.Camoufox` (`_CAMOUFOX_OK`) y de `anti_bot`
+  (`detectar_bloqueo`/`describir`, vía `sys.path` a `Herramienta_Priv/`). Si falta alguno, el
+  fallback simplemente no se intenta.
+- **`_analizar_pagina(page, url, screenshot, motor, espera_ms)`**: toda la lógica de análisis
+  (espera → `localizar_banner` → extracción → clasificación → evaluación) extraída a una función
+  **agnóstica al motor**. Funciona igual bajo Firefox/Camoufox porque la detección es JS puro
+  (`deepQueryAll`, `frame.evaluate`). Devuelve siempre el dict (UNKNOWN si no hay banner).
+- **`auditar()`** ahora: (1) corre Chromium+stealth y, si no hay banner, recoge `n_enlaces`,
+  `status` y `html` para decidir; (2) considera "bloqueado" si no hay banner **y** la página
+  vino casi vacía (`0 ≤ enlaces < 10`) **o** `anti_bot` reconoce una firma; (3) solo entonces
+  reintenta con Camoufox (`espera_ms=10000`, algo más por su arranque lento) y, si Camoufox sí
+  encuentra banner, usa ese resultado. El resultado lleva un campo `motor` (chromium|camoufox).
+- El fallback **no se dispara** en sitios que ya funcionan ni en los que legítimamente no tienen
+  banner (ahí `n_enlaces` es alto), para no pagar el coste de Camoufox salvo cuando hace falta.
+
+**Por qué esto no reintroduce el Bug 34:** aquel revert de Camoufox fue porque la detección
+*antigua* no atravesaba Shadow DOM en Firefox. La actual (`deepQueryAll` recursivo sobre
+`shadowRoot`) sí, así que Camoufox analiza el banner correctamente.
+
+**Verificación:**
+| Sitio | Antes | Ahora |
+|---|---|---|
+| reuters.com (DataDome fingerprint) | UNKNOWN (Chromium recibe página vacía) | Chromium detecta el bloqueo → **Camoufox** → PASSED (`#onetrust-banner-sdk`, 6 botones) |
+| abc.es (Didomi inline) | PASSED/WARNING con Chromium | igual, **sin** activar Camoufox (sin regresión ni sobrecoste) |
 
 ## Fusión de R2+R3 y renumeración a R1–R18 (numeración de publicación)
 

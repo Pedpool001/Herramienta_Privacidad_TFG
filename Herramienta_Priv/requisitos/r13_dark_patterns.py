@@ -32,6 +32,25 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from playwright_stealth import Stealth
 
+# Camoufox (Firefox parcheado) como motor de respaldo cuando Chromium es
+# bloqueado por un anti-bot de fingerprint/headless (p. ej. DataDome en
+# reuters.com, que sirve página vacía a Chromium headless pero sí carga con
+# Camoufox desde la misma IP). Import guardado: si no está instalado, el
+# fallback simplemente no se intenta y R13 funciona igual que antes.
+try:
+    from camoufox.sync_api import Camoufox
+    _CAMOUFOX_OK = True
+except Exception:
+    _CAMOUFOX_OK = False
+
+# Detector de bloqueo anti-bot (vive en Herramienta_Priv/). Se usa solo para
+# etiquetar el motivo en el log; el disparador del fallback es el nº de enlaces.
+try:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from anti_bot import detectar_bloqueo, describir
+except Exception:
+    detectar_bloqueo = describir = None
+
 # ── Rutas ─────────────────────────────────────────────────────────────────────
 _ANALYSIS_DIR  = Path(os.getenv("ANALYSIS_DATA_DIR",
                                 str(Path(__file__).resolve().parents[1] / "analysis_data")))
@@ -570,26 +589,112 @@ def imprimir(resultado: dict, detalle: bool) -> None:
 
 
 # ── Motor principal ───────────────────────────────────────────────────────────
+def _analizar_pagina(page, url: str, screenshot: bool, motor: str,
+                     espera_ms: int = 8000) -> dict:
+    """
+    Analiza una página YA navegada, con independencia del motor (Chromium o
+    Camoufox): espera a que el CMP renderice, localiza el banner en todos los
+    frames, extrae y clasifica los botones y evalúa los sub-patrones.
+
+    Devuelve siempre el dict de resultado (UNKNOWN si no hay banner, o si el
+    banner no aporta botones analizables). No cierra el navegador: el ciclo de
+    vida lo gestiona el llamante. Toda la lógica de detección/clasificación es
+    JS puro (`deepQueryAll`, `frame.evaluate`), por lo que funciona igual bajo
+    Firefox/Camoufox que bajo Chromium.
+    """
+    resultado = {
+        "sitio":            url,
+        "veredicto":        "UNKNOWN",
+        "banner_detectado": False,
+        "evaluaciones":     {},
+        "motor":            motor,
+    }
+
+    # Espera para que el CMP inyecte y renderice el banner (2-5 s lo habitual).
+    page.wait_for_timeout(espera_ms)
+
+    if screenshot:
+        try:
+            ss_path = RESULTADO_PATH.parent / f"r13_screenshot_{motor}.png"
+            page.screenshot(path=str(ss_path), full_page=False)
+            print(f"[*] Screenshot guardado en {ss_path}")
+        except Exception:
+            pass
+
+    # ── Detección del banner + extracción (busca en todos los frames) ──
+    _frame, banner_selector, botones = localizar_banner(page)
+
+    if not banner_selector:
+        return resultado  # UNKNOWN — no se detectó banner
+
+    print(f"[*] ({motor}) Banner encontrado: {banner_selector}")
+    print(f"[*] ({motor}) Botones extraídos del banner: {len(botones)}")
+
+    # Banner detectado pero sin botones analizables (placeholder o iframe que
+    # no pudimos leer): NO_EVALUABLE, no FAILED — es un límite de medición, no
+    # un dark pattern real.
+    if not botones:
+        resultado["banner_detectado"] = True
+        resultado["banner_selector"] = banner_selector
+        resultado["total_botones"] = 0
+        return resultado  # UNKNOWN
+
+    clasificados: dict[str, list] = {
+        "aceptar": [], "rechazar": [], "configurar": [], "otro": [],
+    }
+    for b in botones:
+        clasificados[clasificar_boton(b)].append(b)
+
+    evaluaciones = {
+        "obstruccion": evaluar_obstruccion(clasificados),
+        "asimetria":   evaluar_asimetria(clasificados),
+        "ocultacion":  evaluar_ocultacion(clasificados),
+    }
+
+    resultado.update({
+        "veredicto":        veredicto_global(evaluaciones),
+        "banner_detectado": True,
+        "banner_selector":  banner_selector,
+        "total_botones":    len(botones),
+        "clasificados":     clasificados,
+        "evaluaciones":     evaluaciones,
+        "botones_detalle":  True,
+    })
+    return resultado
+
+
+def _contar_enlaces(page) -> int:
+    try:
+        return int(page.evaluate("() => document.querySelectorAll('a[href]').length"))
+    except Exception:
+        return -1
+
+
 def auditar(url: str, screenshot: bool = False) -> dict:
     """
-    Abre Chromium headless con playwright-stealth, navega a la URL,
-    espera a que el CMP renderice el banner y ejecuta todas las evaluaciones.
+    Audita R13 con Chromium (+ playwright-stealth) y, si Chromium queda
+    bloqueado por un anti-bot (página casi vacía, sin banner), reintenta con
+    Camoufox (Firefox parcheado).
 
-    Se usa Chromium (no camoufox/Firefox) porque:
-    - playwright-stealth es suficiente para que los CMPs rendericen el banner
-      en la mayoría de sitios españoles de medios.
-    - CDP (usado para R1/R5 en playwright_mod.py) también requiere Chromium.
-    - Los CMPs tipo Didomi usan Shadow DOM; Chromium + Playwright permiten
-      traversal de Shadow DOM de forma más predecible que Firefox/camoufox.
-    - camoufox (Firefox) no renderizaba correctamente los banners en ~60% de
-      los sitios testados (marca.com, elmundo.es, lavanguardia.com…).
+    Por qué Chromium primero: es rápido, con stealth basta para la mayoría de
+    sitios de medios, y es el único con CDP (que usan R1/R5 en playwright_mod).
+    Por qué Camoufox de respaldo: algunos anti-bot de fingerprint/headless
+    (DataDome en reuters.com) sirven página vacía a Chromium headless pero sí
+    cargan con Camoufox desde la MISMA IP. (No es el caso de DataDome por
+    reputación de IP —elpais.com—, que ningún motor resuelve.) El fallback solo
+    se intenta si Chromium no detectó banner Y la página vino casi vacía, para
+    no pagar el coste de Camoufox en los sitios que ya funcionan o que
+    legítimamente no tienen banner.
     """
-    resultado_interno = {
+    resultado = {
         "sitio":            url,
         "veredicto":        "UNKNOWN",
         "banner_detectado": False,
         "evaluaciones":     {},
     }
+    n_enlaces, html_bloqueo, status_bloqueo = -1, "", None
+
+    # ── Intento 1: Chromium + stealth ─────────────────────────────────────────
     try:
         with sync_playwright() as pw:
             browser = pw.chromium.launch(headless=True)
@@ -604,78 +709,67 @@ def auditar(url: str, screenshot: bool = False) -> dict:
             page.on("pageerror", lambda _: None)
             page.on("console",   lambda _: None)
 
-            print(f"[*] Navegando a {url} …")
+            print(f"[*] Navegando a {url} (chromium) …")
+            resp = None
             try:
-                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                resp = page.goto(url, wait_until="domcontentloaded", timeout=30000)
             except Exception:
                 pass
 
-            # Espera para que el CMP inyecte y renderice el banner.
-            # La mayoría de CMPs lo hacen en 2-5 s; 8 s cubre los más lentos.
-            page.wait_for_timeout(8000)
+            resultado = _analizar_pagina(page, url, screenshot, "chromium")
 
-            if screenshot:
+            # Si no hubo banner, recoger señales de bloqueo para decidir fallback
+            if not resultado.get("banner_detectado"):
+                n_enlaces = _contar_enlaces(page)
                 try:
-                    ss_path = RESULTADO_PATH.parent / "r13_screenshot.png"
-                    page.screenshot(path=str(ss_path), full_page=False)
-                    print(f"[*] Screenshot guardado en {ss_path}")
+                    html_bloqueo = page.content()
                 except Exception:
-                    pass
-
-            # ── Detección del banner + extracción (busca en todos los frames) ──
-            banner_frame, banner_selector, botones = localizar_banner(page)
-
-            if not banner_selector:
-                browser.close()
-                return resultado_interno  # UNKNOWN — no se detectó banner
-
-            print(f"[*] Banner encontrado: {banner_selector}")
-            print(f"[*] Botones extraídos del banner: {len(botones)}")
-
-            # Banner detectado pero sin botones analizables (p. ej. contenedor
-            # placeholder o iframe que no pudimos leer): NO_EVALUABLE, no FAILED.
-            # Marcar FAILED aquí daría un falso incumplimiento por un límite de
-            # medición, no por un dark pattern real.
-            if not botones:
-                resultado_interno["banner_detectado"] = True
-                resultado_interno["banner_selector"] = banner_selector
-                resultado_interno["total_botones"] = 0
-                browser.close()
-                return resultado_interno  # UNKNOWN
-
-            clasificados: dict[str, list] = {
-                "aceptar":    [],
-                "rechazar":   [],
-                "configurar": [],
-                "otro":       [],
-            }
-            for b in botones:
-                cat = clasificar_boton(b)
-                clasificados[cat].append(b)
-
-            evaluaciones = {
-                "obstruccion": evaluar_obstruccion(clasificados),
-                "asimetria":   evaluar_asimetria(clasificados),
-                "ocultacion":  evaluar_ocultacion(clasificados),
-            }
-
-            veredicto = veredicto_global(evaluaciones)
-
-            resultado_interno = {
-                "sitio":            url,
-                "veredicto":        veredicto,
-                "banner_detectado": True,
-                "banner_selector":  banner_selector,
-                "total_botones":    len(botones),
-                "clasificados":     clasificados,
-                "evaluaciones":     evaluaciones,
-                "botones_detalle":  True,
-            }
+                    html_bloqueo = ""
+                status_bloqueo = resp.status if resp is not None else None
             browser.close()
     except Exception as _e:
-        print(f"[!] Browser terminó inesperadamente: {_e}")
+        print(f"[!] Chromium terminó inesperadamente: {_e}")
 
-    return resultado_interno
+    # ── ¿Parece bloqueado? (sin banner + página casi vacía, o firma anti-bot) ──
+    bloqueo = None
+    if detectar_bloqueo and not resultado.get("banner_detectado"):
+        try:
+            bloqueo = detectar_bloqueo(html=html_bloqueo, titulo="",
+                                       status=status_bloqueo, cabeceras={},
+                                       n_enlaces=n_enlaces)
+        except Exception:
+            bloqueo = None
+    parece_bloqueado = (not resultado.get("banner_detectado")) and (
+        bloqueo is not None or (0 <= n_enlaces < 10)
+    )
+
+    # ── Intento 2 (fallback): Camoufox, solo si Chromium parece bloqueado ─────
+    if parece_bloqueado and _CAMOUFOX_OK:
+        motivo = f" [{describir(bloqueo)}]" if (bloqueo and describir) else ""
+        print(f"[*] Chromium sin banner y página casi vacía "
+              f"({n_enlaces} enlaces){motivo}; reintentando con Camoufox…")
+        try:
+            with Camoufox(headless=True, locale="es-ES") as browser:
+                page = browser.new_page()
+                page.on("pageerror", lambda _: None)
+                print(f"[*] Navegando a {url} (camoufox) …")
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=40000)
+                except Exception:
+                    pass
+                # Camoufox arranca más lento; se da algo más de margen al CMP.
+                res2 = _analizar_pagina(page, url, screenshot, "camoufox",
+                                        espera_ms=10000)
+                if res2.get("banner_detectado"):
+                    resultado = res2
+                browser.close()
+        except Exception as _e:
+            print(f"[!] Camoufox terminó inesperadamente: {_e}")
+    elif parece_bloqueado and not _CAMOUFOX_OK:
+        print("[*] Chromium bloqueado pero Camoufox no está instalado; "
+              "no se puede reintentar.")
+
+    return resultado
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
