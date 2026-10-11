@@ -4,17 +4,26 @@ Prefiere la versión en inglés cuando está disponible, ya que PoliGraph
 funciona mejor sobre textos en inglés (su modelo NLP fue entrenado en inglés).
 
 Estrategias de detección (en orden de prioridad):
+  0. rel="privacy-policy" — relación de enlace estándar (HTML Living Standard),
+     señal inequívoca e independiente del idioma cuando el sitio la implementa
   1. hreflang="en" en el <head> — estándar W3C, la más fiable
   2. Candidatos cuya URL contiene indicadores de idioma inglés
   3. Candidatos cuyo texto de enlace está en inglés
-  4. Mejor candidato por puntuación de relevancia (sin importar idioma)
+  4. Mejor candidato por puntuación léxica de relevancia (sin importar idioma)
+  4.5 Ranking semántico (embeddings multilingües) sobre TODOS los enlaces del
+     DOM — capta los que el matching léxico descarta por no contener ninguna
+     palabra clave conocida. Más robusto que el regex frente a redacciones
+     e idiomas no previstos
   5. Búsqueda en DuckDuckGo — resuelve sitios con Cloudflare/DataDome
   6. Sondeo de rutas comunes con Playwright (último recurso)
 """
 
 import re
+import json
 import logging
+import subprocess
 import requests as _requests
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 
@@ -181,6 +190,69 @@ def _es_ingles_url(href: str) -> bool:
 
 def _es_ingles_texto(texto: str) -> bool:
     return any(k in texto.lower() for k in _TEXTO_EN_KEYWORDS)
+
+
+# ── Ranking semántico (embeddings) ────────────────────────────────────────────
+# Fallback robusto frente al matching léxico: cuando ninguna palabra clave casa,
+# se re-rankean TODOS los enlaces del DOM por similitud de significado con el
+# concepto "política de privacidad". El modelo vive en el entorno conda
+# `poligraph` (único con sentence_transformers), así que se invoca por subproceso.
+_RANKER_SCRIPT   = Path(__file__).resolve().parent / "_semantic_policy_ranker.py"
+_UMBRAL_SEMANTICO = 0.45     # similitud de coseno mínima para aceptar un enlace
+
+
+def _ranking_semantico(enlaces_raw: list, base: str, dominio_sitio: str) -> dict | None:
+    """
+    Re-rankea los enlaces del DOM por similitud semántica al concepto de
+    política de privacidad y devuelve el mejor del propio dominio por encima del
+    umbral, o None. Es el salto de robustez frente a la fragilidad del regex:
+    capta enlaces que el matching léxico descarta por no contener ninguna
+    palabra conocida ("Tus datos", "Cómo usamos la información"…).
+    """
+    # Preparar candidatos: del propio dominio, ni homepage ni noticia
+    cands, vistos = [], set()
+    for item in enlaces_raw:
+        href = item.get("href", "")
+        texto = item.get("texto", "")
+        if not href or href.startswith(("javascript:", "mailto:", "tel:")):
+            continue
+        href = urljoin(base, href)
+        if href in vistos:
+            continue
+        vistos.add(href)
+        parsed = urlparse(href)
+        if dominio_sitio and dominio_sitio not in parsed.netloc:
+            continue                                   # solo el propio dominio
+        if parsed.path.rstrip("/") in {"", "/index.html", "/index.php"}:
+            continue
+        if _RE_NOTICIA.search(href.lower()):
+            continue
+        cands.append({"href": href, "texto": texto[:120]})
+
+    if not cands:
+        return None
+
+    try:
+        proc = subprocess.run(
+            ["conda", "run", "--no-capture-output",
+             "-n", "poligraph", "python", str(_RANKER_SCRIPT)],
+            input=json.dumps({"candidatos": cands}),
+            capture_output=True, text=True, timeout=600,
+        )
+        linea = (proc.stdout or "").strip().splitlines()
+        ranked = json.loads(linea[-1]) if linea else []
+    except Exception as e:
+        logger.warning("Ranking semántico no disponible: %s", e)
+        return None
+
+    if ranked and ranked[0].get("score", 0) >= _UMBRAL_SEMANTICO:
+        mejor = ranked[0]
+        logger.info("Ranking semántico: %s (sim=%.3f)", mejor["href"], mejor["score"])
+        return {"url": mejor["href"], "score": mejor["score"]}
+    if ranked:
+        logger.info("Ranking semántico: mejor sim=%.3f < umbral %.2f (descartado)",
+                    ranked[0].get("score", 0), _UMBRAL_SEMANTICO)
+    return None
 
 
 # Rutas comunes de política de privacidad, ordenadas por probabilidad
@@ -439,9 +511,18 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
         )
         enlaces = page.evaluate(
             """() => Array.from(document.querySelectorAll('a[href]'))
-                  .map(a => ({href: a.href, texto: (a.innerText || '').trim()}))"""
+                  .map(a => ({href: a.href, texto: (a.innerText || '').trim(),
+                              rel: (a.getAttribute('rel') || '').toLowerCase()}))"""
         )
-        return hreflang, enlaces
+        # Relación de enlace estándar rel="privacy-policy" (y en <link> del head).
+        # Es una señal inequívoca e independiente del idioma/redacción cuando el
+        # sitio la implementa. Se registra el microformato registrado en el HTML
+        # Living Standard.
+        rel_privacy = page.eval_on_selector_all(
+            'a[rel~="privacy-policy"], link[rel~="privacy-policy"]',
+            "els => els.map(e => e.href).filter(Boolean)",
+        )
+        return hreflang, enlaces, rel_privacy
 
     datos, motor, _bloqueo = con_cascada(
         url_sitio, _extraer_del_dom, timeout_ms=timeout_ms)
@@ -455,7 +536,7 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
     elif motor and motor != MOTORES[0]:
         resultado["motor"] = motor
 
-    hreflang_en, enlaces_raw = datos if datos else ([], [])
+    hreflang_en, enlaces_raw, rel_privacy_raw = datos if datos else ([], [], [])
 
     # hreflang puede apuntar a la home; filtrar solo los que parecen política
     hreflang_politica = [
@@ -502,8 +583,24 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
 
     # ── Selección final ────────────────────────────────────────────────────────
 
+    # 0. rel="privacy-policy" — relación de enlace estándar (HTML Living Standard).
+    # Señal inequívoca e independiente del idioma/redacción cuando el sitio la usa.
+    rel_validos = []
+    for r in (rel_privacy_raw or []):
+        r = urljoin(base, r)
+        if not dominio_sitio or dominio_sitio in urlparse(r).netloc:
+            rel_validos.append(r)
+
+    if rel_validos:
+        # Preferir la versión en inglés si la hubiera (mejor para PoliGraph)
+        ingleses = [r for r in rel_validos if _es_ingles_url(r)]
+        elegido = ingleses[0] if ingleses else rel_validos[0]
+        resultado["url"] = elegido
+        resultado["es_ingles"] = _es_ingles_url(elegido)
+        resultado["fuente"] = "rel"
+
     # 1. hreflang inglés apuntando a política
-    if hreflang_politica:
+    elif hreflang_politica:
         resultado["url"] = hreflang_politica[0]
         resultado["es_ingles"] = True
         resultado["fuente"] = "hreflang"
@@ -531,30 +628,43 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
             resultado["es_ingles"] = False
             resultado["fuente"] = "mejor_candidato"
         else:
-            # 5. Búsqueda en DuckDuckGo — resuelve Cloudflare/DataDome
-            dominio = urlparse(url_sitio).netloc
-            logger.info(f"Sin candidatos. Buscando en DDG para {dominio}...")
-            ddg = _buscar_en_ddg(dominio)
-            if ddg:
-                resultado["url"] = ddg["url"]
-                resultado["es_ingles"] = ddg["es_ingles"]
-                resultado["fuente"] = "ddg"
+            # 4.5 Ranking semántico sobre TODOS los enlaces del DOM. Es el salto
+            # de robustez frente al regex: capta enlaces que el matching léxico
+            # descartó por no contener ninguna palabra clave conocida. Se intenta
+            # antes de DDG (que es más lento y dependiente de red externa).
+            sem = None
+            if enlaces_raw:
+                logger.info("Sin candidatos léxicos. Probando ranking semántico...")
+                sem = _ranking_semantico(enlaces_raw, base, dominio_sitio)
+            if sem:
+                resultado["url"] = sem["url"]
+                resultado["es_ingles"] = _es_ingles_url(sem["url"])
+                resultado["fuente"] = "semantico"
             else:
-                # 6. Sondear rutas comunes en el dominio principal
-                logger.info("DDG sin resultado. Sondeando rutas comunes...")
-                sondeo = _sondear_rutas(url_sitio)
-                if sondeo:
-                    resultado["url"] = sondeo["url"]
-                    resultado["es_ingles"] = sondeo["es_ingles"]
-                    resultado["fuente"] = "sondeo_rutas"
+                # 5-7. Fallback externo: DuckDuckGo → sondeo de rutas → subdominios
+                dominio = urlparse(url_sitio).netloc
+                logger.info(f"Semántico sin resultado. Buscando en DDG para {dominio}...")
+                ddg = _buscar_en_ddg(dominio)
+                if ddg:
+                    resultado["url"] = ddg["url"]
+                    resultado["es_ingles"] = ddg["es_ingles"]
+                    resultado["fuente"] = "ddg"
                 else:
-                    # 7. Sondear subdominios comunes (ej: saladeprensa.decathlon.es)
-                    logger.info("Sondeo principal sin resultado. Probando subdominios...")
-                    sondeo_sub = _sondear_subdominios(url_sitio)
-                    if sondeo_sub:
-                        resultado["url"] = sondeo_sub["url"]
-                        resultado["es_ingles"] = sondeo_sub["es_ingles"]
-                        resultado["fuente"] = "sondeo_subdominios"
+                    # 6. Sondear rutas comunes en el dominio principal
+                    logger.info("DDG sin resultado. Sondeando rutas comunes...")
+                    sondeo = _sondear_rutas(url_sitio)
+                    if sondeo:
+                        resultado["url"] = sondeo["url"]
+                        resultado["es_ingles"] = sondeo["es_ingles"]
+                        resultado["fuente"] = "sondeo_rutas"
+                    else:
+                        # 7. Sondear subdominios (ej: saladeprensa.decathlon.es)
+                        logger.info("Sondeo principal sin resultado. Probando subdominios...")
+                        sondeo_sub = _sondear_subdominios(url_sitio)
+                        if sondeo_sub:
+                            resultado["url"] = sondeo_sub["url"]
+                            resultado["es_ingles"] = sondeo_sub["es_ingles"]
+                            resultado["fuente"] = "sondeo_subdominios"
 
     # Limpiar fragmentos de tracking del resultado final (#utm_source=..., #vca=...)
     if resultado["url"]:

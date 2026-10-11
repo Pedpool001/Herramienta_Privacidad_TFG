@@ -1139,6 +1139,37 @@ normal, y el batch informa "2 de 3 sitios (67%)" con el desglose correcto por si
 
 ---
 
+### buscador_politica.py: `rel="privacy-policy"` + ranking semántico (menos dependencia del regex)
+
+**Problema:** localizar el enlace a la política dependía de **matching léxico** (regex/palabras
+clave sobre el texto y el href del enlace). Es frágil: siempre hay sitios que lo redactan de
+forma no prevista ("Tus datos", "Cómo usamos la información", "Centro de privacidad") o en un
+idioma no cubierto, y ninguna regex los capta. Se añaden dos estrategias más robustas.
+
+**Opción 1 — `rel="privacy-policy"` (nuevo paso 0):** relación de enlace estándar del HTML
+Living Standard. Cuando el sitio la implementa es una señal **inequívoca e independiente del
+idioma/redacción**. `_extraer_del_dom` captura ahora el `rel` de cada `<a>` y los
+`a[rel~="privacy-policy"]` / `link[rel~="privacy-policy"]`; si hay alguno del propio dominio, se
+elige (prefiriendo la versión inglesa). `fuente = "rel"`.
+
+**Opción 2 — ranking semántico (nuevo paso 4.5):** cuando el matching léxico no produce ningún
+candidato válido, se re-rankean **todos** los enlaces del DOM por **similitud de significado**
+con el concepto "política de privacidad" (embeddings multilingües), antes de recurrir a DDG.
+Capta enlaces que el regex descarta por no contener ninguna palabra conocida.
+- **`_semantic_policy_ranker.py` (fichero nuevo):** corre en el env conda `poligraph` (único con
+  `sentence_transformers`). Lee candidatos por stdin, incrusta su texto (+ último segmento del
+  href) y el concepto en 8 frases multilingües, y devuelve la similitud de coseno (máximo sobre
+  las frases) por enlace. Modelo `paraphrase-multilingual-MiniLM-L12-v2` (local, reproducible).
+- **`buscador_politica.py`:** `_ranking_semantico()` invoca el helper vía `conda run -n poligraph`
+  con los enlaces del propio dominio (sin homepage ni noticias); acepta el mejor si la similitud
+  ≥ `_UMBRAL_SEMANTICO` (0.45). `fuente = "semantico"`.
+
+**Diseño en cascada:** el léxico (rápido) va primero; la semántica solo se invoca cuando el
+léxico falla, así los sitios que ya funcionaban no pagan el coste del subproceso/modelo. La
+semántica se intenta **antes** que DDG (más lento y dependiente de red externa).
+
+**`fuente`** añade dos valores: `"rel"` y `"semantico"`.
+
 #### `Herramienta_Priv/buscador_politica.py`
 
 Localiza la URL de la política de privacidad de un sitio web dado de forma **completamente
