@@ -80,6 +80,10 @@ const REGEX_CONFIG = new RegExp(
         'ver\\s+(?:opciones|preferencias|detalles)',
         'manage', 'settings', 'customize', 'choices', 'options',
         'purposes', 'more\\s+options', 'show\\s+purposes',
+        // IAB TCF en español: el acceso al panel de finalidades suele ser
+        // "Mostrar Propósitos" / "Ver finalidades" (reuters.com, entre otros),
+        // que no casaban con ningún término anterior.
+        'prop[oó]sitos', 'finalidades',
         // "policy" queda fuera a propósito: "Cookie Policy" / "Política de
         // cookies" es un enlace al documento, no un acceso a la configuración,
         // y casarlo hacía clic en la política en vez de en el panel de toggles.
@@ -87,6 +91,13 @@ const REGEX_CONFIG = new RegExp(
     ].join('|'),
     'i',
 );
+
+// Textos de enlaces-documento que NO son acceso a la configuración: la
+// declaración/política de cookies o privacidad, el aviso legal o la lista de
+// socios. Aunque su `aria-label`/`title` contenga un término de configuración,
+// clicarlos abre un documento, no el panel de toggles. Se excluyen en
+// `_primerBotonVisible` (misma lógica que ya se aplicaba a "policy").
+const REGEX_EXCLUIR = /declaraci[oó]n|statement|pol[ií]tica|policy|aviso\s+legal|lista\s+de\s+(?:asociados|socios|proveedores)|list\s+of\s+(?:partners|vendors)|privacy\s+(?:policy|notice)/i;
 
 // Regex para el botón de aceptar por categoría (conteo de tipo B). Anclada con
 // ^…$ a propósito: cuenta botones "Aceptar" individuales por categoría, no el
@@ -186,18 +197,22 @@ function _esFrameCmp(frame) {
 // candidato puede estar oculto, y descartar por él perdería un botón visible
 // posterior (p. ej. "Personaliza tus Cookies" tras enlaces de política).
 async function _primerBotonVisible(locator, regex) {
-    const indices = await locator.evaluateAll((els, reSrc) => {
-        const re  = new RegExp(reSrc, 'i');
-        const out = [];
+    const indices = await locator.evaluateAll((els, [reSrc, exclSrc]) => {
+        const re   = new RegExp(reSrc, 'i');
+        const excl = new RegExp(exclSrc, 'i');
+        const out  = [];
         for (let i = 0; i < els.length; i++) {
             const el    = els[i];
             const texto = (el.innerText || el.textContent || '').trim();
             const aria  = el.getAttribute('aria-label') || '';
             const title = el.getAttribute('title') || '';
-            if (re.test(`${texto} ${aria} ${title}`)) out.push(i);
+            const combo = `${texto} ${aria} ${title}`;
+            // Casa con la regex de config pero NO es un enlace-documento
+            // (declaración/política/aviso/lista de socios).
+            if (re.test(combo) && !excl.test(combo)) out.push(i);
         }
         return out;
-    }, regex.source).catch(() => []);
+    }, [regex.source, REGEX_EXCLUIR.source]).catch(() => []);
 
     for (const idx of indices) {
         const el = locator.nth(idx);

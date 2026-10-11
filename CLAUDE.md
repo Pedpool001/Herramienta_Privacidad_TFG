@@ -770,6 +770,25 @@ cacheado sin descargas. Instalación: `cd Herramienta_Priv && npm install`.
 
 **Verificación:** reuters.com UNKNOWN → Camoufox → PASSED; abc.es sin activar Camoufox.
 
+#### R4: IAB TCF en español ("Mostrar Propósitos") + exclusión de enlaces-documento
+
+Al recuperar reuters.com con Camoufox se vio que R4 clicaba **"Declaración de Cookies"** (un
+enlace a la *declaración* de cookies, vía su `aria-label`) en vez del acceso real al panel,
+que en el IAB TCF en español es **"Mostrar Propósitos"** — término que `REGEX_CONFIG` no cubría.
+
+**Cambios en `requisitos/r4_granularidad.js`:**
+- `REGEX_CONFIG` añade **`prop[oó]sitos`** y **`finalidades`** ("Mostrar Propósitos",
+  "Ver finalidades"), habituales en el panel TCF en español.
+- Nueva `REGEX_EXCLUIR` (declaración/statement/política/policy/aviso legal/lista de
+  asociados-socios-proveedores/privacy policy-notice): en `_primerBotonVisible`, un candidato
+  que case con `REGEX_CONFIG` **pero también** con `REGEX_EXCLUIR` se descarta, aunque el match
+  viniera de su `aria-label`/`title`. Misma filosofía que la exclusión de "policy": un enlace a
+  un documento no es un acceso a la configuración.
+
+**Verificación (regex):** "Mostrar Propósitos"/"Ver finalidades" → elegibles; "Declaración de
+Cookies"/"Lista de asociados (proveedores)" → excluidos; "Configurar" → sigue elegible;
+"Aceptar todas" → no casa.
+
 ## Fusión de R2+R3 y renumeración a R1–R18 (numeración de publicación)
 
 En la muestra de 107 sitios, R2 (cookies no exentas en PRE) y R3 (web beacons en PRE)
