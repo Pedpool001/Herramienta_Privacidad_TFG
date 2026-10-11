@@ -1,0 +1,16 @@
+{
+  "name": "herramienta-priv-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependencias Node de la herramienta (r4_granularidad.js): Playwright + stealth (motor Chromium) y camoufox-js (motor de respaldo anti-bot).",
+  "dependencies": {
+    "camoufox-js": "0.10.2",
+    "playwright": "1.60.0",
+    "playwright-core": "1.60.0",
+    "playwright-extra": "4.3.6",
+    "puppeteer-extra-plugin-stealth": "2.11.2"
+  },
+  "overrides": {
+    "playwright-core": "1.60.0"
+  }
+}

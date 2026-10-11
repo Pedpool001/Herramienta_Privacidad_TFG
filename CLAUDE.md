@@ -737,6 +737,39 @@ sección anterior). Se añade a R13 un respaldo con Camoufox.
 | reuters.com (DataDome fingerprint) | UNKNOWN (Chromium recibe página vacía) | Chromium detecta el bloqueo → **Camoufox** → PASSED (`#onetrust-banner-sdk`, 6 botones) |
 | abc.es (Didomi inline) | PASSED/WARNING con Chromium | igual, **sin** activar Camoufox (sin regresión ni sobrecoste) |
 
+### R4: fallback a Camoufox (vía `camoufox-js`) + dependencia Node local + estado bloqueado
+
+Misma idea que R13 pero en Node. R4 usa `camoufox-js` (port JS de Camoufox, v0.10.2) como
+motor de respaldo cuando Chromium queda bloqueado por anti-bot.
+
+**Dependencia Node reproducible (`Herramienta_Priv/package.json`, nuevo):** hasta ahora toda
+la cadena Node de R4 (playwright, playwright-extra, stealth) resolvía desde
+`~/Escritorio/node_modules` (fuera del repo, no reproducible). Se crea un `package.json` en
+`Herramienta_Priv/` que fija las deps y las instala en `Herramienta_Priv/node_modules`, de modo
+que R4 es autocontenido. **Pin importante:** `playwright-core` se fija a **1.60.0** (vía
+`overrides`) porque, sin fijarlo, npm lo subía a 1.64.0 (arrastrado por camoufox-js) y Playwright
+buscaba un binario de navegador (rev 1248) no descargado, mientras que la caché
+`~/.cache/ms-playwright` tiene el de 1.60 (rev 1228). Con el pin, Chromium usa el navegador ya
+cacheado sin descargas. Instalación: `cd Herramienta_Priv && npm install`.
+
+**Cambios en `requisitos/r4_granularidad.js`:**
+- Require guardado de `camoufox-js` (`_CAMOUFOX_OK`).
+- **`_analizarConPagina(page, url, motor, esperaMs)`**: toda la lógica (navegar → localizar
+  botón → abrir panel → contar toggles → veredicto) extraída a una función agnóstica al motor.
+  Añade `_nEnlaces`/`_status` al resultado cuando no hay panel, como señal de bloqueo.
+- **`auditarR4()`**: (1) Chromium+stealth; (2) si no hay panel y la página vino casi vacía
+  (`0 ≤ enlaces < 10`) o el status es de bloqueo (401/403/429/503…), reintenta con Camoufox;
+  (3) si Camoufox recupera el panel, usa ese resultado.
+- **Estado bloqueado (`_resultadoBloqueado`)**: si **ni Camoufox** carga la página (sigue casi
+  vacía) o falla, R4 devuelve **`NO_EVALUABLE`** con detalle "bloqueado por anti-bot" (con los
+  HTTP de cada motor), en vez de un falso FAILED. Distingue de un FAILED legítimo: si Camoufox
+  sí carga la página pero el banner no tiene acceso a configuración, es FAILED real.
+- **Limitación:** bajo Camoufox (Firefox) no hay CDP → `extraerCategorias` devuelve `[]`. Se
+  pierden los *nombres* de categoría (cosmético), no el veredicto, y solo en sitios recuperados
+  por el fallback.
+
+**Verificación:** reuters.com UNKNOWN → Camoufox → PASSED; abc.es sin activar Camoufox.
+
 ## Fusión de R2+R3 y renumeración a R1–R18 (numeración de publicación)
 
 En la muestra de 107 sitios, R2 (cookies no exentas en PRE) y R3 (web beacons en PRE)

@@ -37,6 +37,17 @@ const fs = require('fs');
 
 chromium.use(stealth);
 
+// Camoufox (Firefox parcheado) como motor de respaldo cuando Chromium queda
+// bloqueado por un anti-bot de fingerprint/headless (p. ej. DataDome en
+// reuters.com, que sirve página vacía a Chromium pero sí carga con Camoufox
+// desde la misma IP). Require guardado: si falta camoufox-js, el fallback no se
+// intenta y R4 se comporta como antes.
+let Camoufox = null;
+try {
+    Camoufox = require('camoufox-js').Camoufox;
+} catch (_) { /* camoufox-js no instalado: sin fallback */ }
+const _CAMOUFOX_OK = typeof Camoufox === 'function';
+
 // ── Rutas de salida ───────────────────────────────────────────────────────────
 // ANALYSIS_DATA_DIR permite aislar la salida por sitio cuando la auditoría
 // corre en paralelo; sin la variable se usa el directorio compartido de siempre.
@@ -227,15 +238,19 @@ async function localizarBotonConfig(page) {
 }
 
 
-// ── Auditoría principal ───────────────────────────────────────────────────────
-async function auditarR4(url, mostrarDetalle) {
-    const browser = await chromium.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-dev-shm-usage'],
-    });
-    const page    = await browser.newPage();
+// ── Helpers de la cascada de motores ──────────────────────────────────────────
+const _STATUS_BLOQUEO = new Set([401, 403, 405, 406, 429, 503]);
 
-    const resultado = {
+async function _contarEnlaces(page) {
+    try {
+        return await page.evaluate(() => document.querySelectorAll('a[href]').length);
+    } catch (_) {
+        return -1;
+    }
+}
+
+function _resultadoBase(url) {
+    return {
         sitio:     new URL(url).hostname,
         url,
         veredicto: 'FAILED',
@@ -250,21 +265,58 @@ async function auditarR4(url, mostrarDetalle) {
             screenshot:            null,
         },
     };
+}
+
+// Resultado NO_EVALUABLE cuando el sitio queda bloqueado por anti-bot con AMBOS
+// motores. Es un límite de medición, no un incumplimiento del sitio.
+function _resultadoBloqueado(url, statusCh, statusCf) {
+    const r = _resultadoBase(url);
+    const partes = [];
+    if (statusCh) partes.push(`Chromium HTTP ${statusCh}`);
+    if (statusCf) partes.push(`Camoufox HTTP ${statusCf}`);
+    const extra = partes.length ? ` (${partes.join(', ')})` : '';
+    r.veredicto  = 'NO_EVALUABLE';
+    r.evaluacion = {
+        estado:  'NO_EVALUABLE',
+        detalle:
+            `Sitio bloqueado por un sistema anti-bot${extra}: no se pudo cargar el ` +
+            `banner de cookies ni con Chromium (stealth) ni con Camoufox. No es un ` +
+            `incumplimiento del sitio, sino un límite de medición.`,
+    };
+    r.hallazgos.bloqueado = true;
+    return r;
+}
+
+// ── Análisis de una página ya lanzada (agnóstico al motor) ────────────────────
+// Navega, localiza el botón de configuración, abre el panel y cuenta los
+// indicadores de granularidad. El ciclo de vida del navegador lo gestiona el
+// llamante. Funciona igual bajo Chromium que bajo Camoufox; solo la extracción
+// de NOMBRES de categoría (vía CDP) es exclusiva de Chromium y degrada a [] en
+// Camoufox (pérdida cosmética, el veredicto solo depende del nº de toggles).
+async function _analizarConPagina(page, url, motor, esperaMs = 5000) {
+    const resultado = _resultadoBase(url);
+    resultado.motor = motor;
 
     try {
-        console.log(`[*] Navegando a: ${url}`);
-        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: TIMEOUT_NAV });
-        await page.waitForTimeout(5000);   // margen para CMP que inyectan el banner tarde
+        console.log(`[*] Navegando a: ${url} (${motor})`);
+        let resp = null;
+        try {
+            resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: TIMEOUT_NAV });
+        } catch (_) { /* seguir con lo que haya cargado */ }
+        await page.waitForTimeout(esperaMs);   // margen para CMP que inyectan tarde
 
         // ── 1. Localizar botón de acceso al panel ─────────────────────────────
         const acceso    = await localizarBotonConfig(page);
-        const btnAcceso  = acceso ? acceso.btn : null;
+        const btnAcceso = acceso ? acceso.btn : null;
 
         if (!btnAcceso) {
             resultado.evaluacion.detalle =
                 'No se localizó ningún botón de configuración de cookies en el banner. ' +
                 'El sitio puede no mostrar el banner en esta visita (cookies previas, ' +
                 'geobloqueo) o usar un acceso de configuración con texto no reconocido.';
+            // Señales de bloqueo para que el llamante decida el fallback
+            resultado._nEnlaces = await _contarEnlaces(page);
+            resultado._status   = resp ? resp.status() : null;
             return resultado;
         }
 
@@ -276,35 +328,25 @@ async function auditarR4(url, mostrarDetalle) {
 
         await btnAcceso.click({ force: true });
         await page.waitForTimeout(TIMEOUT_PANEL);
-
         resultado.hallazgos.panel_localizado = true;
 
         // ── 2. Tomar captura del panel ────────────────────────────────────────
         fs.mkdirSync(ANALYSIS_DATA, { recursive: true });
         const screenshotName = `r4_panel_${resultado.sitio.replace(/\./g, '_')}.png`;
         const screenshotPath = path.join(ANALYSIS_DATA, screenshotName);
-        await page.screenshot({ path: screenshotPath, fullPage: false });
+        await page.screenshot({ path: screenshotPath, fullPage: false }).catch(() => {});
         resultado.hallazgos.screenshot = screenshotPath;
-        console.log(`[*] Captura guardada: ${screenshotName}`);
 
         // ── 3. Contar indicadores de granularidad ─────────────────────────────
-        let indicadorToggles  = 0;
-        let indicadorBotones  = 0;
-        let categorias        = [];
+        let indicadorToggles = 0;
+        let indicadorBotones = 0;
 
         for (const frame of page.frames()) {
-            // Indicador A: toggles independientes (checkbox / switch / radio)
-            const toggleLocator = frame.locator(
+            const countToggles = await frame.locator(
                 '[role="checkbox"], [role="switch"], input[type="checkbox"], [role="radio"]'
-            );
-            const countToggles = await toggleLocator.count();
+            ).count();
+            if (countToggles > indicadorToggles) indicadorToggles = countToggles;
 
-            if (countToggles > indicadorToggles) {
-                indicadorToggles = countToggles;
-            }
-
-            // Indicador B: botones Aceptar/Rechazar repetidos por categoría
-            // (más de 2 botones "Aceptar" implica uno por categoría + uno global)
             const countBotones = await frame
                 .locator('button')
                 .filter({ hasText: REGEX_ACEPTAR })
@@ -315,12 +357,7 @@ async function auditarR4(url, mostrarDetalle) {
         }
 
         const totalOpciones = Math.max(indicadorToggles, indicadorBotones);
-
-        // Extraer nombres de categoría desde el árbol de accesibilidad del navegador.
-        // Este enfoque funciona con cualquier CMP (Didomi, OneTrust, Cookiebot…)
-        // porque el navegador resuelve los nombres accesibles de todos los toggles,
-        // incluyendo los que están dentro de Shadow DOM.
-        categorias = await extraerCategorias(page);
+        const categorias = await extraerCategorias(page);   // [] en Camoufox (sin CDP)
 
         resultado.hallazgos.indicador_toggles     = indicadorToggles;
         resultado.hallazgos.indicador_botones     = indicadorBotones;
@@ -329,9 +366,9 @@ async function auditarR4(url, mostrarDetalle) {
 
         // ── 4. Veredicto ──────────────────────────────────────────────────────
         if (totalOpciones >= 2) {
-            resultado.veredicto                = 'PASSED';
-            resultado.evaluacion.estado        = 'PASSED';
-            resultado.evaluacion.detalle       =
+            resultado.veredicto          = 'PASSED';
+            resultado.evaluacion.estado  = 'PASSED';
+            resultado.evaluacion.detalle =
                 `Panel de configuración localizado ("${textoBtn}"). ` +
                 `Se detectaron ${totalOpciones} opciones granulares independientes. ` +
                 `El usuario puede elegir por finalidad. Cumple RGPD Art. 7.`;
@@ -343,15 +380,70 @@ async function auditarR4(url, mostrarDetalle) {
                 `opción de elección detectada. No se puede seleccionar por finalidad. ` +
                 `Incumple RGPD Art. 7 (consentimiento específico por finalidad).`;
         }
-
     } catch (err) {
         resultado.evaluacion.detalle = `Error técnico: ${err.message}`;
         console.error(`[-] Error: ${err.message}`);
+    }
+    return resultado;
+}
+
+
+// ── Auditoría principal: Chromium y, si está bloqueado, fallback a Camoufox ────
+async function auditarR4(url, mostrarDetalle) {
+    // ── Intento 1: Chromium + stealth ─────────────────────────────────────────
+    let resultado;
+    const browser = await chromium.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-dev-shm-usage'],
+    });
+    try {
+        const page = await browser.newPage();
+        resultado = await _analizarConPagina(page, url, 'chromium');
     } finally {
         await browser.close();
     }
 
-    return resultado;
+    // ── ¿Parece bloqueado? sin panel + página casi vacía o status de bloqueo ──
+    const sinPanel   = !resultado.hallazgos.panel_localizado;
+    const nEnlacesCh = resultado._nEnlaces ?? -1;
+    const statusCh   = resultado._status ?? null;
+    const pareceBloqueado = sinPanel && (
+        (nEnlacesCh >= 0 && nEnlacesCh < 10) || _STATUS_BLOQUEO.has(statusCh)
+    );
+
+    if (!pareceBloqueado) return resultado;   // PASSED, o FAILED legítimo sin config
+
+    // ── Intento 2 (fallback): Camoufox, solo si Chromium parece bloqueado ─────
+    if (!_CAMOUFOX_OK) {
+        console.log('[*] Chromium bloqueado y camoufox-js no disponible; marcando bloqueado.');
+        return _resultadoBloqueado(url, statusCh, null);
+    }
+
+    console.log(`[*] Chromium bloqueado (${nEnlacesCh} enlaces, HTTP ${statusCh}); ` +
+                `reintentando con Camoufox…`);
+    let browserCf = null;
+    try {
+        browserCf = await Camoufox({ headless: true, locale: ['es-ES'] });
+        const page = await browserCf.newPage();
+        page.on('pageerror', () => {});
+        const res2 = await _analizarConPagina(page, url, 'camoufox', 7000);
+
+        if (res2.hallazgos.panel_localizado) {
+            return res2;   // Camoufox recuperó el panel y lo analizó
+        }
+        // Camoufox tampoco encontró panel: distinguir "sigue bloqueado" de
+        // "la página cargó pero el banner no tiene acceso a configuración".
+        const n2 = res2._nEnlaces ?? -1;
+        if (n2 >= 0 && n2 < 10) {
+            return _resultadoBloqueado(url, statusCh, res2._status ?? null);
+        }
+        return res2;       // página cargó bien → FAILED legítimo (sin config granular)
+    } catch (e) {
+        console.error(`[-] Camoufox falló: ${e.message}`);
+        return _resultadoBloqueado(url, statusCh, null);
+    } finally {
+        if (browserCf) await browserCf.close().catch(() => {});
+    }
 }
 
 
