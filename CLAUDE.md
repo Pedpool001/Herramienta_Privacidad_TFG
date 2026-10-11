@@ -1139,6 +1139,36 @@ normal, y el batch informa "2 de 3 sitios (67%)" con el desglose correcto por si
 
 ---
 
+### R12: contaminación cruzada (sin filtro de dominio) + captura vacía → NO_EVALUABLE
+
+**Síntoma (detectado al auditar decathlon.es):** en una auditoría de un sitio, `r12_resultado.json`
+mostraba violaciones de **otros sitios** (p. ej. marvel.com), no del auditado.
+
+**Causa raíz:** `combinados.py` invocaba `r12_software_terceros` pasándole solo el CSV de webXray,
+**sin el dominio**. En r12, sin `sitio_filtro`, `cargar_pp_pre(None)` consulta **toda** la tabla
+`entries`, que acumula filas de todos los sitios auditados (nunca se limpian salvo el dominio
+actual al arrancar el crawl). Resultado: R12 agregaba las violaciones PRE de **todos** los sitios
+en MySQL como si fueran del actual. Verificado: `cargar_pp_pre(None)` → 350 filas / 54 sitios;
+`cargar_pp_pre('mundodeportivo.com')` → 6 filas / 1 sitio.
+
+**Fix:**
+- `combinados.ejecutar()` recibe ahora `url` (desde `main._hilo_combinados`), deriva el dominio
+  (netloc sin `www.`, sin usar el bug de `.lstrip`) y lo añade a los args de r12, que entonces
+  filtra `WHERE rootUrl LIKE %dominio%`. (R15 **no** tenía este problema: su consulta a MySQL es
+  una tabla global dominio→empresa para resolver propietarios; las cookies evaluadas vienen del
+  `reporte_auditoria.json` per-site.)
+- **Captura vacía → NO_EVALUABLE:** nuevo helper `_captura_vacia(dominio)` (cuenta filas del
+  dominio en MySQL). Si R12 saldría PASSED **pero** no hay ninguna fila capturada, se marca
+  **NO_EVALUABLE** en vez de un falso "cumple". Esto cubre los sitios donde Privacy Pioneer no
+  captura tráfico (p. ej. decathlon tras Cloudflare: webXray ve GTM/iAdvize pero PP captura 0),
+  igual que ya hacían R2/R3/R9. Verificado: `_captura_vacia('decathlon.es')` → True,
+  `_captura_vacia('mundodeportivo.com')` → False.
+
+**Nota:** el fallo de captura de Privacy Pioneer en sitios tras Cloudflare (Firefox llega a la
+página real pero la extensión no intercepta rastreadores) es una limitación de la extensión, no
+resuelta; lo que se corrige aquí es **no reportarlo como cumplimiento** (NO_EVALUABLE) ni
+contaminar con datos de otros sitios.
+
 ### buscador_politica.py: `rel="privacy-policy"` + ranking semántico (menos dependencia del regex)
 
 **Problema:** localizar el enlace a la política dependía de **matching léxico** (regex/palabras

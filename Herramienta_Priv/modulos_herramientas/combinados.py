@@ -17,8 +17,35 @@ Orden de espera optimizado para minimizar tiempo de bloqueo:
 import logging
 import threading
 from pathlib import Path
+from urllib.parse import urlparse
 
 from ._loader import ejecutar_analisis, dir_analisis
+
+
+def _captura_vacia(dominio: str) -> bool:
+    """True si MySQL no tiene NINGUNA fila para el dominio: Privacy Pioneer no
+    capturó tráfico (fallo de captura tras anti-bot, o sitio sin tráfico).
+    Permite que R12 marque NO_EVALUABLE en vez de un falso PASSED, igual que ya
+    hacen R2/R3/R9."""
+    if not dominio:
+        return False
+    try:
+        import os
+        import mysql.connector
+        conn = mysql.connector.connect(
+            host=os.getenv("MYSQL_HOST", "localhost"),
+            user=os.getenv("MYSQL_USER", "pioneer"),
+            password=os.getenv("MYSQL_PASSWORD", "abc"),
+            database=os.getenv("MYSQL_DATABASE", "analysis"),
+        )
+        cur = conn.cursor()
+        cur.execute("SELECT COUNT(*) FROM entries WHERE rootUrl LIKE %s",
+                    (f"%{dominio}%",))
+        n = cur.fetchone()[0]
+        conn.close()
+        return int(n) == 0
+    except Exception:
+        return False     # ante la duda, no bloquear el veredicto
 
 log = logging.getLogger(__name__)
 
@@ -31,6 +58,7 @@ def ejecutar(
     ev_webxray: threading.Event,
     ev_poligraph: threading.Event,
     requisitos: set | None = None,
+    url: str = "",
 ) -> None:
     """
     Evalúa R12, R15 y R16 esperando a las herramientas de las que dependen.
@@ -47,6 +75,12 @@ def ejecutar(
     sel     = set(requisitos) if requisitos else {"R12", "R15", "R16"}
     pg_dir  = output_dir / "poligraph"
     wx_dir  = output_dir / "webxray"
+    # Dominio del sitio auditado, para filtrar la consulta de R12 a MySQL. Sin
+    # este filtro, r12 consulta TODAS las filas de `entries` (que acumula datos
+    # de todos los sitios auditados) y reporta violaciones de OTROS sitios como
+    # si fueran del actual (contaminación cruzada).
+    _netloc = urlparse(url).netloc if url else ""
+    dominio = _netloc[4:] if _netloc.startswith("www.") else _netloc
 
     # Siempre esperamos los eventos para no bloquear indefinidamente el orden
     # de ejecución (los eventos se activan inmediatamente si la tool no corre).
@@ -89,7 +123,11 @@ def ejecutar(
 
     if "R12" in sel:
         try:
+            # El filtro de dominio es imprescindible: sin él r12 consulta todas
+            # las filas de `entries` y reporta terceros de OTROS sitios.
             args_r12 = [str(csv_3p)] if csv_3p.exists() else []
+            if dominio:
+                args_r12.append(dominio)
             data = ejecutar_analisis("r12_software_terceros", *args_r12,
                                       salida_dir=dir_analisis(output_dir, es_raiz=True))
             veredicto = "PASSED"
@@ -97,6 +135,16 @@ def ejecutar(
                 if isinstance(sitio_data, dict) and sitio_data.get("estado") == "FALLO":
                     veredicto = "FAILED"
                     break
+            # Distinguir un PASSED real (sí hubo captura, sin rastreadores
+            # comerciales en PRE) de una captura vacía (Privacy Pioneer no
+            # registró NADA para el sitio: fallo de captura tras Cloudflare,
+            # etc.). Sin esto, un sitio no capturado daría un falso "cumple".
+            if veredicto == "PASSED" and _captura_vacia(dominio):
+                veredicto = "NO_EVALUABLE"
+                data = {"_captura_vacia": True, "detalle": (
+                    "Privacy Pioneer no capturó tráfico para este sitio "
+                    "(probable fallo de captura, p. ej. sitio tras anti-bot). "
+                    "R12 no evaluable: no implica ausencia de rastreadores.")}
             with lock:
                 resultados["R12"] = {"veredicto": veredicto, "detalle": data}
         except Exception as e:

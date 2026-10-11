@@ -249,6 +249,7 @@ def _hilo_combinados(url: str, output_dir: Path,
             ev_webxray=ev_webxray,
             ev_poligraph=ev_poligraph,
             requisitos=requisitos,
+            url=url,
         )
     except Exception as e:
         log.error("Combinados falló: %s", e)
