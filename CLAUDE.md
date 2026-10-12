@@ -1169,6 +1169,41 @@ página real pero la extensión no intercepta rastreadores) es una limitación d
 resuelta; lo que se corrige aquí es **no reportarlo como cumplimiento** (NO_EVALUABLE) ni
 contaminar con datos de otros sitios.
 
+### Limitación documentada: captura truncada de Privacy Pioneer en SPA pesados / sitios anti-bot
+
+**Diagnóstico (caso decathlon.es):** se investigó por qué PP captura 0 rastreadores donde
+webXray sí los ve (GTM, iAdvize, caast.tv). Comparando la tabla cruda `allEv` (todo lo que la
+extensión intercepta, antes de clasificar) con `entries` (la evidencia estructurada que leen
+R2/R3/R9/R12):
+
+| Sitio | Filas en `allEv` | Menciones a rastreadores conocidos |
+|---|---|---|
+| mundodeportivo.com | 1051 | 1244 |
+| lavanguardia.com | 441 | 286 |
+| cope.es | 304 | 623 |
+| **decathlon.es** | **23** | **0** |
+
+decathlon solo registró **23 peticiones, todas de primera parte** (chunks de Next.js), y
+**ningún tercero en `allEv`**. Es decir, los rastreadores **nunca llegaron a la captura** — no se
+perdieron en la clasificación ni en la atribución por hostname. La ventana de `webRequest` de la
+extensión quedó **truncada** al *bootstrap* inicial y se cortó antes de que los terceros (que en
+un SPA cargan asíncronos unos segundos después) se solicitaran.
+
+**Patrón:** la cola de sitios con captura ínfima (1-2 filas en `allEv`) son precisamente **SPA
+pesados y/o sitios tras anti-bot**: elpais.com, twitch.tv, netflix.com, lidl.es,
+agenciatributaria… No es aleatorio.
+
+**Causa (combinación):** (1) Cloudflare mete una navegación de challenge y, al recargar la página
+real, el contexto de captura de la extensión se re-ancla y solo recoge la primera parte inicial;
+(2) los terceros en SPA cargan asíncronos fuera de esa ventana truncada. webXray (Chrome,
+registro de red completo) sí los ve porque no depende de una extensión ni de temporizadores.
+
+**Estado:** limitación conocida de la cadena de la extensión (ligada a los Bugs 22/37/40), **no
+resuelta** (mitigarla exige tocar la `.xpi`, retorno incierto). La herramienta la **gestiona
+correctamente**: esos sitios quedan NO_EVALUABLE para R2/R3/R9/R12 (captura vacía), no como falso
+cumplimiento, y R12 ya no se contamina. Para el estudio es una restricción del método, honesta y
+**cuantificable** (nº de sitios de la muestra con captura ínfima).
+
 ### buscador_politica.py: `rel="privacy-policy"` + ranking semántico (menos dependencia del regex)
 
 **Problema:** localizar el enlace a la política dependía de **matching léxico** (regex/palabras
