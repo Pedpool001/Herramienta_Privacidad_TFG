@@ -1159,7 +1159,12 @@ en MySQL como si fueran del actual. Verificado: `cargar_pp_pre(None)` → 350 fi
   `reporte_auditoria.json` per-site.)
 - **Captura vacía → NO_EVALUABLE:** nuevo helper `_captura_vacia(dominio)` (cuenta filas del
   dominio en MySQL). Si R12 saldría PASSED **pero** no hay ninguna fila capturada, se marca
-  **NO_EVALUABLE** en vez de un falso "cumple". Esto cubre los sitios donde Privacy Pioneer no
+  **NO_EVALUABLE** en vez de un falso "cumple".
+- **r12 escribe SIEMPRE el fichero resultado** (aunque esté vacío, `{}`): con el filtro de
+  dominio, un sitio sin violaciones (o con captura vacía) daba `resultado={}`, y el `__main__`
+  de r12 no escribía `r12_resultado.json` → el loader fallaba con "Resultado no encontrado" →
+  R12=ERROR. Ahora se llama `guardar_json` siempre (mismo patrón que r2_r3, Bug 36); combinados
+  interpreta `{}` como sin violaciones y decide PASSED vs NO_EVALUABLE. Esto cubre los sitios donde Privacy Pioneer no
   captura tráfico (p. ej. decathlon tras Cloudflare: webXray ve GTM/iAdvize pero PP captura 0),
   igual que ya hacían R2/R3/R9. Verificado: `_captura_vacia('decathlon.es')` → True,
   `_captura_vacia('mundodeportivo.com')` → False.

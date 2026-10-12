@@ -235,4 +235,8 @@ if __name__ == "__main__":
         print("No se encontraron entradas PRE con tipos comerciales en la base de datos.")
     else:
         imprimir_reporte(resultado, mostrar_detalle=detalle)
-        guardar_json(resultado)
+    # Escribir SIEMPRE el fichero resultado, aunque esté vacío: si no, el loader
+    # (ejecutar_analisis) no lo encuentra y marca R12 como ERROR. Un {} vacío lo
+    # interpreta combinados como "sin violaciones" y, con _captura_vacia, decide
+    # PASSED real vs NO_EVALUABLE. (Mismo patrón que r2_r3 — Bug 36.)
+    guardar_json(resultado)
