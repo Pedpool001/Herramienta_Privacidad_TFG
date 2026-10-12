@@ -1164,7 +1164,12 @@ en MySQL como si fueran del actual. Verificado: `cargar_pp_pre(None)` → 350 fi
   dominio, un sitio sin violaciones (o con captura vacía) daba `resultado={}`, y el `__main__`
   de r12 no escribía `r12_resultado.json` → el loader fallaba con "Resultado no encontrado" →
   R12=ERROR. Ahora se llama `guardar_json` siempre (mismo patrón que r2_r3, Bug 36); combinados
-  interpreta `{}` como sin violaciones y decide PASSED vs NO_EVALUABLE. Esto cubre los sitios donde Privacy Pioneer no
+  interpreta `{}` como sin violaciones y decide PASSED vs NO_EVALUABLE.
+- **`salida.py` robusto al nuevo detalle de R12:** el detalle de captura vacía
+  (`{"_captura_vacia": True, "detalle": str}`) rompía `_extraer_info` de R12
+  (`'bool' object has no attribute 'get'`), que iteraba `detalle.items()` y llamaba `.get()` sobre
+  el `True`. Ahora salta los valores que no son un `sitio→dict`; el mensaje de captura vacía se
+  muestra vía el `detalle` a nivel raíz que `_extraer_info` ya recoge. Esto cubre los sitios donde Privacy Pioneer no
   captura tráfico (p. ej. decathlon tras Cloudflare: webXray ve GTM/iAdvize pero PP captura 0),
   igual que ya hacían R2/R3/R9. Verificado: `_captura_vacia('decathlon.es')` → True,
   `_captura_vacia('mundodeportivo.com')` → False.

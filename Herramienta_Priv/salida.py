@@ -313,6 +313,10 @@ def _extraer_info(req: str, detalle) -> dict:
     # ── R12: Software de terceros en PRE ──────────────────────────────────────
     elif req == "R12":
         for _url, sitio_data in (detalle.items() if isinstance(detalle, dict) else []):
+            # Saltar claves que no son un sitio→dict (p. ej. "_captura_vacia":
+            # True o "detalle": str que añade combinados cuando no hay captura).
+            if not isinstance(sitio_data, dict):
+                continue
             violaciones  = sitio_data.get("violaciones", [])
             total        = sitio_data.get("total_unicas", 0)
             confirmadas  = sitio_data.get("confirmadas_ambas_herramientas", 0)
