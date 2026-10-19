@@ -368,10 +368,14 @@ def _extraer_info(req: str, detalle) -> dict:
     # ── R14: Lenguaje claro ───────────────────────────────────────────────────
     elif req == "R14":
         politica = detalle.get("politica") or {}
-        score    = politica.get("szigriszt_munoz")
+        # El índice depende del idioma de la política: Szigriszt-Muñoz (es) o
+        # Flesch Reading Ease (en). Se admite la clave antigua por compatibilidad.
+        score    = politica.get("indice", politica.get("indice_szigriszt",
+                                                        politica.get("szigriszt_munoz")))
+        nombre   = politica.get("indice_nombre", "Szigriszt-Muñoz")
         palabras = politica.get("palabras_por_frase")
         if score is not None:
-            chips.append(("Índice Szigriszt-Muñoz", f"{score:.1f} / 100"))
+            chips.append((f"Índice {nombre}", f"{score:.1f} / 100"))
         if palabras is not None:
             chips.append(("Palabras por frase (media)", f"{palabras:.1f}"))
         tecnicismos = detalle.get("tecnicismos") or politica.get("tecnicismos") or {}

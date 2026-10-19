@@ -7,13 +7,20 @@ redactados en un lenguaje comprensible para el ciudadano medio, evitando
 tecnicismos y frases excesivamente largas.
 
 Medición en dos partes:
-  1. Política de privacidad — índice de legibilidad Szigriszt-Muñoz sobre el
-     texto extraído de readability.json (fuente: PoliGraph).
+  1. Política de privacidad — índice de legibilidad adaptado al idioma de la
+     política, sobre el texto extraído de readability.json (fuente: PoliGraph).
   2. Banner de cookies — longitud media de frase sobre el texto visible del
      banner (fuente: accessibility_tree.json, reutilizado de R1).
 
-El índice Szigriszt-Muñoz es la adaptación española del Flesch Reading Ease:
-  206.835 - 62.3 × (sílabas/palabras) - (palabras/oraciones)
+El índice de legibilidad se elige según el idioma detectado (campo `lang` del
+readability + langdetect de respaldo), porque la fórmula de Szigriszt-Muñoz está
+calibrada para el español y da valores incorrectos en inglés:
+  · español → Szigriszt-Muñoz (adaptación española del Flesch):
+      206.835 - 62.3 × (sílabas/palabras) - (palabras/oraciones)
+  · inglés  → Flesch Reading Ease (original para texto en inglés):
+      206.835 - 1.015 × (palabras/oraciones) - 84.6 × (sílabas/palabras)
+Ambos comparten la escala 0-100 (mayor = más legible), por lo que los umbrales de
+veredicto son comparables entre idiomas.
 
 Umbrales:
   ≥ 50  Normal/Adecuado o mejor  →  PASSED
@@ -69,8 +76,9 @@ UMBRAL_BANNER_PALABRAS = 25
 
 # ── Tecnicismos legales RGPD / LSSI ───────────────────────────────────────────
 # Términos que, si aparecen con alta frecuencia, indican exceso de jerga legal.
-# Se detectan sin distinguir mayúsculas/minúsculas.
-TECNICISMOS = [
+# Se detectan sin distinguir mayúsculas/minúsculas. Hay un conjunto por idioma
+# (español e inglés) y se usa el que corresponda al idioma de la política.
+TECNICISMOS_ES = [
     # Roles del tratamiento
     r"responsable\s+del\s+tratamiento",
     r"encargado\s+del\s+tratamiento",
@@ -106,12 +114,55 @@ TECNICISMOS = [
     r"decisi[oó]n\s+automatizada",
 ]
 
-RE_TECNICISMOS = [(t, re.compile(t, re.IGNORECASE)) for t in TECNICISMOS]
+# Equivalentes en inglés de la jerga RGPD/UK-GDPR (grafías británica y americana:
+# -isation/-ization). Se admite espacio o guion entre palabras.
+TECNICISMOS_EN = [
+    # Roles del tratamiento
+    r"data\s+controller",
+    r"data\s+processor",
+    r"sub[-\s]?processor",
+    r"joint\s+controller",
+    r"data\s+protection\s+officer",
+    r"recipients?\s+of\s+(?:the\s+|your\s+)?(?:personal\s+)?data|data\s+recipients?",
+    # Bases jurídicas
+    r"legal\s+basis|lawful\s+basis",
+    r"legitimate\s+interests?",
+    r"legal\s+obligation",
+    r"performance\s+of\s+(?:a\s+)?(?:the\s+)?contract",
+    r"vital\s+interests?",
+    # Categorías de datos
+    r"special\s+categor(?:y|ies)\s+(?:of\s+)?(?:personal\s+)?data",
+    r"sensitive\s+(?:personal\s+)?data",
+    r"biometric\s+data",
+    r"genetic\s+data",
+    # Transferencias
+    r"(?:international|cross[-\s]?border)\s+(?:data\s+)?transfers?",
+    r"standard\s+contractual\s+clauses",
+    r"binding\s+corporate\s+rules",
+    r"adequacy\s+decision",
+    r"transfer\s+mechanism",
+    # Derechos
+    r"(?:right\s+to\s+)?data\s+portability",
+    r"right\s+to\s+object(?:ion)?",
+    r"right\s+to\s+rectif(?:y|ication)",
+    r"right\s+to\s+eras(?:e|ure)",
+    r"right\s+to\s+be\s+forgotten",
+    r"restriction\s+of\s+processing",
+    # Otros
+    r"pseudonymi[sz]ation",
+    r"anonymi[sz]ation",
+    r"data\s+protection\s+impact\s+assessment|\bDPIA\b",
+    r"automated\s+(?:profiling|decision[-\s]?making|decisions?)",
+    r"\bprofiling\b",
+]
+
+RE_TECNICISMOS_ES = [(t, re.compile(t, re.IGNORECASE)) for t in TECNICISMOS_ES]
+RE_TECNICISMOS_EN = [(t, re.compile(t, re.IGNORECASE)) for t in TECNICISMOS_EN]
 
 
-# ── Conteo de sílabas (español) ───────────────────────────────────────────────
+# ── Conteo de sílabas ─────────────────────────────────────────────────────────
 
-def contar_silabas(palabra: str) -> int:
+def contar_silabas_es(palabra: str) -> int:
     """
     Aproximación lingüística al conteo de sílabas en español.
     Cuenta grupos de vocales (incluyendo diptongos y triptongos).
@@ -122,6 +173,46 @@ def contar_silabas(palabra: str) -> int:
         return 0
     grupos = re.findall(r"[aeiouáéíóúüàèìòùâêîôû]{1,3}", palabra)
     return max(1, len(grupos))
+
+
+def contar_silabas_en(palabra: str) -> int:
+    """
+    Aproximación al conteo de sílabas en inglés (heurística estándar del Flesch):
+    cuenta grupos de vocales y descuenta la 'e' muda final. No es perfecta (el
+    inglés no es fonético), pero el índice Flesch es robusto a pequeños errores.
+    """
+    palabra = palabra.lower().strip(".:,;!?()\"'«»—–-")
+    palabra = re.sub(r"[^a-z]", "", palabra)
+    if not palabra:
+        return 0
+    grupos = re.findall(r"[aeiouy]+", palabra)
+    n = len(grupos)
+    # 'e' muda final (silent e): "make" → 1, pero "table" ('le' sí es sílaba) → 2
+    if palabra.endswith("e") and not palabra.endswith("le") and n > 1:
+        n -= 1
+    return max(1, n)
+
+
+def _detectar_idioma(texto: str, lang_hint: str | None = None) -> str:
+    """Devuelve 'en' si la política está en inglés, 'es' en cualquier otro caso.
+
+    Prioriza el atributo `lang` del <html> (campo `lang` de readability.json, muy
+    fiable); si no, usa langdetect sobre una muestra del texto. Por defecto 'es'
+    (comportamiento original): solo se cambia a Flesch cuando el texto es
+    claramente inglés."""
+    if lang_hint:
+        lh = lang_hint.lower()
+        if lh.startswith("en"):
+            return "en"
+        if lh.startswith("es"):
+            return "es"
+    try:
+        from langdetect import detect
+        if detect(texto[:5000]) == "en":
+            return "en"
+    except Exception:
+        pass
+    return "es"
 
 
 # ── Carga y limpieza de texto ─────────────────────────────────────────────────
@@ -188,10 +279,16 @@ def leer_banner(tree_path: Path) -> str:
 
 # ── Métricas de legibilidad ───────────────────────────────────────────────────
 
-def calcular_metricas(texto: str) -> dict:
+def calcular_metricas(texto: str, idioma: str = "es") -> dict:
     """
-    Calcula las métricas necesarias para el índice Szigriszt-Muñoz
-    y devuelve también estadísticas secundarias.
+    Calcula la legibilidad con el índice apropiado al idioma de la política:
+      · español → Szigriszt-Muñoz (adaptación española del Flesch):
+          206.835 − 62.3·(sílabas/palabra) − (palabras/frase)
+      · inglés  → Flesch Reading Ease (original, para texto en inglés):
+          206.835 − 1.015·(palabras/frase) − 84.6·(sílabas/palabra)
+    Ambos comparten la escala 0-100 (mayor = más legible), por lo que los umbrales
+    de veredicto (≥50 PASSED, ≥35 WARNING) son comparables entre idiomas. El conteo
+    de sílabas también cambia (español vs inglés).
     """
     oraciones = [s.strip() for s in re.split(r"[.!?]+", texto) if len(s.strip()) > 5]
     palabras  = [w for w in texto.split() if any(c.isalpha() for c in w)]
@@ -202,21 +299,30 @@ def calcular_metricas(texto: str) -> dict:
     if num_palabras == 0 or num_oraciones == 0:
         return None
 
-    total_silabas = sum(contar_silabas(w) for w in palabras)
+    if idioma == "en":
+        total_silabas = sum(contar_silabas_en(w) for w in palabras)
+        indice_nombre = "Flesch Reading Ease"
+    else:
+        total_silabas = sum(contar_silabas_es(w) for w in palabras)
+        indice_nombre = "Szigriszt-Muñoz"
 
-    sil_por_palabra  = total_silabas / num_palabras
+    sil_por_palabra    = total_silabas / num_palabras
     palabras_por_frase = num_palabras / num_oraciones
 
-    # Fórmula Szigriszt-Muñoz
-    indice = 206.835 - (62.3 * sil_por_palabra) - palabras_por_frase
+    if idioma == "en":
+        indice = 206.835 - (1.015 * palabras_por_frase) - (84.6 * sil_por_palabra)
+    else:
+        indice = 206.835 - (62.3 * sil_por_palabra) - palabras_por_frase
 
     return {
+        "idioma":             idioma,
+        "indice_nombre":      indice_nombre,
         "num_palabras":       num_palabras,
         "num_oraciones":      num_oraciones,
         "total_silabas":      total_silabas,
         "sil_por_palabra":    round(sil_por_palabra, 2),
         "palabras_por_frase": round(palabras_por_frase, 2),
-        "indice_szigriszt":   round(indice, 2),
+        "indice":             round(indice, 2),
     }
 
 
@@ -236,14 +342,17 @@ def veredicto_indice(score: float) -> str:
     return "FAILED"
 
 
-def detectar_tecnicismos(texto: str) -> list[dict]:
-    """Busca los tecnicismos definidos y devuelve los que aparecen en el texto."""
+def detectar_tecnicismos(texto: str, idioma: str = "es") -> list[dict]:
+    """Busca la jerga legal en el idioma de la política y devuelve la encontrada."""
+    patrones = RE_TECNICISMOS_EN if idioma == "en" else RE_TECNICISMOS_ES
     encontrados = []
-    for patron_str, patron_re in RE_TECNICISMOS:
+    for patron_str, patron_re in patrones:
         coincidencias = patron_re.findall(texto)
         if coincidencias:
+            # El término mostrado es la primera aparición real (minúsculas para
+            # agrupar variantes de mayúsculas/espaciado en la salida).
             encontrados.append({
-                "termino":     coincidencias[0],
+                "termino":     " ".join(coincidencias[0].lower().split()),
                 "ocurrencias": len(coincidencias),
             })
     return sorted(encontrados, key=lambda x: -x["ocurrencias"])
@@ -302,11 +411,12 @@ def evaluar_global(metricas_pol: dict | None, banner: dict, tecnicismos: list) -
         veredicto_pol = "WARNING"
         partes.append("No se pudo calcular el índice de la política (texto insuficiente).")
     else:
-        score         = metricas_pol["indice_szigriszt"]
+        score         = metricas_pol["indice"]
         veredicto_pol = veredicto_indice(score)
         nivel         = interpretar_indice(score)
         partes.append(
-            f"Política: índice Szigriszt-Muñoz {score:.1f} ({nivel}) → {veredicto_pol}."
+            f"Política ({metricas_pol['idioma']}): índice "
+            f"{metricas_pol['indice_nombre']} {score:.1f} ({nivel}) → {veredicto_pol}."
         )
 
     # Veredicto del banner
@@ -353,15 +463,16 @@ def imprimir(resultado: dict, detalle: bool) -> None:
 
     # ── Política de privacidad ────────────────────────────────────────────────
     if pol:
-        score = pol.get("indice_szigriszt")
+        score  = pol.get("indice")
+        nombre = pol.get("indice_nombre", "Legibilidad")
         print(f"\n{'─'*64}")
-        print("Política de privacidad — Índice Szigriszt-Muñoz:\n")
+        print(f"Política de privacidad — Índice {nombre} (idioma: {pol.get('idioma','?')}):\n")
         print(f"  Palabras analizadas : {pol['num_palabras']}")
         print(f"  Oraciones           : {pol['num_oraciones']}")
         print(f"  Palabras / frase    : {pol['palabras_por_frase']:.2f}")
         print(f"  Sílabas / palabra   : {pol['sil_por_palabra']:.2f}")
         print(f"  {'─'*30}")
-        print(f"  Índice Szigriszt    : {score:.2f}")
+        print(f"  Índice {nombre:<16}: {score:.2f}")
         print(f"  Clasificación       : {interpretar_indice(score)}")
         print(f"  Veredicto política  : {ICONO[veredicto_indice(score)]} {veredicto_indice(score)}")
 
@@ -423,19 +534,25 @@ def main():
     else:
         print("[*] accessibility_tree.json no disponible — análisis de banner omitido")
 
-    # Inferir sitio desde readability.json
+    # Inferir sitio e idioma desde readability.json
+    lang_hint = None
     try:
         raw  = json.load(open(r_path, encoding="utf-8"))
         sitio = raw.get("siteName") or raw.get("title") or r_path.parent.name
+        lang_hint = raw.get("lang")
     except Exception:
         sitio = r_path.parent.name
 
-    metricas_pol = calcular_metricas(texto_pol)
+    idioma = _detectar_idioma(texto_pol, lang_hint)
+    print(f"[*] Idioma de la política: {idioma} "
+          f"→ índice {'Flesch Reading Ease' if idioma == 'en' else 'Szigriszt-Muñoz'}")
+
+    metricas_pol = calcular_metricas(texto_pol, idioma)
     if metricas_pol is None:
         print("[AVISO] Texto de política insuficiente para calcular el índice")
 
     banner      = evaluar_banner(texto_ban)
-    tecnicismos = detectar_tecnicismos(texto_pol)
+    tecnicismos = detectar_tecnicismos(texto_pol, idioma)
     evaluacion  = evaluar_global(metricas_pol, banner, tecnicismos)
     veredicto   = evaluacion["estado"]
 

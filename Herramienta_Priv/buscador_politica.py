@@ -192,6 +192,78 @@ def _es_ingles_texto(texto: str) -> bool:
     return any(k in texto.lower() for k in _TEXTO_EN_KEYWORDS)
 
 
+# Segmento final que identifica EXPLÍCITAMENTE una política de privacidad (no un
+# "hub"/índice genérico como /privacy o /info/privacy). Se usa para decidir si la
+# URL elegida ya es la política concreta o si conviene seguir buscándola dentro.
+_SEGMENTO_POLITICA_FUERTE = re.compile(
+    r"privacy[-_]?(policy|notice|statement)"
+    r"|pol[ií]tica[-_]?(de[-_]?)?privacidad"
+    r"|privacidad[-_]?(policy|pol[ií]tica)"
+    r"|datenschutzerkl|privacybeleid|confidentialite",
+    re.I,
+)
+
+
+def _segmento_final(url: str) -> str:
+    return urlparse(url).path.rstrip("/").split("/")[-1].lower()
+
+
+def _refinar_hub(url_elegida: str, dominio_sitio: str, timeout_ms: int) -> str | None:
+    """Si la URL elegida es un 'hub' de privacidad genérico (su segmento final no
+    es explícitamente una política, p. ej. theguardian '/info/privacy'), abre la
+    página y busca un enlace del MISMO dominio que sí apunte a la política concreta
+    (segmento 'privacy-policy', 'politica-de-privacidad'…). Devuelve esa URL o None.
+
+    Evita que PoliGraph analice una página índice de dos líneas (un hub con enlaces
+    a "Política de privacidad / Política de cookies / Vídeo…") en vez de la política
+    real. Solo hace la petición extra cuando el segmento elegido es genérico, así
+    que las políticas ya específicas (la mayoría) no pagan coste ni cambian."""
+    if _SEGMENTO_POLITICA_FUERTE.search(_segmento_final(url_elegida)):
+        return None   # ya es una política específica: no refinar (sin regresión)
+
+    def _solo_enlaces(page):
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(800)
+        return page.evaluate(
+            """() => Array.from(document.querySelectorAll('a[href]'))
+                  .map(a => ({href: a.href, texto: (a.innerText || '').trim()}))"""
+        )
+
+    try:
+        enlaces, _motor, _bloq = con_cascada(
+            url_elegida, _solo_enlaces, timeout_ms=timeout_ms)
+    except Exception as e:
+        logger.info("Refinamiento de hub: no se pudo abrir %s (%s)", url_elegida, e)
+        return None
+    if not enlaces:
+        return None
+
+    mejores = []
+    for item in enlaces:
+        href = urljoin(url_elegida, item.get("href", ""))
+        if href.startswith(("javascript:", "mailto:")):
+            continue
+        parsed = urlparse(href)
+        if dominio_sitio and dominio_sitio not in parsed.netloc:
+            continue
+        if href.rstrip("/") == url_elegida.rstrip("/"):
+            continue
+        if (_SEGMENTO_POLITICA_FUERTE.search(_segmento_final(href))
+                and not _RE_NOTICIA.search(href.lower())):
+            score = _puntuacion(href, item.get("texto", ""), dominio_sitio)
+            mejores.append((score, len(parsed.path), href))
+    if not mejores:
+        return None
+
+    # Mejor puntuación; a igualdad, la ruta más corta (la política canónica frente
+    # a variantes como "privacy-policy-us-addendum").
+    mejores.sort(key=lambda x: (-x[0], x[1]))
+    mejor = mejores[0][2]
+    logger.info("URL elegida '%s' parece un hub → política concreta '%s'",
+                url_elegida, mejor)
+    return mejor
+
+
 # ── Ranking semántico (embeddings) ────────────────────────────────────────────
 # Fallback robusto frente al matching léxico: cuando ninguna palabra clave casa,
 # se re-rankean TODOS los enlaces del DOM por similitud de significado con el
@@ -665,6 +737,17 @@ def buscar_url_politica(url_sitio: str, timeout_ms: int = 30_000) -> dict:
                             resultado["url"] = sondeo_sub["url"]
                             resultado["es_ingles"] = sondeo_sub["es_ingles"]
                             resultado["fuente"] = "sondeo_subdominios"
+
+    # Refinar si la URL elegida es un hub de privacidad genérico (p. ej.
+    # theguardian /info/privacy → /help/privacy-policy). Solo cambia si encuentra
+    # el enlace a la política concreta dentro del propio dominio; si no, no toca
+    # nada. Las políticas ya específicas se saltan sin coste (segmento fuerte).
+    if resultado["url"]:
+        mejor = _refinar_hub(resultado["url"], dominio_sitio, timeout_ms)
+        if mejor:
+            resultado["url"] = mejor
+            resultado["es_ingles"] = _es_ingles_url(mejor)
+            resultado["fuente"] = f"{resultado.get('fuente') or ''}+hub"
 
     # Limpiar fragmentos de tracking del resultado final (#utm_source=..., #vca=...)
     if resultado["url"]:

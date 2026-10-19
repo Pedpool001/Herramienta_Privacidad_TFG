@@ -243,7 +243,21 @@ def evaluar_responsable_poligraph(info: dict) -> dict:
     }
 
 
-def auditar_r15(ruta_poligraph: str = None) -> dict:
+def _coincide_sitio(clave: str, filtro: str) -> bool:
+    """True si la clave del reporte corresponde al sitio filtrado.
+
+    Las claves del reporte las genera el crawler como la `url sin esquema/www`
+    con los no-alfanuméricos → '_' (ej. 'abc_es'; 'abc_es_' si la URL tenía barra
+    final; 'decathlon_es_es' si tenía ruta). El filtro es la clave del dominio
+    ('abc_es'): se acepta la coincidencia exacta y las variantes con sufijo
+    separado por '_' (barra/ruta), pero no otro dominio que empiece igual
+    ('abc_establo_com'), gracias al '_' de frontera."""
+    clave = clave.lower()
+    filtro = filtro.lower()
+    return clave == filtro or clave.startswith(filtro + "_")
+
+
+def auditar_r15(ruta_poligraph: str = None, sitio_filtro: str = None) -> dict:
     reporte = json.loads(REPORTE_PATH.read_text(encoding="utf-8"))
     ocd = cargar_ocd()
     mapa_pp = cargar_dominio_empresa_pp()
@@ -251,6 +265,13 @@ def auditar_r15(ruta_poligraph: str = None) -> dict:
     resultado_global = {}
 
     for sitio, fases in reporte.items():
+        # reporte_auditoria.json es un acumulador GLOBAL de todos los sitios
+        # auditados (el crawler hace merge, nunca lo reinicia). Sin este filtro,
+        # la evidencia de R15 mostraba los 100+ sitios y no se distinguía la del
+        # sitio concreto auditado. Con sitio_filtro se procesa solo el actual
+        # (lo pasa combinados.py derivándolo de la URL auditada).
+        if sitio_filtro and not _coincide_sitio(sitio, sitio_filtro):
+            continue
         # Derivar el dominio del sitio desde la clave (abc_es → abc.es)
         dominio_sitio = sitio.replace("_", ".")
 
@@ -347,18 +368,24 @@ def guardar_json(resultado: dict, ruta: str = str(Path(os.getenv("ANALYSIS_DATA_
 if __name__ == "__main__":
     ruta_pg = None
     detalle = True
+    sitio   = None
 
     for arg in sys.argv[1:]:
         if arg.endswith(".yml") or arg.endswith(".yaml"):
             ruta_pg = arg
         elif arg == "--no-detalle":
             detalle = False
+        else:
+            # Clave del sitio a filtrar (ej. 'abc_es'). La pasa combinados.py.
+            sitio = arg
 
     if ruta_pg:
         print(f"📄 Usando PoliGraph: {ruta_pg}")
     else:
         print("ℹ️  Sin PoliGraph (pasa la ruta del .yml para cruzar con la política)")
+    if sitio:
+        print(f"🔍 Filtro de sitio: {sitio}")
 
-    resultado = auditar_r15(ruta_poligraph=ruta_pg)
+    resultado = auditar_r15(ruta_poligraph=ruta_pg, sitio_filtro=sitio)
     imprimir_reporte(resultado, mostrar_detalle=detalle)
     guardar_json(resultado)

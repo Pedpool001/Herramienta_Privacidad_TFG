@@ -128,6 +128,36 @@ def _limpiar_mysql(dominio: str) -> None:
         log.warning("No se pudo limpiar MySQL: %s", e)
 
 
+def _limpiar_reporte(dominio: str) -> None:
+    """Borra del reporte global de cookies (`reporte_auditoria.json`) las entradas
+    de ESTE dominio antes del crawl, para que al terminar quede solo la evidencia
+    fresca del sitio actual.
+
+    El crawler acumula (hace merge) todos los sitios en ese fichero y nunca lo
+    reinicia, por lo que se arrastraban las cookies de ejecuciones anteriores y de
+    variantes de URL del mismo sitio (`abc_es`, `abc_es_`). Es el equivalente a
+    `_limpiar_mysql` para el fichero de cookies. Solo toca las claves del dominio
+    actual (coincidencia exacta o con sufijo tras '_'), así que es seguro con el
+    batch paralelo: cada sitio borra únicamente lo suyo."""
+    import json
+    import re as _re
+    ruta = ANALYSIS_DATA / "reporte_auditoria.json"
+    if not ruta.exists():
+        return
+    try:
+        datos = json.loads(ruta.read_text(encoding="utf-8")) or {}
+        clave = _re.sub(r"[^a-zA-Z0-9]", "_", dominio).lower()
+        nuevos = {k: v for k, v in datos.items()
+                  if not (k.lower() == clave or k.lower().startswith(clave + "_"))}
+        if len(nuevos) != len(datos):
+            ruta.write_text(json.dumps(nuevos, ensure_ascii=False, indent=2),
+                            encoding="utf-8")
+            log.info("Reporte de cookies limpiado para %s (%d→%d sitios)",
+                     dominio, len(datos), len(nuevos))
+    except Exception as e:
+        log.warning("No se pudo limpiar el reporte de cookies: %s", e)
+
+
 _EXCLUSIVO = threading.Lock()
 """
 Cerrojo global del crawl de Privacy Pioneer.
@@ -147,8 +177,9 @@ def _crawl(url: str, output_dir: Path, dominio: str,
     Ejecuta el crawl de Privacy Pioneer (pasos 1-6). Debe invocarse siempre
     bajo `_EXCLUSIVO`. Devuelve False si no se pudo ni siquiera arrancar.
     """
-    # 1. Limpiar MySQL
+    # 1. Limpiar MySQL y el reporte de cookies del sitio (evidencia fresca)
     _limpiar_mysql(dominio)
+    _limpiar_reporte(dominio)
 
     # 2. Escribir CSV temporal con la URL
     csv_sitio = CRAWLER_DIR / "prueba-tfg.csv"

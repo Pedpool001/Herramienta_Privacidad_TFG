@@ -15,6 +15,7 @@ Orden de espera optimizado para minimizar tiempo de bloqueo:
 """
 
 import logging
+import re
 import threading
 from pathlib import Path
 from urllib.parse import urlparse
@@ -156,6 +157,12 @@ def ejecutar(
     if "R15" in sel:
         try:
             args_r15 = [str(graph_yml)] if graph_yml.exists() else []
+            # Clave del sitio para filtrar el reporte GLOBAL de cookies (que
+            # acumula todos los sitios): misma transformación que usa el crawler
+            # para las claves de reporte_auditoria.json (no-alfanuméricos → '_').
+            # Sin esto, la evidencia de R15 mostraba los 100+ sitios auditados.
+            if dominio:
+                args_r15.append(re.sub(r"[^a-zA-Z0-9]", "_", dominio))
             data = ejecutar_analisis("r15_responsables", *args_r15,
                                       salida_dir=dir_analisis(output_dir, es_raiz=True))
             veredicto_global = "PASSED"

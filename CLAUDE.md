@@ -2276,11 +2276,33 @@ informado del usuario.
 
 **Cómo funciona:**
 
-*Parte 1 — Política de privacidad (índice Szigriszt-Muñoz):*
-- Extrae el texto limpio de `readability.json` con BeautifulSoup
-- Cuenta oraciones, palabras y sílabas (heurística de grupos vocálicos para español)
-- Aplica la fórmula: `206.835 - 62.3 × (sílabas/palabras) - (palabras/oraciones)`
-- Clasifica: ≥ 50 → PASSED | 35-49 → WARNING | < 35 → FAILED
+*Parte 1 — Política de privacidad (índice de legibilidad según idioma):*
+- Extrae el texto limpio de `readability.json` con BeautifulSoup.
+- **Detecta el idioma** de la política (campo `lang` del `<html>` en readability +
+  `langdetect` de respaldo) y elige el índice calibrado para ese idioma — Szigriszt-Muñoz
+  está diseñado para el español y da valores incorrectos en inglés:
+  - **español → Szigriszt-Muñoz** (conteo de sílabas español):
+    `206.835 - 62.3 × (sílabas/palabras) - (palabras/oraciones)`
+  - **inglés → Flesch Reading Ease** (conteo de sílabas inglés, con 'e' muda):
+    `206.835 - 1.015 × (palabras/oraciones) - 84.6 × (sílabas/palabras)`
+- Ambos índices comparten la escala 0-100 (mayor = más legible), así que los umbrales son
+  comunes: ≥ 50 → PASSED | 35-49 → WARNING | < 35 → FAILED.
+- Salida JSON: `politica.indice` (puntuación), `politica.indice_nombre` y `politica.idioma`.
+  `salida.py` muestra el chip con el nombre del índice correspondiente (antes leía una clave
+  `szigriszt_munoz` que no coincidía con la que escribía el script, por lo que el chip de la
+  puntuación no aparecía; corregido de paso).
+
+**Verificación:** theguardian.com (política en inglés) → **Flesch Reading Ease 43.1** (Algo
+difícil → WARNING); abc.es (español) → **Szigriszt-Muñoz 40.1** (Algo difícil → WARNING). Ambos
+valores (~40) son los típicos de una política de privacidad.
+
+La **detección de tecnicismos (Parte 3) también es bilingüe**: hay un conjunto de jerga legal en
+español (`TECNICISMOS_ES`) y otro en inglés (`TECNICISMOS_EN`, con grafías británica/americana
+-isation/-ization), y `detectar_tecnicismos(texto, idioma)` usa el que corresponde al idioma de la
+política. Verificado: theguardian (en) detecta "legitimate interest", "data controller", "data
+protection officer", "standard contractual clauses", "right to erasure"…; abc.es (es) sigue
+detectando "corresponsable", "interés legítimo", "cláusulas contractuales tipo"… Es informativo y no
+cambia el veredicto.
 
 *Parte 2 — Banner de cookies (longitud media de frase):*
 - Extrae el texto visible del banner (mismo DFS que R1 sobre el árbol de accesibilidad)
@@ -3237,6 +3259,176 @@ const browser = await chromium.launch({
 - `Herramienta_Priv/requisitos/r12_software_terceros.py` → `cargar_webxray`: añadido `if not Path(ruta_csv).is_file(): return {}` antes de `open()`.
 - `Herramienta_Priv/requisitos/r16_correspondencia.py` → `cargar_3p_webxray`: añadido `if not Path(ruta_csv).is_file(): return []` antes de `open()`.
 Con estas comprobaciones, si webXray falla, r12 evalúa solo con datos de MySQL (Privacy Pioneer) y r16 evalúa solo con PoliGraph (sin cruzar dominios webXray → veredicto WARNING por falta de datos en lugar de ERROR).
+
+---
+
+### Bug 45 — PoliGraph: grafos VACÍOS en todos los sitios (poda del árbol por `none`→`whitespace`)
+
+**Síntoma (detectado al auditar las 107 webs):** el requisito de identificación de responsables
+(R15 interno / R14 de publicación) salía **FAILED en el 100% de los sitios**, aunque las cookies
+estaban perfectamente identificadas. Diagnóstico: el sub-chequeo `responsable_en_politica` daba
+FAIL ("La política no identifica ningún responsable") y arrastraba todo el veredicto. La causa de
+fondo: **los 69 `graph-original.full.yml` estaban vacíos** (`nodes: []`, `links: []`), es decir,
+PoliGraph no modelaba nada para NINGÚN sitio. Esto también degradaba R16.
+
+**Causa raíz (dos fallos encadenados en la cadena CDP→PoliGraph):**
+
+1. **Poda del documento entero (el grave).** `html_crawler` captura el árbol de accesibilidad vía
+   CDP y lo convierte con `_ax_tree.cdp_to_snapshot`. El mapa `_CDP_ROLE_MAP` traducía el rol CDP
+   **`"none"` → `"whitespace"`**. Pero un nodo CDP `role=none`/`presentation` es un **contenedor
+   estructural** (un `<div>` sin semántica), no espacio en blanco. Como `"whitespace"` está en
+   `IGNORED_ELEMENTS` de PoliGraph, el `SegmentExtractor.iterate()` **cortaba en el primer hijo de
+   `document`** (que era ese `none`→whitespace) y podaba TODO el subárbol con la política. Resultado:
+   **0 segmentos** extraídos → `document.pickle` de ~240-410 bytes (vacío) → grafo vacío.
+   Verificado en abc.es: el camino `document > whitespace(none) > group > ... > article > paragraph`
+   se cortaba en el segundo nodo.
+
+2. **Roles de landmark sin manejar.** Al arreglar (1), la recursión llegaba a nodos `banner`,
+   `contentinfo`, `navigation`, `search` (el árbol se captura ANTES de readability, por el banner de
+   cookies de R1/R5, así que header/nav/pie siguen presentes). PoliGraph no los conoce y su
+   `iterate()` lanzaba `ValueError: Invalid role: banner`. Además, dejarlos como contenido metía los
+   menús de cabecera/pie como "estructura de la política" (el `ListAnnotator` tomaba el menú del pie
+   —"Canal Ético, Aviso Legal, Talento…"— por actores), contaminando R15/R16.
+
+**Fix (estructural, verificado):**
+- `Herramienta_Priv/modulos_herramientas/_ax_tree.py` — `_CDP_ROLE_MAP`: **`"none"`/`"presentation"`
+  → `"group"`** (contenedor recorrible, fin de la poda); `"main"` → `"section"`, `"complementary"`
+  → `"group"`; `"searchbox"` → `"textbox"`. Los landmarks de chrome (`banner`/`contentinfo`/
+  `navigation`/`search`) se dejan pasar con su nombre crudo.
+- `PoliGraph/poligrapher/document.py` — `IGNORED_ELEMENTS`: añadidos `banner`, `contentinfo`,
+  `navigation`, `search`, para **ignorar explícitamente** cabecera/nav/pie (replica el stripping que
+  PoliGraph hacía con readability en su diseño original) y que no contaminen los actores.
+
+**Verificación:** sobre la política de abc.es (vocento), el pipeline pasa de **0 segmentos** a **318**;
+`document.pickle` de 243 B → **358 KB**; `graph-original.full.yml` de vacío a **grafo con nodos y
+enlaces SUBSUM**. El bloqueo universal queda resuelto: PoliGraph vuelve a modelar las políticas.
+
+### Bug 46 — PoliGraph: la traducción es→en no se aplica (rate-limit de Google) → texto español al NLP
+
+**Síntoma (al validar Bug 45):** tras arreglar la poda, el grafo de abc.es se poblaba pero con **muy
+pocos nodos** y parte ruido. Inspección de los segmentos ya tokenizados: **seguían en español**
+("Recopilamos tu correo…", "los Corresponsables del tratamiento"). El modelo NLP de PoliGraph es
+**solo inglés**, así que no extraía ni actores ni datos.
+
+**Causa:** `translator_utils.translate_policy_text` se invoca **una vez por segmento** (una política
+tiene cientos). Esa ráfaga supera el límite del endpoint gratuito de Google Translate (5 req/s), que
+responde *"too many requests"*; la función capturaba el error y **devolvía el texto original en
+español**. Además `detect_english` daba falsos positivos en frases españolas cortas, saltándose la
+traducción en más segmentos.
+
+**Fix 1 — resiliencia (`PoliGraph/poligrapher/translator_utils.py`):** se extrajo `_peticion_google`
+con **throttle de proceso** (intervalo mínimo ~0,25 s, por debajo del tope de 5/s, seguro entre hilos)
+y **reintentos con backoff exponencial** (1-2-4-8 s) ante el error de límite, en vez de rendirse al
+primer fallo.
+
+**Fix 2 — traducción por BLOQUES (opción elegida: reducir ~35× las peticiones):** la causa de fondo
+era hacer **una petición HTTP por segmento** (cientos por política). Se implementó traducción agrupada:
+- `translator_utils.translate_batch_texts(texts)` agrupa los segmentos en **bloques de ~4000 chars**
+  (≈8-10 peticiones por política en vez de cientos), unidos por centinelas `__SEGi__` (tokens con
+  guiones bajos que Google preserva, como `__ENTn__`). Tras traducir separa por los centinelas; si el
+  nº de piezas no cuadra, **retraduce ese bloque segmento a segmento** (el batch es solo optimización,
+  la corrección queda garantizada).
+- `document.py` `SegmentExtractor` hace ahora **dos pasadas**: una PRE-pasada recolecta los textos no
+  ingleses sin tocar la red (`_traducir_inner` en modo `_recolectar`), se traducen en bloque, y la
+  pasada real lee la caché `{original: traducido}`. `extract_text` pasó de `@staticmethod` a método de
+  instancia para acceder a esa caché.
+
+**Verificación (con traductor simulado, porque la IP de Google sigue bloqueada tras el batch de 107):**
+sobre el árbol real de abc.es, el pipeline produce **335 segmentos** y toda la política se traduce en
+**10 peticiones** (en vez de 128+ una por segmento) con **alineación correcta** de cada segmento con su
+traducción. Sobre datos sintéticos de tamaño realista (152 textos): **4 peticiones** (~38× menos).
+
+**Pendiente de validación EN VIVO:** la IP de Google quedó bloqueada por la ráfaga del batch de 107
+sitios + las pruebas; es un bloqueo temporal (abuso por rate, no la cuota diaria de 200k). Con el
+batching (≈9 req/sitio) y el throttle, el bloqueo no debería reproducirse en uso normal. Queda
+confirmar con una auditoría real de **un solo sitio** cuando la IP se libere (minutos-horas).
+
+**Alternativas descartadas en el camino:** **MyMemory** (límite ~5.000 palabras/día y ~500 chars por
+petición, insuficiente para una política) y **Argos offline** (su `stanza`/`ctranslate2` chocan con el
+`torch 1.12` del entorno; produce texto basura). El arreglo estructural (Bug 45) es prerrequisito: sin
+él, ni con traducción perfecta se poblaría el grafo.
+
+### Bug 47 — R15: la evidencia mostraba TODOS los sitios (reporte de cookies global)
+
+**Síntoma (en el informe):** en el requisito de identificación de responsables (R15 interno /
+R14 de publicación), el bloque "Ver datos técnicos (JSON)" listaba la evidencia de **los 100+
+sitios auditados** (`abc_es`, `marca_com`, `decathlon_es`…), en vez de solo el sitio concreto.
+
+**Causa:** `local-crawler.js` escribe las cookies en `reporte_auditoria.json` haciendo **merge**
+(lee el fichero y añade su clave), nunca lo reinicia; es un **acumulador global** (llegó a 112
+entradas). La clave es la `url sin esquema/www` con los no-alfanuméricos → `_` (`abc_es`, `abc_es_`
+si había barra final, etc.). `r15_responsables.py` iteraba **todas** las claves del reporte y las
+volcaba al resultado.
+
+**Fix (dos partes):**
+- **Filtro por sitio (`r15_responsables.py` + `combinados.py`):** `auditar_r15` acepta
+  `sitio_filtro` y procesa solo las claves que corresponden al dominio actual (coincidencia exacta
+  o con sufijo tras `_`, sin falsos positivos del tipo `abc_establo_com` gracias a la frontera `_`).
+  `combinados.ejecutar` deriva la clave del dominio (misma transformación `[^A-Za-z0-9]→_` que el
+  crawler) y la pasa como argumento a r15. El `__main__` de r15 reconoce ese argumento posicional.
+  Es **batch-safe**: R15 filtra a su propio sitio aunque el reporte global tenga otros.
+- **Reinicio por sitio (`privacy_pioneer.py` — `_limpiar_reporte`):** antes del crawl, bajo el
+  cerrojo `_EXCLUSIVO`, se borran del reporte las claves del dominio actual (equivalente a
+  `_limpiar_mysql` para el fichero de cookies). Así, tras el crawl, el sitio queda con **una única
+  entrada fresca** (sin variantes `abc_es`/`abc_es_` de ejecuciones anteriores) y el fichero no
+  crece sin control. Solo toca las claves del dominio actual → seguro con el batch paralelo.
+
+**Verificación:** `r15_responsables.py --no-detalle abc_es` sobre el reporte global de 112 sitios
+devuelve solo las entradas de abc.es (antes 112); `_limpiar_reporte('abc.es')` pasa el reporte de
+112→110 borrando `abc_es` y `abc_es_` y dejando intacto `marca_com`. `salida.py` (que usa el primer
+sitio del detalle, con `break`) sigue mostrando los chips correctos.
+
+### Bug 48 — PoliGraph: `ValueError: Invalid role` ante roles de Chromium (CDP) desconocidos
+
+**Síntoma (primera auditoría real tras Bug 45):** TODOS los requisitos de PoliGraph fallaban con
+`init_document: ... ValueError: Invalid role: sectionfooter`. Una vez arreglada la poda (Bug 45),
+el `SegmentExtractor` ya recorre el contenido y llega a roles que el vocabulario **estricto** de
+PoliGraph no contempla.
+
+**Causa:** PoliGraph se diseñó para el árbol de accesibilidad de **Firefox**; se alimenta con el de
+**Chromium/CDP**, que tiene roles que no existían, p. ej. `sectionfooter`/`sectionheader`
+(`<footer>`/`<header>` dentro de `<article>`/`<section>`). El `else` de `iterate()` hacía
+`raise ValueError`, tirando **toda** la extracción (y los 6 requisitos de PoliGraph) por un solo
+nodo. Además `collect_text_from_children` hacía `node["name"]`, pero el conversor CDP (`_ax_tree`)
+solo añade la clave `name` cuando no está vacía → `KeyError: 'name'` en nodos hoja sin texto.
+
+**Fix (`PoliGraph/poligrapher/document.py`), degradación elegante en vez de abortar:**
+- `iterate()`: el `else` ya no lanza `ValueError`. Un rol desconocido se trata como **contenedor**
+  (se recorren sus hijos) si los tiene, o como **texto** si es hoja. Se avisa una sola vez por rol
+  (`self._roles_desconocidos` + `logging.warning`). Así la cadena CDP→PoliGraph es resiliente a la
+  evolución del árbol de accesibilidad de Chromium, sin whack-a-mole de roles.
+- `collect_text_from_children`: `node["name"]` → `node.get("name", "")` (tolera hojas sin `name`).
+
+**Verificación (theguardian.com, inglés, sin traducción):** el pipeline completo
+`init_document → run_annotators → build_graph` pasa de **ERROR (crash en sectionfooter)** a **EXIT 0
+en los tres pasos**, con el aviso `Rol no reconocido 'sectionfooter' — se recorre como
+contenedor/texto`.
+
+### Bug 49 — buscador_politica: elegía un "hub" de privacidad en vez de la política real
+
+**Síntoma (detectado al validar Bug 48 con theguardian.com):** PoliGraph analizaba una página índice
+de ~640 caracteres ("Our privacy policy / A short video / Cookie policy / How we collect…"), no la
+política. El grafo salía casi vacío aunque el pipeline ya no crasheaba.
+
+**Causa:** `buscador_politica.py` elige la URL puntuando enlaces del **footer de la home**. En
+theguardian el único enlace de privacidad de la home es el **hub** `/info/privacy` (un índice con
+enlaces a "Política de privacidad", "Cookies", un vídeo…); la política real `/help/privacy-policy`
+**no se enlaza desde la home**, solo desde el hub. El scoring no distingue un hub genérico (segmento
+`/privacy`) de la política concreta (segmento `/privacy-policy`), así que se quedaba con el hub.
+
+**Fix (`buscador_politica.py` — `_refinar_hub`):** tras la selección, si el **segmento final** de la
+URL elegida no es explícitamente una política (regex `_SEGMENTO_POLITICA_FUERTE`:
+`privacy-policy|privacy-notice|politica-de-privacidad|datenschutzerkl…`), se abre esa página (misma
+cascada de motores) y se busca un enlace del **mismo dominio** cuyo segmento SÍ lo sea; se elige el de
+mayor puntuación y, a empate, el de ruta más corta (la política canónica frente a variantes como
+`privacy-policy-us-addendum`). Si no hay tal enlace, no se toca nada. Las políticas ya específicas (la
+mayoría: `…/politica-privacidad`, `…/privacy-policy`) tienen segmento fuerte y **se saltan sin coste
+ni cambio** (sin regresión). `fuente` añade el sufijo `+hub` cuando hubo refinamiento.
+
+**Verificación:** theguardian `/info/privacy` (hub, 640 chars) → **`/help/privacy-policy`** (política
+real, **38.377 chars**, empieza por "…Guardian News & Media Limited ('we','us','our')…"),
+`fuente="texto_en+hub"`; abc.es se mantiene en `vocento.com/politica-privacidad` sin refinar
+(`fuente="mejor_candidato"`, segmento ya fuerte).
 
 ---
 

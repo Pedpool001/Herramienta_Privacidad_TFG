@@ -20,8 +20,28 @@ _CDP_ROLE_MAP = {
     "LabelText":          "label",
     # Structural / layout (iterate into children)
     "generic":            "group",
-    "none":               "whitespace",
+    # Un nodo CDP con rol "none"/"presentation" es un contenedor estructural
+    # (un <div> sin semántica), NO espacio en blanco. Mapearlo a "whitespace"
+    # (que PoliGraph tiene en IGNORED_ELEMENTS) podaba TODO el subárbol que
+    # colgaba de él: en muchas políticas el contenido entero cuelga de un primer
+    # <div role=none>, así que el SegmentExtractor extraía 0 segmentos y el grafo
+    # salía vacío. Debe recorrerse como contenedor → "group".
+    "none":               "group",
+    "presentation":       "group",
     "GenericContainer":   "group",
+    # Contenedores de CONTENIDO principal → se recorren.
+    "main":               "section",
+    "complementary":      "group",
+    # Landmarks de "chrome" (cabecera/nav/pie/buscador). El árbol se captura
+    # antes de readability, así que header/nav/footer siguen presentes con sus
+    # roles ARIA (banner/contentinfo/navigation/search). Se dejan pasar con su
+    # nombre crudo para que PoliGraph los IGNORE explícitamente (ver
+    # IGNORED_ELEMENTS en document.py): así el SegmentExtractor no cuela los
+    # menús de cabecera/pie como texto de la política (el ListAnnotator los
+    # tomaba por estructura de la política y contaminaba actores de R15/R16),
+    # replicando el stripping de header/footer/nav que PoliGraph hacía con
+    # readability en su diseño original.
+    "searchbox":          "textbox",
     # List decoration
     "ListMarker":         "list item marker",
     # Menus
